@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+
+# Original source images — site serves .webp versions only
+images/**/*.jpg
+images/**/*.jpeg
+images/**/*.png
+# Keep the logo
+!images/logo.png
+
+# Dev utilities
+convert-images.py
+seo-routes-config.js
+node_modules/

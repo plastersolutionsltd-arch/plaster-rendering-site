@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+    <!-- Homepage -->
+    <url>
+        <loc>https://www.plasterandrenderingsolutions.co.uk/</loc>
+        <lastmod>2026-03-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Silicone Render -->
+    <url>
+        <loc>https://www.plasterandrenderingsolutions.co.uk/silicone-render/</loc>
+        <lastmod>2026-03-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://www.plasterandrenderingsolutions.co.uk/images/hero/silicone-service.webp</image:loc>
+        </image:image>
+    </url>
+
+    <!-- Monocouche Render -->
+    <url>
+        <loc>https://www.plasterandrenderingsolutions.co.uk/monocouche-render/</loc>
+        <lastmod>2026-03-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://www.plasterandrenderingsolutions.co.uk/images/hero/monocouche%20service.webp</image:loc>
+        </image:image>
+    </url>
+
+    <!-- Internal Plastering -->
+    <url>
+        <loc>https://www.plasterandrenderingsolutions.co.uk/internal-plastering/</loc>
+        <lastmod>2026-03-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://www.plasterandrenderingsolutions.co.uk/images/hero/plasteringhero.webp</image:loc>
+        </image:image>
+    </url>
+
+    <!-- External Wall Insulation -->
+    <url>
+        <loc>https://www.plasterandrenderingsolutions.co.uk/external-wall-insulation/</loc>
+        <lastmod>2026-03-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://www.plasterandrenderingsolutions.co.uk/images/hero/IMG_3979.webp</image:loc>
+        </image:image>
+    </url>
+
+    <!-- Dry Lining -->
+    <url>
+        <loc>https://www.plasterandrenderingsolutions.co.uk/dry-lining/</loc>
+        <lastmod>2026-03-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://www.plasterandrenderingsolutions.co.uk/images/case-studies/drylining-service.webp</image:loc>
+        </image:image>
+    </url>
+
+    <!-- Project Gallery / Portfolio -->
+    <url>
+        <loc>https://www.plasterandrenderingsolutions.co.uk/portfolio/</loc>
+        <lastmod>2026-03-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- FAQ -->
+    <url>
+        <loc>https://www.plasterandrenderingsolutions.co.uk/faq/</loc>
+        <lastmod>2026-03-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Contact -->
+    <url>
+        <loc>https://www.plasterandrenderingsolutions.co.uk/contact/</loc>
+        <lastmod>2026-03-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+</urlset>

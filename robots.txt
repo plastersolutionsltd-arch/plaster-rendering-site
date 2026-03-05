@@ -1,0 +1,23 @@
+# Robots.txt for P&R Solutions Website
+# Allow all search engines to crawl the site
+
+User-agent: *
+Allow: /
+Allow: /silicone-render/
+Allow: /monocouche-render/
+Allow: /internal-plastering/
+Allow: /external-wall-insulation/
+Allow: /dry-lining/
+Allow: /faq/
+Allow: /contact/
+Allow: /privacy/
+Allow: /terms/
+
+# Disallow nothing - site is fully crawlable
+Disallow:
+
+# Sitemap location
+Sitemap: https://www.plasterandrenderingsolutions.co.uk/sitemap.xml
+
+# Crawl delay (optional - allows 1 request per second)
+Crawl-delay: 1
