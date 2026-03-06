@@ -10,6 +10,7 @@ Allow: /external-wall-insulation/
 Allow: /dry-lining/
 Allow: /faq/
 Allow: /contact/
+Allow: /portfolio/
 Allow: /privacy/
 Allow: /terms/
 

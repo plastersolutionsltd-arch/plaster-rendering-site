@@ -5800,8 +5800,40 @@ function SEOManager({
 // ============================================================
 // APP
 // ============================================================
+const URL_TO_PAGE = {
+  '/': 'home',
+  '/services/': 'services',
+  '/portfolio/': 'portfolio',
+  '/how-we-apply/': 'how-we-apply',
+  '/pricing/': 'pricing',
+  '/warranties/': 'warranties',
+  '/faq/': 'faq',
+  '/contact/': 'contact',
+  '/silicone-render/': 'service-silicone',
+  '/monocouche-render/': 'service-monocouche',
+  '/external-wall-insulation/': 'service-ewi',
+  '/internal-plastering/': 'service-plastering',
+  '/dry-lining/': 'service-drylining'
+};
+const PAGE_TO_URL = Object.fromEntries(Object.entries(URL_TO_PAGE).map(([k, v]) => [v, k]));
 function App() {
-  const [currentPage, setCurrentPage] = useState('home');
+  const getPageFromUrl = () => {
+    const path = window.location.pathname;
+    return URL_TO_PAGE[path] || URL_TO_PAGE[path.endsWith('/') ? path : path + '/'] || 'home';
+  };
+  const [currentPage, setCurrentPageState] = useState(getPageFromUrl);
+  const setCurrentPage = React.useCallback(page => {
+    const url = PAGE_TO_URL[page] || '/';
+    history.pushState({
+      page
+    }, '', url);
+    setCurrentPageState(page);
+  }, []);
+  React.useEffect(() => {
+    const handlePop = () => setCurrentPageState(getPageFromUrl());
+    window.addEventListener('popstate', handlePop);
+    return () => window.removeEventListener('popstate', handlePop);
+  }, []);
   const renderPage = () => {
     if (currentPage.startsWith('service-')) {
       const serviceId = currentPage.replace('service-', '');
