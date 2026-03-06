@@ -5818,19 +5818,7 @@ function App() {
     const path = window.location.pathname;
     return URL_TO_PAGE[path] || URL_TO_PAGE[path.endsWith('/') ? path : path + '/'] || 'home';
   };
-  const [currentPage, setCurrentPageState] = useState(getPageFromUrl);
-  const setCurrentPage = React.useCallback(page => {
-    const url = PAGE_TO_URL[page] || '/';
-    history.pushState({
-      page
-    }, '', url);
-    setCurrentPageState(page);
-  }, []);
-  React.useEffect(() => {
-    const handlePop = () => setCurrentPageState(getPageFromUrl());
-    window.addEventListener('popstate', handlePop);
-    return () => window.removeEventListener('popstate', handlePop);
-  }, []);
+  const [currentPage, setCurrentPage] = useState(getPageFromUrl);
   const renderPage = () => {
     if (currentPage.startsWith('service-')) {
       const serviceId = currentPage.replace('service-', '');
