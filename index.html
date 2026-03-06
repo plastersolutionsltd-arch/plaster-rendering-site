@@ -2919,9 +2919,13 @@ function ServiceDetailPage({
     className: "space-y-4"
   }, service.benefits.map((benefit, i) => /*#__PURE__*/React.createElement("div", {
     key: i,
-    className: `animate-on-scroll stagger-${Math.min(i + 2, 5)} service-card card-shadow-elevation highlight-box`
-  }, /*#__PURE__*/React.createElement("p", {
-    className: "font-body text-slate-800 font-light"
+    className: `animate-on-scroll stagger-${Math.min(i + 2, 5)} relative flex items-start gap-4 p-5 rounded-xl bg-white border border-slate-200 hover:border-lime-500/40 hover:shadow-sm transition-all duration-300 group`
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "flex-shrink-0 w-7 h-7 rounded-full bg-lime-500/10 border border-lime-500/30 flex items-center justify-center group-hover:bg-lime-500 group-hover:border-lime-500 transition-all duration-300 mt-0.5"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "font-display font-bold text-lime-600 group-hover:text-charcoal-900 text-xs transition-colors duration-300"
+  }, "\u2713")), /*#__PURE__*/React.createElement("p", {
+    className: "font-body text-slate-700 font-light leading-relaxed"
   }, benefit)))))))), /*#__PURE__*/React.createElement("section", {
     className: "py-20 bg-white"
   }, /*#__PURE__*/React.createElement("div", {
@@ -3027,18 +3031,20 @@ function ServiceDetailPage({
     className: "grid md:grid-cols-3 gap-8"
   }, service.trustedBrands.map((brand, i) => /*#__PURE__*/React.createElement("div", {
     key: i,
-    className: `animate-on-scroll stagger-${Math.min(i + 1, 3)} premium-hover rounded-xl p-8 bg-white border-2 border-slate-200`
+    className: `animate-on-scroll stagger-${Math.min(i + 1, 3)} relative rounded-xl overflow-hidden bg-white border border-slate-200 hover:border-lime-500/50 hover:shadow-md transition-all duration-300 group`
   }, /*#__PURE__*/React.createElement("div", {
-    className: "mb-4"
+    className: "absolute left-0 top-0 bottom-0 w-[3px] bg-slate-200 group-hover:bg-lime-500 transition-colors duration-300"
+  }), /*#__PURE__*/React.createElement("div", {
+    className: "p-8 pl-10"
   }, /*#__PURE__*/React.createElement("span", {
-    className: "inline-block text-xs font-bold tracking-[0.15em] uppercase text-lime-500 bg-lime-500/10 px-3 py-1 rounded-full border border-lime-500/30 mb-4"
-  }, brand.tag)), /*#__PURE__*/React.createElement("h3", {
-    className: "font-display text-2xl font-bold text-charcoal-900 mb-4 tracking-tight"
+    className: "inline-block text-xs font-bold tracking-[0.15em] uppercase text-lime-600 bg-lime-500/10 px-3 py-1 rounded-full border border-lime-500/20 mb-4"
+  }, brand.tag), /*#__PURE__*/React.createElement("h3", {
+    className: "font-display text-xl font-bold text-charcoal-900 mb-3 tracking-tight"
   }, brand.name), /*#__PURE__*/React.createElement("p", {
-    className: "font-body text-slate-700 leading-relaxed font-light mb-6 text-sm"
+    className: "font-body text-slate-600 leading-relaxed font-light mb-5 text-sm"
   }, brand.description), /*#__PURE__*/React.createElement("p", {
-    className: "font-body text-xs font-bold text-lime-500 tracking-wide"
-  }, brand.specs)))), /*#__PURE__*/React.createElement("div", {
+    className: "font-body text-xs font-bold text-lime-600 tracking-wide border-t border-slate-100 pt-4"
+  }, brand.specs))))), /*#__PURE__*/React.createElement("div", {
     className: "mt-12 text-center"
   }, /*#__PURE__*/React.createElement("p", {
     className: "font-body text-slate-600 font-light mb-6"
@@ -3154,25 +3160,29 @@ function ServiceDetailPage({
     className: "grid md:grid-cols-3 gap-8"
   }, service.ewiSystemTypes.map((system, i) => /*#__PURE__*/React.createElement("div", {
     key: i,
-    className: `animate-on-scroll stagger-${Math.min(i + 1, 3)} premium-hover rounded-xl p-8 bg-white border-2 border-slate-200`
+    className: `animate-on-scroll stagger-${Math.min(i + 1, 3)} relative rounded-xl overflow-hidden transition-all duration-300 ${i === 0 ? 'bg-charcoal-900 border border-charcoal-800 hover:border-lime-500/40' : 'bg-white border border-slate-200 hover:border-lime-500/40 hover:shadow-md'}`
   }, /*#__PURE__*/React.createElement("div", {
-    className: "mb-4"
+    className: "h-[3px] bg-lime-500"
+  }), /*#__PURE__*/React.createElement("div", {
+    className: "p-8"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "mb-5"
   }, /*#__PURE__*/React.createElement("span", {
-    className: "inline-block text-2xl font-bold text-lime-500 mb-3"
+    className: `font-display text-4xl font-bold block leading-none ${i === 0 ? 'text-lime-400' : 'text-lime-500'}`
   }, system.thermal), /*#__PURE__*/React.createElement("p", {
-    className: "font-body text-xs text-slate-500 font-light"
+    className: `font-body text-xs font-bold tracking-widest uppercase mt-2 ${i === 0 ? 'text-slate-400' : 'text-slate-500'}`
   }, "Thermal Conductivity")), /*#__PURE__*/React.createElement("h3", {
-    className: "font-display text-lg font-bold text-charcoal-900 mb-3 tracking-tight"
+    className: `font-display text-lg font-bold mb-3 tracking-tight ${i === 0 ? 'text-white' : 'text-charcoal-900'}`
   }, system.name), /*#__PURE__*/React.createElement("p", {
-    className: "font-body text-slate-700 leading-relaxed font-light text-sm mb-6"
+    className: `font-body leading-relaxed font-light text-sm mb-6 ${i === 0 ? 'text-slate-300' : 'text-slate-600'}`
   }, system.description), /*#__PURE__*/React.createElement("ul", {
     className: "space-y-2"
   }, system.features.map((feature, j) => /*#__PURE__*/React.createElement("li", {
     key: j,
-    className: "font-body text-sm text-slate-700 flex items-start gap-2 font-light"
+    className: `font-body text-sm flex items-start gap-2 font-light ${i === 0 ? 'text-slate-200' : 'text-slate-700'}`
   }, /*#__PURE__*/React.createElement("span", {
-    className: "text-lime-500 font-bold mt-0.5"
-  }, "\u2713"), /*#__PURE__*/React.createElement("span", null, feature))))))))), service.installationProcess && /*#__PURE__*/React.createElement("section", {
+    className: "text-lime-500 font-bold mt-0.5 flex-shrink-0"
+  }, "\u2713"), /*#__PURE__*/React.createElement("span", null, feature)))))))))), service.installationProcess && /*#__PURE__*/React.createElement("section", {
     className: "py-20 bg-white"
   }, /*#__PURE__*/React.createElement("div", {
     className: "max-w-4xl mx-auto px-6 lg:px-12"
@@ -3184,21 +3194,21 @@ function ServiceDetailPage({
     className: "space-y-6"
   }, service.installationProcess.map((item, i) => /*#__PURE__*/React.createElement("div", {
     key: i,
-    className: `animate-on-scroll stagger-${Math.min(i + 1, 5)} premium-hover rounded-xl p-8 bg-gradient-to-br from-slate-50 to-white border-2 border-slate-200`
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "flex items-start gap-6"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "flex-shrink-0"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "w-12 h-12 rounded-full bg-lime-500 flex items-center justify-center"
+    className: `animate-on-scroll stagger-${Math.min(i + 1, 5)} relative rounded-xl overflow-hidden bg-white border border-slate-200 hover:border-lime-500/30 transition-all duration-300`
   }, /*#__PURE__*/React.createElement("span", {
-    className: "font-display font-bold text-charcoal-900 text-lg"
-  }, i + 1))), /*#__PURE__*/React.createElement("div", {
+    className: "absolute right-5 top-2 font-display font-bold text-[64px] leading-none text-slate-100 select-none pointer-events-none"
+  }, String(i + 1).padStart(2, '0')), /*#__PURE__*/React.createElement("div", {
+    className: "relative p-8 flex items-start gap-5"
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "flex-shrink-0 w-10 h-10 rounded-full bg-lime-500 flex items-center justify-center mt-0.5"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "font-display font-bold text-charcoal-900 text-sm"
+  }, i + 1)), /*#__PURE__*/React.createElement("div", {
     className: "flex-grow"
   }, /*#__PURE__*/React.createElement("h3", {
-    className: "font-display text-lg font-bold text-charcoal-900 mb-2 tracking-tight"
+    className: "font-display text-base font-bold text-charcoal-900 mb-2 tracking-tight"
   }, item.step), /*#__PURE__*/React.createElement("p", {
-    className: "font-body text-slate-700 leading-relaxed font-light"
+    className: "font-body text-slate-600 leading-relaxed font-light text-sm"
   }, item.description)))))))), service.thermalPerformance && /*#__PURE__*/React.createElement("section", {
     className: "py-20 bg-slate-50"
   }, /*#__PURE__*/React.createElement("div", {
@@ -3234,19 +3244,25 @@ function ServiceDetailPage({
     className: "grid md:grid-cols-2 lg:grid-cols-3 gap-8"
   }, service.plasteringServices.map((svc, i) => /*#__PURE__*/React.createElement("div", {
     key: i,
-    className: `animate-on-scroll stagger-${Math.min(i + 1, 6)} premium-hover rounded-xl p-8 bg-gradient-to-br from-slate-50 to-white border-2 border-slate-200`
-  }, /*#__PURE__*/React.createElement("h3", {
+    className: `animate-on-scroll stagger-${Math.min(i + 1, 6)} relative rounded-xl overflow-hidden bg-white border border-slate-200 hover:border-lime-500/40 hover:shadow-md transition-all duration-300 group`
+  }, /*#__PURE__*/React.createElement("div", {
+    className: "absolute left-0 top-0 bottom-0 w-[3px] bg-slate-200 group-hover:bg-lime-500 transition-colors duration-300"
+  }), /*#__PURE__*/React.createElement("div", {
+    className: "p-8 pl-10"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "font-display text-xs font-bold text-lime-500 tracking-[0.2em] uppercase mb-3 block"
+  }, String(i + 1).padStart(2, '0')), /*#__PURE__*/React.createElement("h3", {
     className: "font-display text-lg font-bold text-charcoal-900 mb-3 tracking-tight"
   }, svc.title), /*#__PURE__*/React.createElement("p", {
-    className: "font-body text-slate-700 leading-relaxed font-light text-sm mb-6"
+    className: "font-body text-slate-600 leading-relaxed font-light text-sm mb-6"
   }, svc.description), /*#__PURE__*/React.createElement("ul", {
     className: "space-y-2"
   }, svc.features && svc.features.map((feature, j) => /*#__PURE__*/React.createElement("li", {
     key: j,
     className: "font-body text-sm text-slate-700 flex items-start gap-2 font-light"
   }, /*#__PURE__*/React.createElement("span", {
-    className: "text-lime-500 font-bold mt-0.5"
-  }, "\u2713"), /*#__PURE__*/React.createElement("span", null, feature))))))))), service.plasteringProcess && /*#__PURE__*/React.createElement("section", {
+    className: "text-lime-500 font-bold mt-0.5 flex-shrink-0"
+  }, "\u2713"), /*#__PURE__*/React.createElement("span", null, feature)))))))))), service.plasteringProcess && /*#__PURE__*/React.createElement("section", {
     className: "py-20 bg-slate-50"
   }, /*#__PURE__*/React.createElement("div", {
     className: "max-w-4xl mx-auto px-6 lg:px-12"
@@ -3321,28 +3337,38 @@ function ServiceDetailPage({
     className: "grid md:grid-cols-3 gap-8"
   }, service.systemComparison.map((system, i) => /*#__PURE__*/React.createElement("div", {
     key: i,
-    className: `animate-on-scroll stagger-${Math.min(i + 1, 3)} rounded-xl p-8 border-2 transition-all duration-300 ${system.featured ? 'border-lime-500 bg-gradient-to-br from-lime-500/5 to-white' : 'border-slate-200 bg-white'} hover:shadow-lg`
+    className: `animate-on-scroll stagger-${Math.min(i + 1, 3)} relative rounded-xl overflow-hidden transition-all duration-300 ${system.featured ? 'bg-charcoal-900 border border-lime-500/30 shadow-xl' : 'bg-white border border-slate-200 hover:border-lime-500/40 hover:shadow-md'}`
+  }, /*#__PURE__*/React.createElement("div", {
+    className: `h-[3px] ${system.featured ? 'bg-lime-500' : 'bg-slate-200'}`
+  }), /*#__PURE__*/React.createElement("div", {
+    className: "p-8"
   }, system.badge && /*#__PURE__*/React.createElement("span", {
-    className: "inline-block bg-lime-500 text-charcoal-900 px-3 py-1 rounded text-xs font-bold mb-4"
+    className: `inline-block px-3 py-1 rounded text-xs font-bold mb-4 ${system.featured ? 'bg-lime-500 text-charcoal-900' : 'bg-slate-100 text-slate-600'}`
   }, system.badge), /*#__PURE__*/React.createElement("h3", {
-    className: "font-display text-xl font-bold text-charcoal-900 mb-2"
+    className: `font-display text-xl font-bold mb-2 tracking-tight ${system.featured ? 'text-white' : 'text-charcoal-900'}`
   }, system.name), /*#__PURE__*/React.createElement("p", {
-    className: "text-sm text-slate-600 mb-6 font-light"
+    className: `text-sm mb-6 font-light ${system.featured ? 'text-slate-300' : 'text-slate-600'}`
   }, system.description), /*#__PURE__*/React.createElement("div", {
     className: "mb-6"
   }, /*#__PURE__*/React.createElement("h4", {
-    className: "text-xs font-bold text-green-600 uppercase mb-3"
+    className: `text-xs font-bold uppercase mb-3 tracking-wide ${system.featured ? 'text-lime-400' : 'text-lime-600'}`
   }, "Pros"), /*#__PURE__*/React.createElement("ul", {
-    className: "space-y-2 text-sm font-light text-slate-700"
+    className: `space-y-2 text-sm font-light ${system.featured ? 'text-slate-200' : 'text-slate-700'}`
   }, system.pros.map((pro, j) => /*#__PURE__*/React.createElement("li", {
-    key: j
-  }, "\u2713 ", pro)))), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h4", {
-    className: "text-xs font-bold text-red-600 uppercase mb-3"
+    key: j,
+    className: "flex gap-2 items-start"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "text-lime-500 flex-shrink-0 mt-0.5"
+  }, "\u2713"), /*#__PURE__*/React.createElement("span", null, pro))))), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h4", {
+    className: `text-xs font-bold uppercase mb-3 tracking-wide ${system.featured ? 'text-red-400' : 'text-red-600'}`
   }, "Cons"), /*#__PURE__*/React.createElement("ul", {
-    className: "space-y-2 text-sm font-light text-slate-700"
+    className: `space-y-2 text-sm font-light ${system.featured ? 'text-slate-300' : 'text-slate-700'}`
   }, system.cons.map((con, j) => /*#__PURE__*/React.createElement("li", {
-    key: j
-  }, "\u2717 ", con))))))))), service.pricingGuide && /*#__PURE__*/React.createElement("section", {
+    key: j,
+    className: "flex gap-2 items-start"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: `flex-shrink-0 mt-0.5 ${system.featured ? 'text-red-400' : 'text-red-500'}`
+  }, "\u2717"), /*#__PURE__*/React.createElement("span", null, con))))))))))), service.pricingGuide && /*#__PURE__*/React.createElement("section", {
     className: "py-20 bg-slate-50"
   }, /*#__PURE__*/React.createElement("div", {
     className: "max-w-7xl mx-auto px-6 lg:px-12"
@@ -3356,19 +3382,27 @@ function ServiceDetailPage({
     className: "grid md:grid-cols-3 gap-8"
   }, service.pricingGuide.map((pricing, i) => /*#__PURE__*/React.createElement("div", {
     key: i,
-    className: `animate-on-scroll stagger-${Math.min(i + 1, 3)} rounded-xl p-8 bg-white border-2 border-slate-200 hover:border-lime-500 transition-all`
-  }, /*#__PURE__*/React.createElement("h3", {
-    className: "font-display text-lg font-bold text-charcoal-900 mb-2"
+    className: `animate-on-scroll stagger-${Math.min(i + 1, 3)} relative rounded-xl overflow-hidden transition-all duration-300 ${i === 1 ? 'bg-charcoal-900 border border-lime-500/30 shadow-xl' : 'bg-white border border-slate-200 hover:border-lime-500/40 hover:shadow-md'}`
+  }, /*#__PURE__*/React.createElement("div", {
+    className: `h-[3px] ${i === 1 ? 'bg-lime-500' : 'bg-slate-200'}`
+  }), /*#__PURE__*/React.createElement("div", {
+    className: "p-8"
+  }, i === 1 && /*#__PURE__*/React.createElement("span", {
+    className: "inline-block bg-lime-500 text-charcoal-900 px-3 py-1 rounded text-xs font-bold mb-4"
+  }, "Most Popular"), /*#__PURE__*/React.createElement("h3", {
+    className: `font-display text-lg font-bold mb-1 tracking-tight ${i === 1 ? 'text-white' : 'text-charcoal-900'}`
   }, pricing.property), /*#__PURE__*/React.createElement("p", {
-    className: "text-xs text-slate-600 mb-4 font-light"
+    className: `text-xs mb-5 font-light ${i === 1 ? 'text-slate-400' : 'text-slate-500'}`
   }, pricing.description), /*#__PURE__*/React.createElement("div", {
-    className: "text-2xl font-bold text-lime-500 mb-6"
+    className: `font-display text-3xl font-bold mb-6 ${i === 1 ? 'text-lime-400' : 'text-lime-500'}`
   }, pricing.priceRange), /*#__PURE__*/React.createElement("ul", {
-    className: "space-y-3 text-sm font-light text-slate-700"
+    className: `space-y-3 text-sm font-light ${i === 1 ? 'text-slate-300' : 'text-slate-700'}`
   }, pricing.details.map((detail, j) => /*#__PURE__*/React.createElement("li", {
     key: j,
-    className: "flex gap-2"
-  }, /*#__PURE__*/React.createElement("span", null, "\u2022"), /*#__PURE__*/React.createElement("span", null, detail))))))))), service.systemBreakdown && /*#__PURE__*/React.createElement("section", {
+    className: "flex gap-2 items-start"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "text-lime-500 mt-0.5 flex-shrink-0"
+  }, "\u2022"), /*#__PURE__*/React.createElement("span", null, detail)))))))))), service.systemBreakdown && /*#__PURE__*/React.createElement("section", {
     className: "py-20 bg-white"
   }, /*#__PURE__*/React.createElement("div", {
     className: "max-w-7xl mx-auto px-6 lg:px-12"
@@ -3818,17 +3852,21 @@ function HomePage() {
     className: "grid md:grid-cols-2 lg:grid-cols-3 gap-6"
   }, services.map((service, i) => /*#__PURE__*/React.createElement("div", {
     key: i,
-    className: `animate-on-scroll stagger-${Math.min(i + 1, 3)} service-card card-shadow-elevation glass-premium rounded-xl p-8`
+    className: `animate-on-scroll stagger-${Math.min(i + 1, 3)} relative overflow-hidden rounded-xl bg-white border border-slate-200 hover:border-lime-500/50 hover:shadow-lg transition-all duration-300 group`
   }, /*#__PURE__*/React.createElement("div", {
-    className: "w-12 h-12 rounded-lg bg-gradient-to-br from-lime-500 to-lime-500 flex items-center justify-center mb-6 shadow-lg"
+    className: "absolute top-0 left-0 right-0 h-[3px] bg-lime-500 rounded-t-xl"
+  }), /*#__PURE__*/React.createElement("span", {
+    className: "absolute -right-2 -top-3 font-display font-bold text-[80px] leading-none text-slate-100 select-none pointer-events-none group-hover:text-lime-500/10 transition-colors duration-300"
+  }, "0", i + 1), /*#__PURE__*/React.createElement("div", {
+    className: "relative p-8 pt-10"
   }, /*#__PURE__*/React.createElement("span", {
-    className: "text-charcoal-900 font-display font-bold text-lg"
-  }, "0", i + 1)), /*#__PURE__*/React.createElement("h3", {
+    className: "inline-block text-xs font-bold tracking-[0.2em] uppercase text-lime-600 mb-3"
+  }, "Service 0", i + 1), /*#__PURE__*/React.createElement("h3", {
     className: "font-display text-lg font-bold text-charcoal-900 mb-3 tracking-tight"
   }, service.title), /*#__PURE__*/React.createElement("p", {
-    className: "font-body text-sm text-slate-700 leading-relaxed font-light mb-4"
+    className: "font-body text-sm text-slate-600 leading-relaxed font-light mb-6"
   }, service.desc), /*#__PURE__*/React.createElement("div", {
-    className: "flex gap-2"
+    className: "flex items-center gap-4"
   }, /*#__PURE__*/React.createElement("button", {
     onClick: () => {
       setCurrentPage(`service-${service.id}`);
@@ -3837,7 +3875,7 @@ function HomePage() {
         behavior: 'smooth'
       });
     },
-    className: "btn-premium service-cta-btn"
+    className: "text-sm font-bold text-charcoal-900 bg-lime-500 px-5 py-2 rounded-lg hover:bg-lime-400 transition-colors duration-200"
   }, "Learn More \u2192"), /*#__PURE__*/React.createElement("button", {
     onClick: () => {
       setCurrentPage('how-we-apply');
@@ -3846,9 +3884,9 @@ function HomePage() {
         behavior: 'smooth'
       });
     },
-    className: "text-xs font-bold text-lime-500 hover:text-lime-500 tracking-wider uppercase transition-colors duration-300",
+    className: "text-xs font-bold text-slate-400 hover:text-lime-600 tracking-wider uppercase transition-colors duration-300",
     title: "Learn about our application methods"
-  }, "How We Apply"))))))), /*#__PURE__*/React.createElement("section", {
+  }, "How We Apply")))))))), /*#__PURE__*/React.createElement("section", {
     className: "py-20 bg-slate-50"
   }, /*#__PURE__*/React.createElement("div", {
     className: "max-w-7xl mx-auto px-6 lg:px-12"
@@ -4330,7 +4368,7 @@ function ServicesPage() {
     className: "space-y-8 mb-20"
   }, services.map((service, i) => /*#__PURE__*/React.createElement("div", {
     key: i,
-    className: `animate-on-scroll stagger-${Math.min(i + 1, 3)} service-card rounded-xl p-10 lg:p-12 cursor-pointer`,
+    className: `animate-on-scroll stagger-${Math.min(i + 1, 3)} relative overflow-hidden rounded-xl cursor-pointer border transition-all duration-300 ${i % 2 === 0 ? 'bg-white border-slate-200 hover:border-lime-500/50 hover:shadow-lg' : 'bg-charcoal-900 border-charcoal-800 hover:border-lime-500/40 hover:shadow-xl'} group`,
     onClick: () => {
       setCurrentPage(`service-${service.id}`);
       window.scrollTo({
@@ -4339,20 +4377,22 @@ function ServicesPage() {
       });
     }
   }, /*#__PURE__*/React.createElement("div", {
-    className: "flex items-start gap-6 mb-6"
+    className: "absolute top-0 left-0 right-0 h-[3px] bg-lime-500"
+  }), /*#__PURE__*/React.createElement("div", {
+    className: "relative p-10 lg:p-12"
   }, /*#__PURE__*/React.createElement("div", {
-    className: "w-14 h-14 rounded-lg bg-lime-500 flex items-center justify-center flex-shrink-0"
+    className: "flex items-center gap-4 mb-6"
   }, /*#__PURE__*/React.createElement("span", {
-    className: "text-charcoal-900 font-display font-bold text-xl"
-  }, "0", i + 1)), /*#__PURE__*/React.createElement("h2", {
-    className: "font-display text-2xl font-bold text-charcoal-900 tracking-tight"
+    className: `font-display text-5xl font-bold leading-none select-none ${i % 2 === 0 ? 'text-slate-100' : 'text-charcoal-800'}`
+  }, "0", i + 1), /*#__PURE__*/React.createElement("h2", {
+    className: `font-display text-2xl font-bold tracking-tight ${i % 2 === 0 ? 'text-charcoal-900' : 'text-white'}`
   }, service.title)), /*#__PURE__*/React.createElement("p", {
-    className: "font-body text-slate-700 leading-relaxed font-light mb-6"
+    className: `font-body leading-relaxed font-light mb-6 ${i % 2 === 0 ? 'text-slate-600' : 'text-slate-300'}`
   }, service.desc), /*#__PURE__*/React.createElement("div", {
-    className: "flex flex-wrap gap-2 mb-6"
+    className: "flex flex-wrap gap-2 mb-8"
   }, service.features.map((f, j) => /*#__PURE__*/React.createElement("span", {
     key: j,
-    className: "px-3 py-1 rounded-full bg-slate-100 text-xs font-bold text-lime-500 tracking-wide"
+    className: `px-3 py-1 rounded-full text-xs font-bold tracking-wide ${i % 2 === 0 ? 'bg-lime-500/10 text-lime-700 border border-lime-500/20' : 'bg-lime-500/20 text-lime-400 border border-lime-500/30'}`
   }, f))), /*#__PURE__*/React.createElement("button", {
     onClick: e => {
       e.stopPropagation();
@@ -4362,8 +4402,8 @@ function ServicesPage() {
         behavior: 'smooth'
       });
     },
-    className: "magnetic-btn bg-lime-500 text-charcoal-900 px-6 py-2 rounded-lg text-sm font-bold tracking-wide hover:bg-lime-500 transition-colors"
-  }, "Learn More & Get Quote \u2192"))))));
+    className: "bg-lime-500 text-charcoal-900 px-6 py-2.5 rounded-lg text-sm font-bold tracking-wide hover:bg-lime-400 transition-colors duration-200"
+  }, "Learn More & Get Quote \u2192")))))));
 }
 
 // ============================================================
@@ -4400,14 +4440,18 @@ function WarrantiesPage() {
     className: "grid md:grid-cols-3 gap-8 mb-20"
   }, warranties.map((w, i) => /*#__PURE__*/React.createElement("div", {
     key: i,
-    className: `animate-on-scroll stagger-${i + 1} service-card rounded-xl p-10`
+    className: `animate-on-scroll stagger-${i + 1} relative rounded-xl overflow-hidden bg-white border border-slate-200 hover:border-lime-500/40 hover:shadow-lg transition-all duration-300`
   }, /*#__PURE__*/React.createElement("div", {
-    className: "text-4xl mb-6"
+    className: "h-[3px] bg-lime-500"
+  }), /*#__PURE__*/React.createElement("div", {
+    className: "p-10"
+  }, /*#__PURE__*/React.createElement("span", {
+    className: "block text-5xl mb-5"
   }, w.icon), /*#__PURE__*/React.createElement("h3", {
-    className: "font-display text-xl font-bold text-charcoal-900 mb-4 tracking-tight"
+    className: "font-display text-lg font-bold text-charcoal-900 mb-4 tracking-tight"
   }, w.title), /*#__PURE__*/React.createElement("p", {
-    className: "font-body text-sm text-slate-700 leading-relaxed font-light"
-  }, w.desc)))), /*#__PURE__*/React.createElement("div", {
+    className: "font-body text-sm text-slate-600 leading-relaxed font-light"
+  }, w.desc))))), /*#__PURE__*/React.createElement("div", {
     className: "animate-scale rounded-xl bg-slate-900 text-white p-12 text-center"
   }, /*#__PURE__*/React.createElement("p", {
     className: "font-body text-lg font-light mb-4"
