@@ -1670,7 +1670,7 @@ function LogoP({
   className = ""
 }) {
   return /*#__PURE__*/React.createElement("img", {
-    src: "./images/logos/logo-p.png",
+    src: "./images/logos/logo-p.webp",
     alt: "Plaster and Rendering Solutions - P&RS Logo",
     className: `w-12 h-12 ${className}`,
     width: "48",
@@ -2772,7 +2772,7 @@ function ServiceDetailPage({
   }, /*#__PURE__*/React.createElement("section", {
     className: "service-hero-section relative w-full min-h-screen md:h-screen flex items-center justify-start overflow-hidden bg-gradient-to-br from-charcoal-900 to-charcoal-800",
     style: {
-      backgroundImage: isMobile ? "none" : `linear-gradient(135deg, rgba(29, 31, 33, 0.5) 0%, rgba(45, 45, 45, 0.6) 100%), url('${service.heroImage}')`,
+      backgroundImage: `linear-gradient(135deg, rgba(29, 31, 33, 0.5) 0%, rgba(45, 45, 45, 0.6) 100%), url('${service.heroImage}')`,
       backgroundColor: "#0a0a0a",
       backgroundSize: "cover",
       backgroundPosition: "center right",
@@ -2782,7 +2782,7 @@ function ServiceDetailPage({
   }, /*#__PURE__*/React.createElement("div", {
     className: "absolute inset-0",
     style: {
-      background: !isMobile ? "linear-gradient(to right, rgba(29, 31, 33, 0.85), rgba(29, 31, 33, 0.7), transparent)" : "rgba(0, 0, 0, 0.99)"
+      background: "linear-gradient(to right, rgba(29, 31, 33, 0.85), rgba(29, 31, 33, 0.7), transparent)"
     }
   }), /*#__PURE__*/React.createElement("div", {
     className: "relative z-10 max-w-7xl mx-auto px-6 lg:px-12 w-full py-20"
