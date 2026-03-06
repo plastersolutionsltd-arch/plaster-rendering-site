@@ -183,7 +183,7 @@
       "name": "Plaster and Rendering Solutions Limited",
       "alternateName": "P&R Solutions",
       "url": "https://www.plasterandrenderingsolutions.co.uk",
-      "logo": "https://www.plasterandrenderingsolutions.co.uk/images/logo.png",
+      "logo": "https://www.plasterandrenderingsolutions.co.uk/images/logos/logo-p.webp",
       "description": "Professional rendering and plastering contractor in Sheffield specializing in silicone render, monocouche, EWI, and internal plastering.",
       "telephone": "+447595399525",
       "email": "plastersolutionsltd@gmail.com",
@@ -603,32 +603,6 @@
         }
 
         /* Advanced Premium Animations */
-        @keyframes parallax-drift {
-            0% {
-                transform: translateY(0px) scale(1);
-            }
-
-            50% {
-                transform: translateY(-20px) scale(1.02);
-            }
-
-            100% {
-                transform: translateY(0px) scale(1);
-            }
-        }
-
-        @keyframes ripple-effect {
-            0% {
-                transform: scale(0);
-                opacity: 1;
-            }
-
-            100% {
-                transform: scale(4);
-                opacity: 0;
-            }
-        }
-
         @keyframes reveal-scale {
             0% {
                 opacity: 0;
@@ -728,19 +702,6 @@
             opacity: 1;
             transform: scale(1);
         }
-
-        /* Gallery image reveal — clip-path wipe from left */
-        .gallery-img-reveal {
-            clip-path: inset(0 100% 0 0);
-            transition: clip-path 1.3s cubic-bezier(0.76, 0, 0.24, 1);
-        }
-        .gallery-img-reveal.visible {
-            clip-path: inset(0 0% 0 0);
-        }
-        .gallery-img-reveal.stagger-1 { transition-delay: 0s; }
-        .gallery-img-reveal.stagger-2 { transition-delay: 0.18s; }
-        .gallery-img-reveal.stagger-3 { transition-delay: 0.36s; }
-        .gallery-img-reveal.stagger-4 { transition-delay: 0.54s; }
 
         .stagger-1 {
             transition-delay: 0.1s;
@@ -1491,23 +1452,6 @@
         /* LOADING & TRANSITION STATES */
         /* ============================================================ */
 
-        @keyframes skeleton-loading {
-            0% {
-                background-position: -1000px 0;
-            }
-
-            100% {
-                background-position: 1000px 0;
-            }
-        }
-
-        .skeleton-loader {
-            background: linear-gradient(90deg, #f3f4f6 25%, #e5e7eb 50%, #f3f4f6 75%);
-            background-size: 200% 100%;
-            animation: skeleton-loading 1.5s infinite;
-            border-radius: 8px;
-        }
-
         .fade-in-transition {
             animation: fadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1);
         }
@@ -1941,7 +1885,7 @@ function ServiceDetailPage({
         a: 'All three manufacturers offer 50+ color options including pure whites, soft creams, natural grays, and contemporary colors. Colors are through-mixed (not painted), ensuring UV stability and consistency. We can provide color samples and discuss options that complement your property\'s architecture.'
       }, {
         q: 'What warranty do you provide?',
-        a: 'We provide a 10-year workmanship guarantee on our installation and application. The manufacturer warranty ranges from 25+ years depending on the brand chosen. This covers material defects and guarantees performance for decades. We stand behind every project.'
+        a: 'We provide a 5-year workmanship guarantee on our installation and application. The manufacturer warranty ranges from 25+ years depending on the brand chosen. This covers material defects and guarantees performance for decades. We stand behind every project.'
       }],
       colorPalette: [{
         name: 'Cream',
@@ -3685,10 +3629,6 @@ function HomePage() {
     id: 'drylining',
     title: 'Dry Lining & Boarding',
     desc: 'Dot and dab, tacking, fire-rated boards, and insulated plasterboarding tailored to your project needs.'
-  }, {
-    id: 'gallery',
-    title: 'Project Gallery',
-    desc: 'Showcase of completed projects across Sheffield with before/after images and case studies.'
   }];
   return /*#__PURE__*/React.createElement("div", {
     className: "page-transition"
@@ -3918,7 +3858,7 @@ function HomePage() {
     className: "px-6 py-5 font-display font-bold text-lime-500"
   }, "Silicone Rendering"), /*#__PURE__*/React.createElement("td", {
     className: "px-6 py-5 font-body text-slate-700 font-light"
-  }, "15\u201325 Years"), /*#__PURE__*/React.createElement("td", {
+  }, "25+ Years"), /*#__PURE__*/React.createElement("td", {
     className: "px-6 py-5 font-body text-slate-700 font-light"
   }, "\xA375\u2013\xA3100+"), /*#__PURE__*/React.createElement("td", {
     className: "px-6 py-5 font-body text-slate-700 font-light text-sm"
@@ -4728,7 +4668,17 @@ function ContactPage() {
     ev.preventDefault();
     const e = validate();
     setErrors(e);
-    if (Object.keys(e).length === 0) setSubmitted(true);
+    if (Object.keys(e).length > 0) return;
+    fetch('https://formspree.io/f/xwpkwqya', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({ name: form.name, email: form.email, phone: form.phone, service: form.service, message: form.message })
+    }).then(res => {
+      if (res.ok) setSubmitted(true);
+      else setErrors({ message: 'Something went wrong. Please call us on 07595 399525.' });
+    }).catch(() => {
+      setErrors({ message: 'Something went wrong. Please call us on 07595 399525.' });
+    });
   };
   const handleChange = (field, value) => {
     setForm({
@@ -4926,7 +4876,7 @@ function HowWeApplyPage() {
         "@type": "WebPage",
         "name": "How We Apply Rendering and Plastering | Professional Application Methods",
         "description": "Learn about spray vs hand application methods for silicone rendering, monocouche, EWI, and internal plastering. Expert guide to professional rendering techniques.",
-        "url": "https://www.plasterandrenderingsolutions.com/how-we-apply",
+        "url": "https://www.plasterandrenderingsolutions.co.uk/how-we-apply/",
         "mainEntity": {
           "@type": "LocalBusiness",
           "name": "Plaster and Rendering Solutions Limited",
@@ -5597,7 +5547,7 @@ function PortfolioPage() {
     title: 'Sandygate Silicone Rendering',
     location: 'Sandygate, Sheffield',
     service: 'Silicone Rendering',
-    image: 'images/case-studies/case/sandygate-siliconei.jpg',
+    image: 'images/case-studies/case/sandygate-silicone.webp',
     description: 'Professional silicone rendering installation on residential property in Sandygate. Premium finish with superior weather protection and low-maintenance self-cleaning properties.',
     features: ['Silicone Rendering', 'Residential', 'Low Maintenance', 'Professional Install']
   }];
@@ -5721,11 +5671,11 @@ function Footer() {
     className: "font-display text-sm font-bold text-white mb-6 tracking-wide"
   }, "Navigation"), /*#__PURE__*/React.createElement("div", {
     className: "flex flex-col gap-3"
-  }, ['home', 'services', 'warranties', 'faq', 'contact'].map(p => /*#__PURE__*/React.createElement("button", {
+  }, [['home','Home'],['services','Services'],['portfolio','Portfolio'],['how-we-apply','How We Apply'],['pricing','Pricing'],['warranties','Warranties'],['faq','FAQ'],['contact','Contact']].map(([p, label]) => /*#__PURE__*/React.createElement("button", {
     key: p,
     onClick: () => navigate(p),
-    className: "text-left font-body text-sm text-slate-400 hover:text-lime-500 transition-colors duration-300 capitalize font-light"
-  }, p === 'warranties' ? 'Warranties' : p)))), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h4", {
+    className: "text-left font-body text-sm text-slate-400 hover:text-lime-500 transition-colors duration-300 font-light"
+  }, label)))), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h4", {
     className: "font-display text-sm font-bold text-white mb-6 tracking-wide"
   }, "Contact"), /*#__PURE__*/React.createElement("div", {
     className: "flex flex-col gap-3"
@@ -5789,6 +5739,21 @@ function SEOManager({
         title: 'FAQ | Plastering & Rendering Sheffield | P&R Solutions',
         description: 'Frequently asked questions about plastering and rendering in Sheffield. Silicone render, monocouche, EWI, pricing, and warranties explained.',
         canonicalUrl: `${BASE}/faq/`
+      },
+      'how-we-apply': {
+        title: 'How We Apply Rendering & Plastering | P&R Solutions Sheffield',
+        description: 'Learn about our professional spray and hand application methods for silicone rendering, monocouche, EWI and internal plastering in Sheffield.',
+        canonicalUrl: `${BASE}/how-we-apply/`
+      },
+      pricing: {
+        title: 'Rendering & Plastering Prices Sheffield | P&R Solutions',
+        description: 'Transparent pricing for plastering and rendering services in Sheffield. Silicone render, monocouche, EWI and internal plastering — get your free quote today.',
+        canonicalUrl: `${BASE}/pricing/`
+      },
+      warranties: {
+        title: 'Warranties & Guarantees | Plastering Sheffield | P&R Solutions',
+        description: '25-year manufacturer warranty on silicone render and 5-year workmanship guarantee on all plastering and rendering work by P&R Solutions, Sheffield.',
+        canonicalUrl: `${BASE}/warranties/`
       }
     },
     services: {
