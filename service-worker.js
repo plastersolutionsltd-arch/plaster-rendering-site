@@ -3,8 +3,8 @@
  * Implements cache-first strategy for assets, network-first for HTML
  */
 
-const CACHE_NAME = 'plaster-v1';
-const ASSETS_CACHE = 'plaster-assets-v1';
+const CACHE_NAME = 'plaster-v2';
+const ASSETS_CACHE = 'plaster-assets-v2';
 
 // Assets to cache on install
 const STATIC_ASSETS = [
