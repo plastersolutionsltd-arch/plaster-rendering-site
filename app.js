@@ -2135,14 +2135,16 @@ function HomePage() {
     className: "page-transition"
   }, /*#__PURE__*/React.createElement("section", {
     className: "relative w-full min-h-screen md:h-screen flex items-center justify-start overflow-hidden",
-    style: {
-      backgroundImage: "linear-gradient(135deg, rgba(29, 31, 33, 0.5) 0%, rgba(45, 45, 45, 0.6) 100%), url('images/case-studies/IMG_0291.webp')",
-      backgroundSize: "cover",
-      backgroundPosition: "center right",
-      backgroundAttachment: "scroll"
-    },
+    style: {backgroundColor: "#1a1a1a"},
     "aria-label": "White silicone render finishing on two-story residential property in Loxley, Sheffield by Plaster and Rendering Solutions, featuring white sash windows"
-  }, /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("img", {
+    src: "images/case-studies/IMG_0291.webp",
+    alt: "Professional rendering and plastering services in Sheffield by P&R Solutions",
+    className: "absolute inset-0 w-full h-full object-cover",
+    style: {objectPosition: "center right"},
+    fetchpriority: "high",
+    loading: "eager"
+  }), /*#__PURE__*/React.createElement("div", {
     className: "absolute inset-0 bg-gradient-to-r from-charcoal-900/85 via-charcoal-900/70 to-transparent"
   }), /*#__PURE__*/React.createElement("div", {
     className: "relative z-10 max-w-7xl mx-auto px-6 lg:px-12 w-full py-20"
