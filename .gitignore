@@ -12,3 +12,8 @@ images/**/*.png
 convert-images.py
 seo-routes-config.js
 node_modules/
+.vercel
+package.json
+package-lock.json
+tailwind.config.js
+tw-input.css

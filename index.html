@@ -371,37 +371,17 @@
     }
     </script>
 
-    <!-- Fonts -->
+    <!-- LCP Image Preload -->
+    <link rel="preload" as="image" href="/images/hero/silicone-service.webp" type="image/webp" fetchpriority="high" />
+
+    <!-- Compiled Tailwind CSS (replaces CDN) -->
+    <link rel="stylesheet" href="/styles.css" />
+
+    <!-- Fonts: non-blocking async load -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet" />
-
-    <!-- React -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
-    <!-- SEO Configuration -->
-    <script src="seo-routes-config.js"></script>
-
-    <!-- Tailwind -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        lime: { 400: '#00FF00', 500: '#00E600', 600: '#00CC00' },
-                        charcoal: { 700: '#3d3d3d', 800: '#2d2d2d', 900: '#1a1a1a' },
-                        slate: { 50: '#f8fafc', 100: '#f1f5f9', 200: '#e2e8f0', 700: '#334155', 800: '#1e293b' },
-                    },
-                    fontFamily: {
-                        display: ['Outfit', 'sans-serif'],
-                        body: ['Inter', 'sans-serif'],
-                    },
-                },
-            },
-        };
-    </script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" /></noscript>
 
 
     <style>
@@ -1603,6 +1583,11 @@
     <dd>No deposit is required. You pay only when the work is 100% complete and you have inspected and approved it.</dd>
   </dl>
 </main></div>
+
+    <!-- React (loaded here so HTML renders before scripts download) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+    <script src="seo-routes-config.js"></script>
 
     <script>
 const {
