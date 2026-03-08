@@ -1137,20 +1137,22 @@
         }
 
         @keyframes shimmer-premium {
-            0% {
-                background-position: -1000px 0;
-            }
-
-            100% {
-                background-position: 1000px 0;
-            }
+            from { transform: translateX(-100%); }
+            to   { transform: translateX(100%); }
         }
 
         .premium-highlight {
             position: relative;
+            overflow: hidden;
+        }
+
+        .premium-highlight::after {
+            content: '';
+            position: absolute;
+            inset: 0;
             background: linear-gradient(90deg, transparent 0%, rgba(0, 255, 0, 0.1) 50%, transparent 100%);
-            background-size: 200% 100%;
             animation: shimmer-premium 3s infinite;
+            pointer-events: none;
         }
 
         /* ============================================================ */
