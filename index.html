@@ -380,8 +380,9 @@
     <script src="seo-routes-config.js" defer></script>
     <script src="app.js" defer></script>
 
-    <!-- Compiled Tailwind CSS (replaces CDN) -->
-    <link rel="stylesheet" href="/styles.css" />
+    <!-- Compiled Tailwind CSS: async so it never blocks FCP -->
+    <link rel="preload" as="style" href="/styles.css" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="/styles.css" /></noscript>
 
     <!-- Fonts: non-blocking async load -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />

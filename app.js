@@ -240,7 +240,9 @@ function Navigation() {
     className: "btn-premium magnetic-btn bg-lime-500 text-charcoal-900 px-6 py-2.5 rounded-full text-sm font-bold tracking-wide hover:bg-lime-500 transition-colors duration-300 shadow-lg hover:shadow-xl"
   }, "Get Quote")), /*#__PURE__*/React.createElement("button", {
     onClick: () => setMobileOpen(!mobileOpen),
-    className: "md:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5"
+    className: "md:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5",
+    "aria-label": mobileOpen ? "Close menu" : "Open menu",
+    "aria-expanded": mobileOpen
   }, /*#__PURE__*/React.createElement("span", {
     className: `block w-6 h-[2px] bg-charcoal-900 transition-all duration-300 ${mobileOpen ? 'rotate-45 translate-y-[5px]' : ''}`
   }), /*#__PURE__*/React.createElement("span", {
@@ -2641,12 +2643,16 @@ function HomePage() {
   }, "EWI Investment Calculator"), /*#__PURE__*/React.createElement("div", {
     className: "grid md:grid-cols-2 gap-8"
   }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("label", {
+    htmlFor: "ewi-property-type",
     className: "block font-display text-sm font-bold text-charcoal-900 mb-3"
   }, "Property Type"), /*#__PURE__*/React.createElement("select", {
+    id: "ewi-property-type",
     className: "input-premium w-full px-4 py-3 rounded-lg bg-white text-charcoal-900 font-body text-sm"
   }, /*#__PURE__*/React.createElement("option", null, "Semi-Detached (\xA312k\u2013\xA316k)"), /*#__PURE__*/React.createElement("option", null, "Detached (\xA315k\u2013\xA320k)"), /*#__PURE__*/React.createElement("option", null, "Terraced (\xA310k\u2013\xA313k)"), /*#__PURE__*/React.createElement("option", null, "Bungalow (\xA38k\u2013\xA311k)"))), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("label", {
+    htmlFor: "ewi-heating-cost",
     className: "block font-display text-sm font-bold text-charcoal-900 mb-3"
   }, "Current Annual Heating Cost (\xA3)"), /*#__PURE__*/React.createElement("input", {
+    id: "ewi-heating-cost",
     type: "number",
     defaultValue: "1500",
     className: "input-premium w-full px-4 py-3 rounded-lg bg-white text-charcoal-900 font-body text-sm"
@@ -3275,8 +3281,10 @@ function ContactPage() {
   }, /*#__PURE__*/React.createElement("div", {
     className: "space-y-6"
   }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("label", {
+    htmlFor: "contact-name",
     className: "block text-xs font-bold tracking-[0.15em] uppercase text-charcoal-900 mb-3"
   }, "Full Name *"), /*#__PURE__*/React.createElement("input", {
+    id: "contact-name",
     type: "text",
     value: form.name,
     onChange: e => handleChange('name', e.target.value),
@@ -3287,8 +3295,10 @@ function ContactPage() {
   }, errors.name)), /*#__PURE__*/React.createElement("div", {
     className: "grid grid-cols-1 sm:grid-cols-2 gap-4"
   }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("label", {
+    htmlFor: "contact-email",
     className: "block text-xs font-bold tracking-[0.15em] uppercase text-charcoal-900 mb-3"
   }, "Email *"), /*#__PURE__*/React.createElement("input", {
+    id: "contact-email",
     type: "email",
     value: form.email,
     onChange: e => handleChange('email', e.target.value),
@@ -3297,24 +3307,30 @@ function ContactPage() {
   }), errors.email && /*#__PURE__*/React.createElement("span", {
     className: "text-red-500 text-xs mt-2 block font-bold"
   }, errors.email)), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("label", {
+    htmlFor: "contact-phone",
     className: "block text-xs font-bold tracking-[0.15em] uppercase text-charcoal-900 mb-3"
   }, "Phone"), /*#__PURE__*/React.createElement("input", {
+    id: "contact-phone",
     type: "tel",
     value: form.phone,
     onChange: e => handleChange('phone', e.target.value),
     className: "input-premium-enhanced w-full px-5 py-3 font-body text-charcoal-900",
     placeholder: "07123 456789"
   }))), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("label", {
+    htmlFor: "contact-service",
     className: "block text-xs font-bold tracking-[0.15em] uppercase text-charcoal-900 mb-3"
   }, "Service Interest"), /*#__PURE__*/React.createElement("select", {
+    id: "contact-service",
     value: form.service,
     onChange: e => handleChange('service', e.target.value),
     className: "input-premium-enhanced w-full px-5 py-3 font-body text-charcoal-900 appearance-none cursor-pointer"
   }, /*#__PURE__*/React.createElement("option", {
     value: ""
   }, "Select a service..."), /*#__PURE__*/React.createElement("option", null, "Silicone Rendering"), /*#__PURE__*/React.createElement("option", null, "Monocouche Rendering"), /*#__PURE__*/React.createElement("option", null, "External Wall Insulation"), /*#__PURE__*/React.createElement("option", null, "Internal Plastering"), /*#__PURE__*/React.createElement("option", null, "Dry Lining"), /*#__PURE__*/React.createElement("option", null, "Multiple Services"))), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("label", {
+    htmlFor: "contact-message",
     className: "block text-xs font-bold tracking-[0.15em] uppercase text-charcoal-900 mb-3"
   }, "Project Details *"), /*#__PURE__*/React.createElement("textarea", {
+    id: "contact-message",
     value: form.message,
     onChange: e => handleChange('message', e.target.value),
     rows: "4",
@@ -3779,8 +3795,10 @@ function CostCalculatorSection() {
   }, /*#__PURE__*/React.createElement("div", {
     className: "grid md:grid-cols-3 gap-8 mb-12"
   }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("label", {
+    htmlFor: "calc-service-type",
     className: "block font-display text-sm font-bold text-charcoal-900 mb-4"
   }, "Service Type"), /*#__PURE__*/React.createElement("select", {
+    id: "calc-service-type",
     value: serviceType,
     onChange: e => setServiceType(e.target.value),
     className: "calculator-input w-full px-4 py-3 rounded-lg bg-white text-charcoal-900 font-body text-sm"
@@ -3795,16 +3813,20 @@ function CostCalculatorSection() {
   }, "Internal Plastering"), /*#__PURE__*/React.createElement("option", {
     value: "drylining"
   }, "Dry Lining"))), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("label", {
+    htmlFor: "calc-area",
     className: "block font-display text-sm font-bold text-charcoal-900 mb-4"
   }, "Area (m\xB2)"), /*#__PURE__*/React.createElement("input", {
+    id: "calc-area",
     type: "number",
     value: squareMetres,
     onChange: e => setSquareMetres(Math.max(1, Number(e.target.value))),
     min: "1",
     className: "calculator-input w-full px-4 py-3 rounded-lg bg-white text-charcoal-900 font-body text-sm"
   })), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("label", {
+    htmlFor: "calc-quality-level",
     className: "block font-display text-sm font-bold text-charcoal-900 mb-4"
   }, "Quality Level"), /*#__PURE__*/React.createElement("select", {
+    id: "calc-quality-level",
     value: costLevel,
     onChange: e => setCostLevel(e.target.value),
     className: "calculator-input w-full px-4 py-3 rounded-lg bg-white text-charcoal-900 font-body text-sm"
