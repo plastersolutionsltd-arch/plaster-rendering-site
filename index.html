@@ -906,13 +906,16 @@
         }
 
         .accordion-content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.5s cubic-bezier(0.16, 1, 0.3, 1), padding 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+            display: grid;
+            grid-template-rows: 0fr;
+            transition: grid-template-rows 0.5s cubic-bezier(0.16, 1, 0.3, 1);
         }
-
+        .accordion-content > * {
+            overflow: hidden;
+            min-height: 0;
+        }
         .accordion-content.open {
-            max-height: 800px;
+            grid-template-rows: 1fr;
         }
 
         .nav-blur {
@@ -1598,6 +1601,13 @@ const {
   useContext
 } = React;
 
+// Responsive image srcset helper — serves 600px version on mobile, full on desktop
+function imgSrcSet(src) {
+  var mobile = src.replace('.webp', '-m.webp');
+  return mobile + ' 600w, ' + src + ' 1000w';
+}
+var GALLERY_SIZES = '(max-width: 640px) 100vw, 50vw';
+
 // ============================================================
 // CONTEXT
 // ============================================================
@@ -1717,25 +1727,20 @@ function BeforeAfterSlider({
     draggable: "false",
     width: "800",
     height: "600"
-  }), /*#__PURE__*/React.createElement("div", {
-    className: "absolute inset-0 overflow-hidden",
-    style: {
-      width: `${sliderPosition}%`
-    },
-    onMouseDown: handleMouseDown,
-    onTouchStart: handleTouchStart
-  }, /*#__PURE__*/React.createElement("img", {
+  }), /*#__PURE__*/React.createElement("img", {
     loading: "lazy",
     src: beforeImage,
     alt: `${beforeLabel}: ${altText}`,
-    className: "h-full object-cover",
+    className: "absolute inset-0 w-full h-full object-cover",
     draggable: "false",
     width: "800",
     height: "600",
     style: {
-      width: sliderRef.current ? `${sliderRef.current.offsetWidth}px` : '100%'
-    }
-  })), /*#__PURE__*/React.createElement("div", {
+      clipPath: `inset(0 ${100 - sliderPosition}% 0 0)`
+    },
+    onMouseDown: handleMouseDown,
+    onTouchStart: handleTouchStart
+  }), /*#__PURE__*/React.createElement("div", {
     className: "absolute top-0 bottom-0 w-1 bg-lime-500 cursor-col-resize hover:w-2 transition-all duration-200 shadow-lg",
     style: {
       left: `${sliderPosition}%`,
@@ -2859,6 +2864,8 @@ function ServiceDetailPage({
   }), /*#__PURE__*/React.createElement("img", {
     loading: i === 0 ? 'eager' : 'lazy',
     src: img.src,
+    srcSet: imgSrcSet(img.src),
+    sizes: GALLERY_SIZES,
     alt: img.alt,
     className: "w-full h-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.04]"
   }), /*#__PURE__*/React.createElement("div", {
@@ -3476,6 +3483,8 @@ function ServiceDetailPage({
   }), /*#__PURE__*/React.createElement("img", {
     loading: "lazy",
     src: service.galleryImages[0].src,
+    srcSet: imgSrcSet(service.galleryImages[0].src),
+    sizes: GALLERY_SIZES,
     alt: service.galleryImages[0].alt,
     className: "w-full h-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.04]"
   }), /*#__PURE__*/React.createElement("div", {
@@ -3504,6 +3513,8 @@ function ServiceDetailPage({
   }), /*#__PURE__*/React.createElement("img", {
     loading: "lazy",
     src: img.src,
+    srcSet: imgSrcSet(img.src),
+    sizes: GALLERY_SIZES,
     alt: img.alt,
     className: "w-full h-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.04]"
   }), /*#__PURE__*/React.createElement("div", {
@@ -3527,6 +3538,8 @@ function ServiceDetailPage({
   }), /*#__PURE__*/React.createElement("img", {
     loading: "lazy",
     src: service.galleryImages[3].src,
+    srcSet: imgSrcSet(service.galleryImages[3].src),
+    sizes: '(max-width: 640px) 100vw, 80vw',
     alt: service.galleryImages[3].alt,
     className: "w-full h-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.02]"
   }), /*#__PURE__*/React.createElement("div", {
@@ -3564,6 +3577,8 @@ function ServiceDetailPage({
   }), /*#__PURE__*/React.createElement("img", {
     loading: "lazy",
     src: img.src,
+    srcSet: imgSrcSet(img.src),
+    sizes: GALLERY_SIZES,
     alt: img.alt,
     className: "w-full h-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.04]"
   }), /*#__PURE__*/React.createElement("div", {
@@ -3785,6 +3800,8 @@ function HomePage() {
   }, /*#__PURE__*/React.createElement("img", {
     loading: "lazy",
     src: "./images/case-studies/IMG_4912.webp",
+    srcSet: imgSrcSet("images/case-studies/IMG_4912.webp"),
+    sizes: GALLERY_SIZES,
     alt: "External rendering project completed by P&R Solutions on Sheffield property \u2014 silicone render and EWI specialists",
     className: "w-full h-auto object-cover",
     width: "800",
@@ -5656,6 +5673,8 @@ function PortfolioPage() {
   }, /*#__PURE__*/React.createElement("img", {
     loading: "lazy",
     src: project.image,
+    srcSet: imgSrcSet(project.image),
+    sizes: GALLERY_SIZES,
     alt: `${project.title} - ${project.location}`,
     className: "w-full h-full object-cover group-hover:scale-105 transition-transform duration-500",
     width: "800",
