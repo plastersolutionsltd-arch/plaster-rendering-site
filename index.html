@@ -382,7 +382,6 @@
     <!-- Scripts: all deferred — download in parallel, execute after HTML parsed, never block rendering -->
     <script src="/react.production.min.js" defer></script>
     <script src="/react-dom.production.min.js" defer></script>
-    <script src="/seo-routes-config.js" defer></script>
     <script src="/app.min.js" defer></script>
 
     <!-- Compiled Tailwind CSS: async so it never blocks FCP -->
@@ -677,48 +676,61 @@
             }
         }
 
+        /* Safety fallback: if JS never adds .visible, force reveal after 3s */
+        @keyframes anim-fallback {
+            to { opacity: 1; transform: none; }
+        }
+
         .animate-on-scroll {
             opacity: 0;
             transform: translateY(40px);
             transition: all 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+            animation: anim-fallback 0.01s 3s forwards;
         }
 
         .animate-on-scroll.visible {
             opacity: 1;
             transform: translateY(0);
+            animation: none;
         }
 
         .animate-on-scroll-left {
             opacity: 0;
             transform: translateX(-60px);
             transition: all 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+            animation: anim-fallback 0.01s 3s forwards;
         }
 
         .animate-on-scroll-left.visible {
             opacity: 1;
             transform: translateX(0);
+            animation: none;
         }
 
         .animate-on-scroll-right {
             opacity: 0;
             transform: translateX(60px);
             transition: all 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+            animation: anim-fallback 0.01s 3s forwards;
         }
 
         .animate-on-scroll-right.visible {
             opacity: 1;
             transform: translateX(0);
+            animation: none;
         }
 
         .animate-scale {
             opacity: 0;
             transform: scale(0.92);
             transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+            animation: anim-fallback 0.01s 3s forwards;
         }
 
         .animate-scale.visible {
             opacity: 1;
             transform: scale(1);
+            animation: none;
         }
 
         /* Gallery image reveal — clip-path wipe from left */
