@@ -11,8 +11,6 @@ Allow: /dry-lining/
 Allow: /faq/
 Allow: /contact/
 Allow: /portfolio/
-Allow: /privacy/
-Allow: /terms/
 
 # Disallow nothing - site is fully crawlable
 Disallow:
