@@ -4,6 +4,7 @@
 User-agent: *
 Allow: /
 Allow: /silicone-render/
+Allow: /silicone-render-sheffield
 Allow: /monocouche-render/
 Allow: /internal-plastering/
 Allow: /external-wall-insulation/
