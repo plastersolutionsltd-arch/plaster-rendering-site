@@ -3,6 +3,10 @@
   "outputDirectory": ".",
   "framework": null,
   "cleanUrls": true,
+  "redirects": [
+    { "source": "/silicone-render/", "destination": "/silicone-render-sheffield", "permanent": true },
+    { "source": "/silicone-render",  "destination": "/silicone-render-sheffield", "permanent": true }
+  ],
   "rewrites": [
     { "source": "/", "destination": "/index.html" },
     { "source": "/monocouche-render/", "destination": "/index.html" },
