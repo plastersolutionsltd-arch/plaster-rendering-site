@@ -3,13 +3,15 @@
   "outputDirectory": ".",
   "framework": null,
   "redirects": [
-    { "source": "/silicone-render/", "destination": "/silicone-render-sheffield", "permanent": true },
-    { "source": "/silicone-render",  "destination": "/silicone-render-sheffield", "permanent": true }
+    { "source": "/silicone-render/",   "destination": "/silicone-render-sheffield",   "permanent": true },
+    { "source": "/silicone-render",    "destination": "/silicone-render-sheffield",   "permanent": true },
+    { "source": "/monocouche-render/", "destination": "/monocouche-render-sheffield", "permanent": true },
+    { "source": "/monocouche-render",  "destination": "/monocouche-render-sheffield", "permanent": true }
   ],
   "rewrites": [
     { "source": "/", "destination": "/index.html" },
-    { "source": "/silicone-render-sheffield", "destination": "/silicone-render-sheffield.html" },
-    { "source": "/monocouche-render/", "destination": "/index.html" },
+    { "source": "/silicone-render-sheffield",   "destination": "/silicone-render-sheffield.html" },
+    { "source": "/monocouche-render-sheffield", "destination": "/monocouche-render-sheffield.html" },
     { "source": "/external-wall-insulation/", "destination": "/index.html" },
     { "source": "/internal-plastering/", "destination": "/index.html" },
     { "source": "/dry-lining/", "destination": "/index.html" },

@@ -6,6 +6,7 @@ Allow: /
 Allow: /silicone-render/
 Allow: /silicone-render-sheffield
 Allow: /monocouche-render/
+Allow: /monocouche-render-sheffield
 Allow: /internal-plastering/
 Allow: /external-wall-insulation/
 Allow: /dry-lining/
