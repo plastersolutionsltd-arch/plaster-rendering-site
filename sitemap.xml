@@ -5,12 +5,12 @@
     <!-- Homepage -->
     <url>
         <loc>https://www.plasterandrenderingsolutions.co.uk/</loc>
-        <lastmod>2026-03-07</lastmod>
+        <lastmod>2026-03-11</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
 
-    <!-- Silicone Render -->
+    <!-- Silicone Render — standalone page -->
     <url>
         <loc>https://www.plasterandrenderingsolutions.co.uk/silicone-render-sheffield</loc>
         <lastmod>2026-03-11</lastmod>
@@ -18,57 +18,70 @@
         <priority>0.9</priority>
         <image:image>
             <image:loc>https://www.plasterandrenderingsolutions.co.uk/images/hero/silicone-service.webp</image:loc>
+            <image:title>Silicone Render Sheffield — Plaster and Rendering Solutions</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://www.plasterandrenderingsolutions.co.uk/images/case-studies/case/stannington-silicone.webp</image:loc>
+            <image:title>Silicone render project in Stannington, Sheffield</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://www.plasterandrenderingsolutions.co.uk/images/case-studies/case/chesterfield-silicone2.webp</image:loc>
+            <image:title>Silicone render project in Ecclesall S11, Sheffield</image:title>
         </image:image>
     </url>
 
     <!-- Monocouche Render -->
     <url>
         <loc>https://www.plasterandrenderingsolutions.co.uk/monocouche-render/</loc>
-        <lastmod>2026-03-07</lastmod>
+        <lastmod>2026-03-11</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
         <image:image>
             <image:loc>https://www.plasterandrenderingsolutions.co.uk/images/hero/monocouche%20service.webp</image:loc>
-        </image:image>
-    </url>
-
-    <!-- Internal Plastering -->
-    <url>
-        <loc>https://www.plasterandrenderingsolutions.co.uk/internal-plastering/</loc>
-        <lastmod>2026-03-07</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-        <image:image>
-            <image:loc>https://www.plasterandrenderingsolutions.co.uk/images/hero/plasteringhero.webp</image:loc>
+            <image:title>Monocouche render Sheffield — Plaster and Rendering Solutions</image:title>
         </image:image>
     </url>
 
     <!-- External Wall Insulation -->
     <url>
         <loc>https://www.plasterandrenderingsolutions.co.uk/external-wall-insulation/</loc>
-        <lastmod>2026-03-07</lastmod>
+        <lastmod>2026-03-11</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
         <image:image>
             <image:loc>https://www.plasterandrenderingsolutions.co.uk/images/hero/IMG_3979.webp</image:loc>
+            <image:title>External wall insulation Sheffield — Plaster and Rendering Solutions</image:title>
+        </image:image>
+    </url>
+
+    <!-- Internal Plastering -->
+    <url>
+        <loc>https://www.plasterandrenderingsolutions.co.uk/internal-plastering/</loc>
+        <lastmod>2026-03-11</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://www.plasterandrenderingsolutions.co.uk/images/hero/plasteringhero.webp</image:loc>
+            <image:title>Internal plastering Sheffield — Plaster and Rendering Solutions</image:title>
         </image:image>
     </url>
 
     <!-- Dry Lining -->
     <url>
         <loc>https://www.plasterandrenderingsolutions.co.uk/dry-lining/</loc>
-        <lastmod>2026-03-07</lastmod>
+        <lastmod>2026-03-11</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
         <image:image>
             <image:loc>https://www.plasterandrenderingsolutions.co.uk/images/case-studies/drylining-service.webp</image:loc>
+            <image:title>Dry lining Sheffield — Plaster and Rendering Solutions</image:title>
         </image:image>
     </url>
 
     <!-- Project Gallery / Portfolio -->
     <url>
         <loc>https://www.plasterandrenderingsolutions.co.uk/portfolio/</loc>
-        <lastmod>2026-03-07</lastmod>
+        <lastmod>2026-03-11</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -76,7 +89,7 @@
     <!-- FAQ -->
     <url>
         <loc>https://www.plasterandrenderingsolutions.co.uk/faq/</loc>
-        <lastmod>2026-03-07</lastmod>
+        <lastmod>2026-03-11</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -84,7 +97,7 @@
     <!-- Contact -->
     <url>
         <loc>https://www.plasterandrenderingsolutions.co.uk/contact/</loc>
-        <lastmod>2026-03-07</lastmod>
+        <lastmod>2026-03-11</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
