@@ -10,6 +10,7 @@
     { "source": "/ewi-sheffield/",            "destination": "/ewi-sheffield",               "permanent": true },
     { "source": "/ewi/",                      "destination": "/ewi-sheffield",               "permanent": true },
     { "source": "/ewi",                       "destination": "/ewi-sheffield",               "permanent": true },
+    { "source": "/external-wall-insulation/", "destination": "/ewi-sheffield",               "permanent": true },
     { "source": "/external-wall-insulation",  "destination": "/ewi-sheffield",               "permanent": true }
   ],
   "rewrites": [
@@ -17,7 +18,6 @@
     { "source": "/silicone-render-sheffield",   "destination": "/silicone-render-sheffield.html" },
     { "source": "/monocouche-render-sheffield", "destination": "/monocouche-render-sheffield.html" },
     { "source": "/ewi-sheffield",               "destination": "/ewi-sheffield.html" },
-    { "source": "/external-wall-insulation/", "destination": "/index.html" },
     { "source": "/internal-plastering/", "destination": "/index.html" },
     { "source": "/dry-lining/", "destination": "/index.html" },
     { "source": "/services/", "destination": "/index.html" },
