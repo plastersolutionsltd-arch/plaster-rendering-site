@@ -54,15 +54,27 @@
         </image:image>
     </url>
 
-    <!-- External Wall Insulation -->
+    <!-- External Wall Insulation — standalone page -->
     <url>
-        <loc>https://www.plasterandrenderingsolutions.co.uk/external-wall-insulation/</loc>
-        <lastmod>2026-03-11</lastmod>
+        <loc>https://www.plasterandrenderingsolutions.co.uk/ewi-sheffield</loc>
+        <lastmod>2026-03-12</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.9</priority>
         <image:image>
             <image:loc>https://www.plasterandrenderingsolutions.co.uk/images/hero/IMG_3979.webp</image:loc>
-            <image:title>External wall insulation Sheffield — Plaster and Rendering Solutions</image:title>
+            <image:title>External wall insulation Sheffield — P&amp;R Solutions EWI specialists</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://www.plasterandrenderingsolutions.co.uk/images/case-studies/ewi%20grenoside.webp</image:loc>
+            <image:title>EWI system on semi-detached house in Grenoside S35, Sheffield</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://www.plasterandrenderingsolutions.co.uk/images/case-studies/case/bentsgreen-ewi.webp</image:loc>
+            <image:title>External wall insulation on detached property in Bents Green S11, Sheffield</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://www.plasterandrenderingsolutions.co.uk/images/case-studies/greenhill-ewi.webp</image:loc>
+            <image:title>Completed EWI system with silicone render on Greenhill Sheffield property</image:title>
         </image:image>
     </url>
 
