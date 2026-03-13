@@ -9,6 +9,8 @@ Allow: /monocouche-render/
 Allow: /monocouche-render-sheffield
 Allow: /ewi-sheffield
 Allow: /ewi/
+Allow: /plastering-sheffield
+Allow: /plastering/
 Allow: /internal-plastering/
 Allow: /external-wall-insulation/
 Allow: /dry-lining/

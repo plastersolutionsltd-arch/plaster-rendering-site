@@ -78,6 +78,30 @@
         </image:image>
     </url>
 
+    <!-- Plastering Sheffield — standalone page -->
+    <url>
+        <loc>https://www.plasterandrenderingsolutions.co.uk/plastering-sheffield</loc>
+        <lastmod>2026-03-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://www.plasterandrenderingsolutions.co.uk/images/hero/plasteringhero.webp</image:loc>
+            <image:title>Plastering Sheffield — Plaster and Rendering Solutions</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://www.plasterandrenderingsolutions.co.uk/images/case-studies/plastering%20s10.webp</image:loc>
+            <image:title>Full room plaster skim finish in S10, Sheffield</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://www.plasterandrenderingsolutions.co.uk/images/case-studies/chapletown-plastering.webp</image:loc>
+            <image:title>Plastering project in Chapeltown S35, Sheffield</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://www.plasterandrenderingsolutions.co.uk/images/case-studies/sheffield-plastering.webp</image:loc>
+            <image:title>Professional plastering project in Sheffield by P&amp;R Solutions</image:title>
+        </image:image>
+    </url>
+
     <!-- Internal Plastering -->
     <url>
         <loc>https://www.plasterandrenderingsolutions.co.uk/internal-plastering/</loc>

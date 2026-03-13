@@ -3,6 +3,9 @@
   "outputDirectory": ".",
   "framework": null,
   "redirects": [
+    { "source": "/plastering-sheffield/",      "destination": "/plastering-sheffield",        "permanent": true },
+    { "source": "/plastering/",               "destination": "/plastering-sheffield",        "permanent": true },
+    { "source": "/plastering",                "destination": "/plastering-sheffield",        "permanent": true },
     { "source": "/silicone-render/",          "destination": "/silicone-render-sheffield",   "permanent": true },
     { "source": "/silicone-render",           "destination": "/silicone-render-sheffield",   "permanent": true },
     { "source": "/monocouche-render/",        "destination": "/monocouche-render-sheffield", "permanent": true },
@@ -18,6 +21,7 @@
     { "source": "/silicone-render-sheffield",   "destination": "/silicone-render-sheffield.html" },
     { "source": "/monocouche-render-sheffield", "destination": "/monocouche-render-sheffield.html" },
     { "source": "/ewi-sheffield",               "destination": "/ewi-sheffield.html" },
+    { "source": "/plastering-sheffield",        "destination": "/plastering-sheffield.html" },
     { "source": "/internal-plastering/", "destination": "/index.html" },
     { "source": "/dry-lining/", "destination": "/index.html" },
     { "source": "/services/", "destination": "/index.html" },
