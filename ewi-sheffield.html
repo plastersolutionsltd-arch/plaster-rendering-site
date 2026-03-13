@@ -377,7 +377,24 @@
 <!-- ══════════════════════════════════════════════════
      NAV
      ══════════════════════════════════════════════════ -->
-<nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-slate-100">
+<!-- ANNOUNCEMENT BAR -->
+<div id="ann-bar" class="fixed left-0 right-0 flex items-center justify-center" style="top:0;z-index:60;background:#1a1a1a;height:44px">
+  <div class="font-display text-xs font-medium px-10 text-center" style="color:rgba(255,255,255,0.75);letter-spacing:0.04em">
+    <span style="color:#00FF00;font-weight:700">✓ No deposit required</span>
+    <span class="hidden sm:inline">&nbsp;&nbsp;·&nbsp;&nbsp;Currently booking May–June 2026&nbsp;&nbsp;·&nbsp;&nbsp;<a href="tel:+447595399525" style="color:#00FF00;font-weight:700;text-decoration:none">07595 399525</a></span>
+    <a href="tel:+447595399525" class="sm:hidden" style="color:#00FF00;font-weight:700;text-decoration:none">&nbsp;·&nbsp;Call now</a>
+  </div>
+  <button onclick="closeAnnBar()" style="position:absolute;right:12px;background:none;border:none;cursor:pointer;color:rgba(255,255,255,0.3);font-size:20px;line-height:1;padding:2px 6px" aria-label="Dismiss">&times;</button>
+</div>
+<script>
+  function closeAnnBar() {
+    document.getElementById('ann-bar').style.display = 'none';
+    document.getElementById('site-nav').style.top = '0';
+    document.getElementById('hero-sect').style.paddingTop = '80px';
+  }
+</script>
+
+<nav id="site-nav" class="fixed left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-slate-100" style="top:44px">
   <div class="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between h-20">
     <!-- Logo -->
     <a href="/" class="flex items-center gap-3 no-underline">
@@ -421,7 +438,7 @@
 <!-- ══════════════════════════════════════════════════
      HERO
      ══════════════════════════════════════════════════ -->
-<section style="padding-top:80px">
+<section id="hero-sect" style="padding-top:124px">
   <div class="relative min-h-screen flex items-end overflow-hidden bg-black">
     <picture>
       <source media="(max-width:768px)" srcset="images/hero/IMG_3979-m.webp" type="image/webp">
