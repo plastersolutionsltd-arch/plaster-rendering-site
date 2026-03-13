@@ -102,18 +102,6 @@
         </image:image>
     </url>
 
-    <!-- Internal Plastering -->
-    <url>
-        <loc>https://www.plasterandrenderingsolutions.co.uk/internal-plastering/</loc>
-        <lastmod>2026-03-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-        <image:image>
-            <image:loc>https://www.plasterandrenderingsolutions.co.uk/images/hero/plasteringhero.webp</image:loc>
-            <image:title>Internal plastering Sheffield — Plaster and Rendering Solutions</image:title>
-        </image:image>
-    </url>
-
     <!-- Dry Lining -->
     <url>
         <loc>https://www.plasterandrenderingsolutions.co.uk/dry-lining/</loc>
