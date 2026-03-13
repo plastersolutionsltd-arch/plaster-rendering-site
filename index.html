@@ -953,6 +953,7 @@
             -webkit-backdrop-filter: blur(20px);
             background: rgba(255, 255, 255, 0.9);
             transition: all 0.3s ease;
+            top: 44px !important;
         }
 
         .nav-scrolled {
@@ -1583,6 +1584,30 @@
 </head>
 
 <body>
+
+<!-- ANNOUNCEMENT BAR -->
+<div id="ann-bar" style="position:fixed;top:0;left:0;right:0;z-index:60;background:#1a1a1a;height:44px;display:flex;align-items:center;justify-content:center">
+  <div style="font-family:'Outfit',sans-serif;font-size:0.75rem;font-weight:500;color:rgba(255,255,255,0.75);letter-spacing:0.04em;text-align:center;padding:0 40px">
+    <span style="color:#00FF00;font-weight:700">✓ No deposit required</span>
+    <span id="ann-bar-full">&nbsp;&nbsp;·&nbsp;&nbsp;Currently booking May–June 2026&nbsp;&nbsp;·&nbsp;&nbsp;<a href="tel:+447595399525" style="color:#00FF00;font-weight:700;text-decoration:none">07595 399525</a></span>
+    <a href="tel:+447595399525" id="ann-bar-mobile" style="color:#00FF00;font-weight:700;text-decoration:none;display:none">&nbsp;·&nbsp;Call now</a>
+  </div>
+  <button onclick="closeAnnBar()" style="position:absolute;right:12px;background:none;border:none;cursor:pointer;color:rgba(255,255,255,0.3);font-size:20px;line-height:1;padding:2px 6px" aria-label="Dismiss">&times;</button>
+</div>
+<script>
+  (function() {
+    if (window.innerWidth < 640) {
+      document.getElementById('ann-bar-full').style.display = 'none';
+      document.getElementById('ann-bar-mobile').style.display = 'inline';
+    }
+  })();
+  function closeAnnBar() {
+    document.getElementById('ann-bar').style.display = 'none';
+    var nav = document.querySelector('.nav-blur');
+    if (nav) nav.style.top = '0';
+  }
+</script>
+
     <div id="root"><main aria-label="Static content for search engines" style="font-family:sans-serif;max-width:1200px;margin:0 auto;padding:20px">
   <img src="/images/case-studies/IMG_0291.webp" alt="Sheffield plastering and rendering services by P&R Solutions" width="1400" height="700" fetchpriority="high" style="width:100%;height:auto;display:block;" />
   <h1>Sheffield Plasterer &amp; Rendering Specialists | P&amp;R Solutions</h1>
