@@ -30,7 +30,8 @@
     { "source": "/how-we-apply/", "destination": "/index.html" },
     { "source": "/pricing/", "destination": "/index.html" },
     { "source": "/warranties/", "destination": "/index.html" },
-    { "source": "/faq/", "destination": "/index.html" },
+    { "source": "/faq/", "destination": "/faq.html" },
+    { "source": "/faq",  "destination": "/faq.html" },
     { "source": "/contact/", "destination": "/index.html" }
   ],
   "headers": [
