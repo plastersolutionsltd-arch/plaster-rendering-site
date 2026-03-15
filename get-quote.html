@@ -211,7 +211,14 @@
     .logo-item { display: flex; align-items: center; justify-content: center; height: 80px; opacity: 0.8; transition: all 0.3s ease; }
     .logo-item:hover { opacity: 1; transform: scale(1.05); }
     .logo-item img { max-width: 100%; max-height: 100%; object-fit: contain; }
-  </style>
+      /* ============ FOOTER ============ */
+    footer { background: #0a0a0a; color: #999; padding: 60px 24px 30px; margin-top: 80px; }
+    .footer-inner { max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 40px; }
+    footer h4 { color: #fff; font-size: 15px; font-weight: 600; margin-bottom: 16px; }
+    footer a { display: block; font-size: 14px; color: #777; padding: 4px 0; text-decoration: none; transition: color 0.3s; }
+    footer a:hover { color: #37D413; }
+    .footer-bottom { max-width: 1280px; margin: 40px auto 0; padding-top: 24px; border-top: 1px solid #222; text-align: center; font-size: 13px; color: #555; }
+</style>
 </head>
 <body>
   <!-- ===== NAVIGATION ===== -->
@@ -586,32 +593,35 @@
   </section>
 
   <!-- ===== FOOTER ===== -->
-  <footer style="background: #1a1a1a; color: white; padding: 40px 20px; text-align: center;">
-    <div style="max-width: 1200px; margin: 0 auto; padding-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,0.1);">
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 40px; text-align: left;">
-        <div>
-          <h4 style="color: white; margin-bottom: 16px;">Plaster & Rendering Solutions</h4>
-          <p style="color: #999; font-size: 14px;">Professional plastering and rendering services across Sheffield, Derbyshire, and South Yorkshire.</p>
-        </div>
-        <div>
-          <h4 style="color: white; margin-bottom: 16px;">Services</h4>
-          <ul style="list-style: none; color: #999; font-size: 14px;">
-            <li style="margin-bottom: 8px;"><a href="services/silicone-render.html" style="color: #999; text-decoration: none;">Silicone Rendering</a></li>
-            <li style="margin-bottom: 8px;"><a href="services/monocouche-render.html" style="color: #999; text-decoration: none;">Monocouche Render</a></li>
-            <li style="margin-bottom: 8px;"><a href="services/ewi-systems.html" style="color: #999; text-decoration: none;">EWI Systems</a></li>
-            <li style="margin-bottom: 8px;"><a href="services/internal-plastering.html" style="color: #999; text-decoration: none;">Internal Plastering</a></li>
-            <li><a href="projects.html" style="color: #999; text-decoration: none;">Our Projects</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 style="color: white; margin-bottom: 16px;">Contact</h4>
-          <p style="color: #999; font-size: 14px; margin-bottom: 8px;">📧 <a href="mailto:plastersolutionsltd@gmail.com" style="color: #37D413; text-decoration: none;">plastersolutionsltd@gmail.com</a></p>
-          <p style="color: #999; font-size: 14px; margin-bottom: 8px;">📍 Sheffield, Derbyshire & South Yorkshire</p>
-          <p style="color: #999; font-size: 14px;">☎️ Update with your phone number</p>
-        </div>
+    <footer>
+    <div class="footer-inner">
+      <div>
+        <h4>Services</h4>
+        <a href="services/silicone-render.html">Silicone Render</a>
+        <a href="services/monocouche-render.html">Monocouche Render</a>
+        <a href="services/ewi-systems.html">EWI Systems</a>
+        <a href="services/internal-plastering.html">Internal Plastering</a>
+        <a href="projects.html">Our Projects</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="faq.html">FAQ</a>
+        <a href="get-quote.html" style="color:#37D413;font-weight:600">Get Free Quote</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="company-policy.html">Company Policy</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="tel:07595399525">📞 07595 399 525</a>
+        <a href="mailto:plastersolutionsltd@gmail.com">✉️ plastersolutionsltd@gmail.com</a>
+        <a href="#">📍 3 Rocher Close, Grenoside, Sheffield S35 8QP</a>
+        <p style="font-size:13px;color:#666;margin-top:8px">Mon–Fri: 8am–8pm | Sat: 9am–1pm | Sun: Closed</p>
       </div>
     </div>
-    <p style="color: #999; font-size: 13px; margin-top: 20px;">© 2026 Plaster & Rendering Solutions Ltd. All rights reserved.</p>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Plaster &amp; Rendering Solutions Ltd. All rights reserved.</p>
+    </div>
   </footer>
 
   <script>

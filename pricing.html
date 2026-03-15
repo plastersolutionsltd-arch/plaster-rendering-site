@@ -626,7 +626,14 @@
       .cta-buttons { flex-direction: column; }
       .cta-btn { width: 100%; }
     }
-  </style>
+      /* ============ FOOTER ============ */
+    footer { background: #0a0a0a; color: #999; padding: 60px 24px 30px; margin-top: 80px; }
+    .footer-inner { max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 40px; }
+    footer h4 { color: #fff; font-size: 15px; font-weight: 600; margin-bottom: 16px; }
+    footer a { display: block; font-size: 14px; color: #777; padding: 4px 0; text-decoration: none; transition: color 0.3s; }
+    footer a:hover { color: #37D413; }
+    .footer-bottom { max-width: 1280px; margin: 40px auto 0; padding-top: 24px; border-top: 1px solid #222; text-align: center; font-size: 13px; color: #555; }
+</style>
 </head>
 <body>
 
@@ -934,5 +941,35 @@
     });
   </script>
 
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <h4>Services</h4>
+        <a href="services/silicone-render.html">Silicone Render</a>
+        <a href="services/monocouche-render.html">Monocouche Render</a>
+        <a href="services/ewi-systems.html">EWI Systems</a>
+        <a href="services/internal-plastering.html">Internal Plastering</a>
+        <a href="projects.html">Our Projects</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="faq.html">FAQ</a>
+        <a href="get-quote.html" style="color:#37D413;font-weight:600">Get Free Quote</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="company-policy.html">Company Policy</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="tel:07595399525">📞 07595 399 525</a>
+        <a href="mailto:plastersolutionsltd@gmail.com">✉️ plastersolutionsltd@gmail.com</a>
+        <a href="#">📍 3 Rocher Close, Grenoside, Sheffield S35 8QP</a>
+        <p style="font-size:13px;color:#666;margin-top:8px">Mon–Fri: 8am–8pm | Sat: 9am–1pm | Sun: Closed</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Plaster &amp; Rendering Solutions Ltd. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
