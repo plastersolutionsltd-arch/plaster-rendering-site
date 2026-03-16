@@ -14,6 +14,8 @@ Allow: /plastering/
 Allow: /internal-plastering/
 Allow: /external-wall-insulation/
 Allow: /dry-lining/
+Allow: /dry-lining-sheffield
+Allow: /pricing
 Allow: /faq/
 Allow: /contact/
 Allow: /portfolio/

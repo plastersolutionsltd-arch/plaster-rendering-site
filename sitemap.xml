@@ -5,7 +5,7 @@
     <!-- Homepage -->
     <url>
         <loc>https://www.plasterandrenderingsolutions.co.uk/</loc>
-        <lastmod>2026-03-11</lastmod>
+        <lastmod>2026-03-16</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -102,16 +102,24 @@
         </image:image>
     </url>
 
-    <!-- Dry Lining -->
+    <!-- Dry Lining — standalone page -->
     <url>
-        <loc>https://www.plasterandrenderingsolutions.co.uk/dry-lining/</loc>
-        <lastmod>2026-03-11</lastmod>
+        <loc>https://www.plasterandrenderingsolutions.co.uk/dry-lining-sheffield</loc>
+        <lastmod>2026-03-15</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.9</priority>
         <image:image>
             <image:loc>https://www.plasterandrenderingsolutions.co.uk/images/case-studies/drylining-service.webp</image:loc>
-            <image:title>Dry lining Sheffield — Plaster and Rendering Solutions</image:title>
+            <image:title>Dry lining Sheffield — Dot and dab, stud partitions and ceiling boarding by P&amp;R Solutions</image:title>
         </image:image>
+    </url>
+
+    <!-- Pricing Guide -->
+    <url>
+        <loc>https://www.plasterandrenderingsolutions.co.uk/pricing</loc>
+        <lastmod>2026-03-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
 
     <!-- Project Gallery / Portfolio -->
