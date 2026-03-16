@@ -29,6 +29,8 @@
     { "source": "/plastering-sheffield",        "destination": "/plastering-sheffield.html" },
     { "source": "/dry-lining-sheffield",        "destination": "/dry-lining-sheffield.html" },
     { "source": "/pricing",                     "destination": "/pricing.html" },
+    { "source": "/get-quote",                   "destination": "/get-quote.html" },
+    { "source": "/get-quote/",                  "destination": "/get-quote.html" },
     { "source": "/services/", "destination": "/index.html" },
     { "source": "/portfolio/", "destination": "/index.html" },
     { "source": "/how-we-apply/", "destination": "/index.html" },
