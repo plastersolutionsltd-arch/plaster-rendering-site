@@ -1,0 +1,253 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom animations */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    opacity: 0;
+    transform: scale(0.94);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.reveal {
+  opacity: 0;
+}
+
+.reveal.visible {
+  animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.reveal-left {
+  opacity: 0;
+}
+
+.reveal-left.visible {
+  animation: fadeLeft 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.reveal-right {
+  opacity: 0;
+}
+
+.reveal-right.visible {
+  animation: fadeRight 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.reveal-scale {
+  opacity: 0;
+}
+
+.reveal-scale.visible {
+  animation: scaleUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.reveal-fade {
+  opacity: 0;
+}
+
+.reveal-fade.visible {
+  animation: fadeIn 1s ease forwards;
+}
+
+.delay-1 {
+  animation-delay: 0.1s !important;
+}
+
+.delay-2 {
+  animation-delay: 0.22s !important;
+}
+
+.delay-3 {
+  animation-delay: 0.36s !important;
+}
+
+.delay-4 {
+  animation-delay: 0.5s !important;
+}
+
+.delay-5 {
+  animation-delay: 0.65s !important;
+}
+
+.delay-6 {
+  animation-delay: 0.8s !important;
+}
+
+.hero-img {
+  transform: scale(1.08);
+  transition: transform 8s ease-out;
+}
+
+.hero-img.loaded {
+  transform: scale(1);
+}
+
+.img-hover {
+  overflow: hidden;
+}
+
+.img-hover img {
+  transition: transform 1.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.img-hover:hover img {
+  transform: scale(1.05);
+}
+
+.lime-line {
+  display: inline-block;
+  height: 1.5px;
+  background: #1a1a1a;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.lime-line.lime {
+  background: #00FF00;
+}
+
+.lime-line.visible {
+  transform: scaleX(1);
+}
+
+.exp-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.exp-item.open .exp-body {
+  max-height: 400px;
+}
+
+.exp-arrow {
+  transition: color 0.3s ease, transform 0.35s ease;
+  display: inline-block;
+  line-height: 1;
+}
+
+.exp-item.open .exp-arrow {
+  color: #00FF00;
+  transform: rotate(90deg);
+}
+
+.exp-item.open .exp-title {
+  color: #00FF00;
+}
+
+.faq-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.faq-item.open .faq-body {
+  max-height: 400px;
+}
+
+.faq-icon {
+  transition: background 0.3s, color 0.3s, transform 0.35s;
+}
+
+.faq-item.open .faq-icon {
+  background: #00FF00;
+  border-color: #00FF00;
+  color: #fff;
+  transform: rotate(45deg);
+}
+
+#mobile-menu {
+  display: none;
+}
+
+#mobile-menu.open {
+  display: block;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00FF00;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00CC00;
+}
+
+.svc-card {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s;
+}
+
+.svc-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+}
+
+.svc-card:hover .svc-arrow {
+  transform: translateX(4px);
+  color: #00FF00;
+}
+
+.svc-arrow {
+  transition: transform 0.3s, color 0.3s;
+}
