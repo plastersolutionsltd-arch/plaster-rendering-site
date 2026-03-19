@@ -173,14 +173,29 @@
   <!-- LCP Image Preload -->
   <link rel="preload" as="image" href="/images/case-studies/IMG_0291.webp" type="image/webp" fetchpriority="high" />
 
-  <!-- Tailwind CSS (local minified build) -->
-  <link rel="stylesheet" href="/styles.css">
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'lime':     { 300:'#66ff66', 400:'#33ff33', 500:'#00FF00', 600:'#00CC00' },
+            'charcoal': { 800:'#2d2d2d', 900:'#1a1a1a' }
+          },
+          fontFamily: {
+            display: ['Outfit','sans-serif'],
+            body:    ['Inter','sans-serif']
+          }
+        }
+      }
+    }
+  </script>
 
-  <!-- Fonts (deferred for faster initial load) -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800;900&family=Inter:wght@300;400;500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800;900&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"></noscript>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800;900&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
   <style>
     *,*::before,*::after{box-sizing:border-box}
