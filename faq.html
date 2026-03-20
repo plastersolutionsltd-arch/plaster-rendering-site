@@ -160,7 +160,7 @@
 <body>
 
 <!-- ANNOUNCEMENT BAR -->
-<div id="ann-bar" class="fixed left-0 right-0 flex items-center justify-center" style="top:0;z-index:60;background:#1a1a1a;height:44px">
+<div id="ann-bar" class="fixed left-0 right-0 flex items-center justify-center" style="top:0;z-index:60;background:#1a1a1a;height:44px;border-bottom:1px solid rgba(55,212,19,0.35);box-shadow:0 2px 24px rgba(55,212,19,0.12)">
   <div class="font-display text-xs font-medium px-10 text-center" style="color:rgba(255,255,255,0.75);letter-spacing:0.04em">
     <span style="color:#00FF00;font-weight:700">✓ No deposit required</span>
     <span class="hidden sm:inline">&nbsp;&nbsp;·&nbsp;&nbsp;Currently booking <span id="bk-range"></span>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="tel:+447595399525" style="color:#00FF00;font-weight:700;text-decoration:none">07595 399525</a></span>
@@ -179,34 +179,38 @@
 </script>
 
 <!-- NAV -->
-<nav id="site-nav" class="fixed left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-slate-100" style="top:44px">
+<nav id="site-nav" class="fixed left-0 right-0 z-50 bg-white/95 backdrop-blur-sm" style="top:44px;border-bottom:1px solid rgba(55,212,19,0.15);box-shadow:0 4px 24px rgba(0,0,0,0.06)">
   <div class="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between h-20">
     <a href="/" class="flex items-center gap-3 no-underline">
-      <img src="images/logos/logo-transparent.webp" alt="P&R Solutions" class="h-10 w-auto" width="40" height="40" />
+      <img src="/images/logos/logo-transparent.webp" alt="P&R Solutions" class="h-10 w-auto" width="40" height="40" />
       <span class="font-display font-bold text-charcoal-900 text-sm tracking-tight hidden sm:block">P&amp;R Solutions</span>
     </a>
     <div class="hidden lg:flex items-center gap-8">
-      <a href="/" class="font-display text-sm font-semibold text-charcoal-900 hover: transition-colors no-underline" style="color:#00FF00">Home</a>
-      <a href="/#services" class="font-display text-sm font-semibold text-charcoal-900 hover: transition-colors no-underline" style="color:#00FF00">Services</a>
-      <a href="/portfolio/" class="font-display text-sm font-semibold text-charcoal-900 hover: transition-colors no-underline" style="color:#00FF00">Portfolio</a>
-      <a href="/faq/" class="font-display text-sm font-semibold  no-underline" style="color:#00FF00">FAQ</a>
+      <a href="/" class="font-display text-sm font-semibold no-underline" style="color:#111">Home</a>
+      <a href="/#services" class="font-display text-sm font-semibold hover: transition-colors no-underline" style="color:#111">Services</a>
+      <a href="/#gallery" class="font-display text-sm font-semibold hover: transition-colors no-underline" style="color:#111">Gallery</a>
+      <a href="/#reviews" class="font-display text-sm font-semibold hover: transition-colors no-underline" style="color:#111">Reviews</a>
+      <a href="/#faq" class="font-display text-sm font-semibold hover: transition-colors no-underline" style="color:#111">FAQ</a>
+      <a href="/pricing" class="font-display text-sm font-semibold hover: transition-colors no-underline" style="color:#111">Pricing</a>
     </div>
     <div class="flex items-center gap-3">
-      <a href="tel:+447595399525" class="font-display font-bold text-sm text-charcoal-900 px-5 py-2.5 rounded-lg transition-all duration-200 hover:opacity-90" style="background:#00FF00">Get Quote</a>
-      <button id="burger" onclick="document.getElementById('mobile-menu').classList.toggle('open')" class="lg:hidden flex flex-col justify-center gap-[5px] w-10 h-10 rounded-lg hover:bg-slate-100 transition-colors p-2.5" aria-label="Menu">
-        <span class="block h-0.5 bg-charcoal-900"></span>
-        <span class="block h-0.5 bg-charcoal-900"></span>
-        <span class="block h-0.5 bg-charcoal-900"></span>
+      <a href="/get-quote" class="font-display font-bold text-sm text-charcoal-900 px-5 py-2.5 rounded-lg transition-all duration-200 hover:opacity-90" style="background:#00FF00">Get Quote</a>
+      <button id="burger" onclick="toggleMobileMenu()" class="lg:hidden flex flex-col justify-center gap-[5px] w-10 h-10 rounded-lg hover:bg-slate-100 transition-colors p-2.5" aria-label="Menu">
+        <span id="b1" class="block h-0.5 bg-charcoal-900 transition-all duration-300 origin-center"></span>
+        <span id="b2" class="block h-0.5 bg-charcoal-900 transition-all duration-300"></span>
+        <span id="b3" class="block h-0.5 bg-charcoal-900 transition-all duration-300 origin-center"></span>
       </button>
     </div>
   </div>
   <div id="mobile-menu" class="lg:hidden bg-white border-t border-slate-100 px-6 py-5">
     <div class="flex flex-col gap-5">
-      <a href="/" class="font-display text-base font-semibold text-charcoal-900 hover: no-underline" style="color:#00FF00">Home</a>
-      <a href="/#services" class="font-display text-base font-semibold text-charcoal-900 hover: no-underline" style="color:#00FF00">Services</a>
-      <a href="/portfolio/" class="font-display text-base font-semibold text-charcoal-900 hover: no-underline" style="color:#00FF00">Portfolio</a>
-      <a href="/faq/" class="font-display text-base font-semibold  no-underline" style="color:#00FF00">FAQ</a>
-      <a href="tel:+447595399525" class="font-display font-bold text-sm text-charcoal-900 px-5 py-3 rounded-lg text-center mt-2 no-underline" style="background:#00FF00">Call for Free Quote</a>
+      <a href="/" onclick="closeMenu()" class="font-display text-base font-semibold no-underline" style="color:#111">Home</a>
+      <a href="/#services" onclick="closeMenu()" class="font-display text-base font-semibold hover: no-underline" style="color:#111">Services</a>
+      <a href="/#gallery" onclick="closeMenu()" class="font-display text-base font-semibold hover: no-underline" style="color:#111">Gallery</a>
+      <a href="/#reviews" onclick="closeMenu()" class="font-display text-base font-semibold hover: no-underline" style="color:#111">Reviews</a>
+      <a href="/#faq" onclick="closeMenu()" class="font-display text-base font-semibold hover: no-underline" style="color:#111">FAQ</a>
+      <a href="/pricing" onclick="closeMenu()" class="font-display text-base font-semibold hover: no-underline" style="color:#111">Pricing</a>
+      <a href="/get-quote" onclick="closeMenu()" class="font-display font-bold text-sm text-charcoal-900 px-5 py-3 rounded-lg text-center mt-2" style="background:#00FF00">Get Free Quote</a>
     </div>
   </div>
 </nav>
@@ -550,6 +554,33 @@
 </section>
 
 <script>
+  // Mobile nav
+  function toggleMobileMenu() {
+    const menu = document.getElementById('mobile-menu');
+    const b1 = document.getElementById('b1');
+    const b2 = document.getElementById('b2');
+    const b3 = document.getElementById('b3');
+    const isOpen = menu.classList.contains('open');
+    menu.classList.toggle('open');
+    if (!isOpen) {
+      b1.style.cssText = 'transform:translateY(7px) rotate(45deg)';
+      b2.style.cssText = 'opacity:0';
+      b3.style.cssText = 'transform:translateY(-7px) rotate(-45deg)';
+    } else {
+      b1.style.cssText = b2.style.cssText = b3.style.cssText = '';
+    }
+  }
+  function closeMenu() {
+    const menu = document.getElementById('mobile-menu');
+    if (menu.classList.contains('open')) {
+      menu.classList.remove('open');
+      document.getElementById('b1').style.cssText = '';
+      document.getElementById('b2').style.cssText = '';
+      document.getElementById('b3').style.cssText = '';
+    }
+  }
+</script>
+<script>
   // FAQ accordion
   document.querySelectorAll('.faq-item button').forEach(function(btn) {
     btn.addEventListener('click', function() {
@@ -586,14 +617,14 @@
 <!-- ══════════════════════════════════════════════════
      FOOTER
      ══════════════════════════════════════════════════ -->
-<footer style="background:#111;border-top:3px solid #00FF00" aria-label="Site footer">
+<footer style="background-color:#0b0f0b;background-image:radial-gradient(ellipse 70% 50% at 0% 0%,rgba(55,212,19,0.22) 0%,transparent 60%),radial-gradient(ellipse 60% 50% at 100% 100%,rgba(55,212,19,0.16) 0%,transparent 60%),linear-gradient(160deg,#0c110c 0%,#090d09 100%);border-top:3px solid #00FF00" aria-label="Site footer">
   <div class="max-w-7xl mx-auto px-6 lg:px-12 pt-16 lg:pt-20 pb-12">
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
 
       <!-- Brand + Trust -->
       <div class="sm:col-span-2 lg:col-span-1">
         <a href="/" class="inline-flex items-center gap-3 mb-7 no-underline">
-          <img src="/images/logos/logo-transparent.webp" alt="Plaster and Rendering Solutions Limited" class="h-9 w-auto" loading="lazy" />
+          <img src="/images/logos/logo-white.webp" alt="Plaster and Rendering Solutions Limited" class="h-9 w-auto" loading="lazy" />
           <div>
             <div class="font-display font-black text-white text-sm tracking-tight leading-tight">P&amp;R Solutions</div>
             <div class="font-display text-[10px] tracking-[.25em] uppercase" style="color:rgba(255,255,255,0.3)">Sheffield</div>
@@ -648,7 +679,7 @@
                  onmouseover="this.style.color='#00FF00'" onmouseout="this.style.color='rgba(255,255,255,0.55)'">External Wall Insulation</a></li>
           <li><a href="/plastering-sheffield" class="font-display text-sm no-underline transition-colors duration-200" style="color:rgba(255,255,255,0.55)"
                  onmouseover="this.style.color='#00FF00'" onmouseout="this.style.color='rgba(255,255,255,0.55)'">Internal Plastering</a></li>
-          <li><a href="/dry-lining/" class="font-display text-sm no-underline transition-colors duration-200" style="color:rgba(255,255,255,0.55)"
+          <li><a href="/dry-lining-sheffield" class="font-display text-sm no-underline transition-colors duration-200" style="color:rgba(255,255,255,0.55)"
                  onmouseover="this.style.color='#00FF00'" onmouseout="this.style.color='rgba(255,255,255,0.55)'">Dry Lining</a></li>
         </ul>
         <div class="mt-6 pt-6" style="border-top:1px solid rgba(255,255,255,0.07)">
