@@ -262,6 +262,105 @@
     .svc-card:hover{transform:translateY(-6px);box-shadow:0 20px 60px rgba(0,0,0,.12)}
     .svc-card:hover .svc-arrow{transform:translateX(4px);color:#00FF00}
     .svc-arrow{transition:transform .3s,color .3s}
+
+    /* ============ COMPARISON CARD GRID ============ */
+    .cmp-section {
+      padding: 80px 24px;
+      position: relative;
+      overflow: hidden;
+      background-color: #080c08;
+      background-image:
+        radial-gradient(ellipse 80% 55% at 50% -10%,  rgba(55,212,19,0.32) 0%, transparent 65%),
+        radial-gradient(ellipse 65% 65% at -10% 100%, rgba(55,212,19,0.20) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 50% at 110% 90%,  rgba(20,40,15,0.8)   0%, transparent 60%),
+        linear-gradient(160deg, #0d160d 0%, #090e09 40%, #060906 100%);
+    }
+    .cmp-section::before {
+      content: '';
+      position: absolute; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.72' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+      background-size: 160px 160px; pointer-events: none; z-index: 0;
+    }
+    .cmp-inner { max-width: 1280px; margin: 0 auto; position: relative; z-index: 1; }
+    .cmp-glow-line { width: 120px; height: 1px; background: linear-gradient(90deg, transparent, #37D413, transparent); margin: 0 auto 40px; opacity: 0.6; }
+    .cmp-header { text-align: center; margin-bottom: 56px; }
+    .cmp-eyebrow { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #37D413; background: rgba(55,212,19,0.1); border: 1px solid rgba(55,212,19,0.25); padding: 6px 16px; border-radius: 100px; margin-bottom: 20px; }
+    .cmp-header h2 { font-size: 44px; font-weight: 900; letter-spacing: -0.03em; line-height: 1.1; color: #fff; margin-bottom: 14px; }
+    .cmp-header h2 span { color: #37D413; }
+    .cmp-header p { font-size: 16px; color: #666; max-width: 480px; margin: 0 auto; }
+    .cmp-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .cmp-card { background: #131313; border: 1px solid #222; border-radius: 20px; overflow: hidden; position: relative; cursor: pointer; will-change: transform; transition: box-shadow 0.4s ease, border-color 0.3s ease; }
+    .cmp-card::before { content: ''; position: absolute; top: -50%; left: -80%; width: 50%; height: 200%; background: linear-gradient(105deg, transparent, rgba(255,255,255,0.055), transparent); transform: skewX(-20deg); pointer-events: none; z-index: 10; opacity: 0; }
+    .cmp-card:hover::before { left: 160%; opacity: 1; transition: left 0.65s ease; }
+    .cmp-card::after { content: ''; position: absolute; inset: 0; border-radius: 20px; background: radial-gradient(circle at var(--mx,50%) var(--my,50%), rgba(255,255,255,0.05) 0%, transparent 55%); pointer-events: none; z-index: 1; opacity: 0; transition: opacity 0.3s; }
+    .cmp-card:hover::after { opacity: 1; }
+    .cmp-card:hover { border-color: #2e2e2e; box-shadow: 0 28px 64px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.04); }
+    .cmp-card.featured { border-color: rgba(55,212,19,0.4); background: #131a11; box-shadow: 0 0 0 1px rgba(55,212,19,0.15), 0 20px 60px rgba(55,212,19,0.08); }
+    .cmp-card.featured:hover { border-color: rgba(55,212,19,0.75); box-shadow: 0 0 0 1px rgba(55,212,19,0.35), 0 32px 80px rgba(55,212,19,0.18); }
+    .cmp-glow-orb { position: absolute; top: -40px; left: 50%; transform: translateX(-50%); width: 220px; height: 220px; background: radial-gradient(circle, rgba(55,212,19,0.18) 0%, transparent 70%); pointer-events: none; z-index: 0; transition: filter 0.4s ease; }
+    .cmp-card.featured:hover .cmp-glow-orb { filter: blur(2px) brightness(1.4); }
+    .cmp-img { height: 160px; position: relative; overflow: hidden; border-radius: 20px 20px 0 0; flex-shrink: 0; }
+    .cmp-img-inner { position: absolute; inset: 0; transition: transform 0.55s cubic-bezier(0.23, 1, 0.32, 1); }
+    .cmp-card:hover .cmp-img-inner { transform: scale(1.07); }
+    .cmp-img::after { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 70% 20%, rgba(255,255,255,0.13) 0%, transparent 55%), linear-gradient(to bottom, transparent 50%, #131313 100%); pointer-events: none; z-index: 1; }
+    .cmp-card.featured .cmp-img::after { background: radial-gradient(circle at 70% 20%, rgba(255,255,255,0.13) 0%, transparent 55%), linear-gradient(to bottom, transparent 50%, #131a11 100%); }
+    .cmp-badge-row { display: flex; justify-content: center; padding: 10px 0 0; }
+    .cmp-badge { display: inline-flex; align-items: center; gap: 4px; font-size: 10px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: #000; background: #37D413; padding: 5px 14px; border-radius: 100px; }
+    .cmp-card-head { padding: 22px 22px 0; }
+    .cmp-name { font-size: 17px; font-weight: 800; color: #fff; margin-bottom: 4px; letter-spacing: -0.01em; display: inline-block; transition: color 0.3s ease, transform 0.3s ease; }
+    .cmp-card:hover .cmp-name { color: #37D413; transform: translateX(3px); }
+    .cmp-tagline { font-size: 12px; color: #888; line-height: 1.5; margin-bottom: 18px; }
+    .cmp-price-row { display: flex; align-items: baseline; gap: 3px; margin-bottom: 4px; }
+    .cmp-from { font-size: 11px; color: #888; font-weight: 500; }
+    .cmp-price { font-size: 30px; font-weight: 900; color: #fff; letter-spacing: -0.03em; line-height: 1; display: inline-block; transition: transform 0.35s cubic-bezier(0.34,1.56,0.64,1); }
+    .cmp-card:hover .cmp-price { transform: scale(1.1) translateY(-2px); }
+    .cmp-card.featured .cmp-price { color: #37D413; }
+    .cmp-per { font-size: 13px; color: #888; }
+    .cmp-range { font-size: 11px; color: #777; margin-bottom: 18px; }
+    .cmp-score { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+    .cmp-slabel { font-size: 11px; color: #888; min-width: 58px; }
+    .cmp-track { flex: 1; height: 4px; background: #1e1e1e; border-radius: 100px; overflow: hidden; }
+    .cmp-fill { height: 100%; background: #37D413; border-radius: 100px; }
+    .cmp-snum { font-size: 11px; font-weight: 700; color: #37D413; min-width: 26px; text-align: right; }
+    .cmp-divider { height: 1px; background: #1e1e1e; margin: 18px 22px; }
+    .cmp-body { padding: 0 22px; }
+    .cmp-list-label { font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #666; margin-bottom: 10px; }
+    .cmp-list { list-style: none; margin-bottom: 16px; }
+    .cmp-list li { display: flex; align-items: flex-start; gap: 8px; font-size: 13px; line-height: 1.5; padding: 4px 0; }
+    .cmp-list.pros li { color: #ccc; }
+    .cmp-list.pros li .ico { color: #37D413; flex-shrink: 0; }
+    .cmp-list.cons li { color: #777; }
+    .cmp-list.cons li .ico { color: #555; flex-shrink: 0; }
+    .cmp-best-label { font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #666; margin-bottom: 8px; }
+    .cmp-best-tag { display: inline-block; font-size: 12px; font-weight: 600; color: #888; background: #1a1a1a; border: 1px solid #2a2a2a; padding: 5px 11px; border-radius: 8px; }
+    .cmp-card.featured .cmp-best-tag { color: #37D413; background: rgba(55,212,19,0.08); border-color: rgba(55,212,19,0.2); }
+    .cmp-guarantee { font-size: 11px; color: #888; margin: 16px 22px 14px; transition: color 0.3s ease, transform 0.3s ease; }
+    .cmp-card:hover .cmp-guarantee { color: #aaa; transform: translateX(4px); }
+    .cmp-actions { padding: 0 22px 22px; display: flex; flex-direction: column; gap: 8px; }
+    .cmp-link { display: flex; align-items: center; justify-content: center; gap: 6px; font-size: 12px; font-weight: 700; color: #999; text-decoration: none; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 9px 12px; border-radius: 10px; transition: color 0.25s ease, background 0.25s ease, border-color 0.25s ease, gap 0.25s ease; }
+    .cmp-link:hover { color: #37D413; background: rgba(55,212,19,0.08); border-color: rgba(55,212,19,0.3); gap: 10px; }
+    .cmp-card.featured .cmp-link { color: rgba(55,212,19,0.75); background: rgba(55,212,19,0.07); border-color: rgba(55,212,19,0.2); }
+    .cmp-card.featured .cmp-link:hover { color: #37D413; background: rgba(55,212,19,0.14); border-color: rgba(55,212,19,0.45); }
+    .cmp-cta { display: block; width: 100%; padding: 12px; border-radius: 10px; font-size: 13px; font-weight: 700; text-align: center; cursor: pointer; transition: all 0.3s cubic-bezier(0.34,1.56,0.64,1); text-decoration: none; border: none; }
+    .cmp-card:hover .cmp-cta { transform: translateY(-3px); }
+    .cmp-cta.solid { background: linear-gradient(135deg, #37D413 0%, #2BA80D 100%); color: #000; }
+    .cmp-cta.solid:hover { box-shadow: 0 8px 24px rgba(55,212,19,0.35); }
+    .cmp-cta.outline { background: transparent; color: #555; border: 1px solid #252525; }
+    .cmp-card:hover .cmp-cta.outline { border-color: #37D413; color: #37D413; }
+    @media (max-width: 900px)  { .cmp-grid { grid-template-columns: repeat(2,1fr); } }
+    @media (max-width: 540px)  { .cmp-grid { grid-template-columns: 1fr; } .cmp-header h2 { font-size: 32px; } }
+    @media (hover: none) {
+      .cmp-card::before, .cmp-card::after { display: none; }
+      .cmp-card:hover .cmp-name { color: #fff; transform: none; }
+      .cmp-card:hover .cmp-price { transform: none; }
+      .cmp-card:hover .cmp-guarantee, .cmp-card:hover .cmp-cta { transform: none; }
+      .cmp-card:hover .cmp-cta.outline { border-color: #252525; color: #555; }
+      .cmp-card:active { filter: brightness(0.85); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .cmp-card, .cmp-card::before, .cmp-card::after,
+      .cmp-name, .cmp-price, .cmp-guarantee, .cmp-cta, .cmp-fill { transition: none !important; animation: none !important; }
+    }
   </style>
 </head>
 <body>
@@ -397,108 +496,266 @@
 </section>
 
 <!-- SERVICES -->
-<section id="services" class="py-20 lg:py-28">
-  <div class="max-w-7xl mx-auto px-6 lg:px-12">
-    <div class="reveal mb-4">
-      <span class="lime-line lime visible w-8 mr-3"></span>
-      <span class="font-display text-xs font-bold tracking-[.35em] uppercase" style="color:#00FF00">What We Do</span>
+<section class="cmp-section" id="services">
+  <div class="cmp-inner">
+    <div class="cmp-header">
+      <div class="cmp-glow-line"></div>
+      <div class="cmp-eyebrow">What We Do</div>
+      <h2>Sheffield's Full-Service <span>Plastering & Rendering</span></h2>
+      <p>Transparent pricing, honest pros and cons — no pushy sales.</p>
     </div>
-    <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-14">
-      <h2 class="reveal font-display font-black text-charcoal-900 leading-tight" style="font-size:clamp(2.2rem,5vw,3.8rem)">Sheffield's Full-Service<br>Plastering &amp; Rendering</h2>
-      <p class="reveal delay-1 font-body text-slate-500 text-sm leading-relaxed max-w-xs">From a single room skim to a full external render system — one trusted team, all Sheffield postcodes.</p>
-    </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-      <!-- Silicone Render -->
-      <a href="/silicone-render-sheffield" class="svc-card reveal block rounded-2xl overflow-hidden no-underline bg-white border border-slate-100 shadow-sm">
-        <div class="img-hover h-52">
-          <img src="/images/hero/silicone-service.webp" alt="Silicone rendering Sheffield" class="w-full h-full object-cover" loading="lazy" />
+    <div class="cmp-grid">
+
+      <!-- SILICONE RENDER (Featured) -->
+      <div class="cmp-card featured">
+        <div class="cmp-glow-orb"></div>
+        <div class="cmp-img">
+          <div class="cmp-img-inner" style="background-image: url('/images/hero/silicone-service.webp'); background-size: cover; background-position: center;"></div>
         </div>
-        <div class="p-6">
-          <span class="inline-block font-display text-[10px] font-bold tracking-[.3em] uppercase px-2.5 py-1 rounded-full mb-3" style="background:rgba(0,255,0,0.1);color:#00CC00">External</span>
-          <h3 class="font-display font-bold text-charcoal-900 text-xl mb-2">Silicone Rendering</h3>
-          <p class="font-body text-slate-500 text-sm leading-relaxed mb-4">Self-cleaning, crack-proof system with 25-year manufacturer warranty. The gold standard for external walls.</p>
-          <div class="flex items-center justify-between">
-            <span class="font-display text-xs text-slate-400">From &pound;75/m&sup2;</span>
-            <span class="svc-arrow font-display font-bold text-slate-400 text-sm">Learn More &rarr;</span>
+        <div class="cmp-badge-row"><span class="cmp-badge">★ Most Popular</span></div>
+        <div class="cmp-card-head">
+          <div class="cmp-name">Silicone Render</div>
+          <div class="cmp-tagline">Premium finish. Maximum protection. Built to last decades.</div>
+          <div class="cmp-price-row">
+            <span class="cmp-from">from</span>
+            <span class="cmp-price">£75</span>
+            <span class="cmp-per">/m²</span>
           </div>
+          <div class="cmp-range">Range: £75 – £100+ per m²</div>
+          <div class="cmp-score"><span class="cmp-slabel">Durability</span><div class="cmp-track"><div class="cmp-fill" style="width:95%"></div></div><span class="cmp-snum">9.5</span></div>
+          <div class="cmp-score"><span class="cmp-slabel">Value</span><div class="cmp-track"><div class="cmp-fill" style="width:80%"></div></div><span class="cmp-snum">8.0</span></div>
+          <div class="cmp-score"><span class="cmp-slabel">Finish</span><div class="cmp-track"><div class="cmp-fill" style="width:98%"></div></div><span class="cmp-snum">9.8</span></div>
         </div>
-      </a>
+        <div class="cmp-divider"></div>
+        <div class="cmp-body">
+          <div class="cmp-list-label">Strengths</div>
+          <ul class="cmp-list pros">
+            <li><span class="ico">✓</span> 25-year manufacturer guarantee</li>
+            <li><span class="ico">✓</span> Self-cleaning properties</li>
+            <li><span class="ico">✓</span> Extreme weather resistance</li>
+            <li><span class="ico">✓</span> Breathable — no damp trapping</li>
+          </ul>
+          <div class="cmp-list-label">Limitations</div>
+          <ul class="cmp-list cons">
+            <li><span class="ico">–</span> Higher upfront cost</li>
+            <li><span class="ico">–</span> Longer application window</li>
+          </ul>
+          <div class="cmp-best-label">Best for</div>
+          <span class="cmp-best-tag">Long-term investment & premium finish</span>
+        </div>
+        <div class="cmp-guarantee">25-year manufacturer's guarantee</div>
+        <div class="cmp-actions">
+          <a href="/silicone-render-sheffield" class="cmp-link">See full service →</a>
+          <a href="/get-quote" class="cmp-cta solid">Get a Quote</a>
+        </div>
+      </div>
 
-      <!-- Monocouche -->
-      <a href="/monocouche-render-sheffield" class="svc-card reveal delay-1 block rounded-2xl overflow-hidden no-underline bg-white border border-slate-100 shadow-sm">
-        <div class="img-hover h-52">
-          <img src="/images/case-studies/dore-monocouche.webp" alt="Monocouche rendering Sheffield" class="w-full h-full object-cover" loading="lazy" />
+      <!-- MONOCOUCHE -->
+      <div class="cmp-card">
+        <div class="cmp-img">
+          <div class="cmp-img-inner" style="background-image: url('/images/case-studies/dore-monocouche.webp'); background-size: cover; background-position: center;"></div>
         </div>
-        <div class="p-6">
-          <span class="inline-block font-display text-[10px] font-bold tracking-[.3em] uppercase px-2.5 py-1 rounded-full mb-3" style="background:rgba(0,255,0,0.1);color:#00CC00">External</span>
-          <h3 class="font-display font-bold text-charcoal-900 text-xl mb-2">Monocouche Rendering</h3>
-          <p class="font-body text-slate-500 text-sm leading-relaxed mb-4">Through-coloured, single-coat cement render with a natural textured finish. Durable and low-maintenance.</p>
-          <div class="flex items-center justify-between">
-            <span class="font-display text-xs text-slate-400">From &pound;55/m&sup2;</span>
-            <span class="svc-arrow font-display font-bold text-slate-400 text-sm">Learn More &rarr;</span>
+        <div class="cmp-card-head">
+          <div class="cmp-name">Monocouche</div>
+          <div class="cmp-tagline">Single-coat efficiency. Solid results. Lower cost.</div>
+          <div class="cmp-price-row">
+            <span class="cmp-from">from</span>
+            <span class="cmp-price">£70</span>
+            <span class="cmp-per">/m²</span>
           </div>
+          <div class="cmp-range">Range: £70 – £90 per m²</div>
+          <div class="cmp-score"><span class="cmp-slabel">Durability</span><div class="cmp-track"><div class="cmp-fill" style="width:75%"></div></div><span class="cmp-snum">7.5</span></div>
+          <div class="cmp-score"><span class="cmp-slabel">Value</span><div class="cmp-track"><div class="cmp-fill" style="width:90%"></div></div><span class="cmp-snum">9.0</span></div>
+          <div class="cmp-score"><span class="cmp-slabel">Finish</span><div class="cmp-track"><div class="cmp-fill" style="width:78%"></div></div><span class="cmp-snum">7.8</span></div>
         </div>
-      </a>
+        <div class="cmp-divider"></div>
+        <div class="cmp-body">
+          <div class="cmp-list-label">Strengths</div>
+          <ul class="cmp-list pros">
+            <li><span class="ico">✓</span> Most cost-effective option</li>
+            <li><span class="ico">✓</span> Faster application time</li>
+            <li><span class="ico">✓</span> Durable textured finish</li>
+            <li><span class="ico">✓</span> Low ongoing maintenance</li>
+          </ul>
+          <div class="cmp-list-label">Limitations</div>
+          <ul class="cmp-list cons">
+            <li><span class="ico">–</span> Fewer colour choices</li>
+            <li><span class="ico">–</span> Shorter lifespan vs silicone</li>
+          </ul>
+          <div class="cmp-best-label">Best for</div>
+          <span class="cmp-best-tag">Budget-conscious projects</span>
+        </div>
+        <div class="cmp-guarantee">20-year manufacturer's guarantee</div>
+        <div class="cmp-actions">
+          <a href="/monocouche-render-sheffield" class="cmp-link">See full service →</a>
+          <a href="/get-quote" class="cmp-cta outline">Get a Quote</a>
+        </div>
+      </div>
 
-      <!-- EWI -->
-      <a href="/ewi-sheffield" class="svc-card reveal delay-2 block rounded-2xl overflow-hidden no-underline bg-white border border-slate-100 shadow-sm">
-        <div class="img-hover h-52">
-          <img src="/images/hero/IMG_3979.webp" alt="External wall insulation Sheffield" class="w-full h-full object-cover" loading="lazy" />
+      <!-- EWI SYSTEMS -->
+      <div class="cmp-card">
+        <div class="cmp-img">
+          <div class="cmp-img-inner" style="background-image: url('/images/hero/IMG_3979.webp'); background-size: cover; background-position: center;"></div>
         </div>
-        <div class="p-6">
-          <span class="inline-block font-display text-[10px] font-bold tracking-[.3em] uppercase px-2.5 py-1 rounded-full mb-3" style="background:rgba(0,255,0,0.1);color:#00CC00">Energy Saving</span>
-          <h3 class="font-display font-bold text-charcoal-900 text-xl mb-2">External Wall Insulation</h3>
-          <p class="font-body text-slate-500 text-sm leading-relaxed mb-4">Cut heating bills by 35&ndash;40%. Insulation board + reinforced render system. Improve your EPC by 2+ bands.</p>
-          <div class="flex items-center justify-between">
-            <span class="font-display text-xs text-slate-400">From &pound;9,000</span>
-            <span class="svc-arrow font-display font-bold text-slate-400 text-sm">Learn More &rarr;</span>
+        <div class="cmp-card-head">
+          <div class="cmp-name">EWI Systems</div>
+          <div class="cmp-tagline">Insulation + render combined. Cut energy bills significantly.</div>
+          <div class="cmp-price-row">
+            <span class="cmp-from">from</span>
+            <span class="cmp-price">£110</span>
+            <span class="cmp-per">/m²</span>
           </div>
+          <div class="cmp-range">Range: £110 – £140 per m²</div>
+          <div class="cmp-score"><span class="cmp-slabel">Durability</span><div class="cmp-track"><div class="cmp-fill" style="width:85%"></div></div><span class="cmp-snum">8.5</span></div>
+          <div class="cmp-score"><span class="cmp-slabel">Value</span><div class="cmp-track"><div class="cmp-fill" style="width:88%"></div></div><span class="cmp-snum">8.8</span></div>
+          <div class="cmp-score"><span class="cmp-slabel">Finish</span><div class="cmp-track"><div class="cmp-fill" style="width:80%"></div></div><span class="cmp-snum">8.0</span></div>
         </div>
-      </a>
+        <div class="cmp-divider"></div>
+        <div class="cmp-body">
+          <div class="cmp-list-label">Strengths</div>
+          <ul class="cmp-list pros">
+            <li><span class="ico">✓</span> Cuts heating bills 35–40%</li>
+            <li><span class="ico">✓</span> Improves thermal performance</li>
+            <li><span class="ico">✓</span> Reduces noise penetration</li>
+            <li><span class="ico">✓</span> Transforms older properties</li>
+          </ul>
+          <div class="cmp-list-label">Limitations</div>
+          <ul class="cmp-list cons">
+            <li><span class="ico">–</span> Most complex installation</li>
+            <li><span class="ico">–</span> Longer project timeline</li>
+          </ul>
+          <div class="cmp-best-label">Best for</div>
+          <span class="cmp-best-tag">Older properties & energy saving</span>
+        </div>
+        <div class="cmp-guarantee">25-year system guarantee</div>
+        <div class="cmp-actions">
+          <a href="/ewi-sheffield" class="cmp-link">See full service →</a>
+          <a href="/get-quote" class="cmp-cta outline">Get a Quote</a>
+        </div>
+      </div>
 
-      <!-- Plastering -->
-      <a href="/plastering-sheffield" class="svc-card reveal delay-3 block rounded-2xl overflow-hidden no-underline bg-white border border-slate-100 shadow-sm">
-        <div class="img-hover h-52">
-          <img src="/images/hero/plasteringhero.webp" alt="Internal plastering Sheffield" class="w-full h-full object-cover" loading="lazy" />
+      <!-- INTERNAL PLASTERING -->
+      <div class="cmp-card">
+        <div class="cmp-img">
+          <div class="cmp-img-inner" style="background-image: url('/images/hero/plasteringhero.webp'); background-size: cover; background-position: center;"></div>
         </div>
-        <div class="p-6">
-          <span class="inline-block font-display text-[10px] font-bold tracking-[.3em] uppercase px-2.5 py-1 rounded-full mb-3" style="background:rgba(100,100,255,0.08);color:#4444aa">Internal</span>
-          <h3 class="font-display font-bold text-charcoal-900 text-xl mb-2">Internal Plastering</h3>
-          <p class="font-body text-slate-500 text-sm leading-relaxed mb-4">Float and skim, full re-plaster, skimming new boards. Flawless paint-ready finish for walls and ceilings.</p>
-          <div class="flex items-center justify-between">
-            <span class="font-display text-xs text-slate-400">Free survey</span>
-            <span class="svc-arrow font-display font-bold text-slate-400 text-sm">Learn More &rarr;</span>
+        <div class="cmp-card-head">
+          <div class="cmp-name">Internal Plastering</div>
+          <div class="cmp-tagline">Flawless interior surfaces. Fast. Professional. Fully insured.</div>
+          <div class="cmp-price-row">
+            <span class="cmp-from">from</span>
+            <span class="cmp-price">£200</span>
+            <span class="cmp-per">/room</span>
           </div>
+          <div class="cmp-range">Skim £200–£400 · Full plaster £200–£600 per room</div>
+          <div class="cmp-score"><span class="cmp-slabel">Durability</span><div class="cmp-track"><div class="cmp-fill" style="width:82%"></div></div><span class="cmp-snum">8.2</span></div>
+          <div class="cmp-score"><span class="cmp-slabel">Value</span><div class="cmp-track"><div class="cmp-fill" style="width:95%"></div></div><span class="cmp-snum">9.5</span></div>
+          <div class="cmp-score"><span class="cmp-slabel">Finish</span><div class="cmp-track"><div class="cmp-fill" style="width:90%"></div></div><span class="cmp-snum">9.0</span></div>
         </div>
-      </a>
+        <div class="cmp-divider"></div>
+        <div class="cmp-body">
+          <div class="cmp-list-label">Strengths</div>
+          <ul class="cmp-list pros">
+            <li><span class="ico">✓</span> Lowest starting price</li>
+            <li><span class="ico">✓</span> Ultra-smooth finish</li>
+            <li><span class="ico">✓</span> Fast project completion</li>
+            <li><span class="ico">✓</span> Works in any room</li>
+          </ul>
+          <div class="cmp-list-label">Limitations</div>
+          <ul class="cmp-list cons">
+            <li><span class="ico">–</span> Interior use only</li>
+            <li><span class="ico">–</span> Not weatherproof</li>
+          </ul>
+          <div class="cmp-best-label">Best for</div>
+          <span class="cmp-best-tag">Renovations & new builds</span>
+        </div>
+        <div class="cmp-guarantee">Workmanship guarantee</div>
+        <div class="cmp-actions">
+          <a href="/plastering-sheffield" class="cmp-link">See full service →</a>
+          <a href="/get-quote" class="cmp-cta outline">Get a Quote</a>
+        </div>
+      </div>
 
-      <!-- Dry Lining -->
-      <a href="/dry-lining-sheffield" class="svc-card reveal delay-4 block rounded-2xl overflow-hidden no-underline bg-white border border-slate-100 shadow-sm">
-        <div class="img-hover h-52">
-          <img src="/images/case-studies/drylining-service.webp" alt="Dry lining Sheffield" class="w-full h-full object-cover" loading="lazy" />
+      <!-- EXPERT ADVICE -->
+      <div class="cmp-card">
+        <div class="cmp-img">
+          <div class="cmp-img-inner" style="background: linear-gradient(135deg, #4AE820 0%, #1f8008 100%);"></div>
         </div>
-        <div class="p-6">
-          <span class="inline-block font-display text-[10px] font-bold tracking-[.3em] uppercase px-2.5 py-1 rounded-full mb-3" style="background:rgba(100,100,255,0.08);color:#4444aa">Internal</span>
-          <h3 class="font-display font-bold text-charcoal-900 text-xl mb-2">Dry Lining</h3>
-          <p class="font-body text-slate-500 text-sm leading-relaxed mb-4">Stud partitions, plasterboard installation, and boarding for new builds, extensions, and refurbishments.</p>
-          <div class="flex items-center justify-between">
-            <span class="font-display text-xs text-slate-400">Free survey</span>
-            <span class="svc-arrow font-display font-bold text-slate-400 text-sm">Learn More &rarr;</span>
+        <div class="cmp-card-head">
+          <div class="cmp-name">Expert Advice</div>
+          <div class="cmp-tagline">Not sure which system is right? We'll come out and tell you — free.</div>
+          <div class="cmp-price-row">
+            <span class="cmp-price" style="font-size:22px;letter-spacing:0;">FREE</span>
           </div>
+          <div class="cmp-range">No charge. No obligation. No pushy sales.</div>
+          <div class="cmp-score"><span class="cmp-slabel">Experience</span><div class="cmp-track"><div class="cmp-fill" style="width:100%"></div></div><span class="cmp-snum">10</span></div>
+          <div class="cmp-score"><span class="cmp-slabel">Honesty</span><div class="cmp-track"><div class="cmp-fill" style="width:100%"></div></div><span class="cmp-snum">10</span></div>
+          <div class="cmp-score"><span class="cmp-slabel">Response</span><div class="cmp-track"><div class="cmp-fill" style="width:95%"></div></div><span class="cmp-snum">9.5</span></div>
         </div>
-      </a>
+        <div class="cmp-divider"></div>
+        <div class="cmp-body">
+          <div class="cmp-list-label">What you get</div>
+          <ul class="cmp-list pros">
+            <li><span class="ico">✓</span> Free on-site assessment</li>
+            <li><span class="ico">✓</span> Honest system recommendation</li>
+            <li><span class="ico">✓</span> Transparent written quote</li>
+            <li><span class="ico">✓</span> No deposit to get started</li>
+          </ul>
+          <div class="cmp-list-label">Areas covered</div>
+          <ul class="cmp-list cons">
+            <li><span class="ico">–</span> Sheffield & surrounding areas</li>
+            <li><span class="ico">–</span> Subject to availability</li>
+          </ul>
+          <div class="cmp-best-label">Best for</div>
+          <span class="cmp-best-tag">Anyone comparing options</span>
+        </div>
+        <div class="cmp-guarantee">Impartial, honest advice — always</div>
+        <div class="cmp-actions">
+          <a href="/get-quote" class="cmp-link">Ask us anything →</a>
+          <a href="/get-quote" class="cmp-cta outline">Book Free Visit</a>
+        </div>
+      </div>
 
-      <!-- CTA card -->
-      <div class="reveal delay-5 rounded-2xl flex flex-col items-start justify-between p-8" style="background:#1a1a1a">
-        <div>
-          <span class="font-display text-xs font-bold tracking-[.3em] uppercase mb-4 block" style="color:#00FF00">Not sure?</span>
-          <h3 class="font-display font-bold text-white text-2xl mb-3 leading-tight">Get expert advice &mdash; free</h3>
-          <p class="font-body text-sm leading-relaxed mb-8" style="color:rgba(255,255,255,0.5)">We'll survey your property, advise on the best system, and give you a fully itemised quote. No obligation, no deposit.</p>
+      <!-- DRY LINING -->
+      <div class="cmp-card">
+        <div class="cmp-img">
+          <div class="cmp-img-inner" style="background-image: url('/images/case-studies/drylining-service.webp'); background-size: cover; background-position: center;"></div>
         </div>
-        <div class="flex flex-col gap-3 w-full">
-          <a href="/get-quote" class="font-display font-bold text-charcoal-900 text-sm px-6 py-3.5 rounded-full text-center transition-opacity hover:opacity-90" style="background:#00FF00">Request Free Survey</a>
-          <a href="tel:+447595399525" class="font-display font-bold text-white text-sm px-6 py-3.5 rounded-full text-center border transition-all hover:bg-white/10" style="border-color:rgba(255,255,255,0.2)">Call 07595 399525</a>
+        <div class="cmp-card-head">
+          <div class="cmp-name">Dry Lining</div>
+          <div class="cmp-tagline">Plasterboard partitions & linings. Fast, clean, versatile.</div>
+          <div class="cmp-price-row">
+            <span class="cmp-from">from</span>
+            <span class="cmp-price">£250</span>
+            <span class="cmp-per">/room</span>
+          </div>
+          <div class="cmp-range">Dot & dab £250–£600 · Stud partition £400–£1,200</div>
+          <div class="cmp-score"><span class="cmp-slabel">Durability</span><div class="cmp-track"><div class="cmp-fill" style="width:75%"></div></div><span class="cmp-snum">7.5</span></div>
+          <div class="cmp-score"><span class="cmp-slabel">Value</span><div class="cmp-track"><div class="cmp-fill" style="width:97%"></div></div><span class="cmp-snum">9.7</span></div>
+          <div class="cmp-score"><span class="cmp-slabel">Finish</span><div class="cmp-track"><div class="cmp-fill" style="width:85%"></div></div><span class="cmp-snum">8.5</span></div>
+        </div>
+        <div class="cmp-divider"></div>
+        <div class="cmp-body">
+          <div class="cmp-list-label">Strengths</div>
+          <ul class="cmp-list pros">
+            <li><span class="ico">✓</span> Fastest installation method</li>
+            <li><span class="ico">✓</span> Lowest cost per m²</li>
+            <li><span class="ico">✓</span> Ready to decorate same day</li>
+            <li><span class="ico">✓</span> Ideal for partition walls</li>
+          </ul>
+          <div class="cmp-list-label">Limitations</div>
+          <ul class="cmp-list cons">
+            <li><span class="ico">–</span> Less impact-resistant than plaster</li>
+            <li><span class="ico">–</span> Interior use only</li>
+          </ul>
+          <div class="cmp-best-label">Best for</div>
+          <span class="cmp-best-tag">Offices, extensions & fast fit-outs</span>
+        </div>
+        <div class="cmp-guarantee">Workmanship guarantee</div>
+        <div class="cmp-actions">
+          <a href="/dry-lining-sheffield" class="cmp-link">See full service →</a>
+          <a href="/get-quote" class="cmp-cta outline">Get a Quote</a>
         </div>
       </div>
 
@@ -877,7 +1134,7 @@
           <li><a href="/monocouche-render-sheffield" class="font-display text-sm no-underline transition-colors duration-200" style="color:rgba(255,255,255,0.55)" onmouseover="this.style.color='#00FF00'" onmouseout="this.style.color='rgba(255,255,255,0.55)'">Monocouche Rendering</a></li>
           <li><a href="/ewi-sheffield" class="font-display text-sm no-underline transition-colors duration-200" style="color:rgba(255,255,255,0.55)" onmouseover="this.style.color='#00FF00'" onmouseout="this.style.color='rgba(255,255,255,0.55)'">External Wall Insulation</a></li>
           <li><a href="/plastering-sheffield" class="font-display text-sm no-underline transition-colors duration-200" style="color:rgba(255,255,255,0.55)" onmouseover="this.style.color='#00FF00'" onmouseout="this.style.color='rgba(255,255,255,0.55)'">Internal Plastering</a></li>
-          <li><a href="/dry-lining/" class="font-display text-sm no-underline transition-colors duration-200" style="color:rgba(255,255,255,0.55)" onmouseover="this.style.color='#00FF00'" onmouseout="this.style.color='rgba(255,255,255,0.55)'">Dry Lining</a></li>
+          <li><a href="/dry-lining-sheffield" class="font-display text-sm no-underline transition-colors duration-200" style="color:rgba(255,255,255,0.55)" onmouseover="this.style.color='#00FF00'" onmouseout="this.style.color='rgba(255,255,255,0.55)'">Dry Lining</a></li>
         </ul>
         <div class="mt-6 pt-6" style="border-top:1px solid rgba(255,255,255,0.07)">
           <ul class="space-y-3 list-none p-0 m-0">
@@ -1006,6 +1263,45 @@
     document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
     if (!isOpen) item.classList.add('open');
   }
+
+  /* ── Comparison card interactions ── */
+  (function () {
+    const isMouse = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    document.querySelectorAll('.cmp-card').forEach(card => {
+      const fills = card.querySelectorAll('.cmp-fill');
+      const originalWidths = Array.from(fills).map(f => f.style.width);
+      if (isMouse && !reducedMotion) {
+        card.addEventListener('mousemove', e => {
+          const r = card.getBoundingClientRect();
+          const x = e.clientX - r.left, y = e.clientY - r.top;
+          card.style.transform = `perspective(900px) rotateX(${((y - r.height/2)/(r.height/2))*-9}deg) rotateY(${((x - r.width/2)/(r.width/2))*9}deg) translateY(-8px) scale(1.015)`;
+          card.style.setProperty('--mx', (x/r.width*100)+'%');
+          card.style.setProperty('--my', (y/r.height*100)+'%');
+        });
+        card.addEventListener('mouseenter', () => {
+          fills.forEach((fill, i) => {
+            fill.style.transition = 'none'; fill.style.width = '0%';
+            setTimeout(() => { fill.style.transition = `width 0.7s cubic-bezier(0.4,0,0.2,1) ${i*90}ms`; fill.style.width = originalWidths[i]; }, 20);
+          });
+        });
+        card.addEventListener('mouseleave', () => {
+          card.style.transition = 'transform 0.55s cubic-bezier(0.23,1,0.32,1),box-shadow 0.4s ease,border-color 0.3s ease';
+          card.style.transform = '';
+          setTimeout(() => { card.style.transition = ''; }, 560);
+          fills.forEach(fill => { fill.style.transition = 'width 0.4s ease'; });
+        });
+        card.addEventListener('mousedown', () => { card.style.transition = 'transform 0.07s ease'; card.style.transform = 'perspective(900px) scale(0.965) translateY(3px)'; });
+        card.addEventListener('mouseup', () => { card.style.transition = 'transform 0.4s cubic-bezier(0.34,1.56,0.64,1)'; card.style.transform = ''; });
+      } else if (!reducedMotion) {
+        card.addEventListener('touchstart', () => {
+          card.style.transition = 'transform 0.08s ease,filter 0.08s ease'; card.style.transform = 'scale(0.97)'; card.style.filter = 'brightness(0.88)';
+          fills.forEach((fill, i) => { fill.style.transition = 'none'; fill.style.width = '0%'; setTimeout(() => { fill.style.transition = `width 0.6s cubic-bezier(0.4,0,0.2,1) ${i*80}ms`; fill.style.width = originalWidths[i]; }, 20); });
+        }, { passive: true });
+        card.addEventListener('touchend', () => { card.style.transition = 'transform 0.35s cubic-bezier(0.34,1.56,0.64,1),filter 0.3s ease'; card.style.transform = ''; card.style.filter = ''; }, { passive: true });
+      }
+    });
+  }());
 </script>
 
 </body>
