@@ -332,7 +332,7 @@
 <body>
 
 <!-- ANNOUNCEMENT BAR -->
-<div id="ann-bar" style="position:fixed;left:0;right:0;top:0;z-index:110;background:#1a1a1a;height:44px;display:flex;align-items:center;justify-content:center">
+<div id="ann-bar" style="position:fixed;left:0;right:0;top:0;z-index:110;background:#1a1a1a;border-bottom:1px solid rgba(55,212,19,0.35);box-shadow:0 2px 24px rgba(55,212,19,0.12);height:44px;display:flex;align-items:center;justify-content:center">
   <p style="font-size:12px;font-weight:500;color:rgba(255,255,255,0.75);letter-spacing:0.04em;text-align:center;margin:0;padding:0 40px">
     <span style="color:#00FF00;font-weight:700">&#10003; No deposit required</span>
     &nbsp;&nbsp;&middot;&nbsp;&nbsp;Currently booking <span id="bk-range"></span>
@@ -341,12 +341,7 @@
   <button onclick="document.getElementById('ann-bar').style.display='none';document.getElementById('site-nav').style.top='0'" style="position:absolute;right:12px;background:none;border:none;cursor:pointer;color:rgba(255,255,255,0.3);font-size:20px;line-height:1;padding:2px 6px" aria-label="Dismiss announcement">&times;</button>
 </div>
 <script>
-  (function(){
-    var now=new Date(),m=now.getMonth(),y=now.getFullYear();
-    var s=new Date(y,m+3,1),e=new Date(y,m+4,0);
-    var mn=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-    document.getElementById('bk-range').textContent=mn[s.getMonth()]+'\u2013'+mn[e.getMonth()]+' '+e.getFullYear();
-  })();
+  (function(){var mn=['January','February','March','April','May','June','July','August','September','October','November','December'],d=new Date(),s=(d.getMonth()+3)%12,sy=d.getFullYear()+Math.floor((d.getMonth()+3)/12),e=(d.getMonth()+4)%12,ey=d.getFullYear()+Math.floor((d.getMonth()+4)/12),el=document.getElementById('bk-range');if(el)el.textContent=mn[s]+(sy!==ey?' '+sy:'')+'\u2013'+mn[e]+' '+ey;}());
 </script>
 
 <!-- NAV -->
