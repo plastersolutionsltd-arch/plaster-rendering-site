@@ -305,13 +305,22 @@
     .exp-item.open .exp-body{max-height:400px}
     .exp-arrow{transition:color .3s ease,transform .35s ease;display:inline-block;line-height:1}
     .exp-item.open .exp-arrow{color:#00FF00;transform:rotate(90deg)}
-    .exp-item.open .exp-title{color:#1a1a1a}
+    .exp-item.open .exp-title{color:#fff}
 
-    /* Full-width FAQ accordion */
+    /* FAQ card redesign */
+    .faq-item{background:#131313;border:1px solid #1e1e1e;border-radius:16px;padding:24px 24px 24px 28px;cursor:pointer;position:relative;overflow:hidden;transition:border-color .3s,box-shadow .3s}
+    .faq-item::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(to bottom,#37D413,#2BA80D);transform:scaleY(0);transform-origin:bottom;transition:transform .4s cubic-bezier(.16,1,.3,1);border-radius:0 0 0 16px}
+    .faq-item:hover{border-color:#2a2a2a}
+    .faq-item.open{border-color:rgba(55,212,19,0.35);box-shadow:0 0 32px rgba(55,212,19,0.07)}
+    .faq-item.open::before{transform:scaleY(1)}
     .faq-body{max-height:0;overflow:hidden;transition:max-height .45s cubic-bezier(.16,1,.3,1)}
-    .faq-item.open .faq-body{max-height:500px}
-    .faq-icon{transition:background .3s,color .3s,transform .35s}
-    .faq-item.open .faq-icon{background:#00FF00;border-color:#00FF00;color:#fff;transform:rotate(45deg)}
+    .faq-item.open .faq-body{max-height:320px}
+    .faq-num{font-size:10px;font-weight:800;letter-spacing:.18em;color:#37D413}
+    .faq-cat{font-size:9px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,0.28);background:rgba(255,255,255,0.05);padding:3px 10px;border-radius:100px}
+    .faq-q{font-size:15px;font-weight:700;color:#fff;line-height:1.4;margin-top:10px}
+    .faq-ans{font-size:13px;color:rgba(255,255,255,0.52);line-height:1.75;padding-top:14px;padding-bottom:4px}
+    .faq-icon{flex-shrink:0;width:30px;height:30px;border-radius:8px;border:1px solid #2a2a2a;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:300;color:rgba(255,255,255,0.3);transition:all .3s cubic-bezier(.34,1.56,.64,1);background:transparent;margin-top:2px}
+    .faq-item.open .faq-icon{background:#37D413;border-color:#37D413;color:#000;transform:rotate(45deg)}
 
     /* Mobile menu */
     #mobile-menu{display:none}
@@ -407,7 +416,7 @@
            onload="this.classList.add('loaded')" />
     </picture>
     <div class="absolute inset-0" style="background:linear-gradient(105deg,rgba(0,0,0,.9) 0%,rgba(0,0,0,.6) 50%,rgba(0,0,0,.2) 100%)"></div>
-    <div class="absolute inset-x-0 bottom-0 h-40" style="background:linear-gradient(to top,#fff 0%,transparent 100%)"></div>
+    <div class="absolute inset-x-0 bottom-0 h-40" style="background:linear-gradient(to top,#0b0f0b 0%,transparent 100%)"></div>
 
     <div class="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-12 pb-24 pt-40">
       <div class="flex items-center gap-3 mb-8 reveal">
@@ -450,7 +459,7 @@
 <!-- ══════════════════════════════════════════════════
      WHY CHOOSE MONOCOUCHE
      ══════════════════════════════════════════════════ -->
-<section id="why" class="py-20 lg:py-28" style="background:linear-gradient(to bottom,#f0f0f0,#000000)">
+<section id="why" class="py-20 lg:py-28" style="background-color:#0b0f0b;background-image:radial-gradient(ellipse 80% 55% at 50% 0%,rgba(55,212,19,0.38) 0%,transparent 65%),radial-gradient(ellipse 50% 50% at 100% 100%,rgba(55,212,19,0.25) 0%,transparent 60%),linear-gradient(160deg,#0d130d 0%,#090e09 50%,#070b07 100%)">
   <div class="max-w-7xl mx-auto px-6 lg:px-12">
     <div class="grid lg:grid-cols-[42%_58%] gap-10 lg:gap-16 items-start">
 
@@ -549,7 +558,7 @@
     <p class="reveal delay-2 font-body text-slate-300 font-light max-w-lg leading-relaxed mb-10">
       One coat, 12–15mm thick, combining base coat strength with a stone-like finish coat — applied in a single visit. That's the monocouche system. Faster to install, less disruption, and 20-25 years of weatherproof performance.
     </p>
-    <div class="reveal delay-3 flex flex-wrap gap-10 border-t border-slate-100 pt-8">
+    <div class="reveal delay-3 flex flex-wrap gap-10 border-t border-white/10 pt-8">
       <div><span class="font-display font-black text-4xl text-white block leading-none">500+</span><span class="font-body text-xs text-slate-400 tracking-widest uppercase mt-1 block">Completed Projects</span></div>
       <div class="w-px bg-white/10 hidden sm:block"></div>
       <div><span class="font-display font-black text-4xl  block leading-none" style="color:#00FF00">0%</span><span class="font-body text-xs text-slate-400 tracking-widest uppercase mt-1 block">Deposit Required</span></div>
@@ -557,33 +566,33 @@
       <div><span class="font-display font-black text-4xl text-white block leading-none">5★</span><span class="font-body text-xs text-slate-400 tracking-widest uppercase mt-1 block">Google Rating</span></div>
     </div>
   </div>
-  <div class="absolute inset-x-0 bottom-0 h-72 pointer-events-none" style="background:linear-gradient(to top,rgba(255,255,255,.7) 0%,rgba(255,255,255,.5) 20%,rgba(255,255,255,.28) 50%,rgba(255,255,255,.08) 75%,transparent 100%)"></div>
+  <div class="absolute inset-x-0 bottom-0 h-72 pointer-events-none" style="background:linear-gradient(to top,rgba(11,15,11,0.9) 0%,rgba(11,15,11,0.5) 40%,transparent 80%)"></div>
 </section>
 
 
 <!-- ══════════════════════════════════════════════════
      OUR SHEFFIELD WORK — card grid
      ══════════════════════════════════════════════════ -->
-<section id="portfolio" class="relative bg-white py-20 lg:py-28">
+<section id="portfolio" class="relative py-20 lg:py-28" style="background-color:#0b0f0b;background-image:radial-gradient(ellipse 80% 55% at 50% 0%,rgba(55,212,19,0.38) 0%,transparent 65%),radial-gradient(ellipse 50% 50% at 100% 100%,rgba(55,212,19,0.25) 0%,transparent 60%),linear-gradient(160deg,#0d130d 0%,#090e09 50%,#070b07 100%)">
   <div class="max-w-7xl mx-auto px-6 lg:px-12">
 
     <!-- Section header -->
     <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-14">
       <div>
         <div class="reveal flex items-center gap-3 mb-6">
-          <span class="lime-line visible w-8"></span>
-          <span class="font-display text-xs font-bold tracking-[.3em] uppercase text-charcoal-900">Our Sheffield Work</span>
+          <span class="lime-line lime visible w-8"></span>
+          <span class="font-display text-xs font-bold tracking-[.3em] uppercase" style="color:rgba(255,255,255,0.5)">Our Sheffield Work</span>
         </div>
         <div class="reveal delay-1">
           <h2 class="font-display leading-[1.02] tracking-tight">
-            <span class="block font-black text-charcoal-900" style="font-size:clamp(2.2rem,4.5vw,3.5rem)">Projects Across</span>
+            <span class="block font-black text-white" style="font-size:clamp(2.2rem,4.5vw,3.5rem)">Projects Across</span>
             <span class="block font-black " style="color:#00FF00;font-size:clamp(2.2rem,4.5vw,3.5rem)">Sheffield</span>
-            <span class="block font-light text-slate-400"   style="font-size:clamp(2.2rem,4.5vw,3.5rem)">&amp; South Yorkshire.</span>
+            <span class="block font-light" style="color:rgba(255,255,255,0.35);font-size:clamp(2.2rem,4.5vw,3.5rem)">&amp; South Yorkshire.</span>
           </h2>
         </div>
       </div>
       <div class="reveal flex-shrink-0">
-        <a href="#contact" class="font-display font-bold text-xs tracking-wide text-charcoal-900 border border-charcoal-900/30 px-6 py-3 rounded-full hover:bg-charcoal-900 hover:text-white transition-all duration-300 whitespace-nowrap">Request a Quote ↗</a>
+        <a href="#contact" class="font-display font-bold text-xs tracking-wide text-white border border-white/25 px-6 py-3 rounded-full hover:bg-white/10 transition-all duration-300 whitespace-nowrap">Request a Quote ↗</a>
       </div>
     </div>
 
@@ -600,13 +609,13 @@
         </div>
         <div class="flex items-start justify-between gap-3 mb-2">
           <div>
-            <p class="font-display font-bold text-charcoal-900 text-lg">Fulwood, S10</p>
+            <p class="font-display font-bold text-white text-lg">Fulwood, S10</p>
             <p class="font-body text-xs text-slate-400 font-light mt-0.5">Detached property</p>
           </div>
           <span class="flex-shrink-0 font-display text-[10px] font-bold tracking-widest uppercase  border border-green-500/40 px-3 py-1 rounded-full mt-1" style="color:#00FF00">K Rend</span>
         </div>
         <p class="font-body text-sm text-slate-500 font-light leading-relaxed mb-4">Full monocouche render to all elevations. K Rend scraped finish in Limestone. Complete substrate preparation and primer before application.</p>
-        <a href="#contact" class="font-display font-bold text-xs text-charcoal-900 border border-charcoal-900/20 px-4 py-2 rounded-full hover:bg-charcoal-900 hover:text-white transition-all duration-300 inline-block">Request Similar ↗</a>
+        <a href="#contact" class="font-display font-bold text-xs text-white/70 border border-white/20 px-4 py-2 rounded-full hover:bg-white/10 hover:text-white transition-all duration-300 inline-block">Request Similar ↗</a>
       </div>
 
       <!-- Card 2 -->
@@ -619,13 +628,13 @@
         </div>
         <div class="flex items-start justify-between gap-3 mb-2">
           <div>
-            <p class="font-display font-bold text-charcoal-900 text-lg">Firth Park, S5</p>
+            <p class="font-display font-bold text-white text-lg">Firth Park, S5</p>
             <p class="font-body text-xs text-slate-400 font-light mt-0.5">Detached property</p>
           </div>
           <span class="flex-shrink-0 font-display text-[10px] font-bold tracking-widest uppercase  border border-green-500/40 px-3 py-1 rounded-full mt-1" style="color:#00FF00">Baumit</span>
         </div>
         <p class="font-body text-sm text-slate-500 font-light leading-relaxed mb-4">Baumit monocouche system — excellent breathability for older construction. Scraped texture throughout, integral Stone colour to complement the surrounding area.</p>
-        <a href="#contact" class="font-display font-bold text-xs text-charcoal-900 border border-charcoal-900/20 px-4 py-2 rounded-full hover:bg-charcoal-900 hover:text-white transition-all duration-300 inline-block">Request Similar ↗</a>
+        <a href="#contact" class="font-display font-bold text-xs text-white/70 border border-white/20 px-4 py-2 rounded-full hover:bg-white/10 hover:text-white transition-all duration-300 inline-block">Request Similar ↗</a>
       </div>
 
       <!-- Card 3 -->
@@ -638,13 +647,13 @@
         </div>
         <div class="flex items-start justify-between gap-3 mb-2">
           <div>
-            <p class="font-display font-bold text-charcoal-900 text-lg">Worrall, S35</p>
+            <p class="font-display font-bold text-white text-lg">Worrall, S35</p>
             <p class="font-body text-xs text-slate-400 font-light mt-0.5">Victorian terraced property</p>
           </div>
           <span class="flex-shrink-0 font-display text-[10px] font-bold tracking-widest uppercase  border border-green-500/40 px-3 py-1 rounded-full mt-1" style="color:#00FF00">K Rend</span>
         </div>
         <p class="font-body text-sm text-slate-500 font-light leading-relaxed mb-4">Monocouche on a period Victorian terrace. The scraped texture suits the character of the property — breathable render ideal for older solid-wall construction.</p>
-        <a href="#contact" class="font-display font-bold text-xs text-charcoal-900 border border-charcoal-900/20 px-4 py-2 rounded-full hover:bg-charcoal-900 hover:text-white transition-all duration-300 inline-block">Request Similar ↗</a>
+        <a href="#contact" class="font-display font-bold text-xs text-white/70 border border-white/20 px-4 py-2 rounded-full hover:bg-white/10 hover:text-white transition-all duration-300 inline-block">Request Similar ↗</a>
       </div>
 
     </div>
@@ -659,13 +668,13 @@
         </div>
         <div class="flex items-start justify-between gap-3 mb-2">
           <div>
-            <p class="font-display font-bold text-charcoal-900 text-lg">Dore, S17</p>
+            <p class="font-display font-bold text-white text-lg">Dore, S17</p>
             <p class="font-body text-xs text-slate-400 font-light mt-0.5">Detached property</p>
           </div>
           <span class="flex-shrink-0 font-display text-[10px] font-bold tracking-widest uppercase  border border-green-500/40 px-3 py-1 rounded-full mt-1" style="color:#00FF00">K Rend</span>
         </div>
         <p class="font-body text-sm text-slate-500 font-light leading-relaxed mb-4">Full monocouche render to a detached property in Dore. K Rend scraped finish in Limestone — through-colour system means no painting, ever.</p>
-        <a href="#contact" class="font-display font-bold text-xs text-charcoal-900 border border-charcoal-900/20 px-4 py-2 rounded-full hover:bg-charcoal-900 hover:text-white transition-all duration-300 inline-block">Request Similar ↗</a>
+        <a href="#contact" class="font-display font-bold text-xs text-white/70 border border-white/20 px-4 py-2 rounded-full hover:bg-white/10 hover:text-white transition-all duration-300 inline-block">Request Similar ↗</a>
       </div>
 
       <!-- Card 5 -->
@@ -675,13 +684,13 @@
         </div>
         <div class="flex items-start justify-between gap-3 mb-2">
           <div>
-            <p class="font-display font-bold text-charcoal-900 text-lg">Dronfield, S18</p>
+            <p class="font-display font-bold text-white text-lg">Dronfield, S18</p>
             <p class="font-body text-xs text-slate-400 font-light mt-0.5">Detached property</p>
           </div>
           <span class="flex-shrink-0 font-display text-[10px] font-bold tracking-widest uppercase  border border-green-500/40 px-3 py-1 rounded-full mt-1" style="color:#00FF00">Weber</span>
         </div>
         <p class="font-body text-sm text-slate-500 font-light leading-relaxed mb-4">Weber monocouche to a detached property in Dronfield. Fine-scraped texture in Natural Stone — complements the property's original character and ties in with the local streetscape.</p>
-        <a href="#contact" class="font-display font-bold text-xs text-charcoal-900 border border-charcoal-900/20 px-4 py-2 rounded-full hover:bg-charcoal-900 hover:text-white transition-all duration-300 inline-block">Request Similar ↗</a>
+        <a href="#contact" class="font-display font-bold text-xs text-white/70 border border-white/20 px-4 py-2 rounded-full hover:bg-white/10 hover:text-white transition-all duration-300 inline-block">Request Similar ↗</a>
       </div>
 
       <!-- Card 6 -->
@@ -691,25 +700,25 @@
         </div>
         <div class="flex items-start justify-between gap-3 mb-2">
           <div>
-            <p class="font-display font-bold text-charcoal-900 text-lg">Stocksbridge, S36</p>
+            <p class="font-display font-bold text-white text-lg">Stocksbridge, S36</p>
             <p class="font-body text-xs text-slate-400 font-light mt-0.5">Semi-detached property</p>
           </div>
           <span class="flex-shrink-0 font-display text-[10px] font-bold tracking-widest uppercase  border border-green-500/40 px-3 py-1 rounded-full mt-1" style="color:#00FF00">K Rend</span>
         </div>
         <p class="font-body text-sm text-slate-500 font-light leading-relaxed mb-4">K Rend monocouche to a semi-detached in Stocksbridge. Scraped finish in Warm Stone — a clean, modern look that dramatically transforms the kerbside appearance.</p>
-        <a href="#contact" class="font-display font-bold text-xs text-charcoal-900 border border-charcoal-900/20 px-4 py-2 rounded-full hover:bg-charcoal-900 hover:text-white transition-all duration-300 inline-block">Request Similar ↗</a>
+        <a href="#contact" class="font-display font-bold text-xs text-white/70 border border-white/20 px-4 py-2 rounded-full hover:bg-white/10 hover:text-white transition-all duration-300 inline-block">Request Similar ↗</a>
       </div>
 
     </div>
   </div>
-  <div class="absolute inset-x-0 bottom-0 h-24 pointer-events-none" style="background:linear-gradient(to top,#f0f0f0 0%,transparent 100%)"></div>
+  <div class="absolute inset-x-0 bottom-0 h-24 pointer-events-none" style="background:linear-gradient(to top,#0b0f0b 0%,transparent 100%)"></div>
 </section>
 
 
 <!-- ══════════════════════════════════════════════════
      HOW IT'S APPLIED — system layers
      ══════════════════════════════════════════════════ -->
-<section id="process" class="relative py-20 lg:py-28" style="background:linear-gradient(to bottom,#f0f0f0,#000000)">
+<section id="process" class="relative py-20 lg:py-28" style="background-color:#0b0f0b;background-image:radial-gradient(ellipse 80% 55% at 50% 0%,rgba(55,212,19,0.38) 0%,transparent 65%),radial-gradient(ellipse 50% 50% at 100% 100%,rgba(55,212,19,0.25) 0%,transparent 60%),linear-gradient(160deg,#0d130d 0%,#090e09 50%,#070b07 100%)">
   <div class="max-w-7xl mx-auto px-6 lg:px-12">
     <div class="grid lg:grid-cols-[42%_58%] gap-10 lg:gap-16 items-start">
 
@@ -820,28 +829,28 @@
       </div>
     </div>
   </div>
-  <div class="absolute inset-x-0 bottom-0 h-72 pointer-events-none" style="background:linear-gradient(to top,rgba(255,255,255,.7) 0%,rgba(255,255,255,.5) 20%,rgba(255,255,255,.28) 50%,rgba(255,255,255,.08) 75%,transparent 100%)"></div>
+  <div class="absolute inset-x-0 bottom-0 h-72 pointer-events-none" style="background:linear-gradient(to top,rgba(11,15,11,0.9) 0%,rgba(11,15,11,0.5) 40%,transparent 80%)"></div>
 </section>
 
 
 <!-- ══════════════════════════════════════════════════
      BRANDS WE INSTALL
      ══════════════════════════════════════════════════ -->
-<section class="relative bg-white py-20 lg:py-28">
+<section class="relative py-20 lg:py-28" style="background-color:#0b0f0b;background-image:radial-gradient(ellipse 80% 55% at 50% 0%,rgba(55,212,19,0.38) 0%,transparent 65%),radial-gradient(ellipse 50% 50% at 100% 100%,rgba(55,212,19,0.25) 0%,transparent 60%),linear-gradient(160deg,#0d130d 0%,#090e09 50%,#070b07 100%)">
   <div class="max-w-7xl mx-auto px-6 lg:px-12">
     <div class="grid lg:grid-cols-[42%_58%] gap-10 lg:gap-16 items-start">
 
       <!-- Left -->
       <div>
         <div class="reveal-left flex items-center gap-3 mb-8">
-          <span class="lime-line visible w-8"></span>
-          <span class="font-display text-xs font-bold tracking-[.3em] uppercase text-charcoal-900">Premium Partners</span>
+          <span class="lime-line lime visible w-8"></span>
+          <span class="font-display text-xs font-bold tracking-[.3em] uppercase" style="color:rgba(255,255,255,0.5)">Premium Partners</span>
         </div>
         <div class="reveal-left delay-1 mb-10">
           <h2 class="font-display leading-[1.02] tracking-tight">
-            <span class="block font-black text-charcoal-900" style="font-size:clamp(2.4rem,5vw,4rem)">Brands</span>
+            <span class="block font-black text-white" style="font-size:clamp(2.4rem,5vw,4rem)">Brands</span>
             <span class="block font-black " style="color:#00FF00;font-size:clamp(2.4rem,5vw,4rem)">We Install</span>
-            <span class="block font-light text-slate-400"   style="font-size:clamp(2.4rem,5vw,4rem)">in Sheffield.</span>
+            <span class="block font-light" style="color:rgba(255,255,255,0.35);font-size:clamp(2.4rem,5vw,4rem)">in Sheffield.</span>
           </h2>
         </div>
         <div class="reveal-scale img-hover relative overflow-hidden rounded-2xl mb-4" style="height:clamp(300px,45vw,500px)">
@@ -860,102 +869,102 @@
 
       <!-- Right -->
       <div class="lg:pt-16">
-        <div class="reveal-right flex items-start justify-between gap-6 mb-10 pb-10 border-b border-slate-100">
-          <p class="font-body text-slate-500 font-light leading-relaxed text-sm max-w-xs">
+        <div class="reveal-right flex items-start justify-between gap-6 mb-10 pb-10 border-b border-white/10">
+          <p class="font-body text-slate-300 font-light leading-relaxed text-sm max-w-xs">
             We work with four industry-leading monocouche manufacturers. Each system carries a 20-25 year product warranty. We'll recommend the right one at your free site survey.
           </p>
-          <a href="#contact" class="flex-shrink-0 font-display font-bold text-xs tracking-wide text-charcoal-900 border border-charcoal-900/30 px-5 py-2.5 rounded-full hover:bg-charcoal-900 hover:text-white transition-all duration-300 whitespace-nowrap">Discuss Options ↗</a>
+          <a href="#contact" class="flex-shrink-0 font-display font-bold text-xs tracking-wide text-white border border-white/30 px-5 py-2.5 rounded-full hover:bg-white/10 transition-all duration-300 whitespace-nowrap">Discuss Options ↗</a>
         </div>
 
         <!-- Brand details accordion -->
-        <div class="divide-y divide-slate-100">
+        <div class="divide-y divide-white/10">
           <div class="exp-item group cursor-pointer py-4" onclick="toggleExp(this)">
             <div class="flex items-center justify-between gap-4">
               <div class="flex items-center gap-4">
-                <div class="flex-shrink-0 w-28 flex items-center"><img src="images/case-studies/ecorend-logo.webp" alt="Ecorend monocouche render logo" class="h-12 w-auto max-w-[110px]" loading="lazy"/></div>
+                <div class="flex-shrink-0 w-28 h-20 rounded-xl overflow-hidden flex items-center justify-center p-1.5" style="background:#fff"><img src="images/case-studies/ecorend-logo.webp" alt="Ecorend monocouche render logo" class="max-w-full max-h-full object-contain" style="transform:scale(1.3);transform-origin:center" loading="lazy"/></div>
                 <div>
-                  <span class="exp-title font-display font-bold text-slate-400 group-hover:text-charcoal-900 transition-colors duration-300 text-base block">Ecorend</span>
+                  <span class="exp-title font-display font-bold text-slate-300 group-hover:text-white transition-colors duration-300 text-base block">Ecorend</span>
                   <span class="font-display text-xs font-bold  tracking-widest uppercase" style="color:#00FF00">★ Recommended</span>
                 </div>
               </div>
               <span class="exp-arrow text-2xl text-slate-200 group-hover: flex-shrink-0" style="color:#00FF00">›</span>
             </div>
             <div class="exp-body">
-              <p class="font-body text-sm text-slate-500 font-light leading-relaxed pt-4 pb-2 max-w-lg">A well-proven monocouche system with excellent coverage, consistent colour batches and strong adhesion on a wide range of substrates. A reliable choice for Sheffield's varied housing stock — from Victorian brick to modern blockwork.</p>
+              <p class="font-body text-sm text-slate-300 font-light leading-relaxed pt-4 pb-2 max-w-lg">A well-proven monocouche system with excellent coverage, consistent colour batches and strong adhesion on a wide range of substrates. A reliable choice for Sheffield's varied housing stock — from Victorian brick to modern blockwork.</p>
             </div>
           </div>
           <div class="exp-item group cursor-pointer py-4" onclick="toggleExp(this)">
             <div class="flex items-center justify-between gap-4">
               <div class="flex items-center gap-4">
-                <div class="flex-shrink-0 w-28 flex items-center"><img src="images/case-studies/krend-logo.webp" alt="K Rend monocouche render logo" class="h-12 w-auto max-w-[110px]" loading="lazy"/></div>
+                <div class="flex-shrink-0 w-28 h-20 rounded-xl overflow-hidden flex items-center justify-center p-1.5" style="background:#fff"><img src="images/case-studies/krend-logo.webp" alt="K Rend monocouche render logo" class="max-w-full max-h-full object-contain" loading="lazy"/></div>
                 <div>
-                  <span class="exp-title font-display font-bold text-slate-400 group-hover:text-charcoal-900 transition-colors duration-300 text-base block">K Rend</span>
-                  <span class="font-display text-xs font-bold text-slate-400 tracking-widest uppercase">Industry Leader</span>
+                  <span class="exp-title font-display font-bold text-slate-300 group-hover:text-white transition-colors duration-300 text-base block">K Rend</span>
+                  <span class="font-display text-xs font-bold text-slate-500 tracking-widest uppercase">Industry Leader</span>
                 </div>
               </div>
               <span class="exp-arrow text-2xl text-slate-200 group-hover: flex-shrink-0" style="color:#00FF00">›</span>
             </div>
             <div class="exp-body">
-              <p class="font-body text-sm text-slate-500 font-light leading-relaxed pt-4 pb-2 max-w-lg">UK market leader in monocouche systems. Proven track record, wide colour range, and excellent performance in the UK climate. Our primary recommendation — reliable, consistent, and backed by strong manufacturer support.</p>
+              <p class="font-body text-sm text-slate-300 font-light leading-relaxed pt-4 pb-2 max-w-lg">UK market leader in monocouche systems. Proven track record, wide colour range, and excellent performance in the UK climate. Our primary recommendation — reliable, consistent, and backed by strong manufacturer support.</p>
             </div>
           </div>
           <div class="exp-item group cursor-pointer py-4" onclick="toggleExp(this)">
             <div class="flex items-center justify-between gap-4">
               <div class="flex items-center gap-4">
-                <div class="flex-shrink-0 w-28 flex items-center"><img src="images/case-studies/weber-logo.webp" alt="Weber Saint-Gobain monocouche render logo" class="h-12 w-auto max-w-[110px]" loading="lazy"/></div>
+                <div class="flex-shrink-0 w-28 h-20 rounded-xl overflow-hidden flex items-center justify-center p-1.5" style="background:#fff"><img src="images/case-studies/weber-logo.webp" alt="Weber Saint-Gobain monocouche render logo" class="max-w-full max-h-full object-contain" loading="lazy"/></div>
                 <div>
-                  <span class="exp-title font-display font-bold text-slate-400 group-hover:text-charcoal-900 transition-colors duration-300 text-base block">Weber</span>
-                  <span class="font-display text-xs font-bold text-slate-400 tracking-widest uppercase">Saint-Gobain</span>
+                  <span class="exp-title font-display font-bold text-slate-300 group-hover:text-white transition-colors duration-300 text-base block">Weber</span>
+                  <span class="font-display text-xs font-bold text-slate-500 tracking-widest uppercase">Saint-Gobain</span>
                 </div>
               </div>
               <span class="exp-arrow text-2xl text-slate-200 group-hover: flex-shrink-0" style="color:#00FF00">›</span>
             </div>
             <div class="exp-body">
-              <p class="font-body text-sm text-slate-500 font-light leading-relaxed pt-4 pb-2 max-w-lg">Saint-Gobain Weber — one of Europe's largest building materials companies. Excellent monocouche range with outstanding durability and a wide colour palette. Backed by the resources and quality assurance of a global manufacturer.</p>
+              <p class="font-body text-sm text-slate-300 font-light leading-relaxed pt-4 pb-2 max-w-lg">Saint-Gobain Weber — one of Europe's largest building materials companies. Excellent monocouche range with outstanding durability and a wide colour palette. Backed by the resources and quality assurance of a global manufacturer.</p>
             </div>
           </div>
           <div class="exp-item group cursor-pointer py-4" onclick="toggleExp(this)">
             <div class="flex items-center justify-between gap-4">
               <div class="flex items-center gap-4">
-                <div class="flex-shrink-0 w-28 flex items-center"><img src="images/case-studies/baumit-logo.webp" alt="Baumit monocouche render logo" class="h-12 w-auto max-w-[110px]" loading="lazy"/></div>
+                <div class="flex-shrink-0 w-28 h-20 rounded-xl overflow-hidden flex items-center justify-center p-1.5" style="background:#fff"><img src="images/case-studies/baumit-logo.webp" alt="Baumit monocouche render logo" class="max-w-full max-h-full object-contain" style="transform:scale(1.3);transform-origin:center" loading="lazy"/></div>
                 <div>
-                  <span class="exp-title font-display font-bold text-slate-400 group-hover:text-charcoal-900 transition-colors duration-300 text-base block">Baumit</span>
-                  <span class="font-display text-xs font-bold text-slate-400 tracking-widest uppercase">Premium Option</span>
+                  <span class="exp-title font-display font-bold text-slate-300 group-hover:text-white transition-colors duration-300 text-base block">Baumit</span>
+                  <span class="font-display text-xs font-bold text-slate-500 tracking-widest uppercase">Premium Option</span>
                 </div>
               </div>
               <span class="exp-arrow text-2xl text-slate-200 group-hover: flex-shrink-0" style="color:#00FF00">›</span>
             </div>
             <div class="exp-body">
-              <p class="font-body text-sm text-slate-500 font-light leading-relaxed pt-4 pb-2 max-w-lg">German engineering excellence with outstanding vapour permeability — ideal for older masonry and listed properties where breathability is critical. Premium option for period properties where performance cannot be compromised.</p>
+              <p class="font-body text-sm text-slate-300 font-light leading-relaxed pt-4 pb-2 max-w-lg">German engineering excellence with outstanding vapour permeability — ideal for older masonry and listed properties where breathability is critical. Premium option for period properties where performance cannot be compromised.</p>
             </div>
           </div>
           <div class="exp-item group cursor-pointer py-4" onclick="toggleExp(this)">
             <div class="flex items-center justify-between gap-4">
               <div class="flex items-center gap-4">
-                <div class="flex-shrink-0 w-28 flex items-center"><img src="images/case-studies/johnstones-logo.webp" alt="Johnstones Stormshield monocouche render logo" class="h-12 w-auto max-w-[110px]" loading="lazy"/></div>
+                <div class="flex-shrink-0 w-28 h-20 rounded-xl overflow-hidden flex items-center justify-center p-1.5" style="background:#fff"><img src="images/case-studies/johnstones-logo.webp" alt="Johnstones Stormshield monocouche render logo" class="max-w-full max-h-full object-contain" style="transform:scale(1.3);transform-origin:center" loading="lazy"/></div>
                 <div>
-                  <span class="exp-title font-display font-bold text-slate-400 group-hover:text-charcoal-900 transition-colors duration-300 text-base block">Johnstones</span>
-                  <span class="font-display text-xs font-bold text-slate-400 tracking-widest uppercase">Trusted British Brand</span>
+                  <span class="exp-title font-display font-bold text-slate-300 group-hover:text-white transition-colors duration-300 text-base block">Johnstones</span>
+                  <span class="font-display text-xs font-bold text-slate-500 tracking-widest uppercase">Trusted British Brand</span>
                 </div>
               </div>
               <span class="exp-arrow text-2xl text-slate-200 group-hover: flex-shrink-0" style="color:#00FF00">›</span>
             </div>
             <div class="exp-body">
-              <p class="font-body text-sm text-slate-500 font-light leading-relaxed pt-4 pb-2 max-w-lg">Johnstones Stormshield — a trusted British brand delivering reliable weather protection. Solid performance at a competitive price point, with good durability and a straightforward application process.</p>
+              <p class="font-body text-sm text-slate-300 font-light leading-relaxed pt-4 pb-2 max-w-lg">Johnstones Stormshield — a trusted British brand delivering reliable weather protection. Solid performance at a competitive price point, with good durability and a straightforward application process.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="absolute inset-x-0 bottom-0 h-24 pointer-events-none" style="background:linear-gradient(to top,#f0f0f0 0%,transparent 100%)"></div>
+  <div class="absolute inset-x-0 bottom-0 h-24 pointer-events-none" style="background:linear-gradient(to top,#0b0f0b 0%,transparent 100%)"></div>
 </section>
 
 
 <!-- ══════════════════════════════════════════════════
      PRICING
      ══════════════════════════════════════════════════ -->
-<section id="pricing" class="relative py-20 lg:py-28" style="background:linear-gradient(to bottom,#f0f0f0,#000000)">
+<section id="pricing" class="relative py-20 lg:py-28" style="background-color:#0b0f0b;background-image:radial-gradient(ellipse 80% 55% at 50% 0%,rgba(55,212,19,0.38) 0%,transparent 65%),radial-gradient(ellipse 50% 50% at 100% 100%,rgba(55,212,19,0.25) 0%,transparent 60%),linear-gradient(160deg,#0d130d 0%,#090e09 50%,#070b07 100%)">
   <div class="max-w-7xl mx-auto px-6 lg:px-12">
     <div class="grid lg:grid-cols-[42%_58%] gap-10 lg:gap-16 items-start">
 
@@ -1066,30 +1075,30 @@
       </div>
     </div>
   </div>
-  <div class="absolute inset-x-0 bottom-0 h-72 pointer-events-none" style="background:linear-gradient(to top,rgba(255,255,255,.7) 0%,rgba(255,255,255,.5) 20%,rgba(255,255,255,.28) 50%,rgba(255,255,255,.08) 75%,transparent 100%)"></div>
+  <div class="absolute inset-x-0 bottom-0 h-72 pointer-events-none" style="background:linear-gradient(to top,rgba(11,15,11,0.9) 0%,rgba(11,15,11,0.5) 40%,transparent 80%)"></div>
 </section>
 
 
 <!-- ══════════════════════════════════════════════════
      COLOUR OPTIONS
      ══════════════════════════════════════════════════ -->
-<section class="relative bg-white py-20 lg:py-28 overflow-hidden">
+<section class="relative py-20 lg:py-28 overflow-hidden" style="background-color:#0b0f0b;background-image:radial-gradient(ellipse 80% 55% at 50% 0%,rgba(55,212,19,0.38) 0%,transparent 65%),radial-gradient(ellipse 50% 50% at 100% 100%,rgba(55,212,19,0.25) 0%,transparent 60%),linear-gradient(160deg,#0d130d 0%,#090e09 50%,#070b07 100%)">
   <div class="max-w-7xl mx-auto px-6 lg:px-12 mb-10">
     <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
       <div>
         <div class="reveal-left flex items-center gap-3 mb-8">
-          <span class="lime-line visible w-8"></span>
-          <span class="font-display text-xs font-bold tracking-[.3em] uppercase text-charcoal-900">Colour Options</span>
+          <span class="lime-line lime visible w-8"></span>
+          <span class="font-display text-xs font-bold tracking-[.3em] uppercase" style="color:rgba(255,255,255,0.5)">Colour Options</span>
         </div>
         <div class="reveal-left delay-1">
           <h2 class="font-display leading-[1.02] tracking-tight">
-            <span class="block font-black text-charcoal-900" style="font-size:clamp(2.4rem,5vw,4rem)">100+</span>
+            <span class="block font-black text-white" style="font-size:clamp(2.4rem,5vw,4rem)">100+</span>
             <span class="block font-black " style="color:#00FF00;font-size:clamp(2.4rem,5vw,4rem)">Colours</span>
-            <span class="block font-light text-slate-400"   style="font-size:clamp(2.4rem,5vw,4rem)">Available.</span>
+            <span class="block font-light" style="color:rgba(255,255,255,0.35);font-size:clamp(2.4rem,5vw,4rem)">Available.</span>
           </h2>
         </div>
       </div>
-      <p class="reveal-right font-body text-slate-500 font-light text-sm max-w-xs leading-relaxed lg:mb-4">
+      <p class="reveal-right font-body text-slate-400 font-light text-sm max-w-xs leading-relaxed lg:mb-4">
         All colours are through-mixed — integral throughout the full 12-15mm depth. UV-stable, won't peel or chip. Physical samples provided at your free site survey.
       </p>
     </div>
@@ -1101,8 +1110,8 @@
       <img src="images/case-studies/monocouche-texture.webp" alt="Scraped monocouche render texture finish Sheffield" class="w-full h-full object-cover" loading="lazy"/>
     </div>
     <div>
-      <p class="font-display font-bold text-charcoal-900 text-sm mb-1">Scraped Texture — The Standard Finish</p>
-      <p class="font-body text-xs text-slate-500 font-light leading-relaxed max-w-xs">The most popular monocouche finish in Sheffield. Pulled back to create a natural stone-like surface that suits period and modern properties alike.</p>
+      <p class="font-display font-bold text-white text-sm mb-1">Scraped Texture — The Standard Finish</p>
+      <p class="font-body text-xs text-slate-400 font-light leading-relaxed max-w-xs">The most popular monocouche finish in Sheffield. Pulled back to create a natural stone-like surface that suits period and modern properties alike.</p>
     </div>
   </div>
 
@@ -1110,182 +1119,192 @@
   <div class="flex gap-3 px-6 lg:px-12 overflow-x-auto pb-4" style="-webkit-overflow-scrolling:touch;scrollbar-width:none">
     <div class="reveal flex-shrink-0 group cursor-default">
       <div class="rounded-xl w-28 h-28 border border-slate-100 group-hover:scale-110 transition-all duration-300 group-hover:shadow-lg" style="background:#f5f3f0"></div>
-      <p class="font-display text-xs font-bold text-charcoal-900 mt-2 text-center">Off White</p>
+      <p class="font-display text-xs font-bold text-white mt-2 text-center">Off White</p>
     </div>
     <div class="reveal delay-1 flex-shrink-0 group cursor-default">
       <div class="rounded-xl w-28 h-28 group-hover:scale-110 transition-all duration-300 group-hover:shadow-lg" style="background:#d9d4ce"></div>
-      <p class="font-display text-xs font-bold text-charcoal-900 mt-2 text-center">Light Grey</p>
+      <p class="font-display text-xs font-bold text-white mt-2 text-center">Light Grey</p>
     </div>
     <div class="reveal delay-2 flex-shrink-0 group cursor-default">
       <div class="rounded-xl w-28 h-28 group-hover:scale-110 transition-all duration-300 group-hover:shadow-lg" style="background:#a89d94"></div>
-      <p class="font-display text-xs font-bold text-charcoal-900 mt-2 text-center">Warm Grey</p>
+      <p class="font-display text-xs font-bold text-white mt-2 text-center">Warm Grey</p>
     </div>
     <div class="reveal delay-3 flex-shrink-0 group cursor-default">
       <div class="rounded-xl w-28 h-28 group-hover:scale-110 transition-all duration-300 group-hover:shadow-lg" style="background:#8b7d74"></div>
-      <p class="font-display text-xs font-bold text-charcoal-900 mt-2 text-center">Taupe</p>
+      <p class="font-display text-xs font-bold text-white mt-2 text-center">Taupe</p>
     </div>
     <div class="reveal delay-4 flex-shrink-0 group cursor-default">
       <div class="rounded-xl w-28 h-28 group-hover:scale-110 transition-all duration-300 group-hover:shadow-lg" style="background:#6b5d54"></div>
-      <p class="font-display text-xs font-bold text-charcoal-900 mt-2 text-center">Stone Brown</p>
+      <p class="font-display text-xs font-bold text-white mt-2 text-center">Stone Brown</p>
     </div>
     <div class="reveal flex-shrink-0 group cursor-default">
       <div class="rounded-xl w-28 h-28 group-hover:scale-110 transition-all duration-300 group-hover:shadow-lg" style="background:#3d3633"></div>
-      <p class="font-display text-xs font-bold text-charcoal-900 mt-2 text-center">Dark Brown</p>
+      <p class="font-display text-xs font-bold text-white mt-2 text-center">Dark Brown</p>
     </div>
     <div class="reveal delay-1 flex-shrink-0 group cursor-default">
       <div class="rounded-xl w-28 h-28 group-hover:scale-110 transition-all duration-300 group-hover:shadow-lg" style="background:#c97d50"></div>
-      <p class="font-display text-xs font-bold text-charcoal-900 mt-2 text-center">Terracotta</p>
+      <p class="font-display text-xs font-bold text-white mt-2 text-center">Terracotta</p>
     </div>
     <div class="reveal delay-2 flex-shrink-0 group cursor-default">
       <div class="rounded-xl w-28 h-28 group-hover:scale-110 transition-all duration-300 group-hover:shadow-lg" style="background:#d4514e"></div>
-      <p class="font-display text-xs font-bold text-charcoal-900 mt-2 text-center">Burnt Red</p>
+      <p class="font-display text-xs font-bold text-white mt-2 text-center">Burnt Red</p>
     </div>
     <div class="reveal delay-3 flex-shrink-0 group cursor-default">
       <div class="rounded-xl w-28 h-28 group-hover:scale-110 transition-all duration-300 group-hover:shadow-lg" style="background:#5a7d5e"></div>
-      <p class="font-display text-xs font-bold text-charcoal-900 mt-2 text-center">Sage Green</p>
+      <p class="font-display text-xs font-bold text-white mt-2 text-center">Sage Green</p>
     </div>
     <div class="reveal delay-4 flex-shrink-0 group cursor-default">
       <div class="rounded-xl w-28 h-28 group-hover:scale-110 transition-all duration-300 group-hover:shadow-lg" style="background:#2d5344"></div>
-      <p class="font-display text-xs font-bold text-charcoal-900 mt-2 text-center">Dark Green</p>
+      <p class="font-display text-xs font-bold text-white mt-2 text-center">Dark Green</p>
     </div>
     <div class="reveal flex-shrink-0 group cursor-default">
       <div class="rounded-xl w-28 h-28 group-hover:scale-110 transition-all duration-300 group-hover:shadow-lg" style="background:#5b7fa6"></div>
-      <p class="font-display text-xs font-bold text-charcoal-900 mt-2 text-center">Slate Blue</p>
+      <p class="font-display text-xs font-bold text-white mt-2 text-center">Slate Blue</p>
     </div>
   </div>
-  <div class="absolute inset-x-0 bottom-0 h-24 pointer-events-none" style="background:linear-gradient(to top,#f8fafc 0%,transparent 100%)"></div>
+  <div class="absolute inset-x-0 bottom-0 h-24 pointer-events-none" style="background:linear-gradient(to top,#0b0f0b 0%,transparent 100%)"></div>
 </section>
 
 
 <!-- ══════════════════════════════════════════════════
-     FAQ — full width accordion
+     FAQ — dark card grid
      ══════════════════════════════════════════════════ -->
-<section id="faq" class="bg-slate-50 py-20 lg:py-28">
+<section id="faq" class="py-20 lg:py-28" style="background-color:#0b0f0b;background-image:radial-gradient(ellipse 70% 50% at 50% 0%,rgba(55,212,19,0.32) 0%,transparent 60%),linear-gradient(160deg,#0d130d 0%,#090e09 50%,#070b07 100%)">
   <div class="max-w-7xl mx-auto px-6 lg:px-12">
 
     <!-- Header row -->
     <div class="grid lg:grid-cols-2 gap-10 lg:gap-20 items-end mb-14">
       <div>
         <div class="reveal flex items-center gap-3 mb-6">
-          <span class="lime-line visible w-8"></span>
-          <span class="font-display text-xs font-bold tracking-[.3em] uppercase text-charcoal-900">FAQ</span>
+          <span class="lime-line lime visible w-8"></span>
+          <span class="font-display text-xs font-bold tracking-[.3em] uppercase" style="color:#37D413">FAQ</span>
         </div>
         <div class="reveal delay-1">
           <h2 class="font-display leading-[1.02] tracking-tight">
-            <span class="block font-black text-charcoal-900" style="font-size:clamp(2.2rem,4.5vw,3.5rem)">Common</span>
-            <span class="block font-black " style="color:#00FF00;font-size:clamp(2.2rem,4.5vw,3.5rem)">Questions</span>
-            <span class="block font-light text-slate-400"   style="font-size:clamp(2.2rem,4.5vw,3.5rem)">Answered.</span>
+            <span class="block font-black text-white" style="font-size:clamp(2.2rem,4.5vw,3.5rem)">Common</span>
+            <span class="block font-black" style="color:#37D413;font-size:clamp(2.2rem,4.5vw,3.5rem)">Questions</span>
+            <span class="block font-light text-slate-500" style="font-size:clamp(2.2rem,4.5vw,3.5rem)">Answered.</span>
           </h2>
         </div>
       </div>
       <div class="reveal">
-        <p class="font-body text-slate-500 font-light leading-relaxed text-sm mb-6">
-          Everything Sheffield homeowners ask us about monocouche rendering. Click any question for the full answer.
+        <p class="font-body font-light leading-relaxed text-sm mb-6" style="color:rgba(255,255,255,0.45)">
+          Everything Sheffield homeowners ask us about monocouche rendering. Can't find yours? Call us direct.
         </p>
-        <a href="tel:+447595399525" class="font-display font-bold text-xs tracking-wide text-charcoal-900 border border-charcoal-900/30 px-6 py-3 rounded-full hover:bg-charcoal-900 hover:text-white transition-all duration-300 inline-block">Call 07595 399525 ↗</a>
+        <a href="tel:+447595399525" class="font-display font-bold text-xs tracking-wide px-6 py-3 rounded-full transition-all duration-300 inline-block" style="color:#37D413;border:1px solid rgba(55,212,19,0.3)" onmouseover="this.style.background='rgba(55,212,19,0.1)'" onmouseout="this.style.background='transparent'">Call 07595 399525 ↗</a>
       </div>
     </div>
 
-    <!-- Full-width accordion cards -->
-    <div class="space-y-3">
+    <!-- 2-col card grid -->
+    <div class="grid lg:grid-cols-2 gap-3">
 
-      <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
-        <div class="flex items-center justify-between gap-4 px-7 py-6">
-          <span class="faq-title font-display font-bold text-charcoal-900 text-base lg:text-lg leading-snug">What is monocouche render?</span>
-          <span class="faq-icon flex-shrink-0 w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center font-display font-bold text-slate-400 text-xl transition-all duration-300">+</span>
-        </div>
-        <div class="faq-body">
-          <p class="font-body text-sm text-slate-500 font-light leading-relaxed px-7 pb-6">Monocouche (French for 'one coat') is a cement-based render that combines base coat and finish in a single 12–15mm application. It's through-coloured — the colour runs throughout the full thickness of the material, not painted on. The result is a durable, stone-like finish that doesn't peel, chip, or need repainting. It's a well-proven system that's been used across Europe for decades and is particularly popular across South Yorkshire for new builds, extensions, and renovation projects.</p>
+      <div class="faq-item reveal" onclick="toggleFaq(this)">
+        <div class="flex items-start justify-between gap-4">
+          <div class="flex-1">
+            <div class="flex items-center gap-3 mb-2"><span class="faq-num">01</span><span class="faq-cat">Product</span></div>
+            <div class="faq-q">What is monocouche render?</div>
+            <div class="faq-body"><p class="faq-ans">Monocouche (French for 'one coat') is a cement-based render that combines base coat and finish in a single 12–15mm application. It's through-coloured — the colour runs throughout the full thickness, not painted on. The result is a durable, stone-like finish that doesn't peel, chip, or need repainting.</p></div>
+          </div>
+          <span class="faq-icon">+</span>
         </div>
       </div>
 
-      <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
-        <div class="flex items-center justify-between gap-4 px-7 py-6">
-          <span class="faq-title font-display font-bold text-charcoal-900 text-base lg:text-lg leading-snug">How much does monocouche rendering cost in Sheffield?</span>
-          <span class="faq-icon flex-shrink-0 w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center font-display font-bold text-slate-400 text-xl transition-all duration-300">+</span>
-        </div>
-        <div class="faq-body">
-          <p class="font-body text-sm text-slate-500 font-light leading-relaxed px-7 pb-6">For a mid-terrace house in Sheffield, monocouche rendering typically costs £3,500–£5,000. A 3-bed semi runs £5,000–£7,500 and a detached property £7,500–£11,000+. Prices include scaffold, full substrate preparation, primer and the complete monocouche system. We provide a fully itemised quote after a free site survey — no deposit required, and you pay only when the work is 100% complete.</p>
-        </div>
-      </div>
-
-      <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
-        <div class="flex items-center justify-between gap-4 px-7 py-6">
-          <span class="faq-title font-display font-bold text-charcoal-900 text-base lg:text-lg leading-snug">How long does monocouche render last?</span>
-          <span class="faq-icon flex-shrink-0 w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center font-display font-bold text-slate-400 text-xl transition-all duration-300">+</span>
-        </div>
-        <div class="faq-body">
-          <p class="font-body text-sm text-slate-500 font-light leading-relaxed px-7 pb-6">A professionally installed monocouche render carries a 20-25 year manufacturer product warranty plus our own 5-year workmanship guarantee. On a properly prepared substrate with correct application, monocouche consistently performs for 25+ years in UK conditions. Properties we rendered over a decade ago still look sharp — the integral colour doesn't fade or chalk.</p>
+      <div class="faq-item reveal delay-1" onclick="toggleFaq(this)">
+        <div class="flex items-start justify-between gap-4">
+          <div class="flex-1">
+            <div class="flex items-center gap-3 mb-2"><span class="faq-num">02</span><span class="faq-cat">Cost &amp; Quotes</span></div>
+            <div class="faq-q">How much does monocouche rendering cost in Sheffield?</div>
+            <div class="faq-body"><p class="faq-ans">Mid-terrace: £3,500–£5,000. 3-bed semi: £5,000–£7,500. Detached: £7,500–£11,000+. Prices include scaffold, prep, primer and the full system. Fully itemised quote after a free site survey — no deposit required.</p></div>
+          </div>
+          <span class="faq-icon">+</span>
         </div>
       </div>
 
-      <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
-        <div class="flex items-center justify-between gap-4 px-7 py-6">
-          <span class="faq-title font-display font-bold text-charcoal-900 text-base lg:text-lg leading-snug">Is monocouche or silicone render better for my property?</span>
-          <span class="faq-icon flex-shrink-0 w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center font-display font-bold text-slate-400 text-xl transition-all duration-300">+</span>
-        </div>
-        <div class="faq-body">
-          <p class="font-body text-sm text-slate-500 font-light leading-relaxed px-7 pb-6">Both are excellent — the right choice depends on your priorities. Silicone is the premium option: hydrophobic (self-cleaning), more flexible (crack-resistant), and carries a 25-year warranty. Monocouche is a proven, cost-effective alternative with a natural stone-like finish and a 20-25 year lifespan. It's the better choice for new builds, extensions, and projects where budget matters without sacrificing quality. We'll give you an honest recommendation at your free site survey.</p>
-        </div>
-      </div>
-
-      <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
-        <div class="flex items-center justify-between gap-4 px-7 py-6">
-          <span class="faq-title font-display font-bold text-charcoal-900 text-base lg:text-lg leading-snug">Can you apply monocouche over existing pebbledash?</span>
-          <span class="faq-icon flex-shrink-0 w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center font-display font-bold text-slate-400 text-xl transition-all duration-300">+</span>
-        </div>
-        <div class="faq-body">
-          <p class="font-body text-sm text-slate-500 font-light leading-relaxed px-7 pb-6">It depends on the condition of the pebbledash. If it's sound, well-bonded, and not hollow, monocouche can be applied over the top with the right primer. Where sections are loose, hollow or failing, we remove those areas back to the masonry before applying. We always carry out a full substrate assessment at the free site survey and explain exactly what's involved before work begins — no surprises.</p>
+      <div class="faq-item reveal" onclick="toggleFaq(this)">
+        <div class="flex items-start justify-between gap-4">
+          <div class="flex-1">
+            <div class="flex items-center gap-3 mb-2"><span class="faq-num">03</span><span class="faq-cat">Warranty</span></div>
+            <div class="faq-q">How long does monocouche render last?</div>
+            <div class="faq-body"><p class="faq-ans">A professionally installed monocouche carries a 20-25 year manufacturer product warranty plus our 5-year workmanship guarantee. On a properly prepared substrate, it consistently performs for 25+ years. Properties we rendered over a decade ago still look sharp.</p></div>
+          </div>
+          <span class="faq-icon">+</span>
         </div>
       </div>
 
-      <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
-        <div class="flex items-center justify-between gap-4 px-7 py-6">
-          <span class="faq-title font-display font-bold text-charcoal-900 text-base lg:text-lg leading-snug">Does monocouche render crack?</span>
-          <span class="faq-icon flex-shrink-0 w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center font-display font-bold text-slate-400 text-xl transition-all duration-300">+</span>
-        </div>
-        <div class="faq-body">
-          <p class="font-body text-sm text-slate-500 font-light leading-relaxed px-7 pb-6">Hairline shrinkage cracks can occasionally occur in monocouche — it's a cement-based product and less flexible than silicone. Correct preparation (right primers, correct mix, proper curing conditions) minimises this risk significantly. For properties on particularly movement-prone substrates, we may recommend a silicone system instead. We'll always be honest about the best system for your specific property at the site survey.</p>
-        </div>
-      </div>
-
-      <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
-        <div class="flex items-center justify-between gap-4 px-7 py-6">
-          <span class="faq-title font-display font-bold text-charcoal-900 text-base lg:text-lg leading-snug">Do you need to paint monocouche render?</span>
-          <span class="faq-icon flex-shrink-0 w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center font-display font-bold text-slate-400 text-xl transition-all duration-300">+</span>
-        </div>
-        <div class="faq-body">
-          <p class="font-body text-sm text-slate-500 font-light leading-relaxed px-7 pb-6">No — and this is one of monocouche's key advantages. The colour is integral throughout the full 12–15mm thickness of the coat, pigmented with UV-stable tints. There is nothing to peel or repaint. Unlike masonry paint which needs redoing every 5–8 years (at a cost of £2,000+ each time), monocouche maintains its colour for 20+ years with no repainting required whatsoever.</p>
+      <div class="faq-item reveal delay-1" onclick="toggleFaq(this)">
+        <div class="flex items-start justify-between gap-4">
+          <div class="flex-1">
+            <div class="flex items-center gap-3 mb-2"><span class="faq-num">04</span><span class="faq-cat">Comparison</span></div>
+            <div class="faq-q">Is monocouche or silicone render better for my property?</div>
+            <div class="faq-body"><p class="faq-ans">Both are excellent. Silicone is the premium option: hydrophobic, more flexible, 25-year warranty. Monocouche is the proven, cost-effective alternative with a stone-like finish and 20-25 year lifespan — the better choice for new builds and projects where budget matters. We'll recommend honestly at the site survey.</p></div>
+          </div>
+          <span class="faq-icon">+</span>
         </div>
       </div>
 
-      <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
-        <div class="flex items-center justify-between gap-4 px-7 py-6">
-          <span class="faq-title font-display font-bold text-charcoal-900 text-base lg:text-lg leading-snug">How long does monocouche rendering take?</span>
-          <span class="faq-icon flex-shrink-0 w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center font-display font-bold text-slate-400 text-xl transition-all duration-300">+</span>
-        </div>
-        <div class="faq-body">
-          <p class="font-body text-sm text-slate-500 font-light leading-relaxed px-7 pb-6">A mid-terrace or semi-detached house typically takes 2–4 working days from scaffold erection to finished render. A detached property or one with significant prep work may take 4–6 days. Because monocouche is a single-coat system, it's faster than traditional multi-coat approaches — meaning less time on scaffold and less disruption to you. We'll give you a firm programme at the site survey.</p>
-        </div>
-      </div>
-
-      <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
-        <div class="flex items-center justify-between gap-4 px-7 py-6">
-          <span class="faq-title font-display font-bold text-charcoal-900 text-base lg:text-lg leading-snug">Is monocouche render worth the money in Sheffield?</span>
-          <span class="faq-icon flex-shrink-0 w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center font-display font-bold text-slate-400 text-xl transition-all duration-300">+</span>
-        </div>
-        <div class="faq-body">
-          <p class="font-body text-sm text-slate-500 font-light leading-relaxed px-7 pb-6">Yes — for most Sheffield homeowners, monocouche is outstanding value over the long term. Consider the alternative: masonry paint costs £2,000–£4,000 and needs redoing every 5–8 years. Over 25 years that's up to £20,000 in repainting costs alone. A monocouche render (£3,500–£11,000 depending on property size) requires zero repainting for 20-25 years. The integral colour doesn't fade, peel, or chalk. Add improved weatherproofing and kerb appeal — the maths is straightforward.</p>
+      <div class="faq-item reveal" onclick="toggleFaq(this)">
+        <div class="flex items-start justify-between gap-4">
+          <div class="flex-1">
+            <div class="flex items-center gap-3 mb-2"><span class="faq-num">05</span><span class="faq-cat">Preparation</span></div>
+            <div class="faq-q">Can you apply monocouche over existing pebbledash?</div>
+            <div class="faq-body"><p class="faq-ans">It depends on the condition. If the pebbledash is sound and well-bonded, monocouche can go over the top with the right primer. Where sections are loose or failing, we strip those areas to the masonry first. Full substrate assessment at the free site survey — no surprises.</p></div>
+          </div>
+          <span class="faq-icon">+</span>
         </div>
       </div>
 
-      <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
-        <div class="flex items-center justify-between gap-4 px-7 py-6">
-          <span class="faq-title font-display font-bold text-charcoal-900 text-base lg:text-lg leading-snug">What warranty do you offer on monocouche rendering?</span>
-          <span class="faq-icon flex-shrink-0 w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center font-display font-bold text-slate-400 text-xl transition-all duration-300">+</span>
+      <div class="faq-item reveal delay-1" onclick="toggleFaq(this)">
+        <div class="flex items-start justify-between gap-4">
+          <div class="flex-1">
+            <div class="flex items-center gap-3 mb-2"><span class="faq-num">06</span><span class="faq-cat">Performance</span></div>
+            <div class="faq-q">Does monocouche render crack?</div>
+            <div class="faq-body"><p class="faq-ans">Hairline shrinkage cracks can occasionally occur — it's cement-based and less flexible than silicone. Correct preparation and curing conditions minimise this significantly. For movement-prone substrates, we may recommend silicone instead. We're always honest about the best system for your property.</p></div>
+          </div>
+          <span class="faq-icon">+</span>
         </div>
-        <div class="faq-body">
-          <p class="font-body text-sm text-slate-500 font-light leading-relaxed px-7 pb-6">Every monocouche system we install carries the manufacturer's product warranty (20-25 years depending on brand — Ecorend, K Rend, Weber or Baumit) plus our own 5-year workmanship guarantee. You pay zero deposit — nothing until the work is 100% complete and you've inspected it to your satisfaction. All quotes are fully itemised with no hidden costs.</p>
+      </div>
+
+      <div class="faq-item reveal" onclick="toggleFaq(this)">
+        <div class="flex items-start justify-between gap-4">
+          <div class="flex-1">
+            <div class="flex items-center gap-3 mb-2"><span class="faq-num">07</span><span class="faq-cat">Maintenance</span></div>
+            <div class="faq-q">Do you need to paint monocouche render?</div>
+            <div class="faq-body"><p class="faq-ans">No — the colour is integral throughout the full 12–15mm thickness, pigmented with UV-stable tints. Nothing to peel or repaint. Unlike masonry paint (redone every 5–8 years at £2,000+ a time), monocouche maintains its colour for 20+ years with zero repainting required.</p></div>
+          </div>
+          <span class="faq-icon">+</span>
+        </div>
+      </div>
+
+      <div class="faq-item reveal delay-1" onclick="toggleFaq(this)">
+        <div class="flex items-start justify-between gap-4">
+          <div class="flex-1">
+            <div class="flex items-center gap-3 mb-2"><span class="faq-num">08</span><span class="faq-cat">Process</span></div>
+            <div class="faq-q">How long does monocouche rendering take?</div>
+            <div class="faq-body"><p class="faq-ans">A mid-terrace or semi typically takes 2–4 working days from scaffold to finished render. A detached property may take 4–6 days. As a single-coat system it's faster than multi-coat alternatives — less time on scaffold, less disruption. Firm programme provided at the site survey.</p></div>
+          </div>
+          <span class="faq-icon">+</span>
+        </div>
+      </div>
+
+      <div class="faq-item reveal" onclick="toggleFaq(this)">
+        <div class="flex items-start justify-between gap-4">
+          <div class="flex-1">
+            <div class="flex items-center gap-3 mb-2"><span class="faq-num">09</span><span class="faq-cat">Value</span></div>
+            <div class="faq-q">Is monocouche render worth the money in Sheffield?</div>
+            <div class="faq-body"><p class="faq-ans">Yes. Masonry paint costs £2,000–£4,000 and needs redoing every 5–8 years — up to £20,000 over 25 years. Monocouche (£3,500–£11,000 depending on size) needs zero repainting for 20-25 years. Add improved weatherproofing and kerb appeal — the maths is clear.</p></div>
+          </div>
+          <span class="faq-icon">+</span>
+        </div>
+      </div>
+
+      <div class="faq-item reveal delay-1" onclick="toggleFaq(this)">
+        <div class="flex items-start justify-between gap-4">
+          <div class="flex-1">
+            <div class="flex items-center gap-3 mb-2"><span class="faq-num">10</span><span class="faq-cat">Warranty</span></div>
+            <div class="faq-q">What warranty do you offer on monocouche rendering?</div>
+            <div class="faq-body"><p class="faq-ans">Every monocouche system carries the manufacturer's 20-25 year product warranty (Ecorend, K Rend, Weber or Baumit) plus our own 5-year workmanship guarantee. Zero deposit — you pay nothing until the work is 100% complete and you've inspected it. All quotes fully itemised, no hidden costs.</p></div>
+          </div>
+          <span class="faq-icon">+</span>
         </div>
       </div>
 
@@ -1318,7 +1337,7 @@
       Free site survey. Fully itemised quote. Zero deposit. Sheffield's trusted monocouche rendering specialists.
     </p>
     <div class="reveal delay-3 flex flex-wrap gap-4 justify-center">
-      <a href="/contact/" class="font-display font-bold  text-charcoal-900 px-10 py-4 rounded-full text-sm tracking-wide hover:bg-lime-400 transition-all duration-300" style="background:#00FF00">Get a Free Quote</a>
+      <a href="/get-quote" class="font-display font-bold  text-charcoal-900 px-10 py-4 rounded-full text-sm tracking-wide hover:bg-lime-400 transition-all duration-300" style="background:#00FF00">Get a Free Quote</a>
       <a href="tel:+447595399525" class="font-display font-bold bg-white/10 text-white px-10 py-4 rounded-full text-sm tracking-wide border border-white/20 hover:bg-white/20 transition-all duration-300">Call 07595 399525</a>
     </div>
   </div>
@@ -1453,7 +1472,7 @@
                    onmouseover="this.style.color='rgba(255,255,255,0.7)'" onmouseout="this.style.color='rgba(255,255,255,0.35)'">Project Gallery</a></li>
             <li><a href="/faq/" class="font-display text-sm no-underline transition-colors duration-200" style="color:rgba(255,255,255,0.35)"
                    onmouseover="this.style.color='rgba(255,255,255,0.7)'" onmouseout="this.style.color='rgba(255,255,255,0.35)'">FAQ</a></li>
-            <li><a href="/contact/" class="font-display text-sm no-underline transition-colors duration-200" style="color:rgba(255,255,255,0.35)"
+            <li><a href="/get-quote" class="font-display text-sm no-underline transition-colors duration-200" style="color:rgba(255,255,255,0.35)"
                    onmouseover="this.style.color='rgba(255,255,255,0.7)'" onmouseout="this.style.color='rgba(255,255,255,0.35)'">Get a Quote</a></li>
           </ul>
         </div>
@@ -1490,7 +1509,7 @@
             </div>
           </div>
         </div>
-        <a href="/contact/" class="inline-flex items-center gap-2 font-display font-bold text-charcoal-900 text-xs tracking-wide px-5 py-2.5 rounded-full no-underline transition-opacity duration-200 hover:opacity-85" style="background:#00FF00">
+        <a href="/get-quote" class="inline-flex items-center gap-2 font-display font-bold text-charcoal-900 text-xs tracking-wide px-5 py-2.5 rounded-full no-underline transition-opacity duration-200 hover:opacity-85" style="background:#00FF00">
           Free Survey &rarr;
         </a>
       </div>

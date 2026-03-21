@@ -305,11 +305,20 @@
     .exp-item.open .exp-body{max-height:500px}
     .exp-arrow{transition:color .3s ease,transform .35s ease;display:inline-block;line-height:1}
     .exp-item.open .exp-arrow{color:#00FF00;transform:rotate(90deg)}
-    .exp-item.open .exp-title{color:#1a1a1a}
+    .exp-item.open .exp-title{color:#fff}
+    .faq-item{background:#131313;border:1px solid #1e1e1e;border-radius:16px;padding:24px 24px 24px 28px;cursor:pointer;position:relative;overflow:hidden;transition:border-color .3s,box-shadow .3s}
+    .faq-item::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(to bottom,#37D413,#2BA80D);transform:scaleY(0);transform-origin:bottom;transition:transform .4s cubic-bezier(.16,1,.3,1);border-radius:0 0 0 16px}
+    .faq-item:hover{border-color:#2a2a2a}
+    .faq-item.open{border-color:rgba(55,212,19,0.35);box-shadow:0 0 32px rgba(55,212,19,0.07)}
+    .faq-item.open::before{transform:scaleY(1)}
     .faq-body{max-height:0;overflow:hidden;transition:max-height .45s cubic-bezier(.16,1,.3,1)}
-    .faq-item.open .faq-body{max-height:500px}
-    .faq-icon{transition:background .3s,color .3s,transform .35s}
-    .faq-item.open .faq-icon{background:#00FF00;border-color:#00FF00;color:#fff;transform:rotate(45deg)}
+    .faq-item.open .faq-body{max-height:320px}
+    .faq-num{font-size:10px;font-weight:800;letter-spacing:.18em;color:#37D413}
+    .faq-cat{font-size:9px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,0.28);background:rgba(255,255,255,0.05);padding:3px 10px;border-radius:100px}
+    .faq-q{font-size:15px;font-weight:700;color:#fff;line-height:1.4;margin-top:10px}
+    .faq-ans{font-size:13px;color:rgba(255,255,255,0.52);line-height:1.75;padding-top:14px;padding-bottom:4px}
+    .faq-icon{flex-shrink:0;width:30px;height:30px;border-radius:8px;border:1px solid #2a2a2a;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:300;color:rgba(255,255,255,0.3);transition:all .3s cubic-bezier(.34,1.56,.64,1);background:transparent;margin-top:2px}
+    .faq-item.open .faq-icon{background:#37D413;border-color:#37D413;color:#000;transform:rotate(45deg)}
     #mobile-menu{display:none}
     #mobile-menu.open{display:block}
     html{scroll-behavior:smooth;scroll-padding-top:100px}
@@ -389,7 +398,7 @@
            onload="this.classList.add('loaded')" />
     </picture>
     <div class="absolute inset-0" style="background:linear-gradient(105deg,rgba(0,0,0,.92) 0%,rgba(0,0,0,.65) 50%,rgba(0,0,0,.2) 100%)"></div>
-    <div class="absolute inset-x-0 bottom-0 h-40" style="background:linear-gradient(to top,rgba(255,255,255,.45) 0%,transparent 100%)"></div>
+    <div class="absolute inset-x-0 bottom-0 h-40" style="background:linear-gradient(to top,#0b0f0b 0%,transparent 100%)"></div>
     <div class="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-12 pb-24 pt-40">
       <div class="flex items-center gap-3 mb-8 reveal">
         <span class="lime-line lime visible w-10"></span>
@@ -425,7 +434,7 @@
 
 
 <!-- WHY CHOOSE DRY LINING -->
-<section id="why" class="py-20 lg:py-28" style="background:linear-gradient(to bottom,#f0f0f0,#000000)">
+<section id="why" class="py-20 lg:py-28" style="background-color:#0b0f0b;background-image:radial-gradient(ellipse 80% 55% at 50% 0%,rgba(55,212,19,0.38) 0%,transparent 65%),radial-gradient(ellipse 50% 50% at 100% 100%,rgba(55,212,19,0.25) 0%,transparent 60%),linear-gradient(160deg,#0d130d 0%,#090e09 50%,#070b07 100%)">
   <div class="max-w-7xl mx-auto px-6 lg:px-12">
     <div class="grid lg:grid-cols-[42%_58%] gap-10 lg:gap-16 items-start">
       <div>
@@ -453,7 +462,7 @@
           <p class="font-body text-slate-300 font-light leading-relaxed text-sm max-w-xs">
             Dry lining is the fastest way to achieve a perfectly flat, smooth wall or ceiling — whether you're boarding a new extension, insulating a cold solid-wall home, or dividing a room with a stud partition.
           </p>
-          <a href="#contact" class="flex-shrink-0 font-display font-bold text-xs tracking-wide text-white border border-white/30 px-5 py-2.5 rounded-full hover:bg-white hover:text-charcoal-900 transition-all duration-300 whitespace-nowrap">Get a Quote ↗</a>
+          <a href="#contact" class="flex-shrink-0 font-display font-bold text-xs tracking-wide text-white border border-white/30 px-5 py-2.5 rounded-full hover:bg-white/10 transition-all duration-300 whitespace-nowrap">Get a Quote ↗</a>
         </div>
         <div class="divide-y divide-white/10">
           <div class="exp-item group cursor-pointer py-5" onclick="toggleExp(this)">
@@ -523,7 +532,7 @@
     <p class="reveal delay-2 font-body text-slate-300 font-light max-w-lg leading-relaxed mb-10">
       From single rooms to full-house boarding programmes, stud partition walls to insulated upgrades on Victorian terraces — P&amp;R Solutions deliver perfectly flat, skim-finished dry lining across Sheffield and South Yorkshire. No deposit. Pay only when you're completely satisfied.
     </p>
-    <div class="reveal delay-3 flex flex-wrap gap-10 border-t border-slate-100 pt-8">
+    <div class="reveal delay-3 flex flex-wrap gap-10 border-t border-white/10 pt-8">
       <div><span class="font-display font-black text-4xl text-white block leading-none">500+</span><span class="font-body text-xs text-slate-400 tracking-widest uppercase mt-1 block">Completed Projects</span></div>
       <div class="w-px bg-white/10 hidden sm:block"></div>
       <div><span class="font-display font-black text-4xl  block leading-none" style="color:#00FF00">0%</span><span class="font-body text-xs text-slate-400 tracking-widest uppercase mt-1 block">Deposit Required</span></div>
@@ -531,29 +540,29 @@
       <div><span class="font-display font-black text-4xl text-white block leading-none">5★</span><span class="font-body text-xs text-slate-400 tracking-widest uppercase mt-1 block">Google Rating</span></div>
     </div>
   </div>
-  <div class="absolute inset-x-0 bottom-0 h-72 pointer-events-none" style="background:linear-gradient(to top,rgba(255,255,255,.32) 0%,rgba(255,255,255,.18) 30%,rgba(255,255,255,.06) 60%,transparent 100%)"></div>
+  <div class="absolute inset-x-0 bottom-0 h-72 pointer-events-none" style="background:linear-gradient(to top,#0b0f0b 0%,transparent 100%)"></div>
 </section>
 
 
 <!-- PORTFOLIO -->
-<section id="portfolio" class="relative bg-white py-20 lg:py-28">
+<section id="portfolio" class="relative py-20 lg:py-28" style="background-color:#0b0f0b;background-image:radial-gradient(ellipse 80% 55% at 50% 0%,rgba(55,212,19,0.38) 0%,transparent 65%),radial-gradient(ellipse 50% 50% at 100% 100%,rgba(55,212,19,0.25) 0%,transparent 60%),linear-gradient(160deg,#0d130d 0%,#090e09 50%,#070b07 100%)">
   <div class="max-w-7xl mx-auto px-6 lg:px-12">
     <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-14">
       <div>
         <div class="reveal flex items-center gap-3 mb-6">
           <span class="lime-line visible w-8"></span>
-          <span class="font-display text-xs font-bold tracking-[.3em] uppercase text-charcoal-900">Our Sheffield Work</span>
+          <span class="font-display text-xs font-bold tracking-[.3em] uppercase" style="color:rgba(255,255,255,0.5)">Our Sheffield Work</span>
         </div>
         <div class="reveal delay-1">
           <h2 class="font-display leading-[1.02] tracking-tight">
-            <span class="block font-black text-charcoal-900" style="font-size:clamp(2.2rem,4.5vw,3.5rem)">Dry Lining Projects</span>
+            <span class="block font-black text-white" style="font-size:clamp(2.2rem,4.5vw,3.5rem)">Dry Lining Projects</span>
             <span class="block font-black " style="color:#00FF00;font-size:clamp(2.2rem,4.5vw,3.5rem)">Across Sheffield</span>
             <span class="block font-light text-slate-400"   style="font-size:clamp(2.2rem,4.5vw,3.5rem)">&amp; South Yorkshire.</span>
           </h2>
         </div>
       </div>
       <div class="reveal flex-shrink-0">
-        <a href="#contact" class="font-display font-bold text-xs tracking-wide text-charcoal-900 border border-charcoal-900/30 px-6 py-3 rounded-full hover:bg-charcoal-900 hover:text-white transition-all duration-300 whitespace-nowrap">Request a Survey ↗</a>
+        <a href="#contact" class="font-display font-bold text-xs tracking-wide text-white border border-white/25 px-6 py-3 rounded-full hover:bg-white/10 transition-all duration-300 whitespace-nowrap">Request a Survey ↗</a>
       </div>
     </div>
 
@@ -567,13 +576,13 @@
         </div>
         <div class="flex items-start justify-between gap-3 mb-2">
           <div>
-            <p class="font-display font-bold text-charcoal-900 text-lg">Sheffield</p>
+            <p class="font-display font-bold text-white text-lg">Sheffield</p>
             <p class="font-body text-xs text-slate-400 font-light mt-0.5">Dot &amp; dab plasterboard</p>
           </div>
           <span class="flex-shrink-0 font-display text-[10px] font-bold tracking-widest uppercase  border border-green-500/40 px-3 py-1 rounded-full mt-1" style="color:#00FF00">Dot &amp; Dab</span>
         </div>
-        <p class="font-body text-sm text-slate-500 font-light leading-relaxed mb-4">Complete dot and dab system to masonry walls — adhesive dabs applied at set centres, boards pressed flat and plumbed, then taped, jointed and finish skimmed. Clean lines, flat surface throughout.</p>
-        <a href="#contact" class="font-display font-bold text-xs text-charcoal-900 border border-charcoal-900/20 px-4 py-2 rounded-full hover:bg-charcoal-900 hover:text-white transition-all duration-300 inline-block">Request Similar ↗</a>
+        <p class="font-body text-sm text-slate-400 font-light leading-relaxed mb-4">Complete dot and dab system to masonry walls — adhesive dabs applied at set centres, boards pressed flat and plumbed, then taped, jointed and finish skimmed. Clean lines, flat surface throughout.</p>
+        <a href="#contact" class="font-display font-bold text-xs text-white/70 border border-white/20 px-4 py-2 rounded-full hover:bg-white/10 hover:text-white transition-all duration-300 inline-block">Request Similar ↗</a>
       </div>
 
       <div class="reveal delay-1 group cursor-default">
@@ -585,13 +594,13 @@
         </div>
         <div class="flex items-start justify-between gap-3 mb-2">
           <div>
-            <p class="font-display font-bold text-charcoal-900 text-lg">Fulwood, S10</p>
+            <p class="font-display font-bold text-white text-lg">Fulwood, S10</p>
             <p class="font-body text-xs text-slate-400 font-light mt-0.5">Plasterboard skim finish</p>
           </div>
           <span class="flex-shrink-0 font-display text-[10px] font-bold tracking-widest uppercase  border border-green-500/40 px-3 py-1 rounded-full mt-1" style="color:#00FF00">Skim Finish</span>
         </div>
-        <p class="font-body text-sm text-slate-500 font-light leading-relaxed mb-4">Plasterboard boarded and skim finished throughout this Fulwood S10 property. Walls and ceiling completed to a perfectly smooth, decoration-ready surface. Crisp edges at every corner and ceiling line.</p>
-        <a href="#contact" class="font-display font-bold text-xs text-charcoal-900 border border-charcoal-900/20 px-4 py-2 rounded-full hover:bg-charcoal-900 hover:text-white transition-all duration-300 inline-block">Request Similar ↗</a>
+        <p class="font-body text-sm text-slate-400 font-light leading-relaxed mb-4">Plasterboard boarded and skim finished throughout this Fulwood S10 property. Walls and ceiling completed to a perfectly smooth, decoration-ready surface. Crisp edges at every corner and ceiling line.</p>
+        <a href="#contact" class="font-display font-bold text-xs text-white/70 border border-white/20 px-4 py-2 rounded-full hover:bg-white/10 hover:text-white transition-all duration-300 inline-block">Request Similar ↗</a>
       </div>
 
       <div class="reveal delay-2 group cursor-default">
@@ -603,22 +612,22 @@
         </div>
         <div class="flex items-start justify-between gap-3 mb-2">
           <div>
-            <p class="font-display font-bold text-charcoal-900 text-lg">Sheffield, S10</p>
+            <p class="font-display font-bold text-white text-lg">Sheffield, S10</p>
             <p class="font-body text-xs text-slate-400 font-light mt-0.5">Full boarding &amp; skim</p>
           </div>
           <span class="flex-shrink-0 font-display text-[10px] font-bold tracking-widest uppercase  border border-green-500/40 px-3 py-1 rounded-full mt-1" style="color:#00FF00">Full Board</span>
         </div>
-        <p class="font-body text-sm text-slate-500 font-light leading-relaxed mb-4">Complete dry lining programme — walls and ceiling boarded throughout, taped and jointed at all junctions, then skim finished to an immaculate flat surface. Ready for decoration within days of completion.</p>
-        <a href="#contact" class="font-display font-bold text-xs text-charcoal-900 border border-charcoal-900/20 px-4 py-2 rounded-full hover:bg-charcoal-900 hover:text-white transition-all duration-300 inline-block">Request Similar ↗</a>
+        <p class="font-body text-sm text-slate-400 font-light leading-relaxed mb-4">Complete dry lining programme — walls and ceiling boarded throughout, taped and jointed at all junctions, then skim finished to an immaculate flat surface. Ready for decoration within days of completion.</p>
+        <a href="#contact" class="font-display font-bold text-xs text-white/70 border border-white/20 px-4 py-2 rounded-full hover:bg-white/10 hover:text-white transition-all duration-300 inline-block">Request Similar ↗</a>
       </div>
     </div>
   </div>
-  <div class="absolute inset-x-0 bottom-0 h-24 pointer-events-none" style="background:linear-gradient(to top,#f0f0f0 0%,transparent 100%)"></div>
+  <div class="absolute inset-x-0 bottom-0 h-24 pointer-events-none" style="background:linear-gradient(to top,#0b0f0b 0%,transparent 100%)"></div>
 </section>
 
 
 <!-- PROCESS -->
-<section id="process" class="relative py-20 lg:py-28" style="background:linear-gradient(to bottom,#f0f0f0,#000000)">
+<section id="process" class="relative py-20 lg:py-28" style="background-color:#0b0f0b;background-image:radial-gradient(ellipse 80% 55% at 50% 0%,rgba(55,212,19,0.38) 0%,transparent 65%),radial-gradient(ellipse 50% 50% at 100% 100%,rgba(55,212,19,0.25) 0%,transparent 60%),linear-gradient(160deg,#0d130d 0%,#090e09 50%,#070b07 100%)">
   <div class="max-w-7xl mx-auto px-6 lg:px-12">
     <div class="grid lg:grid-cols-[42%_58%] gap-10 lg:gap-16 items-start">
       <div>
@@ -646,7 +655,7 @@
           <p class="font-body text-slate-300 font-light leading-relaxed text-sm max-w-xs">
             Professional dry lining follows 5 key stages. Every stage matters — from layout planning through to the final skim finish.
           </p>
-          <a href="#contact" class="flex-shrink-0 font-display font-bold text-xs tracking-wide text-white border border-white/30 px-5 py-2.5 rounded-full hover:bg-white hover:text-charcoal-900 transition-all duration-300 whitespace-nowrap">Book a Survey ↗</a>
+          <a href="#contact" class="flex-shrink-0 font-display font-bold text-xs tracking-wide text-white border border-white/30 px-5 py-2.5 rounded-full hover:bg-white/10 transition-all duration-300 whitespace-nowrap">Book a Survey ↗</a>
         </div>
         <div class="space-y-0">
           <div class="reveal py-6 border-b border-white/10 flex gap-5">
@@ -692,32 +701,32 @@
 
 
 <!-- PRICING -->
-<section id="pricing" class="bg-white py-20 lg:py-28">
+<section id="pricing" class="py-20 lg:py-28" style="background-color:#0b0f0b;background-image:radial-gradient(ellipse 80% 55% at 50% 0%,rgba(55,212,19,0.38) 0%,transparent 65%),radial-gradient(ellipse 50% 50% at 100% 100%,rgba(55,212,19,0.25) 0%,transparent 60%),linear-gradient(160deg,#0d130d 0%,#090e09 50%,#070b07 100%)">
   <div class="max-w-7xl mx-auto px-6 lg:px-12">
     <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-14">
       <div>
         <div class="reveal flex items-center gap-3 mb-6">
           <span class="lime-line visible w-8"></span>
-          <span class="font-display text-xs font-bold tracking-[.3em] uppercase text-charcoal-900">Transparent Pricing</span>
+          <span class="font-display text-xs font-bold tracking-[.3em] uppercase" style="color:rgba(255,255,255,0.5)">Transparent Pricing</span>
         </div>
         <div class="reveal delay-1">
           <h2 class="font-display leading-[1.02] tracking-tight">
-            <span class="block font-black text-charcoal-900" style="font-size:clamp(2.2rem,4.5vw,3.5rem)">Dry Lining</span>
+            <span class="block font-black text-white" style="font-size:clamp(2.2rem,4.5vw,3.5rem)">Dry Lining</span>
             <span class="block font-black " style="color:#00FF00;font-size:clamp(2.2rem,4.5vw,3.5rem)">Pricing Guide</span>
-            <span class="block font-light text-slate-400"   style="font-size:clamp(2.2rem,4.5vw,3.5rem)">Sheffield.</span>
+            <span class="block font-light text-slate-300" style="font-size:clamp(2.2rem,4.5vw,3.5rem)">Sheffield.</span>
           </h2>
         </div>
       </div>
-      <p class="reveal font-body text-slate-500 font-light text-sm max-w-xs leading-relaxed lg:mb-4">
+      <p class="reveal font-body text-slate-400 font-light text-sm max-w-xs leading-relaxed lg:mb-4">
         All prices are guide ranges. Every job is quoted individually — free, fully itemised, no obligation.
       </p>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
-      <div class="reveal rounded-2xl p-8 border border-slate-100" style="background:#f8f8f8">
+      <div class="reveal rounded-2xl p-8 border border-white/10" style="background:#131313">
         <div class="font-display text-[10px] font-bold tracking-[.3em] uppercase  mb-4" style="color:#00FF00">Dot &amp; Dab</div>
-        <div class="font-display font-black text-charcoal-900 mb-1" style="font-size:clamp(2rem,3.5vw,2.8rem)">£250</div>
+        <div class="font-display font-black text-white mb-1" style="font-size:clamp(2rem,3.5vw,2.8rem)">£250</div>
         <div class="font-body text-xs text-slate-400 mb-5">per room from</div>
-        <ul class="space-y-2 font-body text-sm text-slate-600 font-light">
+        <ul class="space-y-2 font-body text-sm text-slate-300 font-light">
           <li class="flex gap-2"><span style="color:#00FF00">✓</span> Masonry walls</li>
           <li class="flex gap-2"><span style="color:#00FF00">✓</span> Adhesive fixed</li>
           <li class="flex gap-2"><span style="color:#00FF00">✓</span> Taped &amp; jointed</li>
@@ -735,22 +744,22 @@
           <li class="flex gap-2"><span style="color:#00FF00">✓</span> Skim finished</li>
         </ul>
       </div>
-      <div class="reveal delay-2 rounded-2xl p-8 border border-slate-100" style="background:#f8f8f8">
+      <div class="reveal delay-2 rounded-2xl p-8 border border-white/10" style="background:#131313">
         <div class="font-display text-[10px] font-bold tracking-[.3em] uppercase  mb-4" style="color:#00FF00">Ceiling Boarding</div>
-        <div class="font-display font-black text-charcoal-900 mb-1" style="font-size:clamp(2rem,3.5vw,2.8rem)">£200</div>
+        <div class="font-display font-black text-white mb-1" style="font-size:clamp(2rem,3.5vw,2.8rem)">£200</div>
         <div class="font-body text-xs text-slate-400 mb-5">per room from</div>
-        <ul class="space-y-2 font-body text-sm text-slate-600 font-light">
+        <ul class="space-y-2 font-body text-sm text-slate-300 font-light">
           <li class="flex gap-2"><span style="color:#00FF00">✓</span> Fixed to joists</li>
           <li class="flex gap-2"><span style="color:#00FF00">✓</span> Noggings fitted</li>
           <li class="flex gap-2"><span style="color:#00FF00">✓</span> Taped &amp; jointed</li>
           <li class="flex gap-2"><span style="color:#00FF00">✓</span> Skim finished</li>
         </ul>
       </div>
-      <div class="reveal delay-3 rounded-2xl p-8 border border-slate-100" style="background:#f8f8f8">
+      <div class="reveal delay-3 rounded-2xl p-8 border border-white/10" style="background:#131313">
         <div class="font-display text-[10px] font-bold tracking-[.3em] uppercase  mb-4" style="color:#00FF00">Insulated Dry Lining</div>
-        <div class="font-display font-black text-charcoal-900 mb-1" style="font-size:clamp(2rem,3.5vw,2.8rem)">£350</div>
+        <div class="font-display font-black text-white mb-1" style="font-size:clamp(2rem,3.5vw,2.8rem)">£350</div>
         <div class="font-body text-xs text-slate-400 mb-5">per room from</div>
-        <ul class="space-y-2 font-body text-sm text-slate-600 font-light">
+        <ul class="space-y-2 font-body text-sm text-slate-300 font-light">
           <li class="flex gap-2"><span style="color:#00FF00">✓</span> Insulated board</li>
           <li class="flex gap-2"><span style="color:#00FF00">✓</span> Thermal break</li>
           <li class="flex gap-2"><span style="color:#00FF00">✓</span> Reduces cold walls</li>
@@ -758,10 +767,10 @@
         </ul>
       </div>
     </div>
-    <div class="reveal rounded-2xl p-6 lg:p-8 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6" style="background:#f0f0f0">
+    <div class="reveal rounded-2xl p-6 lg:p-8 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6" style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1)">
       <div>
-        <p class="font-display font-bold text-charcoal-900 text-lg mb-1">Free, itemised quotation — no obligation</p>
-        <p class="font-body text-sm text-slate-500 font-light">We survey, measure and quote every job individually. Zero deposit, pay only on completion.</p>
+        <p class="font-display font-bold text-white text-lg mb-1">Free, itemised quotation — no obligation</p>
+        <p class="font-body text-sm text-slate-400 font-light">We survey, measure and quote every job individually. Zero deposit, pay only on completion.</p>
       </div>
       <a href="tel:+447595399525" class="flex-shrink-0 font-display font-bold text-charcoal-900 px-8 py-4 rounded-full text-sm tracking-wide hover:opacity-90 transition-all duration-300 whitespace-nowrap" style="background:#00FF00">Call 07595 399525</a>
     </div>
@@ -786,7 +795,7 @@
           </h2>
         </div>
       </div>
-      <a href="https://share.google/rOAl0WMAyojDrY2kb" target="_blank" rel="noopener" class="reveal font-display font-bold text-xs tracking-wide text-white border border-white/30 px-6 py-3 rounded-full hover:bg-white hover:text-charcoal-900 transition-all duration-300 whitespace-nowrap no-underline">See All Google Reviews ↗</a>
+      <a href="https://share.google/rOAl0WMAyojDrY2kb" target="_blank" rel="noopener" class="reveal font-display font-bold text-xs tracking-wide text-white border border-white/30 px-6 py-3 rounded-full hover:bg-white/10 transition-all duration-300 whitespace-nowrap no-underline">See All Google Reviews ↗</a>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
       <div class="reveal rounded-2xl p-8" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08)">
@@ -794,7 +803,7 @@
         <p class="font-body text-slate-300 font-light text-sm leading-relaxed mb-6">"P&amp;R Solutions boarded and skimmed our entire extension — stud walls, masonry walls and ceilings throughout. The boarding was perfectly level and the skim finish was immaculate. Genuinely couldn't tell the new work from the original house."</p>
         <div>
           <p class="font-display font-bold text-white text-sm">Mark H.</p>
-          <p class="font-body text-xs text-slate-500 font-light">Sheffield · March 2025</p>
+          <p class="font-body text-xs text-slate-400 font-light">Sheffield · March 2025</p>
         </div>
       </div>
       <div class="reveal delay-1 rounded-2xl p-8" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08)">
@@ -802,7 +811,7 @@
         <p class="font-body text-slate-300 font-light text-sm leading-relaxed mb-6">"Had insulated dot and dab installed in our cold Victorian terrace in S10. The difference in warmth is remarkable — the rooms feel completely different now. The finish is also beautiful, perfectly flat and smooth. Really pleased with the whole job."</p>
         <div>
           <p class="font-display font-bold text-white text-sm">Sarah K.</p>
-          <p class="font-body text-xs text-slate-500 font-light">S10, Sheffield · January 2025</p>
+          <p class="font-body text-xs text-slate-400 font-light">S10, Sheffield · January 2025</p>
         </div>
       </div>
       <div class="reveal delay-2 rounded-2xl p-8" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08)">
@@ -810,7 +819,7 @@
         <p class="font-body text-slate-300 font-light text-sm leading-relaxed mb-6">"Chris fitted a stud partition wall to divide our living room and the quality is superb. Perfectly square, solid as anything, and the skim finish is flawless. It looks like it was always there. Fair price, zero deposit and completed exactly when promised."</p>
         <div>
           <p class="font-display font-bold text-white text-sm">Tom B.</p>
-          <p class="font-body text-xs text-slate-500 font-light">Sheffield · December 2024</p>
+          <p class="font-body text-xs text-slate-400 font-light">Sheffield · December 2024</p>
         </div>
       </div>
     </div>
@@ -819,87 +828,118 @@
 
 
 <!-- FAQ -->
-<section id="faq" class="bg-white py-20 lg:py-28">
-  <div class="max-w-4xl mx-auto px-6 lg:px-12">
-    <div class="reveal flex items-center gap-3 mb-8">
-      <span class="lime-line visible w-8"></span>
-      <span class="font-display text-xs font-bold tracking-[.3em] uppercase text-charcoal-900">FAQ</span>
+<section id="faq" class="py-20 lg:py-28" style="background-color:#0b0f0b;background-image:radial-gradient(ellipse 70% 50% at 50% 0%,rgba(55,212,19,0.32) 0%,transparent 60%),linear-gradient(160deg,#0d130d 0%,#090e09 50%,#070b07 100%)">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+
+    <div class="grid lg:grid-cols-2 gap-10 lg:gap-20 items-end mb-14">
+      <div>
+        <div class="reveal flex items-center gap-3 mb-6">
+          <span class="lime-line lime visible w-8"></span>
+          <span class="font-display text-xs font-bold tracking-[.3em] uppercase" style="color:rgba(255,255,255,0.5)">FAQ</span>
+        </div>
+        <div class="reveal delay-1">
+          <h2 class="font-display leading-[1.02] tracking-tight">
+            <span class="block font-black text-white" style="font-size:clamp(2.2rem,4.5vw,3.5rem)">Common Questions</span>
+            <span class="block font-black" style="color:#37D413;font-size:clamp(2.2rem,4.5vw,3.5rem)">About Dry Lining</span>
+            <span class="block font-light" style="color:rgba(255,255,255,0.35);font-size:clamp(2.2rem,4.5vw,3.5rem)">Answered.</span>
+          </h2>
+        </div>
+      </div>
+      <div class="reveal">
+        <p class="font-body font-light leading-relaxed text-sm mb-6" style="color:rgba(255,255,255,0.45)">
+          Everything Sheffield homeowners and contractors ask us about dry lining, dot and dab, stud partitions and insulated plasterboard. Click any question for the full answer.
+        </p>
+        <a href="tel:+447595399525" class="font-display font-bold text-xs tracking-wide text-white border border-white/25 px-6 py-3 rounded-full hover:bg-white/10 transition-all duration-300 inline-block">Call 07595 399525 ↗</a>
+      </div>
     </div>
-    <div class="reveal delay-1 mb-14">
-      <h2 class="font-display leading-[1.02] tracking-tight">
-        <span class="block font-black text-charcoal-900" style="font-size:clamp(2.2rem,4.5vw,3.5rem)">Common Questions</span>
-        <span class="block font-black " style="color:#00FF00;font-size:clamp(2.2rem,4.5vw,3.5rem)">About Dry Lining</span>
-      </h2>
-    </div>
-    <div class="space-y-0 divide-y divide-slate-100" role="list">
 
-      <div class="faq-item py-6 cursor-pointer" onclick="toggleFaq(this)" role="listitem">
-        <div class="flex items-center justify-between gap-6">
-          <span class="faq-title font-display font-semibold text-charcoal-900 text-base lg:text-lg">What is dry lining?</span>
-          <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center font-display font-bold text-charcoal-900 text-lg leading-none">+</span>
-        </div>
-        <div class="faq-body">
-          <p class="font-body text-sm text-slate-600 font-light leading-relaxed pt-4 pb-2">Dry lining means fixing plasterboard to walls or ceilings rather than applying traditional wet plaster to masonry. The boards are then taped, jointed and skimmed for a smooth finish. Faster than traditional plastering and the standard method for new-build partitions, insulated walls and ceiling upgrades.</p>
+    <div class="grid lg:grid-cols-2 gap-3">
+
+      <div class="faq-item reveal" onclick="toggleFaq(this)">
+        <div class="flex items-start justify-between gap-4">
+          <div class="flex-1">
+            <div class="flex items-center gap-3 mb-2"><span class="faq-num">01</span><span class="faq-cat">Basics</span></div>
+            <div class="faq-q">What is dry lining?</div>
+            <div class="faq-body"><p class="faq-ans">Dry lining means fixing plasterboard to walls or ceilings rather than applying traditional wet plaster to masonry. The boards are then taped, jointed and skimmed for a smooth finish. Faster than traditional plastering and the standard method for new-build partitions, insulated walls and ceiling upgrades.</p></div>
+          </div>
+          <span class="faq-icon">+</span>
         </div>
       </div>
 
-      <div class="faq-item py-6 cursor-pointer" onclick="toggleFaq(this)" role="listitem">
-        <div class="flex items-center justify-between gap-6">
-          <span class="faq-title font-display font-semibold text-charcoal-900 text-base lg:text-lg">What is dot and dab plasterboard?</span>
-          <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center font-display font-bold text-charcoal-900 text-lg leading-none">+</span>
-        </div>
-        <div class="faq-body">
-          <p class="font-body text-sm text-slate-600 font-light leading-relaxed pt-4 pb-2">Dot and dab is the most common dry lining method for masonry walls. Plasterboard adhesive is applied in blobs (dabs) at regular centres across the wall, then the board is pressed firmly into position. The adhesive grips as it cures, creating a flat, plumb surface even on uneven masonry. Boards are then taped and skimmed to a smooth finish.</p>
-        </div>
-      </div>
-
-      <div class="faq-item py-6 cursor-pointer" onclick="toggleFaq(this)" role="listitem">
-        <div class="flex items-center justify-between gap-6">
-          <span class="faq-title font-display font-semibold text-charcoal-900 text-base lg:text-lg">How much does dry lining cost in Sheffield?</span>
-          <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center font-display font-bold text-charcoal-900 text-lg leading-none">+</span>
-        </div>
-        <div class="faq-body">
-          <p class="font-body text-sm text-slate-600 font-light leading-relaxed pt-4 pb-2">Dot and dab to a standard room costs from £250. Metal stud partitions from £400 per wall. Ceiling boarding from £200 per room. Insulated plasterboard systems from £350 per room. We provide a free, fully itemised quotation with no obligation and zero deposit required.</p>
+      <div class="faq-item reveal" onclick="toggleFaq(this)">
+        <div class="flex items-start justify-between gap-4">
+          <div class="flex-1">
+            <div class="flex items-center gap-3 mb-2"><span class="faq-num">02</span><span class="faq-cat">Dot & Dab</span></div>
+            <div class="faq-q">What is dot and dab plasterboard?</div>
+            <div class="faq-body"><p class="faq-ans">Dot and dab is the most common dry lining method for masonry walls. Plasterboard adhesive is applied in blobs (dabs) at regular centres across the wall, then the board is pressed firmly into position. The adhesive grips as it cures, creating a flat, plumb surface even on uneven masonry. Boards are then taped and skimmed to a smooth finish.</p></div>
+          </div>
+          <span class="faq-icon">+</span>
         </div>
       </div>
 
-      <div class="faq-item py-6 cursor-pointer" onclick="toggleFaq(this)" role="listitem">
-        <div class="flex items-center justify-between gap-6">
-          <span class="faq-title font-display font-semibold text-charcoal-900 text-base lg:text-lg">What is insulated dry lining and is it worth it?</span>
-          <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center font-display font-bold text-charcoal-900 text-lg leading-none">+</span>
-        </div>
-        <div class="faq-body">
-          <p class="font-body text-sm text-slate-600 font-light leading-relaxed pt-4 pb-2">Insulated dry lining uses plasterboard with rigid PIR insulation bonded to the back. When dot and dabbed to cold external walls, it creates a thermal break that dramatically reduces heat loss and eliminates cold spots. In Sheffield's solid-wall Victorian and Edwardian terraces, it's one of the most cost-effective interior improvements possible — the difference in room warmth is immediate.</p>
-        </div>
-      </div>
-
-      <div class="faq-item py-6 cursor-pointer" onclick="toggleFaq(this)" role="listitem">
-        <div class="flex items-center justify-between gap-6">
-          <span class="faq-title font-display font-semibold text-charcoal-900 text-base lg:text-lg">How long does dry lining a room take?</span>
-          <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center font-display font-bold text-charcoal-900 text-lg leading-none">+</span>
-        </div>
-        <div class="faq-body">
-          <p class="font-body text-sm text-slate-600 font-light leading-relaxed pt-4 pb-2">A standard dot and dab room takes approximately one day — boarding, taping, jointing and skim. Stud partition walls take 1–2 days. The skim finish needs 2–4 days to dry before decorating. We provide a clear programme at quotation stage so you know exactly what to expect.</p>
+      <div class="faq-item reveal" onclick="toggleFaq(this)">
+        <div class="flex items-start justify-between gap-4">
+          <div class="flex-1">
+            <div class="flex items-center gap-3 mb-2"><span class="faq-num">03</span><span class="faq-cat">Pricing</span></div>
+            <div class="faq-q">How much does dry lining cost in Sheffield?</div>
+            <div class="faq-body"><p class="faq-ans">Dot and dab to a standard room costs from £250. Metal stud partitions from £400 per wall. Ceiling boarding from £200 per room. Insulated plasterboard systems from £350 per room. We provide a free, fully itemised quotation with no obligation and zero deposit required.</p></div>
+          </div>
+          <span class="faq-icon">+</span>
         </div>
       </div>
 
-      <div class="faq-item py-6 cursor-pointer" onclick="toggleFaq(this)" role="listitem">
-        <div class="flex items-center justify-between gap-6">
-          <span class="faq-title font-display font-semibold text-charcoal-900 text-base lg:text-lg">Can you build stud partition walls?</span>
-          <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center font-display font-bold text-charcoal-900 text-lg leading-none">+</span>
-        </div>
-        <div class="faq-body">
-          <p class="font-body text-sm text-slate-600 font-light leading-relaxed pt-4 pb-2">Yes — full-height metal stud partitions for room division, en-suites, home offices, dressing rooms and garage conversions. The frame is built from metal track, boarded both sides, taped, jointed and skimmed. We include door openings, service voids for electrical first fix, and soundproof insulation in the cavity.</p>
+      <div class="faq-item reveal" onclick="toggleFaq(this)">
+        <div class="flex items-start justify-between gap-4">
+          <div class="flex-1">
+            <div class="flex items-center gap-3 mb-2"><span class="faq-num">04</span><span class="faq-cat">Insulation</span></div>
+            <div class="faq-q">What is insulated dry lining and is it worth it?</div>
+            <div class="faq-body"><p class="faq-ans">Insulated dry lining uses plasterboard with rigid PIR insulation bonded to the back. When dot and dabbed to cold external walls, it creates a thermal break that dramatically reduces heat loss and eliminates cold spots. In Sheffield's solid-wall Victorian and Edwardian terraces, it's one of the most cost-effective interior improvements — the difference in room warmth is immediate.</p></div>
+          </div>
+          <span class="faq-icon">+</span>
         </div>
       </div>
 
-      <div class="faq-item py-6 cursor-pointer" onclick="toggleFaq(this)" role="listitem">
-        <div class="flex items-center justify-between gap-6">
-          <span class="faq-title font-display font-semibold text-charcoal-900 text-base lg:text-lg">What guarantee do you offer on dry lining?</span>
-          <span class="faq-icon flex-shrink-0 w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center font-display font-bold text-charcoal-900 text-lg leading-none">+</span>
+      <div class="faq-item reveal" onclick="toggleFaq(this)">
+        <div class="flex items-start justify-between gap-4">
+          <div class="flex-1">
+            <div class="flex items-center gap-3 mb-2"><span class="faq-num">05</span><span class="faq-cat">Timescales</span></div>
+            <div class="faq-q">How long does dry lining a room take?</div>
+            <div class="faq-body"><p class="faq-ans">A standard dot and dab room takes approximately one day — boarding, taping, jointing and skim. Stud partition walls take 1–2 days. The skim finish needs 2–4 days to dry before decorating. We provide a clear programme at quotation stage so you know exactly what to expect.</p></div>
+          </div>
+          <span class="faq-icon">+</span>
         </div>
-        <div class="faq-body">
-          <p class="font-body text-sm text-slate-600 font-light leading-relaxed pt-4 pb-2">Every dry lining job is covered by our 5-year workmanship guarantee. If any boarding, jointing or skim fails due to workmanship within that period, we return and remedy it at no charge. Zero deposit — pay only when the work is 100% complete and you're satisfied.</p>
+      </div>
+
+      <div class="faq-item reveal" onclick="toggleFaq(this)">
+        <div class="flex items-start justify-between gap-4">
+          <div class="flex-1">
+            <div class="flex items-center gap-3 mb-2"><span class="faq-num">06</span><span class="faq-cat">Partitions</span></div>
+            <div class="faq-q">Can you build stud partition walls?</div>
+            <div class="faq-body"><p class="faq-ans">Yes — full-height metal stud partitions for room division, en-suites, home offices, dressing rooms and garage conversions. The frame is built from metal track, boarded both sides, taped, jointed and skimmed. We include door openings, service voids for electrical first fix, and soundproof insulation in the cavity.</p></div>
+          </div>
+          <span class="faq-icon">+</span>
+        </div>
+      </div>
+
+      <div class="faq-item reveal" onclick="toggleFaq(this)">
+        <div class="flex items-start justify-between gap-4">
+          <div class="flex-1">
+            <div class="flex items-center gap-3 mb-2"><span class="faq-num">07</span><span class="faq-cat">Ceilings</span></div>
+            <div class="faq-q">Can you board and skim ceilings?</div>
+            <div class="faq-body"><p class="faq-ans">Yes — ceiling boarding is a significant part of our work, particularly in extensions, loft conversions and where existing ceilings need upgrading. We fix plasterboard to ceiling joists, adding noggings where needed. Boards are taped, jointed and skim finished to a perfectly flat ceiling surface. We work on all ceiling sizes including large open-plan areas.</p></div>
+          </div>
+          <span class="faq-icon">+</span>
+        </div>
+      </div>
+
+      <div class="faq-item reveal" onclick="toggleFaq(this)">
+        <div class="flex items-start justify-between gap-4">
+          <div class="flex-1">
+            <div class="flex items-center gap-3 mb-2"><span class="faq-num">08</span><span class="faq-cat">Guarantee</span></div>
+            <div class="faq-q">What guarantee do you offer on dry lining?</div>
+            <div class="faq-body"><p class="faq-ans">Every dry lining job is covered by our 5-year workmanship guarantee. If any boarding, jointing or skim fails due to workmanship within that period, we return and remedy it at no charge. Zero deposit — pay only when the work is 100% complete and you're satisfied.</p></div>
+          </div>
+          <span class="faq-icon">+</span>
         </div>
       </div>
 
@@ -927,14 +967,14 @@
       We survey, measure and quote every dry lining job individually. Fully itemised. No obligation. Zero deposit — you pay only when the work is done and you're completely satisfied.
     </p>
     <div class="reveal delay-3 flex flex-col sm:flex-row gap-4 justify-center">
-      <a href="/contact/" class="font-display font-bold text-charcoal-900 px-10 py-5 rounded-full text-base tracking-wide hover:opacity-90 transition-all duration-300" style="background:#00FF00">Get a Free Quote →</a>
+      <a href="/get-quote" class="font-display font-bold text-charcoal-900 px-10 py-5 rounded-full text-base tracking-wide hover:opacity-90 transition-all duration-300" style="background:#00FF00">Get a Free Quote →</a>
       <a href="tel:+447595399525" class="font-display font-bold text-white px-10 py-5 rounded-full text-base tracking-wide border border-white/20 hover:bg-white/10 transition-all duration-300">Call 07595 399525</a>
     </div>
     <div class="reveal delay-4 flex flex-wrap justify-center gap-8 mt-16 pt-12 border-t border-white/10">
-      <div class="text-center"><span class="font-display font-black text-3xl  block leading-none mb-1" style="color:#00FF00">5yr</span><span class="font-body text-xs text-slate-500 tracking-widest uppercase">Guarantee</span></div>
-      <div class="text-center"><span class="font-display font-black text-3xl text-white block leading-none mb-1">0%</span><span class="font-body text-xs text-slate-500 tracking-widest uppercase">Deposit</span></div>
-      <div class="text-center"><span class="font-display font-black text-3xl text-white block leading-none mb-1">5★</span><span class="font-body text-xs text-slate-500 tracking-widest uppercase">94 Reviews</span></div>
-      <div class="text-center"><span class="font-display font-black text-3xl  block leading-none mb-1" style="color:#00FF00">Free</span><span class="font-body text-xs text-slate-500 tracking-widest uppercase">Survey &amp; Quote</span></div>
+      <div class="text-center"><span class="font-display font-black text-3xl  block leading-none mb-1" style="color:#00FF00">5yr</span><span class="font-body text-xs text-slate-400 tracking-widest uppercase">Guarantee</span></div>
+      <div class="text-center"><span class="font-display font-black text-3xl text-white block leading-none mb-1">0%</span><span class="font-body text-xs text-slate-400 tracking-widest uppercase">Deposit</span></div>
+      <div class="text-center"><span class="font-display font-black text-3xl text-white block leading-none mb-1">5★</span><span class="font-body text-xs text-slate-400 tracking-widest uppercase">94 Reviews</span></div>
+      <div class="text-center"><span class="font-display font-black text-3xl  block leading-none mb-1" style="color:#00FF00">Free</span><span class="font-body text-xs text-slate-400 tracking-widest uppercase">Survey &amp; Quote</span></div>
     </div>
   </div>
 </section>
@@ -1003,7 +1043,7 @@
           <ul class="space-y-3 list-none p-0 m-0">
             <li><a href="/portfolio/" class="font-display text-sm no-underline transition-colors duration-200" style="color:rgba(255,255,255,0.35)" onmouseover="this.style.color='rgba(255,255,255,0.7)'" onmouseout="this.style.color='rgba(255,255,255,0.35)'">Project Gallery</a></li>
             <li><a href="/faq/" class="font-display text-sm no-underline transition-colors duration-200" style="color:rgba(255,255,255,0.35)" onmouseover="this.style.color='rgba(255,255,255,0.7)'" onmouseout="this.style.color='rgba(255,255,255,0.35)'">FAQ</a></li>
-            <li><a href="/contact/" class="font-display text-sm no-underline transition-colors duration-200" style="color:rgba(255,255,255,0.35)" onmouseover="this.style.color='rgba(255,255,255,0.7)'" onmouseout="this.style.color='rgba(255,255,255,0.35)'">Get a Quote</a></li>
+            <li><a href="/get-quote" class="font-display text-sm no-underline transition-colors duration-200" style="color:rgba(255,255,255,0.35)" onmouseover="this.style.color='rgba(255,255,255,0.7)'" onmouseout="this.style.color='rgba(255,255,255,0.35)'">Get a Quote</a></li>
           </ul>
         </div>
       </div>
@@ -1038,7 +1078,7 @@
             </div>
           </div>
         </div>
-        <a href="/contact/" class="inline-flex items-center gap-2 font-display font-bold text-charcoal-900 text-xs tracking-wide px-5 py-2.5 rounded-full no-underline transition-opacity duration-200 hover:opacity-85" style="background:#00FF00">Free Quote &rarr;</a>
+        <a href="/get-quote" class="inline-flex items-center gap-2 font-display font-bold text-charcoal-900 text-xs tracking-wide px-5 py-2.5 rounded-full no-underline transition-opacity duration-200 hover:opacity-85" style="background:#00FF00">Free Quote &rarr;</a>
       </div>
 
       <!-- Areas -->

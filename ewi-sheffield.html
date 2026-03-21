@@ -345,13 +345,22 @@
     .exp-item.open .exp-body{max-height:500px}
     .exp-arrow{transition:color .3s ease,transform .35s ease;display:inline-block;line-height:1}
     .exp-item.open .exp-arrow{color:#00FF00;transform:rotate(90deg)}
-    .exp-item.open .exp-title{color:#1a1a1a}
+    .exp-item.open .exp-title{color:#fff}
 
-    /* Full-width FAQ accordion */
+    /* FAQ card redesign */
+    .faq-item{background:#131313;border:1px solid #1e1e1e;border-radius:16px;padding:24px 24px 24px 28px;cursor:pointer;position:relative;overflow:hidden;transition:border-color .3s,box-shadow .3s}
+    .faq-item::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(to bottom,#37D413,#2BA80D);transform:scaleY(0);transform-origin:bottom;transition:transform .4s cubic-bezier(.16,1,.3,1);border-radius:0 0 0 16px}
+    .faq-item:hover{border-color:#2a2a2a}
+    .faq-item.open{border-color:rgba(55,212,19,0.35);box-shadow:0 0 32px rgba(55,212,19,0.07)}
+    .faq-item.open::before{transform:scaleY(1)}
     .faq-body{max-height:0;overflow:hidden;transition:max-height .45s cubic-bezier(.16,1,.3,1)}
-    .faq-item.open .faq-body{max-height:500px}
-    .faq-icon{transition:background .3s,color .3s,transform .35s}
-    .faq-item.open .faq-icon{background:#00FF00;border-color:#00FF00;color:#fff;transform:rotate(45deg)}
+    .faq-item.open .faq-body{max-height:320px}
+    .faq-num{font-size:10px;font-weight:800;letter-spacing:.18em;color:#37D413}
+    .faq-cat{font-size:9px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,0.28);background:rgba(255,255,255,0.05);padding:3px 10px;border-radius:100px}
+    .faq-q{font-size:15px;font-weight:700;color:#fff;line-height:1.4;margin-top:10px}
+    .faq-ans{font-size:13px;color:rgba(255,255,255,0.52);line-height:1.75;padding-top:14px;padding-bottom:4px}
+    .faq-icon{flex-shrink:0;width:30px;height:30px;border-radius:8px;border:1px solid #2a2a2a;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:300;color:rgba(255,255,255,0.3);transition:all .3s cubic-bezier(.34,1.56,.64,1);background:transparent;margin-top:2px}
+    .faq-item.open .faq-icon{background:#37D413;border-color:#37D413;color:#000;transform:rotate(45deg)}
 
     /* Mobile menu */
     #mobile-menu{display:none}
@@ -446,7 +455,7 @@
            onload="this.classList.add('loaded')" />
     </picture>
     <div class="absolute inset-0" style="background:linear-gradient(105deg,rgba(0,0,0,.9) 0%,rgba(0,0,0,.6) 50%,rgba(0,0,0,.2) 100%)"></div>
-    <div class="absolute inset-x-0 bottom-0 h-40" style="background:linear-gradient(to top,rgba(255,255,255,.45) 0%,transparent 100%)"></div>
+    <div class="absolute inset-x-0 bottom-0 h-40" style="background:linear-gradient(to top,#0b0f0b 0%,transparent 100%)"></div>
 
     <div class="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-12 pb-24 pt-40">
       <div class="flex items-center gap-3 mb-8 reveal">
@@ -489,7 +498,7 @@
 <!-- ══════════════════════════════════════════════════
      WHY CHOOSE EWI
      ══════════════════════════════════════════════════ -->
-<section id="why" class="py-20 lg:py-28" style="background:linear-gradient(to bottom,#f0f0f0,#000000)">
+<section id="why" class="py-20 lg:py-28" style="background-color:#0b0f0b;background-image:radial-gradient(ellipse 80% 55% at 50% 0%,rgba(55,212,19,0.38) 0%,transparent 65%),radial-gradient(ellipse 50% 50% at 100% 100%,rgba(55,212,19,0.25) 0%,transparent 60%),linear-gradient(160deg,#0d130d 0%,#090e09 50%,#070b07 100%)">
   <div class="max-w-7xl mx-auto px-6 lg:px-12">
     <div class="grid lg:grid-cols-[42%_58%] gap-10 lg:gap-16 items-start">
 
@@ -521,7 +530,7 @@
           <p class="font-body text-slate-300 font-light leading-relaxed text-sm max-w-xs">
             EWI wraps your property in a continuous thermal blanket — eliminating the cold spots, damp, and high bills that plague Sheffield's older housing stock.
           </p>
-          <a href="#contact" class="flex-shrink-0 font-display font-bold text-xs tracking-wide text-white border border-white/30 px-5 py-2.5 rounded-full hover:bg-white hover:text-charcoal-900 transition-all duration-300 whitespace-nowrap">Get a Quote ↗</a>
+          <a href="#contact" class="flex-shrink-0 font-display font-bold text-xs tracking-wide text-white border border-white/30 px-5 py-2.5 rounded-full hover:bg-white/10 transition-all duration-300 whitespace-nowrap">Get a Quote ↗</a>
         </div>
         <div class="divide-y divide-white/10">
           <div class="exp-item group cursor-pointer py-5" onclick="toggleExp(this)">
@@ -594,7 +603,7 @@
     <p class="reveal delay-2 font-body text-slate-300 font-light max-w-lg leading-relaxed mb-10">
       That's the typical heating bill reduction after EWI — achieved by wrapping the property in a continuous thermal envelope that eliminates the cold spots and thermal bridges that make Sheffield's older homes so expensive to heat.
     </p>
-    <div class="reveal delay-3 flex flex-wrap gap-10 border-t border-slate-100 pt-8">
+    <div class="reveal delay-3 flex flex-wrap gap-10 border-t border-white/10 pt-8">
       <div><span class="font-display font-black text-4xl text-white block leading-none">500+</span><span class="font-body text-xs text-slate-400 tracking-widest uppercase mt-1 block">Completed Projects</span></div>
       <div class="w-px bg-white/10 hidden sm:block"></div>
       <div><span class="font-display font-black text-4xl  block leading-none" style="color:#00FF00">0%</span><span class="font-body text-xs text-slate-400 tracking-widest uppercase mt-1 block">Deposit Required</span></div>
@@ -602,33 +611,33 @@
       <div><span class="font-display font-black text-4xl text-white block leading-none">5★</span><span class="font-body text-xs text-slate-400 tracking-widest uppercase mt-1 block">Google Rating</span></div>
     </div>
   </div>
-  <div class="absolute inset-x-0 bottom-0 h-72 pointer-events-none" style="background:linear-gradient(to top,rgba(255,255,255,.32) 0%,rgba(255,255,255,.18) 30%,rgba(255,255,255,.06) 60%,transparent 100%)"></div>
+  <div class="absolute inset-x-0 bottom-0 h-72 pointer-events-none" style="background:linear-gradient(to top,rgba(11,15,11,0.9) 0%,rgba(11,15,11,0.5) 40%,transparent 80%)"></div>
 </section>
 
 
 <!-- ══════════════════════════════════════════════════
      OUR SHEFFIELD WORK — card grid
      ══════════════════════════════════════════════════ -->
-<section id="portfolio" class="relative bg-white py-20 lg:py-28">
+<section id="portfolio" class="relative py-20 lg:py-28" style="background-color:#0b0f0b;background-image:radial-gradient(ellipse 80% 55% at 50% 0%,rgba(55,212,19,0.38) 0%,transparent 65%),radial-gradient(ellipse 50% 50% at 100% 100%,rgba(55,212,19,0.25) 0%,transparent 60%),linear-gradient(160deg,#0d130d 0%,#090e09 50%,#070b07 100%)">
   <div class="max-w-7xl mx-auto px-6 lg:px-12">
 
     <!-- Section header -->
     <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-14">
       <div>
         <div class="reveal flex items-center gap-3 mb-6">
-          <span class="lime-line visible w-8"></span>
-          <span class="font-display text-xs font-bold tracking-[.3em] uppercase text-charcoal-900">Our Sheffield Work</span>
+          <span class="lime-line lime visible w-8"></span>
+          <span class="font-display text-xs font-bold tracking-[.3em] uppercase" style="color:rgba(255,255,255,0.5)">Our Sheffield Work</span>
         </div>
         <div class="reveal delay-1">
           <h2 class="font-display leading-[1.02] tracking-tight">
-            <span class="block font-black text-charcoal-900" style="font-size:clamp(2.2rem,4.5vw,3.5rem)">EWI Projects Across</span>
+            <span class="block font-black text-white" style="font-size:clamp(2.2rem,4.5vw,3.5rem)">EWI Projects Across</span>
             <span class="block font-black " style="color:#00FF00;font-size:clamp(2.2rem,4.5vw,3.5rem)">Sheffield</span>
-            <span class="block font-light text-slate-400"   style="font-size:clamp(2.2rem,4.5vw,3.5rem)">&amp; South Yorkshire.</span>
+            <span class="block font-light" style="color:rgba(255,255,255,0.35);font-size:clamp(2.2rem,4.5vw,3.5rem)">&amp; South Yorkshire.</span>
           </h2>
         </div>
       </div>
       <div class="reveal flex-shrink-0">
-        <a href="#contact" class="font-display font-bold text-xs tracking-wide text-charcoal-900 border border-charcoal-900/30 px-6 py-3 rounded-full hover:bg-charcoal-900 hover:text-white transition-all duration-300 whitespace-nowrap">Request a Survey ↗</a>
+        <a href="#contact" class="font-display font-bold text-xs tracking-wide text-white border border-white/25 px-6 py-3 rounded-full hover:bg-white/10 transition-all duration-300 whitespace-nowrap">Request a Survey ↗</a>
       </div>
     </div>
 
@@ -645,13 +654,13 @@
         </div>
         <div class="flex items-start justify-between gap-3 mb-2">
           <div>
-            <p class="font-display font-bold text-charcoal-900 text-lg">Grenoside, S35</p>
+            <p class="font-display font-bold text-white text-lg">Grenoside, S35</p>
             <p class="font-body text-xs text-slate-400 font-light mt-0.5">Semi-detached property</p>
           </div>
           <span class="flex-shrink-0 font-display text-[10px] font-bold tracking-widest uppercase  border border-green-500/40 px-3 py-1 rounded-full mt-1" style="color:#00FF00">EPS System</span>
         </div>
-        <p class="font-body text-sm text-slate-500 font-light leading-relaxed mb-4">100mm EPS insulation to all elevations with silicone render finish. Eliminated persistent cold walls and condensation — heating bills reduced significantly the first winter.</p>
-        <a href="#contact" class="font-display font-bold text-xs text-charcoal-900 border border-charcoal-900/20 px-4 py-2 rounded-full hover:bg-charcoal-900 hover:text-white transition-all duration-300 inline-block">Request Similar ↗</a>
+        <p class="font-body text-sm text-slate-400 font-light leading-relaxed mb-4">100mm EPS insulation to all elevations with silicone render finish. Eliminated persistent cold walls and condensation — heating bills reduced significantly the first winter.</p>
+        <a href="#contact" class="font-display font-bold text-xs text-white/70 border border-white/20 px-4 py-2 rounded-full hover:bg-white/10 hover:text-white transition-all duration-300 inline-block">Request Similar ↗</a>
       </div>
 
       <!-- Card 2 -->
@@ -664,13 +673,13 @@
         </div>
         <div class="flex items-start justify-between gap-3 mb-2">
           <div>
-            <p class="font-display font-bold text-charcoal-900 text-lg">Stannington, S6</p>
+            <p class="font-display font-bold text-white text-lg">Stannington, S6</p>
             <p class="font-body text-xs text-slate-400 font-light mt-0.5">Terraced property</p>
           </div>
           <span class="flex-shrink-0 font-display text-[10px] font-bold tracking-widest uppercase  border border-green-500/40 px-3 py-1 rounded-full mt-1" style="color:#00FF00">EPS System</span>
         </div>
-        <p class="font-body text-sm text-slate-500 font-light leading-relaxed mb-4">Full EWI to front and rear elevations on a Victorian terrace. EPC improved from E to C. Silicone render finish transformed the kerbside appearance completely.</p>
-        <a href="#contact" class="font-display font-bold text-xs text-charcoal-900 border border-charcoal-900/20 px-4 py-2 rounded-full hover:bg-charcoal-900 hover:text-white transition-all duration-300 inline-block">Request Similar ↗</a>
+        <p class="font-body text-sm text-slate-400 font-light leading-relaxed mb-4">Full EWI to front and rear elevations on a Victorian terrace. EPC improved from E to C. Silicone render finish transformed the kerbside appearance completely.</p>
+        <a href="#contact" class="font-display font-bold text-xs text-white/70 border border-white/20 px-4 py-2 rounded-full hover:bg-white/10 hover:text-white transition-all duration-300 inline-block">Request Similar ↗</a>
       </div>
 
       <!-- Card 3 -->
@@ -683,13 +692,13 @@
         </div>
         <div class="flex items-start justify-between gap-3 mb-2">
           <div>
-            <p class="font-display font-bold text-charcoal-900 text-lg">Fulwood, S10</p>
+            <p class="font-display font-bold text-white text-lg">Fulwood, S10</p>
             <p class="font-body text-xs text-slate-400 font-light mt-0.5">Terraced property</p>
           </div>
           <span class="flex-shrink-0 font-display text-[10px] font-bold tracking-widest uppercase  border border-green-500/40 px-3 py-1 rounded-full mt-1" style="color:#00FF00">EPS System</span>
         </div>
-        <p class="font-body text-sm text-slate-500 font-light leading-relaxed mb-4">EWI system with monocouche render on a Fulwood terrace. Cold walls completely resolved — internal surface temperatures raised by 10°C. No more condensation on bedroom walls.</p>
-        <a href="#contact" class="font-display font-bold text-xs text-charcoal-900 border border-charcoal-900/20 px-4 py-2 rounded-full hover:bg-charcoal-900 hover:text-white transition-all duration-300 inline-block">Request Similar ↗</a>
+        <p class="font-body text-sm text-slate-400 font-light leading-relaxed mb-4">EWI system with monocouche render on a Fulwood terrace. Cold walls completely resolved — internal surface temperatures raised by 10°C. No more condensation on bedroom walls.</p>
+        <a href="#contact" class="font-display font-bold text-xs text-white/70 border border-white/20 px-4 py-2 rounded-full hover:bg-white/10 hover:text-white transition-all duration-300 inline-block">Request Similar ↗</a>
       </div>
 
     </div>
@@ -707,13 +716,13 @@
         </div>
         <div class="flex items-start justify-between gap-3 mb-2">
           <div>
-            <p class="font-display font-bold text-charcoal-900 text-lg">S17, Sheffield</p>
+            <p class="font-display font-bold text-white text-lg">S17, Sheffield</p>
             <p class="font-body text-xs text-slate-400 font-light mt-0.5">Detached property</p>
           </div>
           <span class="flex-shrink-0 font-display text-[10px] font-bold tracking-widest uppercase  border border-green-500/40 px-3 py-1 rounded-full mt-1" style="color:#00FF00">PUR System</span>
         </div>
-        <p class="font-body text-sm text-slate-500 font-light leading-relaxed mb-4">Premium PUR system on a large S17 detached — thinner board profile, best-in-class thermal performance. Full perimeter coverage with silicone render. EPC from D to B in a single project.</p>
-        <a href="#contact" class="font-display font-bold text-xs text-charcoal-900 border border-charcoal-900/20 px-4 py-2 rounded-full hover:bg-charcoal-900 hover:text-white transition-all duration-300 inline-block">Request Similar ↗</a>
+        <p class="font-body text-sm text-slate-400 font-light leading-relaxed mb-4">Premium PUR system on a large S17 detached — thinner board profile, best-in-class thermal performance. Full perimeter coverage with silicone render. EPC from D to B in a single project.</p>
+        <a href="#contact" class="font-display font-bold text-xs text-white/70 border border-white/20 px-4 py-2 rounded-full hover:bg-white/10 hover:text-white transition-all duration-300 inline-block">Request Similar ↗</a>
       </div>
 
       <!-- Card 5 -->
@@ -726,25 +735,25 @@
         </div>
         <div class="flex items-start justify-between gap-3 mb-2">
           <div>
-            <p class="font-display font-bold text-charcoal-900 text-lg">Bents Green, S11</p>
+            <p class="font-display font-bold text-white text-lg">Bents Green, S11</p>
             <p class="font-body text-xs text-slate-400 font-light mt-0.5">Detached property</p>
           </div>
           <span class="flex-shrink-0 font-display text-[10px] font-bold tracking-widest uppercase  border border-green-500/40 px-3 py-1 rounded-full mt-1" style="color:#00FF00">EPS System</span>
         </div>
-        <p class="font-body text-sm text-slate-500 font-light leading-relaxed mb-4">Full perimeter EWI on a Bents Green detached. 120mm EPS with silicone render. Persistent damp problems eliminated, heating costs reduced by an estimated 30%. Clean, modern finish throughout.</p>
-        <a href="#contact" class="font-display font-bold text-xs text-charcoal-900 border border-charcoal-900/20 px-4 py-2 rounded-full hover:bg-charcoal-900 hover:text-white transition-all duration-300 inline-block">Request Similar ↗</a>
+        <p class="font-body text-sm text-slate-400 font-light leading-relaxed mb-4">Full perimeter EWI on a Bents Green detached. 120mm EPS with silicone render. Persistent damp problems eliminated, heating costs reduced by an estimated 30%. Clean, modern finish throughout.</p>
+        <a href="#contact" class="font-display font-bold text-xs text-white/70 border border-white/20 px-4 py-2 rounded-full hover:bg-white/10 hover:text-white transition-all duration-300 inline-block">Request Similar ↗</a>
       </div>
 
     </div>
   </div>
-  <div class="absolute inset-x-0 bottom-0 h-24 pointer-events-none" style="background:linear-gradient(to top,#f0f0f0 0%,transparent 100%)"></div>
+  <div class="absolute inset-x-0 bottom-0 h-24 pointer-events-none" style="background:linear-gradient(to top,#0b0f0b 0%,transparent 100%)"></div>
 </section>
 
 
 <!-- ══════════════════════════════════════════════════
      HOW IT'S INSTALLED — 7-stage process
      ══════════════════════════════════════════════════ -->
-<section id="process" class="relative py-20 lg:py-28" style="background:linear-gradient(to bottom,#f0f0f0,#000000)">
+<section id="process" class="relative py-20 lg:py-28" style="background-color:#0b0f0b;background-image:radial-gradient(ellipse 80% 55% at 50% 0%,rgba(55,212,19,0.38) 0%,transparent 65%),radial-gradient(ellipse 50% 50% at 100% 100%,rgba(55,212,19,0.25) 0%,transparent 60%),linear-gradient(160deg,#0d130d 0%,#090e09 50%,#070b07 100%)">
   <div class="max-w-7xl mx-auto px-6 lg:px-12">
     <div class="grid lg:grid-cols-[42%_58%] gap-10 lg:gap-16 items-start">
 
@@ -776,7 +785,7 @@
           <p class="font-body text-slate-300 font-light leading-relaxed text-sm max-w-xs">
             A properly installed EWI system follows 7 stages. Every one matters — the performance of the thermal envelope depends on the quality of each layer.
           </p>
-          <a href="#contact" class="flex-shrink-0 font-display font-bold text-xs tracking-wide text-white border border-white/30 px-5 py-2.5 rounded-full hover:bg-white hover:text-charcoal-900 transition-all duration-300 whitespace-nowrap">Book Survey ↗</a>
+          <a href="#contact" class="flex-shrink-0 font-display font-bold text-xs tracking-wide text-white border border-white/30 px-5 py-2.5 rounded-full hover:bg-white/10 transition-all duration-300 whitespace-nowrap">Book Survey ↗</a>
         </div>
         <div class="divide-y divide-white/10">
           <div class="exp-item group cursor-pointer py-5" onclick="toggleExp(this)">
@@ -867,28 +876,28 @@
       </div>
     </div>
   </div>
-  <div class="absolute inset-x-0 bottom-0 h-72 pointer-events-none" style="background:linear-gradient(to top,rgba(255,255,255,.32) 0%,rgba(255,255,255,.18) 30%,rgba(255,255,255,.06) 60%,transparent 100%)"></div>
+  <div class="absolute inset-x-0 bottom-0 h-72 pointer-events-none" style="background:linear-gradient(to top,rgba(11,15,11,0.9) 0%,rgba(11,15,11,0.5) 40%,transparent 80%)"></div>
 </section>
 
 
 <!-- ══════════════════════════════════════════════════
      INSULATION SYSTEMS
      ══════════════════════════════════════════════════ -->
-<section class="relative bg-white py-20 lg:py-28">
+<section class="relative py-20 lg:py-28" style="background-color:#0b0f0b;background-image:radial-gradient(ellipse 80% 55% at 50% 0%,rgba(55,212,19,0.38) 0%,transparent 65%),radial-gradient(ellipse 50% 50% at 100% 100%,rgba(55,212,19,0.25) 0%,transparent 60%),linear-gradient(160deg,#0d130d 0%,#090e09 50%,#070b07 100%)">
   <div class="max-w-7xl mx-auto px-6 lg:px-12">
     <div class="grid lg:grid-cols-[42%_58%] gap-10 lg:gap-16 items-start">
 
       <!-- Left -->
       <div>
         <div class="reveal-left flex items-center gap-3 mb-8">
-          <span class="lime-line visible w-8"></span>
-          <span class="font-display text-xs font-bold tracking-[.3em] uppercase text-charcoal-900">Insulation Systems</span>
+          <span class="lime-line lime visible w-8"></span>
+          <span class="font-display text-xs font-bold tracking-[.3em] uppercase" style="color:rgba(255,255,255,0.5)">Insulation Systems</span>
         </div>
         <div class="reveal-left delay-1 mb-10">
           <h2 class="font-display leading-[1.02] tracking-tight">
-            <span class="block font-black text-charcoal-900" style="font-size:clamp(2.4rem,5vw,4rem)">Three</span>
+            <span class="block font-black text-white" style="font-size:clamp(2.4rem,5vw,4rem)">Three</span>
             <span class="block font-black " style="color:#00FF00;font-size:clamp(2.4rem,5vw,4rem)">Systems.</span>
-            <span class="block font-light text-slate-400"   style="font-size:clamp(2.4rem,5vw,4rem)">One Right Answer.</span>
+            <span class="block font-light" style="color:rgba(255,255,255,0.35);font-size:clamp(2.4rem,5vw,4rem)">One Right Answer.</span>
           </h2>
         </div>
         <div class="reveal-scale img-hover relative overflow-hidden rounded-2xl mb-4" style="height:clamp(300px,45vw,500px)">
@@ -907,81 +916,81 @@
 
       <!-- Right -->
       <div class="lg:pt-16">
-        <div class="reveal-right flex items-start justify-between gap-6 mb-10 pb-10 border-b border-slate-100">
-          <p class="font-body text-slate-500 font-light leading-relaxed text-sm max-w-xs">
+        <div class="reveal-right flex items-start justify-between gap-6 mb-10 pb-10 border-b border-white/10">
+          <p class="font-body text-slate-300 font-light leading-relaxed text-sm max-w-xs">
             EPS suits most Sheffield homes. PUR where board thickness matters. Mineral Wool for listed and historic properties. We'll advise the right choice at your free survey.
           </p>
-          <a href="#contact" class="flex-shrink-0 font-display font-bold text-xs tracking-wide text-charcoal-900 border border-charcoal-900/30 px-5 py-2.5 rounded-full hover:bg-charcoal-900 hover:text-white transition-all duration-300 whitespace-nowrap">Discuss Options ↗</a>
+          <a href="#contact" class="flex-shrink-0 font-display font-bold text-xs tracking-wide text-white border border-white/30 px-5 py-2.5 rounded-full hover:bg-white/10 transition-all duration-300 whitespace-nowrap">Discuss Options ↗</a>
         </div>
 
         <!-- Systems accordion -->
-        <div class="divide-y divide-slate-100">
+        <div class="divide-y divide-white/10">
           <div class="exp-item group cursor-pointer py-5" onclick="toggleExp(this)">
             <div class="flex items-center justify-between gap-4">
               <div class="flex items-center gap-5">
                 <div class="flex-shrink-0 w-20 text-center">
-                  <span class="font-display font-black text-charcoal-900 block leading-none" style="font-size:1.6rem">0.040</span>
+                  <span class="font-display font-black text-white block leading-none" style="font-size:1.6rem">0.040</span>
                   <span class="font-display text-[10px] font-bold text-slate-400 tracking-widest uppercase">W/mK</span>
                 </div>
                 <div>
-                  <span class="exp-title font-display font-bold text-slate-400 group-hover:text-charcoal-900 transition-colors duration-300 text-base block">EPS — Expanded Polystyrene</span>
+                  <span class="exp-title font-display font-bold text-slate-300 group-hover:text-white transition-colors duration-300 text-base block">EPS — Expanded Polystyrene</span>
                   <span class="font-display text-xs font-bold  tracking-widest uppercase" style="color:#00FF00">★ Recommended</span>
                 </div>
               </div>
               <span class="exp-arrow text-2xl text-slate-200 group-hover: flex-shrink-0" style="color:#00FF00">›</span>
             </div>
             <div class="exp-body">
-              <p class="font-body text-sm text-slate-500 font-light leading-relaxed pt-4 pb-2 max-w-lg pl-14">The most popular and cost-effective EWI system — proven 25+ year performance across thousands of UK properties. Excellent thermal performance at 0.040 W/mK, lightweight, and easy to work with on residential builds. Our primary recommendation for most Sheffield homes. Typical installed cost: £40–£60/m².</p>
+              <p class="font-body text-sm text-slate-300 font-light leading-relaxed pt-4 pb-2 max-w-lg pl-14">The most popular and cost-effective EWI system — proven 25+ year performance across thousands of UK properties. Excellent thermal performance at 0.040 W/mK, lightweight, and easy to work with on residential builds. Our primary recommendation for most Sheffield homes. Typical installed cost: £40–£60/m².</p>
             </div>
           </div>
           <div class="exp-item group cursor-pointer py-5" onclick="toggleExp(this)">
             <div class="flex items-center justify-between gap-4">
               <div class="flex items-center gap-5">
                 <div class="flex-shrink-0 w-20 text-center">
-                  <span class="font-display font-black text-charcoal-900 block leading-none" style="font-size:1.6rem">0.024</span>
+                  <span class="font-display font-black text-white block leading-none" style="font-size:1.6rem">0.024</span>
                   <span class="font-display text-[10px] font-bold text-slate-400 tracking-widest uppercase">W/mK</span>
                 </div>
                 <div>
-                  <span class="exp-title font-display font-bold text-slate-400 group-hover:text-charcoal-900 transition-colors duration-300 text-base block">PUR — Polyurethane</span>
+                  <span class="exp-title font-display font-bold text-slate-300 group-hover:text-white transition-colors duration-300 text-base block">PUR — Polyurethane</span>
                   <span class="font-display text-xs font-bold text-slate-400 tracking-widest uppercase">Premium Performance</span>
                 </div>
               </div>
               <span class="exp-arrow text-2xl text-slate-200 group-hover: flex-shrink-0" style="color:#00FF00">›</span>
             </div>
             <div class="exp-body">
-              <p class="font-body text-sm text-slate-500 font-light leading-relaxed pt-4 pb-2 max-w-lg pl-14">The best thermal performance available at 0.023–0.025 W/mK — meaning thinner boards achieve the same U-value as thicker EPS. Ideal where board thickness is a constraint (narrow reveals, planning restrictions) or where maximum thermal performance is needed. Typical installed cost: £70–£90/m².</p>
+              <p class="font-body text-sm text-slate-300 font-light leading-relaxed pt-4 pb-2 max-w-lg pl-14">The best thermal performance available at 0.023–0.025 W/mK — meaning thinner boards achieve the same U-value as thicker EPS. Ideal where board thickness is a constraint (narrow reveals, planning restrictions) or where maximum thermal performance is needed. Typical installed cost: £70–£90/m².</p>
             </div>
           </div>
           <div class="exp-item group cursor-pointer py-5" onclick="toggleExp(this)">
             <div class="flex items-center justify-between gap-4">
               <div class="flex items-center gap-5">
                 <div class="flex-shrink-0 w-20 text-center">
-                  <span class="font-display font-black text-charcoal-900 block leading-none" style="font-size:1.6rem">0.038</span>
+                  <span class="font-display font-black text-white block leading-none" style="font-size:1.6rem">0.038</span>
                   <span class="font-display text-[10px] font-bold text-slate-400 tracking-widest uppercase">W/mK</span>
                 </div>
                 <div>
-                  <span class="exp-title font-display font-bold text-slate-400 group-hover:text-charcoal-900 transition-colors duration-300 text-base block">Mineral Wool</span>
+                  <span class="exp-title font-display font-bold text-slate-300 group-hover:text-white transition-colors duration-300 text-base block">Mineral Wool</span>
                   <span class="font-display text-xs font-bold text-slate-400 tracking-widest uppercase">Historic Buildings</span>
                 </div>
               </div>
               <span class="exp-arrow text-2xl text-slate-200 group-hover: flex-shrink-0" style="color:#00FF00">›</span>
             </div>
             <div class="exp-body">
-              <p class="font-body text-sm text-slate-500 font-light leading-relaxed pt-4 pb-2 max-w-lg pl-14">Natural mineral fibre with A1 fire rating and excellent vapour permeability — the specialist choice for listed buildings, properties in conservation areas, and older solid-wall construction where breathability is essential. Often the only EWI system approved for historic properties.</p>
+              <p class="font-body text-sm text-slate-300 font-light leading-relaxed pt-4 pb-2 max-w-lg pl-14">Natural mineral fibre with A1 fire rating and excellent vapour permeability — the specialist choice for listed buildings, properties in conservation areas, and older solid-wall construction where breathability is essential. Often the only EWI system approved for historic properties.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="absolute inset-x-0 bottom-0 h-24 pointer-events-none" style="background:linear-gradient(to top,#f0f0f0 0%,transparent 100%)"></div>
+  <div class="absolute inset-x-0 bottom-0 h-24 pointer-events-none" style="background:linear-gradient(to top,#0b0f0b 0%,transparent 100%)"></div>
 </section>
 
 
 <!-- ══════════════════════════════════════════════════
      PRICING
      ══════════════════════════════════════════════════ -->
-<section id="pricing" class="relative py-20 lg:py-28" style="background:linear-gradient(to bottom,#f0f0f0,#000000)">
+<section id="pricing" class="relative py-20 lg:py-28" style="background-color:#0b0f0b;background-image:radial-gradient(ellipse 80% 55% at 50% 0%,rgba(55,212,19,0.38) 0%,transparent 65%),radial-gradient(ellipse 50% 50% at 100% 100%,rgba(55,212,19,0.25) 0%,transparent 60%),linear-gradient(160deg,#0d130d 0%,#090e09 50%,#070b07 100%)">
   <div class="max-w-7xl mx-auto px-6 lg:px-12">
     <div class="grid lg:grid-cols-[42%_58%] gap-10 lg:gap-16 items-start">
 
@@ -1001,7 +1010,7 @@
         <div class="reveal rounded-2xl p-7 mb-4" style="background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12)">
           <div class="flex items-start gap-3 mb-5">
             <svg class="w-4 h-4  flex-shrink-0 mt-0.5" style="color:#00FF00" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-            <p class="font-body text-xs text-slate-500 font-light leading-relaxed">Estimates for EPS system with silicone render. PUR adds 30-50%. Grants may offset 25-100% for eligible households.</p>
+            <p class="font-body text-xs text-slate-400 font-light leading-relaxed">Estimates for EPS system with silicone render. PUR adds 30-50%. Grants may offset 25-100% for eligible households.</p>
           </div>
           <div class="space-y-3">
             <div class="flex items-center justify-between py-2 border-b border-white/10">
@@ -1030,7 +1039,7 @@
           <p class="font-body text-slate-300 font-light leading-relaxed text-sm max-w-xs">
             The numbers behind EWI — real thermal performance data from professionally installed systems in Sheffield properties like yours.
           </p>
-          <a href="#contact" class="flex-shrink-0 font-display font-bold text-xs tracking-wide text-white border border-white/30 px-5 py-2.5 rounded-full hover:bg-white hover:text-charcoal-900 transition-all duration-300 whitespace-nowrap">Get Itemised Quote ↗</a>
+          <a href="#contact" class="flex-shrink-0 font-display font-bold text-xs tracking-wide text-white border border-white/30 px-5 py-2.5 rounded-full hover:bg-white/10 transition-all duration-300 whitespace-nowrap">Get Itemised Quote ↗</a>
         </div>
         <div class="divide-y divide-white/10">
           <div class="exp-item group cursor-pointer py-5" onclick="toggleExp(this)">
@@ -1087,169 +1096,149 @@
       </div>
     </div>
   </div>
-  <div class="absolute inset-x-0 bottom-0 h-24 pointer-events-none" style="background:linear-gradient(to top,#f8fafc 0%,transparent 100%)"></div>
+  <div class="absolute inset-x-0 bottom-0 h-24 pointer-events-none" style="background:linear-gradient(to top,#0b0f0b 0%,transparent 100%)"></div>
 </section>
 
 
 <!-- ══════════════════════════════════════════════════
-     FAQ — full width accordion
+     FAQ — dark card grid
      ══════════════════════════════════════════════════ -->
-<section id="faq" class="bg-slate-50 py-20 lg:py-28">
+<section id="faq" class="py-20 lg:py-28" style="background-color:#0b0f0b;background-image:radial-gradient(ellipse 70% 50% at 50% 0%,rgba(55,212,19,0.32) 0%,transparent 60%),linear-gradient(160deg,#0d130d 0%,#090e09 50%,#070b07 100%)">
   <div class="max-w-7xl mx-auto px-6 lg:px-12">
 
     <!-- Header row -->
     <div class="grid lg:grid-cols-2 gap-10 lg:gap-20 items-end mb-14">
       <div>
         <div class="reveal flex items-center gap-3 mb-6">
-          <span class="lime-line visible w-8"></span>
-          <span class="font-display text-xs font-bold tracking-[.3em] uppercase text-charcoal-900">FAQ</span>
+          <span class="lime-line lime visible w-8"></span>
+          <span class="font-display text-xs font-bold tracking-[.3em] uppercase" style="color:#37D413">FAQ</span>
         </div>
         <div class="reveal delay-1">
           <h2 class="font-display leading-[1.02] tracking-tight">
-            <span class="block font-black text-charcoal-900" style="font-size:clamp(2.2rem,4.5vw,3.5rem)">Common</span>
-            <span class="block font-black " style="color:#00FF00;font-size:clamp(2.2rem,4.5vw,3.5rem)">Questions</span>
-            <span class="block font-light text-slate-400"   style="font-size:clamp(2.2rem,4.5vw,3.5rem)">Answered.</span>
+            <span class="block font-black text-white" style="font-size:clamp(2.2rem,4.5vw,3.5rem)">Common</span>
+            <span class="block font-black" style="color:#37D413;font-size:clamp(2.2rem,4.5vw,3.5rem)">Questions</span>
+            <span class="block font-light text-slate-400" style="font-size:clamp(2.2rem,4.5vw,3.5rem)">Answered.</span>
           </h2>
         </div>
       </div>
       <div class="reveal">
-        <p class="font-body text-slate-500 font-light leading-relaxed text-sm mb-6">
-          Everything Sheffield homeowners ask us about external wall insulation. Click any question for the full answer.
+        <p class="font-body font-light leading-relaxed text-sm mb-6" style="color:rgba(255,255,255,0.45)">
+          The most common questions Sheffield homeowners ask about external wall insulation. Can't find yours? Call us direct.
         </p>
-        <a href="tel:+447595399525" class="font-display font-bold text-xs tracking-wide text-charcoal-900 border border-charcoal-900/30 px-6 py-3 rounded-full hover:bg-charcoal-900 hover:text-white transition-all duration-300 inline-block">Call 07595 399525 ↗</a>
+        <a href="tel:+447595399525" class="font-display font-bold text-xs tracking-wide px-6 py-3 rounded-full transition-all duration-300 inline-block" style="color:#37D413;border:1px solid rgba(55,212,19,0.3)" onmouseover="this.style.background='rgba(55,212,19,0.1)'" onmouseout="this.style.background='transparent'">Call 07595 399525 ↗</a>
       </div>
     </div>
 
-    <!-- Full-width accordion cards -->
-    <div class="space-y-3">
+    <!-- 2-col card grid -->
+    <div class="grid lg:grid-cols-2 gap-3">
 
-      <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
-        <div class="flex items-center justify-between gap-4 px-7 py-6">
-          <span class="faq-title font-display font-bold text-charcoal-900 text-base lg:text-lg leading-snug">What is external wall insulation (EWI)?</span>
-          <span class="faq-icon flex-shrink-0 w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center font-display font-bold text-slate-400 text-xl transition-all duration-300">+</span>
-        </div>
-        <div class="faq-body">
-          <p class="font-body text-sm text-slate-500 font-light leading-relaxed px-7 pb-6">External wall insulation wraps your property in insulation boards — EPS, PUR, or Mineral Wool — finished with a protective render coat. It creates a continuous thermal envelope that eliminates the cold spots and thermal bridges that cause damp, condensation, and high heating bills. Unlike internal insulation, EWI doesn't reduce room sizes and doesn't require you to vacate the property during installation.</p>
+      <div class="faq-item reveal" onclick="toggleFaq(this)">
+        <div class="flex items-start justify-between gap-4">
+          <div class="flex-1">
+            <div class="flex items-center gap-3 mb-2"><span class="faq-num">01</span><span class="faq-cat">Product</span></div>
+            <div class="faq-q">What is external wall insulation (EWI)?</div>
+            <div class="faq-body"><p class="faq-ans">EWI wraps your property in insulation boards (EPS, PUR or Mineral Wool), finished with a protective render coat. It creates a continuous thermal envelope that eliminates cold spots, damp, and high heating bills. Unlike internal insulation, it doesn't reduce room sizes and doesn't require you to vacate during installation.</p></div>
+          </div>
+          <span class="faq-icon">+</span>
         </div>
       </div>
 
-      <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
-        <div class="flex items-center justify-between gap-4 px-7 py-6">
-          <span class="faq-title font-display font-bold text-charcoal-900 text-base lg:text-lg leading-snug">How much does external wall insulation cost in Sheffield?</span>
-          <span class="faq-icon flex-shrink-0 w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center font-display font-bold text-slate-400 text-xl transition-all duration-300">+</span>
-        </div>
-        <div class="faq-body">
-          <p class="font-body text-sm text-slate-500 font-light leading-relaxed px-7 pb-6">A typical 3-bed semi-detached in Sheffield costs £8,000–£12,000 for an EPS system with silicone render finish. A detached property runs £14,000–£22,000. All prices include survey, scaffolding, full insulation system, base coat, mesh, and finish render. Government grants (GBIS, ECO4) may offset 25-100% for eligible households. We provide a fully itemised quote after a free site survey — no deposit required.</p>
-        </div>
-      </div>
-
-      <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
-        <div class="flex items-center justify-between gap-4 px-7 py-6">
-          <span class="faq-title font-display font-bold text-charcoal-900 text-base lg:text-lg leading-snug">How much can EWI reduce my heating bills?</span>
-          <span class="faq-icon flex-shrink-0 w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center font-display font-bold text-slate-400 text-xl transition-all duration-300">+</span>
-        </div>
-        <div class="faq-body">
-          <p class="font-body text-sm text-slate-500 font-light leading-relaxed px-7 pb-6">EWI typically reduces heating bills by 25-35% depending on the insulation thickness, system type, and your property's starting point. For a typical Sheffield semi, that's annual savings of £300–£600. The system pays for itself in 15-20 years through energy savings alone — and that's before factoring in avoided damp treatment costs and the increase in property value.</p>
+      <div class="faq-item reveal delay-1" onclick="toggleFaq(this)">
+        <div class="flex items-start justify-between gap-4">
+          <div class="flex-1">
+            <div class="flex items-center gap-3 mb-2"><span class="faq-num">02</span><span class="faq-cat">Cost &amp; Quotes</span></div>
+            <div class="faq-q">How much does EWI cost in Sheffield?</div>
+            <div class="faq-body"><p class="faq-ans">A 3-bed semi with EPS system: £8,000–£12,000. Detached: £14,000–£22,000. All prices include survey, scaffold, insulation, base coat, mesh and finish render. Government grants (GBIS, ECO4) may offset 25-100% for eligible households. Fully itemised quote after a free site survey — no deposit required.</p></div>
+          </div>
+          <span class="faq-icon">+</span>
         </div>
       </div>
 
-      <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
-        <div class="flex items-center justify-between gap-4 px-7 py-6">
-          <span class="faq-title font-display font-bold text-charcoal-900 text-base lg:text-lg leading-snug">Is external wall insulation worth the money?</span>
-          <span class="faq-icon flex-shrink-0 w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center font-display font-bold text-slate-400 text-xl transition-all duration-300">+</span>
-        </div>
-        <div class="faq-body">
-          <p class="font-body text-sm text-slate-500 font-light leading-relaxed px-7 pb-6">For most Sheffield homes, yes — EWI is one of the most cost-effective improvements you can make. Consider the full picture: it permanently eliminates damp and condensation (avoiding ongoing treatment costs), reduces heating bills by 25-35% every year, improves EPC rating (affecting property value and mortgage rates), and adds 5-10% to market value. Over 25 years, cumulative energy savings of £7,500–£15,000 substantially offset the installation cost — even before grants.</p>
-        </div>
-      </div>
-
-      <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
-        <div class="flex items-center justify-between gap-4 px-7 py-6">
-          <span class="faq-title font-display font-bold text-charcoal-900 text-base lg:text-lg leading-snug">What's the difference between EPS, PUR and Mineral Wool EWI?</span>
-          <span class="faq-icon flex-shrink-0 w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center font-display font-bold text-slate-400 text-xl transition-all duration-300">+</span>
-        </div>
-        <div class="faq-body">
-          <p class="font-body text-sm text-slate-500 font-light leading-relaxed px-7 pb-6">EPS (Expanded Polystyrene) is the most cost-effective — excellent thermal performance at 0.040 W/mK, proven 25+ year durability, and our primary recommendation for most Sheffield homes at £40–£60/m². PUR (Polyurethane) is premium at 0.023–0.025 W/mK — the best performance available, ideal where board thickness is a constraint at £70–£90/m². Mineral Wool is the specialist choice for listed buildings and conservation area properties — breathable, A1 fire rated, and often the only option approved for historic properties.</p>
+      <div class="faq-item reveal" onclick="toggleFaq(this)">
+        <div class="flex items-start justify-between gap-4">
+          <div class="flex-1">
+            <div class="flex items-center gap-3 mb-2"><span class="faq-num">03</span><span class="faq-cat">Energy Savings</span></div>
+            <div class="faq-q">How much can EWI reduce my heating bills?</div>
+            <div class="faq-body"><p class="faq-ans">EWI typically reduces heating bills by 25-35%. For a typical Sheffield semi, that's annual savings of £300–£600. The system pays for itself in 15-20 years through energy savings alone — before factoring in avoided damp treatment costs and increased property value.</p></div>
+          </div>
+          <span class="faq-icon">+</span>
         </div>
       </div>
 
-      <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
-        <div class="flex items-center justify-between gap-4 px-7 py-6">
-          <span class="faq-title font-display font-bold text-charcoal-900 text-base lg:text-lg leading-snug">Can EWI be fitted to any Sheffield property?</span>
-          <span class="faq-icon flex-shrink-0 w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center font-display font-bold text-slate-400 text-xl transition-all duration-300">+</span>
-        </div>
-        <div class="faq-body">
-          <p class="font-body text-sm text-slate-500 font-light leading-relaxed px-7 pb-6">EWI works on most masonry properties — brick, blockwork, stone, and aerated concrete. Listed buildings may have restrictions, but breathable Mineral Wool systems are often approved. Properties in conservation areas may need permitted development consent. We check the planning position at the free site survey and advise honestly before any work is proposed — no nasty surprises.</p>
-        </div>
-      </div>
-
-      <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
-        <div class="flex items-center justify-between gap-4 px-7 py-6">
-          <span class="faq-title font-display font-bold text-charcoal-900 text-base lg:text-lg leading-snug">Do I need planning permission for EWI in Sheffield?</span>
-          <span class="faq-icon flex-shrink-0 w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center font-display font-bold text-slate-400 text-xl transition-all duration-300">+</span>
-        </div>
-        <div class="faq-body">
-          <p class="font-body text-sm text-slate-500 font-light leading-relaxed px-7 pb-6">In most cases EWI on a residential property falls under permitted development and does not require planning permission. Exceptions include listed buildings, properties in designated conservation areas, and some flats. We check the planning position at the free site survey so you know exactly where you stand before committing to anything.</p>
+      <div class="faq-item reveal delay-1" onclick="toggleFaq(this)">
+        <div class="flex items-start justify-between gap-4">
+          <div class="flex-1">
+            <div class="flex items-center gap-3 mb-2"><span class="faq-num">04</span><span class="faq-cat">Value</span></div>
+            <div class="faq-q">Is external wall insulation worth the money?</div>
+            <div class="faq-body"><p class="faq-ans">For most Sheffield homes, yes. EWI permanently eliminates damp, reduces heating bills by 25-35% every year, improves EPC rating, and adds 5-10% to market value. Over 25 years, cumulative energy savings of £7,500–£15,000 substantially offset the installation cost — even before grants.</p></div>
+          </div>
+          <span class="faq-icon">+</span>
         </div>
       </div>
 
-      <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
-        <div class="flex items-center justify-between gap-4 px-7 py-6">
-          <span class="faq-title font-display font-bold text-charcoal-900 text-base lg:text-lg leading-snug">How long does EWI installation take?</span>
-          <span class="faq-icon flex-shrink-0 w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center font-display font-bold text-slate-400 text-xl transition-all duration-300">+</span>
-        </div>
-        <div class="faq-body">
-          <p class="font-body text-sm text-slate-500 font-light leading-relaxed px-7 pb-6">A semi-detached house typically takes 2-3 weeks from scaffold erection to completed render finish. A detached property may take 3-5 weeks. Weather conditions affect the render application stage. You can remain in the property throughout — there's no need to vacate. We give you a firm programme at the site survey so you know exactly what to expect.</p>
-        </div>
-      </div>
-
-      <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
-        <div class="flex items-center justify-between gap-4 px-7 py-6">
-          <span class="faq-title font-display font-bold text-charcoal-900 text-base lg:text-lg leading-snug">Are there grants available for EWI in Sheffield?</span>
-          <span class="faq-icon flex-shrink-0 w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center font-display font-bold text-slate-400 text-xl transition-all duration-300">+</span>
-        </div>
-        <div class="faq-body">
-          <p class="font-body text-sm text-slate-500 font-light leading-relaxed px-7 pb-6">Yes — the Great British Insulation Scheme (GBIS) and ECO4 can fund 25-100% of EWI costs for eligible Sheffield households. Eligibility is typically based on EPC rating (D or below), household income, and benefits status. We advise on grant eligibility at the free site survey and support applications where available. It's always worth checking before paying full price.</p>
+      <div class="faq-item reveal" onclick="toggleFaq(this)">
+        <div class="flex items-start justify-between gap-4">
+          <div class="flex-1">
+            <div class="flex items-center gap-3 mb-2"><span class="faq-num">05</span><span class="faq-cat">Systems</span></div>
+            <div class="faq-q">What's the difference between EPS, PUR and Mineral Wool EWI?</div>
+            <div class="faq-body"><p class="faq-ans">EPS (0.040 W/mK) is the most cost-effective at £40–£60/m² — our recommendation for most properties. PUR (0.023–0.025 W/mK) offers the best performance at £70–£90/m², ideal where board thickness is a constraint. Mineral Wool is the specialist choice for listed buildings — breathable, A1 fire rated, and often the only system approved for historic properties.</p></div>
+          </div>
+          <span class="faq-icon">+</span>
         </div>
       </div>
 
-      <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
-        <div class="flex items-center justify-between gap-4 px-7 py-6">
-          <span class="faq-title font-display font-bold text-charcoal-900 text-base lg:text-lg leading-snug">What warranty do you offer on EWI installation?</span>
-          <span class="faq-icon flex-shrink-0 w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center font-display font-bold text-slate-400 text-xl transition-all duration-300">+</span>
-        </div>
-        <div class="faq-body">
-          <p class="font-body text-sm text-slate-500 font-light leading-relaxed px-7 pb-6">Every EWI system we install carries the manufacturer's product warranty (25-30 years depending on system — EPS, PUR or Mineral Wool) plus our own 5-year workmanship guarantee. You pay zero deposit — nothing until the work is 100% complete and you've inspected it to your satisfaction. All quotes are fully itemised with no hidden costs.</p>
-        </div>
-      </div>
-
-      <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
-        <div class="flex items-center justify-between gap-4 px-7 py-6">
-          <span class="faq-title font-display font-bold text-charcoal-900 text-base lg:text-lg leading-snug">What is the best EWI system for a terraced house in Sheffield?</span>
-          <span class="faq-icon flex-shrink-0 w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center font-display font-bold text-slate-400 text-xl transition-all duration-300">+</span>
-        </div>
-        <div class="faq-body">
-          <p class="font-body text-sm text-slate-500 font-light leading-relaxed px-7 pb-6">For most Sheffield terraced houses, EPS (Expanded Polystyrene) is the best choice — excellent thermal performance at 0.040 W/mK, proven 25+ year durability, and the most cost-effective option at £40–£60/m². Where reveal depth is limited (narrow window frames) or where planning restrictions apply, PUR's superior performance at 0.023–0.025 W/mK means thinner boards achieve the same result — important in older terraces with shallow reveals. We carry out a free detailed survey before recommending any system.</p>
+      <div class="faq-item reveal delay-1" onclick="toggleFaq(this)">
+        <div class="flex items-start justify-between gap-4">
+          <div class="flex-1">
+            <div class="flex items-center gap-3 mb-2"><span class="faq-num">06</span><span class="faq-cat">Eligibility</span></div>
+            <div class="faq-q">Can EWI be fitted to any Sheffield property?</div>
+            <div class="faq-body"><p class="faq-ans">EWI works on most masonry — brick, blockwork, stone, aerated concrete. Listed buildings may have restrictions, but breathable Mineral Wool systems are often approved. Properties in conservation areas may need permitted development consent. We check the planning position at the free site survey — no surprises.</p></div>
+          </div>
+          <span class="faq-icon">+</span>
         </div>
       </div>
 
-      <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
-        <div class="flex items-center justify-between gap-4 px-7 py-6">
-          <span class="faq-title font-display font-bold text-charcoal-900 text-base lg:text-lg leading-snug">Can I get free external wall insulation in Sheffield?</span>
-          <span class="faq-icon flex-shrink-0 w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center font-display font-bold text-slate-400 text-xl transition-all duration-300">+</span>
-        </div>
-        <div class="faq-body">
-          <p class="font-body text-sm text-slate-500 font-light leading-relaxed px-7 pb-6">Yes — if your home has an EPC rating of D or below, or you receive means-tested benefits, you may qualify for fully or partially funded EWI through the Great British Insulation Scheme (GBIS) or ECO4. These schemes can fund 25–100% of installation costs for eligible Sheffield households. We provide a free grant eligibility check at the site survey and support applications where available. Always worth checking before paying full price — call us on <a href="tel:+447595399525" class="text-lime-600 font-bold hover:underline">07595 399525</a> for a quick eligibility chat.</p>
+      <div class="faq-item reveal" onclick="toggleFaq(this)">
+        <div class="flex items-start justify-between gap-4">
+          <div class="flex-1">
+            <div class="flex items-center gap-3 mb-2"><span class="faq-num">07</span><span class="faq-cat">Planning</span></div>
+            <div class="faq-q">Do I need planning permission for EWI in Sheffield?</div>
+            <div class="faq-body"><p class="faq-ans">In most cases EWI falls under permitted development — no planning permission required. Exceptions include listed buildings, conservation areas, and some flats. We check the planning position at the free site survey so you know exactly where you stand before committing to anything.</p></div>
+          </div>
+          <span class="faq-icon">+</span>
         </div>
       </div>
 
-      <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
-        <div class="flex items-center justify-between gap-4 px-7 py-6">
-          <span class="faq-title font-display font-bold text-charcoal-900 text-base lg:text-lg leading-snug">Does external wall insulation change the appearance of my house?</span>
-          <span class="faq-icon flex-shrink-0 w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center font-display font-bold text-slate-400 text-xl transition-all duration-300">+</span>
+      <div class="faq-item reveal delay-1" onclick="toggleFaq(this)">
+        <div class="flex items-start justify-between gap-4">
+          <div class="flex-1">
+            <div class="flex items-center gap-3 mb-2"><span class="faq-num">08</span><span class="faq-cat">Process</span></div>
+            <div class="faq-q">How long does EWI installation take?</div>
+            <div class="faq-body"><p class="faq-ans">A semi-detached typically takes 2-3 weeks from scaffold to completed render. A detached property 3-5 weeks. You can remain in the property throughout — no need to vacate. We give you a firm programme at the site survey so you know exactly what to expect.</p></div>
+          </div>
+          <span class="faq-icon">+</span>
         </div>
-        <div class="faq-body">
-          <p class="font-body text-sm text-slate-500 font-light leading-relaxed px-7 pb-6">EWI typically improves appearance significantly. The finish render coat — silicone, monocouche, or mineral render in your chosen colour and texture — transforms tired brickwork into a clean, modern facade. The system adds 60–200mm to the outer wall face, which changes window and door reveals — we manage this professionally with reveal boards finished to a high standard. Most clients consider the visual transformation one of the key benefits of EWI.</p>
+      </div>
+
+      <div class="faq-item reveal" onclick="toggleFaq(this)">
+        <div class="flex items-start justify-between gap-4">
+          <div class="flex-1">
+            <div class="flex items-center gap-3 mb-2"><span class="faq-num">09</span><span class="faq-cat">Grants</span></div>
+            <div class="faq-q">Are there grants available for EWI in Sheffield?</div>
+            <div class="faq-body"><p class="faq-ans">Yes — GBIS and ECO4 can fund 25-100% of EWI costs for eligible Sheffield households, based on EPC rating (D or below), household income, and benefits status. We advise on grant eligibility at the free site survey and support applications where available. Always worth checking before paying full price.</p></div>
+          </div>
+          <span class="faq-icon">+</span>
+        </div>
+      </div>
+
+      <div class="faq-item reveal delay-1" onclick="toggleFaq(this)">
+        <div class="flex items-start justify-between gap-4">
+          <div class="flex-1">
+            <div class="flex items-center gap-3 mb-2"><span class="faq-num">10</span><span class="faq-cat">Warranty</span></div>
+            <div class="faq-q">What warranty do you offer on EWI installation?</div>
+            <div class="faq-body"><p class="faq-ans">Every EWI system carries the manufacturer's 25-30 year product warranty (EPS, PUR or Mineral Wool) plus our own 5-year workmanship guarantee. Zero deposit — you pay nothing until the work is 100% complete and you've inspected it. All quotes fully itemised, no hidden costs.</p></div>
+          </div>
+          <span class="faq-icon">+</span>
         </div>
       </div>
 
@@ -1285,7 +1274,7 @@
       Free site survey. Fully itemised quote. Zero deposit. Sheffield's trusted EWI specialists.
     </p>
     <div class="reveal delay-3 flex flex-wrap gap-4 justify-center">
-      <a href="/contact/" class="font-display font-bold  text-charcoal-900 px-10 py-4 rounded-full text-sm tracking-wide hover:bg-lime-400 transition-all duration-300" style="background:#00FF00">Get a Free Survey</a>
+      <a href="/get-quote" class="font-display font-bold  text-charcoal-900 px-10 py-4 rounded-full text-sm tracking-wide hover:bg-lime-400 transition-all duration-300" style="background:#00FF00">Get a Free Survey</a>
       <a href="tel:+447595399525" class="font-display font-bold bg-white/10 text-white px-10 py-4 rounded-full text-sm tracking-wide border border-white/20 hover:bg-white/20 transition-all duration-300">Call 07595 399525</a>
     </div>
   </div>
@@ -1420,7 +1409,7 @@
                    onmouseover="this.style.color='rgba(255,255,255,0.7)'" onmouseout="this.style.color='rgba(255,255,255,0.35)'">Project Gallery</a></li>
             <li><a href="/faq/" class="font-display text-sm no-underline transition-colors duration-200" style="color:rgba(255,255,255,0.35)"
                    onmouseover="this.style.color='rgba(255,255,255,0.7)'" onmouseout="this.style.color='rgba(255,255,255,0.35)'">FAQ</a></li>
-            <li><a href="/contact/" class="font-display text-sm no-underline transition-colors duration-200" style="color:rgba(255,255,255,0.35)"
+            <li><a href="/get-quote" class="font-display text-sm no-underline transition-colors duration-200" style="color:rgba(255,255,255,0.35)"
                    onmouseover="this.style.color='rgba(255,255,255,0.7)'" onmouseout="this.style.color='rgba(255,255,255,0.35)'">Get a Quote</a></li>
           </ul>
         </div>
@@ -1457,7 +1446,7 @@
             </div>
           </div>
         </div>
-        <a href="/contact/" class="inline-flex items-center gap-2 font-display font-bold text-charcoal-900 text-xs tracking-wide px-5 py-2.5 rounded-full no-underline transition-opacity duration-200 hover:opacity-85" style="background:#00FF00">
+        <a href="/get-quote" class="inline-flex items-center gap-2 font-display font-bold text-charcoal-900 text-xs tracking-wide px-5 py-2.5 rounded-full no-underline transition-opacity duration-200 hover:opacity-85" style="background:#00FF00">
           Free Survey &rarr;
         </a>
       </div>

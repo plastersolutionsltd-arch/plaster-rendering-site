@@ -369,13 +369,22 @@
     .exp-item.open .exp-body{max-height:500px}
     .exp-arrow{transition:color .3s ease,transform .35s ease;display:inline-block;line-height:1}
     .exp-item.open .exp-arrow{color:#00FF00;transform:rotate(90deg)}
-    .exp-item.open .exp-title{color:#1a1a1a}
+    .exp-item.open .exp-title{color:#fff}
 
-    /* Full-width FAQ accordion */
+    /* Dark card FAQ */
+    .faq-item{background:#131313;border:1px solid #1e1e1e;border-radius:16px;padding:24px 24px 24px 28px;cursor:pointer;position:relative;overflow:hidden;transition:border-color .3s,box-shadow .3s}
+    .faq-item::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(to bottom,#37D413,#2BA80D);transform:scaleY(0);transform-origin:bottom;transition:transform .4s cubic-bezier(.16,1,.3,1);border-radius:0 0 0 16px}
+    .faq-item:hover{border-color:#2a2a2a}
+    .faq-item.open{border-color:rgba(55,212,19,0.35);box-shadow:0 0 32px rgba(55,212,19,0.07)}
+    .faq-item.open::before{transform:scaleY(1)}
     .faq-body{max-height:0;overflow:hidden;transition:max-height .45s cubic-bezier(.16,1,.3,1)}
-    .faq-item.open .faq-body{max-height:500px}
-    .faq-icon{transition:background .3s,color .3s,transform .35s}
-    .faq-item.open .faq-icon{background:#00FF00;border-color:#00FF00;color:#fff;transform:rotate(45deg)}
+    .faq-item.open .faq-body{max-height:320px}
+    .faq-num{font-size:10px;font-weight:800;letter-spacing:.18em;color:#37D413}
+    .faq-cat{font-size:9px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,0.28);background:rgba(255,255,255,0.05);padding:3px 10px;border-radius:100px}
+    .faq-q{font-size:15px;font-weight:700;color:#fff;line-height:1.4;margin-top:10px}
+    .faq-ans{font-size:13px;color:rgba(255,255,255,0.52);line-height:1.75;padding-top:14px;padding-bottom:4px}
+    .faq-icon{flex-shrink:0;width:30px;height:30px;border-radius:8px;border:1px solid #2a2a2a;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:300;color:rgba(255,255,255,0.3);transition:all .3s cubic-bezier(.34,1.56,.64,1);background:transparent;margin-top:2px}
+    .faq-item.open .faq-icon{background:#37D413;border-color:#37D413;color:#000;transform:rotate(45deg)}
 
     /* Mobile menu */
     #mobile-menu{display:none}
@@ -418,7 +427,7 @@
   <div class="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between h-20">
     <!-- Logo -->
     <a href="/" class="flex items-center gap-3 no-underline">
-      <img src="/images/logos/logo-transparent.webp" alt="P&R Solutions logo — Plaster and Rendering Solutions Limited, Sheffield plasterers and rendering specialists" class="h-10 w-auto" />
+      <img src="/images/logos/logo-transparent.webp" alt="P&R Solutions" class="h-10 w-auto" />
       <span class="font-display font-bold text-charcoal-900 text-sm tracking-tight hidden sm:block">P&amp;R Solutions</span>
     </a>
     <!-- Desktop links -->
@@ -470,7 +479,7 @@
            onload="this.classList.add('loaded')" />
     </picture>
     <div class="absolute inset-0" style="background:linear-gradient(105deg,rgba(0,0,0,.9) 0%,rgba(0,0,0,.6) 50%,rgba(0,0,0,.2) 100%)"></div>
-    <div class="absolute inset-x-0 bottom-0 h-40" style="background:linear-gradient(to top,rgba(255,255,255,.45) 0%,transparent 100%)"></div>
+    <div class="absolute inset-x-0 bottom-0 h-40" style="background:linear-gradient(to top,#0b0f0b 0%,transparent 100%)"></div>
 
     <div class="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-12 pb-24 pt-40">
       <div class="flex items-center gap-3 mb-8 reveal">
@@ -513,7 +522,7 @@
 <!-- ══════════════════════════════════════════════════
      WHY CHOOSE PROFESSIONAL PLASTERING
      ══════════════════════════════════════════════════ -->
-<section id="why" class="py-20 lg:py-28" style="background:linear-gradient(to bottom,#f0f0f0,#000000)">
+<section id="why" class="py-20 lg:py-28" style="background-color:#0b0f0b;background-image:radial-gradient(ellipse 80% 55% at 50% 0%,rgba(55,212,19,0.38) 0%,transparent 65%),radial-gradient(ellipse 50% 50% at 100% 100%,rgba(55,212,19,0.25) 0%,transparent 60%),linear-gradient(160deg,#0d130d 0%,#090e09 50%,#070b07 100%)">
   <div class="max-w-7xl mx-auto px-6 lg:px-12">
     <div class="grid lg:grid-cols-[42%_58%] gap-10 lg:gap-16 items-start">
 
@@ -545,7 +554,7 @@
           <p class="font-body text-slate-300 font-light leading-relaxed text-sm max-w-xs">
             Professional plastering is the foundation of every quality interior. The smoothness of your walls and ceilings determines how good your decoration looks — and how long it lasts.
           </p>
-          <a href="#contact" class="flex-shrink-0 font-display font-bold text-xs tracking-wide text-white border border-white/30 px-5 py-2.5 rounded-full hover:bg-white hover:text-charcoal-900 transition-all duration-300 whitespace-nowrap">Get a Quote ↗</a>
+          <a href="#contact" class="flex-shrink-0 font-display font-bold text-xs tracking-wide text-white border border-white/30 px-5 py-2.5 rounded-full hover:bg-white/10 transition-all duration-300 whitespace-nowrap">Get a Quote ↗</a>
         </div>
         <div class="divide-y divide-white/10">
           <div class="exp-item group cursor-pointer py-5" onclick="toggleExp(this)">
@@ -618,7 +627,7 @@
     <p class="reveal delay-2 font-body text-slate-300 font-light max-w-lg leading-relaxed mb-10">
       From single-room skims to full-house replastering, new-build extensions to artex removal — P&amp;R Solutions deliver a flawless plaster finish across Sheffield and South Yorkshire. No deposit. Pay only when you're completely satisfied.
     </p>
-    <div class="reveal delay-3 flex flex-wrap gap-10 border-t border-slate-100 pt-8">
+    <div class="reveal delay-3 flex flex-wrap gap-10 border-t border-white/10 pt-8">
       <div><span class="font-display font-black text-4xl text-white block leading-none">500+</span><span class="font-body text-xs text-slate-400 tracking-widest uppercase mt-1 block">Completed Projects</span></div>
       <div class="w-px bg-white/10 hidden sm:block"></div>
       <div><span class="font-display font-black text-4xl  block leading-none" style="color:#00FF00">0%</span><span class="font-body text-xs text-slate-400 tracking-widest uppercase mt-1 block">Deposit Required</span></div>
@@ -626,14 +635,14 @@
       <div><span class="font-display font-black text-4xl text-white block leading-none">5★</span><span class="font-body text-xs text-slate-400 tracking-widest uppercase mt-1 block">Google Rating</span></div>
     </div>
   </div>
-  <div class="absolute inset-x-0 bottom-0 h-72 pointer-events-none" style="background:linear-gradient(to top,rgba(255,255,255,.32) 0%,rgba(255,255,255,.18) 30%,rgba(255,255,255,.06) 60%,transparent 100%)"></div>
+  <div class="absolute inset-x-0 bottom-0 h-72 pointer-events-none" style="background:linear-gradient(to top,#0b0f0b 0%,transparent 100%)"></div>
 </section>
 
 
 <!-- ══════════════════════════════════════════════════
      OUR SHEFFIELD WORK — card grid
      ══════════════════════════════════════════════════ -->
-<section id="portfolio" class="relative bg-white py-20 lg:py-28">
+<section id="portfolio" class="relative py-20 lg:py-28" style="background-color:#0b0f0b;background-image:radial-gradient(ellipse 80% 55% at 50% 0%,rgba(55,212,19,0.38) 0%,transparent 65%),radial-gradient(ellipse 50% 50% at 100% 100%,rgba(55,212,19,0.25) 0%,transparent 60%),linear-gradient(160deg,#0d130d 0%,#090e09 50%,#070b07 100%)">
   <div class="max-w-7xl mx-auto px-6 lg:px-12">
 
     <!-- Section header -->
@@ -641,18 +650,18 @@
       <div>
         <div class="reveal flex items-center gap-3 mb-6">
           <span class="lime-line visible w-8"></span>
-          <span class="font-display text-xs font-bold tracking-[.3em] uppercase text-charcoal-900">Our Sheffield Work</span>
+          <span class="font-display text-xs font-bold tracking-[.3em] uppercase" style="color:rgba(255,255,255,0.5)">Our Sheffield Work</span>
         </div>
         <div class="reveal delay-1">
           <h2 class="font-display leading-[1.02] tracking-tight">
-            <span class="block font-black text-charcoal-900" style="font-size:clamp(2.2rem,4.5vw,3.5rem)">Plastering Projects</span>
+            <span class="block font-black text-white" style="font-size:clamp(2.2rem,4.5vw,3.5rem)">Plastering Projects</span>
             <span class="block font-black " style="color:#00FF00;font-size:clamp(2.2rem,4.5vw,3.5rem)">Across Sheffield</span>
             <span class="block font-light text-slate-400"   style="font-size:clamp(2.2rem,4.5vw,3.5rem)">&amp; South Yorkshire.</span>
           </h2>
         </div>
       </div>
       <div class="reveal flex-shrink-0">
-        <a href="#contact" class="font-display font-bold text-xs tracking-wide text-charcoal-900 border border-charcoal-900/30 px-6 py-3 rounded-full hover:bg-charcoal-900 hover:text-white transition-all duration-300 whitespace-nowrap">Request a Quote ↗</a>
+        <a href="#contact" class="font-display font-bold text-xs tracking-wide text-white border border-white/25 px-6 py-3 rounded-full hover:bg-white/10 transition-all duration-300 whitespace-nowrap">Request a Quote ↗</a>
       </div>
     </div>
 
@@ -669,13 +678,13 @@
         </div>
         <div class="flex items-start justify-between gap-3 mb-2">
           <div>
-            <p class="font-display font-bold text-charcoal-900 text-lg">Wentworth, S62</p>
+            <p class="font-display font-bold text-white text-lg">Wentworth, S62</p>
             <p class="font-body text-xs text-slate-400 font-light mt-0.5">Float &amp; skim plaster</p>
           </div>
           <span class="flex-shrink-0 font-display text-[10px] font-bold tracking-widest uppercase  border border-green-500/40 px-3 py-1 rounded-full mt-1" style="color:#00FF00">Two-Coat</span>
         </div>
-        <p class="font-body text-sm text-slate-500 font-light leading-relaxed mb-4">Float and skim to masonry walls — bonding coat applied and ruled off flat, then finish skimmed to a perfectly smooth surface. Clean, crisp edges throughout. Ready for decoration within days.</p>
-        <a href="#contact" class="font-display font-bold text-xs text-charcoal-900 border border-charcoal-900/20 px-4 py-2 rounded-full hover:bg-charcoal-900 hover:text-white transition-all duration-300 inline-block">Request Similar ↗</a>
+        <p class="font-body text-sm text-slate-400 font-light leading-relaxed mb-4">Float and skim to masonry walls — bonding coat applied and ruled off flat, then finish skimmed to a perfectly smooth surface. Clean, crisp edges throughout. Ready for decoration within days.</p>
+        <a href="#contact" class="font-display font-bold text-xs text-white/70 border border-white/20 px-4 py-2 rounded-full hover:bg-white/10 hover:text-white transition-all duration-300 inline-block">Request Similar ↗</a>
       </div>
 
       <!-- Card 2 -->
@@ -688,13 +697,13 @@
         </div>
         <div class="flex items-start justify-between gap-3 mb-2">
           <div>
-            <p class="font-display font-bold text-charcoal-900 text-lg">Sheffield</p>
+            <p class="font-display font-bold text-white text-lg">Sheffield</p>
             <p class="font-body text-xs text-slate-400 font-light mt-0.5">Full room replaster</p>
           </div>
           <span class="flex-shrink-0 font-display text-[10px] font-bold tracking-widest uppercase  border border-green-500/40 px-3 py-1 rounded-full mt-1" style="color:#00FF00">Two-Coat</span>
         </div>
-        <p class="font-body text-sm text-slate-500 font-light leading-relaxed mb-4">Full two-coat plaster throughout — bonding coat applied to the masonry substrate, ruled off flat, then finish skimmed to a smooth, hard surface. Walls and ceiling completed in a single visit. Ready for mist coat within days.</p>
-        <a href="#contact" class="font-display font-bold text-xs text-charcoal-900 border border-charcoal-900/20 px-4 py-2 rounded-full hover:bg-charcoal-900 hover:text-white transition-all duration-300 inline-block">Request Similar ↗</a>
+        <p class="font-body text-sm text-slate-400 font-light leading-relaxed mb-4">Full two-coat plaster throughout — bonding coat applied to the masonry substrate, ruled off flat, then finish skimmed to a smooth, hard surface. Walls and ceiling completed in a single visit. Ready for mist coat within days.</p>
+        <a href="#contact" class="font-display font-bold text-xs text-white/70 border border-white/20 px-4 py-2 rounded-full hover:bg-white/10 hover:text-white transition-all duration-300 inline-block">Request Similar ↗</a>
       </div>
 
       <!-- Card 3 -->
@@ -707,13 +716,13 @@
         </div>
         <div class="flex items-start justify-between gap-3 mb-2">
           <div>
-            <p class="font-display font-bold text-charcoal-900 text-lg">Sheffield</p>
+            <p class="font-display font-bold text-white text-lg">Sheffield</p>
             <p class="font-body text-xs text-slate-400 font-light mt-0.5">Dry lining &amp; boarding</p>
           </div>
           <span class="flex-shrink-0 font-display text-[10px] font-bold tracking-widest uppercase  border border-green-500/40 px-3 py-1 rounded-full mt-1" style="color:#00FF00">Dry Lining</span>
         </div>
-        <p class="font-body text-sm text-slate-500 font-light leading-relaxed mb-4">Complete dry lining system — plasterboard fixed to stud partitions and masonry walls using dot-and-dab, taped, jointed and finish skimmed to a smooth, flat surface throughout. Modern, fast, and thermally efficient.</p>
-        <a href="#contact" class="font-display font-bold text-xs text-charcoal-900 border border-charcoal-900/20 px-4 py-2 rounded-full hover:bg-charcoal-900 hover:text-white transition-all duration-300 inline-block">Request Similar ↗</a>
+        <p class="font-body text-sm text-slate-400 font-light leading-relaxed mb-4">Complete dry lining system — plasterboard fixed to stud partitions and masonry walls using dot-and-dab, taped, jointed and finish skimmed to a smooth, flat surface throughout. Modern, fast, and thermally efficient.</p>
+        <a href="#contact" class="font-display font-bold text-xs text-white/70 border border-white/20 px-4 py-2 rounded-full hover:bg-white/10 hover:text-white transition-all duration-300 inline-block">Request Similar ↗</a>
       </div>
 
     </div>
@@ -731,13 +740,13 @@
         </div>
         <div class="flex items-start justify-between gap-3 mb-2">
           <div>
-            <p class="font-display font-bold text-charcoal-900 text-lg">Wentworth, S62</p>
+            <p class="font-display font-bold text-white text-lg">Wentworth, S62</p>
             <p class="font-body text-xs text-slate-400 font-light mt-0.5">Finish skim detail</p>
           </div>
           <span class="flex-shrink-0 font-display text-[10px] font-bold tracking-widest uppercase  border border-green-500/40 px-3 py-1 rounded-full mt-1" style="color:#00FF00">Skim Finish</span>
         </div>
-        <p class="font-body text-sm text-slate-500 font-light leading-relaxed mb-4">The quality is in the detail — a tight, flat skim coat that reads perfectly clean under any light. Crisp edges at every corner, window reveal, and ceiling line. This is the standard we hold across every room we work in.</p>
-        <a href="#contact" class="font-display font-bold text-xs text-charcoal-900 border border-charcoal-900/20 px-4 py-2 rounded-full hover:bg-charcoal-900 hover:text-white transition-all duration-300 inline-block">Request Similar ↗</a>
+        <p class="font-body text-sm text-slate-400 font-light leading-relaxed mb-4">The quality is in the detail — a tight, flat skim coat that reads perfectly clean under any light. Crisp edges at every corner, window reveal, and ceiling line. This is the standard we hold across every room we work in.</p>
+        <a href="#contact" class="font-display font-bold text-xs text-white/70 border border-white/20 px-4 py-2 rounded-full hover:bg-white/10 hover:text-white transition-all duration-300 inline-block">Request Similar ↗</a>
       </div>
 
       <!-- Card 5 -->
@@ -750,25 +759,25 @@
         </div>
         <div class="flex items-start justify-between gap-3 mb-2">
           <div>
-            <p class="font-display font-bold text-charcoal-900 text-lg">Chapeltown, S35</p>
+            <p class="font-display font-bold text-white text-lg">Chapeltown, S35</p>
             <p class="font-body text-xs text-slate-400 font-light mt-0.5">Full room replaster</p>
           </div>
           <span class="flex-shrink-0 font-display text-[10px] font-bold tracking-widest uppercase  border border-green-500/40 px-3 py-1 rounded-full mt-1" style="color:#00FF00">Skim Finish</span>
         </div>
-        <p class="font-body text-sm text-slate-500 font-light leading-relaxed mb-4">Full replaster throughout this Chapeltown property — walls and ceilings skimmed to a perfectly smooth finish. Old plaster hacked off, surfaces prepped and bonded, finished with a flawless two-coat skim. Ready for decoration the following week.</p>
-        <a href="#contact" class="font-display font-bold text-xs text-charcoal-900 border border-charcoal-900/20 px-4 py-2 rounded-full hover:bg-charcoal-900 hover:text-white transition-all duration-300 inline-block">Request Similar ↗</a>
+        <p class="font-body text-sm text-slate-400 font-light leading-relaxed mb-4">Full replaster throughout this Chapeltown property — walls and ceilings skimmed to a perfectly smooth finish. Old plaster hacked off, surfaces prepped and bonded, finished with a flawless two-coat skim. Ready for decoration the following week.</p>
+        <a href="#contact" class="font-display font-bold text-xs text-white/70 border border-white/20 px-4 py-2 rounded-full hover:bg-white/10 hover:text-white transition-all duration-300 inline-block">Request Similar ↗</a>
       </div>
 
     </div>
   </div>
-  <div class="absolute inset-x-0 bottom-0 h-24 pointer-events-none" style="background:linear-gradient(to top,#f0f0f0 0%,transparent 100%)"></div>
+  <div class="absolute inset-x-0 bottom-0 h-24 pointer-events-none" style="background:linear-gradient(to top,#0b0f0b 0%,transparent 100%)"></div>
 </section>
 
 
 <!-- ══════════════════════════════════════════════════
      BEFORE & AFTER
      ══════════════════════════════════════════════════ -->
-<section id="before-after" class="bg-charcoal-900 py-20 lg:py-28">
+<section id="before-after" class="py-20 lg:py-28" style="background-color:#0b0f0b;background-image:radial-gradient(ellipse 80% 55% at 50% 0%,rgba(55,212,19,0.38) 0%,transparent 65%),radial-gradient(ellipse 50% 50% at 100% 100%,rgba(55,212,19,0.25) 0%,transparent 60%),linear-gradient(160deg,#0d130d 0%,#090e09 50%,#070b07 100%)">
   <div class="max-w-7xl mx-auto px-6 lg:px-12">
 
     <!-- Header -->
@@ -857,7 +866,7 @@
 <!-- ══════════════════════════════════════════════════
      HOW WE PLASTER — 6-stage process
      ══════════════════════════════════════════════════ -->
-<section id="process" class="relative py-20 lg:py-28" style="background:linear-gradient(to bottom,#f0f0f0,#000000)">
+<section id="process" class="relative py-20 lg:py-28" style="background-color:#0b0f0b;background-image:radial-gradient(ellipse 80% 55% at 50% 0%,rgba(55,212,19,0.38) 0%,transparent 65%),radial-gradient(ellipse 50% 50% at 100% 100%,rgba(55,212,19,0.25) 0%,transparent 60%),linear-gradient(160deg,#0d130d 0%,#090e09 50%,#070b07 100%)">
   <div class="max-w-7xl mx-auto px-6 lg:px-12">
     <div class="grid lg:grid-cols-[42%_58%] gap-10 lg:gap-16 items-start">
 
@@ -889,7 +898,7 @@
           <p class="font-body text-slate-300 font-light leading-relaxed text-sm max-w-xs">
             A professional plaster finish follows 6 stages — each one matters. Cutting corners at any stage shows up in the finished result.
           </p>
-          <a href="#contact" class="flex-shrink-0 font-display font-bold text-xs tracking-wide text-white border border-white/30 px-5 py-2.5 rounded-full hover:bg-white hover:text-charcoal-900 transition-all duration-300 whitespace-nowrap">Book a Visit ↗</a>
+          <a href="#contact" class="flex-shrink-0 font-display font-bold text-xs tracking-wide text-white border border-white/30 px-5 py-2.5 rounded-full hover:bg-white/10 transition-all duration-300 whitespace-nowrap">Book a Visit ↗</a>
         </div>
         <div class="divide-y divide-white/10">
           <div class="exp-item group cursor-pointer py-5" onclick="toggleExp(this)">
@@ -968,14 +977,14 @@
       </div>
     </div>
   </div>
-  <div class="absolute inset-x-0 bottom-0 h-72 pointer-events-none" style="background:linear-gradient(to top,rgba(255,255,255,.32) 0%,rgba(255,255,255,.18) 30%,rgba(255,255,255,.06) 60%,transparent 100%)"></div>
+  <div class="absolute inset-x-0 bottom-0 h-72 pointer-events-none" style="background:linear-gradient(to top,#0b0f0b 0%,transparent 100%)"></div>
 </section>
 
 
 <!-- ══════════════════════════════════════════════════
      PLASTERING SYSTEMS
      ══════════════════════════════════════════════════ -->
-<section class="relative bg-white py-20 lg:py-28">
+<section class="relative py-20 lg:py-28" style="background-color:#0b0f0b;background-image:radial-gradient(ellipse 80% 55% at 50% 0%,rgba(55,212,19,0.38) 0%,transparent 65%),radial-gradient(ellipse 50% 50% at 100% 100%,rgba(55,212,19,0.25) 0%,transparent 60%),linear-gradient(160deg,#0d130d 0%,#090e09 50%,#070b07 100%)">
   <div class="max-w-7xl mx-auto px-6 lg:px-12">
     <div class="grid lg:grid-cols-[42%_58%] gap-10 lg:gap-16 items-start">
 
@@ -983,13 +992,13 @@
       <div>
         <div class="reveal-left flex items-center gap-3 mb-8">
           <span class="lime-line visible w-8"></span>
-          <span class="font-display text-xs font-bold tracking-[.3em] uppercase text-charcoal-900">Plastering Methods</span>
+          <span class="font-display text-xs font-bold tracking-[.3em] uppercase" style="color:rgba(255,255,255,0.5)">Plastering Methods</span>
         </div>
         <div class="reveal-left delay-1 mb-10">
           <h2 class="font-display leading-[1.02] tracking-tight">
-            <span class="block font-black text-charcoal-900" style="font-size:clamp(2.4rem,5vw,4rem)">Three</span>
+            <span class="block font-black text-white" style="font-size:clamp(2.4rem,5vw,4rem)">Three</span>
             <span class="block font-black " style="color:#00FF00;font-size:clamp(2.4rem,5vw,4rem)">Methods.</span>
-            <span class="block font-light text-slate-400"   style="font-size:clamp(2.4rem,5vw,4rem)">One Right Finish.</span>
+            <span class="block font-light text-slate-300" style="font-size:clamp(2.4rem,5vw,4rem)">One Right Finish.</span>
           </h2>
         </div>
         <div class="reveal-scale img-hover relative overflow-hidden rounded-2xl mb-4" style="height:clamp(300px,45vw,500px)">
@@ -1008,81 +1017,81 @@
 
       <!-- Right -->
       <div class="lg:pt-16">
-        <div class="reveal-right flex items-start justify-between gap-6 mb-10 pb-10 border-b border-slate-100">
-          <p class="font-body text-slate-500 font-light leading-relaxed text-sm max-w-xs">
+        <div class="reveal-right flex items-start justify-between gap-6 mb-10 pb-10 border-b border-white/10">
+          <p class="font-body text-slate-300 font-light leading-relaxed text-sm max-w-xs">
             Traditional two-coat for solid masonry. Dry lining for speed and insulation. Bonding &amp; skim for uneven or patchy surfaces. We'll recommend the right approach at your free site visit.
           </p>
-          <a href="#contact" class="flex-shrink-0 font-display font-bold text-xs tracking-wide text-charcoal-900 border border-charcoal-900/30 px-5 py-2.5 rounded-full hover:bg-charcoal-900 hover:text-white transition-all duration-300 whitespace-nowrap">Discuss Options ↗</a>
+          <a href="#contact" class="flex-shrink-0 font-display font-bold text-xs tracking-wide text-white border border-white/30 px-5 py-2.5 rounded-full hover:bg-white/10 transition-all duration-300 whitespace-nowrap">Discuss Options ↗</a>
         </div>
 
         <!-- Systems accordion -->
-        <div class="divide-y divide-slate-100">
+        <div class="divide-y divide-white/10">
           <div class="exp-item group cursor-pointer py-5" onclick="toggleExp(this)">
             <div class="flex items-center justify-between gap-4">
               <div class="flex items-center gap-5">
                 <div class="flex-shrink-0 w-20 text-center">
-                  <span class="font-display font-black text-charcoal-900 block leading-none" style="font-size:1.4rem">2-coat</span>
+                  <span class="font-display font-black text-white block leading-none" style="font-size:1.4rem">2-coat</span>
                   <span class="font-display text-[10px] font-bold text-slate-400 tracking-widest uppercase">System</span>
                 </div>
                 <div>
-                  <span class="exp-title font-display font-bold text-slate-400 group-hover:text-charcoal-900 transition-colors duration-300 text-base block">Traditional Two-Coat Plaster</span>
+                  <span class="exp-title font-display font-bold text-slate-300 group-hover:text-white transition-colors duration-300 text-base block">Traditional Two-Coat Plaster</span>
                   <span class="font-display text-xs font-bold  tracking-widest uppercase" style="color:#00FF00">★ Recommended for Masonry</span>
                 </div>
               </div>
               <span class="exp-arrow text-2xl text-slate-200 group-hover: flex-shrink-0" style="color:#00FF00">›</span>
             </div>
             <div class="exp-body">
-              <p class="font-body text-sm text-slate-500 font-light leading-relaxed pt-4 pb-2 max-w-lg pl-14">The gold standard for solid masonry walls — brick, block, and stone. A bonding or scratch coat builds up the level; a finish skim coat creates the smooth surface. Traditional two-coat plaster is the most durable system and the best choice for Sheffield's older solid-wall properties. Typical room cost: £250–£600 depending on size and prep.</p>
+              <p class="font-body text-sm text-slate-400 font-light leading-relaxed pt-4 pb-2 max-w-lg pl-14">The gold standard for solid masonry walls — brick, block, and stone. A bonding or scratch coat builds up the level; a finish skim coat creates the smooth surface. Traditional two-coat plaster is the most durable system and the best choice for Sheffield's older solid-wall properties. Typical room cost: £250–£600 depending on size and prep.</p>
             </div>
           </div>
           <div class="exp-item group cursor-pointer py-5" onclick="toggleExp(this)">
             <div class="flex items-center justify-between gap-4">
               <div class="flex items-center gap-5">
                 <div class="flex-shrink-0 w-20 text-center">
-                  <span class="font-display font-black text-charcoal-900 block leading-none" style="font-size:1.4rem">Board</span>
+                  <span class="font-display font-black text-white block leading-none" style="font-size:1.4rem">Board</span>
                   <span class="font-display text-[10px] font-bold text-slate-400 tracking-widest uppercase">System</span>
                 </div>
                 <div>
-                  <span class="exp-title font-display font-bold text-slate-400 group-hover:text-charcoal-900 transition-colors duration-300 text-base block">Dry Lining &amp; Plasterboard</span>
-                  <span class="font-display text-xs font-bold text-slate-400 tracking-widest uppercase">Best for New Build &amp; Insulation</span>
+                  <span class="exp-title font-display font-bold text-slate-300 group-hover:text-white transition-colors duration-300 text-base block">Dry Lining &amp; Plasterboard</span>
+                  <span class="font-display text-xs font-bold text-slate-300 tracking-widest uppercase">Best for New Build &amp; Insulation</span>
                 </div>
               </div>
               <span class="exp-arrow text-2xl text-slate-200 group-hover: flex-shrink-0" style="color:#00FF00">›</span>
             </div>
             <div class="exp-body">
-              <p class="font-body text-sm text-slate-500 font-light leading-relaxed pt-4 pb-2 max-w-lg pl-14">Plasterboard fixed to stud partitions or dot-and-dab applied to masonry walls, then taped, jointed and skimmed. Faster than traditional wet plastering and excellent for new build extensions, partition walls, and insulated wall upgrades. Insulated backing board (dot-and-dab) significantly improves the thermal performance of solid masonry walls — a common upgrade in Sheffield homes.</p>
+              <p class="font-body text-sm text-slate-400 font-light leading-relaxed pt-4 pb-2 max-w-lg pl-14">Plasterboard fixed to stud partitions or dot-and-dab applied to masonry walls, then taped, jointed and skimmed. Faster than traditional wet plastering and excellent for new build extensions, partition walls, and insulated wall upgrades. Insulated backing board (dot-and-dab) significantly improves the thermal performance of solid masonry walls — a common upgrade in Sheffield homes.</p>
             </div>
           </div>
           <div class="exp-item group cursor-pointer py-5" onclick="toggleExp(this)">
             <div class="flex items-center justify-between gap-4">
               <div class="flex items-center gap-5">
                 <div class="flex-shrink-0 w-20 text-center">
-                  <span class="font-display font-black text-charcoal-900 block leading-none" style="font-size:1.4rem">Bond</span>
+                  <span class="font-display font-black text-white block leading-none" style="font-size:1.4rem">Bond</span>
                   <span class="font-display text-[10px] font-bold text-slate-400 tracking-widest uppercase">System</span>
                 </div>
                 <div>
-                  <span class="exp-title font-display font-bold text-slate-400 group-hover:text-charcoal-900 transition-colors duration-300 text-base block">Bonding &amp; Skim</span>
-                  <span class="font-display text-xs font-bold text-slate-400 tracking-widest uppercase">Uneven &amp; Mixed Surfaces</span>
+                  <span class="exp-title font-display font-bold text-slate-300 group-hover:text-white transition-colors duration-300 text-base block">Bonding &amp; Skim</span>
+                  <span class="font-display text-xs font-bold text-slate-300 tracking-widest uppercase">Uneven &amp; Mixed Surfaces</span>
                 </div>
               </div>
               <span class="exp-arrow text-2xl text-slate-200 group-hover: flex-shrink-0" style="color:#00FF00">›</span>
             </div>
             <div class="exp-body">
-              <p class="font-body text-sm text-slate-500 font-light leading-relaxed pt-4 pb-2 max-w-lg pl-14">Bonding undercoat applied over exposed brick, block, or patchy existing surfaces to create an even, level base, then finish skimmed to a smooth surface. The most flexible approach — ideal for rooms with mixed substrate conditions (part old plaster, part masonry, part board), irregular surfaces, or where a sound existing plaster needs bringing to a consistent level before skimming.</p>
+              <p class="font-body text-sm text-slate-400 font-light leading-relaxed pt-4 pb-2 max-w-lg pl-14">Bonding undercoat applied over exposed brick, block, or patchy existing surfaces to create an even, level base, then finish skimmed to a smooth surface. The most flexible approach — ideal for rooms with mixed substrate conditions (part old plaster, part masonry, part board), irregular surfaces, or where a sound existing plaster needs bringing to a consistent level before skimming.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="absolute inset-x-0 bottom-0 h-24 pointer-events-none" style="background:linear-gradient(to top,#f0f0f0 0%,transparent 100%)"></div>
+  <div class="absolute inset-x-0 bottom-0 h-24 pointer-events-none" style="background:linear-gradient(to top,#0b0f0b 0%,transparent 100%)"></div>
 </section>
 
 
 <!-- ══════════════════════════════════════════════════
      PRICING
      ══════════════════════════════════════════════════ -->
-<section id="pricing" class="relative py-20 lg:py-28" style="background:linear-gradient(to bottom,#f0f0f0,#000000)">
+<section id="pricing" class="relative py-20 lg:py-28" style="background-color:#0b0f0b;background-image:radial-gradient(ellipse 80% 55% at 50% 0%,rgba(55,212,19,0.38) 0%,transparent 65%),radial-gradient(ellipse 50% 50% at 100% 100%,rgba(55,212,19,0.25) 0%,transparent 60%),linear-gradient(160deg,#0d130d 0%,#090e09 50%,#070b07 100%)">
   <div class="max-w-7xl mx-auto px-6 lg:px-12">
     <div class="grid lg:grid-cols-[42%_58%] gap-10 lg:gap-16 items-start">
 
@@ -1102,7 +1111,7 @@
         <div class="reveal rounded-2xl p-7 mb-4" style="background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12)">
           <div class="flex items-start gap-3 mb-5">
             <svg class="w-4 h-4  flex-shrink-0 mt-0.5" style="color:#00FF00" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-            <p class="font-body text-xs text-slate-500 font-light leading-relaxed">Guide prices for skim finish on a sound substrate. Full replaster (two-coat) adds 30-50%. Artex removal adds £50-150 per room. All prices include materials and labour.</p>
+            <p class="font-body text-xs text-slate-400 font-light leading-relaxed">Guide prices for skim finish on a sound substrate. Full replaster (two-coat) adds 30-50%. Artex removal adds £50-150 per room. All prices include materials and labour.</p>
           </div>
           <div class="space-y-3">
             <div class="flex items-center justify-between py-2 border-b border-white/10">
@@ -1135,7 +1144,7 @@
           <p class="font-body text-slate-300 font-light leading-relaxed text-sm max-w-xs">
             What affects the final price of plastering — the key variables that determine whether your project is at the lower or upper end of the guide figures.
           </p>
-          <a href="#contact" class="flex-shrink-0 font-display font-bold text-xs tracking-wide text-white border border-white/30 px-5 py-2.5 rounded-full hover:bg-white hover:text-charcoal-900 transition-all duration-300 whitespace-nowrap">Get Itemised Quote ↗</a>
+          <a href="#contact" class="flex-shrink-0 font-display font-bold text-xs tracking-wide text-white border border-white/30 px-5 py-2.5 rounded-full hover:bg-white/10 transition-all duration-300 whitespace-nowrap">Get Itemised Quote ↗</a>
         </div>
         <div class="divide-y divide-white/10">
           <div class="exp-item group cursor-pointer py-5" onclick="toggleExp(this)">
@@ -1190,159 +1199,149 @@
       </div>
     </div>
   </div>
-  <div class="absolute inset-x-0 bottom-0 h-24 pointer-events-none" style="background:linear-gradient(to top,#f8fafc 0%,transparent 100%)"></div>
+  <div class="absolute inset-x-0 bottom-0 h-24 pointer-events-none" style="background:linear-gradient(to top,#0b0f0b 0%,transparent 100%)"></div>
 </section>
 
 
 <!-- ══════════════════════════════════════════════════
      FAQ — full width accordion
      ══════════════════════════════════════════════════ -->
-<section id="faq" class="bg-slate-50 py-20 lg:py-28">
+<section id="faq" class="py-20 lg:py-28" style="background-color:#0b0f0b;background-image:radial-gradient(ellipse 70% 50% at 50% 0%,rgba(55,212,19,0.32) 0%,transparent 60%),linear-gradient(160deg,#0d130d 0%,#090e09 50%,#070b07 100%)">
   <div class="max-w-7xl mx-auto px-6 lg:px-12">
 
     <!-- Header row -->
     <div class="grid lg:grid-cols-2 gap-10 lg:gap-20 items-end mb-14">
       <div>
         <div class="reveal flex items-center gap-3 mb-6">
-          <span class="lime-line visible w-8"></span>
-          <span class="font-display text-xs font-bold tracking-[.3em] uppercase text-charcoal-900">FAQ</span>
+          <span class="lime-line lime visible w-8"></span>
+          <span class="font-display text-xs font-bold tracking-[.3em] uppercase" style="color:rgba(255,255,255,0.5)">FAQ</span>
         </div>
         <div class="reveal delay-1">
           <h2 class="font-display leading-[1.02] tracking-tight">
-            <span class="block font-black text-charcoal-900" style="font-size:clamp(2.2rem,4.5vw,3.5rem)">Common</span>
-            <span class="block font-black " style="color:#00FF00;font-size:clamp(2.2rem,4.5vw,3.5rem)">Questions</span>
-            <span class="block font-light text-slate-400"   style="font-size:clamp(2.2rem,4.5vw,3.5rem)">Answered.</span>
+            <span class="block font-black text-white" style="font-size:clamp(2.2rem,4.5vw,3.5rem)">Common</span>
+            <span class="block font-black" style="color:#37D413;font-size:clamp(2.2rem,4.5vw,3.5rem)">Questions</span>
+            <span class="block font-light" style="color:rgba(255,255,255,0.35);font-size:clamp(2.2rem,4.5vw,3.5rem)">Answered.</span>
           </h2>
         </div>
       </div>
       <div class="reveal">
-        <p class="font-body text-slate-500 font-light leading-relaxed text-sm mb-6">
+        <p class="font-body font-light leading-relaxed text-sm mb-6" style="color:rgba(255,255,255,0.45)">
           Everything Sheffield homeowners ask us about plastering, skimming and dry lining. Click any question for the full answer.
         </p>
-        <a href="tel:+447595399525" class="font-display font-bold text-xs tracking-wide text-charcoal-900 border border-charcoal-900/30 px-6 py-3 rounded-full hover:bg-charcoal-900 hover:text-white transition-all duration-300 inline-block">Call 07595 399525 ↗</a>
+        <a href="tel:+447595399525" class="font-display font-bold text-xs tracking-wide text-white border border-white/25 px-6 py-3 rounded-full hover:bg-white/10 transition-all duration-300 inline-block">Call 07595 399525 ↗</a>
       </div>
     </div>
 
-    <!-- Full-width accordion cards -->
-    <div class="space-y-3">
+    <!-- Dark card grid -->
+    <div class="grid lg:grid-cols-2 gap-3">
 
-      <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
-        <div class="flex items-center justify-between gap-4 px-7 py-6">
-          <span class="faq-title font-display font-bold text-charcoal-900 text-base lg:text-lg leading-snug">How much does plastering cost in Sheffield?</span>
-          <span class="faq-icon flex-shrink-0 w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center font-display font-bold text-slate-400 text-xl transition-all duration-300">+</span>
-        </div>
-        <div class="faq-body">
-          <p class="font-body text-sm text-slate-500 font-light leading-relaxed px-7 pb-6">A standard room skim in Sheffield costs £200–£400 for walls only or £300–£600 for walls and ceiling, depending on size and surface condition. A full terraced house typically costs £1,500–£2,500 and a semi-detached £2,500–£4,500. Full renovation and new-build plastering starts from £3,000. We provide a free, fully itemised quotation with no obligation — zero deposit required.</p>
+      <div class="faq-item reveal" onclick="toggleFaq(this)">
+        <div class="flex items-start justify-between gap-4">
+          <div class="flex-1">
+            <div class="flex items-center gap-3 mb-2"><span class="faq-num">01</span><span class="faq-cat">Pricing</span></div>
+            <div class="faq-q">How much does plastering cost in Sheffield?</div>
+            <div class="faq-body"><p class="faq-ans">A standard room skim costs £200–£400 for walls only or £300–£600 for walls and ceiling. A full terraced house typically costs £1,500–£2,500 and a semi-detached £2,500–£4,500. Full renovation and new-build plastering starts from £3,000. We provide a free, fully itemised quotation with no obligation — zero deposit required.</p></div>
+          </div>
+          <span class="faq-icon">+</span>
         </div>
       </div>
 
-      <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
-        <div class="flex items-center justify-between gap-4 px-7 py-6">
-          <span class="faq-title font-display font-bold text-charcoal-900 text-base lg:text-lg leading-snug">How long does fresh plaster take to dry?</span>
-          <span class="faq-icon flex-shrink-0 w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center font-display font-bold text-slate-400 text-xl transition-all duration-300">+</span>
-        </div>
-        <div class="faq-body">
-          <p class="font-body text-sm text-slate-500 font-light leading-relaxed px-7 pb-6">Fresh plaster typically takes 3-5 days to dry enough for a mist coat (watered-down emulsion first coat), and up to 4-6 weeks to fully cure before applying standard emulsion. Opening windows and using gentle background heat helps speed drying — but avoid pointing direct fan heaters at fresh plaster as this causes cracking. We give you a clear drying programme on completion of every job.</p>
-        </div>
-      </div>
-
-      <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
-        <div class="flex items-center justify-between gap-4 px-7 py-6">
-          <span class="faq-title font-display font-bold text-charcoal-900 text-base lg:text-lg leading-snug">Can you skim over existing plaster?</span>
-          <span class="faq-icon flex-shrink-0 w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center font-display font-bold text-slate-400 text-xl transition-all duration-300">+</span>
-        </div>
-        <div class="faq-body">
-          <p class="font-body text-sm text-slate-500 font-light leading-relaxed px-7 pb-6">Yes — if the existing plaster is sound (not hollow or crumbling), we can apply a fresh finish skim coat directly over it. We check the existing plaster first by tapping across the surface. Hollow sections are cut back and made good before skimming. The surface is PVA bonded to control suction. If the plaster is extensively hollow, a full replaster gives better long-term results — we'll advise honestly which is the right call.</p>
+      <div class="faq-item reveal" onclick="toggleFaq(this)">
+        <div class="flex items-start justify-between gap-4">
+          <div class="flex-1">
+            <div class="flex items-center gap-3 mb-2"><span class="faq-num">02</span><span class="faq-cat">Drying</span></div>
+            <div class="faq-q">How long does fresh plaster take to dry?</div>
+            <div class="faq-body"><p class="faq-ans">Fresh plaster takes 3-5 days to dry enough for a mist coat, and up to 4-6 weeks to fully cure before standard emulsion. Open windows and use gentle background heat — avoid pointing fan heaters directly at fresh plaster as this causes cracking. We give you a clear drying programme on completion of every job.</p></div>
+          </div>
+          <span class="faq-icon">+</span>
         </div>
       </div>
 
-      <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
-        <div class="flex items-center justify-between gap-4 px-7 py-6">
-          <span class="faq-title font-display font-bold text-charcoal-900 text-base lg:text-lg leading-snug">What's the difference between skimming and plastering?</span>
-          <span class="faq-icon flex-shrink-0 w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center font-display font-bold text-slate-400 text-xl transition-all duration-300">+</span>
-        </div>
-        <div class="faq-body">
-          <p class="font-body text-sm text-slate-500 font-light leading-relaxed px-7 pb-6">Plastering is the full process — applying base coat(s) plus a finish coat to create a smooth surface. Skimming specifically means applying a thin (2-3mm) finish coat of plaster over an existing surface — usually plasterboard or sound existing plaster — to create a smooth result ready for decorating. Skimming is faster but only suitable where the existing surface is structurally sound. Full plastering involves a thicker base or bonding coat first, followed by the skim.</p>
-        </div>
-      </div>
-
-      <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
-        <div class="flex items-center justify-between gap-4 px-7 py-6">
-          <span class="faq-title font-display font-bold text-charcoal-900 text-base lg:text-lg leading-snug">Can you patch plaster rather than replaster the whole room?</span>
-          <span class="faq-icon flex-shrink-0 w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center font-display font-bold text-slate-400 text-xl transition-all duration-300">+</span>
-        </div>
-        <div class="faq-body">
-          <p class="font-body text-sm text-slate-500 font-light leading-relaxed px-7 pb-6">Yes — we regularly carry out patch repairs for cracks, impact damage, damp repairs, and isolated hollow sections. Good patch work is harder than it looks: the repair needs to be feathered and blended so it's invisible under paint. We advise honestly whether a patch will give a good result or whether the surface condition means a full replaster is better value — which it often is if more than 30-40% of the plaster is hollow.</p>
+      <div class="faq-item reveal" onclick="toggleFaq(this)">
+        <div class="flex items-start justify-between gap-4">
+          <div class="flex-1">
+            <div class="flex items-center gap-3 mb-2"><span class="faq-num">03</span><span class="faq-cat">Skimming</span></div>
+            <div class="faq-q">Can you skim over existing plaster?</div>
+            <div class="faq-body"><p class="faq-ans">Yes — if the existing plaster is sound (not hollow or crumbling), we can apply a fresh finish skim coat directly over it. We check by tapping across the surface. Hollow sections are cut back and made good first. The surface is PVA bonded to control suction. If extensively hollow, a full replaster gives better long-term results — we'll advise honestly.</p></div>
+          </div>
+          <span class="faq-icon">+</span>
         </div>
       </div>
 
-      <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
-        <div class="flex items-center justify-between gap-4 px-7 py-6">
-          <span class="faq-title font-display font-bold text-charcoal-900 text-base lg:text-lg leading-snug">What is dry lining and when is it used?</span>
-          <span class="faq-icon flex-shrink-0 w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center font-display font-bold text-slate-400 text-xl transition-all duration-300">+</span>
-        </div>
-        <div class="faq-body">
-          <p class="font-body text-sm text-slate-500 font-light leading-relaxed px-7 pb-6">Dry lining means fixing plasterboard to walls or ceilings instead of applying wet plaster directly to masonry. It's the standard method for new-build stud partitions, insulated wall upgrades (dot-and-dab plasterboard with insulated backing board), and ceiling refits. Plasterboard is taped, jointed, and skimmed to a smooth finish. It's faster than traditional wet plastering and excellent for achieving level results on uneven masonry without the drying time of thick build-up coats.</p>
-        </div>
-      </div>
-
-      <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
-        <div class="flex items-center justify-between gap-4 px-7 py-6">
-          <span class="faq-title font-display font-bold text-charcoal-900 text-base lg:text-lg leading-snug">Can you remove artex and replaster?</span>
-          <span class="faq-icon flex-shrink-0 w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center font-display font-bold text-slate-400 text-xl transition-all duration-300">+</span>
-        </div>
-        <div class="faq-body">
-          <p class="font-body text-sm text-slate-500 font-light leading-relaxed px-7 pb-6">Yes — artex removal and re-skim is one of our most requested services in Sheffield. We check whether the artex contains asbestos first (pre-1999 artex must be tested before work begins) and advise accordingly. Artex is either mechanically removed back to the substrate, or — where it is sound and stable — a float coat is applied over it before the finish skim. The result is a completely smooth, flat ceiling that transforms the room's appearance.</p>
+      <div class="faq-item reveal" onclick="toggleFaq(this)">
+        <div class="flex items-start justify-between gap-4">
+          <div class="flex-1">
+            <div class="flex items-center gap-3 mb-2"><span class="faq-num">04</span><span class="faq-cat">Methods</span></div>
+            <div class="faq-q">What's the difference between skimming and plastering?</div>
+            <div class="faq-body"><p class="faq-ans">Plastering is the full process — applying base coat(s) plus a finish coat. Skimming specifically means applying a thin (2-3mm) finish coat over an existing surface — usually plasterboard or sound existing plaster. Skimming is faster but only suitable where the existing surface is structurally sound. Full plastering involves a thicker bonding coat first, followed by the skim.</p></div>
+          </div>
+          <span class="faq-icon">+</span>
         </div>
       </div>
 
-      <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
-        <div class="flex items-center justify-between gap-4 px-7 py-6">
-          <span class="faq-title font-display font-bold text-charcoal-900 text-base lg:text-lg leading-snug">How long does plastering a room take?</span>
-          <span class="faq-icon flex-shrink-0 w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center font-display font-bold text-slate-400 text-xl transition-all duration-300">+</span>
-        </div>
-        <div class="faq-body">
-          <p class="font-body text-sm text-slate-500 font-light leading-relaxed px-7 pb-6">A standard single room skim (walls and ceiling) typically takes one day — most rooms are completed in 6-8 hours. Larger rooms, full replastering (base coat + skim), or artex removal typically take 1.5–2 days. A full house replaster is usually 3-5 working days. We provide a clear programme at quotation so you know what to expect before we start.</p>
-        </div>
-      </div>
-
-      <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
-        <div class="flex items-center justify-between gap-4 px-7 py-6">
-          <span class="faq-title font-display font-bold text-charcoal-900 text-base lg:text-lg leading-snug">Do you plaster ceilings as well as walls?</span>
-          <span class="faq-icon flex-shrink-0 w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center font-display font-bold text-slate-400 text-xl transition-all duration-300">+</span>
-        </div>
-        <div class="faq-body">
-          <p class="font-body text-sm text-slate-500 font-light leading-relaxed px-7 pb-6">Yes — ceilings are a core part of our plastering work and are included in all room quotations as standard. We skim and replaster ceilings of all sizes including large open-plan areas. We also carry out ceiling repairs for cracks, water damage, sagging plasterboard, and artex removal. Ceiling plastering is included in the same room price — we don't charge separately for ceilings unless the scope is ceiling-only.</p>
+      <div class="faq-item reveal" onclick="toggleFaq(this)">
+        <div class="flex items-start justify-between gap-4">
+          <div class="flex-1">
+            <div class="flex items-center gap-3 mb-2"><span class="faq-num">05</span><span class="faq-cat">Repairs</span></div>
+            <div class="faq-q">Can you patch plaster rather than replaster the whole room?</div>
+            <div class="faq-body"><p class="faq-ans">Yes — we regularly carry out patch repairs for cracks, impact damage, and isolated hollow sections. Good patch work needs to be feathered and blended so it's invisible under paint. We advise honestly whether a patch will give a good result or whether a full replaster is better value — which it often is if more than 30-40% of the plaster is hollow.</p></div>
+          </div>
+          <span class="faq-icon">+</span>
         </div>
       </div>
 
-      <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
-        <div class="flex items-center justify-between gap-4 px-7 py-6">
-          <span class="faq-title font-display font-bold text-charcoal-900 text-base lg:text-lg leading-snug">How do I know if my plaster needs replacing?</span>
-          <span class="faq-icon flex-shrink-0 w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center font-display font-bold text-slate-400 text-xl transition-all duration-300">+</span>
-        </div>
-        <div class="faq-body">
-          <p class="font-body text-sm text-slate-500 font-light leading-relaxed px-7 pb-6">Key signs that plaster needs replacing: hollow sounds when tapped (delamination), extensive cracking, bulging or bowing surfaces, persistent damp marks after the moisture source is fixed, or heavy previous patching that has left an uneven surface. Small isolated cracks are usually patchable. We give an honest assessment at quotation — we won't recommend replastering if a skim or patch will give an equally good result.</p>
-        </div>
-      </div>
-
-      <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
-        <div class="flex items-center justify-between gap-4 px-7 py-6">
-          <span class="faq-title font-display font-bold text-charcoal-900 text-base lg:text-lg leading-snug">Do you plaster new build extensions and renovations?</span>
-          <span class="faq-icon flex-shrink-0 w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center font-display font-bold text-slate-400 text-xl transition-all duration-300">+</span>
-        </div>
-        <div class="faq-body">
-          <p class="font-body text-sm text-slate-500 font-light leading-relaxed px-7 pb-6">Yes — new build and extension plastering is a significant part of our work in Sheffield. We plaster plasterboard partitions, ceiling joists, block and brick masonry walls, and provide a complete plastered finish ready for first fix decoration. For extensions, we can match the finish and level of the existing plasterwork in adjacent rooms seamlessly. We coordinate with other trades and provide a firm programme to avoid hold-ups on site.</p>
+      <div class="faq-item reveal" onclick="toggleFaq(this)">
+        <div class="flex items-start justify-between gap-4">
+          <div class="flex-1">
+            <div class="flex items-center gap-3 mb-2"><span class="faq-num">06</span><span class="faq-cat">Dry Lining</span></div>
+            <div class="faq-q">What is dry lining and when is it used?</div>
+            <div class="faq-body"><p class="faq-ans">Dry lining means fixing plasterboard to walls or ceilings instead of applying wet plaster directly to masonry. It's standard for new-build stud partitions, insulated wall upgrades (dot-and-dab with insulated backing board), and ceiling refits. Plasterboard is taped, jointed, and skimmed. Faster than traditional wet plastering and excellent for achieving level results on uneven masonry.</p></div>
+          </div>
+          <span class="faq-icon">+</span>
         </div>
       </div>
 
-      <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden cursor-pointer" onclick="toggleFaq(this)">
-        <div class="flex items-center justify-between gap-4 px-7 py-6">
-          <span class="faq-title font-display font-bold text-charcoal-900 text-base lg:text-lg leading-snug">What warranty do you offer on plastering work?</span>
-          <span class="faq-icon flex-shrink-0 w-9 h-9 rounded-full border border-slate-200 flex items-center justify-center font-display font-bold text-slate-400 text-xl transition-all duration-300">+</span>
+      <div class="faq-item reveal" onclick="toggleFaq(this)">
+        <div class="flex items-start justify-between gap-4">
+          <div class="flex-1">
+            <div class="flex items-center gap-3 mb-2"><span class="faq-num">07</span><span class="faq-cat">Artex</span></div>
+            <div class="faq-q">Can you remove artex and replaster?</div>
+            <div class="faq-body"><p class="faq-ans">Yes — artex removal and re-skim is one of our most requested services in Sheffield. We check for asbestos first (pre-1999 artex must be tested before work begins). Artex is either mechanically removed back to the substrate, or — where it is sound and stable — a float coat is applied over it before the finish skim. The result is a completely smooth, flat ceiling.</p></div>
+          </div>
+          <span class="faq-icon">+</span>
         </div>
-        <div class="faq-body">
-          <p class="font-body text-sm text-slate-500 font-light leading-relaxed px-7 pb-6">Every plastering job is covered by our 5-year workmanship guarantee. If any cracking or delamination occurs due to our workmanship within that period, we return and remedy it at no charge. Zero deposit throughout — you pay only when the work is 100% complete and you're satisfied with the result. All quotations are fully itemised with no hidden costs — call us on <a href="tel:+447595399525" class="text-lime-600 font-bold hover:underline">07595 399525</a> for a free quote.</p>
+      </div>
+
+      <div class="faq-item reveal" onclick="toggleFaq(this)">
+        <div class="flex items-start justify-between gap-4">
+          <div class="flex-1">
+            <div class="flex items-center gap-3 mb-2"><span class="faq-num">08</span><span class="faq-cat">Timescales</span></div>
+            <div class="faq-q">How long does plastering a room take?</div>
+            <div class="faq-body"><p class="faq-ans">A standard single room skim (walls and ceiling) takes one day — most rooms are completed in 6-8 hours. Larger rooms, full replastering, or artex removal take 1.5–2 days. A full house replaster is usually 3-5 working days. We provide a clear programme at quotation so you know what to expect before we start.</p></div>
+          </div>
+          <span class="faq-icon">+</span>
+        </div>
+      </div>
+
+      <div class="faq-item reveal" onclick="toggleFaq(this)">
+        <div class="flex items-start justify-between gap-4">
+          <div class="flex-1">
+            <div class="flex items-center gap-3 mb-2"><span class="faq-num">09</span><span class="faq-cat">Ceilings</span></div>
+            <div class="faq-q">Do you plaster ceilings as well as walls?</div>
+            <div class="faq-body"><p class="faq-ans">Yes — ceilings are a core part of our plastering work and are included in all room quotations as standard. We skim and replaster ceilings of all sizes including large open-plan areas. We also carry out ceiling repairs for cracks, water damage, sagging plasterboard, and artex removal. Ceiling plastering is included in the same room price.</p></div>
+          </div>
+          <span class="faq-icon">+</span>
+        </div>
+      </div>
+
+      <div class="faq-item reveal" onclick="toggleFaq(this)">
+        <div class="flex items-start justify-between gap-4">
+          <div class="flex-1">
+            <div class="flex items-center gap-3 mb-2"><span class="faq-num">10</span><span class="faq-cat">Guarantee</span></div>
+            <div class="faq-q">What warranty do you offer on plastering work?</div>
+            <div class="faq-body"><p class="faq-ans">Every plastering job is covered by our 5-year workmanship guarantee. If any cracking or delamination occurs due to our workmanship within that period, we return and remedy it at no charge. Zero deposit throughout — you pay only when the work is 100% complete and you're satisfied. All quotations are fully itemised with no hidden costs.</p></div>
+          </div>
+          <span class="faq-icon">+</span>
         </div>
       </div>
 
@@ -1378,7 +1377,7 @@
       Free quotation. Fully itemised. Zero deposit. Sheffield's trusted plastering specialists.
     </p>
     <div class="reveal delay-3 flex flex-wrap gap-4 justify-center">
-      <a href="/contact/" class="font-display font-bold  text-charcoal-900 px-10 py-4 rounded-full text-sm tracking-wide hover:bg-lime-400 transition-all duration-300" style="background:#00FF00">Get a Free Quote</a>
+      <a href="/get-quote" class="font-display font-bold  text-charcoal-900 px-10 py-4 rounded-full text-sm tracking-wide hover:bg-lime-400 transition-all duration-300" style="background:#00FF00">Get a Free Quote</a>
       <a href="tel:+447595399525" class="font-display font-bold bg-white/10 text-white px-10 py-4 rounded-full text-sm tracking-wide border border-white/20 hover:bg-white/20 transition-all duration-300">Call 07595 399525</a>
     </div>
   </div>
@@ -1513,7 +1512,7 @@
                    onmouseover="this.style.color='rgba(255,255,255,0.7)'" onmouseout="this.style.color='rgba(255,255,255,0.35)'">Project Gallery</a></li>
             <li><a href="/faq/" class="font-display text-sm no-underline transition-colors duration-200" style="color:rgba(255,255,255,0.35)"
                    onmouseover="this.style.color='rgba(255,255,255,0.7)'" onmouseout="this.style.color='rgba(255,255,255,0.35)'">FAQ</a></li>
-            <li><a href="/contact/" class="font-display text-sm no-underline transition-colors duration-200" style="color:rgba(255,255,255,0.35)"
+            <li><a href="/get-quote" class="font-display text-sm no-underline transition-colors duration-200" style="color:rgba(255,255,255,0.35)"
                    onmouseover="this.style.color='rgba(255,255,255,0.7)'" onmouseout="this.style.color='rgba(255,255,255,0.35)'">Get a Quote</a></li>
           </ul>
         </div>
@@ -1550,7 +1549,7 @@
             </div>
           </div>
         </div>
-        <a href="/contact/" class="inline-flex items-center gap-2 font-display font-bold text-charcoal-900 text-xs tracking-wide px-5 py-2.5 rounded-full no-underline transition-opacity duration-200 hover:opacity-85" style="background:#00FF00">
+        <a href="/get-quote" class="inline-flex items-center gap-2 font-display font-bold text-charcoal-900 text-xs tracking-wide px-5 py-2.5 rounded-full no-underline transition-opacity duration-200 hover:opacity-85" style="background:#00FF00">
           Free Quote &rarr;
         </a>
       </div>
