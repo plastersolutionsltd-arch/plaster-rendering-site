@@ -3,28 +3,9 @@
 
 User-agent: *
 Allow: /
-Allow: /silicone-render/
-Allow: /silicone-render-sheffield
-Allow: /monocouche-render/
-Allow: /monocouche-render-sheffield
-Allow: /ewi-sheffield
-Allow: /ewi/
-Allow: /plastering-sheffield
-Allow: /plastering/
-Allow: /internal-plastering/
-Allow: /external-wall-insulation/
-Allow: /dry-lining/
-Allow: /dry-lining-sheffield
-Allow: /pricing
-Allow: /faq/
-Allow: /contact/
-Allow: /portfolio/
 
 # Disallow nothing - site is fully crawlable
 Disallow:
 
 # Sitemap location
 Sitemap: https://www.plasterandrenderingsolutions.co.uk/sitemap.xml
-
-# Crawl delay (optional - allows 1 request per second)
-Crawl-delay: 1

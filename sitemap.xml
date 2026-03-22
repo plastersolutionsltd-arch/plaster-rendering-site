@@ -5,15 +5,15 @@
     <!-- Homepage -->
     <url>
         <loc>https://www.plasterandrenderingsolutions.co.uk/</loc>
-        <lastmod>2026-03-16</lastmod>
+        <lastmod>2026-03-22</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
 
-    <!-- Silicone Render — standalone page -->
+    <!-- Silicone Render -->
     <url>
         <loc>https://www.plasterandrenderingsolutions.co.uk/silicone-render-sheffield</loc>
-        <lastmod>2026-03-15</lastmod>
+        <lastmod>2026-03-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
         <image:image>
@@ -30,10 +30,10 @@
         </image:image>
     </url>
 
-    <!-- Monocouche Render — standalone page -->
+    <!-- Monocouche Render -->
     <url>
         <loc>https://www.plasterandrenderingsolutions.co.uk/monocouche-render-sheffield</loc>
-        <lastmod>2026-03-15</lastmod>
+        <lastmod>2026-03-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
         <image:image>
@@ -54,10 +54,10 @@
         </image:image>
     </url>
 
-    <!-- External Wall Insulation — standalone page -->
+    <!-- External Wall Insulation -->
     <url>
         <loc>https://www.plasterandrenderingsolutions.co.uk/ewi-sheffield</loc>
-        <lastmod>2026-03-15</lastmod>
+        <lastmod>2026-03-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
         <image:image>
@@ -78,10 +78,10 @@
         </image:image>
     </url>
 
-    <!-- Plastering Sheffield — standalone page -->
+    <!-- Plastering Sheffield -->
     <url>
         <loc>https://www.plasterandrenderingsolutions.co.uk/plastering-sheffield</loc>
-        <lastmod>2026-03-15</lastmod>
+        <lastmod>2026-03-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
         <image:image>
@@ -102,10 +102,10 @@
         </image:image>
     </url>
 
-    <!-- Dry Lining — standalone page -->
+    <!-- Dry Lining -->
     <url>
         <loc>https://www.plasterandrenderingsolutions.co.uk/dry-lining-sheffield</loc>
-        <lastmod>2026-03-15</lastmod>
+        <lastmod>2026-03-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
         <image:image>
@@ -114,10 +114,22 @@
         </image:image>
     </url>
 
-    <!-- Get a Quote / Contact -->
+    <!-- How We Apply — Process Guide -->
+    <url>
+        <loc>https://www.plasterandrenderingsolutions.co.uk/how-we-apply</loc>
+        <lastmod>2026-03-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://www.plasterandrenderingsolutions.co.uk/images/hero/silicone-service.webp</image:loc>
+            <image:title>How P&amp;R Solutions apply silicone render, monocouche, EWI and plastering in Sheffield</image:title>
+        </image:image>
+    </url>
+
+    <!-- Get a Quote -->
     <url>
         <loc>https://www.plasterandrenderingsolutions.co.uk/get-quote</loc>
-        <lastmod>2026-03-16</lastmod>
+        <lastmod>2026-03-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -125,31 +137,15 @@
     <!-- Pricing Guide -->
     <url>
         <loc>https://www.plasterandrenderingsolutions.co.uk/pricing</loc>
-        <lastmod>2026-03-16</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
-    <!-- Project Gallery / Portfolio -->
-    <url>
-        <loc>https://www.plasterandrenderingsolutions.co.uk/portfolio/</loc>
-        <lastmod>2026-03-11</lastmod>
+        <lastmod>2026-03-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
 
     <!-- FAQ -->
     <url>
-        <loc>https://www.plasterandrenderingsolutions.co.uk/faq/</loc>
-        <lastmod>2026-03-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
-    <!-- Contact -->
-    <url>
-        <loc>https://www.plasterandrenderingsolutions.co.uk/contact/</loc>
-        <lastmod>2026-03-11</lastmod>
+        <loc>https://www.plasterandrenderingsolutions.co.uk/faq</loc>
+        <lastmod>2026-03-22</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
