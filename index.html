@@ -175,24 +175,7 @@
   <!-- LCP Image Preload -->
   <link rel="preload" as="image" href="/images/case-studies/IMG_0291.webp" type="image/webp" fetchpriority="high" />
 
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            'lime':     { 300:'#66ff66', 400:'#33ff33', 500:'#00FF00', 600:'#00CC00' },
-            'charcoal': { 800:'#2d2d2d', 900:'#1a1a1a' }
-          },
-          fontFamily: {
-            display: ['Outfit','sans-serif'],
-            body:    ['Inter','sans-serif']
-          }
-        }
-      }
-    }
-  </script>
+  <link rel="stylesheet" href="/styles.css">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -408,6 +391,7 @@
       <a href="#gallery" class="font-display text-sm font-semibold hover: transition-colors no-underline" style="color:#111">Gallery</a>
       <a href="#reviews" class="font-display text-sm font-semibold hover: transition-colors no-underline" style="color:#111">Reviews</a>
       <a href="#faq" class="font-display text-sm font-semibold hover: transition-colors no-underline" style="color:#111">FAQ</a>
+      <a href="/how-we-apply" class="font-display text-sm font-semibold hover: transition-colors no-underline" style="color:#111">How We Apply</a>
       <a href="/pricing" class="font-display text-sm font-semibold hover: transition-colors no-underline" style="color:#111">Pricing</a>
     </div>
     <div class="flex items-center gap-3">
@@ -426,6 +410,7 @@
       <a href="#gallery" onclick="closeMenu()" class="font-display text-base font-semibold hover: no-underline" style="color:#111">Gallery</a>
       <a href="#reviews" onclick="closeMenu()" class="font-display text-base font-semibold hover: no-underline" style="color:#111">Reviews</a>
       <a href="#faq" onclick="closeMenu()" class="font-display text-base font-semibold hover: no-underline" style="color:#111">FAQ</a>
+      <a href="/how-we-apply" onclick="closeMenu()" class="font-display text-base font-semibold hover: no-underline" style="color:#111">How We Apply</a>
       <a href="/pricing" onclick="closeMenu()" class="font-display text-base font-semibold hover: no-underline" style="color:#111">Pricing</a>
       <a href="/get-quote" onclick="closeMenu()" class="font-display font-bold text-sm text-charcoal-900 px-5 py-3 rounded-lg text-center mt-2" style="background:#00FF00">Get Free Quote</a>
     </div>
@@ -1202,6 +1187,7 @@
         <div class="mt-6 pt-6" style="border-top:1px solid rgba(255,255,255,0.07)">
           <ul class="space-y-3 list-none p-0 m-0">
             <li><a href="/pricing" class="font-display text-sm no-underline transition-colors duration-200" style="color:rgba(255,255,255,0.35)" onmouseover="this.style.color='rgba(255,255,255,0.7)'" onmouseout="this.style.color='rgba(255,255,255,0.35)'">Pricing Guide</a></li>
+            <li><a href="/how-we-apply" class="font-display text-sm no-underline transition-colors duration-200" style="color:rgba(255,255,255,0.35)" onmouseover="this.style.color='rgba(255,255,255,0.7)'" onmouseout="this.style.color='rgba(255,255,255,0.35)'">How We Apply</a></li>
             <li><a href="#faq" class="font-display text-sm no-underline transition-colors duration-200" style="color:rgba(255,255,255,0.35)" onmouseover="this.style.color='rgba(255,255,255,0.7)'" onmouseout="this.style.color='rgba(255,255,255,0.35)'">FAQ</a></li>
             <li><a href="/get-quote" class="font-display text-sm no-underline transition-colors duration-200" style="color:rgba(255,255,255,0.35)" onmouseover="this.style.color='rgba(255,255,255,0.7)'" onmouseout="this.style.color='rgba(255,255,255,0.35)'">Get a Quote</a></li>
           </ul>
