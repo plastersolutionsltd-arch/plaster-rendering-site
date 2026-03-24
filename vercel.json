@@ -38,8 +38,10 @@
     { "source": "/warranties/", "destination": "/index.html" },
     { "source": "/faq/", "destination": "/faq.html" },
     { "source": "/faq",  "destination": "/faq.html" },
-    { "source": "/privacy",  "destination": "/privacy.html" },
-    { "source": "/privacy/", "destination": "/privacy.html" },
+    { "source": "/privacy",    "destination": "/privacy.html" },
+    { "source": "/privacy/",   "destination": "/privacy.html" },
+    { "source": "/thank-you",  "destination": "/thank-you.html" },
+    { "source": "/thank-you/", "destination": "/thank-you.html" },
     { "source": "/contact/", "destination": "/index.html" }
   ],
   "headers": [

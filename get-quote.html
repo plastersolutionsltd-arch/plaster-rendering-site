@@ -291,16 +291,9 @@
         <p class="section-subtitle">Fill in the form below and we'll be in touch within 24 hours with a detailed estimate.</p>
       </div>
 
-      <div id="formSuccess" style="display:none;text-align:center;padding:48px 24px;">
-        <div style="font-size:52px;margin-bottom:16px;">✅</div>
-        <h3 style="color:#37D413;font-size:24px;margin-bottom:12px;">Quote Request Sent!</h3>
-        <p style="color:rgba(255,255,255,0.5);font-size:15px;max-width:400px;margin:0 auto 24px;">We've received your request and will be in touch within 24 hours.</p>
-        <a href="/" style="display:inline-block;background:#37D413;color:#0d0d0d;font-family:'Outfit',sans-serif;font-weight:700;font-size:14px;padding:12px 28px;border-radius:8px;text-decoration:none;">Back to Home</a>
-      </div>
-      <div id="formError" style="display:none;margin-bottom:20px;padding:14px 18px;background:rgba(239,68,68,0.1);border:1px solid rgba(239,68,68,0.3);border-radius:8px;color:#fca5a5;font-size:14px;text-align:center;">
-        Something went wrong — please try again or call us on <a href="tel:07595399525" style="color:#fca5a5;font-weight:700;">07595 399525</a>
-      </div>
       <form id="quoteForm" method="POST" action="https://formspree.io/f/xwpkwqya">
+        <input type="hidden" name="_next" value="https://plasterandrenderingsolutions.co.uk/thank-you">
+        <input type="hidden" name="_subject" value="New Quote Request — P&R Solutions">
         <div class="form-grid">
           <div class="form-group">
             <label for="name">Full Name *</label>
@@ -326,16 +319,21 @@
             <label for="propertyType">Property Type *</label>
             <select id="propertyType" name="propertyType" required>
               <option value="">Select property type...</option>
-              <option value="Residential">Residential Home</option>
-              <option value="Commercial">Commercial Building</option>
-              <option value="Industrial">Industrial Property</option>
-              <option value="Multi-unit">Multi-unit Development</option>
+              <option value="Detached">Detached</option>
+              <option value="Semi-Detached">Semi-Detached</option>
+              <option value="Mid Terrace">Mid Terrace</option>
+              <option value="End Terrace">End Terrace</option>
+              <option value="Bungalow">Bungalow</option>
+              <option value="Flat / Apartment">Flat / Apartment</option>
+              <option value="New Build">New Build</option>
+              <option value="Commercial">Commercial</option>
               <option value="Other">Other</option>
             </select>
           </div>
 
           <div class="form-group full">
             <label>Which services are you interested in? *</label>
+            <div id="serviceError" style="display:none;margin-bottom:10px;padding:10px 14px;background:rgba(239,68,68,0.1);border:1px solid rgba(239,68,68,0.3);border-radius:8px;color:#fca5a5;font-size:13px;">Please select at least one service.</div>
             <div class="services-grid">
               <div class="service-checkbox">
                 <input type="checkbox" id="service1" name="services" value="Silicone Rendering">
@@ -676,49 +674,18 @@
 
     // ===== FORM SUBMISSION =====
     document.getElementById('quoteForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      var form = this;
-      var checkedBoxes = form.querySelectorAll('.service-checkbox input:checked');
+      var checkedBoxes = this.querySelectorAll('.service-checkbox input:checked');
       if (checkedBoxes.length === 0) {
-        document.getElementById('formError').innerHTML = 'Please select at least one service.';
-        document.getElementById('formError').style.display = 'block';
-        document.getElementById('formError').scrollIntoView({ behavior: 'smooth', block: 'center' });
+        e.preventDefault();
+        var err = document.getElementById('serviceError');
+        err.style.display = 'block';
+        err.scrollIntoView({ behavior: 'smooth', block: 'center' });
         return;
       }
-      document.getElementById('formError').style.display = 'none';
-      var btn = form.querySelector('button[type="submit"]');
+      document.getElementById('serviceError').style.display = 'none';
+      var btn = this.querySelector('button[type="submit"]');
       btn.disabled = true;
       btn.textContent = 'Sending…';
-      var services = Array.from(checkedBoxes).map(function(c) { return c.value; }).join(', ');
-      var data = {
-        name: form.querySelector('[name="name"]').value,
-        email: form.querySelector('[name="email"]').value,
-        phone: form.querySelector('[name="phone"]').value,
-        postcode: form.querySelector('[name="postcode"]').value,
-        address: form.querySelector('[name="address"]').value,
-        propertyType: form.querySelector('[name="propertyType"]').value,
-        services: services,
-        timeline: form.querySelector('[name="timeline"]').value,
-        description: form.querySelector('[name="description"]').value
-      };
-      fetch('https://formspree.io/f/xwpkwqya', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-        body: JSON.stringify(data)
-      }).then(function(res) {
-        if (res.ok) {
-          form.style.display = 'none';
-          document.getElementById('formSuccess').style.display = 'block';
-          document.getElementById('formSuccess').scrollIntoView({ behavior: 'smooth', block: 'center' });
-        } else {
-          return res.json().then(function(d) { throw d; });
-        }
-      }).catch(function() {
-        btn.disabled = false;
-        btn.textContent = 'Get My Free Quote →';
-        document.getElementById('formError').innerHTML = 'Something went wrong — please try again or call us on <a href="tel:07595399525" style="color:#fca5a5;font-weight:700;">07595 399525</a>';
-        document.getElementById('formError').style.display = 'block';
-      });
     });
   </script>
 </body>
