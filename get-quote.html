@@ -677,33 +677,46 @@
     // ===== FORM SUBMISSION =====
     document.getElementById('quoteForm').addEventListener('submit', function(e) {
       e.preventDefault();
-      var checked = document.querySelectorAll('.service-checkbox input:checked').length;
-      if (checked === 0) {
-        document.getElementById('formError').textContent = 'Please select at least one service.';
+      var form = this;
+      var checkedBoxes = form.querySelectorAll('.service-checkbox input:checked');
+      if (checkedBoxes.length === 0) {
+        document.getElementById('formError').innerHTML = 'Please select at least one service.';
         document.getElementById('formError').style.display = 'block';
         document.getElementById('formError').scrollIntoView({ behavior: 'smooth', block: 'center' });
         return;
       }
       document.getElementById('formError').style.display = 'none';
-      var btn = this.querySelector('button[type="submit"]');
+      var btn = form.querySelector('button[type="submit"]');
       btn.disabled = true;
       btn.textContent = 'Sending…';
+      var services = Array.from(checkedBoxes).map(function(c) { return c.value; }).join(', ');
+      var data = {
+        name: form.querySelector('[name="name"]').value,
+        email: form.querySelector('[name="email"]').value,
+        phone: form.querySelector('[name="phone"]').value,
+        postcode: form.querySelector('[name="postcode"]').value,
+        address: form.querySelector('[name="address"]').value,
+        propertyType: form.querySelector('[name="propertyType"]').value,
+        services: services,
+        timeline: form.querySelector('[name="timeline"]').value,
+        description: form.querySelector('[name="description"]').value
+      };
       fetch('https://formspree.io/f/xwpkwqya', {
         method: 'POST',
-        body: new FormData(this),
-        headers: { 'Accept': 'application/json' }
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(data)
       }).then(function(res) {
         if (res.ok) {
-          document.getElementById('quoteForm').style.display = 'none';
+          form.style.display = 'none';
           document.getElementById('formSuccess').style.display = 'block';
           document.getElementById('formSuccess').scrollIntoView({ behavior: 'smooth', block: 'center' });
         } else {
-          return res.json().then(function(data) { throw data; });
+          return res.json().then(function(d) { throw d; });
         }
       }).catch(function() {
         btn.disabled = false;
         btn.textContent = 'Get My Free Quote →';
-        document.getElementById('formError').textContent = 'Something went wrong — please try again or call us on 07595 399525';
+        document.getElementById('formError').innerHTML = 'Something went wrong — please try again or call us on <a href="tel:07595399525" style="color:#fca5a5;font-weight:700;">07595 399525</a>';
         document.getElementById('formError').style.display = 'block';
       });
     });
