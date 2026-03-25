@@ -42,7 +42,13 @@
     { "source": "/privacy/",   "destination": "/privacy.html" },
     { "source": "/thank-you",  "destination": "/thank-you.html" },
     { "source": "/thank-you/", "destination": "/thank-you.html" },
-    { "source": "/contact/", "destination": "/index.html" }
+    { "source": "/contact/", "destination": "/index.html" },
+    { "source": "/chapeltown-sheffield",  "destination": "/chapeltown-sheffield.html" },
+    { "source": "/chapeltown-sheffield/", "destination": "/chapeltown-sheffield.html" },
+    { "source": "/ecclesfield-sheffield",  "destination": "/ecclesfield-sheffield.html" },
+    { "source": "/ecclesfield-sheffield/", "destination": "/ecclesfield-sheffield.html" },
+    { "source": "/high-green-sheffield",  "destination": "/high-green-sheffield.html" },
+    { "source": "/high-green-sheffield/", "destination": "/high-green-sheffield.html" }
   ],
   "headers": [
     {
