@@ -150,4 +150,26 @@
         <priority>0.7</priority>
     </url>
 
+    <!-- Location Pages -->
+    <url>
+        <loc>https://www.plasterandrenderingsolutions.co.uk/chapeltown-sheffield</loc>
+        <lastmod>2026-03-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.plasterandrenderingsolutions.co.uk/ecclesfield-sheffield</loc>
+        <lastmod>2026-03-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.plasterandrenderingsolutions.co.uk/high-green-sheffield</loc>
+        <lastmod>2026-03-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
 </urlset>
