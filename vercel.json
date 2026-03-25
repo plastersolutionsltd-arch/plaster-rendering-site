@@ -54,7 +54,17 @@
     { "source": "/sandygate-sheffield",  "destination": "/sandygate-sheffield.html" },
     { "source": "/sandygate-sheffield/", "destination": "/sandygate-sheffield.html" },
     { "source": "/fulwood-sheffield",  "destination": "/fulwood-sheffield.html" },
-    { "source": "/fulwood-sheffield/", "destination": "/fulwood-sheffield.html" }
+    { "source": "/fulwood-sheffield/", "destination": "/fulwood-sheffield.html" },
+    { "source": "/oughtibridge-sheffield",  "destination": "/oughtibridge-sheffield.html" },
+    { "source": "/oughtibridge-sheffield/", "destination": "/oughtibridge-sheffield.html" },
+    { "source": "/stocksbridge-sheffield",  "destination": "/stocksbridge-sheffield.html" },
+    { "source": "/stocksbridge-sheffield/", "destination": "/stocksbridge-sheffield.html" },
+    { "source": "/walkley-sheffield",  "destination": "/walkley-sheffield.html" },
+    { "source": "/walkley-sheffield/", "destination": "/walkley-sheffield.html" },
+    { "source": "/crookes-sheffield",  "destination": "/crookes-sheffield.html" },
+    { "source": "/crookes-sheffield/", "destination": "/crookes-sheffield.html" },
+    { "source": "/crosspool-sheffield",  "destination": "/crosspool-sheffield.html" },
+    { "source": "/crosspool-sheffield/", "destination": "/crosspool-sheffield.html" }
   ],
   "headers": [
     {
