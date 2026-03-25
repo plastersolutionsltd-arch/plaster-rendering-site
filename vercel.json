@@ -48,7 +48,13 @@
     { "source": "/ecclesfield-sheffield",  "destination": "/ecclesfield-sheffield.html" },
     { "source": "/ecclesfield-sheffield/", "destination": "/ecclesfield-sheffield.html" },
     { "source": "/high-green-sheffield",  "destination": "/high-green-sheffield.html" },
-    { "source": "/high-green-sheffield/", "destination": "/high-green-sheffield.html" }
+    { "source": "/high-green-sheffield/", "destination": "/high-green-sheffield.html" },
+    { "source": "/hillsborough-sheffield",  "destination": "/hillsborough-sheffield.html" },
+    { "source": "/hillsborough-sheffield/", "destination": "/hillsborough-sheffield.html" },
+    { "source": "/sandygate-sheffield",  "destination": "/sandygate-sheffield.html" },
+    { "source": "/sandygate-sheffield/", "destination": "/sandygate-sheffield.html" },
+    { "source": "/fulwood-sheffield",  "destination": "/fulwood-sheffield.html" },
+    { "source": "/fulwood-sheffield/", "destination": "/fulwood-sheffield.html" }
   ],
   "headers": [
     {

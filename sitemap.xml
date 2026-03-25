@@ -172,4 +172,25 @@
         <priority>0.7</priority>
     </url>
 
+    <url>
+        <loc>https://www.plasterandrenderingsolutions.co.uk/hillsborough-sheffield</loc>
+        <lastmod>2026-03-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.plasterandrenderingsolutions.co.uk/sandygate-sheffield</loc>
+        <lastmod>2026-03-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.plasterandrenderingsolutions.co.uk/fulwood-sheffield</loc>
+        <lastmod>2026-03-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
 </urlset>
