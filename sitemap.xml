@@ -305,4 +305,37 @@
         </image:image>
     </url>
 
+    <url>
+        <loc>https://www.plasterandrenderingsolutions.co.uk/abbeydale-sheffield</loc>
+        <lastmod>2026-03-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://www.plasterandrenderingsolutions.co.uk/images/case-studies/case/ecclesall-silicone.webp</image:loc>
+            <image:title>Silicone render completed in Abbeydale S7 Sheffield by P&amp;R Solutions</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://www.plasterandrenderingsolutions.co.uk/beauchief-sheffield</loc>
+        <lastmod>2026-03-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://www.plasterandrenderingsolutions.co.uk/images/case-studies/s17-close-up-detail.webp</image:loc>
+            <image:title>Render close-up finish on south Sheffield property near Beauchief S8 by P&amp;R Solutions</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://www.plasterandrenderingsolutions.co.uk/millhouses-sheffield</loc>
+        <lastmod>2026-03-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://www.plasterandrenderingsolutions.co.uk/images/case-studies/case/bentsgreen-ewi.webp</image:loc>
+            <image:title>EWI rendering completed in Millhouses S7 Sheffield by P&amp;R Solutions</image:title>
+        </image:image>
+    </url>
+
 </urlset>

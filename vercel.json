@@ -78,7 +78,13 @@
     { "source": "/worrall-sheffield",    "destination": "/worrall-sheffield.html" },
     { "source": "/worrall-sheffield/",   "destination": "/worrall-sheffield.html" },
     { "source": "/woodseats-sheffield",  "destination": "/woodseats-sheffield.html" },
-    { "source": "/woodseats-sheffield/", "destination": "/woodseats-sheffield.html" }
+    { "source": "/woodseats-sheffield/", "destination": "/woodseats-sheffield.html" },
+    { "source": "/abbeydale-sheffield",  "destination": "/abbeydale-sheffield.html" },
+    { "source": "/abbeydale-sheffield/", "destination": "/abbeydale-sheffield.html" },
+    { "source": "/beauchief-sheffield",  "destination": "/beauchief-sheffield.html" },
+    { "source": "/beauchief-sheffield/", "destination": "/beauchief-sheffield.html" },
+    { "source": "/millhouses-sheffield",  "destination": "/millhouses-sheffield.html" },
+    { "source": "/millhouses-sheffield/", "destination": "/millhouses-sheffield.html" }
   ],
   "headers": [
     {
