@@ -228,4 +228,37 @@
         <priority>0.7</priority>
     </url>
 
+    <url>
+        <loc>https://www.plasterandrenderingsolutions.co.uk/grenoside-sheffield</loc>
+        <lastmod>2026-03-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://www.plasterandrenderingsolutions.co.uk/images/case-studies/ewi%20grenoside.webp</image:loc>
+            <image:title>EWI rendering completed in Grenoside Sheffield by P&amp;R Solutions</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://www.plasterandrenderingsolutions.co.uk/dore-sheffield</loc>
+        <lastmod>2026-03-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://www.plasterandrenderingsolutions.co.uk/images/case-studies/dore-monocouche.webp</image:loc>
+            <image:title>Monocouche render project in Dore S17 Sheffield by P&amp;R Solutions</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://www.plasterandrenderingsolutions.co.uk/totley-sheffield</loc>
+        <lastmod>2026-03-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://www.plasterandrenderingsolutions.co.uk/images/case-studies/ewi%20s17.webp</image:loc>
+            <image:title>EWI system installed in Totley S17 Sheffield by P&amp;R Solutions</image:title>
+        </image:image>
+    </url>
+
 </urlset>
