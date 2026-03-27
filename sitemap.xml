@@ -261,4 +261,48 @@
         </image:image>
     </url>
 
+    <url>
+        <loc>https://www.plasterandrenderingsolutions.co.uk/norton-sheffield</loc>
+        <lastmod>2026-03-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://www.plasterandrenderingsolutions.co.uk/images/case-studies/norton-silicone.webp</image:loc>
+            <image:title>Silicone render completed in Norton S8 Sheffield by P&amp;R Solutions</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://www.plasterandrenderingsolutions.co.uk/stannington-sheffield</loc>
+        <lastmod>2026-03-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://www.plasterandrenderingsolutions.co.uk/images/case-studies/stanington-ewi-full.webp</image:loc>
+            <image:title>EWI rendering completed in Stannington S6 Sheffield by P&amp;R Solutions</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://www.plasterandrenderingsolutions.co.uk/worrall-sheffield</loc>
+        <lastmod>2026-03-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://www.plasterandrenderingsolutions.co.uk/images/case-studies/monocouche%20worral.webp</image:loc>
+            <image:title>Monocouche rendering completed in Worrall S35 Sheffield by P&amp;R Solutions</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://www.plasterandrenderingsolutions.co.uk/woodseats-sheffield</loc>
+        <lastmod>2026-03-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://www.plasterandrenderingsolutions.co.uk/images/case-studies/greenhill-ewi.webp</image:loc>
+            <image:title>EWI rendering on south Sheffield property near Woodseats S8 by P&amp;R Solutions</image:title>
+        </image:image>
+    </url>
+
 </urlset>

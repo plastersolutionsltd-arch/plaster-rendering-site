@@ -70,7 +70,15 @@
     { "source": "/dore-sheffield",       "destination": "/dore-sheffield.html" },
     { "source": "/dore-sheffield/",      "destination": "/dore-sheffield.html" },
     { "source": "/totley-sheffield",     "destination": "/totley-sheffield.html" },
-    { "source": "/totley-sheffield/",    "destination": "/totley-sheffield.html" }
+    { "source": "/totley-sheffield/",    "destination": "/totley-sheffield.html" },
+    { "source": "/norton-sheffield",     "destination": "/norton-sheffield.html" },
+    { "source": "/norton-sheffield/",    "destination": "/norton-sheffield.html" },
+    { "source": "/stannington-sheffield",  "destination": "/stannington-sheffield.html" },
+    { "source": "/stannington-sheffield/", "destination": "/stannington-sheffield.html" },
+    { "source": "/worrall-sheffield",    "destination": "/worrall-sheffield.html" },
+    { "source": "/worrall-sheffield/",   "destination": "/worrall-sheffield.html" },
+    { "source": "/woodseats-sheffield",  "destination": "/woodseats-sheffield.html" },
+    { "source": "/woodseats-sheffield/", "destination": "/woodseats-sheffield.html" }
   ],
   "headers": [
     {
