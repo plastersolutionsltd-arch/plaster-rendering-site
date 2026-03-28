@@ -92,7 +92,15 @@
     { "source": "/nether-edge-sheffield",  "destination": "/nether-edge-sheffield.html" },
     { "source": "/nether-edge-sheffield/", "destination": "/nether-edge-sheffield.html" },
     { "source": "/broomhill-sheffield",   "destination": "/broomhill-sheffield.html" },
-    { "source": "/broomhill-sheffield/",  "destination": "/broomhill-sheffield.html" }
+    { "source": "/broomhill-sheffield/",  "destination": "/broomhill-sheffield.html" },
+    { "source": "/sharrow-sheffield",     "destination": "/sharrow-sheffield.html" },
+    { "source": "/sharrow-sheffield/",    "destination": "/sharrow-sheffield.html" },
+    { "source": "/lodge-moor-sheffield",  "destination": "/lodge-moor-sheffield.html" },
+    { "source": "/lodge-moor-sheffield/", "destination": "/lodge-moor-sheffield.html" },
+    { "source": "/loxley-sheffield",      "destination": "/loxley-sheffield.html" },
+    { "source": "/loxley-sheffield/",     "destination": "/loxley-sheffield.html" },
+    { "source": "/firth-park-sheffield",  "destination": "/firth-park-sheffield.html" },
+    { "source": "/firth-park-sheffield/", "destination": "/firth-park-sheffield.html" }
   ],
   "headers": [
     {
