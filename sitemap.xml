@@ -338,4 +338,48 @@
         </image:image>
     </url>
 
+    <url>
+        <loc>https://www.plasterandrenderingsolutions.co.uk/gleadless-sheffield</loc>
+        <lastmod>2026-03-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://www.plasterandrenderingsolutions.co.uk/images/case-studies/greenhill-ewi.webp</image:loc>
+            <image:title>EWI rendering completed in Gleadless S12 Sheffield by P&amp;R Solutions</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://www.plasterandrenderingsolutions.co.uk/meersbrook-sheffield</loc>
+        <lastmod>2026-03-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://www.plasterandrenderingsolutions.co.uk/images/case-studies/norton-silicone.webp</image:loc>
+            <image:title>Silicone render completed in Meersbrook S8 Sheffield by P&amp;R Solutions</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://www.plasterandrenderingsolutions.co.uk/nether-edge-sheffield</loc>
+        <lastmod>2026-03-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://www.plasterandrenderingsolutions.co.uk/images/case-studies/dronfield-monocouche.webp</image:loc>
+            <image:title>Monocouche render completed in Nether Edge S7 Sheffield by P&amp;R Solutions</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://www.plasterandrenderingsolutions.co.uk/broomhill-sheffield</loc>
+        <lastmod>2026-03-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://www.plasterandrenderingsolutions.co.uk/images/case-studies/plastering%20s10.webp</image:loc>
+            <image:title>Plastering completed in Broomhill S10 Sheffield by P&amp;R Solutions</image:title>
+        </image:image>
+    </url>
+
 </urlset>

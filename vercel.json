@@ -84,7 +84,15 @@
     { "source": "/beauchief-sheffield",  "destination": "/beauchief-sheffield.html" },
     { "source": "/beauchief-sheffield/", "destination": "/beauchief-sheffield.html" },
     { "source": "/millhouses-sheffield",  "destination": "/millhouses-sheffield.html" },
-    { "source": "/millhouses-sheffield/", "destination": "/millhouses-sheffield.html" }
+    { "source": "/millhouses-sheffield/", "destination": "/millhouses-sheffield.html" },
+    { "source": "/gleadless-sheffield",   "destination": "/gleadless-sheffield.html" },
+    { "source": "/gleadless-sheffield/",  "destination": "/gleadless-sheffield.html" },
+    { "source": "/meersbrook-sheffield",  "destination": "/meersbrook-sheffield.html" },
+    { "source": "/meersbrook-sheffield/", "destination": "/meersbrook-sheffield.html" },
+    { "source": "/nether-edge-sheffield",  "destination": "/nether-edge-sheffield.html" },
+    { "source": "/nether-edge-sheffield/", "destination": "/nether-edge-sheffield.html" },
+    { "source": "/broomhill-sheffield",   "destination": "/broomhill-sheffield.html" },
+    { "source": "/broomhill-sheffield/",  "destination": "/broomhill-sheffield.html" }
   ],
   "headers": [
     {
