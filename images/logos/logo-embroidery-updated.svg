@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 215" role="img" aria-label="P&R Solutions — Embroidery Version">
+  <title>P&R Solutions — Embroidery</title>
+  <!--
+    EMBROIDERY INSTRUCTIONS FOR SUPPLIER:
+    =======================================
+    2 thread colours only:
+      Colour 1: GREEN  — Pantone 375 C  (approx. #37D413)
+      Colour 2: WHITE  — Pantone White
+
+    Recommended placement: Left chest
+    Recommended size: 80–100mm wide
+    No gradients — solid fills only.
+    Drop the "SOLUTIONS" text if width is under 60mm.
+  -->
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue');
+    </style>
+  </defs>
+
+  <!-- R — WHITE (Thread colour 2) -->
+  <text x="158" y="175"
+    font-family="'Bebas Neue', Impact, Arial Narrow, sans-serif"
+    font-size="185"
+    fill="#ffffff"
+    letter-spacing="-2">R</text>
+
+  <!-- P — GREEN (Thread colour 1) -->
+  <text x="0" y="175"
+    font-family="'Bebas Neue', Impact, Arial Narrow, sans-serif"
+    font-size="185"
+    fill="#37D413">P</text>
+
+  <!-- SOLUTIONS — WHITE (Thread colour 2) -->
+  <text x="185" y="200"
+    font-family="'Bebas Neue', Impact, Arial Narrow, sans-serif"
+    font-size="18"
+    fill="#ffffff"
+    letter-spacing="6"
+    text-anchor="middle">SOLUTIONS</text>
+
+  <!-- PLASTER RENDER SPECIALISTS — WHITE -->
+  <!-- Note: only stitch if logo is 150mm+ wide (back of hoodie). Drop for left chest at 90mm -->
+  <text x="185" y="215"
+    font-family="'Bebas Neue', Impact, Arial Narrow, sans-serif"
+    font-size="12"
+    fill="#ffffff"
+    letter-spacing="3"
+    text-anchor="middle">PLASTER RENDER SPECIALISTS</text>
+</svg>

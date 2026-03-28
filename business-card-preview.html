@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>P&R Solutions — Business Card Preview</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@600;700;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: #080c08;
+  color: #fff;
+  font-family: 'Barlow', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 40px;
+  gap: 60px;
+}
+
+.page-label {
+  text-align: center;
+}
+
+.page-label h1 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 6px;
+  letter-spacing: 1px;
+}
+
+.page-label p {
+  font-size: 13px;
+  color: rgba(255,255,255,0.3);
+  letter-spacing: 1px;
+}
+
+/* ── CARD PAIR ── */
+.card-pair {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.card-side-label {
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.25);
+}
+
+/* UK standard business card at 2× screen scale: 85mm × 54mm */
+.card {
+  width: 642px;
+  height: 408px;
+  border-radius: 18px;
+  overflow: hidden;
+  position: relative;
+  box-shadow:
+    0 2px 0 rgba(55,212,19,0.25),
+    0 24px 80px rgba(0,0,0,0.7),
+    0 4px 20px rgba(0,0,0,0.5);
+}
+
+/* ── FRONT: Photo + Logo ── */
+.card-front {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.card-front .photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 65%;
+  display: block;
+}
+
+/* Gradient overlays on photo */
+.card-front .overlay-bottom {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 65%;
+  background: linear-gradient(
+    to top,
+    rgba(5, 8, 5, 0.95) 0%,
+    rgba(5, 8, 5, 0.75) 40%,
+    transparent 100%
+  );
+}
+
+.card-front .overlay-top {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 35%;
+  background: linear-gradient(
+    to bottom,
+    rgba(5, 8, 5, 0.55) 0%,
+    transparent 100%
+  );
+}
+
+/* Green glow on bottom gradient */
+.card-front .overlay-glow {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 55%;
+  background: radial-gradient(ellipse 70% 50% at 50% 100%, rgba(55,212,19,0.14) 0%, transparent 70%);
+}
+
+/* Logo + content on front */
+.card-front .content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 28px 34px;
+}
+
+.card-front .top-bar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.card-front .quality-badge {
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.45);
+  background: rgba(0,0,0,0.4);
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 5px 10px;
+  border-radius: 20px;
+  backdrop-filter: blur(4px);
+}
+
+.card-front .bottom-content {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.card-front .logo-area {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.card-front .tagline {
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.45);
+  margin-top: 6px;
+}
+
+.card-front .website {
+  font-size: 13px;
+  color: rgba(255,255,255,0.75);
+  letter-spacing: 1px;
+  text-align: right;
+  line-height: 1.7;
+}
+
+.card-front .website strong {
+  display: block;
+  color: #37D413;
+  font-size: 14px;
+  letter-spacing: 0;
+  font-weight: 600;
+}
+
+/* ── BACK: Dark contact ── */
+.card-back {
+  width: 100%;
+  height: 100%;
+  background-color: #0b0f0b;
+  background-image:
+    radial-gradient(ellipse 90% 60% at 15% 0%, rgba(55,212,19,0.48) 0%, transparent 60%),
+    radial-gradient(ellipse 70% 60% at 90% 100%, rgba(55,212,19,0.32) 0%, transparent 60%),
+    linear-gradient(160deg, #0d130d 0%, #090e09 50%, #070b07 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 34px 38px;
+  position: relative;
+}
+
+/* Green top border line */
+.card-back::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #37D413 0%, rgba(55,212,19,0.3) 60%, transparent 100%);
+}
+
+.back-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.back-name-block {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.back-name {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.5px;
+  line-height: 1;
+}
+
+.back-title {
+  font-size: 13px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.35);
+}
+
+.back-logo {
+  flex-shrink: 0;
+  opacity: 0.9;
+}
+
+/* Divider */
+.back-divider {
+  height: 1px;
+  background: linear-gradient(90deg, rgba(55,212,19,0.35) 0%, rgba(55,212,19,0.06) 60%, transparent 100%);
+}
+
+/* Contact rows */
+.back-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-dot {
+  width: 5px;
+  height: 5px;
+  background: #37D413;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.contact-text {
+  font-size: 15px;
+  color: rgba(255,255,255,0.65);
+  letter-spacing: 0.2px;
+}
+
+/* Services footer */
+.back-services {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  flex-wrap: wrap;
+  row-gap: 4px;
+}
+
+.service-pill {
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.75);
+}
+
+.service-sep {
+  color: rgba(55,212,19,0.4);
+  font-size: 10px;
+  margin: 0 7px;
+}
+
+/* ── SIZE REFERENCE ── */
+.size-note {
+  font-size: 11px;
+  color: rgba(255,255,255,0.2);
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/* ── PRINT BUTTON ── */
+.print-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #37D413;
+  color: #000;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 24px rgba(55,212,19,0.35);
+  transition: all 0.15s;
+}
+.print-btn:hover {
+  background: #45f018;
+  box-shadow: 0 6px 32px rgba(55,212,19,0.5);
+  transform: translateY(-1px);
+}
+.print-note {
+  font-size: 11px;
+  color: rgba(255,255,255,0.2);
+  text-align: center;
+  margin-top: 8px;
+  letter-spacing: 0.5px;
+}
+
+/* ── PRINT STYLES ── */
+@media print {
+  @page { size: 85mm 54mm; margin: 0; }
+
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  body {
+    background: none !important;
+    padding: 0 !important;
+    gap: 0 !important;
+    display: block !important;
+    min-height: unset !important;
+  }
+
+  .page-label,
+  .card-side-label,
+  .size-note,
+  .print-btn,
+  .print-note,
+  .print-actions {
+    display: none !important;
+  }
+
+  .card-pair {
+    display: block !important;
+    gap: 0 !important;
+  }
+
+  .card-wrap {
+    display: block !important;
+    page-break-after: always !important;
+    break-after: page !important;
+  }
+
+  .card {
+    width: 85mm !important;
+    height: 54mm !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+
+  /* Front */
+  .card-front .content { padding: 4mm 6mm !important; }
+  .card-front .website { font-size: 5.5pt !important; letter-spacing: 0.3px !important; line-height: 1.5 !important; }
+  .card-front .website strong { font-size: 6pt !important; }
+  .quality-badge { font-size: 4pt !important; padding: 2px 5px !important; }
+  .logo-area img { height: 22mm !important; }
+
+  /* Back */
+  .card-back { padding: 5mm 7mm !important; }
+  .back-name { font-size: 13pt !important; }
+  .back-title { font-size: 5pt !important; letter-spacing: 1.5px !important; }
+  .back-contact { gap: 2mm !important; }
+  .contact-text { font-size: 6.5pt !important; }
+  .contact-dot { width: 1.5mm !important; height: 1.5mm !important; }
+  .contact-row { gap: 2mm !important; }
+  .back-divider { margin: 2mm 0 !important; }
+  .back-logo img { height: 16mm !important; }
+  .service-pill { font-size: 4.5pt !important; letter-spacing: 0.8px !important; }
+  .service-sep { font-size: 4.5pt !important; margin: 0 3px !important; }
+}
+
+</style>
+</head>
+<body>
+
+<div class="page-label">
+  <h1>Business Card Preview</h1>
+  <p>85mm × 54mm · UK Standard · Shown at 2× screen scale</p>
+</div>
+
+<!-- ── MAIN CARDS ── -->
+<div class="card-pair">
+
+  <!-- FRONT: Photo side -->
+  <div class="card-wrap">
+    <div class="card-side-label">Front — Photo Side</div>
+    <div class="card">
+      <div class="card-front">
+        <!-- Photo -->
+        <img class="photo" src="images/case-studies/silicone-render-after.webp" alt="Silicone render finish">
+
+        <!-- Overlays -->
+        <div class="overlay-top"></div>
+        <div class="overlay-bottom"></div>
+        <div class="overlay-glow"></div>
+
+        <!-- Content over photo -->
+        <div class="content">
+          <div class="top-bar">
+            <span class="quality-badge">Sheffield · Est. 2010</span>
+          </div>
+
+          <div class="bottom-content">
+            <!-- Logo + tagline -->
+            <div class="logo-area">
+              <!-- Current logo (white version) -->
+              <img src="images/logos/logo-white.webp" alt="P&R Solutions" style="height:100px; width:auto;">
+            </div>
+
+            <!-- Right side: website -->
+            <div class="website">
+              <strong>plasterandrenderingsolutions.co.uk</strong>
+              Sheffield & South Yorkshire
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BACK: Dark contact side -->
+  <div class="card-wrap">
+    <div class="card-side-label">Back — Contact Side</div>
+    <div class="card">
+      <div class="card-back">
+
+        <div class="back-top">
+          <div class="back-name-block">
+            <div class="back-name">Chris Glover</div>
+            <div class="back-title">Director · Plastering & Rendering</div>
+          </div>
+          <!-- Logo image -->
+          <div class="back-logo">
+            <img src="images/logos/logo-white.webp" alt="P&R Solutions" style="height:80px; width:auto;">
+          </div>
+        </div>
+
+        <div class="back-divider"></div>
+
+        <div class="back-contact">
+          <div class="contact-row">
+            <div class="contact-dot"></div>
+            <span class="contact-text">07595 399 525</span>
+          </div>
+          <div class="contact-row">
+            <div class="contact-dot"></div>
+            <span class="contact-text">plastersolutionsltd@gmail.com</span>
+          </div>
+          <div class="contact-row">
+            <div class="contact-dot"></div>
+            <span class="contact-text">plasterandrenderingsolutions.co.uk</span>
+          </div>
+        </div>
+
+        <div class="back-services">
+          <span class="service-pill">Silicone Render</span>
+          <span class="service-sep">·</span>
+          <span class="service-pill">Monocouche</span>
+          <span class="service-sep">·</span>
+          <span class="service-pill">EWI</span>
+          <span class="service-sep">·</span>
+          <span class="service-pill">Plastering</span>
+          <span class="service-sep">·</span>
+          <span class="service-pill">Dry Lining</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="size-note">↑ Shown at 2× scale — top two cards are your front and back</div>
+
+<div class="print-actions" style="text-align:center; display:flex; flex-direction:column; align-items:center; gap:8px;">
+  <button class="print-btn" onclick="window.print()">
+    &#8595; Save as PDF
+  </button>
+  <div class="print-note">Chrome: change destination to "Save as PDF" · disable headers &amp; footers · set paper size to Custom 85×54mm</div>
+</div>
+
+</body>
+</html>

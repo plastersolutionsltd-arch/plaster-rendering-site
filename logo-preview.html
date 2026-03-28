@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>P&R Solutions — Logo Preview</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@700;900&family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: #080c08;
+  color: #fff;
+  font-family: 'Barlow', sans-serif;
+  padding: 48px 40px;
+  min-height: 100vh;
+}
+
+.page-header {
+  margin-bottom: 52px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+
+.page-header h1 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: 1px;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.page-header p {
+  font-size: 13px;
+  color: rgba(255,255,255,0.35);
+  letter-spacing: 1px;
+}
+
+.section-heading {
+  font-size: 10px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #37D413;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.section-desc {
+  font-size: 13px;
+  color: rgba(255,255,255,0.35);
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+
+/* ---- CONCEPT GRID ---- */
+.concepts-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 64px;
+}
+
+.concept-card {
+  background: #101410;
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.concept-meta {
+  padding: 18px 20px 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.concept-num {
+  width: 26px;
+  height: 26px;
+  background: rgba(55,212,19,0.12);
+  border: 1px solid rgba(55,212,19,0.25);
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #37D413;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.concept-name {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+.concept-sub {
+  font-size: 11px;
+  color: rgba(255,255,255,0.35);
+  padding: 0 20px 16px;
+}
+
+/* Dark preview */
+.preview-dark {
+  padding: 36px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0b0f0b;
+  background-image: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(55,212,19,0.18) 0%, transparent 70%);
+  min-height: 200px;
+}
+
+/* Light preview */
+.preview-light {
+  padding: 28px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f0f0;
+  min-height: 150px;
+}
+
+/* Mono preview */
+.preview-mono-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  background: #fff;
+  border-top: 1px solid rgba(0,0,0,0.06);
+}
+
+.mono-label {
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(0,0,0,0.3);
+  text-align: center;
+  margin-top: 6px;
+}
+
+.preview-label {
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.2);
+  padding: 8px 20px;
+  background: rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.preview-label-light {
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(0,0,0,0.25);
+  padding: 8px 20px;
+  background: rgba(0,0,0,0.04);
+  text-align: center;
+}
+
+/* ---- LOCKUPS ROW ---- */
+.lockups-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 64px;
+}
+
+.lockup-card {
+  background: #101410;
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.lockup-preview {
+  min-height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background-color: #0b0f0b;
+  background-image: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(55,212,19,0.12) 0%, transparent 70%);
+}
+
+.lockup-label {
+  padding: 12px 16px;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.3);
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+/* ---- BUSINESS CARD ---- */
+.biz-card-section {
+  margin-bottom: 64px;
+}
+
+.biz-cards-wrapper {
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.biz-card {
+  width: 642px;
+  height: 408px;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.biz-card-front {
+  background-color: #0b0f0b;
+  background-image:
+    radial-gradient(ellipse 80% 55% at 50% 0%, rgba(55,212,19,0.32) 0%, transparent 65%),
+    radial-gradient(ellipse 50% 50% at 100% 100%, rgba(55,212,19,0.15) 0%, transparent 60%),
+    linear-gradient(160deg, #0d130d 0%, #090e09 50%, #070b07 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 44px 52px 36px;
+  border: 1px solid rgba(55,212,19,0.15);
+}
+
+.biz-card-back {
+  background-color: #0b0f0b;
+  background-image:
+    radial-gradient(ellipse 60% 50% at 0% 100%, rgba(55,212,19,0.18) 0%, transparent 60%),
+    linear-gradient(160deg, #0d130d 0%, #090e09 50%, #070b07 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 52px;
+  border: 1px solid rgba(55,212,19,0.15);
+}
+
+.biz-card-label {
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.3);
+  margin-bottom: 12px;
+}
+
+/* ---- EMBROIDERY ---- */
+.embroidery-section {
+  margin-bottom: 64px;
+}
+
+.embroidery-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.embroidery-card {
+  background: #101410;
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.polo-preview {
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  position: relative;
+}
+
+.polo-bg-black { background: #111; }
+.polo-bg-navy { background: #0a1628; }
+.polo-bg-grey { background: #2a2a2a; }
+
+.polo-chest {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+/* ---- COLOUR SWATCHES ---- */
+.swatches-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 64px;
+  flex-wrap: wrap;
+}
+
+.swatch {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #101410;
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 12px;
+  padding: 14px 18px;
+}
+
+.swatch-dot {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+}
+
+.swatch-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.swatch-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.swatch-hex {
+  font-size: 11px;
+  color: rgba(255,255,255,0.35);
+  font-family: monospace;
+}
+
+/* ---- NOTES ---- */
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.note-card {
+  background: #101410;
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 14px;
+  padding: 20px 22px;
+}
+
+.note-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #37D413;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.note-body {
+  font-size: 13px;
+  color: rgba(255,255,255,0.45);
+  line-height: 1.7;
+}
+
+</style>
+</head>
+<body>
+
+<!-- PAGE HEADER -->
+<div class="page-header">
+  <h1>P&R Solutions — Logo Design Preview</h1>
+  <p>3 concepts · all lockups · business card · embroidery · colour system</p>
+</div>
+
+<!-- ============================================================ -->
+<!-- SECTION 1: 3 CONCEPTS                                        -->
+<!-- ============================================================ -->
+<div class="section-heading">01 — Logo Concepts</div>
+<div class="section-title">Three directions to choose from</div>
+<div class="section-desc">Each concept shown on dark background (website), light background (print), and single colour (embroidery).</div>
+
+<div class="concepts-row">
+
+  <!-- CONCEPT A: Solid Overlap (Refined Current) -->
+  <div class="concept-card">
+    <div class="concept-meta">
+      <div class="concept-num">A</div>
+      <div class="concept-name">Solid Overlap</div>
+    </div>
+    <div class="concept-sub">Evolution of your current mark. R is now fully solid. P in front, R behind — tighter, cleaner overlap.</div>
+
+    <div class="preview-label">Dark Background</div>
+    <div class="preview-dark">
+      <svg viewBox="0 0 220 200" width="160" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <style>@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue');</style>
+        </defs>
+        <!-- R behind, white solid -->
+        <text x="76" y="162" font-family="'Bebas Neue', Impact, sans-serif" font-size="172" fill="rgba(255,255,255,0.92)" letter-spacing="-2">R</text>
+        <!-- P in front, green -->
+        <text x="0" y="162" font-family="'Bebas Neue', Impact, sans-serif" font-size="172" fill="#37D413">P</text>
+        <!-- SOLUTIONS -->
+        <text x="110" y="183" font-family="'Bebas Neue', Impact, sans-serif" font-size="12" fill="rgba(255,255,255,0.55)" letter-spacing="5" text-anchor="middle">SOLUTIONS</text>
+        <!-- Tagline -->
+        <text x="110" y="198" font-family="'Bebas Neue', Impact, sans-serif" font-size="8.5" fill="rgba(255,255,255,0.3)" letter-spacing="3" text-anchor="middle">PLASTER · RENDER · SPECIALISTS</text>
+      </svg>
+    </div>
+
+    <div class="preview-label-light">Light Background</div>
+    <div class="preview-light">
+      <svg viewBox="0 0 220 200" width="140" xmlns="http://www.w3.org/2000/svg">
+        <!-- R behind, dark solid -->
+        <text x="76" y="162" font-family="'Bebas Neue', Impact, sans-serif" font-size="172" fill="#111" letter-spacing="-2">R</text>
+        <!-- P in front, green -->
+        <text x="0" y="162" font-family="'Bebas Neue', Impact, sans-serif" font-size="172" fill="#37D413">P</text>
+        <!-- SOLUTIONS -->
+        <text x="110" y="183" font-family="'Bebas Neue', Impact, sans-serif" font-size="12" fill="rgba(0,0,0,0.5)" letter-spacing="5" text-anchor="middle">SOLUTIONS</text>
+        <!-- Tagline -->
+        <text x="110" y="198" font-family="'Bebas Neue', Impact, sans-serif" font-size="8.5" fill="rgba(0,0,0,0.3)" letter-spacing="3" text-anchor="middle">PLASTER · RENDER · SPECIALISTS</text>
+      </svg>
+    </div>
+
+    <div class="preview-label-light" style="background:#fff; color:rgba(0,0,0,0.2);">Single Colour — Embroidery</div>
+    <div class="preview-mono-row" style="background:#fff; justify-content:center; gap:24px;">
+      <!-- White on dark -->
+      <div style="text-align:center;">
+        <div style="background:#111; padding:14px 18px; border-radius:8px; display:inline-flex;">
+          <svg viewBox="0 0 220 200" width="70" xmlns="http://www.w3.org/2000/svg">
+            <text x="76" y="162" font-family="'Bebas Neue', Impact, sans-serif" font-size="172" fill="white" letter-spacing="-2">R</text>
+            <text x="0" y="162" font-family="'Bebas Neue', Impact, sans-serif" font-size="172" fill="white">P</text>
+          </svg>
+        </div>
+        <div class="mono-label" style="color:rgba(0,0,0,0.3);">White on dark</div>
+      </div>
+      <!-- Black on light -->
+      <div style="text-align:center;">
+        <div style="background:#eee; padding:14px 18px; border-radius:8px; display:inline-flex;">
+          <svg viewBox="0 0 220 200" width="70" xmlns="http://www.w3.org/2000/svg">
+            <text x="76" y="162" font-family="'Bebas Neue', Impact, sans-serif" font-size="172" fill="#111" letter-spacing="-2">R</text>
+            <text x="0" y="162" font-family="'Bebas Neue', Impact, sans-serif" font-size="172" fill="#111">P</text>
+          </svg>
+        </div>
+        <div class="mono-label" style="color:rgba(0,0,0,0.3);">Black on light</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONCEPT B: Block Mark (Clean Adjacent) -->
+  <div class="concept-card">
+    <div class="concept-meta">
+      <div class="concept-num">B</div>
+      <div class="concept-name">Block Mark</div>
+    </div>
+    <div class="concept-sub">P and R sit side by side — no overlap. Creates a tight rectangular block. Works great at small sizes and embroidery.</div>
+
+    <div class="preview-label">Dark Background</div>
+    <div class="preview-dark">
+      <svg viewBox="0 0 220 200" width="160" xmlns="http://www.w3.org/2000/svg">
+        <!-- P left, green -->
+        <text x="0" y="162" font-family="'Bebas Neue', Impact, sans-serif" font-size="172" fill="#37D413">P</text>
+        <!-- R right, white, slightly tighter -->
+        <text x="94" y="162" font-family="'Bebas Neue', Impact, sans-serif" font-size="172" fill="rgba(255,255,255,0.92)">R</text>
+        <!-- SOLUTIONS centered -->
+        <text x="110" y="183" font-family="'Bebas Neue', Impact, sans-serif" font-size="12" fill="rgba(255,255,255,0.55)" letter-spacing="5" text-anchor="middle">SOLUTIONS</text>
+        <!-- Tagline -->
+        <text x="110" y="198" font-family="'Bebas Neue', Impact, sans-serif" font-size="8.5" fill="rgba(255,255,255,0.3)" letter-spacing="3" text-anchor="middle">PLASTER · RENDER · SPECIALISTS</text>
+      </svg>
+    </div>
+
+    <div class="preview-label-light">Light Background</div>
+    <div class="preview-light">
+      <svg viewBox="0 0 220 200" width="140" xmlns="http://www.w3.org/2000/svg">
+        <text x="0" y="162" font-family="'Bebas Neue', Impact, sans-serif" font-size="172" fill="#37D413">P</text>
+        <text x="94" y="162" font-family="'Bebas Neue', Impact, sans-serif" font-size="172" fill="#111">R</text>
+        <text x="110" y="183" font-family="'Bebas Neue', Impact, sans-serif" font-size="12" fill="rgba(0,0,0,0.5)" letter-spacing="5" text-anchor="middle">SOLUTIONS</text>
+        <text x="110" y="198" font-family="'Bebas Neue', Impact, sans-serif" font-size="8.5" fill="rgba(0,0,0,0.3)" letter-spacing="3" text-anchor="middle">PLASTER · RENDER · SPECIALISTS</text>
+      </svg>
+    </div>
+
+    <div class="preview-label-light" style="background:#fff; color:rgba(0,0,0,0.2);">Single Colour — Embroidery</div>
+    <div class="preview-mono-row" style="background:#fff; justify-content:center; gap:24px;">
+      <div style="text-align:center;">
+        <div style="background:#111; padding:14px 18px; border-radius:8px; display:inline-flex;">
+          <svg viewBox="0 0 220 200" width="70" xmlns="http://www.w3.org/2000/svg">
+            <text x="0" y="162" font-family="'Bebas Neue', Impact, sans-serif" font-size="172" fill="white">P</text>
+            <text x="94" y="162" font-family="'Bebas Neue', Impact, sans-serif" font-size="172" fill="white">R</text>
+          </svg>
+        </div>
+        <div class="mono-label" style="color:rgba(0,0,0,0.3);">White on dark</div>
+      </div>
+      <div style="text-align:center;">
+        <div style="background:#eee; padding:14px 18px; border-radius:8px; display:inline-flex;">
+          <svg viewBox="0 0 220 200" width="70" xmlns="http://www.w3.org/2000/svg">
+            <text x="0" y="162" font-family="'Bebas Neue', Impact, sans-serif" font-size="172" fill="#111">P</text>
+            <text x="94" y="162" font-family="'Bebas Neue', Impact, sans-serif" font-size="172" fill="#111">R</text>
+          </svg>
+        </div>
+        <div class="mono-label" style="color:rgba(0,0,0,0.3);">Black on light</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONCEPT C: Green Accent (Premium) -->
+  <div class="concept-card">
+    <div class="concept-meta">
+      <div class="concept-num">C</div>
+      <div class="concept-name">Green Accent</div>
+    </div>
+    <div class="concept-sub">R gets a green diagonal leg — adds energy. P and R share the composition, R echoes the brand colour subtly.</div>
+
+    <div class="preview-label">Dark Background</div>
+    <div class="preview-dark">
+      <svg viewBox="0 0 240 200" width="160" xmlns="http://www.w3.org/2000/svg">
+        <!-- R base in white -->
+        <text x="86" y="162" font-family="'Bebas Neue', Impact, sans-serif" font-size="172" fill="rgba(255,255,255,0.85)" letter-spacing="-2">R</text>
+        <!-- Green accent line on R diagonal leg area -->
+        <line x1="164" y1="90" x2="218" y2="162" stroke="#37D413" stroke-width="6" stroke-linecap="round" opacity="0.7"/>
+        <!-- P in front, green -->
+        <text x="0" y="162" font-family="'Bebas Neue', Impact, sans-serif" font-size="172" fill="#37D413">P</text>
+        <!-- SOLUTIONS -->
+        <text x="120" y="183" font-family="'Bebas Neue', Impact, sans-serif" font-size="12" fill="rgba(255,255,255,0.55)" letter-spacing="5" text-anchor="middle">SOLUTIONS</text>
+        <!-- Tagline -->
+        <text x="120" y="198" font-family="'Bebas Neue', Impact, sans-serif" font-size="8.5" fill="rgba(255,255,255,0.3)" letter-spacing="3" text-anchor="middle">PLASTER · RENDER · SPECIALISTS</text>
+      </svg>
+    </div>
+
+    <div class="preview-label-light">Light Background</div>
+    <div class="preview-light">
+      <svg viewBox="0 0 240 200" width="140" xmlns="http://www.w3.org/2000/svg">
+        <text x="86" y="162" font-family="'Bebas Neue', Impact, sans-serif" font-size="172" fill="#222" letter-spacing="-2">R</text>
+        <line x1="164" y1="90" x2="218" y2="162" stroke="#37D413" stroke-width="6" stroke-linecap="round" opacity="0.6"/>
+        <text x="0" y="162" font-family="'Bebas Neue', Impact, sans-serif" font-size="172" fill="#37D413">P</text>
+        <text x="120" y="183" font-family="'Bebas Neue', Impact, sans-serif" font-size="12" fill="rgba(0,0,0,0.5)" letter-spacing="5" text-anchor="middle">SOLUTIONS</text>
+        <text x="120" y="198" font-family="'Bebas Neue', Impact, sans-serif" font-size="8.5" fill="rgba(0,0,0,0.3)" letter-spacing="3" text-anchor="middle">PLASTER · RENDER · SPECIALISTS</text>
+      </svg>
+    </div>
+
+    <div class="preview-label-light" style="background:#fff; color:rgba(0,0,0,0.2);">Single Colour — Embroidery</div>
+    <div class="preview-mono-row" style="background:#fff; justify-content:center; gap:24px;">
+      <div style="text-align:center;">
+        <div style="background:#111; padding:14px 18px; border-radius:8px; display:inline-flex;">
+          <svg viewBox="0 0 240 200" width="70" xmlns="http://www.w3.org/2000/svg">
+            <text x="86" y="162" font-family="'Bebas Neue', Impact, sans-serif" font-size="172" fill="white" letter-spacing="-2">R</text>
+            <text x="0" y="162" font-family="'Bebas Neue', Impact, sans-serif" font-size="172" fill="white">P</text>
+          </svg>
+        </div>
+        <div class="mono-label" style="color:rgba(0,0,0,0.3);">White on dark</div>
+      </div>
+      <div style="text-align:center;">
+        <div style="background:#eee; padding:14px 18px; border-radius:8px; display:inline-flex;">
+          <svg viewBox="0 0 240 200" width="70" xmlns="http://www.w3.org/2000/svg">
+            <text x="86" y="162" font-family="'Bebas Neue', Impact, sans-serif" font-size="172" fill="#111" letter-spacing="-2">R</text>
+            <text x="0" y="162" font-family="'Bebas Neue', Impact, sans-serif" font-size="172" fill="#111">P</text>
+          </svg>
+        </div>
+        <div class="mono-label" style="color:rgba(0,0,0,0.3);">Black on light</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ============================================================ -->
+<!-- SECTION 2: LOCKUP VARIATIONS                                 -->
+<!-- ============================================================ -->
+<div class="section-heading">02 — Logo Lockups</div>
+<div class="section-title">All the formats you need</div>
+<div class="section-desc">Based on Concept A (solid overlap). Same rules apply to B or C.</div>
+
+<div class="lockups-row">
+
+  <!-- Full Logo -->
+  <div class="lockup-card">
+    <div class="lockup-preview">
+      <svg viewBox="0 0 220 200" width="130" xmlns="http://www.w3.org/2000/svg">
+        <text x="76" y="162" font-family="'Bebas Neue', Impact, sans-serif" font-size="172" fill="rgba(255,255,255,0.9)" letter-spacing="-2">R</text>
+        <text x="0" y="162" font-family="'Bebas Neue', Impact, sans-serif" font-size="172" fill="#37D413">P</text>
+        <text x="110" y="183" font-family="'Bebas Neue', Impact, sans-serif" font-size="12" fill="rgba(255,255,255,0.5)" letter-spacing="5" text-anchor="middle">SOLUTIONS</text>
+        <text x="110" y="198" font-family="'Bebas Neue', Impact, sans-serif" font-size="8.5" fill="rgba(255,255,255,0.28)" letter-spacing="3" text-anchor="middle">PLASTER · RENDER · SPECIALISTS</text>
+      </svg>
+    </div>
+    <div class="lockup-label">Full Logo</div>
+  </div>
+
+  <!-- Compact (no tagline) -->
+  <div class="lockup-card">
+    <div class="lockup-preview">
+      <svg viewBox="0 0 220 185" width="130" xmlns="http://www.w3.org/2000/svg">
+        <text x="76" y="162" font-family="'Bebas Neue', Impact, sans-serif" font-size="172" fill="rgba(255,255,255,0.9)" letter-spacing="-2">R</text>
+        <text x="0" y="162" font-family="'Bebas Neue', Impact, sans-serif" font-size="172" fill="#37D413">P</text>
+        <text x="110" y="183" font-family="'Bebas Neue', Impact, sans-serif" font-size="12" fill="rgba(255,255,255,0.5)" letter-spacing="5" text-anchor="middle">SOLUTIONS</text>
+      </svg>
+    </div>
+    <div class="lockup-label">Compact — No Tagline</div>
+  </div>
+
+  <!-- Icon only -->
+  <div class="lockup-card">
+    <div class="lockup-preview">
+      <svg viewBox="20 0 180 165" width="110" xmlns="http://www.w3.org/2000/svg">
+        <text x="76" y="162" font-family="'Bebas Neue', Impact, sans-serif" font-size="172" fill="rgba(255,255,255,0.9)" letter-spacing="-2">R</text>
+        <text x="0" y="162" font-family="'Bebas Neue', Impact, sans-serif" font-size="172" fill="#37D413">P</text>
+      </svg>
+    </div>
+    <div class="lockup-label">Icon Only — Embroidery / App</div>
+  </div>
+
+  <!-- Horizontal (side by side) -->
+  <div class="lockup-card">
+    <div class="lockup-preview">
+      <svg viewBox="0 0 380 65" width="200" xmlns="http://www.w3.org/2000/svg">
+        <!-- Mini PR mark -->
+        <text x="22" y="57" font-family="'Bebas Neue', Impact, sans-serif" font-size="62" fill="rgba(255,255,255,0.9)" letter-spacing="-1">R</text>
+        <text x="0" y="57" font-family="'Bebas Neue', Impact, sans-serif" font-size="62" fill="#37D413">P</text>
+        <!-- Text stack right -->
+        <text x="80" y="34" font-family="'Bebas Neue', Impact, sans-serif" font-size="28" fill="#fff" letter-spacing="2">SOLUTIONS</text>
+        <text x="80" y="52" font-family="'Bebas Neue', Impact, sans-serif" font-size="14" fill="rgba(255,255,255,0.35)" letter-spacing="2.5">PLASTER · RENDER · SPECIALISTS</text>
+        <!-- Divider line -->
+        <line x1="71" y1="8" x2="71" y2="58" stroke="rgba(55,212,19,0.35)" stroke-width="1"/>
+      </svg>
+    </div>
+    <div class="lockup-label">Horizontal — Van / Header</div>
+  </div>
+
+</div>
+
+<!-- ============================================================ -->
+<!-- SECTION 3: BUSINESS CARD                                     -->
+<!-- ============================================================ -->
+<div class="section-heading">03 — Business Card</div>
+<div class="section-title">85mm × 54mm — UK Standard</div>
+<div class="section-desc">Fill in your name, phone and email. Adjust services as needed.</div>
+
+<div class="biz-cards-wrapper">
+
+  <!-- FRONT -->
+  <div>
+    <div class="biz-card-label">Front</div>
+    <div class="biz-card" style="width:570px; height:362px;">
+      <div class="biz-card-front" style="width:570px; height:362px;">
+
+        <!-- Logo top -->
+        <svg viewBox="0 0 220 185" width="90" xmlns="http://www.w3.org/2000/svg">
+          <text x="76" y="162" font-family="'Bebas Neue', Impact, sans-serif" font-size="172" fill="rgba(255,255,255,0.9)" letter-spacing="-2">R</text>
+          <text x="0" y="162" font-family="'Bebas Neue', Impact, sans-serif" font-size="172" fill="#37D413">P</text>
+          <text x="110" y="183" font-family="'Bebas Neue', Impact, sans-serif" font-size="12" fill="rgba(255,255,255,0.45)" letter-spacing="5" text-anchor="middle">SOLUTIONS</text>
+        </svg>
+
+        <!-- Name + title centre -->
+        <div style="text-align:center;">
+          <div style="font-family:'Barlow Condensed',sans-serif; font-size:28px; font-weight:700; color:#fff; letter-spacing:1px; margin-bottom:4px;">YOUR NAME</div>
+          <div style="font-size:13px; color:rgba(255,255,255,0.4); letter-spacing:3px; text-transform:uppercase;">Plastering & Rendering</div>
+        </div>
+
+        <!-- Bottom divider + website -->
+        <div style="width:100%; display:flex; flex-direction:column; align-items:center; gap:10px;">
+          <div style="width:48px; height:2px; background:#37D413; border-radius:2px;"></div>
+          <div style="font-size:12px; color:rgba(255,255,255,0.35); letter-spacing:2px;">plasterandrenderingsolutions.co.uk</div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- BACK -->
+  <div>
+    <div class="biz-card-label">Back</div>
+    <div class="biz-card" style="width:570px; height:362px;">
+      <div class="biz-card-back" style="width:570px; height:362px;">
+
+        <!-- Contact details -->
+        <div>
+          <div style="font-family:'Barlow Condensed',sans-serif; font-size:20px; font-weight:700; color:#37D413; letter-spacing:1px; margin-bottom:18px;">GET IN TOUCH</div>
+          <div style="display:flex; flex-direction:column; gap:9px;">
+            <div style="display:flex; align-items:center; gap:12px;">
+              <div style="width:6px; height:6px; background:#37D413; border-radius:50%;"></div>
+              <span style="font-size:14px; color:rgba(255,255,255,0.7);">07XXX XXX XXX</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:12px;">
+              <div style="width:6px; height:6px; background:#37D413; border-radius:50%;"></div>
+              <span style="font-size:14px; color:rgba(255,255,255,0.7);">info@plasterandrenderingsolutions.co.uk</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:12px;">
+              <div style="width:6px; height:6px; background:#37D413; border-radius:50%;"></div>
+              <span style="font-size:14px; color:rgba(255,255,255,0.7);">Sheffield & South Yorkshire</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Services list -->
+        <div>
+          <div style="height:1px; background:rgba(55,212,19,0.2); margin-bottom:14px;"></div>
+          <div style="display:flex; gap:8px; flex-wrap:wrap;">
+            <span style="font-size:11px; letter-spacing:1.5px; color:rgba(255,255,255,0.35); text-transform:uppercase;">Silicone Render</span>
+            <span style="color:rgba(55,212,19,0.4); font-size:11px;">·</span>
+            <span style="font-size:11px; letter-spacing:1.5px; color:rgba(255,255,255,0.35); text-transform:uppercase;">Monocouche</span>
+            <span style="color:rgba(55,212,19,0.4); font-size:11px;">·</span>
+            <span style="font-size:11px; letter-spacing:1.5px; color:rgba(255,255,255,0.35); text-transform:uppercase;">EWI</span>
+            <span style="color:rgba(55,212,19,0.4); font-size:11px;">·</span>
+            <span style="font-size:11px; letter-spacing:1.5px; color:rgba(255,255,255,0.35); text-transform:uppercase;">Plastering</span>
+            <span style="color:rgba(55,212,19,0.4); font-size:11px;">·</span>
+            <span style="font-size:11px; letter-spacing:1.5px; color:rgba(255,255,255,0.35); text-transform:uppercase;">Dry Lining</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<br><br>
+
+<!-- ============================================================ -->
+<!-- SECTION 4: WORKWEAR EMBROIDERY                               -->
+<!-- ============================================================ -->
+<div class="section-heading">04 — Workwear Placement</div>
+<div class="section-title">How it sits on garments</div>
+<div class="section-desc">Left chest position (standard). Logo at approx. 8–10cm wide for polo shirts.</div>
+
+<div class="embroidery-row" style="margin-bottom:64px;">
+
+  <!-- Black polo -->
+  <div class="embroidery-card">
+    <div class="polo-preview polo-bg-black">
+      <!-- Simulated left chest embroidery area -->
+      <div style="position:relative; width:160px; height:160px; background:#1a1a1a; border-radius:12px; display:flex; align-items:center; justify-content:center; border:1px dashed rgba(255,255,255,0.1);">
+        <div style="position:absolute; top:8px; left:12px; font-size:9px; color:rgba(255,255,255,0.2); letter-spacing:2px; text-transform:uppercase;">Left chest</div>
+        <svg viewBox="0 0 220 200" width="80" xmlns="http://www.w3.org/2000/svg">
+          <text x="76" y="162" font-family="'Bebas Neue', Impact, sans-serif" font-size="172" fill="white" letter-spacing="-2">R</text>
+          <text x="0" y="162" font-family="'Bebas Neue', Impact, sans-serif" font-size="172" fill="#37D413">P</text>
+          <text x="110" y="183" font-family="'Bebas Neue', Impact, sans-serif" font-size="12" fill="rgba(255,255,255,0.5)" letter-spacing="5" text-anchor="middle">SOLUTIONS</text>
+        </svg>
+      </div>
+    </div>
+    <div class="lockup-label" style="background:#101410; padding:14px 16px;">Black Workwear — 2 colour (green + white)</div>
+  </div>
+
+  <!-- Navy polo -->
+  <div class="embroidery-card">
+    <div class="polo-preview polo-bg-navy">
+      <div style="position:relative; width:160px; height:160px; background:#0d1e38; border-radius:12px; display:flex; align-items:center; justify-content:center; border:1px dashed rgba(255,255,255,0.08);">
+        <div style="position:absolute; top:8px; left:12px; font-size:9px; color:rgba(255,255,255,0.2); letter-spacing:2px; text-transform:uppercase;">Left chest</div>
+        <svg viewBox="0 0 220 200" width="80" xmlns="http://www.w3.org/2000/svg">
+          <text x="76" y="162" font-family="'Bebas Neue', Impact, sans-serif" font-size="172" fill="white" letter-spacing="-2">R</text>
+          <text x="0" y="162" font-family="'Bebas Neue', Impact, sans-serif" font-size="172" fill="#37D413">P</text>
+          <text x="110" y="183" font-family="'Bebas Neue', Impact, sans-serif" font-size="12" fill="rgba(255,255,255,0.5)" letter-spacing="5" text-anchor="middle">SOLUTIONS</text>
+        </svg>
+      </div>
+    </div>
+    <div class="lockup-label" style="background:#101410; padding:14px 16px;">Navy Workwear — 2 colour (green + white)</div>
+  </div>
+
+  <!-- Grey polo -->
+  <div class="embroidery-card">
+    <div class="polo-preview polo-bg-grey">
+      <div style="position:relative; width:160px; height:160px; background:#363636; border-radius:12px; display:flex; align-items:center; justify-content:center; border:1px dashed rgba(255,255,255,0.1);">
+        <div style="position:absolute; top:8px; left:12px; font-size:9px; color:rgba(255,255,255,0.2); letter-spacing:2px; text-transform:uppercase;">Left chest</div>
+        <svg viewBox="0 0 220 200" width="80" xmlns="http://www.w3.org/2000/svg">
+          <text x="76" y="162" font-family="'Bebas Neue', Impact, sans-serif" font-size="172" fill="white" letter-spacing="-2">R</text>
+          <text x="0" y="162" font-family="'Bebas Neue', Impact, sans-serif" font-size="172" fill="#37D413">P</text>
+          <text x="110" y="183" font-family="'Bebas Neue', Impact, sans-serif" font-size="12" fill="rgba(255,255,255,0.5)" letter-spacing="5" text-anchor="middle">SOLUTIONS</text>
+        </svg>
+      </div>
+    </div>
+    <div class="lockup-label" style="background:#101410; padding:14px 16px;">Charcoal Grey — 2 colour (green + white)</div>
+  </div>
+
+</div>
+
+<!-- ============================================================ -->
+<!-- SECTION 5: COLOUR SYSTEM                                     -->
+<!-- ============================================================ -->
+<div class="section-heading">05 — Colour System</div>
+<div class="section-title">Brand colours</div>
+<div class="section-desc" style="margin-bottom:20px;">Use these exact values for print, digital, and embroidery thread matching.</div>
+
+<div class="swatches-row">
+  <div class="swatch">
+    <div class="swatch-dot" style="background:#37D413;"></div>
+    <div class="swatch-info">
+      <div class="swatch-name">P&R Green</div>
+      <div class="swatch-hex">#37D413 · RGB 55,212,19</div>
+      <div class="swatch-hex" style="color:rgba(255,255,255,0.2);">Pantone 375 C (approx)</div>
+    </div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-dot" style="background:#111; border:1px solid rgba(255,255,255,0.1);"></div>
+    <div class="swatch-info">
+      <div class="swatch-name">P&R Dark</div>
+      <div class="swatch-hex">#111111 · RGB 17,17,17</div>
+      <div class="swatch-hex" style="color:rgba(255,255,255,0.2);">Pantone Black C</div>
+    </div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-dot" style="background:#fff; border:1px solid rgba(255,255,255,0.1);"></div>
+    <div class="swatch-info">
+      <div class="swatch-name">White</div>
+      <div class="swatch-hex">#FFFFFF · RGB 255,255,255</div>
+      <div class="swatch-hex" style="color:rgba(255,255,255,0.2);">Pantone White</div>
+    </div>
+  </div>
+  <div class="swatch">
+    <div class="swatch-dot" style="background:#0b0f0b;"></div>
+    <div class="swatch-info">
+      <div class="swatch-name">Background</div>
+      <div class="swatch-hex">#0B0F0B · RGB 11,15,11</div>
+      <div class="swatch-hex" style="color:rgba(255,255,255,0.2);">Digital only</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- SECTION 6: NOTES                                             -->
+<!-- ============================================================ -->
+<div class="section-heading">06 — Design Notes</div>
+<div class="section-title">Tweaks & recommendations</div>
+
+<div class="notes-grid">
+  <div class="note-card">
+    <div class="note-title">Concept A — Recommended</div>
+    <div class="note-body">Closest to your current logo but with a fully solid R (not outline). The overlap creates a strong monogram that reads as one mark. Best for business cards and website.</div>
+  </div>
+  <div class="note-card">
+    <div class="note-title">Concept B — Best for Embroidery</div>
+    <div class="note-body">No overlap means cleaner stitching at small sizes. The P+R block reads well on workwear from a distance. Simpler to digitise — fewer thread colour transitions.</div>
+  </div>
+  <div class="note-card">
+    <div class="note-title">What I changed from your original</div>
+    <div class="note-body">R is now fully solid (not outline). Changed "PLASTER RENDER SPECIALISTS" to use centre dots for better visual flow. Green updated to #37D413 (your website green). Added a horizontal lockup for van signage.</div>
+  </div>
+  <div class="note-card">
+    <div class="note-title">For print (business cards)</div>
+    <div class="note-body">Tell your printer: Green = Pantone 375 C. Ask for silk laminate finish on dark cards — it makes them feel premium. Minimum 400gsm card weight recommended.</div>
+  </div>
+</div>
+
+<div style="padding: 20px; background:#101410; border:1px solid rgba(55,212,19,0.15); border-radius:12px; font-size:13px; color:rgba(255,255,255,0.4); line-height:1.7;">
+  <span style="color:#37D413; font-weight:600;">Next steps:</span> Tell me which concept (A, B or C) you prefer, or what to adjust — font weight, overlap amount, tagline text, colour tweaks etc. Once locked in I'll export clean SVG files ready for a printer and embroiderer.
+</div>
+
+</body>
+</html>

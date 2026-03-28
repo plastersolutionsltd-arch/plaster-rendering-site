@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 230" role="img" aria-label="P&R Solutions — Plaster Render Specialists">
+  <title>P&R Solutions</title>
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue');
+    </style>
+  </defs>
+
+  <!-- R behind, white -->
+  <text x="188" y="182"
+    font-family="'Bebas Neue', Impact, Arial Narrow, sans-serif"
+    font-size="196"
+    fill="#ffffff"
+    letter-spacing="-2">R</text>
+
+  <!-- P in front, green -->
+  <text x="0" y="182"
+    font-family="'Bebas Neue', Impact, Arial Narrow, sans-serif"
+    font-size="196"
+    fill="#37D413">P</text>
+
+  <!-- SOLUTIONS -->
+  <text x="260" y="207"
+    font-family="'Bebas Neue', Impact, Arial Narrow, sans-serif"
+    font-size="16"
+    fill="rgba(255,255,255,0.55)"
+    letter-spacing="7"
+    text-anchor="middle">SOLUTIONS</text>
+
+  <!-- PLASTER RENDER SPECIALISTS -->
+  <text x="260" y="224"
+    font-family="'Bebas Neue', Impact, Arial Narrow, sans-serif"
+    font-size="11"
+    fill="rgba(255,255,255,0.35)"
+    letter-spacing="4"
+    text-anchor="middle">PLASTER · RENDER · SPECIALISTS</text>
+</svg>
