@@ -54,9 +54,14 @@
     .btn-secondary:hover { color: #fff; border-color: rgba(255,255,255,0.35); }
 
     /* FOOTER */
-    footer { background-color: #0b0f0b; border-top: 1px solid rgba(255,255,255,0.06); padding: 24px; text-align: center; font-size: 13px; color: rgba(255,255,255,0.2); }
-    footer a { color: rgba(255,255,255,0.35); margin: 0 8px; }
-    footer a:hover { color: #37D413; }
+    footer { background-color:#080c08; background-image:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(55,212,19,0.32) 0%,transparent 65%),linear-gradient(180deg,#0a0f0a 0%,#060906 100%); border-top:3px solid #00FF00; }
+    .footer-inner { max-width:1280px; margin:0 auto; padding:48px 40px 32px; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:24px; }
+    .footer-brand { display:flex; align-items:center; gap:12px; }
+    .footer-links { display:flex; flex-wrap:wrap; gap:20px; }
+    .footer-links a { font-family:'Outfit',sans-serif; font-size:13px; color:rgba(255,255,255,0.4); text-decoration:none; transition:color 0.2s; }
+    .footer-links a:hover { color:#00FF00; }
+    .footer-bottom { border-top:1px solid rgba(255,255,255,0.07); padding:16px 40px; text-align:center; font-size:11px; color:rgba(255,255,255,0.2); }
+    @media (max-width:600px) { .footer-inner { padding:40px 20px 24px; } .footer-bottom { padding:14px 20px; } }
   </style>
 </head>
 <body>
@@ -80,7 +85,9 @@
         <a href="/">Home</a>
         <a href="/#services">Services</a>
         <a href="/#gallery">Gallery</a>
+        <a href="/#reviews">Reviews</a>
         <a href="/faq">FAQ</a>
+        <a href="/how-we-apply">How We Apply</a>
         <a href="/pricing">Pricing</a>
         <a href="/get-quote" style="background:#37D413;color:#0d0d0d;font-weight:700;padding:9px 20px;border-radius:8px;" onmouseover="this.style.background='#2BA80D'" onmouseout="this.style.background='#37D413'">Get Quote</a>
       </div>
@@ -118,12 +125,28 @@
   </main>
 
   <!-- FOOTER -->
-  <footer>
-    <p>&copy; 2026 Plaster &amp; Rendering Solutions Ltd. &nbsp;|&nbsp;
-      <a href="/privacy">Privacy Policy</a> &nbsp;|&nbsp;
-      <a href="/get-quote">Get a Quote</a> &nbsp;|&nbsp;
-      <a href="tel:07595399525">07595 399525</a>
-    </p>
+  <footer aria-label="Site footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="/images/logos/logo-white.webp" alt="Plaster and Rendering Solutions Limited" style="height:32px;width:auto" loading="lazy">
+        <div>
+          <div style="font-family:'Outfit',sans-serif;font-weight:900;font-size:13px;color:#fff;line-height:1.2">P&amp;R Solutions</div>
+          <div style="font-family:'Outfit',sans-serif;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.3)">Sheffield</div>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/silicone-render-sheffield">Silicone Render</a>
+        <a href="/pricing">Pricing</a>
+        <a href="/faq">FAQ</a>
+        <a href="/get-quote" style="color:#00FF00;font-weight:600">Get a Quote</a>
+        <a href="/privacy">Privacy Policy</a>
+        <a href="tel:+447595399525" style="color:#00FF00;font-weight:600">07595 399525</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Plaster and Rendering Solutions Limited. Registered in England &amp; Wales. &nbsp;&middot;&nbsp; Sheffield, South Yorkshire
+    </div>
   </footer>
 
 </body>
