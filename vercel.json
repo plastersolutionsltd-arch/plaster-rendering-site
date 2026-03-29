@@ -100,7 +100,9 @@
     { "source": "/loxley-sheffield",      "destination": "/loxley-sheffield.html" },
     { "source": "/loxley-sheffield/",     "destination": "/loxley-sheffield.html" },
     { "source": "/firth-park-sheffield",  "destination": "/firth-park-sheffield.html" },
-    { "source": "/firth-park-sheffield/", "destination": "/firth-park-sheffield.html" }
+    { "source": "/firth-park-sheffield/", "destination": "/firth-park-sheffield.html" },
+    { "source": "/rendering-cost-sheffield",  "destination": "/rendering-cost-sheffield.html" },
+    { "source": "/rendering-cost-sheffield/", "destination": "/rendering-cost-sheffield.html" }
   ],
   "headers": [
     {
