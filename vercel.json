@@ -3,6 +3,8 @@
   "outputDirectory": ".",
   "framework": null,
   "redirects": [
+    { "source": "/index.html",  "destination": "/",    "permanent": true },
+    { "source": "/:slug.html",  "destination": "/:slug", "permanent": true },
     { "source": "/plastering-sheffield/",      "destination": "/plastering-sheffield",        "permanent": true },
     { "source": "/plastering/",               "destination": "/plastering-sheffield",        "permanent": true },
     { "source": "/plastering",                "destination": "/plastering-sheffield",        "permanent": true },
