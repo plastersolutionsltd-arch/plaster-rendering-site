@@ -56,7 +56,7 @@
       {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"20:00"},
       {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"09:00","closes":"13:00"}
     ],
-    "aggregateRating": {"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"94","bestRating":"5","worstRating":"1"},
+    "aggregateRating": {"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"95","bestRating":"5","worstRating":"1"},
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Sheffield Rendering Systems",
@@ -318,15 +318,26 @@
     @media (max-width:768px) { .final-cta { padding:72px 20px; } }
 
     /* ===== FOOTER ===== */
-    footer { background:#0a0a0a; color:#999; padding:64px 24px 32px; }
-    .footer-inner { max-width:1280px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:44px; }
-    footer h4 { color:#fff; font-size:14px; font-weight:700; margin-bottom:18px; }
-    footer a { display:block; font-size:13px; color:#666; padding:4px 0; transition:color 0.25s; }
-    footer a:hover { color:#00FF00; }
-    .footer-logo-row { display:flex; align-items:center; gap:10px; margin-bottom:14px; }
-    .footer-logo-row img { height:30px; width:auto; }
-    .footer-logo-row span { font-family:'Outfit',sans-serif; font-weight:700; font-size:14px; color:#fff; }
-    .footer-bottom { max-width:1280px; margin:44px auto 0; padding-top:24px; border-top:1px solid #1c1c1c; text-align:center; font-size:12px; color:#444; }
+    footer { background-color:#080c08; background-image:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(55,212,19,0.32) 0%,transparent 65%),linear-gradient(180deg,#0a0f0a 0%,#060906 100%); border-top:3px solid #00FF00; color:#999; }
+    .footer-main { max-width:1280px; margin:0 auto; padding:72px 40px 48px; display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr; gap:48px; }
+    .footer-col-head { font-family:'Outfit',sans-serif; font-size:10px; font-weight:700; letter-spacing:0.3em; text-transform:uppercase; color:rgba(255,255,255,0.28); margin-bottom:24px; }
+    .footer-link { display:block; font-family:'Outfit',sans-serif; font-size:14px; color:rgba(255,255,255,0.55); padding:5px 0; transition:color 0.25s; text-decoration:none; }
+    .footer-link:hover { color:#00FF00; }
+    .footer-link-dim { color:rgba(255,255,255,0.35) !important; }
+    .footer-link-green { color:#00FF00 !important; font-weight:600; }
+    .footer-trust-list { list-style:none; padding:0; margin:0 0 28px 0; display:flex; flex-direction:column; gap:10px; }
+    .footer-trust-list li { display:flex; align-items:center; gap:10px; font-family:'Outfit',sans-serif; font-size:12px; color:rgba(255,255,255,0.55); }
+    .footer-trust-dot { flex-shrink:0; width:16px; height:16px; border-radius:50%; background:#00FF00; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:8px; color:#0a0a0a; }
+    .footer-social { display:flex; gap:8px; }
+    .footer-social a { width:36px; height:36px; border-radius:8px; border:1px solid rgba(255,255,255,0.12); display:flex; align-items:center; justify-content:center; font-family:'Outfit',sans-serif; font-weight:700; font-size:11px; color:rgba(255,255,255,0.35); text-decoration:none; transition:all 0.25s; }
+    .footer-social a:hover { color:#00FF00; border-color:#00FF00; }
+    .footer-divider { border:none; border-top:1px solid rgba(255,255,255,0.07); margin:0; }
+    .footer-chips { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:20px; }
+    .footer-chip { font-family:'Outfit',sans-serif; font-size:11px; padding:2px 8px; border-radius:4px; color:rgba(255,255,255,0.45); background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.08); }
+    .footer-bottom-bar { max-width:1280px; margin:0 auto; padding:18px 40px; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:8px; }
+    .footer-bottom-bar p { font-size:11px; color:rgba(255,255,255,0.2); }
+    @media (max-width:900px) { .footer-main { grid-template-columns:1fr 1fr; } }
+    @media (max-width:560px) { .footer-main { grid-template-columns:1fr; padding:48px 20px 32px; } .footer-bottom-bar { padding:14px 20px; } }
   </style>
 </head>
 <body>
@@ -358,6 +369,7 @@
     <a href="/#gallery">Gallery</a>
     <a href="/#reviews">Reviews</a>
     <a href="/faq">FAQ</a>
+    <a href="/how-we-apply">How We Apply</a>
     <a href="/pricing" class="active" aria-current="page">Pricing</a>
     <a href="/get-quote" class="nav-cta-btn">Get Free Quote</a>
   </div>
@@ -372,6 +384,7 @@
   <a href="/#gallery">Gallery</a>
   <a href="/#reviews">Reviews</a>
   <a href="/faq">FAQ</a>
+  <a href="/how-we-apply">How We Apply</a>
   <a href="/pricing" style="color:#00FF00">Pricing</a>
   <a href="/get-quote" class="m-cta">Get Free Quote →</a>
 </nav>
@@ -722,39 +735,102 @@
 
 <!-- FOOTER -->
 </main>
-<footer>
-  <div class="footer-inner">
+<footer aria-label="Site footer">
+  <div class="footer-main">
+
+    <!-- Brand + Trust -->
     <div>
-      <div class="footer-logo-row">
-        <img src="/images/logos/logo-white.webp" alt="P&R Solutions logo" width="80" height="27" style="height:27px;width:auto">
-        <span>P&amp;R Solutions</span>
+      <a href="/" style="display:inline-flex;align-items:center;gap:12px;margin-bottom:24px;text-decoration:none">
+        <img src="/images/logos/logo-white.webp" alt="Plaster and Rendering Solutions Limited" style="height:36px;width:auto" loading="lazy" width="108" height="36">
+        <div>
+          <div style="font-family:'Outfit',sans-serif;font-weight:900;font-size:14px;color:#fff;letter-spacing:-0.02em;line-height:1.2">P&amp;R Solutions</div>
+          <div style="font-family:'Outfit',sans-serif;font-size:10px;letter-spacing:0.25em;text-transform:uppercase;color:rgba(255,255,255,0.3)">Sheffield</div>
+        </div>
+      </a>
+      <p style="font-size:13px;color:rgba(255,255,255,0.38);line-height:1.65;max-width:240px;margin-bottom:24px">Sheffield's trusted rendering &amp; plastering specialists. Premium systems, zero compromise.</p>
+      <ul class="footer-trust-list">
+        <li><span class="footer-trust-dot">✓</span> Zero deposit — pay on completion</li>
+        <li><span class="footer-trust-dot">✓</span> 5-year workmanship guarantee</li>
+        <li><span class="footer-trust-dot">✓</span> 25-year manufacturer warranty</li>
+        <li><span class="footer-trust-dot" style="font-size:9px">★</span><span><strong style="color:#fff">5.0</strong> &nbsp;·&nbsp; 95 Google reviews</span></li>
+      </ul>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/plasterandrenderingsolutions" target="_blank" rel="noopener" aria-label="P&amp;R Solutions on Facebook">f</a>
+        <a href="https://www.instagram.com/plasterandrenderingsolutions" target="_blank" rel="noopener" aria-label="P&amp;R Solutions on Instagram">ig</a>
+        <a href="https://x.com/Chris76550497" target="_blank" rel="noopener" aria-label="P&amp;R Solutions on X">𝕏</a>
+        <a href="https://share.google/rOAl0WMAyojDrY2kb" target="_blank" rel="noopener" aria-label="P&amp;R Solutions on Google Reviews">G</a>
       </div>
-      <p style="font-size:13px;color:#555;line-height:1.65;max-width:240px">Sheffield's trusted plasterers &amp; renderers. 95 five-star reviews and growing.</p>
     </div>
+
+    <!-- Services -->
     <div>
-      <h4>Services</h4>
-      <a href="/silicone-render-sheffield">Silicone Render</a>
-      <a href="/monocouche-render-sheffield">Monocouche Render</a>
-      <a href="/ewi-sheffield">External Wall Insulation</a>
-      <a href="/plastering-sheffield">Internal Plastering</a>
-      <a href="/dry-lining-sheffield">Dry Lining</a>
+      <div class="footer-col-head">Services</div>
+      <a href="/silicone-render-sheffield" class="footer-link">Silicone Rendering</a>
+      <a href="/monocouche-render-sheffield" class="footer-link">Monocouche Rendering</a>
+      <a href="/ewi-sheffield" class="footer-link">External Wall Insulation</a>
+      <a href="/plastering-sheffield" class="footer-link">Internal Plastering</a>
+      <a href="/dry-lining-sheffield" class="footer-link">Dry Lining</a>
+      <hr class="footer-divider" style="margin:20px 0">
+      <a href="/how-we-apply" class="footer-link footer-link-dim">How We Apply</a>
+      <a href="/faq" class="footer-link footer-link-dim">FAQ</a>
+      <a href="/pricing" class="footer-link footer-link-dim">Pricing</a>
+      <a href="/get-quote" class="footer-link footer-link-green">Get a Quote</a>
     </div>
+
+    <!-- Contact & Hours -->
     <div>
-      <h4>Company</h4>
-      <a href="/">Home</a>
-      <a href="/faq">FAQ</a>
-      <a href="/pricing">Pricing</a>
-      <a href="/get-quote" style="color:#00FF00;font-weight:600">Get Free Quote</a>
+      <div class="footer-col-head">Contact</div>
+      <div style="margin-bottom:20px">
+        <div style="font-family:'Outfit',sans-serif;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.22);margin-bottom:6px">Phone</div>
+        <a href="tel:+447595399525" style="font-family:'Outfit',sans-serif;font-weight:900;font-size:18px;color:#00FF00;text-decoration:none;letter-spacing:-0.02em">07595 399525</a>
+      </div>
+      <div style="margin-bottom:20px">
+        <div style="font-family:'Outfit',sans-serif;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.22);margin-bottom:6px">Email</div>
+        <a href="mailto:plastersolutionsltd@gmail.com" style="font-size:13px;color:rgba(255,255,255,0.5);text-decoration:none;word-break:break-all" onmouseover="this.style.color='#00FF00'" onmouseout="this.style.color='rgba(255,255,255,0.5)'">plastersolutionsltd@gmail.com</a>
+      </div>
+      <hr class="footer-divider" style="margin:20px 0">
+      <div style="font-family:'Outfit',sans-serif;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.22);margin-bottom:14px">Opening Hours</div>
+      <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:24px">
+        <div style="display:flex;justify-content:space-between"><span style="font-size:12px;color:rgba(255,255,255,0.45)">Mon – Fri</span><span style="font-size:12px;font-weight:600;color:rgba(255,255,255,0.75)">8am – 8pm</span></div>
+        <div style="display:flex;justify-content:space-between"><span style="font-size:12px;color:rgba(255,255,255,0.45)">Saturday</span><span style="font-size:12px;font-weight:600;color:rgba(255,255,255,0.75)">9am – 1pm</span></div>
+        <div style="display:flex;justify-content:space-between"><span style="font-size:12px;color:rgba(255,255,255,0.45)">Sunday</span><span style="font-size:12px;color:rgba(255,255,255,0.3)">Closed</span></div>
+      </div>
+      <a href="/get-quote" style="display:inline-flex;align-items:center;gap:8px;background:#00FF00;color:#0a0a0a;font-family:'Outfit',sans-serif;font-weight:700;font-size:12px;letter-spacing:0.03em;padding:10px 20px;border-radius:100px;text-decoration:none" onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">Free Survey &rarr;</a>
     </div>
+
+    <!-- Areas Served -->
     <div>
-      <h4>Contact</h4>
-      <a href="tel:+447595399525">07595 399 525</a>
-      <a href="mailto:plastersolutionsltd@gmail.com">plastersolutionsltd@gmail.com</a>
-      <p style="font-size:12px;color:#555;margin-top:12px;line-height:1.65">Mon–Fri: 8am–8pm<br>Sat: 9am–1pm<br>Sun: Closed</p>
+      <div class="footer-col-head">Areas Served</div>
+      <p style="font-size:12px;color:rgba(255,255,255,0.35);line-height:1.6;margin-bottom:16px">All Sheffield postcodes S1–S36, including:</p>
+      <div class="footer-chips">
+        <span class="footer-chip">Dore</span>
+        <span class="footer-chip">Fulwood</span>
+        <span class="footer-chip">Crosspool</span>
+        <span class="footer-chip">Stannington</span>
+        <span class="footer-chip">Grenoside</span>
+        <span class="footer-chip">Hillsborough</span>
+        <span class="footer-chip">Ecclesall</span>
+        <span class="footer-chip">Crookes</span>
+        <span class="footer-chip">Broomhill</span>
+        <span class="footer-chip">Walkley</span>
+        <span class="footer-chip">Woodseats</span>
+        <span class="footer-chip">Totley</span>
+        <span class="footer-chip">Chapeltown</span>
+        <span class="footer-chip">Norton</span>
+        <span class="footer-chip">Mosborough</span>
+        <span class="footer-chip">Nether Edge</span>
+        <span class="footer-chip">Sharrow</span>
+      </div>
+      <hr class="footer-divider" style="margin:16px 0">
+      <p style="font-size:12px;color:rgba(255,255,255,0.28)">Also: Rotherham &nbsp;·&nbsp; Barnsley &nbsp;·&nbsp; Doncaster</p>
     </div>
+
   </div>
-  <div class="footer-bottom">
-    <p>&copy; 2026 Plaster and Rendering Solutions Limited. All rights reserved.</p>
+
+  <hr class="footer-divider">
+  <div class="footer-bottom-bar">
+    <p>&copy; 2026 Plaster and Rendering Solutions Limited. Registered in England &amp; Wales.</p>
+    <p>Sheffield, South Yorkshire &nbsp;&middot;&nbsp; All postcodes S1–S36</p>
   </div>
 </footer>
 
