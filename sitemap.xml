@@ -442,4 +442,37 @@
         </image:image>
     </url>
 
+    <url>
+        <loc>https://www.plasterandrenderingsolutions.co.uk/southey-sheffield</loc>
+        <lastmod>2026-04-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://www.plasterandrenderingsolutions.co.uk/images/case-studies/shirecliffe-monocouche.webp</image:loc>
+            <image:title>Monocouche render completed in Southey S5 Sheffield by P&amp;R Solutions</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://www.plasterandrenderingsolutions.co.uk/malin-bridge-sheffield</loc>
+        <lastmod>2026-04-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://www.plasterandrenderingsolutions.co.uk/images/case-studies/walkley-hero.webp</image:loc>
+            <image:title>Render completed in Malin Bridge S6 Sheffield by P&amp;R Solutions</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://www.plasterandrenderingsolutions.co.uk/wisewood-sheffield</loc>
+        <lastmod>2026-04-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://www.plasterandrenderingsolutions.co.uk/images/case-studies/stannington-hero.webp</image:loc>
+            <image:title>Render completed in Wisewood S6 Sheffield by P&amp;R Solutions</image:title>
+        </image:image>
+    </url>
+
 </urlset>
