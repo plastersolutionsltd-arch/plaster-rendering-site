@@ -475,4 +475,37 @@
         </image:image>
     </url>
 
+    <url>
+        <loc>https://www.plasterandrenderingsolutions.co.uk/parson-cross-sheffield</loc>
+        <lastmod>2026-04-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://www.plasterandrenderingsolutions.co.uk/images/case-studies/chapletown-monocouche1.webp</image:loc>
+            <image:title>Monocouche render completed in Parson Cross S5 Sheffield by P&amp;R Solutions</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://www.plasterandrenderingsolutions.co.uk/wadsley-sheffield</loc>
+        <lastmod>2026-04-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://www.plasterandrenderingsolutions.co.uk/images/case-studies/stannington-hero-b.webp</image:loc>
+            <image:title>Render completed in Wadsley S6 Sheffield by P&amp;R Solutions</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://www.plasterandrenderingsolutions.co.uk/wincobank-sheffield</loc>
+        <lastmod>2026-04-04</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://www.plasterandrenderingsolutions.co.uk/images/case-studies/eccesfield-silicone1.webp</image:loc>
+            <image:title>Silicone render completed in Wincobank S9 Sheffield by P&amp;R Solutions</image:title>
+        </image:image>
+    </url>
+
 </urlset>
