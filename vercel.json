@@ -21,6 +21,8 @@
     { "source": "/internal-plastering",       "destination": "/plastering-sheffield",        "permanent": true },
     { "source": "/dry-lining/",              "destination": "/dry-lining-sheffield",        "permanent": true },
     { "source": "/dry-lining",               "destination": "/dry-lining-sheffield",        "permanent": true },
+    { "source": "/render-repair/",           "destination": "/render-repair-sheffield",     "permanent": true },
+    { "source": "/render-repair",            "destination": "/render-repair-sheffield",     "permanent": true },
     { "source": "/pricing/",                 "destination": "/pricing",                     "permanent": true }
   ],
   "rewrites": [
@@ -118,7 +120,9 @@
     { "source": "/rendering-cost-sheffield",  "destination": "/rendering-cost-sheffield.html" },
     { "source": "/rendering-cost-sheffield/", "destination": "/rendering-cost-sheffield.html" },
     { "source": "/projects",  "destination": "/projects.html" },
-    { "source": "/projects/", "destination": "/projects.html" }
+    { "source": "/projects/", "destination": "/projects.html" },
+    { "source": "/render-repair-sheffield",  "destination": "/render-repair-sheffield.html" },
+    { "source": "/render-repair-sheffield/", "destination": "/render-repair-sheffield.html" }
   ],
   "headers": [
     {
