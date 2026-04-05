@@ -423,20 +423,27 @@
 <!-- HERO -->
 <section id="hero-sect" style="padding-top:124px">
   <div class="relative min-h-screen flex items-end overflow-hidden bg-black">
-    <!-- Desktop/tablet: autoplay video background -->
+    <!-- Video on tablet+, poster image on mobile -->
     <video autoplay muted loop playsinline preload="metadata"
            poster="/images/hero/hero-video-poster.webp"
            aria-hidden="true"
-           class="absolute inset-0 w-full h-full object-cover hidden md:block"
-           style="opacity:.85">
+           id="hero-video"
+           class="absolute inset-0 w-full h-full object-cover"
+           style="opacity:.85;display:none">
       <source src="/hero-video-v2.mp4" type="video/mp4">
     </video>
-    <!-- Mobile: static poster image instead of video (saves data, faster load) -->
     <img src="/images/hero/hero-video-poster.webp"
          alt="Silicone render being applied to a Sheffield property by P&R Solutions — showing the full process from mesh to finished coat"
          fetchpriority="high"
-         class="absolute inset-0 w-full h-full object-cover md:hidden"
+         id="hero-poster"
+         class="absolute inset-0 w-full h-full object-cover"
          style="opacity:.85" />
+    <script>
+      if(window.innerWidth >= 768){
+        document.getElementById('hero-video').style.display='block';
+        document.getElementById('hero-poster').style.display='none';
+      }
+    </script>
     <div class="absolute inset-0" style="background:linear-gradient(105deg,rgba(0,0,0,.92) 0%,rgba(0,0,0,.65) 50%,rgba(0,0,0,.25) 100%)"></div>
     <div class="absolute inset-x-0 bottom-0 h-16" style="background:linear-gradient(to top,#fff 0%,transparent 100%)"></div>
     <div class="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-12 pb-32 pt-40">
