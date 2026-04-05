@@ -98,7 +98,7 @@
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "5.0",
-      "reviewCount": "97",
+      "reviewCount": "98",
       "bestRating": "5",
       "worstRating": "1"
     }
@@ -423,15 +423,20 @@
 <!-- HERO -->
 <section id="hero-sect" style="padding-top:124px">
   <div class="relative min-h-screen flex items-end overflow-hidden bg-black">
-    <picture>
-      <source media="(max-width:768px)" srcset="/images/case-studies/IMG_0291-m.webp" type="image/webp">
-      <img src="/images/case-studies/IMG_0291.webp"
-           alt="Sheffield plasterer and rendering specialist — P&R Solutions completed project"
-           class="hero-img absolute inset-0 w-full h-full object-cover"
-           style="opacity:.85"
-           fetchpriority="high"
-           onload="this.classList.add('loaded')" />
-    </picture>
+    <!-- Desktop/tablet: autoplay video background -->
+    <video autoplay muted loop playsinline preload="metadata"
+           poster="/images/hero/hero-video-poster.webp"
+           aria-hidden="true"
+           class="absolute inset-0 w-full h-full object-cover hidden md:block"
+           style="opacity:.85">
+      <source src="/hero-video-v2.mp4" type="video/mp4">
+    </video>
+    <!-- Mobile: static poster image instead of video (saves data, faster load) -->
+    <img src="/images/hero/hero-video-poster.webp"
+         alt="Silicone render being applied to a Sheffield property by P&R Solutions — showing the full process from mesh to finished coat"
+         fetchpriority="high"
+         class="absolute inset-0 w-full h-full object-cover md:hidden"
+         style="opacity:.85" />
     <div class="absolute inset-0" style="background:linear-gradient(105deg,rgba(0,0,0,.92) 0%,rgba(0,0,0,.65) 50%,rgba(0,0,0,.25) 100%)"></div>
     <div class="absolute inset-x-0 bottom-0 h-16" style="background:linear-gradient(to top,#fff 0%,transparent 100%)"></div>
     <div class="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-12 pb-32 pt-40">
@@ -459,7 +464,7 @@
           </div>
           <div class="flex items-center gap-2">
             <span style="color:#00FF00;font-size:1.05rem;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-            <span class="font-body text-white/60 text-sm"><span class="text-white font-semibold">97 Google reviews</span> &nbsp;&middot;&nbsp; 5.0 stars</span>
+            <span class="font-body text-white/60 text-sm"><span class="text-white font-semibold">98 Google reviews</span> &nbsp;&middot;&nbsp; 5.0 stars</span>
           </div>
         </div>
       </div>
@@ -489,7 +494,7 @@
       <div class="reveal delay-3 text-center lg:px-8">
         <div class="font-display font-black text-charcoal-900 text-3xl lg:text-4xl tracking-tight">5.0<span class="text-xl" style="color:#00FF00">&#9733;</span></div>
         <div class="font-display text-xs tracking-[.2em] uppercase mt-1" style="color:rgba(26,26,26,0.45)">Google Rating</div>
-        <div class="font-body text-[11px] text-slate-500 mt-0.5">97 verified reviews</div>
+        <div class="font-body text-[11px] text-slate-500 mt-0.5">98 verified reviews</div>
       </div>
     </div>
   </div>
@@ -778,7 +783,7 @@
            class="reveal delay-2 inline-flex items-center gap-3 px-6 py-3.5 rounded-full font-display font-bold text-sm text-charcoal-900 no-underline hover:opacity-90 transition-opacity"
            style="background:#00FF00">
           <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-          <span>Read our 97 Google reviews</span>
+          <span>Read our 98 Google reviews</span>
         </a>
       </div>
       <div class="mt-4 lg:mt-10">
@@ -830,7 +835,7 @@
               <span class="exp-arrow font-display font-bold ml-4 flex-shrink-0" style="color:rgba(255,255,255,0.3);font-size:1.3rem">&rsaquo;</span>
             </div>
             <div class="exp-body">
-              <p class="font-body text-slate-400 text-sm leading-relaxed pt-3">Every project ends with a full clean-up. We take pride in leaving your property in better condition than we found it. Our 97 five-star reviews mention this consistently — it's a non-negotiable standard for us.</p>
+              <p class="font-body text-slate-400 text-sm leading-relaxed pt-3">Every project ends with a full clean-up. We take pride in leaving your property in better condition than we found it. Our 98 five-star reviews mention this consistently — it's a non-negotiable standard for us.</p>
             </div>
           </div>
 
@@ -904,7 +909,7 @@
     </div>
     <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-12">
       <div>
-        <h2 class="reveal font-display font-black text-white leading-tight" style="font-size:clamp(2rem,4.5vw,3.2rem)">97 Five-Star Reviews.<br>Every Single One Earned.</h2>
+        <h2 class="reveal font-display font-black text-white leading-tight" style="font-size:clamp(2rem,4.5vw,3.2rem)">98 Five-Star Reviews.<br>Every Single One Earned.</h2>
         <div class="reveal delay-1 flex items-center gap-3 mt-4">
           <span style="color:#00FF00;font-size:1.3rem;letter-spacing:3px">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
           <span class="font-body text-white/50 text-sm">5.0 average &nbsp;&middot;&nbsp; Google My Business</span>
@@ -913,7 +918,7 @@
       <a href="https://share.google/rOAl0WMAyojDrY2kb" target="_blank" rel="noopener"
          class="reveal delay-2 inline-flex items-center gap-2 font-display font-bold text-charcoal-900 text-sm px-6 py-3 rounded-full no-underline hover:opacity-90 transition-opacity self-start lg:self-end"
          style="background:#00FF00">
-        Read all 97 reviews &rarr;
+        Read all 98 reviews &rarr;
       </a>
     </div>
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -1204,7 +1209,7 @@
     </div>
     <div class="reveal delay-3 flex items-center justify-center gap-3 mt-10">
       <span style="color:#00FF00;font-size:1.05rem;letter-spacing:2px">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-      <span class="font-body text-white/65 text-sm">97 five-star Google reviews</span>
+      <span class="font-body text-white/65 text-sm">98 five-star Google reviews</span>
     </div>
   </div>
 </section>
@@ -1239,7 +1244,7 @@
           </li>
           <li class="flex items-center gap-2.5">
             <span class="flex-shrink-0 w-4 h-4 rounded-full flex items-center justify-center font-bold text-charcoal-900" style="background:#00FF00;font-size:8px">&#9733;</span>
-            <span class="font-display text-xs" style="color:rgba(255,255,255,0.55)"><span class="font-bold" style="color:#fff">5.0</span> &nbsp;&middot;&nbsp; 97 Google reviews</span>
+            <span class="font-display text-xs" style="color:rgba(255,255,255,0.55)"><span class="font-bold" style="color:#fff">5.0</span> &nbsp;&middot;&nbsp; 98 Google reviews</span>
           </li>
         </ul>
         <div class="flex gap-2">
