@@ -122,7 +122,9 @@
     { "source": "/projects",  "destination": "/projects.html" },
     { "source": "/projects/", "destination": "/projects.html" },
     { "source": "/render-repair-sheffield",  "destination": "/render-repair-sheffield.html" },
-    { "source": "/render-repair-sheffield/", "destination": "/render-repair-sheffield.html" }
+    { "source": "/render-repair-sheffield/", "destination": "/render-repair-sheffield.html" },
+    { "source": "/sandygate-silicone-render-case-study",  "destination": "/sandygate-silicone-render-case-study.html" },
+    { "source": "/sandygate-silicone-render-case-study/", "destination": "/sandygate-silicone-render-case-study.html" }
   ],
   "headers": [
     {
