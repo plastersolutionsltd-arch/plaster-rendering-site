@@ -1431,7 +1431,6 @@
         card.addEventListener('mousemove', e => {
           const r = card.getBoundingClientRect();
           const x = e.clientX - r.left, y = e.clientY - r.top;
-          card.style.transform = `perspective(900px) rotateX(${((y - r.height/2)/(r.height/2))*-9}deg) rotateY(${((x - r.width/2)/(r.width/2))*9}deg) translateY(-8px) scale(1.015)`;
           card.style.setProperty('--mx', (x/r.width*100)+'%');
           card.style.setProperty('--my', (y/r.height*100)+'%');
         });
@@ -1442,13 +1441,8 @@
           });
         });
         card.addEventListener('mouseleave', () => {
-          card.style.transition = 'transform 0.55s cubic-bezier(0.23,1,0.32,1),box-shadow 0.4s ease,border-color 0.3s ease';
-          card.style.transform = '';
-          setTimeout(() => { card.style.transition = ''; }, 560);
           fills.forEach(fill => { fill.style.transition = 'width 0.4s ease'; });
         });
-        card.addEventListener('mousedown', () => { card.style.transition = 'transform 0.07s ease'; card.style.transform = 'perspective(900px) scale(0.965) translateY(3px)'; });
-        card.addEventListener('mouseup', () => { card.style.transition = 'transform 0.4s cubic-bezier(0.34,1.56,0.64,1)'; card.style.transform = ''; });
       } else if (!reducedMotion) {
         card.addEventListener('touchstart', () => {
           card.style.transition = 'transform 0.08s ease,filter 0.08s ease'; card.style.transform = 'scale(0.97)'; card.style.filter = 'brightness(0.88)';
