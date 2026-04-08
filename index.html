@@ -939,11 +939,14 @@
           <span class="font-body text-white/50 text-sm">5.0 average &nbsp;&middot;&nbsp; Google My Business</span>
         </div>
       </div>
-      <a href="https://share.google/rOAl0WMAyojDrY2kb" target="_blank" rel="noopener"
-         class="reveal delay-2 inline-flex items-center gap-2 font-display font-bold text-charcoal-900 text-sm px-6 py-3 rounded-full no-underline hover:opacity-90 transition-opacity self-start lg:self-end"
-         style="background:#00FF00">
-        Read all 98 reviews &rarr;
-      </a>
+      <div class="reveal delay-2 flex flex-wrap items-center gap-3 self-start lg:self-end">
+        <a href="https://share.google/rOAl0WMAyojDrY2kb" target="_blank" rel="noopener"
+           class="inline-flex items-center gap-2 font-display font-bold text-charcoal-900 text-sm px-6 py-3 rounded-full no-underline hover:opacity-90 transition-opacity"
+           style="background:#00FF00">
+          Read all 98 reviews &rarr;
+        </a>
+        <div id="checkatrade-widget"></div>
+      </div>
     </div>
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
 
@@ -1455,5 +1458,14 @@
   }());
 </script>
 
+
+<script>
+  window._checkatradeConfig = {
+    companyId: "15012507",
+    uniqueName: "plasterandrenderingsolutionslimited",
+    theme: "red",
+  };
+</script>
+<script src="https://www.checkatrade.com/static/js/widget.js"></script>
 </body>
 </html>
