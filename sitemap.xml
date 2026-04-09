@@ -530,4 +530,49 @@
         </image:image>
     </url>
 
+
+    <url>
+        <loc>https://www.plasterandrenderingsolutions.co.uk/beighton-sheffield</loc>
+        <lastmod>2026-04-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://www.plasterandrenderingsolutions.co.uk/images/case-studies/greenhill-ewi.webp</image:loc>
+            <image:title>EWI render completed in Beighton S20 Sheffield by P&amp;R Solutions</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://www.plasterandrenderingsolutions.co.uk/mosborough-sheffield</loc>
+        <lastmod>2026-04-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://www.plasterandrenderingsolutions.co.uk/images/case-studies/norton-silicone.webp</image:loc>
+            <image:title>Silicone render completed in Mosborough S20 Sheffield by P&amp;R Solutions</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://www.plasterandrenderingsolutions.co.uk/halfway-sheffield</loc>
+        <lastmod>2026-04-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://www.plasterandrenderingsolutions.co.uk/images/case-studies/case/bentsgreen-ewi.webp</image:loc>
+            <image:title>EWI rendering completed in Halfway S20 Sheffield by P&amp;R Solutions</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://www.plasterandrenderingsolutions.co.uk/crystal-peaks-sheffield</loc>
+        <lastmod>2026-04-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://www.plasterandrenderingsolutions.co.uk/images/case-studies/s17-close-up-detail.webp</image:loc>
+            <image:title>Render close-up finish near Crystal Peaks S20 Sheffield by P&amp;R Solutions</image:title>
+        </image:image>
+    </url>
+
 </urlset>

@@ -128,7 +128,15 @@
     { "source": "/render-repair-sheffield",  "destination": "/render-repair-sheffield.html" },
     { "source": "/render-repair-sheffield/", "destination": "/render-repair-sheffield.html" },
     { "source": "/sandygate-silicone-render-case-study",  "destination": "/sandygate-silicone-render-case-study.html" },
-    { "source": "/sandygate-silicone-render-case-study/", "destination": "/sandygate-silicone-render-case-study.html" }
+    { "source": "/sandygate-silicone-render-case-study/", "destination": "/sandygate-silicone-render-case-study.html" },
+    { "source": "/beighton-sheffield",      "destination": "/beighton-sheffield.html" },
+    { "source": "/beighton-sheffield/",     "destination": "/beighton-sheffield.html" },
+    { "source": "/mosborough-sheffield",    "destination": "/mosborough-sheffield.html" },
+    { "source": "/mosborough-sheffield/",   "destination": "/mosborough-sheffield.html" },
+    { "source": "/halfway-sheffield",       "destination": "/halfway-sheffield.html" },
+    { "source": "/halfway-sheffield/",      "destination": "/halfway-sheffield.html" },
+    { "source": "/crystal-peaks-sheffield",  "destination": "/crystal-peaks-sheffield.html" },
+    { "source": "/crystal-peaks-sheffield/", "destination": "/crystal-peaks-sheffield.html" }
   ],
   "headers": [
     {
