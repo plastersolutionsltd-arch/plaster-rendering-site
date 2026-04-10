@@ -260,6 +260,27 @@
     .svc-card:hover .svc-arrow{transform:translateX(4px);color:#00FF00}
     .svc-arrow{transition:transform .3s,color .3s}
 
+    /* ============ SERVICE NAV BAR ============ */
+    .svcnav-item{position:relative;display:flex;flex-direction:column;gap:6px;padding:34px 28px 30px;text-decoration:none;color:inherit;border-right:1px solid rgba(55,212,19,0.08);overflow:hidden;transition:background 0.35s}
+    .svcnav-item:last-child{border-right:none}
+    .svcnav-item::before{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,transparent,#00FF00 40%,#37D413 60%,transparent);transform:scaleY(0);transform-origin:center;transition:transform 0.35s cubic-bezier(0.4,0,0.2,1);box-shadow:0 0 12px rgba(0,255,0,0.8)}
+    .svcnav-item::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 120% 100% at 0% 60%,rgba(0,255,0,0.09) 0%,transparent 65%);opacity:0;transition:opacity 0.35s;pointer-events:none}
+    .svcnav-item:hover{background:rgba(0,255,0,0.025)}
+    .svcnav-item:hover::before{transform:scaleY(1)}
+    .svcnav-item:hover::after{opacity:1}
+    .svcnav-item:hover .svcnav-num{color:#00FF00;text-shadow:0 0 12px rgba(0,255,0,0.8)}
+    .svcnav-item:hover .svcnav-name{color:#fff}
+    .svcnav-item:hover .svcnav-arrow{transform:translateX(5px);color:#00FF00}
+    .svcnav-item:hover .svcnav-icon{opacity:1;filter:drop-shadow(0 0 6px rgba(0,255,0,0.6))}
+    .svcnav-num{font-family:'Outfit',sans-serif;font-size:10px;font-weight:700;letter-spacing:2.5px;color:rgba(55,212,19,0.45);transition:color 0.3s,text-shadow 0.3s}
+    .svcnav-icon{width:34px;height:34px;margin:6px 0 4px;opacity:0.65;transition:opacity 0.3s,filter 0.3s}
+    .svcnav-name{font-family:'Outfit',sans-serif;font-size:1.05rem;font-weight:900;color:rgba(255,255,255,0.85);line-height:1.2;transition:color 0.3s}
+    .svcnav-desc{font-size:12px;color:rgba(255,255,255,0.35);line-height:1.6;max-width:200px;margin-top:2px}
+    .svcnav-badge{display:inline-flex;align-items:center;gap:5px;font-size:10px;font-family:'Outfit',sans-serif;font-weight:700;letter-spacing:0.5px;color:rgba(55,212,19,0.65);margin-top:6px}
+    .svcnav-arrow{margin-top:auto;padding-top:18px;font-size:11px;font-family:'Outfit',sans-serif;font-weight:700;letter-spacing:0.5px;color:rgba(255,255,255,0.22);transition:transform 0.25s,color 0.25s;display:block}
+    @media(max-width:860px){.svcnav-grid{grid-template-columns:repeat(2,1fr)!important}.svcnav-item:nth-child(2){border-right:none}.svcnav-item:nth-child(1),.svcnav-item:nth-child(2){border-bottom:1px solid rgba(55,212,19,0.08)}}
+    @media(max-width:480px){.svcnav-grid{grid-template-columns:1fr!important}.svcnav-item{border-right:none;border-bottom:1px solid rgba(55,212,19,0.08)}.svcnav-item:last-child{border-bottom:none}}
+
     /* ============ COMPARISON CARD GRID ============ */
     .cmp-section {
       padding: 80px 24px;
@@ -509,6 +530,46 @@
     </div>
   </div>
 </section>
+
+<!-- SERVICE NAV -->
+<div style="position:relative;background-color:#0b0f0b;background-image:radial-gradient(ellipse 90% 160% at 50% -20%,rgba(0,255,0,0.13) 0%,transparent 65%),radial-gradient(ellipse 40% 80% at 0% 50%,rgba(0,255,0,0.07) 0%,transparent 60%),radial-gradient(ellipse 40% 80% at 100% 50%,rgba(0,255,0,0.07) 0%,transparent 60%)">
+  <div style="height:1px;background:linear-gradient(90deg,transparent 0%,#37D413 30%,#00FF00 50%,#37D413 70%,transparent 100%);opacity:0.35"></div>
+  <div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr)" class="svcnav-grid">
+    <a href="/silicone-render-sheffield" class="svcnav-item">
+      <div class="svcnav-num">01</div>
+      <svg class="svcnav-icon" viewBox="0 0 36 36" fill="none"><path d="M4 28 L32 28" stroke="rgba(0,255,0,0.6)" stroke-width="2.5" stroke-linecap="round"/><path d="M4 22 L32 22" stroke="rgba(0,255,0,0.45)" stroke-width="2" stroke-linecap="round"/><path d="M4 16 L32 16" stroke="rgba(0,255,0,0.3)" stroke-width="1.5" stroke-linecap="round"/><path d="M4 10 L32 10" stroke="rgba(0,255,0,0.15)" stroke-width="1" stroke-linecap="round"/><path d="M6 9 L18 5 L30 9" stroke="rgba(0,255,0,0.55)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <div class="svcnav-name">Silicone Rendering</div>
+      <div class="svcnav-desc">Self-cleaning, crack-proof finish with 25-year warranty. The premium choice for Sheffield homes.</div>
+      <div class="svcnav-badge"><svg width="6" height="6" viewBox="0 0 6 6"><circle cx="3" cy="3" r="3" fill="#00FF00"/></svg>25-year manufacturer guarantee</div>
+      <div class="svcnav-arrow">View service →</div>
+    </a>
+    <a href="/monocouche-render-sheffield" class="svcnav-item">
+      <div class="svcnav-num">02</div>
+      <svg class="svcnav-icon" viewBox="0 0 36 36" fill="none"><rect x="4" y="14" width="28" height="16" rx="2" fill="rgba(0,255,0,0.12)"/><rect x="4" y="14" width="28" height="7" rx="2" fill="rgba(0,255,0,0.38)"/><path d="M6 13 L18 8 L30 13" stroke="rgba(0,255,0,0.55)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <div class="svcnav-name">Monocouche Render</div>
+      <div class="svcnav-desc">Single-coat through-colour render. Solid results, faster application, lower cost.</div>
+      <div class="svcnav-badge"><svg width="6" height="6" viewBox="0 0 6 6"><circle cx="3" cy="3" r="3" fill="#00FF00"/></svg>20-year manufacturer guarantee</div>
+      <div class="svcnav-arrow">View service →</div>
+    </a>
+    <a href="/ewi-sheffield" class="svcnav-item">
+      <div class="svcnav-num">03</div>
+      <svg class="svcnav-icon" viewBox="0 0 36 36" fill="none"><rect x="4" y="8" width="12" height="20" rx="1.5" fill="rgba(0,255,0,0.35)"/><rect x="18" y="8" width="14" height="20" rx="1.5" fill="rgba(0,255,0,0.12)"/><path d="M22 15 L27 18 L22 21" stroke="rgba(0,255,0,0.7)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><line x1="16" y1="8" x2="16" y2="28" stroke="rgba(0,255,0,0.5)" stroke-width="1" stroke-dasharray="2 2"/></svg>
+      <div class="svcnav-name">Ext. Wall Insulation</div>
+      <div class="svcnav-desc">Reduce heating bills by up to 40%. Insulation and a fresh render finish in one complete system.</div>
+      <div class="svcnav-badge"><svg width="6" height="6" viewBox="0 0 6 6"><circle cx="3" cy="3" r="3" fill="#00FF00"/></svg>25-year system guarantee</div>
+      <div class="svcnav-arrow">View service →</div>
+    </a>
+    <a href="/plastering-sheffield" class="svcnav-item">
+      <div class="svcnav-num">04</div>
+      <svg class="svcnav-icon" viewBox="0 0 36 36" fill="none"><rect x="5" y="5" width="26" height="26" rx="2" stroke="rgba(0,255,0,0.3)" stroke-width="1" fill="rgba(0,255,0,0.07)"/><path d="M9 26 L9 10 L13 10" stroke="rgba(0,255,0,0.5)" stroke-width="1.5" stroke-linecap="round"/><path d="M9 17 Q16 10 23 17 Q30 24 30 17" stroke="rgba(0,255,0,0.65)" stroke-width="1.5" stroke-linecap="round" fill="none"/><rect x="5" y="26" width="26" height="5" rx="0" fill="rgba(0,255,0,0.22)"/></svg>
+      <div class="svcnav-name">Plastering</div>
+      <div class="svcnav-desc">Skims, full re-plasters, dry lining and repairs. Paint-ready walls throughout Sheffield.</div>
+      <div class="svcnav-badge"><svg width="6" height="6" viewBox="0 0 6 6"><circle cx="3" cy="3" r="3" fill="#00FF00"/></svg>5-year workmanship guarantee</div>
+      <div class="svcnav-arrow">View service →</div>
+    </a>
+  </div>
+  <div style="height:1px;background:linear-gradient(90deg,transparent 0%,#37D413 30%,#00FF00 50%,#37D413 70%,transparent 100%);opacity:0.18"></div>
+</div>
 
 <!-- SERVICES -->
 <section class="cmp-section" id="services">
