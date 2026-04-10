@@ -261,25 +261,53 @@
     .svc-arrow{transition:transform .3s,color .3s}
 
     /* ============ SERVICE NAV BAR ============ */
-    .svcnav-item{position:relative;display:flex;flex-direction:column;gap:6px;padding:34px 28px 30px;text-decoration:none;color:inherit;border-right:1px solid rgba(55,212,19,0.08);overflow:hidden;transition:background 0.35s}
+    .svcnav-item{position:relative;display:flex;flex-direction:column;gap:7px;padding:36px 30px 32px;text-decoration:none;color:inherit;border-right:1px solid rgba(55,212,19,0.1);overflow:hidden;transition:background 0.35s}
     .svcnav-item:last-child{border-right:none}
-    .svcnav-item::before{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,transparent,#00FF00 40%,#37D413 60%,transparent);transform:scaleY(0);transform-origin:center;transition:transform 0.35s cubic-bezier(0.4,0,0.2,1);box-shadow:0 0 12px rgba(0,255,0,0.8)}
-    .svcnav-item::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 120% 100% at 0% 60%,rgba(0,255,0,0.09) 0%,transparent 65%);opacity:0;transition:opacity 0.35s;pointer-events:none}
-    .svcnav-item:hover{background:rgba(0,255,0,0.025)}
+    /* Left accent line — glows on hover */
+    .svcnav-item::before{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,transparent,#00FF00 35%,#37D413 65%,transparent);transform:scaleY(0);transform-origin:center;transition:transform 0.4s cubic-bezier(0.4,0,0.2,1);box-shadow:0 0 18px rgba(0,255,0,1),0 0 40px rgba(0,255,0,0.4)}
+    /* Card glow sweep */
+    .svcnav-item::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 140% 110% at 0% 60%,rgba(0,255,0,0.11) 0%,transparent 60%);opacity:0;transition:opacity 0.4s;pointer-events:none}
+    .svcnav-item:hover{background:rgba(0,255,0,0.03)}
     .svcnav-item:hover::before{transform:scaleY(1)}
     .svcnav-item:hover::after{opacity:1}
-    .svcnav-item:hover .svcnav-num{color:#00FF00;text-shadow:0 0 12px rgba(0,255,0,0.8)}
-    .svcnav-item:hover .svcnav-name{color:#fff}
-    .svcnav-item:hover .svcnav-arrow{transform:translateX(5px);color:#00FF00}
-    .svcnav-item:hover .svcnav-icon{opacity:1;filter:drop-shadow(0 0 6px rgba(0,255,0,0.6))}
-    .svcnav-num{font-family:'Outfit',sans-serif;font-size:10px;font-weight:700;letter-spacing:2.5px;color:rgba(55,212,19,0.45);transition:color 0.3s,text-shadow 0.3s}
-    .svcnav-icon{width:34px;height:34px;margin:6px 0 4px;opacity:0.65;transition:opacity 0.3s,filter 0.3s}
-    .svcnav-name{font-family:'Outfit',sans-serif;font-size:1.05rem;font-weight:900;color:rgba(255,255,255,0.85);line-height:1.2;transition:color 0.3s}
-    .svcnav-desc{font-size:12px;color:rgba(255,255,255,0.35);line-height:1.6;max-width:200px;margin-top:2px}
-    .svcnav-badge{display:inline-flex;align-items:center;gap:5px;font-size:10px;font-family:'Outfit',sans-serif;font-weight:700;letter-spacing:0.5px;color:rgba(55,212,19,0.65);margin-top:6px}
-    .svcnav-arrow{margin-top:auto;padding-top:18px;font-size:11px;font-family:'Outfit',sans-serif;font-weight:700;letter-spacing:0.5px;color:rgba(255,255,255,0.22);transition:transform 0.25s,color 0.25s;display:block}
-    @media(max-width:860px){.svcnav-grid{grid-template-columns:repeat(2,1fr)!important}.svcnav-item:nth-child(2){border-right:none}.svcnav-item:nth-child(1),.svcnav-item:nth-child(2){border-bottom:1px solid rgba(55,212,19,0.08)}}
-    @media(max-width:480px){.svcnav-grid{grid-template-columns:1fr!important}.svcnav-item{border-right:none;border-bottom:1px solid rgba(55,212,19,0.08)}.svcnav-item:last-child{border-bottom:none}}
+    .svcnav-item:hover .svcnav-num{color:#00FF00;text-shadow:0 0 16px rgba(0,255,0,0.9)}
+    .svcnav-item:hover .svcnav-name{color:#fff;text-shadow:0 0 20px rgba(0,255,0,0.15)}
+    .svcnav-item:hover .svcnav-arrow{transform:translateX(6px);color:#00FF00;text-shadow:0 0 12px rgba(0,255,0,0.6)}
+    .svcnav-item:hover .svcnav-icon{opacity:1;filter:drop-shadow(0 0 8px rgba(0,255,0,0.7))}
+    /* Number */
+    .svcnav-num{font-family:'Outfit',sans-serif;font-size:10px;font-weight:700;letter-spacing:3px;color:rgba(55,212,19,0.5);transition:color 0.3s,text-shadow 0.3s}
+    /* Icon */
+    .svcnav-icon{width:36px;height:36px;margin:6px 0 5px;opacity:0.7;transition:opacity 0.3s,filter 0.3s}
+    /* Name */
+    .svcnav-name{font-family:'Outfit',sans-serif;font-size:1.1rem;font-weight:900;color:rgba(255,255,255,0.9);line-height:1.2;transition:color 0.3s,text-shadow 0.3s}
+    /* Description */
+    .svcnav-desc{font-size:13px;color:rgba(255,255,255,0.4);line-height:1.65;max-width:210px;margin-top:3px}
+    /* Warranty badge */
+    .svcnav-badge{display:inline-flex;align-items:center;gap:5px;font-size:10px;font-family:'Outfit',sans-serif;font-weight:700;letter-spacing:0.5px;color:rgba(55,212,19,0.7);margin-top:8px}
+    /* Arrow — permanently green */
+    .svcnav-arrow{margin-top:auto;padding-top:20px;font-size:12px;font-family:'Outfit',sans-serif;font-weight:700;letter-spacing:0.5px;color:#37D413;text-shadow:0 0 10px rgba(0,255,0,0.35);transition:transform 0.25s,color 0.25s,text-shadow 0.25s;display:block}
+    /* Tablet: 2 col */
+    @media(max-width:860px){
+      .svcnav-grid{grid-template-columns:repeat(2,1fr)!important}
+      .svcnav-item:nth-child(2){border-right:none}
+      .svcnav-item:nth-child(1),.svcnav-item:nth-child(2){border-bottom:1px solid rgba(55,212,19,0.1)}
+      .svcnav-name{font-size:1.15rem}
+      .svcnav-desc{font-size:13px;max-width:100%}
+      .svcnav-badge{font-size:11px}
+      .svcnav-arrow{font-size:13px}
+    }
+    /* Mobile: 1 col */
+    @media(max-width:480px){
+      .svcnav-grid{grid-template-columns:1fr!important}
+      .svcnav-item{border-right:none;border-bottom:1px solid rgba(55,212,19,0.1);padding:28px 22px 24px}
+      .svcnav-item:last-child{border-bottom:none}
+      .svcnav-num{font-size:11px}
+      .svcnav-icon{width:32px;height:32px}
+      .svcnav-name{font-size:1.2rem}
+      .svcnav-desc{font-size:13.5px;max-width:100%}
+      .svcnav-badge{font-size:11.5px}
+      .svcnav-arrow{font-size:13px;padding-top:16px}
+    }
 
     /* ============ COMPARISON CARD GRID ============ */
     .cmp-section {
@@ -532,8 +560,8 @@
 </section>
 
 <!-- SERVICE NAV -->
-<div style="position:relative;background-color:#0b0f0b;background-image:radial-gradient(ellipse 90% 160% at 50% -20%,rgba(0,255,0,0.13) 0%,transparent 65%),radial-gradient(ellipse 40% 80% at 0% 50%,rgba(0,255,0,0.07) 0%,transparent 60%),radial-gradient(ellipse 40% 80% at 100% 50%,rgba(0,255,0,0.07) 0%,transparent 60%)">
-  <div style="height:1px;background:linear-gradient(90deg,transparent 0%,#37D413 30%,#00FF00 50%,#37D413 70%,transparent 100%);opacity:0.35"></div>
+<div style="position:relative;background-color:#0b0f0b;background-image:radial-gradient(ellipse 100% 200% at 50% -10%,rgba(0,255,0,0.18) 0%,transparent 60%),radial-gradient(ellipse 50% 100% at 0% 50%,rgba(0,255,0,0.10) 0%,transparent 60%),radial-gradient(ellipse 50% 100% at 100% 50%,rgba(0,255,0,0.10) 0%,transparent 60%)">
+  <div style="height:1px;background:linear-gradient(90deg,transparent 0%,#37D413 25%,#00FF00 50%,#37D413 75%,transparent 100%);opacity:0.55;box-shadow:0 0 20px rgba(0,255,0,0.4)"></div>
   <div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr)" class="svcnav-grid">
     <a href="/silicone-render-sheffield" class="svcnav-item">
       <div class="svcnav-num">01</div>
@@ -568,7 +596,7 @@
       <div class="svcnav-arrow">View service →</div>
     </a>
   </div>
-  <div style="height:1px;background:linear-gradient(90deg,transparent 0%,#37D413 30%,#00FF00 50%,#37D413 70%,transparent 100%);opacity:0.18"></div>
+  <div style="height:1px;background:linear-gradient(90deg,transparent 0%,#37D413 25%,#00FF00 50%,#37D413 75%,transparent 100%);opacity:0.25;box-shadow:0 0 16px rgba(0,255,0,0.25)"></div>
 </div>
 
 <!-- SERVICES -->
