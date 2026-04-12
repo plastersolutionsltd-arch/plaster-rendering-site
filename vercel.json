@@ -3,196 +3,448 @@
   "outputDirectory": ".",
   "framework": null,
   "redirects": [
-    { "source": "/index.html",  "destination": "/",    "permanent": true },
-    { "source": "/:slug.html",  "destination": "/:slug", "permanent": true },
-    { "source": "/plastering-sheffield/",      "destination": "/plastering-sheffield",        "permanent": true },
-    { "source": "/plastering/",               "destination": "/plastering-sheffield",        "permanent": true },
-    { "source": "/plastering",                "destination": "/plastering-sheffield",        "permanent": true },
-    { "source": "/silicone-render/",          "destination": "/silicone-render-sheffield",   "permanent": true },
-    { "source": "/silicone-render",           "destination": "/silicone-render-sheffield",   "permanent": true },
-    { "source": "/monocouche-render/",        "destination": "/monocouche-render-sheffield", "permanent": true },
-    { "source": "/monocouche-render",         "destination": "/monocouche-render-sheffield", "permanent": true },
-    { "source": "/ewi-sheffield/",            "destination": "/ewi-sheffield",               "permanent": true },
-    { "source": "/ewi/",                      "destination": "/ewi-sheffield",               "permanent": true },
-    { "source": "/ewi",                       "destination": "/ewi-sheffield",               "permanent": true },
-    { "source": "/external-wall-insulation/", "destination": "/ewi-sheffield",               "permanent": true },
-    { "source": "/external-wall-insulation",  "destination": "/ewi-sheffield",               "permanent": true },
-    { "source": "/internal-plastering/",      "destination": "/plastering-sheffield",        "permanent": true },
-    { "source": "/internal-plastering",       "destination": "/plastering-sheffield",        "permanent": true },
-    { "source": "/dry-lining/",              "destination": "/dry-lining-sheffield",        "permanent": true },
-    { "source": "/dry-lining",               "destination": "/dry-lining-sheffield",        "permanent": true },
-    { "source": "/render-repair/",           "destination": "/render-repair-sheffield",     "permanent": true },
-    { "source": "/render-repair",            "destination": "/render-repair-sheffield",     "permanent": true },
-    { "source": "/pricing/",                 "destination": "/pricing",                     "permanent": true },
-    { "source": "/faq/",                     "destination": "/faq",                         "permanent": true },
-    { "source": "/portfolio",                "destination": "/projects",                    "permanent": true },
-    { "source": "/portfolio/",               "destination": "/projects",                    "permanent": true },
-    { "source": "/services",                 "destination": "/",                            "permanent": true },
-    { "source": "/services/",               "destination": "/",                            "permanent": true },
-    { "source": "/warranties",               "destination": "/",                            "permanent": true },
-    { "source": "/warranties/",             "destination": "/",                            "permanent": true },
-    { "source": "/contact",                  "destination": "/get-quote",                   "permanent": true },
-    { "source": "/contact/",                "destination": "/get-quote",                   "permanent": true }
+    { "source": "/:slug/", "destination": "/:slug", "permanent": true },
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/:slug.html",
+      "destination": "/:slug",
+      "permanent": true
+    },
+    {
+      "source": "/plastering/",
+      "destination": "/plastering-sheffield",
+      "permanent": true
+    },
+    {
+      "source": "/plastering",
+      "destination": "/plastering-sheffield",
+      "permanent": true
+    },
+    {
+      "source": "/silicone-render/",
+      "destination": "/silicone-render-sheffield",
+      "permanent": true
+    },
+    {
+      "source": "/silicone-render",
+      "destination": "/silicone-render-sheffield",
+      "permanent": true
+    },
+    {
+      "source": "/monocouche-render/",
+      "destination": "/monocouche-render-sheffield",
+      "permanent": true
+    },
+    {
+      "source": "/monocouche-render",
+      "destination": "/monocouche-render-sheffield",
+      "permanent": true
+    },
+    {
+      "source": "/ewi/",
+      "destination": "/ewi-sheffield",
+      "permanent": true
+    },
+    {
+      "source": "/ewi",
+      "destination": "/ewi-sheffield",
+      "permanent": true
+    },
+    {
+      "source": "/external-wall-insulation/",
+      "destination": "/ewi-sheffield",
+      "permanent": true
+    },
+    {
+      "source": "/external-wall-insulation",
+      "destination": "/ewi-sheffield",
+      "permanent": true
+    },
+    {
+      "source": "/internal-plastering/",
+      "destination": "/plastering-sheffield",
+      "permanent": true
+    },
+    {
+      "source": "/internal-plastering",
+      "destination": "/plastering-sheffield",
+      "permanent": true
+    },
+    {
+      "source": "/dry-lining/",
+      "destination": "/dry-lining-sheffield",
+      "permanent": true
+    },
+    {
+      "source": "/dry-lining",
+      "destination": "/dry-lining-sheffield",
+      "permanent": true
+    },
+    {
+      "source": "/render-repair/",
+      "destination": "/render-repair-sheffield",
+      "permanent": true
+    },
+    {
+      "source": "/render-repair",
+      "destination": "/render-repair-sheffield",
+      "permanent": true
+    },
+    {
+      "source": "/portfolio",
+      "destination": "/projects",
+      "permanent": true
+    },
+    {
+      "source": "/portfolio/",
+      "destination": "/projects",
+      "permanent": true
+    },
+    {
+      "source": "/services",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/services/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/warranties",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/warranties/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/contact",
+      "destination": "/get-quote",
+      "permanent": true
+    },
+    {
+      "source": "/contact/",
+      "destination": "/get-quote",
+      "permanent": true
+    }
   ],
   "rewrites": [
-    { "source": "/", "destination": "/index.html" },
-    { "source": "/silicone-render-sheffield",   "destination": "/silicone-render-sheffield.html" },
-    { "source": "/monocouche-render-sheffield", "destination": "/monocouche-render-sheffield.html" },
-    { "source": "/ewi-sheffield",               "destination": "/ewi-sheffield.html" },
-    { "source": "/plastering-sheffield",        "destination": "/plastering-sheffield.html" },
-    { "source": "/dry-lining-sheffield",        "destination": "/dry-lining-sheffield.html" },
-    { "source": "/pricing",                     "destination": "/pricing.html" },
-    { "source": "/get-quote",                   "destination": "/get-quote.html" },
-    { "source": "/get-quote/",                  "destination": "/get-quote.html" },
-    { "source": "/how-we-apply",  "destination": "/how-we-apply.html" },
-    { "source": "/how-we-apply/", "destination": "/how-we-apply.html" },
-    { "source": "/faq", "destination": "/faq.html" },
-    { "source": "/privacy",    "destination": "/privacy.html" },
-    { "source": "/privacy/",   "destination": "/privacy.html" },
-    { "source": "/thank-you",  "destination": "/thank-you.html" },
-    { "source": "/thank-you/", "destination": "/thank-you.html" },
-    { "source": "/chapeltown-sheffield",  "destination": "/chapeltown-sheffield.html" },
-    { "source": "/chapeltown-sheffield/", "destination": "/chapeltown-sheffield.html" },
-    { "source": "/ecclesfield-sheffield",  "destination": "/ecclesfield-sheffield.html" },
-    { "source": "/ecclesfield-sheffield/", "destination": "/ecclesfield-sheffield.html" },
-    { "source": "/high-green-sheffield",  "destination": "/high-green-sheffield.html" },
-    { "source": "/high-green-sheffield/", "destination": "/high-green-sheffield.html" },
-    { "source": "/hillsborough-sheffield",  "destination": "/hillsborough-sheffield.html" },
-    { "source": "/hillsborough-sheffield/", "destination": "/hillsborough-sheffield.html" },
-    { "source": "/sandygate-sheffield",  "destination": "/sandygate-sheffield.html" },
-    { "source": "/sandygate-sheffield/", "destination": "/sandygate-sheffield.html" },
-    { "source": "/fulwood-sheffield",  "destination": "/fulwood-sheffield.html" },
-    { "source": "/fulwood-sheffield/", "destination": "/fulwood-sheffield.html" },
-    { "source": "/oughtibridge-sheffield",  "destination": "/oughtibridge-sheffield.html" },
-    { "source": "/oughtibridge-sheffield/", "destination": "/oughtibridge-sheffield.html" },
-    { "source": "/stocksbridge-sheffield",  "destination": "/stocksbridge-sheffield.html" },
-    { "source": "/stocksbridge-sheffield/", "destination": "/stocksbridge-sheffield.html" },
-    { "source": "/walkley-sheffield",  "destination": "/walkley-sheffield.html" },
-    { "source": "/walkley-sheffield/", "destination": "/walkley-sheffield.html" },
-    { "source": "/crookes-sheffield",  "destination": "/crookes-sheffield.html" },
-    { "source": "/crookes-sheffield/", "destination": "/crookes-sheffield.html" },
-    { "source": "/crosspool-sheffield",  "destination": "/crosspool-sheffield.html" },
-    { "source": "/crosspool-sheffield/", "destination": "/crosspool-sheffield.html" },
-    { "source": "/grenoside-sheffield",  "destination": "/grenoside-sheffield.html" },
-    { "source": "/grenoside-sheffield/", "destination": "/grenoside-sheffield.html" },
-    { "source": "/dore-sheffield",       "destination": "/dore-sheffield.html" },
-    { "source": "/dore-sheffield/",      "destination": "/dore-sheffield.html" },
-    { "source": "/totley-sheffield",     "destination": "/totley-sheffield.html" },
-    { "source": "/totley-sheffield/",    "destination": "/totley-sheffield.html" },
-    { "source": "/norton-sheffield",     "destination": "/norton-sheffield.html" },
-    { "source": "/norton-sheffield/",    "destination": "/norton-sheffield.html" },
-    { "source": "/stannington-sheffield",  "destination": "/stannington-sheffield.html" },
-    { "source": "/stannington-sheffield/", "destination": "/stannington-sheffield.html" },
-    { "source": "/worrall-sheffield",    "destination": "/worrall-sheffield.html" },
-    { "source": "/worrall-sheffield/",   "destination": "/worrall-sheffield.html" },
-    { "source": "/woodseats-sheffield",  "destination": "/woodseats-sheffield.html" },
-    { "source": "/woodseats-sheffield/", "destination": "/woodseats-sheffield.html" },
-    { "source": "/abbeydale-sheffield",  "destination": "/abbeydale-sheffield.html" },
-    { "source": "/abbeydale-sheffield/", "destination": "/abbeydale-sheffield.html" },
-    { "source": "/beauchief-sheffield",  "destination": "/beauchief-sheffield.html" },
-    { "source": "/beauchief-sheffield/", "destination": "/beauchief-sheffield.html" },
-    { "source": "/millhouses-sheffield",  "destination": "/millhouses-sheffield.html" },
-    { "source": "/millhouses-sheffield/", "destination": "/millhouses-sheffield.html" },
-    { "source": "/gleadless-sheffield",   "destination": "/gleadless-sheffield.html" },
-    { "source": "/gleadless-sheffield/",  "destination": "/gleadless-sheffield.html" },
-    { "source": "/meersbrook-sheffield",  "destination": "/meersbrook-sheffield.html" },
-    { "source": "/meersbrook-sheffield/", "destination": "/meersbrook-sheffield.html" },
-    { "source": "/nether-edge-sheffield",  "destination": "/nether-edge-sheffield.html" },
-    { "source": "/nether-edge-sheffield/", "destination": "/nether-edge-sheffield.html" },
-    { "source": "/broomhill-sheffield",   "destination": "/broomhill-sheffield.html" },
-    { "source": "/broomhill-sheffield/",  "destination": "/broomhill-sheffield.html" },
-    { "source": "/sharrow-sheffield",     "destination": "/sharrow-sheffield.html" },
-    { "source": "/sharrow-sheffield/",    "destination": "/sharrow-sheffield.html" },
-    { "source": "/lodge-moor-sheffield",  "destination": "/lodge-moor-sheffield.html" },
-    { "source": "/lodge-moor-sheffield/", "destination": "/lodge-moor-sheffield.html" },
-    { "source": "/loxley-sheffield",      "destination": "/loxley-sheffield.html" },
-    { "source": "/loxley-sheffield/",     "destination": "/loxley-sheffield.html" },
-    { "source": "/firth-park-sheffield",  "destination": "/firth-park-sheffield.html" },
-    { "source": "/firth-park-sheffield/", "destination": "/firth-park-sheffield.html" },
-    { "source": "/southey-sheffield",     "destination": "/southey-sheffield.html" },
-    { "source": "/southey-sheffield/",    "destination": "/southey-sheffield.html" },
-    { "source": "/malin-bridge-sheffield",  "destination": "/malin-bridge-sheffield.html" },
-    { "source": "/malin-bridge-sheffield/", "destination": "/malin-bridge-sheffield.html" },
-    { "source": "/wisewood-sheffield",    "destination": "/wisewood-sheffield.html" },
-    { "source": "/wisewood-sheffield/",   "destination": "/wisewood-sheffield.html" },
-    { "source": "/parson-cross-sheffield",  "destination": "/parson-cross-sheffield.html" },
-    { "source": "/parson-cross-sheffield/", "destination": "/parson-cross-sheffield.html" },
-    { "source": "/wadsley-sheffield",     "destination": "/wadsley-sheffield.html" },
-    { "source": "/wadsley-sheffield/",    "destination": "/wadsley-sheffield.html" },
-    { "source": "/wincobank-sheffield",   "destination": "/wincobank-sheffield.html" },
-    { "source": "/wincobank-sheffield/",  "destination": "/wincobank-sheffield.html" },
-    { "source": "/rendering-cost-sheffield",  "destination": "/rendering-cost-sheffield.html" },
-    { "source": "/rendering-cost-sheffield/", "destination": "/rendering-cost-sheffield.html" },
-    { "source": "/projects",  "destination": "/projects.html" },
-    { "source": "/projects/", "destination": "/projects.html" },
-    { "source": "/render-repair-sheffield",  "destination": "/render-repair-sheffield.html" },
-    { "source": "/render-repair-sheffield/", "destination": "/render-repair-sheffield.html" },
-    { "source": "/sandygate-silicone-render-case-study",  "destination": "/sandygate-silicone-render-case-study.html" },
-    { "source": "/sandygate-silicone-render-case-study/", "destination": "/sandygate-silicone-render-case-study.html" },
-    { "source": "/beighton-sheffield",      "destination": "/beighton-sheffield.html" },
-    { "source": "/beighton-sheffield/",     "destination": "/beighton-sheffield.html" },
-    { "source": "/mosborough-sheffield",    "destination": "/mosborough-sheffield.html" },
-    { "source": "/mosborough-sheffield/",   "destination": "/mosborough-sheffield.html" },
-    { "source": "/halfway-sheffield",       "destination": "/halfway-sheffield.html" },
-    { "source": "/halfway-sheffield/",      "destination": "/halfway-sheffield.html" },
-    { "source": "/crystal-peaks-sheffield",  "destination": "/crystal-peaks-sheffield.html" },
-    { "source": "/crystal-peaks-sheffield/", "destination": "/crystal-peaks-sheffield.html" }
+    {
+      "source": "/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/silicone-render-sheffield",
+      "destination": "/silicone-render-sheffield.html"
+    },
+    {
+      "source": "/monocouche-render-sheffield",
+      "destination": "/monocouche-render-sheffield.html"
+    },
+    {
+      "source": "/ewi-sheffield",
+      "destination": "/ewi-sheffield.html"
+    },
+    {
+      "source": "/plastering-sheffield",
+      "destination": "/plastering-sheffield.html"
+    },
+    {
+      "source": "/dry-lining-sheffield",
+      "destination": "/dry-lining-sheffield.html"
+    },
+    {
+      "source": "/pricing",
+      "destination": "/pricing.html"
+    },
+    {
+      "source": "/get-quote",
+      "destination": "/get-quote.html"
+    },
+    {
+      "source": "/how-we-apply",
+      "destination": "/how-we-apply.html"
+    },
+    {
+      "source": "/faq",
+      "destination": "/faq.html"
+    },
+    {
+      "source": "/privacy",
+      "destination": "/privacy.html"
+    },
+    {
+      "source": "/thank-you",
+      "destination": "/thank-you.html"
+    },
+    {
+      "source": "/chapeltown-sheffield",
+      "destination": "/chapeltown-sheffield.html"
+    },
+    {
+      "source": "/ecclesfield-sheffield",
+      "destination": "/ecclesfield-sheffield.html"
+    },
+    {
+      "source": "/high-green-sheffield",
+      "destination": "/high-green-sheffield.html"
+    },
+    {
+      "source": "/hillsborough-sheffield",
+      "destination": "/hillsborough-sheffield.html"
+    },
+    {
+      "source": "/sandygate-sheffield",
+      "destination": "/sandygate-sheffield.html"
+    },
+    {
+      "source": "/fulwood-sheffield",
+      "destination": "/fulwood-sheffield.html"
+    },
+    {
+      "source": "/oughtibridge-sheffield",
+      "destination": "/oughtibridge-sheffield.html"
+    },
+    {
+      "source": "/stocksbridge-sheffield",
+      "destination": "/stocksbridge-sheffield.html"
+    },
+    {
+      "source": "/walkley-sheffield",
+      "destination": "/walkley-sheffield.html"
+    },
+    {
+      "source": "/crookes-sheffield",
+      "destination": "/crookes-sheffield.html"
+    },
+    {
+      "source": "/crosspool-sheffield",
+      "destination": "/crosspool-sheffield.html"
+    },
+    {
+      "source": "/grenoside-sheffield",
+      "destination": "/grenoside-sheffield.html"
+    },
+    {
+      "source": "/dore-sheffield",
+      "destination": "/dore-sheffield.html"
+    },
+    {
+      "source": "/totley-sheffield",
+      "destination": "/totley-sheffield.html"
+    },
+    {
+      "source": "/norton-sheffield",
+      "destination": "/norton-sheffield.html"
+    },
+    {
+      "source": "/stannington-sheffield",
+      "destination": "/stannington-sheffield.html"
+    },
+    {
+      "source": "/worrall-sheffield",
+      "destination": "/worrall-sheffield.html"
+    },
+    {
+      "source": "/woodseats-sheffield",
+      "destination": "/woodseats-sheffield.html"
+    },
+    {
+      "source": "/abbeydale-sheffield",
+      "destination": "/abbeydale-sheffield.html"
+    },
+    {
+      "source": "/beauchief-sheffield",
+      "destination": "/beauchief-sheffield.html"
+    },
+    {
+      "source": "/millhouses-sheffield",
+      "destination": "/millhouses-sheffield.html"
+    },
+    {
+      "source": "/gleadless-sheffield",
+      "destination": "/gleadless-sheffield.html"
+    },
+    {
+      "source": "/meersbrook-sheffield",
+      "destination": "/meersbrook-sheffield.html"
+    },
+    {
+      "source": "/nether-edge-sheffield",
+      "destination": "/nether-edge-sheffield.html"
+    },
+    {
+      "source": "/broomhill-sheffield",
+      "destination": "/broomhill-sheffield.html"
+    },
+    {
+      "source": "/sharrow-sheffield",
+      "destination": "/sharrow-sheffield.html"
+    },
+    {
+      "source": "/lodge-moor-sheffield",
+      "destination": "/lodge-moor-sheffield.html"
+    },
+    {
+      "source": "/loxley-sheffield",
+      "destination": "/loxley-sheffield.html"
+    },
+    {
+      "source": "/firth-park-sheffield",
+      "destination": "/firth-park-sheffield.html"
+    },
+    {
+      "source": "/southey-sheffield",
+      "destination": "/southey-sheffield.html"
+    },
+    {
+      "source": "/malin-bridge-sheffield",
+      "destination": "/malin-bridge-sheffield.html"
+    },
+    {
+      "source": "/wisewood-sheffield",
+      "destination": "/wisewood-sheffield.html"
+    },
+    {
+      "source": "/parson-cross-sheffield",
+      "destination": "/parson-cross-sheffield.html"
+    },
+    {
+      "source": "/wadsley-sheffield",
+      "destination": "/wadsley-sheffield.html"
+    },
+    {
+      "source": "/wincobank-sheffield",
+      "destination": "/wincobank-sheffield.html"
+    },
+    {
+      "source": "/rendering-cost-sheffield",
+      "destination": "/rendering-cost-sheffield.html"
+    },
+    {
+      "source": "/projects",
+      "destination": "/projects.html"
+    },
+    {
+      "source": "/render-repair-sheffield",
+      "destination": "/render-repair-sheffield.html"
+    },
+    {
+      "source": "/sandygate-silicone-render-case-study",
+      "destination": "/sandygate-silicone-render-case-study.html"
+    },
+    {
+      "source": "/beighton-sheffield",
+      "destination": "/beighton-sheffield.html"
+    },
+    {
+      "source": "/mosborough-sheffield",
+      "destination": "/mosborough-sheffield.html"
+    },
+    {
+      "source": "/halfway-sheffield",
+      "destination": "/halfway-sheffield.html"
+    },
+    {
+      "source": "/crystal-peaks-sheffield",
+      "destination": "/crystal-peaks-sheffield.html"
+    }
   ],
   "headers": [
     {
       "source": "/service-worker.js",
       "headers": [
-        { "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate" }
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, no-store, must-revalidate"
+        }
       ]
     },
     {
       "source": "/index.html",
       "headers": [
-        { "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate" },
-        { "key": "Vercel-CDN-Cache-Control", "value": "no-store" }
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, no-store, must-revalidate"
+        },
+        {
+          "key": "Vercel-CDN-Cache-Control",
+          "value": "no-store"
+        }
       ]
     },
     {
       "source": "/",
       "headers": [
-        { "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate" },
-        { "key": "Vercel-CDN-Cache-Control", "value": "no-store" }
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, no-store, must-revalidate"
+        },
+        {
+          "key": "Vercel-CDN-Cache-Control",
+          "value": "no-store"
+        }
       ]
     },
     {
       "source": "/app.min.js",
       "headers": [
-        { "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate" }
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, no-store, must-revalidate"
+        }
       ]
     },
     {
       "source": "/react.production.min.js",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
       ]
     },
     {
       "source": "/react-dom.production.min.js",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
       ]
     },
     {
       "source": "/styles.css",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
       ]
     },
     {
       "source": "/app.css",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
       ]
     },
     {
       "source": "/images/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
       ]
     }
   ]
