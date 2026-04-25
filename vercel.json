@@ -3,6 +3,8 @@
   "outputDirectory": ".",
   "framework": null,
   "redirects": [
+    { "source": "/faq/", "destination": "/faq", "permanent": true },
+    { "source": "/portfolio/", "destination": "/projects", "permanent": true },
     { "source": "/:slug/", "destination": "/:slug", "permanent": true },
     {
       "source": "/index.html",
@@ -96,11 +98,6 @@
     },
     {
       "source": "/portfolio",
-      "destination": "/projects",
-      "permanent": true
-    },
-    {
-      "source": "/portfolio/",
       "destination": "/projects",
       "permanent": true
     },
