@@ -352,6 +352,14 @@
     {
       "source": "/crystal-peaks-sheffield",
       "destination": "/crystal-peaks-sheffield.html"
+    },
+    {
+      "source": "/rotherham-south-yorkshire",
+      "destination": "/rotherham-south-yorkshire.html"
+    },
+    {
+      "source": "/sand-cement-render-sheffield",
+      "destination": "/sand-cement-render-sheffield.html"
     }
   ],
   "headers": [
