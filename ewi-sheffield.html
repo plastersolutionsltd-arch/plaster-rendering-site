@@ -1277,60 +1277,6 @@
 </section>
 
 
-<script>
-  // Scroll reveal
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); observer.unobserve(e.target) } })
-  }, { threshold:.12, rootMargin:'0px 0px -40px 0px' });
-  document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.reveal-scale,.reveal-fade').forEach(el => observer.observe(el));
-
-  // Lime line grow
-  const lineObs = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); lineObs.unobserve(e.target) } })
-  }, { threshold:.5 });
-  document.querySelectorAll('.lime-line').forEach(el => { el.classList.remove('visible'); lineObs.observe(el) });
-
-  // Expandable rows — shared toggle for all sections
-  function toggleExp(item) {
-    const isOpen = item.classList.contains('open');
-    item.closest('.divide-y').querySelectorAll('.exp-item.open').forEach(el => el.classList.remove('open'));
-    if (!isOpen) item.classList.add('open');
-  }
-
-  // Mobile nav
-  function toggleMobileMenu() {
-    const menu = document.getElementById('mobile-menu');
-    const b1 = document.getElementById('b1');
-    const b2 = document.getElementById('b2');
-    const b3 = document.getElementById('b3');
-    const isOpen = menu.classList.contains('open');
-    menu.classList.toggle('open');
-    if (!isOpen) {
-      b1.style.cssText = 'transform:translateY(7px) rotate(45deg)';
-      b2.style.cssText = 'opacity:0';
-      b3.style.cssText = 'transform:translateY(-7px) rotate(-45deg)';
-    } else {
-      b1.style.cssText = b2.style.cssText = b3.style.cssText = '';
-    }
-  }
-  function closeMenu() {
-    const menu = document.getElementById('mobile-menu');
-    if (menu.classList.contains('open')) {
-      menu.classList.remove('open');
-      document.getElementById('b1').style.cssText = '';
-      document.getElementById('b2').style.cssText = '';
-      document.getElementById('b3').style.cssText = '';
-    }
-  }
-
-  // Full-width FAQ accordion
-  function toggleFaq(item) {
-    const isOpen = item.classList.contains('open');
-    document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
-    if (!isOpen) item.classList.add('open');
-  }
-</script>
-
 
 <!-- SEO TEXT SECTION -->
 <section class="py-20 lg:py-28" style="background-color:#0b0f0b;border-top:1px solid rgba(55,212,19,0.1)">
@@ -1428,6 +1374,61 @@
     </div>
   </div>
 </section>
+
+<script>
+  // Scroll reveal
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); observer.unobserve(e.target) } })
+  }, { threshold:.12, rootMargin:'0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal,.reveal-left,.reveal-right,.reveal-scale,.reveal-fade').forEach(el => observer.observe(el));
+
+  // Lime line grow
+  const lineObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); lineObs.unobserve(e.target) } })
+  }, { threshold:.5 });
+  document.querySelectorAll('.lime-line').forEach(el => { el.classList.remove('visible'); lineObs.observe(el) });
+
+  // Expandable rows — shared toggle for all sections
+  function toggleExp(item) {
+    const isOpen = item.classList.contains('open');
+    item.closest('.divide-y').querySelectorAll('.exp-item.open').forEach(el => el.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+
+  // Mobile nav
+  function toggleMobileMenu() {
+    const menu = document.getElementById('mobile-menu');
+    const b1 = document.getElementById('b1');
+    const b2 = document.getElementById('b2');
+    const b3 = document.getElementById('b3');
+    const isOpen = menu.classList.contains('open');
+    menu.classList.toggle('open');
+    if (!isOpen) {
+      b1.style.cssText = 'transform:translateY(7px) rotate(45deg)';
+      b2.style.cssText = 'opacity:0';
+      b3.style.cssText = 'transform:translateY(-7px) rotate(-45deg)';
+    } else {
+      b1.style.cssText = b2.style.cssText = b3.style.cssText = '';
+    }
+  }
+  function closeMenu() {
+    const menu = document.getElementById('mobile-menu');
+    if (menu.classList.contains('open')) {
+      menu.classList.remove('open');
+      document.getElementById('b1').style.cssText = '';
+      document.getElementById('b2').style.cssText = '';
+      document.getElementById('b3').style.cssText = '';
+    }
+  }
+
+  // Full-width FAQ accordion
+  function toggleFaq(item) {
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+</script>
+
 
 <!-- ══════════════════════════════════════════════════
      FOOTER
