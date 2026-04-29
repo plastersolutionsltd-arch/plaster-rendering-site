@@ -5,7 +5,7 @@
     <!-- Homepage -->
     <url>
         <loc>https://www.plasterandrenderingsolutions.co.uk/</loc>
-        <lastmod>2026-04-10</lastmod>
+        <lastmod>2026-04-29</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -13,7 +13,7 @@
     <!-- Silicone Render -->
     <url>
         <loc>https://www.plasterandrenderingsolutions.co.uk/silicone-render-sheffield</loc>
-        <lastmod>2026-04-10</lastmod>
+        <lastmod>2026-04-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
         <image:image>
@@ -33,7 +33,7 @@
     <!-- Monocouche Render -->
     <url>
         <loc>https://www.plasterandrenderingsolutions.co.uk/monocouche-render-sheffield</loc>
-        <lastmod>2026-04-10</lastmod>
+        <lastmod>2026-04-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
         <image:image>
@@ -57,7 +57,7 @@
     <!-- External Wall Insulation -->
     <url>
         <loc>https://www.plasterandrenderingsolutions.co.uk/ewi-sheffield</loc>
-        <lastmod>2026-04-10</lastmod>
+        <lastmod>2026-04-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
         <image:image>
@@ -81,7 +81,7 @@
     <!-- Plastering Sheffield -->
     <url>
         <loc>https://www.plasterandrenderingsolutions.co.uk/plastering-sheffield</loc>
-        <lastmod>2026-04-10</lastmod>
+        <lastmod>2026-04-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
         <image:image>
@@ -105,7 +105,7 @@
     <!-- Dry Lining -->
     <url>
         <loc>https://www.plasterandrenderingsolutions.co.uk/dry-lining-sheffield</loc>
-        <lastmod>2026-04-10</lastmod>
+        <lastmod>2026-04-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
         <image:image>
@@ -510,7 +510,7 @@
 
     <url>
         <loc>https://www.plasterandrenderingsolutions.co.uk/render-repair-sheffield</loc>
-        <lastmod>2026-04-05</lastmod>
+        <lastmod>2026-04-29</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
         <image:image>
@@ -573,6 +573,22 @@
             <image:loc>https://www.plasterandrenderingsolutions.co.uk/images/case-studies/s17-close-up-detail.webp</image:loc>
             <image:title>Render close-up finish near Crystal Peaks S20 Sheffield by P&amp;R Solutions</image:title>
         </image:image>
+    </url>
+
+    <!-- Rotherham -->
+    <url>
+        <loc>https://www.plasterandrenderingsolutions.co.uk/rotherham-south-yorkshire</loc>
+        <lastmod>2026-04-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Sand & Cement Render -->
+    <url>
+        <loc>https://www.plasterandrenderingsolutions.co.uk/sand-cement-render-sheffield</loc>
+        <lastmod>2026-04-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
     </url>
 
 </urlset>
