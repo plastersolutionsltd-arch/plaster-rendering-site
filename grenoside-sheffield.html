@@ -33,87 +33,356 @@
 
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
-        "@id": "https://www.plasterandrenderingsolutions.co.uk/#business",
-        "name": "Plaster and Rendering Solutions Limited",
-        "url": "https://www.plasterandrenderingsolutions.co.uk/",
-        "telephone": "+447595399525",
-        "email": "plastersolutionsltd@gmail.com",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "3 Rocher Close",
-          "addressLocality": "Grenoside",
-          "addressRegion": "South Yorkshire",
-          "postalCode": "S35 8QP",
-          "addressCountry": "GB"
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "LocalBusiness",
+        "HomeAndConstructionBusiness"
+      ],
+      "@id": "https://www.plasterandrenderingsolutions.co.uk/#business",
+      "name": "Plaster and Rendering Solutions Limited",
+      "url": "https://www.plasterandrenderingsolutions.co.uk/",
+      "telephone": "+447595399525",
+      "email": "plastersolutionsltd@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3 Rocher Close",
+        "addressLocality": "Grenoside",
+        "addressRegion": "South Yorkshire",
+        "postalCode": "S35 8QP",
+        "addressCountry": "GB"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Sheffield"
         },
-        "areaServed": [
-          {"@type": "City", "name": "Sheffield"},
-          {"@type": "AdministrativeArea", "name": "South Yorkshire"},
-          {"@type": "Place", "name": "Grenoside", "postalCode": "S35"},
-          {"@type": "Place", "name": "Chapeltown"},
-          {"@type": "Place", "name": "Ecclesfield"},
-          {"@type": "Place", "name": "High Green"},
-          {"@type": "Place", "name": "Oughtibridge"},
-          {"@type": "Place", "name": "Worrall"},
-          {"@type": "Place", "name": "Wharncliffe Side"},
-          {"@type": "City", "name": "Rotherham"},
-          {"@type": "City", "name": "Barnsley"},
-          {"@type": "City", "name": "Doncaster"}
-        ],
-        "slogan": "Flat Walls. Perfect Finish. First Time.",
-        "geo": {"@type": "GeoCoordinates", "latitude": "53.4312", "longitude": "-1.4980"},
-        "priceRange": "££",
-        "currenciesAccepted": "GBP",
-        "paymentAccepted": "Cash, Bank Transfer, Cheque",
-        "openingHoursSpecification": [
-          {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "20:00"},
-          {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "13:00"}
-        ],
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "5.0",
-          "reviewCount": "100",
-          "bestRating": "5",
-          "worstRating": "1"
+        {
+          "@type": "AdministrativeArea",
+          "name": "South Yorkshire"
         },
-        "sameAs": [
-          "https://www.facebook.com/plasterandrenderingsolutions",
-          "https://www.instagram.com/plasterandrenderingsolutions/"
-        ]
+        {
+          "@type": "Place",
+          "name": "Abbeydale"
+        },
+        {
+          "@type": "Place",
+          "name": "Beauchief"
+        },
+        {
+          "@type": "Place",
+          "name": "Beighton"
+        },
+        {
+          "@type": "Place",
+          "name": "Broomhill"
+        },
+        {
+          "@type": "Place",
+          "name": "Chapeltown"
+        },
+        {
+          "@type": "Place",
+          "name": "Crookes"
+        },
+        {
+          "@type": "Place",
+          "name": "Crosspool"
+        },
+        {
+          "@type": "Place",
+          "name": "Crystal Peaks"
+        },
+        {
+          "@type": "Place",
+          "name": "Dore"
+        },
+        {
+          "@type": "Place",
+          "name": "Ecclesfield"
+        },
+        {
+          "@type": "Place",
+          "name": "Firth Park"
+        },
+        {
+          "@type": "Place",
+          "name": "Fulwood"
+        },
+        {
+          "@type": "Place",
+          "name": "Gleadless"
+        },
+        {
+          "@type": "Place",
+          "name": "Grenoside"
+        },
+        {
+          "@type": "Place",
+          "name": "Halfway"
+        },
+        {
+          "@type": "Place",
+          "name": "High Green"
+        },
+        {
+          "@type": "Place",
+          "name": "Hillsborough"
+        },
+        {
+          "@type": "Place",
+          "name": "Lodge Moor"
+        },
+        {
+          "@type": "Place",
+          "name": "Loxley"
+        },
+        {
+          "@type": "Place",
+          "name": "Malin Bridge"
+        },
+        {
+          "@type": "Place",
+          "name": "Meersbrook"
+        },
+        {
+          "@type": "Place",
+          "name": "Millhouses"
+        },
+        {
+          "@type": "Place",
+          "name": "Mosborough"
+        },
+        {
+          "@type": "Place",
+          "name": "Nether Edge"
+        },
+        {
+          "@type": "Place",
+          "name": "Norton"
+        },
+        {
+          "@type": "Place",
+          "name": "Oughtibridge"
+        },
+        {
+          "@type": "Place",
+          "name": "Parson Cross"
+        },
+        {
+          "@type": "Place",
+          "name": "Sandygate"
+        },
+        {
+          "@type": "Place",
+          "name": "Sharrow"
+        },
+        {
+          "@type": "Place",
+          "name": "Southey"
+        },
+        {
+          "@type": "Place",
+          "name": "Stannington"
+        },
+        {
+          "@type": "Place",
+          "name": "Stocksbridge"
+        },
+        {
+          "@type": "Place",
+          "name": "Totley"
+        },
+        {
+          "@type": "Place",
+          "name": "Wadsley"
+        },
+        {
+          "@type": "Place",
+          "name": "Walkley"
+        },
+        {
+          "@type": "Place",
+          "name": "Wincobank"
+        },
+        {
+          "@type": "Place",
+          "name": "Wisewood"
+        },
+        {
+          "@type": "Place",
+          "name": "Woodseats"
+        },
+        {
+          "@type": "Place",
+          "name": "Worrall"
+        },
+        {
+          "@type": "City",
+          "name": "Rotherham"
+        },
+        {
+          "@type": "City",
+          "name": "Barnsley"
+        }
+      ],
+      "slogan": "Flat Walls. Perfect Finish. First Time.",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "53.4312",
+        "longitude": "-1.4980"
       },
-      {
-        "@type": "WebPage",
-        "@id": "https://www.plasterandrenderingsolutions.co.uk/grenoside-sheffield",
-        "url": "https://www.plasterandrenderingsolutions.co.uk/grenoside-sheffield",
-        "name": "Plasterer & Renderer in Grenoside S35 Sheffield | P&R Solutions",
-        "description": "Plastering and rendering in Grenoside Sheffield S35. Our home base — silicone render, monocouche, EWI, internal plastering and dry lining. Free survey, zero deposit, 5-year guarantee.",
-        "inLanguage": "en-GB",
-        "isPartOf": {"@type": "WebSite", "@id": "https://www.plasterandrenderingsolutions.co.uk/", "name": "Plaster and Rendering Solutions Limited"}
+      "priceRange": "££",
+      "currenciesAccepted": "GBP",
+      "paymentAccepted": "Cash, Bank Transfer, Cheque",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "13:00"
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "100",
+        "bestRating": "5",
+        "worstRating": "1"
       },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {"@type": "Question", "name": "Where are P&R Solutions based?", "acceptedAnswer": {"@type": "Answer", "text": "We're based in Grenoside, S35 — it's our home area. When you book a survey, you're dealing with local tradespeople who live and work in the same community. No call-out charge, free survey."}},
-          {"@type": "Question", "name": "What render suits a Grenoside stone cottage?", "acceptedAnswer": {"@type": "Answer", "text": "For older stone properties in Grenoside, monocouche scratch render is usually the best choice — it gives a traditional textured finish that complements the local stone character. We can colour-match to the surrounding street. Silicone render works well on brick and painted properties."}},
-          {"@type": "Question", "name": "Can you do EWI on a Grenoside semi?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. EWI is very popular in the S35 area — it upgrades the thermal performance of older semis and adds a quality rendered finish in one job. We fit 90mm insulation boards with silicone or monocouche topcoat, backed by a 25-year manufacturer warranty."}},
-          {"@type": "Question", "name": "Do you handle internal plastering in Grenoside?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, full internal plastering — re-skims, dot and dab, stud partitions, ceiling boarding. As locals we often do internal and external work on the same property, which saves time and is more convenient for homeowners."}},
-          {"@type": "Question", "name": "How much does rendering cost in Grenoside?", "acceptedAnswer": {"@type": "Answer", "text": "A typical Grenoside semi-detached starts from around £2,000–£3,500 for silicone render depending on size and access. We provide free, itemised quotes after a site visit so you know exactly what you're getting before anything starts."}}
-        ]
-      },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.plasterandrenderingsolutions.co.uk/"},
-          {"@type": "ListItem", "position": 2, "name": "Areas", "item": "https://www.plasterandrenderingsolutions.co.uk/#services"},
-          {"@type": "ListItem", "position": 3, "name": "Grenoside Sheffield", "item": "https://www.plasterandrenderingsolutions.co.uk/grenoside-sheffield"}
-        ]
+      "sameAs": [
+        "https://www.facebook.com/plasterandrenderingsolutions",
+        "https://www.instagram.com/plasterandrenderingsolutions/"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.plasterandrenderingsolutions.co.uk/grenoside-sheffield",
+      "url": "https://www.plasterandrenderingsolutions.co.uk/grenoside-sheffield",
+      "name": "Plasterer & Renderer in Grenoside S35 Sheffield | P&R Solutions",
+      "description": "Plastering and rendering in Grenoside Sheffield S35. Our home base — silicone render, monocouche, EWI, internal plastering and dry lining. Free survey, zero deposit, 5-year guarantee.",
+      "inLanguage": "en-GB",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://www.plasterandrenderingsolutions.co.uk/",
+        "name": "Plaster and Rendering Solutions Limited"
       }
-    ]
-  }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Where are P&R Solutions based?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We're based in Grenoside, S35 — it's our home area. When you book a survey, you're dealing with local tradespeople who live and work in the same community. No call-out charge, free survey."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What render suits a Grenoside stone cottage?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For older stone properties in Grenoside, monocouche scratch render is usually the best choice — it gives a traditional textured finish that complements the local stone character. We can colour-match to the surrounding street. Silicone render works well on brick and painted properties."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you do EWI on a Grenoside semi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. EWI is very popular in the S35 area — it upgrades the thermal performance of older semis and adds a quality rendered finish in one job. We fit 90mm insulation boards with silicone or monocouche topcoat, backed by a 25-year manufacturer warranty."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you handle internal plastering in Grenoside?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, full internal plastering — re-skims, dot and dab, stud partitions, ceiling boarding. As locals we often do internal and external work on the same property, which saves time and is more convenient for homeowners."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does rendering cost in Grenoside?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A typical Grenoside semi-detached starts from around £2,000–£3,500 for silicone render depending on size and access. We provide free, itemised quotes after a site visit so you know exactly what you're getting before anything starts."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.plasterandrenderingsolutions.co.uk/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Areas",
+          "item": "https://www.plasterandrenderingsolutions.co.uk/#services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Grenoside Sheffield",
+          "item": "https://www.plasterandrenderingsolutions.co.uk/grenoside-sheffield"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "name": "Plastering and Rendering in Grenoside, Sheffield",
+      "description": "Professional plastering and rendering in Grenoside, Sheffield. Services include silicone render, monocouche render, external wall insulation, internal plastering, dry lining and render repair. Free survey, no deposit, 5-year guarantee.",
+      "provider": {
+        "@id": "https://www.plasterandrenderingsolutions.co.uk/#business"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Grenoside",
+        "containedInPlace": {
+          "@type": "City",
+          "name": "Sheffield"
+        }
+      },
+      "serviceType": [
+        "Silicone Rendering",
+        "Monocouche Rendering",
+        "External Wall Insulation",
+        "Internal Plastering",
+        "Dry Lining",
+        "Render Repair",
+        "Cement Rendering"
+      ],
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "GBP",
+        "lowPrice": "200",
+        "highPrice": "15000",
+        "offerCount": "7"
+      }
+    }
+  ]
+}
   </script>
 
   <link rel="preload" as="image" href="/images/case-studies/grenoside-monocouche.webp" type="image/webp" fetchpriority="high" />

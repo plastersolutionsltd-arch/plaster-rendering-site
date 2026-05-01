@@ -33,86 +33,356 @@
 
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
-        "@id": "https://www.plasterandrenderingsolutions.co.uk/#business",
-        "name": "Plaster and Rendering Solutions Limited",
-        "url": "https://www.plasterandrenderingsolutions.co.uk/",
-        "telephone": "+447595399525",
-        "email": "plastersolutionsltd@gmail.com",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "3 Rocher Close",
-          "addressLocality": "Grenoside",
-          "addressRegion": "South Yorkshire",
-          "postalCode": "S35 8QP",
-          "addressCountry": "GB"
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "LocalBusiness",
+        "HomeAndConstructionBusiness"
+      ],
+      "@id": "https://www.plasterandrenderingsolutions.co.uk/#business",
+      "name": "Plaster and Rendering Solutions Limited",
+      "url": "https://www.plasterandrenderingsolutions.co.uk/",
+      "telephone": "+447595399525",
+      "email": "plastersolutionsltd@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3 Rocher Close",
+        "addressLocality": "Grenoside",
+        "addressRegion": "South Yorkshire",
+        "postalCode": "S35 8QP",
+        "addressCountry": "GB"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Sheffield"
         },
-        "areaServed": [
-          {"@type": "City", "name": "Sheffield"},
-          {"@type": "AdministrativeArea", "name": "South Yorkshire"},
-          {"@type": "Place", "name": "Worrall", "postalCode": "S35"},
-          {"@type": "Place", "name": "Grenoside"},
-          {"@type": "Place", "name": "Oughtibridge"},
-          {"@type": "Place", "name": "Stannington"},
-          {"@type": "Place", "name": "High Green"},
-          {"@type": "Place", "name": "Ecclesfield"},
-          {"@type": "City", "name": "Rotherham"},
-          {"@type": "City", "name": "Barnsley"},
-          {"@type": "City", "name": "Doncaster"}
-        ],
-        "slogan": "Flat Walls. Perfect Finish. First Time.",
-        "geo": {"@type": "GeoCoordinates", "latitude": "53.4230", "longitude": "-1.5170"},
-        "priceRange": "££",
-        "currenciesAccepted": "GBP",
-        "paymentAccepted": "Cash, Bank Transfer, Cheque",
-        "openingHoursSpecification": [
-          {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "20:00"},
-          {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "13:00"}
-        ],
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "5.0",
-          "reviewCount": "100",
-          "bestRating": "5",
-          "worstRating": "1"
+        {
+          "@type": "AdministrativeArea",
+          "name": "South Yorkshire"
         },
-        "sameAs": [
-          "https://www.facebook.com/plasterandrenderingsolutions",
-          "https://www.instagram.com/plasterandrenderingsolutions/"
-        ]
+        {
+          "@type": "Place",
+          "name": "Abbeydale"
+        },
+        {
+          "@type": "Place",
+          "name": "Beauchief"
+        },
+        {
+          "@type": "Place",
+          "name": "Beighton"
+        },
+        {
+          "@type": "Place",
+          "name": "Broomhill"
+        },
+        {
+          "@type": "Place",
+          "name": "Chapeltown"
+        },
+        {
+          "@type": "Place",
+          "name": "Crookes"
+        },
+        {
+          "@type": "Place",
+          "name": "Crosspool"
+        },
+        {
+          "@type": "Place",
+          "name": "Crystal Peaks"
+        },
+        {
+          "@type": "Place",
+          "name": "Dore"
+        },
+        {
+          "@type": "Place",
+          "name": "Ecclesfield"
+        },
+        {
+          "@type": "Place",
+          "name": "Firth Park"
+        },
+        {
+          "@type": "Place",
+          "name": "Fulwood"
+        },
+        {
+          "@type": "Place",
+          "name": "Gleadless"
+        },
+        {
+          "@type": "Place",
+          "name": "Grenoside"
+        },
+        {
+          "@type": "Place",
+          "name": "Halfway"
+        },
+        {
+          "@type": "Place",
+          "name": "High Green"
+        },
+        {
+          "@type": "Place",
+          "name": "Hillsborough"
+        },
+        {
+          "@type": "Place",
+          "name": "Lodge Moor"
+        },
+        {
+          "@type": "Place",
+          "name": "Loxley"
+        },
+        {
+          "@type": "Place",
+          "name": "Malin Bridge"
+        },
+        {
+          "@type": "Place",
+          "name": "Meersbrook"
+        },
+        {
+          "@type": "Place",
+          "name": "Millhouses"
+        },
+        {
+          "@type": "Place",
+          "name": "Mosborough"
+        },
+        {
+          "@type": "Place",
+          "name": "Nether Edge"
+        },
+        {
+          "@type": "Place",
+          "name": "Norton"
+        },
+        {
+          "@type": "Place",
+          "name": "Oughtibridge"
+        },
+        {
+          "@type": "Place",
+          "name": "Parson Cross"
+        },
+        {
+          "@type": "Place",
+          "name": "Sandygate"
+        },
+        {
+          "@type": "Place",
+          "name": "Sharrow"
+        },
+        {
+          "@type": "Place",
+          "name": "Southey"
+        },
+        {
+          "@type": "Place",
+          "name": "Stannington"
+        },
+        {
+          "@type": "Place",
+          "name": "Stocksbridge"
+        },
+        {
+          "@type": "Place",
+          "name": "Totley"
+        },
+        {
+          "@type": "Place",
+          "name": "Wadsley"
+        },
+        {
+          "@type": "Place",
+          "name": "Walkley"
+        },
+        {
+          "@type": "Place",
+          "name": "Wincobank"
+        },
+        {
+          "@type": "Place",
+          "name": "Wisewood"
+        },
+        {
+          "@type": "Place",
+          "name": "Woodseats"
+        },
+        {
+          "@type": "Place",
+          "name": "Worrall"
+        },
+        {
+          "@type": "City",
+          "name": "Rotherham"
+        },
+        {
+          "@type": "City",
+          "name": "Barnsley"
+        }
+      ],
+      "slogan": "Flat Walls. Perfect Finish. First Time.",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "53.4230",
+        "longitude": "-1.5170"
       },
-      {
-        "@type": "WebPage",
-        "@id": "https://www.plasterandrenderingsolutions.co.uk/worrall-sheffield",
-        "url": "https://www.plasterandrenderingsolutions.co.uk/worrall-sheffield",
-        "name": "Plasterer & Renderer in Worrall S35 Sheffield | P&R Solutions",
-        "description": "Plastering and rendering in Worrall Sheffield S35. Silicone render, monocouche, EWI, internal plastering and dry lining. Close to our Grenoside base. Free survey, zero deposit, 5-year guarantee.",
-        "inLanguage": "en-GB",
-        "isPartOf": {"@type": "WebSite", "@id": "https://www.plasterandrenderingsolutions.co.uk/", "name": "Plaster and Rendering Solutions Limited"}
+      "priceRange": "££",
+      "currenciesAccepted": "GBP",
+      "paymentAccepted": "Cash, Bank Transfer, Cheque",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "13:00"
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "100",
+        "bestRating": "5",
+        "worstRating": "1"
       },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {"@type": "Question", "name": "Do you cover Worrall Sheffield?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — Worrall is right on our doorstep in S35. We're based in nearby Grenoside and regularly work throughout Worrall and Wharncliffe Side. Free survey, no call-out charge, and you're dealing with local tradespeople."}},
-          {"@type": "Question", "name": "What render suits Worrall's older stone properties?", "acceptedAnswer": {"@type": "Answer", "text": "Worrall has many traditional stone-built properties. Monocouche scratch render is typically the best match — it gives a through-colour textured finish that works with the period stone character and provides excellent weather protection. We carry a wide range of tones for colour matching. Silicone render works well on brick and previously rendered properties."}},
-          {"@type": "Question", "name": "Can you fit EWI on a Worrall property?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Worrall's exposed position makes EWI a particularly worthwhile investment — external insulation boards dramatically reduce heat loss and deliver a quality rendered finish at the same time. We fit 90mm boards with a silicone or monocouche topcoat, backed by a 25-year manufacturer warranty."}},
-          {"@type": "Question", "name": "Do you do internal plastering in Worrall S35?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — full internal plastering including re-skims, dot and dab boarding, new stud partitions and ceiling work. Being based in Grenoside, we're close at hand for any work in Worrall and can often turn around surveys quickly."}},
-          {"@type": "Question", "name": "How much does rendering cost in Worrall?", "acceptedAnswer": {"@type": "Answer", "text": "A typical Worrall semi or detached starts from around £2,000–£3,500 for silicone render. Stone properties requiring monocouche or additional preparation may vary. We provide a free, fully itemised quote after visiting the property — no obligation and no deposit required."}}
-        ]
-      },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.plasterandrenderingsolutions.co.uk/"},
-          {"@type": "ListItem", "position": 2, "name": "Areas", "item": "https://www.plasterandrenderingsolutions.co.uk/#services"},
-          {"@type": "ListItem", "position": 3, "name": "Worrall Sheffield", "item": "https://www.plasterandrenderingsolutions.co.uk/worrall-sheffield"}
-        ]
+      "sameAs": [
+        "https://www.facebook.com/plasterandrenderingsolutions",
+        "https://www.instagram.com/plasterandrenderingsolutions/"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.plasterandrenderingsolutions.co.uk/worrall-sheffield",
+      "url": "https://www.plasterandrenderingsolutions.co.uk/worrall-sheffield",
+      "name": "Plasterer & Renderer in Worrall S35 Sheffield | P&R Solutions",
+      "description": "Plastering and rendering in Worrall Sheffield S35. Silicone render, monocouche, EWI, internal plastering and dry lining. Close to our Grenoside base. Free survey, zero deposit, 5-year guarantee.",
+      "inLanguage": "en-GB",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://www.plasterandrenderingsolutions.co.uk/",
+        "name": "Plaster and Rendering Solutions Limited"
       }
-    ]
-  }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do you cover Worrall Sheffield?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — Worrall is right on our doorstep in S35. We're based in nearby Grenoside and regularly work throughout Worrall and Wharncliffe Side. Free survey, no call-out charge, and you're dealing with local tradespeople."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What render suits Worrall's older stone properties?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Worrall has many traditional stone-built properties. Monocouche scratch render is typically the best match — it gives a through-colour textured finish that works with the period stone character and provides excellent weather protection. We carry a wide range of tones for colour matching. Silicone render works well on brick and previously rendered properties."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you fit EWI on a Worrall property?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Worrall's exposed position makes EWI a particularly worthwhile investment — external insulation boards dramatically reduce heat loss and deliver a quality rendered finish at the same time. We fit 90mm boards with a silicone or monocouche topcoat, backed by a 25-year manufacturer warranty."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you do internal plastering in Worrall S35?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — full internal plastering including re-skims, dot and dab boarding, new stud partitions and ceiling work. Being based in Grenoside, we're close at hand for any work in Worrall and can often turn around surveys quickly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does rendering cost in Worrall?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A typical Worrall semi or detached starts from around £2,000–£3,500 for silicone render. Stone properties requiring monocouche or additional preparation may vary. We provide a free, fully itemised quote after visiting the property — no obligation and no deposit required."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.plasterandrenderingsolutions.co.uk/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Areas",
+          "item": "https://www.plasterandrenderingsolutions.co.uk/#services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Worrall Sheffield",
+          "item": "https://www.plasterandrenderingsolutions.co.uk/worrall-sheffield"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "name": "Plastering and Rendering in Worrall, Sheffield",
+      "description": "Professional plastering and rendering in Worrall, Sheffield. Services include silicone render, monocouche render, external wall insulation, internal plastering, dry lining and render repair. Free survey, no deposit, 5-year guarantee.",
+      "provider": {
+        "@id": "https://www.plasterandrenderingsolutions.co.uk/#business"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Worrall",
+        "containedInPlace": {
+          "@type": "City",
+          "name": "Sheffield"
+        }
+      },
+      "serviceType": [
+        "Silicone Rendering",
+        "Monocouche Rendering",
+        "External Wall Insulation",
+        "Internal Plastering",
+        "Dry Lining",
+        "Render Repair",
+        "Cement Rendering"
+      ],
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "GBP",
+        "lowPrice": "200",
+        "highPrice": "15000",
+        "offerCount": "7"
+      }
+    }
+  ]
+}
   </script>
 
   <link rel="preload" as="image" href="/images/case-studies/monocouche worral.webp" type="image/webp" fetchpriority="high" />

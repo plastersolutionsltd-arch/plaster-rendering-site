@@ -33,87 +33,356 @@
 
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
-        "@id": "https://www.plasterandrenderingsolutions.co.uk/#business",
-        "name": "Plaster and Rendering Solutions Limited",
-        "url": "https://www.plasterandrenderingsolutions.co.uk/",
-        "telephone": "+447595399525",
-        "email": "plastersolutionsltd@gmail.com",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "3 Rocher Close",
-          "addressLocality": "Grenoside",
-          "addressRegion": "South Yorkshire",
-          "postalCode": "S35 8QP",
-          "addressCountry": "GB"
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "LocalBusiness",
+        "HomeAndConstructionBusiness"
+      ],
+      "@id": "https://www.plasterandrenderingsolutions.co.uk/#business",
+      "name": "Plaster and Rendering Solutions Limited",
+      "url": "https://www.plasterandrenderingsolutions.co.uk/",
+      "telephone": "+447595399525",
+      "email": "plastersolutionsltd@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3 Rocher Close",
+        "addressLocality": "Grenoside",
+        "addressRegion": "South Yorkshire",
+        "postalCode": "S35 8QP",
+        "addressCountry": "GB"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Sheffield"
         },
-        "areaServed": [
-          {"@type": "City", "name": "Sheffield"},
-          {"@type": "AdministrativeArea", "name": "South Yorkshire"},
-          {"@type": "Place", "name": "High Green", "postalCode": "S35"},
-          {"@type": "Place", "name": "Grenoside"},
-          {"@type": "Place", "name": "Chapeltown"},
-          {"@type": "Place", "name": "Ecclesfield"},
-          {"@type": "Place", "name": "Oughtibridge"},
-          {"@type": "Place", "name": "Stocksbridge"},
-          {"@type": "Place", "name": "Hillsborough"},
-          {"@type": "City", "name": "Rotherham"},
-          {"@type": "City", "name": "Barnsley"},
-          {"@type": "City", "name": "Doncaster"}
-        ],
-        "slogan": "Flat Walls. Perfect Finish. First Time.",
-        "geo": {"@type": "GeoCoordinates", "latitude": "53.4620", "longitude": "-1.4862"},
-        "priceRange": "££",
-        "currenciesAccepted": "GBP",
-        "paymentAccepted": "Cash, Bank Transfer, Cheque",
-        "openingHoursSpecification": [
-          {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "20:00"},
-          {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "13:00"}
-        ],
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "5.0",
-          "reviewCount": "100",
-          "bestRating": "5",
-          "worstRating": "1"
+        {
+          "@type": "AdministrativeArea",
+          "name": "South Yorkshire"
         },
-        "sameAs": [
-          "https://www.facebook.com/plasterandrenderingsolutions",
-          "https://www.instagram.com/plasterandrenderingsolutions/"
-        ]
+        {
+          "@type": "Place",
+          "name": "Abbeydale"
+        },
+        {
+          "@type": "Place",
+          "name": "Beauchief"
+        },
+        {
+          "@type": "Place",
+          "name": "Beighton"
+        },
+        {
+          "@type": "Place",
+          "name": "Broomhill"
+        },
+        {
+          "@type": "Place",
+          "name": "Chapeltown"
+        },
+        {
+          "@type": "Place",
+          "name": "Crookes"
+        },
+        {
+          "@type": "Place",
+          "name": "Crosspool"
+        },
+        {
+          "@type": "Place",
+          "name": "Crystal Peaks"
+        },
+        {
+          "@type": "Place",
+          "name": "Dore"
+        },
+        {
+          "@type": "Place",
+          "name": "Ecclesfield"
+        },
+        {
+          "@type": "Place",
+          "name": "Firth Park"
+        },
+        {
+          "@type": "Place",
+          "name": "Fulwood"
+        },
+        {
+          "@type": "Place",
+          "name": "Gleadless"
+        },
+        {
+          "@type": "Place",
+          "name": "Grenoside"
+        },
+        {
+          "@type": "Place",
+          "name": "Halfway"
+        },
+        {
+          "@type": "Place",
+          "name": "High Green"
+        },
+        {
+          "@type": "Place",
+          "name": "Hillsborough"
+        },
+        {
+          "@type": "Place",
+          "name": "Lodge Moor"
+        },
+        {
+          "@type": "Place",
+          "name": "Loxley"
+        },
+        {
+          "@type": "Place",
+          "name": "Malin Bridge"
+        },
+        {
+          "@type": "Place",
+          "name": "Meersbrook"
+        },
+        {
+          "@type": "Place",
+          "name": "Millhouses"
+        },
+        {
+          "@type": "Place",
+          "name": "Mosborough"
+        },
+        {
+          "@type": "Place",
+          "name": "Nether Edge"
+        },
+        {
+          "@type": "Place",
+          "name": "Norton"
+        },
+        {
+          "@type": "Place",
+          "name": "Oughtibridge"
+        },
+        {
+          "@type": "Place",
+          "name": "Parson Cross"
+        },
+        {
+          "@type": "Place",
+          "name": "Sandygate"
+        },
+        {
+          "@type": "Place",
+          "name": "Sharrow"
+        },
+        {
+          "@type": "Place",
+          "name": "Southey"
+        },
+        {
+          "@type": "Place",
+          "name": "Stannington"
+        },
+        {
+          "@type": "Place",
+          "name": "Stocksbridge"
+        },
+        {
+          "@type": "Place",
+          "name": "Totley"
+        },
+        {
+          "@type": "Place",
+          "name": "Wadsley"
+        },
+        {
+          "@type": "Place",
+          "name": "Walkley"
+        },
+        {
+          "@type": "Place",
+          "name": "Wincobank"
+        },
+        {
+          "@type": "Place",
+          "name": "Wisewood"
+        },
+        {
+          "@type": "Place",
+          "name": "Woodseats"
+        },
+        {
+          "@type": "Place",
+          "name": "Worrall"
+        },
+        {
+          "@type": "City",
+          "name": "Rotherham"
+        },
+        {
+          "@type": "City",
+          "name": "Barnsley"
+        }
+      ],
+      "slogan": "Flat Walls. Perfect Finish. First Time.",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "53.4620",
+        "longitude": "-1.4862"
       },
-      {
-        "@type": "WebPage",
-        "@id": "https://www.plasterandrenderingsolutions.co.uk/high-green-sheffield",
-        "url": "https://www.plasterandrenderingsolutions.co.uk/high-green-sheffield",
-        "name": "Plasterer &amp; Renderer in High Green S35 Sheffield | P&amp;R Solutions",
-        "description": "Expert plastering and rendering in High Green Sheffield S35. Silicone render, monocouche, EWI, internal plastering and dry lining. Free survey, zero deposit, 5-year guarantee.",
-        "inLanguage": "en-GB",
-        "isPartOf": {"@type": "WebSite", "@id": "https://www.plasterandrenderingsolutions.co.uk/", "name": "Plaster and Rendering Solutions Limited"}
+      "priceRange": "££",
+      "currenciesAccepted": "GBP",
+      "paymentAccepted": "Cash, Bank Transfer, Cheque",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "13:00"
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "100",
+        "bestRating": "5",
+        "worstRating": "1"
       },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {"@type": "Question", "name": "Do you cover High Green Sheffield?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — we are based in Grenoside, which is just down the road from High Green. We cover the whole S35 area including High Green, Thompson Hill, Mortomley and the surrounding residential streets. No call-out charge, free survey."}},
-          {"@type": "Question", "name": "My 1970s semi in High Green has bare brick — can you render it?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — rendering a bare brick semi in High Green is exactly the type of project we carry out regularly. The brickwork is cleaned, any loose mortar or defective areas are repaired, and a primer or basecoat mesh system is applied before the silicone or monocouche topcoat. The result transforms the property completely — both visually and in terms of weather resistance. The new render surface is hydrophobic, so rainwater runs off rather than soaking into the brickwork as it does on bare ageing brick."}},
-          {"@type": "Question", "name": "Would EWI be worth it on a 1960s semi in High Green?", "acceptedAnswer": {"@type": "Answer", "text": "For the typical 1960s semi in High Green, EWI is one of the best value upgrades available. The houses built in this era have relatively poor thermal mass and uninsulated external walls that lose significant heat in winter. An EWI system bonds insulation board to the exterior wall and finishes with a render coat — this creates a continuous thermal envelope around the property, eliminates cold wall surfaces inside and dramatically reduces heating bills. The visual transformation is also significant: the house effectively looks brand new. We survey the property first to specify the right insulation thickness for the wall type and orientation."}},
-          {"@type": "Question", "name": "What's the difference between silicone and monocouche for a High Green semi?", "acceptedAnswer": {"@type": "Answer", "text": "Both silicone and monocouche render are excellent choices for High Green's post-war semis — they differ mainly in texture, appearance and the way they are applied. Silicone render produces a smooth, contemporary finish with a very fine texture and excellent hydrophobic performance. Monocouche is a single-coat render with a more traditional, slightly coarser textured appearance — it is applied in one thick coat and the colour runs through the full depth. Silicone is typically the more popular choice on estate semis in High Green because of its clean modern look; monocouche suits those who prefer a more textured, natural appearance. We will show you samples of both at the survey stage."}},
-          {"@type": "Question", "name": "Do you plaster internally as well as render externally?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — we offer a complete internal and external service in High Green. As well as external rendering and EWI, we carry out internal plastering including full re-plasters, skim coats over new plasterboard, patch repairs and dot and dab dry lining. Many homeowners in High Green combine external rendering with internal plastering work — it is more efficient to do both at once, and you end up with one contractor accountable for the whole job rather than multiple trades to co-ordinate. Just tell us what you need at the survey stage and we will price everything together."}}
-        ]
-      },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.plasterandrenderingsolutions.co.uk/"},
-          {"@type": "ListItem", "position": 2, "name": "Areas", "item": "https://www.plasterandrenderingsolutions.co.uk/#services"},
-          {"@type": "ListItem", "position": 3, "name": "High Green Sheffield", "item": "https://www.plasterandrenderingsolutions.co.uk/high-green-sheffield"}
-        ]
+      "sameAs": [
+        "https://www.facebook.com/plasterandrenderingsolutions",
+        "https://www.instagram.com/plasterandrenderingsolutions/"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.plasterandrenderingsolutions.co.uk/high-green-sheffield",
+      "url": "https://www.plasterandrenderingsolutions.co.uk/high-green-sheffield",
+      "name": "Plasterer &amp; Renderer in High Green S35 Sheffield | P&amp;R Solutions",
+      "description": "Expert plastering and rendering in High Green Sheffield S35. Silicone render, monocouche, EWI, internal plastering and dry lining. Free survey, zero deposit, 5-year guarantee.",
+      "inLanguage": "en-GB",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://www.plasterandrenderingsolutions.co.uk/",
+        "name": "Plaster and Rendering Solutions Limited"
       }
-    ]
-  }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do you cover High Green Sheffield?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — we are based in Grenoside, which is just down the road from High Green. We cover the whole S35 area including High Green, Thompson Hill, Mortomley and the surrounding residential streets. No call-out charge, free survey."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "My 1970s semi in High Green has bare brick — can you render it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — rendering a bare brick semi in High Green is exactly the type of project we carry out regularly. The brickwork is cleaned, any loose mortar or defective areas are repaired, and a primer or basecoat mesh system is applied before the silicone or monocouche topcoat. The result transforms the property completely — both visually and in terms of weather resistance. The new render surface is hydrophobic, so rainwater runs off rather than soaking into the brickwork as it does on bare ageing brick."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Would EWI be worth it on a 1960s semi in High Green?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For the typical 1960s semi in High Green, EWI is one of the best value upgrades available. The houses built in this era have relatively poor thermal mass and uninsulated external walls that lose significant heat in winter. An EWI system bonds insulation board to the exterior wall and finishes with a render coat — this creates a continuous thermal envelope around the property, eliminates cold wall surfaces inside and dramatically reduces heating bills. The visual transformation is also significant: the house effectively looks brand new. We survey the property first to specify the right insulation thickness for the wall type and orientation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What's the difference between silicone and monocouche for a High Green semi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Both silicone and monocouche render are excellent choices for High Green's post-war semis — they differ mainly in texture, appearance and the way they are applied. Silicone render produces a smooth, contemporary finish with a very fine texture and excellent hydrophobic performance. Monocouche is a single-coat render with a more traditional, slightly coarser textured appearance — it is applied in one thick coat and the colour runs through the full depth. Silicone is typically the more popular choice on estate semis in High Green because of its clean modern look; monocouche suits those who prefer a more textured, natural appearance. We will show you samples of both at the survey stage."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you plaster internally as well as render externally?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — we offer a complete internal and external service in High Green. As well as external rendering and EWI, we carry out internal plastering including full re-plasters, skim coats over new plasterboard, patch repairs and dot and dab dry lining. Many homeowners in High Green combine external rendering with internal plastering work — it is more efficient to do both at once, and you end up with one contractor accountable for the whole job rather than multiple trades to co-ordinate. Just tell us what you need at the survey stage and we will price everything together."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.plasterandrenderingsolutions.co.uk/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Areas",
+          "item": "https://www.plasterandrenderingsolutions.co.uk/#services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "High Green Sheffield",
+          "item": "https://www.plasterandrenderingsolutions.co.uk/high-green-sheffield"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "name": "Plastering and Rendering in High Green, Sheffield",
+      "description": "Professional plastering and rendering in High Green, Sheffield. Services include silicone render, monocouche render, external wall insulation, internal plastering, dry lining and render repair. Free survey, no deposit, 5-year guarantee.",
+      "provider": {
+        "@id": "https://www.plasterandrenderingsolutions.co.uk/#business"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "High Green",
+        "containedInPlace": {
+          "@type": "City",
+          "name": "Sheffield"
+        }
+      },
+      "serviceType": [
+        "Silicone Rendering",
+        "Monocouche Rendering",
+        "External Wall Insulation",
+        "Internal Plastering",
+        "Dry Lining",
+        "Render Repair",
+        "Cement Rendering"
+      ],
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "GBP",
+        "lowPrice": "200",
+        "highPrice": "15000",
+        "offerCount": "7"
+      }
+    }
+  ]
+}
   </script>
 
   <link rel="stylesheet" href="/app.css">

@@ -33,87 +33,356 @@
 
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
-        "@id": "https://www.plasterandrenderingsolutions.co.uk/#business",
-        "name": "Plaster and Rendering Solutions Limited",
-        "url": "https://www.plasterandrenderingsolutions.co.uk/",
-        "telephone": "+447595399525",
-        "email": "plastersolutionsltd@gmail.com",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "3 Rocher Close",
-          "addressLocality": "Grenoside",
-          "addressRegion": "South Yorkshire",
-          "postalCode": "S35 8QP",
-          "addressCountry": "GB"
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "LocalBusiness",
+        "HomeAndConstructionBusiness"
+      ],
+      "@id": "https://www.plasterandrenderingsolutions.co.uk/#business",
+      "name": "Plaster and Rendering Solutions Limited",
+      "url": "https://www.plasterandrenderingsolutions.co.uk/",
+      "telephone": "+447595399525",
+      "email": "plastersolutionsltd@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3 Rocher Close",
+        "addressLocality": "Grenoside",
+        "addressRegion": "South Yorkshire",
+        "postalCode": "S35 8QP",
+        "addressCountry": "GB"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Sheffield"
         },
-        "areaServed": [
-          {"@type": "City", "name": "Sheffield"},
-          {"@type": "AdministrativeArea", "name": "South Yorkshire"},
-          {"@type": "Place", "name": "Loxley", "postalCode": "S6"},
-          {"@type": "Place", "name": "Chapeltown"},
-          {"@type": "Place", "name": "Ecclesfield"},
-          {"@type": "Place", "name": "High Green"},
-          {"@type": "Place", "name": "Oughtibridge"},
-          {"@type": "Place", "name": "Worrall"},
-          {"@type": "Place", "name": "Wharncliffe Side"},
-          {"@type": "City", "name": "Rotherham"},
-          {"@type": "City", "name": "Barnsley"},
-          {"@type": "City", "name": "Doncaster"}
-        ],
-        "slogan": "Flat Walls. Perfect Finish. First Time.",
-        "geo": {"@type": "GeoCoordinates", "latitude": "53.4025", "longitude": "-1.5312"},
-        "priceRange": "££",
-        "currenciesAccepted": "GBP",
-        "paymentAccepted": "Cash, Bank Transfer, Cheque",
-        "openingHoursSpecification": [
-          {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "20:00"},
-          {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "13:00"}
-        ],
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "5.0",
-          "reviewCount": "100",
-          "bestRating": "5",
-          "worstRating": "1"
+        {
+          "@type": "AdministrativeArea",
+          "name": "South Yorkshire"
         },
-        "sameAs": [
-          "https://www.facebook.com/plasterandrenderingsolutions",
-          "https://www.instagram.com/plasterandrenderingsolutions/"
-        ]
+        {
+          "@type": "Place",
+          "name": "Abbeydale"
+        },
+        {
+          "@type": "Place",
+          "name": "Beauchief"
+        },
+        {
+          "@type": "Place",
+          "name": "Beighton"
+        },
+        {
+          "@type": "Place",
+          "name": "Broomhill"
+        },
+        {
+          "@type": "Place",
+          "name": "Chapeltown"
+        },
+        {
+          "@type": "Place",
+          "name": "Crookes"
+        },
+        {
+          "@type": "Place",
+          "name": "Crosspool"
+        },
+        {
+          "@type": "Place",
+          "name": "Crystal Peaks"
+        },
+        {
+          "@type": "Place",
+          "name": "Dore"
+        },
+        {
+          "@type": "Place",
+          "name": "Ecclesfield"
+        },
+        {
+          "@type": "Place",
+          "name": "Firth Park"
+        },
+        {
+          "@type": "Place",
+          "name": "Fulwood"
+        },
+        {
+          "@type": "Place",
+          "name": "Gleadless"
+        },
+        {
+          "@type": "Place",
+          "name": "Grenoside"
+        },
+        {
+          "@type": "Place",
+          "name": "Halfway"
+        },
+        {
+          "@type": "Place",
+          "name": "High Green"
+        },
+        {
+          "@type": "Place",
+          "name": "Hillsborough"
+        },
+        {
+          "@type": "Place",
+          "name": "Lodge Moor"
+        },
+        {
+          "@type": "Place",
+          "name": "Loxley"
+        },
+        {
+          "@type": "Place",
+          "name": "Malin Bridge"
+        },
+        {
+          "@type": "Place",
+          "name": "Meersbrook"
+        },
+        {
+          "@type": "Place",
+          "name": "Millhouses"
+        },
+        {
+          "@type": "Place",
+          "name": "Mosborough"
+        },
+        {
+          "@type": "Place",
+          "name": "Nether Edge"
+        },
+        {
+          "@type": "Place",
+          "name": "Norton"
+        },
+        {
+          "@type": "Place",
+          "name": "Oughtibridge"
+        },
+        {
+          "@type": "Place",
+          "name": "Parson Cross"
+        },
+        {
+          "@type": "Place",
+          "name": "Sandygate"
+        },
+        {
+          "@type": "Place",
+          "name": "Sharrow"
+        },
+        {
+          "@type": "Place",
+          "name": "Southey"
+        },
+        {
+          "@type": "Place",
+          "name": "Stannington"
+        },
+        {
+          "@type": "Place",
+          "name": "Stocksbridge"
+        },
+        {
+          "@type": "Place",
+          "name": "Totley"
+        },
+        {
+          "@type": "Place",
+          "name": "Wadsley"
+        },
+        {
+          "@type": "Place",
+          "name": "Walkley"
+        },
+        {
+          "@type": "Place",
+          "name": "Wincobank"
+        },
+        {
+          "@type": "Place",
+          "name": "Wisewood"
+        },
+        {
+          "@type": "Place",
+          "name": "Woodseats"
+        },
+        {
+          "@type": "Place",
+          "name": "Worrall"
+        },
+        {
+          "@type": "City",
+          "name": "Rotherham"
+        },
+        {
+          "@type": "City",
+          "name": "Barnsley"
+        }
+      ],
+      "slogan": "Flat Walls. Perfect Finish. First Time.",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "53.4025",
+        "longitude": "-1.5312"
       },
-      {
-        "@type": "WebPage",
-        "@id": "https://www.plasterandrenderingsolutions.co.uk/loxley-sheffield",
-        "url": "https://www.plasterandrenderingsolutions.co.uk/loxley-sheffield",
-        "name": "Plasterer & Renderer in Loxley S6 Sheffield | P&R Solutions",
-        "description": "Plastering and rendering in Loxley Sheffield S6 — silicone render, monocouche, EWI, internal plastering and dry lining. Free survey, zero deposit, 5-year guarantee.",
-        "inLanguage": "en-GB",
-        "isPartOf": {"@type": "WebSite", "@id": "https://www.plasterandrenderingsolutions.co.uk/", "name": "Plaster and Rendering Solutions Limited"}
+      "priceRange": "££",
+      "currenciesAccepted": "GBP",
+      "paymentAccepted": "Cash, Bank Transfer, Cheque",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "13:00"
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "100",
+        "bestRating": "5",
+        "worstRating": "1"
       },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {"@type": "Question", "name": "Do you cover Loxley and the S6 valley?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — Loxley is within our regular working area. We're based in Grenoside, S35 and cover the Loxley Valley, Malin Bridge and surrounding S6 villages regularly. Free survey, no call-out charge."}},
-          {"@type": "Question", "name": "What render suits a Loxley stone property?", "acceptedAnswer": {"@type": "Answer", "text": "For Loxley's older stone and rendered properties, monocouche scratch render is often the best choice — it gives a natural textured finish that sits well with the rural character. Silicone render is a great option for brick properties or where a smoother, modern finish is preferred."}},
-          {"@type": "Question", "name": "Can you do EWI on a Loxley cottage or semi?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — EWI works well on older stone and brick properties in the valley. We assess the substrate carefully and ensure the system is correctly detailed at windows, roof lines and reveals. 90mm boards, choice of topcoat finish, 25-year warranty."}},
-          {"@type": "Question", "name": "Do you do internal plastering in Loxley?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — full re-skims, dot and dab, stud partitions and ceiling boarding. We often combine internal and external work on Loxley properties, which is more convenient for homeowners and keeps scheduling simple."}},
-          {"@type": "Question", "name": "How much does rendering cost in Loxley?", "acceptedAnswer": {"@type": "Answer", "text": "A typical Loxley semi-detached starts from around £2,000–£3,500 for silicone or monocouche render, depending on size and access. We provide a free, itemised quote after a site visit — no deposit required."}}
-        ]
-      },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.plasterandrenderingsolutions.co.uk/"},
-          {"@type": "ListItem", "position": 2, "name": "Areas", "item": "https://www.plasterandrenderingsolutions.co.uk/#services"},
-          {"@type": "ListItem", "position": 3, "name": "Loxley Sheffield", "item": "https://www.plasterandrenderingsolutions.co.uk/loxley-sheffield"}
-        ]
+      "sameAs": [
+        "https://www.facebook.com/plasterandrenderingsolutions",
+        "https://www.instagram.com/plasterandrenderingsolutions/"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.plasterandrenderingsolutions.co.uk/loxley-sheffield",
+      "url": "https://www.plasterandrenderingsolutions.co.uk/loxley-sheffield",
+      "name": "Plasterer & Renderer in Loxley S6 Sheffield | P&R Solutions",
+      "description": "Plastering and rendering in Loxley Sheffield S6 — silicone render, monocouche, EWI, internal plastering and dry lining. Free survey, zero deposit, 5-year guarantee.",
+      "inLanguage": "en-GB",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://www.plasterandrenderingsolutions.co.uk/",
+        "name": "Plaster and Rendering Solutions Limited"
       }
-    ]
-  }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do you cover Loxley and the S6 valley?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — Loxley is within our regular working area. We're based in Grenoside, S35 and cover the Loxley Valley, Malin Bridge and surrounding S6 villages regularly. Free survey, no call-out charge."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What render suits a Loxley stone property?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For Loxley's older stone and rendered properties, monocouche scratch render is often the best choice — it gives a natural textured finish that sits well with the rural character. Silicone render is a great option for brick properties or where a smoother, modern finish is preferred."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you do EWI on a Loxley cottage or semi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — EWI works well on older stone and brick properties in the valley. We assess the substrate carefully and ensure the system is correctly detailed at windows, roof lines and reveals. 90mm boards, choice of topcoat finish, 25-year warranty."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you do internal plastering in Loxley?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — full re-skims, dot and dab, stud partitions and ceiling boarding. We often combine internal and external work on Loxley properties, which is more convenient for homeowners and keeps scheduling simple."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does rendering cost in Loxley?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A typical Loxley semi-detached starts from around £2,000–£3,500 for silicone or monocouche render, depending on size and access. We provide a free, itemised quote after a site visit — no deposit required."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.plasterandrenderingsolutions.co.uk/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Areas",
+          "item": "https://www.plasterandrenderingsolutions.co.uk/#services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Loxley Sheffield",
+          "item": "https://www.plasterandrenderingsolutions.co.uk/loxley-sheffield"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "name": "Plastering and Rendering in Loxley, Sheffield",
+      "description": "Professional plastering and rendering in Loxley, Sheffield. Services include silicone render, monocouche render, external wall insulation, internal plastering, dry lining and render repair. Free survey, no deposit, 5-year guarantee.",
+      "provider": {
+        "@id": "https://www.plasterandrenderingsolutions.co.uk/#business"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Loxley",
+        "containedInPlace": {
+          "@type": "City",
+          "name": "Sheffield"
+        }
+      },
+      "serviceType": [
+        "Silicone Rendering",
+        "Monocouche Rendering",
+        "External Wall Insulation",
+        "Internal Plastering",
+        "Dry Lining",
+        "Render Repair",
+        "Cement Rendering"
+      ],
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "GBP",
+        "lowPrice": "200",
+        "highPrice": "15000",
+        "offerCount": "7"
+      }
+    }
+  ]
+}
   </script>
 
   <link rel="preload" as="image" href="/images/case-studies/case/loxley-silicone.webp" type="image/webp" fetchpriority="high" />

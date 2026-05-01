@@ -33,84 +33,356 @@
 
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
-        "@id": "https://www.plasterandrenderingsolutions.co.uk/#business",
-        "name": "Plaster and Rendering Solutions Limited",
-        "url": "https://www.plasterandrenderingsolutions.co.uk/",
-        "telephone": "+447595399525",
-        "email": "plastersolutionsltd@gmail.com",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "3 Rocher Close",
-          "addressLocality": "Grenoside",
-          "addressRegion": "South Yorkshire",
-          "postalCode": "S35 8QP",
-          "addressCountry": "GB"
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "LocalBusiness",
+        "HomeAndConstructionBusiness"
+      ],
+      "@id": "https://www.plasterandrenderingsolutions.co.uk/#business",
+      "name": "Plaster and Rendering Solutions Limited",
+      "url": "https://www.plasterandrenderingsolutions.co.uk/",
+      "telephone": "+447595399525",
+      "email": "plastersolutionsltd@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3 Rocher Close",
+        "addressLocality": "Grenoside",
+        "addressRegion": "South Yorkshire",
+        "postalCode": "S35 8QP",
+        "addressCountry": "GB"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Sheffield"
         },
-        "areaServed": [
-          {"@type": "City", "name": "Sheffield"},
-          {"@type": "AdministrativeArea", "name": "South Yorkshire"},
-          {"@type": "Place", "name": "Halfway", "postalCode": "S20"},
-          {"@type": "Place", "name": "Mosborough"},
-          {"@type": "Place", "name": "Beighton"},
-          {"@type": "Place", "name": "Crystal Peaks"},
-          {"@type": "City", "name": "Rotherham"},
-          {"@type": "City", "name": "Barnsley"},
-          {"@type": "City", "name": "Doncaster"}
-        ],
-        "slogan": "Flat Walls. Perfect Finish. First Time.",
-        "geo": {"@type": "GeoCoordinates", "latitude": "53.3353", "longitude": "-1.3759"},
-        "priceRange": "££",
-        "currenciesAccepted": "GBP",
-        "paymentAccepted": "Cash, Bank Transfer, Cheque",
-        "openingHoursSpecification": [
-          {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "20:00"},
-          {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "13:00"}
-        ],
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "5.0",
-          "reviewCount": "100",
-          "bestRating": "5",
-          "worstRating": "1"
+        {
+          "@type": "AdministrativeArea",
+          "name": "South Yorkshire"
         },
-        "sameAs": [
-          "https://www.facebook.com/plasterandrenderingsolutions",
-          "https://www.instagram.com/plasterandrenderingsolutions/"
-        ]
+        {
+          "@type": "Place",
+          "name": "Abbeydale"
+        },
+        {
+          "@type": "Place",
+          "name": "Beauchief"
+        },
+        {
+          "@type": "Place",
+          "name": "Beighton"
+        },
+        {
+          "@type": "Place",
+          "name": "Broomhill"
+        },
+        {
+          "@type": "Place",
+          "name": "Chapeltown"
+        },
+        {
+          "@type": "Place",
+          "name": "Crookes"
+        },
+        {
+          "@type": "Place",
+          "name": "Crosspool"
+        },
+        {
+          "@type": "Place",
+          "name": "Crystal Peaks"
+        },
+        {
+          "@type": "Place",
+          "name": "Dore"
+        },
+        {
+          "@type": "Place",
+          "name": "Ecclesfield"
+        },
+        {
+          "@type": "Place",
+          "name": "Firth Park"
+        },
+        {
+          "@type": "Place",
+          "name": "Fulwood"
+        },
+        {
+          "@type": "Place",
+          "name": "Gleadless"
+        },
+        {
+          "@type": "Place",
+          "name": "Grenoside"
+        },
+        {
+          "@type": "Place",
+          "name": "Halfway"
+        },
+        {
+          "@type": "Place",
+          "name": "High Green"
+        },
+        {
+          "@type": "Place",
+          "name": "Hillsborough"
+        },
+        {
+          "@type": "Place",
+          "name": "Lodge Moor"
+        },
+        {
+          "@type": "Place",
+          "name": "Loxley"
+        },
+        {
+          "@type": "Place",
+          "name": "Malin Bridge"
+        },
+        {
+          "@type": "Place",
+          "name": "Meersbrook"
+        },
+        {
+          "@type": "Place",
+          "name": "Millhouses"
+        },
+        {
+          "@type": "Place",
+          "name": "Mosborough"
+        },
+        {
+          "@type": "Place",
+          "name": "Nether Edge"
+        },
+        {
+          "@type": "Place",
+          "name": "Norton"
+        },
+        {
+          "@type": "Place",
+          "name": "Oughtibridge"
+        },
+        {
+          "@type": "Place",
+          "name": "Parson Cross"
+        },
+        {
+          "@type": "Place",
+          "name": "Sandygate"
+        },
+        {
+          "@type": "Place",
+          "name": "Sharrow"
+        },
+        {
+          "@type": "Place",
+          "name": "Southey"
+        },
+        {
+          "@type": "Place",
+          "name": "Stannington"
+        },
+        {
+          "@type": "Place",
+          "name": "Stocksbridge"
+        },
+        {
+          "@type": "Place",
+          "name": "Totley"
+        },
+        {
+          "@type": "Place",
+          "name": "Wadsley"
+        },
+        {
+          "@type": "Place",
+          "name": "Walkley"
+        },
+        {
+          "@type": "Place",
+          "name": "Wincobank"
+        },
+        {
+          "@type": "Place",
+          "name": "Wisewood"
+        },
+        {
+          "@type": "Place",
+          "name": "Woodseats"
+        },
+        {
+          "@type": "Place",
+          "name": "Worrall"
+        },
+        {
+          "@type": "City",
+          "name": "Rotherham"
+        },
+        {
+          "@type": "City",
+          "name": "Barnsley"
+        }
+      ],
+      "slogan": "Flat Walls. Perfect Finish. First Time.",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "53.3353",
+        "longitude": "-1.3759"
       },
-      {
-        "@type": "WebPage",
-        "@id": "https://www.plasterandrenderingsolutions.co.uk/halfway-sheffield",
-        "url": "https://www.plasterandrenderingsolutions.co.uk/halfway-sheffield",
-        "name": "Plasterer & Renderer in Halfway S20 Sheffield | P&R Solutions",
-        "description": "Plastering and rendering in Halfway Sheffield S20 — silicone render, monocouche, EWI, internal plastering and dry lining. Free survey, zero deposit, 5-year guarantee.",
-        "inLanguage": "en-GB",
-        "isPartOf": {"@type": "WebSite", "@id": "https://www.plasterandrenderingsolutions.co.uk/", "name": "Plaster and Rendering Solutions Limited"}
+      "priceRange": "££",
+      "currenciesAccepted": "GBP",
+      "paymentAccepted": "Cash, Bank Transfer, Cheque",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "13:00"
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "100",
+        "bestRating": "5",
+        "worstRating": "1"
       },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {"@type": "Question", "name": "Do you cover Halfway and S20?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — Halfway and the surrounding S20 area are within our regular working area. We are based in Grenoside S35 and travel to southeast Sheffield regularly as part of our normal schedule, with Halfway typically around 25 minutes from base. Surveys are completely free and there is no call-out charge. We know Halfway's housing stock well — the post-war estates off Skelton Lane and the more recent builds along Occupation Road and the surrounding streets — which means we can usually give you a clear indication of the likely scope and cost before we even arrive."}},
-          {"@type": "Question", "name": "What render suits a Halfway property?", "acceptedAnswer": {"@type": "Answer", "text": "Halfway's housing is predominantly 1960s to 1980s brick — a mix of semis and terraces across the S20 estates that are structurally sound but showing their age externally. Silicone render is the most popular choice for this type of property: it seals and revives the brickwork, provides a clean modern finish in any colour and requires no repainting throughout its lifetime. Monocouche scratch render is an alternative for homeowners preferring a more textured, traditional appearance — it is through-colour so minor knocks are not visible. For properties with older or poorly insulated walls, EWI combines an insulation layer with the render finish, improving thermal performance and transforming the external appearance at the same time. We advise on the best system for your specific property during the free survey."}},
-          {"@type": "Question", "name": "Can you do EWI in Halfway?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — Halfway's 1960s to 1980s estate housing is well suited to EWI and we carry out this type of work regularly in S20. We install 90mm EPS insulation boards bonded to the external wall, apply a base coat with fibreglass mesh reinforcement and finish with a silicone or monocouche render topcoat in your chosen colour. The full system is backed by a 25-year manufacturer warranty and our own 5-year workmanship guarantee. Properties in Halfway with solid walls or poorly performing cavity walls benefit noticeably from EWI — it eliminates cold bridges across the external wall and typically reduces heat loss by 30–40%. Survey is free and there is no obligation to proceed."}},
-          {"@type": "Question", "name": "Do you do internal plastering in Halfway?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — we do all internal plastering work across Halfway and S20: full re-plasters, skim coats over plasterboard or artex, dot and dab dry lining, metal stud partitions, ceiling boarding and localised repairs. The older properties in Halfway often have original sand and cement plaster that has cracked, blown or simply come to the end of its life — we cut back any failed areas, prepare the surface properly and re-skim to a flat, paint-ready finish. Many customers in S20 combine internal and external work in a single booking, which saves mobilisation time and reduces the period of disruption to just one stretch. All internal work is covered by our 5-year workmanship guarantee."}},
-          {"@type": "Question", "name": "How much does rendering cost in Halfway?", "acceptedAnswer": {"@type": "Answer", "text": "A typical Halfway semi starts from around £2,000–£3,500 for silicone or monocouche render, depending on property size, the condition of the existing wall surface and what access is required. If scaffolding is needed for taller or more awkward properties, this is included in the quote. EWI is a more significant investment — typically £4,500–£8,000 for a semi — as it covers the full system of insulation boards, fixings, mesh and render finish. We provide a fully itemised written quote after the free site survey, so you know exactly what is included before making any decisions. Zero deposit required before we start."}}
-        ]
-      },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.plasterandrenderingsolutions.co.uk/"},
-          {"@type": "ListItem", "position": 2, "name": "Areas", "item": "https://www.plasterandrenderingsolutions.co.uk/#services"},
-          {"@type": "ListItem", "position": 3, "name": "Halfway Sheffield", "item": "https://www.plasterandrenderingsolutions.co.uk/halfway-sheffield"}
-        ]
+      "sameAs": [
+        "https://www.facebook.com/plasterandrenderingsolutions",
+        "https://www.instagram.com/plasterandrenderingsolutions/"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.plasterandrenderingsolutions.co.uk/halfway-sheffield",
+      "url": "https://www.plasterandrenderingsolutions.co.uk/halfway-sheffield",
+      "name": "Plasterer & Renderer in Halfway S20 Sheffield | P&R Solutions",
+      "description": "Plastering and rendering in Halfway Sheffield S20 — silicone render, monocouche, EWI, internal plastering and dry lining. Free survey, zero deposit, 5-year guarantee.",
+      "inLanguage": "en-GB",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://www.plasterandrenderingsolutions.co.uk/",
+        "name": "Plaster and Rendering Solutions Limited"
       }
-    ]
-  }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do you cover Halfway and S20?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — Halfway and the surrounding S20 area are within our regular working area. We are based in Grenoside S35 and travel to southeast Sheffield regularly as part of our normal schedule, with Halfway typically around 25 minutes from base. Surveys are completely free and there is no call-out charge. We know Halfway's housing stock well — the post-war estates off Skelton Lane and the more recent builds along Occupation Road and the surrounding streets — which means we can usually give you a clear indication of the likely scope and cost before we even arrive."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What render suits a Halfway property?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Halfway's housing is predominantly 1960s to 1980s brick — a mix of semis and terraces across the S20 estates that are structurally sound but showing their age externally. Silicone render is the most popular choice for this type of property: it seals and revives the brickwork, provides a clean modern finish in any colour and requires no repainting throughout its lifetime. Monocouche scratch render is an alternative for homeowners preferring a more textured, traditional appearance — it is through-colour so minor knocks are not visible. For properties with older or poorly insulated walls, EWI combines an insulation layer with the render finish, improving thermal performance and transforming the external appearance at the same time. We advise on the best system for your specific property during the free survey."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you do EWI in Halfway?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — Halfway's 1960s to 1980s estate housing is well suited to EWI and we carry out this type of work regularly in S20. We install 90mm EPS insulation boards bonded to the external wall, apply a base coat with fibreglass mesh reinforcement and finish with a silicone or monocouche render topcoat in your chosen colour. The full system is backed by a 25-year manufacturer warranty and our own 5-year workmanship guarantee. Properties in Halfway with solid walls or poorly performing cavity walls benefit noticeably from EWI — it eliminates cold bridges across the external wall and typically reduces heat loss by 30–40%. Survey is free and there is no obligation to proceed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you do internal plastering in Halfway?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — we do all internal plastering work across Halfway and S20: full re-plasters, skim coats over plasterboard or artex, dot and dab dry lining, metal stud partitions, ceiling boarding and localised repairs. The older properties in Halfway often have original sand and cement plaster that has cracked, blown or simply come to the end of its life — we cut back any failed areas, prepare the surface properly and re-skim to a flat, paint-ready finish. Many customers in S20 combine internal and external work in a single booking, which saves mobilisation time and reduces the period of disruption to just one stretch. All internal work is covered by our 5-year workmanship guarantee."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does rendering cost in Halfway?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A typical Halfway semi starts from around £2,000–£3,500 for silicone or monocouche render, depending on property size, the condition of the existing wall surface and what access is required. If scaffolding is needed for taller or more awkward properties, this is included in the quote. EWI is a more significant investment — typically £4,500–£8,000 for a semi — as it covers the full system of insulation boards, fixings, mesh and render finish. We provide a fully itemised written quote after the free site survey, so you know exactly what is included before making any decisions. Zero deposit required before we start."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.plasterandrenderingsolutions.co.uk/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Areas",
+          "item": "https://www.plasterandrenderingsolutions.co.uk/#services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Halfway Sheffield",
+          "item": "https://www.plasterandrenderingsolutions.co.uk/halfway-sheffield"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "name": "Plastering and Rendering in Halfway, Sheffield",
+      "description": "Professional plastering and rendering in Halfway, Sheffield. Services include silicone render, monocouche render, external wall insulation, internal plastering, dry lining and render repair. Free survey, no deposit, 5-year guarantee.",
+      "provider": {
+        "@id": "https://www.plasterandrenderingsolutions.co.uk/#business"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Halfway",
+        "containedInPlace": {
+          "@type": "City",
+          "name": "Sheffield"
+        }
+      },
+      "serviceType": [
+        "Silicone Rendering",
+        "Monocouche Rendering",
+        "External Wall Insulation",
+        "Internal Plastering",
+        "Dry Lining",
+        "Render Repair",
+        "Cement Rendering"
+      ],
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "GBP",
+        "lowPrice": "200",
+        "highPrice": "15000",
+        "offerCount": "7"
+      }
+    }
+  ]
+}
   </script>
 
   <link rel="preload" as="image" href="/images/case-studies/case/bentsgreen-ewi.webp" type="image/webp" fetchpriority="high" />

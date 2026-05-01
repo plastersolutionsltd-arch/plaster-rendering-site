@@ -33,87 +33,356 @@
 
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
-        "@id": "https://www.plasterandrenderingsolutions.co.uk/#business",
-        "name": "Plaster and Rendering Solutions Limited",
-        "url": "https://www.plasterandrenderingsolutions.co.uk/",
-        "telephone": "+447595399525",
-        "email": "plastersolutionsltd@gmail.com",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "3 Rocher Close",
-          "addressLocality": "Grenoside",
-          "addressRegion": "South Yorkshire",
-          "postalCode": "S35 8QP",
-          "addressCountry": "GB"
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "LocalBusiness",
+        "HomeAndConstructionBusiness"
+      ],
+      "@id": "https://www.plasterandrenderingsolutions.co.uk/#business",
+      "name": "Plaster and Rendering Solutions Limited",
+      "url": "https://www.plasterandrenderingsolutions.co.uk/",
+      "telephone": "+447595399525",
+      "email": "plastersolutionsltd@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3 Rocher Close",
+        "addressLocality": "Grenoside",
+        "addressRegion": "South Yorkshire",
+        "postalCode": "S35 8QP",
+        "addressCountry": "GB"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Sheffield"
         },
-        "areaServed": [
-          {"@type": "City", "name": "Sheffield"},
-          {"@type": "AdministrativeArea", "name": "South Yorkshire"},
-          {"@type": "Place", "name": "Nether Edge", "postalCode": "S7"},
-          {"@type": "Place", "name": "Chapeltown"},
-          {"@type": "Place", "name": "Ecclesfield"},
-          {"@type": "Place", "name": "High Green"},
-          {"@type": "Place", "name": "Oughtibridge"},
-          {"@type": "Place", "name": "Worrall"},
-          {"@type": "Place", "name": "Wharncliffe Side"},
-          {"@type": "City", "name": "Rotherham"},
-          {"@type": "City", "name": "Barnsley"},
-          {"@type": "City", "name": "Doncaster"}
-        ],
-        "slogan": "Flat Walls. Perfect Finish. First Time.",
-        "geo": {"@type": "GeoCoordinates", "latitude": "53.3643", "longitude": "-1.4821"},
-        "priceRange": "££",
-        "currenciesAccepted": "GBP",
-        "paymentAccepted": "Cash, Bank Transfer, Cheque",
-        "openingHoursSpecification": [
-          {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "20:00"},
-          {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "13:00"}
-        ],
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "5.0",
-          "reviewCount": "100",
-          "bestRating": "5",
-          "worstRating": "1"
+        {
+          "@type": "AdministrativeArea",
+          "name": "South Yorkshire"
         },
-        "sameAs": [
-          "https://www.facebook.com/plasterandrenderingsolutions",
-          "https://www.instagram.com/plasterandrenderingsolutions/"
-        ]
+        {
+          "@type": "Place",
+          "name": "Abbeydale"
+        },
+        {
+          "@type": "Place",
+          "name": "Beauchief"
+        },
+        {
+          "@type": "Place",
+          "name": "Beighton"
+        },
+        {
+          "@type": "Place",
+          "name": "Broomhill"
+        },
+        {
+          "@type": "Place",
+          "name": "Chapeltown"
+        },
+        {
+          "@type": "Place",
+          "name": "Crookes"
+        },
+        {
+          "@type": "Place",
+          "name": "Crosspool"
+        },
+        {
+          "@type": "Place",
+          "name": "Crystal Peaks"
+        },
+        {
+          "@type": "Place",
+          "name": "Dore"
+        },
+        {
+          "@type": "Place",
+          "name": "Ecclesfield"
+        },
+        {
+          "@type": "Place",
+          "name": "Firth Park"
+        },
+        {
+          "@type": "Place",
+          "name": "Fulwood"
+        },
+        {
+          "@type": "Place",
+          "name": "Gleadless"
+        },
+        {
+          "@type": "Place",
+          "name": "Grenoside"
+        },
+        {
+          "@type": "Place",
+          "name": "Halfway"
+        },
+        {
+          "@type": "Place",
+          "name": "High Green"
+        },
+        {
+          "@type": "Place",
+          "name": "Hillsborough"
+        },
+        {
+          "@type": "Place",
+          "name": "Lodge Moor"
+        },
+        {
+          "@type": "Place",
+          "name": "Loxley"
+        },
+        {
+          "@type": "Place",
+          "name": "Malin Bridge"
+        },
+        {
+          "@type": "Place",
+          "name": "Meersbrook"
+        },
+        {
+          "@type": "Place",
+          "name": "Millhouses"
+        },
+        {
+          "@type": "Place",
+          "name": "Mosborough"
+        },
+        {
+          "@type": "Place",
+          "name": "Nether Edge"
+        },
+        {
+          "@type": "Place",
+          "name": "Norton"
+        },
+        {
+          "@type": "Place",
+          "name": "Oughtibridge"
+        },
+        {
+          "@type": "Place",
+          "name": "Parson Cross"
+        },
+        {
+          "@type": "Place",
+          "name": "Sandygate"
+        },
+        {
+          "@type": "Place",
+          "name": "Sharrow"
+        },
+        {
+          "@type": "Place",
+          "name": "Southey"
+        },
+        {
+          "@type": "Place",
+          "name": "Stannington"
+        },
+        {
+          "@type": "Place",
+          "name": "Stocksbridge"
+        },
+        {
+          "@type": "Place",
+          "name": "Totley"
+        },
+        {
+          "@type": "Place",
+          "name": "Wadsley"
+        },
+        {
+          "@type": "Place",
+          "name": "Walkley"
+        },
+        {
+          "@type": "Place",
+          "name": "Wincobank"
+        },
+        {
+          "@type": "Place",
+          "name": "Wisewood"
+        },
+        {
+          "@type": "Place",
+          "name": "Woodseats"
+        },
+        {
+          "@type": "Place",
+          "name": "Worrall"
+        },
+        {
+          "@type": "City",
+          "name": "Rotherham"
+        },
+        {
+          "@type": "City",
+          "name": "Barnsley"
+        }
+      ],
+      "slogan": "Flat Walls. Perfect Finish. First Time.",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "53.3643",
+        "longitude": "-1.4821"
       },
-      {
-        "@type": "WebPage",
-        "@id": "https://www.plasterandrenderingsolutions.co.uk/nether-edge-sheffield",
-        "url": "https://www.plasterandrenderingsolutions.co.uk/nether-edge-sheffield",
-        "name": "Plasterer & Renderer in Nether Edge S7 Sheffield | P&R Solutions",
-        "description": "Plastering and rendering in Nether Edge Sheffield S7 — silicone render, monocouche, EWI, internal plastering and dry lining. Free survey, zero deposit, 5-year guarantee.",
-        "inLanguage": "en-GB",
-        "isPartOf": {"@type": "WebSite", "@id": "https://www.plasterandrenderingsolutions.co.uk/", "name": "Plaster and Rendering Solutions Limited"}
+      "priceRange": "££",
+      "currenciesAccepted": "GBP",
+      "paymentAccepted": "Cash, Bank Transfer, Cheque",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "13:00"
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "100",
+        "bestRating": "5",
+        "worstRating": "1"
       },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {"@type": "Question", "name": "Do you work in Nether Edge regularly?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — Nether Edge and the wider S7 postcode is a regular part of our working area. We're based in Grenoside, S35 and cover all Sheffield postcodes. Free survey, no call-out charge."}},
-          {"@type": "Question", "name": "What render is best for a Victorian property in Nether Edge?", "acceptedAnswer": {"@type": "Answer", "text": "For Nether Edge's Victorian and Edwardian properties, monocouche scratch render is often the best choice — it's a through-colour textured finish that suits the period character. Silicone render works well on brick or previously rendered surfaces where a smoother finish is preferred."}},
-          {"@type": "Question", "name": "Can you do EWI on a large Victorian semi in Nether Edge?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — we regularly work on larger period properties in S7. We assess party walls, window reveals and roof details carefully, and ensure the system is fully detailed. 90mm boards, choice of silicone or monocouche finish, 25-year warranty."}},
-          {"@type": "Question", "name": "Can you handle high ceilings and original features?", "acceptedAnswer": {"@type": "Answer", "text": "Absolutely. We're experienced with period properties — high ceilings, cornices and original plasterwork. We carry out careful repairs and re-skims that preserve the character of the room while delivering a flat, paintable finish."}},
-          {"@type": "Question", "name": "How much does rendering cost in Nether Edge?", "acceptedAnswer": {"@type": "Answer", "text": "Prices depend on property size, substrate condition and access requirements. A typical Nether Edge semi starts from around £2,500–£4,000 for silicone or monocouche render. We provide a free, itemised quote after a site visit."}}
-        ]
-      },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.plasterandrenderingsolutions.co.uk/"},
-          {"@type": "ListItem", "position": 2, "name": "Areas", "item": "https://www.plasterandrenderingsolutions.co.uk/#services"},
-          {"@type": "ListItem", "position": 3, "name": "Nether Edge Sheffield", "item": "https://www.plasterandrenderingsolutions.co.uk/nether-edge-sheffield"}
-        ]
+      "sameAs": [
+        "https://www.facebook.com/plasterandrenderingsolutions",
+        "https://www.instagram.com/plasterandrenderingsolutions/"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.plasterandrenderingsolutions.co.uk/nether-edge-sheffield",
+      "url": "https://www.plasterandrenderingsolutions.co.uk/nether-edge-sheffield",
+      "name": "Plasterer & Renderer in Nether Edge S7 Sheffield | P&R Solutions",
+      "description": "Plastering and rendering in Nether Edge Sheffield S7 — silicone render, monocouche, EWI, internal plastering and dry lining. Free survey, zero deposit, 5-year guarantee.",
+      "inLanguage": "en-GB",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://www.plasterandrenderingsolutions.co.uk/",
+        "name": "Plaster and Rendering Solutions Limited"
       }
-    ]
-  }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do you work in Nether Edge regularly?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — Nether Edge and the wider S7 postcode is a regular part of our working area. We're based in Grenoside, S35 and cover all Sheffield postcodes. Free survey, no call-out charge."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What render is best for a Victorian property in Nether Edge?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For Nether Edge's Victorian and Edwardian properties, monocouche scratch render is often the best choice — it's a through-colour textured finish that suits the period character. Silicone render works well on brick or previously rendered surfaces where a smoother finish is preferred."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you do EWI on a large Victorian semi in Nether Edge?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — we regularly work on larger period properties in S7. We assess party walls, window reveals and roof details carefully, and ensure the system is fully detailed. 90mm boards, choice of silicone or monocouche finish, 25-year warranty."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you handle high ceilings and original features?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. We're experienced with period properties — high ceilings, cornices and original plasterwork. We carry out careful repairs and re-skims that preserve the character of the room while delivering a flat, paintable finish."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does rendering cost in Nether Edge?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Prices depend on property size, substrate condition and access requirements. A typical Nether Edge semi starts from around £2,500–£4,000 for silicone or monocouche render. We provide a free, itemised quote after a site visit."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.plasterandrenderingsolutions.co.uk/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Areas",
+          "item": "https://www.plasterandrenderingsolutions.co.uk/#services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Nether Edge Sheffield",
+          "item": "https://www.plasterandrenderingsolutions.co.uk/nether-edge-sheffield"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "name": "Plastering and Rendering in Nether Edge, Sheffield",
+      "description": "Professional plastering and rendering in Nether Edge, Sheffield. Services include silicone render, monocouche render, external wall insulation, internal plastering, dry lining and render repair. Free survey, no deposit, 5-year guarantee.",
+      "provider": {
+        "@id": "https://www.plasterandrenderingsolutions.co.uk/#business"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Nether Edge",
+        "containedInPlace": {
+          "@type": "City",
+          "name": "Sheffield"
+        }
+      },
+      "serviceType": [
+        "Silicone Rendering",
+        "Monocouche Rendering",
+        "External Wall Insulation",
+        "Internal Plastering",
+        "Dry Lining",
+        "Render Repair",
+        "Cement Rendering"
+      ],
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "GBP",
+        "lowPrice": "200",
+        "highPrice": "15000",
+        "offerCount": "7"
+      }
+    }
+  ]
+}
   </script>
 
   <link rel="preload" as="image" href="/images/case-studies/dronfield-monocouche.webp" type="image/webp" fetchpriority="high" />

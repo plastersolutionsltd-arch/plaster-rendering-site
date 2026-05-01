@@ -33,87 +33,356 @@
 
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
-        "@id": "https://www.plasterandrenderingsolutions.co.uk/#business",
-        "name": "Plaster and Rendering Solutions Limited",
-        "url": "https://www.plasterandrenderingsolutions.co.uk/",
-        "telephone": "+447595399525",
-        "email": "plastersolutionsltd@gmail.com",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "3 Rocher Close",
-          "addressLocality": "Grenoside",
-          "addressRegion": "South Yorkshire",
-          "postalCode": "S35 8QP",
-          "addressCountry": "GB"
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "LocalBusiness",
+        "HomeAndConstructionBusiness"
+      ],
+      "@id": "https://www.plasterandrenderingsolutions.co.uk/#business",
+      "name": "Plaster and Rendering Solutions Limited",
+      "url": "https://www.plasterandrenderingsolutions.co.uk/",
+      "telephone": "+447595399525",
+      "email": "plastersolutionsltd@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3 Rocher Close",
+        "addressLocality": "Grenoside",
+        "addressRegion": "South Yorkshire",
+        "postalCode": "S35 8QP",
+        "addressCountry": "GB"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Sheffield"
         },
-        "areaServed": [
-          {"@type": "City", "name": "Sheffield"},
-          {"@type": "AdministrativeArea", "name": "South Yorkshire"},
-          {"@type": "Place", "name": "Dore", "postalCode": "S17"},
-          {"@type": "Place", "name": "Grenoside"},
-          {"@type": "Place", "name": "Totley"},
-          {"@type": "Place", "name": "Ecclesall"},
-          {"@type": "Place", "name": "Whirlow"},
-          {"@type": "Place", "name": "Bradway"},
-          {"@type": "Place", "name": "Beauchief"},
-          {"@type": "City", "name": "Rotherham"},
-          {"@type": "City", "name": "Barnsley"},
-          {"@type": "City", "name": "Doncaster"}
-        ],
-        "slogan": "Flat Walls. Perfect Finish. First Time.",
-        "geo": {"@type": "GeoCoordinates", "latitude": "53.3325", "longitude": "-1.5270"},
-        "priceRange": "££",
-        "currenciesAccepted": "GBP",
-        "paymentAccepted": "Cash, Bank Transfer, Cheque",
-        "openingHoursSpecification": [
-          {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "20:00"},
-          {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "13:00"}
-        ],
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "5.0",
-          "reviewCount": "100",
-          "bestRating": "5",
-          "worstRating": "1"
+        {
+          "@type": "AdministrativeArea",
+          "name": "South Yorkshire"
         },
-        "sameAs": [
-          "https://www.facebook.com/plasterandrenderingsolutions",
-          "https://www.instagram.com/plasterandrenderingsolutions/"
-        ]
+        {
+          "@type": "Place",
+          "name": "Abbeydale"
+        },
+        {
+          "@type": "Place",
+          "name": "Beauchief"
+        },
+        {
+          "@type": "Place",
+          "name": "Beighton"
+        },
+        {
+          "@type": "Place",
+          "name": "Broomhill"
+        },
+        {
+          "@type": "Place",
+          "name": "Chapeltown"
+        },
+        {
+          "@type": "Place",
+          "name": "Crookes"
+        },
+        {
+          "@type": "Place",
+          "name": "Crosspool"
+        },
+        {
+          "@type": "Place",
+          "name": "Crystal Peaks"
+        },
+        {
+          "@type": "Place",
+          "name": "Dore"
+        },
+        {
+          "@type": "Place",
+          "name": "Ecclesfield"
+        },
+        {
+          "@type": "Place",
+          "name": "Firth Park"
+        },
+        {
+          "@type": "Place",
+          "name": "Fulwood"
+        },
+        {
+          "@type": "Place",
+          "name": "Gleadless"
+        },
+        {
+          "@type": "Place",
+          "name": "Grenoside"
+        },
+        {
+          "@type": "Place",
+          "name": "Halfway"
+        },
+        {
+          "@type": "Place",
+          "name": "High Green"
+        },
+        {
+          "@type": "Place",
+          "name": "Hillsborough"
+        },
+        {
+          "@type": "Place",
+          "name": "Lodge Moor"
+        },
+        {
+          "@type": "Place",
+          "name": "Loxley"
+        },
+        {
+          "@type": "Place",
+          "name": "Malin Bridge"
+        },
+        {
+          "@type": "Place",
+          "name": "Meersbrook"
+        },
+        {
+          "@type": "Place",
+          "name": "Millhouses"
+        },
+        {
+          "@type": "Place",
+          "name": "Mosborough"
+        },
+        {
+          "@type": "Place",
+          "name": "Nether Edge"
+        },
+        {
+          "@type": "Place",
+          "name": "Norton"
+        },
+        {
+          "@type": "Place",
+          "name": "Oughtibridge"
+        },
+        {
+          "@type": "Place",
+          "name": "Parson Cross"
+        },
+        {
+          "@type": "Place",
+          "name": "Sandygate"
+        },
+        {
+          "@type": "Place",
+          "name": "Sharrow"
+        },
+        {
+          "@type": "Place",
+          "name": "Southey"
+        },
+        {
+          "@type": "Place",
+          "name": "Stannington"
+        },
+        {
+          "@type": "Place",
+          "name": "Stocksbridge"
+        },
+        {
+          "@type": "Place",
+          "name": "Totley"
+        },
+        {
+          "@type": "Place",
+          "name": "Wadsley"
+        },
+        {
+          "@type": "Place",
+          "name": "Walkley"
+        },
+        {
+          "@type": "Place",
+          "name": "Wincobank"
+        },
+        {
+          "@type": "Place",
+          "name": "Wisewood"
+        },
+        {
+          "@type": "Place",
+          "name": "Woodseats"
+        },
+        {
+          "@type": "Place",
+          "name": "Worrall"
+        },
+        {
+          "@type": "City",
+          "name": "Rotherham"
+        },
+        {
+          "@type": "City",
+          "name": "Barnsley"
+        }
+      ],
+      "slogan": "Flat Walls. Perfect Finish. First Time.",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "53.3325",
+        "longitude": "-1.5270"
       },
-      {
-        "@type": "WebPage",
-        "@id": "https://www.plasterandrenderingsolutions.co.uk/dore-sheffield",
-        "url": "https://www.plasterandrenderingsolutions.co.uk/dore-sheffield",
-        "name": "Plasterer & Renderer in Dore S17 Sheffield | P&R Solutions",
-        "description": "Plastering and rendering in Dore Sheffield S17. Silicone render, monocouche, EWI, internal plastering and dry lining for period and detached properties. Free survey, zero deposit, 5-year guarantee.",
-        "inLanguage": "en-GB",
-        "isPartOf": {"@type": "WebSite", "@id": "https://www.plasterandrenderingsolutions.co.uk/", "name": "Plaster and Rendering Solutions Limited"}
+      "priceRange": "££",
+      "currenciesAccepted": "GBP",
+      "paymentAccepted": "Cash, Bank Transfer, Cheque",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "13:00"
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "100",
+        "bestRating": "5",
+        "worstRating": "1"
       },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {"@type": "Question", "name": "Do you cover Dore and the S17 area?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, we cover all of Dore, Totley, Bradway and the surrounding S17 area. We're based in Grenoside, about 30 minutes away. Free surveys, no call-out charge."}},
-          {"@type": "Question", "name": "What render suits a 1930s detached house in Dore?", "acceptedAnswer": {"@type": "Answer", "text": "Both silicone and monocouche work well on Dore's interwar detached properties. Silicone render gives a smooth, contemporary finish with excellent colour choice; monocouche gives a more traditional textured look. We'll show samples and advise at the free survey."}},
-          {"@type": "Question", "name": "Do you work on larger Dore properties?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, we regularly work on larger detached properties in S17. Bigger jobs benefit from our team approach — we don't sub-contract, so you get the same quality throughout. Scaffolding and access is arranged as part of the quote."}},
-          {"@type": "Question", "name": "Can you improve the energy efficiency of a Dore home with EWI?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — EWI is increasingly popular in Dore as homeowners look to improve thermal performance. We fit 90mm insulation boards with a quality silicone or monocouche render finish, backed by a 25-year manufacturer warranty. It also refreshes the exterior in one job."}},
-          {"@type": "Question", "name": "How much does rendering cost for a Dore property?", "acceptedAnswer": {"@type": "Answer", "text": "Pricing depends on size, access and render choice. A typical Dore semi-detached starts from around £2,500–£4,000 for silicone render; larger detached properties will be quoted individually after a free site survey. We provide fully itemised quotes with no surprises."}}
-        ]
-      },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.plasterandrenderingsolutions.co.uk/"},
-          {"@type": "ListItem", "position": 2, "name": "Areas", "item": "https://www.plasterandrenderingsolutions.co.uk/#services"},
-          {"@type": "ListItem", "position": 3, "name": "Dore Sheffield", "item": "https://www.plasterandrenderingsolutions.co.uk/dore-sheffield"}
-        ]
+      "sameAs": [
+        "https://www.facebook.com/plasterandrenderingsolutions",
+        "https://www.instagram.com/plasterandrenderingsolutions/"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.plasterandrenderingsolutions.co.uk/dore-sheffield",
+      "url": "https://www.plasterandrenderingsolutions.co.uk/dore-sheffield",
+      "name": "Plasterer & Renderer in Dore S17 Sheffield | P&R Solutions",
+      "description": "Plastering and rendering in Dore Sheffield S17. Silicone render, monocouche, EWI, internal plastering and dry lining for period and detached properties. Free survey, zero deposit, 5-year guarantee.",
+      "inLanguage": "en-GB",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://www.plasterandrenderingsolutions.co.uk/",
+        "name": "Plaster and Rendering Solutions Limited"
       }
-    ]
-  }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do you cover Dore and the S17 area?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we cover all of Dore, Totley, Bradway and the surrounding S17 area. We're based in Grenoside, about 30 minutes away. Free surveys, no call-out charge."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What render suits a 1930s detached house in Dore?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Both silicone and monocouche work well on Dore's interwar detached properties. Silicone render gives a smooth, contemporary finish with excellent colour choice; monocouche gives a more traditional textured look. We'll show samples and advise at the free survey."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you work on larger Dore properties?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we regularly work on larger detached properties in S17. Bigger jobs benefit from our team approach — we don't sub-contract, so you get the same quality throughout. Scaffolding and access is arranged as part of the quote."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you improve the energy efficiency of a Dore home with EWI?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — EWI is increasingly popular in Dore as homeowners look to improve thermal performance. We fit 90mm insulation boards with a quality silicone or monocouche render finish, backed by a 25-year manufacturer warranty. It also refreshes the exterior in one job."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does rendering cost for a Dore property?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pricing depends on size, access and render choice. A typical Dore semi-detached starts from around £2,500–£4,000 for silicone render; larger detached properties will be quoted individually after a free site survey. We provide fully itemised quotes with no surprises."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.plasterandrenderingsolutions.co.uk/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Areas",
+          "item": "https://www.plasterandrenderingsolutions.co.uk/#services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Dore Sheffield",
+          "item": "https://www.plasterandrenderingsolutions.co.uk/dore-sheffield"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "name": "Plastering and Rendering in Dore, Sheffield",
+      "description": "Professional plastering and rendering in Dore, Sheffield. Services include silicone render, monocouche render, external wall insulation, internal plastering, dry lining and render repair. Free survey, no deposit, 5-year guarantee.",
+      "provider": {
+        "@id": "https://www.plasterandrenderingsolutions.co.uk/#business"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Dore",
+        "containedInPlace": {
+          "@type": "City",
+          "name": "Sheffield"
+        }
+      },
+      "serviceType": [
+        "Silicone Rendering",
+        "Monocouche Rendering",
+        "External Wall Insulation",
+        "Internal Plastering",
+        "Dry Lining",
+        "Render Repair",
+        "Cement Rendering"
+      ],
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "GBP",
+        "lowPrice": "200",
+        "highPrice": "15000",
+        "offerCount": "7"
+      }
+    }
+  ]
+}
   </script>
 
   <link rel="preload" as="image" href="/images/case-studies/bradway-silicone.webp" type="image/webp" fetchpriority="high" />

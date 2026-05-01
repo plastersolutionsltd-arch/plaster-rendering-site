@@ -33,86 +33,356 @@
 
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
-        "@id": "https://www.plasterandrenderingsolutions.co.uk/#business",
-        "name": "Plaster and Rendering Solutions Limited",
-        "url": "https://www.plasterandrenderingsolutions.co.uk/",
-        "telephone": "+447595399525",
-        "email": "plastersolutionsltd@gmail.com",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "3 Rocher Close",
-          "addressLocality": "Grenoside",
-          "addressRegion": "South Yorkshire",
-          "postalCode": "S35 8QP",
-          "addressCountry": "GB"
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "LocalBusiness",
+        "HomeAndConstructionBusiness"
+      ],
+      "@id": "https://www.plasterandrenderingsolutions.co.uk/#business",
+      "name": "Plaster and Rendering Solutions Limited",
+      "url": "https://www.plasterandrenderingsolutions.co.uk/",
+      "telephone": "+447595399525",
+      "email": "plastersolutionsltd@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3 Rocher Close",
+        "addressLocality": "Grenoside",
+        "addressRegion": "South Yorkshire",
+        "postalCode": "S35 8QP",
+        "addressCountry": "GB"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Sheffield"
         },
-        "areaServed": [
-          {"@type": "City", "name": "Sheffield"},
-          {"@type": "AdministrativeArea", "name": "South Yorkshire"},
-          {"@type": "Place", "name": "Stannington", "postalCode": "S6"},
-          {"@type": "Place", "name": "Hillsborough"},
-          {"@type": "Place", "name": "Crookes"},
-          {"@type": "Place", "name": "Walkley"},
-          {"@type": "Place", "name": "Crosspool"},
-          {"@type": "Place", "name": "Oughtibridge"},
-          {"@type": "City", "name": "Rotherham"},
-          {"@type": "City", "name": "Barnsley"},
-          {"@type": "City", "name": "Doncaster"}
-        ],
-        "slogan": "Flat Walls. Perfect Finish. First Time.",
-        "geo": {"@type": "GeoCoordinates", "latitude": "53.3966", "longitude": "-1.5466"},
-        "priceRange": "££",
-        "currenciesAccepted": "GBP",
-        "paymentAccepted": "Cash, Bank Transfer, Cheque",
-        "openingHoursSpecification": [
-          {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "20:00"},
-          {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "13:00"}
-        ],
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "5.0",
-          "reviewCount": "100",
-          "bestRating": "5",
-          "worstRating": "1"
+        {
+          "@type": "AdministrativeArea",
+          "name": "South Yorkshire"
         },
-        "sameAs": [
-          "https://www.facebook.com/plasterandrenderingsolutions",
-          "https://www.instagram.com/plasterandrenderingsolutions/"
-        ]
+        {
+          "@type": "Place",
+          "name": "Abbeydale"
+        },
+        {
+          "@type": "Place",
+          "name": "Beauchief"
+        },
+        {
+          "@type": "Place",
+          "name": "Beighton"
+        },
+        {
+          "@type": "Place",
+          "name": "Broomhill"
+        },
+        {
+          "@type": "Place",
+          "name": "Chapeltown"
+        },
+        {
+          "@type": "Place",
+          "name": "Crookes"
+        },
+        {
+          "@type": "Place",
+          "name": "Crosspool"
+        },
+        {
+          "@type": "Place",
+          "name": "Crystal Peaks"
+        },
+        {
+          "@type": "Place",
+          "name": "Dore"
+        },
+        {
+          "@type": "Place",
+          "name": "Ecclesfield"
+        },
+        {
+          "@type": "Place",
+          "name": "Firth Park"
+        },
+        {
+          "@type": "Place",
+          "name": "Fulwood"
+        },
+        {
+          "@type": "Place",
+          "name": "Gleadless"
+        },
+        {
+          "@type": "Place",
+          "name": "Grenoside"
+        },
+        {
+          "@type": "Place",
+          "name": "Halfway"
+        },
+        {
+          "@type": "Place",
+          "name": "High Green"
+        },
+        {
+          "@type": "Place",
+          "name": "Hillsborough"
+        },
+        {
+          "@type": "Place",
+          "name": "Lodge Moor"
+        },
+        {
+          "@type": "Place",
+          "name": "Loxley"
+        },
+        {
+          "@type": "Place",
+          "name": "Malin Bridge"
+        },
+        {
+          "@type": "Place",
+          "name": "Meersbrook"
+        },
+        {
+          "@type": "Place",
+          "name": "Millhouses"
+        },
+        {
+          "@type": "Place",
+          "name": "Mosborough"
+        },
+        {
+          "@type": "Place",
+          "name": "Nether Edge"
+        },
+        {
+          "@type": "Place",
+          "name": "Norton"
+        },
+        {
+          "@type": "Place",
+          "name": "Oughtibridge"
+        },
+        {
+          "@type": "Place",
+          "name": "Parson Cross"
+        },
+        {
+          "@type": "Place",
+          "name": "Sandygate"
+        },
+        {
+          "@type": "Place",
+          "name": "Sharrow"
+        },
+        {
+          "@type": "Place",
+          "name": "Southey"
+        },
+        {
+          "@type": "Place",
+          "name": "Stannington"
+        },
+        {
+          "@type": "Place",
+          "name": "Stocksbridge"
+        },
+        {
+          "@type": "Place",
+          "name": "Totley"
+        },
+        {
+          "@type": "Place",
+          "name": "Wadsley"
+        },
+        {
+          "@type": "Place",
+          "name": "Walkley"
+        },
+        {
+          "@type": "Place",
+          "name": "Wincobank"
+        },
+        {
+          "@type": "Place",
+          "name": "Wisewood"
+        },
+        {
+          "@type": "Place",
+          "name": "Woodseats"
+        },
+        {
+          "@type": "Place",
+          "name": "Worrall"
+        },
+        {
+          "@type": "City",
+          "name": "Rotherham"
+        },
+        {
+          "@type": "City",
+          "name": "Barnsley"
+        }
+      ],
+      "slogan": "Flat Walls. Perfect Finish. First Time.",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "53.3966",
+        "longitude": "-1.5466"
       },
-      {
-        "@type": "WebPage",
-        "@id": "https://www.plasterandrenderingsolutions.co.uk/stannington-sheffield",
-        "url": "https://www.plasterandrenderingsolutions.co.uk/stannington-sheffield",
-        "name": "Plasterer & Renderer in Stannington S6 Sheffield | P&R Solutions",
-        "description": "Plastering and rendering in Stannington Sheffield S6. Silicone render, monocouche, EWI, internal plastering and dry lining. Free survey, zero deposit, 5-year guarantee.",
-        "inLanguage": "en-GB",
-        "isPartOf": {"@type": "WebSite", "@id": "https://www.plasterandrenderingsolutions.co.uk/", "name": "Plaster and Rendering Solutions Limited"}
+      "priceRange": "££",
+      "currenciesAccepted": "GBP",
+      "paymentAccepted": "Cash, Bank Transfer, Cheque",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "13:00"
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "100",
+        "bestRating": "5",
+        "worstRating": "1"
       },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {"@type": "Question", "name": "Do you cover Stannington Sheffield?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — Stannington S6 is well within our working area. We cover the village and surrounding streets regularly, carrying out external rendering and internal plastering on all property types. Free survey, no call-out charge."}},
-          {"@type": "Question", "name": "What render suits a Stannington stone cottage?", "acceptedAnswer": {"@type": "Answer", "text": "Stannington has many older stone-built properties and traditional village cottages. For these, monocouche scratch render is usually the best option — it gives a through-colour textured finish that suits the period character and is highly weather resistant. For brick or previously rendered properties, silicone render is an excellent choice."}},
-          {"@type": "Question", "name": "Can you fit EWI on a Stannington property?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. EWI works particularly well on the solid-walled and 1960s–70s properties common in Stannington — adding external insulation boards with a render topcoat is one of the most cost-effective ways to improve energy efficiency and refresh the exterior at the same time. 25-year manufacturer warranty included."}},
-          {"@type": "Question", "name": "Do you do internal plastering in Stannington S6?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, full internal plastering throughout S6 — re-skims, dot and dab boarding, stud partitions and ceiling plastering. We work cleanly and efficiently, and many Stannington customers have us carry out both internal and external work on the same property."}},
-          {"@type": "Question", "name": "How much does rendering cost in Stannington?", "acceptedAnswer": {"@type": "Answer", "text": "A typical Stannington semi or detached starts from around £2,000–£3,500 for silicone render depending on size and access. Older stone properties requiring monocouche or parge coat preparation may vary. We provide a free, detailed quote after a site visit with no obligation."}}
-        ]
-      },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.plasterandrenderingsolutions.co.uk/"},
-          {"@type": "ListItem", "position": 2, "name": "Areas", "item": "https://www.plasterandrenderingsolutions.co.uk/#services"},
-          {"@type": "ListItem", "position": 3, "name": "Stannington Sheffield", "item": "https://www.plasterandrenderingsolutions.co.uk/stannington-sheffield"}
-        ]
+      "sameAs": [
+        "https://www.facebook.com/plasterandrenderingsolutions",
+        "https://www.instagram.com/plasterandrenderingsolutions/"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.plasterandrenderingsolutions.co.uk/stannington-sheffield",
+      "url": "https://www.plasterandrenderingsolutions.co.uk/stannington-sheffield",
+      "name": "Plasterer & Renderer in Stannington S6 Sheffield | P&R Solutions",
+      "description": "Plastering and rendering in Stannington Sheffield S6. Silicone render, monocouche, EWI, internal plastering and dry lining. Free survey, zero deposit, 5-year guarantee.",
+      "inLanguage": "en-GB",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://www.plasterandrenderingsolutions.co.uk/",
+        "name": "Plaster and Rendering Solutions Limited"
       }
-    ]
-  }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do you cover Stannington Sheffield?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — Stannington S6 is well within our working area. We cover the village and surrounding streets regularly, carrying out external rendering and internal plastering on all property types. Free survey, no call-out charge."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What render suits a Stannington stone cottage?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Stannington has many older stone-built properties and traditional village cottages. For these, monocouche scratch render is usually the best option — it gives a through-colour textured finish that suits the period character and is highly weather resistant. For brick or previously rendered properties, silicone render is an excellent choice."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you fit EWI on a Stannington property?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. EWI works particularly well on the solid-walled and 1960s–70s properties common in Stannington — adding external insulation boards with a render topcoat is one of the most cost-effective ways to improve energy efficiency and refresh the exterior at the same time. 25-year manufacturer warranty included."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you do internal plastering in Stannington S6?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, full internal plastering throughout S6 — re-skims, dot and dab boarding, stud partitions and ceiling plastering. We work cleanly and efficiently, and many Stannington customers have us carry out both internal and external work on the same property."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does rendering cost in Stannington?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A typical Stannington semi or detached starts from around £2,000–£3,500 for silicone render depending on size and access. Older stone properties requiring monocouche or parge coat preparation may vary. We provide a free, detailed quote after a site visit with no obligation."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.plasterandrenderingsolutions.co.uk/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Areas",
+          "item": "https://www.plasterandrenderingsolutions.co.uk/#services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Stannington Sheffield",
+          "item": "https://www.plasterandrenderingsolutions.co.uk/stannington-sheffield"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "name": "Plastering and Rendering in Stannington, Sheffield",
+      "description": "Professional plastering and rendering in Stannington, Sheffield. Services include silicone render, monocouche render, external wall insulation, internal plastering, dry lining and render repair. Free survey, no deposit, 5-year guarantee.",
+      "provider": {
+        "@id": "https://www.plasterandrenderingsolutions.co.uk/#business"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Stannington",
+        "containedInPlace": {
+          "@type": "City",
+          "name": "Sheffield"
+        }
+      },
+      "serviceType": [
+        "Silicone Rendering",
+        "Monocouche Rendering",
+        "External Wall Insulation",
+        "Internal Plastering",
+        "Dry Lining",
+        "Render Repair",
+        "Cement Rendering"
+      ],
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "GBP",
+        "lowPrice": "200",
+        "highPrice": "15000",
+        "offerCount": "7"
+      }
+    }
+  ]
+}
   </script>
 
   <link rel="preload" as="image" href="/images/case-studies/stanington-ewi-full.webp" type="image/webp" fetchpriority="high" />

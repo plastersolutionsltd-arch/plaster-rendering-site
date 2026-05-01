@@ -38,113 +38,349 @@
   <!-- JSON-LD: LocalBusiness + Service Schema -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "LocalBusiness",
-        "@id": "https://www.plasterandrenderingsolutions.co.uk/#business",
-        "name": "Plaster and Rendering Solutions Limited",
-        "url": "https://www.plasterandrenderingsolutions.co.uk/",
-        "telephone": "+447595399525",
-        "email": "plastersolutionsltd@gmail.com",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "3 Rocher Close",
-          "addressLocality": "Grenoside",
-          "addressRegion": "South Yorkshire",
-          "postalCode": "S35 8QP",
-          "addressCountry": "GB"
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://www.plasterandrenderingsolutions.co.uk/#business",
+      "name": "Plaster and Rendering Solutions Limited",
+      "url": "https://www.plasterandrenderingsolutions.co.uk/",
+      "telephone": "+447595399525",
+      "email": "plastersolutionsltd@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3 Rocher Close",
+        "addressLocality": "Grenoside",
+        "addressRegion": "South Yorkshire",
+        "postalCode": "S35 8QP",
+        "addressCountry": "GB"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Sheffield"
         },
-        "areaServed": {"@type": "City", "name": "Sheffield"},
-        "geo": {"@type": "GeoCoordinates", "latitude": "53.381130", "longitude": "-1.470085"},
-        "hasMap": "https://maps.google.com/?q=Plaster+and+Rendering+Solutions+Sheffield",
-        "priceRange": "££",
-        "image": "https://www.plasterandrenderingsolutions.co.uk/images/hero/monocouche%20service.webp",
-        "openingHoursSpecification": [
-          {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "20:00"},
-          {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "13:00"}
-        ],
-        "sameAs": [
-          "https://share.google/rOAl0WMAyojDrY2kb",
-          "https://www.facebook.com/plasterandrenderingsolutions",
-          "https://www.instagram.com/plasterandrenderingsolutions",
-          "https://x.com/Chris76550497"
-        ],
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "5.0",
-          "reviewCount": "100",
-          "bestRating": "5",
-          "worstRating": "1"
+        {
+          "@type": "AdministrativeArea",
+          "name": "South Yorkshire"
         },
-        "review": [
-          {
-            "@type": "Review",
-            "author": {"@type": "Person", "name": "Dee Williams"},
-            "datePublished": "2026-01-27",
-            "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
-            "reviewBody": "Just reading some previous reviews. I'll struggle to say anything original here. Chris was polite and professional from the off and extended to being very considerate of the neighbours. The job he did was second to none and off a tight scaffold. Highly recommended."
+        {
+          "@type": "Place",
+          "name": "Abbeydale"
+        },
+        {
+          "@type": "Place",
+          "name": "Beauchief"
+        },
+        {
+          "@type": "Place",
+          "name": "Beighton"
+        },
+        {
+          "@type": "Place",
+          "name": "Broomhill"
+        },
+        {
+          "@type": "Place",
+          "name": "Chapeltown"
+        },
+        {
+          "@type": "Place",
+          "name": "Crookes"
+        },
+        {
+          "@type": "Place",
+          "name": "Crosspool"
+        },
+        {
+          "@type": "Place",
+          "name": "Crystal Peaks"
+        },
+        {
+          "@type": "Place",
+          "name": "Dore"
+        },
+        {
+          "@type": "Place",
+          "name": "Ecclesfield"
+        },
+        {
+          "@type": "Place",
+          "name": "Firth Park"
+        },
+        {
+          "@type": "Place",
+          "name": "Fulwood"
+        },
+        {
+          "@type": "Place",
+          "name": "Gleadless"
+        },
+        {
+          "@type": "Place",
+          "name": "Grenoside"
+        },
+        {
+          "@type": "Place",
+          "name": "Halfway"
+        },
+        {
+          "@type": "Place",
+          "name": "High Green"
+        },
+        {
+          "@type": "Place",
+          "name": "Hillsborough"
+        },
+        {
+          "@type": "Place",
+          "name": "Lodge Moor"
+        },
+        {
+          "@type": "Place",
+          "name": "Loxley"
+        },
+        {
+          "@type": "Place",
+          "name": "Malin Bridge"
+        },
+        {
+          "@type": "Place",
+          "name": "Meersbrook"
+        },
+        {
+          "@type": "Place",
+          "name": "Millhouses"
+        },
+        {
+          "@type": "Place",
+          "name": "Mosborough"
+        },
+        {
+          "@type": "Place",
+          "name": "Nether Edge"
+        },
+        {
+          "@type": "Place",
+          "name": "Norton"
+        },
+        {
+          "@type": "Place",
+          "name": "Oughtibridge"
+        },
+        {
+          "@type": "Place",
+          "name": "Parson Cross"
+        },
+        {
+          "@type": "Place",
+          "name": "Sandygate"
+        },
+        {
+          "@type": "Place",
+          "name": "Sharrow"
+        },
+        {
+          "@type": "Place",
+          "name": "Southey"
+        },
+        {
+          "@type": "Place",
+          "name": "Stannington"
+        },
+        {
+          "@type": "Place",
+          "name": "Stocksbridge"
+        },
+        {
+          "@type": "Place",
+          "name": "Totley"
+        },
+        {
+          "@type": "Place",
+          "name": "Wadsley"
+        },
+        {
+          "@type": "Place",
+          "name": "Walkley"
+        },
+        {
+          "@type": "Place",
+          "name": "Wincobank"
+        },
+        {
+          "@type": "Place",
+          "name": "Wisewood"
+        },
+        {
+          "@type": "Place",
+          "name": "Woodseats"
+        },
+        {
+          "@type": "Place",
+          "name": "Worrall"
+        },
+        {
+          "@type": "City",
+          "name": "Rotherham"
+        },
+        {
+          "@type": "City",
+          "name": "Barnsley"
+        }
+      ],
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "53.381130",
+        "longitude": "-1.470085"
+      },
+      "hasMap": "https://maps.google.com/?q=Plaster+and+Rendering+Solutions+Sheffield",
+      "priceRange": "££",
+      "image": "https://www.plasterandrenderingsolutions.co.uk/images/hero/monocouche%20service.webp",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "13:00"
+        }
+      ],
+      "sameAs": [
+        "https://share.google/rOAl0WMAyojDrY2kb",
+        "https://www.facebook.com/plasterandrenderingsolutions",
+        "https://www.instagram.com/plasterandrenderingsolutions",
+        "https://x.com/Chris76550497"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "100",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Dee Williams"
           },
-          {
-            "@type": "Review",
-            "author": {"@type": "Person", "name": "Daniel Gatt"},
-            "datePublished": "2025-04-21",
-            "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
-            "reviewBody": "Chris touched up our render after having some new doors installed. Always good with his communication. Gave us many options and did his best to match in the new render to existing one. Would definitely recommend."
+          "datePublished": "2026-01-27",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
           },
-          {
-            "@type": "Review",
-            "author": {"@type": "Person", "name": "Marjorie Skidmore"},
-            "datePublished": "2025-02-23",
-            "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
-            "reviewBody": "Chris initially restored our rendered chimneys, and we were so pleased with his work we asked him to return to restore our dilapidated rendered garage. He is a most reliable, punctual, tidy, friendly, honest person and an excellent craftsman completing work to a very high standard. He goes above and beyond! We are enormously grateful to him."
-          }
-        ]
-      },
-      {
-        "@type": "Service",
-        "name": "Monocouche Rendering Sheffield",
-        "description": "Professional monocouche rendering services in Sheffield. Single-coat through-coloured systems with 20-25 year manufacturer warranty. Ecorend (recommended), K Rend, Weber, Baumit and Johnstones systems installed.",
-        "serviceType": "Monocouche Rendering",
-        "category": "External Wall Rendering",
-        "provider": {"@id": "https://www.plasterandrenderingsolutions.co.uk/#business"},
-        "areaServed": {"@type": "City", "name": "Sheffield"},
-        "offers": {"@type": "AggregateOffer", "priceCurrency": "GBP", "lowPrice": "3500", "highPrice": "11000", "offerCount": "3"}
-      },
-      {
-        "@type": "WebPage",
-        "@id": "https://www.plasterandrenderingsolutions.co.uk/monocouche-render-sheffield",
-        "url": "https://www.plasterandrenderingsolutions.co.uk/monocouche-render-sheffield",
-        "name": "Monocouche Rendering Sheffield | 20-Year Warranty | P&R Solutions",
-        "description": "Professional monocouche rendering in Sheffield — single-coat stone-like finish with 20-25 year manufacturer warranty. Ecorend, K Rend, Weber & Baumit. Free site survey. No deposit.",
-        "datePublished": "2024-06-01",
-        "dateModified": "2026-03-15",
-        "inLanguage": "en-GB",
-        "isPartOf": {"@type": "WebSite", "@id": "https://www.plasterandrenderingsolutions.co.uk/", "name": "Plaster and Rendering Solutions Limited"},
-        "primaryImageOfPage": {
-          "@type": "ImageObject",
-          "url": "https://www.plasterandrenderingsolutions.co.uk/images/hero/monocouche%20service.webp"
+          "reviewBody": "Just reading some previous reviews. I'll struggle to say anything original here. Chris was polite and professional from the off and extended to being very considerate of the neighbours. The job he did was second to none and off a tight scaffold. Highly recommended."
         },
-        "speakable": {"@type": "SpeakableSpecification", "cssSelector": ["h1", "h2", ".faq-item"]}
-      },
-      {
-        "@type": "Organization",
-        "@id": "https://www.plasterandrenderingsolutions.co.uk/#organization",
-        "name": "Plaster and Rendering Solutions Limited",
-        "url": "https://www.plasterandrenderingsolutions.co.uk",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://www.plasterandrenderingsolutions.co.uk/images/logos/logo-transparent.webp"
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Daniel Gatt"
+          },
+          "datePublished": "2025-04-21",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Chris touched up our render after having some new doors installed. Always good with his communication. Gave us many options and did his best to match in the new render to existing one. Would definitely recommend."
         },
-        "sameAs": [
-          "https://share.google/rOAl0WMAyojDrY2kb",
-          "https://www.facebook.com/plasterandrenderingsolutions",
-          "https://www.instagram.com/plasterandrenderingsolutions",
-          "https://x.com/Chris76550497"
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Marjorie Skidmore"
+          },
+          "datePublished": "2025-02-23",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Chris initially restored our rendered chimneys, and we were so pleased with his work we asked him to return to restore our dilapidated rendered garage. He is a most reliable, punctual, tidy, friendly, honest person and an excellent craftsman completing work to a very high standard. He goes above and beyond! We are enormously grateful to him."
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "name": "Monocouche Rendering Sheffield",
+      "description": "Professional monocouche rendering services in Sheffield. Single-coat through-coloured systems with 20-25 year manufacturer warranty. Ecorend (recommended), K Rend, Weber, Baumit and Johnstones systems installed.",
+      "serviceType": "Monocouche Rendering",
+      "category": "External Wall Rendering",
+      "provider": {
+        "@id": "https://www.plasterandrenderingsolutions.co.uk/#business"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Sheffield"
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "GBP",
+        "lowPrice": "3500",
+        "highPrice": "11000",
+        "offerCount": "3"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.plasterandrenderingsolutions.co.uk/monocouche-render-sheffield",
+      "url": "https://www.plasterandrenderingsolutions.co.uk/monocouche-render-sheffield",
+      "name": "Monocouche Rendering Sheffield | 20-Year Warranty | P&R Solutions",
+      "description": "Professional monocouche rendering in Sheffield — single-coat stone-like finish with 20-25 year manufacturer warranty. Ecorend, K Rend, Weber & Baumit. Free site survey. No deposit.",
+      "datePublished": "2024-06-01",
+      "dateModified": "2026-03-15",
+      "inLanguage": "en-GB",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://www.plasterandrenderingsolutions.co.uk/",
+        "name": "Plaster and Rendering Solutions Limited"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://www.plasterandrenderingsolutions.co.uk/images/hero/monocouche%20service.webp"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          "h1",
+          "h2",
+          ".faq-item"
         ]
       }
-    ]
-  }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.plasterandrenderingsolutions.co.uk/#organization",
+      "name": "Plaster and Rendering Solutions Limited",
+      "url": "https://www.plasterandrenderingsolutions.co.uk",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.plasterandrenderingsolutions.co.uk/images/logos/logo-transparent.webp"
+      },
+      "sameAs": [
+        "https://share.google/rOAl0WMAyojDrY2kb",
+        "https://www.facebook.com/plasterandrenderingsolutions",
+        "https://www.instagram.com/plasterandrenderingsolutions",
+        "https://x.com/Chris76550497"
+      ]
+    }
+  ]
+}
   </script>
 
   <!-- JSON-LD: HowTo Schema -->

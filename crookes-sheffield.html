@@ -33,87 +33,356 @@
 
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
-        "@id": "https://www.plasterandrenderingsolutions.co.uk/#business",
-        "name": "Plaster and Rendering Solutions Limited",
-        "url": "https://www.plasterandrenderingsolutions.co.uk/",
-        "telephone": "+447595399525",
-        "email": "plastersolutionsltd@gmail.com",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "3 Rocher Close",
-          "addressLocality": "Grenoside",
-          "addressRegion": "South Yorkshire",
-          "postalCode": "S35 8QP",
-          "addressCountry": "GB"
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "LocalBusiness",
+        "HomeAndConstructionBusiness"
+      ],
+      "@id": "https://www.plasterandrenderingsolutions.co.uk/#business",
+      "name": "Plaster and Rendering Solutions Limited",
+      "url": "https://www.plasterandrenderingsolutions.co.uk/",
+      "telephone": "+447595399525",
+      "email": "plastersolutionsltd@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3 Rocher Close",
+        "addressLocality": "Grenoside",
+        "addressRegion": "South Yorkshire",
+        "postalCode": "S35 8QP",
+        "addressCountry": "GB"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Sheffield"
         },
-        "areaServed": [
-          {"@type": "City", "name": "Sheffield"},
-          {"@type": "AdministrativeArea", "name": "South Yorkshire"},
-          {"@type": "Place", "name": "Crookes", "postalCode": "S10"},
-          {"@type": "Place", "name": "Grenoside"},
-          {"@type": "Place", "name": "Crosspool"},
-          {"@type": "Place", "name": "Walkley"},
-          {"@type": "Place", "name": "Sandygate"},
-          {"@type": "Place", "name": "Fulwood"},
-          {"@type": "Place", "name": "Broomhill"},
-          {"@type": "City", "name": "Rotherham"},
-          {"@type": "City", "name": "Barnsley"},
-          {"@type": "City", "name": "Doncaster"}
-        ],
-        "slogan": "Flat Walls. Perfect Finish. First Time.",
-        "geo": {"@type": "GeoCoordinates", "latitude": "53.3895", "longitude": "-1.5122"},
-        "priceRange": "££",
-        "currenciesAccepted": "GBP",
-        "paymentAccepted": "Cash, Bank Transfer, Cheque",
-        "openingHoursSpecification": [
-          {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "20:00"},
-          {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "13:00"}
-        ],
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "5.0",
-          "reviewCount": "100",
-          "bestRating": "5",
-          "worstRating": "1"
+        {
+          "@type": "AdministrativeArea",
+          "name": "South Yorkshire"
         },
-        "sameAs": [
-          "https://www.facebook.com/plasterandrenderingsolutions",
-          "https://www.instagram.com/plasterandrenderingsolutions/"
-        ]
+        {
+          "@type": "Place",
+          "name": "Abbeydale"
+        },
+        {
+          "@type": "Place",
+          "name": "Beauchief"
+        },
+        {
+          "@type": "Place",
+          "name": "Beighton"
+        },
+        {
+          "@type": "Place",
+          "name": "Broomhill"
+        },
+        {
+          "@type": "Place",
+          "name": "Chapeltown"
+        },
+        {
+          "@type": "Place",
+          "name": "Crookes"
+        },
+        {
+          "@type": "Place",
+          "name": "Crosspool"
+        },
+        {
+          "@type": "Place",
+          "name": "Crystal Peaks"
+        },
+        {
+          "@type": "Place",
+          "name": "Dore"
+        },
+        {
+          "@type": "Place",
+          "name": "Ecclesfield"
+        },
+        {
+          "@type": "Place",
+          "name": "Firth Park"
+        },
+        {
+          "@type": "Place",
+          "name": "Fulwood"
+        },
+        {
+          "@type": "Place",
+          "name": "Gleadless"
+        },
+        {
+          "@type": "Place",
+          "name": "Grenoside"
+        },
+        {
+          "@type": "Place",
+          "name": "Halfway"
+        },
+        {
+          "@type": "Place",
+          "name": "High Green"
+        },
+        {
+          "@type": "Place",
+          "name": "Hillsborough"
+        },
+        {
+          "@type": "Place",
+          "name": "Lodge Moor"
+        },
+        {
+          "@type": "Place",
+          "name": "Loxley"
+        },
+        {
+          "@type": "Place",
+          "name": "Malin Bridge"
+        },
+        {
+          "@type": "Place",
+          "name": "Meersbrook"
+        },
+        {
+          "@type": "Place",
+          "name": "Millhouses"
+        },
+        {
+          "@type": "Place",
+          "name": "Mosborough"
+        },
+        {
+          "@type": "Place",
+          "name": "Nether Edge"
+        },
+        {
+          "@type": "Place",
+          "name": "Norton"
+        },
+        {
+          "@type": "Place",
+          "name": "Oughtibridge"
+        },
+        {
+          "@type": "Place",
+          "name": "Parson Cross"
+        },
+        {
+          "@type": "Place",
+          "name": "Sandygate"
+        },
+        {
+          "@type": "Place",
+          "name": "Sharrow"
+        },
+        {
+          "@type": "Place",
+          "name": "Southey"
+        },
+        {
+          "@type": "Place",
+          "name": "Stannington"
+        },
+        {
+          "@type": "Place",
+          "name": "Stocksbridge"
+        },
+        {
+          "@type": "Place",
+          "name": "Totley"
+        },
+        {
+          "@type": "Place",
+          "name": "Wadsley"
+        },
+        {
+          "@type": "Place",
+          "name": "Walkley"
+        },
+        {
+          "@type": "Place",
+          "name": "Wincobank"
+        },
+        {
+          "@type": "Place",
+          "name": "Wisewood"
+        },
+        {
+          "@type": "Place",
+          "name": "Woodseats"
+        },
+        {
+          "@type": "Place",
+          "name": "Worrall"
+        },
+        {
+          "@type": "City",
+          "name": "Rotherham"
+        },
+        {
+          "@type": "City",
+          "name": "Barnsley"
+        }
+      ],
+      "slogan": "Flat Walls. Perfect Finish. First Time.",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "53.3895",
+        "longitude": "-1.5122"
       },
-      {
-        "@type": "WebPage",
-        "@id": "https://www.plasterandrenderingsolutions.co.uk/crookes-sheffield",
-        "url": "https://www.plasterandrenderingsolutions.co.uk/crookes-sheffield",
-        "name": "Plasterer & Renderer in Crookes S10 Sheffield | P&R Solutions",
-        "description": "Plastering and rendering in Crookes Sheffield S10. Silicone render, monocouche, EWI, internal plastering and dry lining. Free survey, zero deposit, 5-year guarantee.",
-        "inLanguage": "en-GB",
-        "isPartOf": {"@type": "WebSite", "@id": "https://www.plasterandrenderingsolutions.co.uk/", "name": "Plaster and Rendering Solutions Limited"}
+      "priceRange": "££",
+      "currenciesAccepted": "GBP",
+      "paymentAccepted": "Cash, Bank Transfer, Cheque",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "13:00"
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "100",
+        "bestRating": "5",
+        "worstRating": "1"
       },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {"@type": "Question", "name": "Do you cover Crookes and the S10 area?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, we cover all of S10 including Crookes, Crosspool, Broomhill and the surrounding area. We're based in Grenoside, about 25 minutes away. Free surveys and no call-out charge."}},
-          {"@type": "Question", "name": "What render do you recommend for a Crookes Victorian semi?", "acceptedAnswer": {"@type": "Answer", "text": "For most Crookes Victorian semis, silicone render gives the best result — smooth, weatherproof, and available in a wide range of colours. Monocouche is a great alternative for a more textured, traditional look. We'll advise at the free survey stage."}},
-          {"@type": "Question", "name": "Do you work for landlords as well as homeowners in Crookes?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, we work for both. Landlords often use us for external rendering and internal re-skims between major tenancies. We're straightforward to work with and can coordinate with tenants where needed."}},
-          {"@type": "Question", "name": "Can you improve the EPC rating of a Crookes property with EWI?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — EWI is one of the most effective ways to improve an EPC rating. Adding 90mm of insulation to a solid-wall Victorian property can move the rating up by one or two bands. We provide written specs that can be used for EPC assessments."}},
-          {"@type": "Question", "name": "How quickly can you start a plastering or rendering job in Crookes?", "acceptedAnswer": {"@type": "Answer", "text": "We typically book 4-8 weeks ahead depending on the season. We'll give you a clear start date when we quote. Emergency patch repairs can sometimes be fitted in sooner — call 07595 399525 to discuss."}}
-        ]
-      },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.plasterandrenderingsolutions.co.uk/"},
-          {"@type": "ListItem", "position": 2, "name": "Areas", "item": "https://www.plasterandrenderingsolutions.co.uk/#services"},
-          {"@type": "ListItem", "position": 3, "name": "Crookes Sheffield", "item": "https://www.plasterandrenderingsolutions.co.uk/crookes-sheffield"}
-        ]
+      "sameAs": [
+        "https://www.facebook.com/plasterandrenderingsolutions",
+        "https://www.instagram.com/plasterandrenderingsolutions/"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.plasterandrenderingsolutions.co.uk/crookes-sheffield",
+      "url": "https://www.plasterandrenderingsolutions.co.uk/crookes-sheffield",
+      "name": "Plasterer & Renderer in Crookes S10 Sheffield | P&R Solutions",
+      "description": "Plastering and rendering in Crookes Sheffield S10. Silicone render, monocouche, EWI, internal plastering and dry lining. Free survey, zero deposit, 5-year guarantee.",
+      "inLanguage": "en-GB",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://www.plasterandrenderingsolutions.co.uk/",
+        "name": "Plaster and Rendering Solutions Limited"
       }
-    ]
-  }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do you cover Crookes and the S10 area?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we cover all of S10 including Crookes, Crosspool, Broomhill and the surrounding area. We're based in Grenoside, about 25 minutes away. Free surveys and no call-out charge."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What render do you recommend for a Crookes Victorian semi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For most Crookes Victorian semis, silicone render gives the best result — smooth, weatherproof, and available in a wide range of colours. Monocouche is a great alternative for a more textured, traditional look. We'll advise at the free survey stage."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you work for landlords as well as homeowners in Crookes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we work for both. Landlords often use us for external rendering and internal re-skims between major tenancies. We're straightforward to work with and can coordinate with tenants where needed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you improve the EPC rating of a Crookes property with EWI?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — EWI is one of the most effective ways to improve an EPC rating. Adding 90mm of insulation to a solid-wall Victorian property can move the rating up by one or two bands. We provide written specs that can be used for EPC assessments."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How quickly can you start a plastering or rendering job in Crookes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We typically book 4-8 weeks ahead depending on the season. We'll give you a clear start date when we quote. Emergency patch repairs can sometimes be fitted in sooner — call 07595 399525 to discuss."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.plasterandrenderingsolutions.co.uk/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Areas",
+          "item": "https://www.plasterandrenderingsolutions.co.uk/#services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Crookes Sheffield",
+          "item": "https://www.plasterandrenderingsolutions.co.uk/crookes-sheffield"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "name": "Plastering and Rendering in Crookes, Sheffield",
+      "description": "Professional plastering and rendering in Crookes, Sheffield. Services include silicone render, monocouche render, external wall insulation, internal plastering, dry lining and render repair. Free survey, no deposit, 5-year guarantee.",
+      "provider": {
+        "@id": "https://www.plasterandrenderingsolutions.co.uk/#business"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Crookes",
+        "containedInPlace": {
+          "@type": "City",
+          "name": "Sheffield"
+        }
+      },
+      "serviceType": [
+        "Silicone Rendering",
+        "Monocouche Rendering",
+        "External Wall Insulation",
+        "Internal Plastering",
+        "Dry Lining",
+        "Render Repair",
+        "Cement Rendering"
+      ],
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "GBP",
+        "lowPrice": "200",
+        "highPrice": "15000",
+        "offerCount": "7"
+      }
+    }
+  ]
+}
   </script>
 
   <link rel="stylesheet" href="/app.css">

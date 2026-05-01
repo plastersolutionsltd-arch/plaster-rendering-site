@@ -33,86 +33,356 @@
 
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
-        "@id": "https://www.plasterandrenderingsolutions.co.uk/#business",
-        "name": "Plaster and Rendering Solutions Limited",
-        "url": "https://www.plasterandrenderingsolutions.co.uk/",
-        "telephone": "+447595399525",
-        "email": "plastersolutionsltd@gmail.com",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "3 Rocher Close",
-          "addressLocality": "Grenoside",
-          "addressRegion": "South Yorkshire",
-          "postalCode": "S35 8QP",
-          "addressCountry": "GB"
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "LocalBusiness",
+        "HomeAndConstructionBusiness"
+      ],
+      "@id": "https://www.plasterandrenderingsolutions.co.uk/#business",
+      "name": "Plaster and Rendering Solutions Limited",
+      "url": "https://www.plasterandrenderingsolutions.co.uk/",
+      "telephone": "+447595399525",
+      "email": "plastersolutionsltd@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3 Rocher Close",
+        "addressLocality": "Grenoside",
+        "addressRegion": "South Yorkshire",
+        "postalCode": "S35 8QP",
+        "addressCountry": "GB"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Sheffield"
         },
-        "areaServed": [
-          {"@type": "City", "name": "Sheffield"},
-          {"@type": "AdministrativeArea", "name": "South Yorkshire"},
-          {"@type": "Place", "name": "Walkley", "postalCode": "S6"},
-          {"@type": "Place", "name": "Grenoside"},
-          {"@type": "Place", "name": "Hillsborough"},
-          {"@type": "Place", "name": "Crookes"},
-          {"@type": "Place", "name": "Southey"},
-          {"@type": "Place", "name": "Upperthorpe"},
-          {"@type": "City", "name": "Rotherham"},
-          {"@type": "City", "name": "Barnsley"},
-          {"@type": "City", "name": "Doncaster"}
-        ],
-        "slogan": "Flat Walls. Perfect Finish. First Time.",
-        "geo": {"@type": "GeoCoordinates", "latitude": "53.3924", "longitude": "-1.5012"},
-        "priceRange": "££",
-        "currenciesAccepted": "GBP",
-        "paymentAccepted": "Cash, Bank Transfer, Cheque",
-        "openingHoursSpecification": [
-          {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "20:00"},
-          {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "13:00"}
-        ],
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "5.0",
-          "reviewCount": "100",
-          "bestRating": "5",
-          "worstRating": "1"
+        {
+          "@type": "AdministrativeArea",
+          "name": "South Yorkshire"
         },
-        "sameAs": [
-          "https://www.facebook.com/plasterandrenderingsolutions",
-          "https://www.instagram.com/plasterandrenderingsolutions/"
-        ]
+        {
+          "@type": "Place",
+          "name": "Abbeydale"
+        },
+        {
+          "@type": "Place",
+          "name": "Beauchief"
+        },
+        {
+          "@type": "Place",
+          "name": "Beighton"
+        },
+        {
+          "@type": "Place",
+          "name": "Broomhill"
+        },
+        {
+          "@type": "Place",
+          "name": "Chapeltown"
+        },
+        {
+          "@type": "Place",
+          "name": "Crookes"
+        },
+        {
+          "@type": "Place",
+          "name": "Crosspool"
+        },
+        {
+          "@type": "Place",
+          "name": "Crystal Peaks"
+        },
+        {
+          "@type": "Place",
+          "name": "Dore"
+        },
+        {
+          "@type": "Place",
+          "name": "Ecclesfield"
+        },
+        {
+          "@type": "Place",
+          "name": "Firth Park"
+        },
+        {
+          "@type": "Place",
+          "name": "Fulwood"
+        },
+        {
+          "@type": "Place",
+          "name": "Gleadless"
+        },
+        {
+          "@type": "Place",
+          "name": "Grenoside"
+        },
+        {
+          "@type": "Place",
+          "name": "Halfway"
+        },
+        {
+          "@type": "Place",
+          "name": "High Green"
+        },
+        {
+          "@type": "Place",
+          "name": "Hillsborough"
+        },
+        {
+          "@type": "Place",
+          "name": "Lodge Moor"
+        },
+        {
+          "@type": "Place",
+          "name": "Loxley"
+        },
+        {
+          "@type": "Place",
+          "name": "Malin Bridge"
+        },
+        {
+          "@type": "Place",
+          "name": "Meersbrook"
+        },
+        {
+          "@type": "Place",
+          "name": "Millhouses"
+        },
+        {
+          "@type": "Place",
+          "name": "Mosborough"
+        },
+        {
+          "@type": "Place",
+          "name": "Nether Edge"
+        },
+        {
+          "@type": "Place",
+          "name": "Norton"
+        },
+        {
+          "@type": "Place",
+          "name": "Oughtibridge"
+        },
+        {
+          "@type": "Place",
+          "name": "Parson Cross"
+        },
+        {
+          "@type": "Place",
+          "name": "Sandygate"
+        },
+        {
+          "@type": "Place",
+          "name": "Sharrow"
+        },
+        {
+          "@type": "Place",
+          "name": "Southey"
+        },
+        {
+          "@type": "Place",
+          "name": "Stannington"
+        },
+        {
+          "@type": "Place",
+          "name": "Stocksbridge"
+        },
+        {
+          "@type": "Place",
+          "name": "Totley"
+        },
+        {
+          "@type": "Place",
+          "name": "Wadsley"
+        },
+        {
+          "@type": "Place",
+          "name": "Walkley"
+        },
+        {
+          "@type": "Place",
+          "name": "Wincobank"
+        },
+        {
+          "@type": "Place",
+          "name": "Wisewood"
+        },
+        {
+          "@type": "Place",
+          "name": "Woodseats"
+        },
+        {
+          "@type": "Place",
+          "name": "Worrall"
+        },
+        {
+          "@type": "City",
+          "name": "Rotherham"
+        },
+        {
+          "@type": "City",
+          "name": "Barnsley"
+        }
+      ],
+      "slogan": "Flat Walls. Perfect Finish. First Time.",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "53.3924",
+        "longitude": "-1.5012"
       },
-      {
-        "@type": "WebPage",
-        "@id": "https://www.plasterandrenderingsolutions.co.uk/walkley-sheffield",
-        "url": "https://www.plasterandrenderingsolutions.co.uk/walkley-sheffield",
-        "name": "Plasterer & Renderer in Walkley S6 Sheffield | P&R Solutions",
-        "description": "Plastering and rendering in Walkley Sheffield S6. Silicone render, monocouche, EWI, internal plastering and dry lining. Free survey, zero deposit, 5-year guarantee.",
-        "inLanguage": "en-GB",
-        "isPartOf": {"@type": "WebSite", "@id": "https://www.plasterandrenderingsolutions.co.uk/", "name": "Plaster and Rendering Solutions Limited"}
+      "priceRange": "££",
+      "currenciesAccepted": "GBP",
+      "paymentAccepted": "Cash, Bank Transfer, Cheque",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "13:00"
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "100",
+        "bestRating": "5",
+        "worstRating": "1"
       },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {"@type": "Question", "name": "Do you cover Walkley and the S6 area?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, we cover all of S6 including Walkley, Hillsborough, Southey and the surrounding area. We're based in Grenoside, about 20 minutes away. Free surveys with no call-out charge."}},
-          {"@type": "Question", "name": "Can you render Victorian terraces in Walkley?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — Victorian terraces are some of the most common properties we render. Whether it's silicone render for a smooth modern finish or monocouche for a textured traditional look, we prepare the substrate properly first and use premium systems with 15-25 year warranties."}},
-          {"@type": "Question", "name": "Is EWI suitable for Walkley's solid-wall Victorian terraces?", "acceptedAnswer": {"@type": "Answer", "text": "EWI is one of the best options for solid-wall Victorian properties in Walkley. Cavity wall insulation isn't possible, so EWI adds insulation to the outside of the wall — making the property warmer, reducing bills, and giving it a fresh rendered finish at the same time."}},
-          {"@type": "Question", "name": "Do you do internal plastering as well as external rendering in Walkley?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, we offer a full plastering service in Walkley — re-skims, dot and dab plasterboard, stud partitions and ceiling boarding. Walkley is one of our busiest areas for internal plastering given the high volume of renovation work."}},
-          {"@type": "Question", "name": "How disruptive is external rendering on a terraced house in Walkley?", "acceptedAnswer": {"@type": "Answer", "text": "For a mid-terrace, we typically need access to the front and back only. We use scaffolding where needed and aim to minimise disruption. Most terraced renders are completed in 2-3 days. You don't need to be in during the work."}}
-        ]
-      },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.plasterandrenderingsolutions.co.uk/"},
-          {"@type": "ListItem", "position": 2, "name": "Areas", "item": "https://www.plasterandrenderingsolutions.co.uk/#services"},
-          {"@type": "ListItem", "position": 3, "name": "Walkley Sheffield", "item": "https://www.plasterandrenderingsolutions.co.uk/walkley-sheffield"}
-        ]
+      "sameAs": [
+        "https://www.facebook.com/plasterandrenderingsolutions",
+        "https://www.instagram.com/plasterandrenderingsolutions/"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.plasterandrenderingsolutions.co.uk/walkley-sheffield",
+      "url": "https://www.plasterandrenderingsolutions.co.uk/walkley-sheffield",
+      "name": "Plasterer & Renderer in Walkley S6 Sheffield | P&R Solutions",
+      "description": "Plastering and rendering in Walkley Sheffield S6. Silicone render, monocouche, EWI, internal plastering and dry lining. Free survey, zero deposit, 5-year guarantee.",
+      "inLanguage": "en-GB",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://www.plasterandrenderingsolutions.co.uk/",
+        "name": "Plaster and Rendering Solutions Limited"
       }
-    ]
-  }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do you cover Walkley and the S6 area?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we cover all of S6 including Walkley, Hillsborough, Southey and the surrounding area. We're based in Grenoside, about 20 minutes away. Free surveys with no call-out charge."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you render Victorian terraces in Walkley?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — Victorian terraces are some of the most common properties we render. Whether it's silicone render for a smooth modern finish or monocouche for a textured traditional look, we prepare the substrate properly first and use premium systems with 15-25 year warranties."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is EWI suitable for Walkley's solid-wall Victorian terraces?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "EWI is one of the best options for solid-wall Victorian properties in Walkley. Cavity wall insulation isn't possible, so EWI adds insulation to the outside of the wall — making the property warmer, reducing bills, and giving it a fresh rendered finish at the same time."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you do internal plastering as well as external rendering in Walkley?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we offer a full plastering service in Walkley — re-skims, dot and dab plasterboard, stud partitions and ceiling boarding. Walkley is one of our busiest areas for internal plastering given the high volume of renovation work."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How disruptive is external rendering on a terraced house in Walkley?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For a mid-terrace, we typically need access to the front and back only. We use scaffolding where needed and aim to minimise disruption. Most terraced renders are completed in 2-3 days. You don't need to be in during the work."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.plasterandrenderingsolutions.co.uk/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Areas",
+          "item": "https://www.plasterandrenderingsolutions.co.uk/#services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Walkley Sheffield",
+          "item": "https://www.plasterandrenderingsolutions.co.uk/walkley-sheffield"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "name": "Plastering and Rendering in Walkley, Sheffield",
+      "description": "Professional plastering and rendering in Walkley, Sheffield. Services include silicone render, monocouche render, external wall insulation, internal plastering, dry lining and render repair. Free survey, no deposit, 5-year guarantee.",
+      "provider": {
+        "@id": "https://www.plasterandrenderingsolutions.co.uk/#business"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Walkley",
+        "containedInPlace": {
+          "@type": "City",
+          "name": "Sheffield"
+        }
+      },
+      "serviceType": [
+        "Silicone Rendering",
+        "Monocouche Rendering",
+        "External Wall Insulation",
+        "Internal Plastering",
+        "Dry Lining",
+        "Render Repair",
+        "Cement Rendering"
+      ],
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "GBP",
+        "lowPrice": "200",
+        "highPrice": "15000",
+        "offerCount": "7"
+      }
+    }
+  ]
+}
   </script>
 
   <link rel="stylesheet" href="/app.css">

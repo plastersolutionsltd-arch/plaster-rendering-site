@@ -33,87 +33,356 @@
 
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
-        "@id": "https://www.plasterandrenderingsolutions.co.uk/#business",
-        "name": "Plaster and Rendering Solutions Limited",
-        "url": "https://www.plasterandrenderingsolutions.co.uk/",
-        "telephone": "+447595399525",
-        "email": "plastersolutionsltd@gmail.com",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "3 Rocher Close",
-          "addressLocality": "Grenoside",
-          "addressRegion": "South Yorkshire",
-          "postalCode": "S35 8QP",
-          "addressCountry": "GB"
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "LocalBusiness",
+        "HomeAndConstructionBusiness"
+      ],
+      "@id": "https://www.plasterandrenderingsolutions.co.uk/#business",
+      "name": "Plaster and Rendering Solutions Limited",
+      "url": "https://www.plasterandrenderingsolutions.co.uk/",
+      "telephone": "+447595399525",
+      "email": "plastersolutionsltd@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3 Rocher Close",
+        "addressLocality": "Grenoside",
+        "addressRegion": "South Yorkshire",
+        "postalCode": "S35 8QP",
+        "addressCountry": "GB"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Sheffield"
         },
-        "areaServed": [
-          {"@type": "City", "name": "Sheffield"},
-          {"@type": "AdministrativeArea", "name": "South Yorkshire"},
-          {"@type": "Place", "name": "Gleadless", "postalCode": "S12"},
-          {"@type": "Place", "name": "Chapeltown"},
-          {"@type": "Place", "name": "Ecclesfield"},
-          {"@type": "Place", "name": "High Green"},
-          {"@type": "Place", "name": "Oughtibridge"},
-          {"@type": "Place", "name": "Worrall"},
-          {"@type": "Place", "name": "Wharncliffe Side"},
-          {"@type": "City", "name": "Rotherham"},
-          {"@type": "City", "name": "Barnsley"},
-          {"@type": "City", "name": "Doncaster"}
-        ],
-        "slogan": "Flat Walls. Perfect Finish. First Time.",
-        "geo": {"@type": "GeoCoordinates", "latitude": "53.3464", "longitude": "-1.4322"},
-        "priceRange": "££",
-        "currenciesAccepted": "GBP",
-        "paymentAccepted": "Cash, Bank Transfer, Cheque",
-        "openingHoursSpecification": [
-          {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "20:00"},
-          {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "13:00"}
-        ],
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "5.0",
-          "reviewCount": "100",
-          "bestRating": "5",
-          "worstRating": "1"
+        {
+          "@type": "AdministrativeArea",
+          "name": "South Yorkshire"
         },
-        "sameAs": [
-          "https://www.facebook.com/plasterandrenderingsolutions",
-          "https://www.instagram.com/plasterandrenderingsolutions/"
-        ]
+        {
+          "@type": "Place",
+          "name": "Abbeydale"
+        },
+        {
+          "@type": "Place",
+          "name": "Beauchief"
+        },
+        {
+          "@type": "Place",
+          "name": "Beighton"
+        },
+        {
+          "@type": "Place",
+          "name": "Broomhill"
+        },
+        {
+          "@type": "Place",
+          "name": "Chapeltown"
+        },
+        {
+          "@type": "Place",
+          "name": "Crookes"
+        },
+        {
+          "@type": "Place",
+          "name": "Crosspool"
+        },
+        {
+          "@type": "Place",
+          "name": "Crystal Peaks"
+        },
+        {
+          "@type": "Place",
+          "name": "Dore"
+        },
+        {
+          "@type": "Place",
+          "name": "Ecclesfield"
+        },
+        {
+          "@type": "Place",
+          "name": "Firth Park"
+        },
+        {
+          "@type": "Place",
+          "name": "Fulwood"
+        },
+        {
+          "@type": "Place",
+          "name": "Gleadless"
+        },
+        {
+          "@type": "Place",
+          "name": "Grenoside"
+        },
+        {
+          "@type": "Place",
+          "name": "Halfway"
+        },
+        {
+          "@type": "Place",
+          "name": "High Green"
+        },
+        {
+          "@type": "Place",
+          "name": "Hillsborough"
+        },
+        {
+          "@type": "Place",
+          "name": "Lodge Moor"
+        },
+        {
+          "@type": "Place",
+          "name": "Loxley"
+        },
+        {
+          "@type": "Place",
+          "name": "Malin Bridge"
+        },
+        {
+          "@type": "Place",
+          "name": "Meersbrook"
+        },
+        {
+          "@type": "Place",
+          "name": "Millhouses"
+        },
+        {
+          "@type": "Place",
+          "name": "Mosborough"
+        },
+        {
+          "@type": "Place",
+          "name": "Nether Edge"
+        },
+        {
+          "@type": "Place",
+          "name": "Norton"
+        },
+        {
+          "@type": "Place",
+          "name": "Oughtibridge"
+        },
+        {
+          "@type": "Place",
+          "name": "Parson Cross"
+        },
+        {
+          "@type": "Place",
+          "name": "Sandygate"
+        },
+        {
+          "@type": "Place",
+          "name": "Sharrow"
+        },
+        {
+          "@type": "Place",
+          "name": "Southey"
+        },
+        {
+          "@type": "Place",
+          "name": "Stannington"
+        },
+        {
+          "@type": "Place",
+          "name": "Stocksbridge"
+        },
+        {
+          "@type": "Place",
+          "name": "Totley"
+        },
+        {
+          "@type": "Place",
+          "name": "Wadsley"
+        },
+        {
+          "@type": "Place",
+          "name": "Walkley"
+        },
+        {
+          "@type": "Place",
+          "name": "Wincobank"
+        },
+        {
+          "@type": "Place",
+          "name": "Wisewood"
+        },
+        {
+          "@type": "Place",
+          "name": "Woodseats"
+        },
+        {
+          "@type": "Place",
+          "name": "Worrall"
+        },
+        {
+          "@type": "City",
+          "name": "Rotherham"
+        },
+        {
+          "@type": "City",
+          "name": "Barnsley"
+        }
+      ],
+      "slogan": "Flat Walls. Perfect Finish. First Time.",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "53.3464",
+        "longitude": "-1.4322"
       },
-      {
-        "@type": "WebPage",
-        "@id": "https://www.plasterandrenderingsolutions.co.uk/gleadless-sheffield",
-        "url": "https://www.plasterandrenderingsolutions.co.uk/gleadless-sheffield",
-        "name": "Plasterer & Renderer in Gleadless S12 Sheffield | P&R Solutions",
-        "description": "Plastering and rendering in Gleadless Sheffield S12 — silicone render, monocouche, EWI, internal plastering and dry lining. Free survey, zero deposit, 5-year guarantee.",
-        "inLanguage": "en-GB",
-        "isPartOf": {"@type": "WebSite", "@id": "https://www.plasterandrenderingsolutions.co.uk/", "name": "Plaster and Rendering Solutions Limited"}
+      "priceRange": "££",
+      "currenciesAccepted": "GBP",
+      "paymentAccepted": "Cash, Bank Transfer, Cheque",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "13:00"
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "100",
+        "bestRating": "5",
+        "worstRating": "1"
       },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {"@type": "Question", "name": "How far do you travel to Gleadless?", "acceptedAnswer": {"@type": "Answer", "text": "Gleadless is well within our regular working area. We cover all of S12 and the surrounding postcodes with no call-out charge. We're based in Grenoside, S35 and travel across Sheffield every day."}},
-          {"@type": "Question", "name": "What's the best render for a Gleadless semi?", "acceptedAnswer": {"@type": "Answer", "text": "For the typical 1970s–1980s brick semi in Gleadless, silicone render is usually the best choice — it's flexible, breathable and gives a clean modern finish that holds colour well. Monocouche is a good alternative where a textured, through-colour finish is preferred."}},
-          {"@type": "Question", "name": "Do you offer EWI in Gleadless?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. EWI is popular in S12 — the post-war and estate housing benefits significantly from insulated render systems. We fit 90mm boards with a silicone or monocouche finish, backed by a 25-year manufacturer warranty. We can arrange a free survey to assess your property."}},
-          {"@type": "Question", "name": "Can you plaster inside and outside the same property?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — we regularly combine internal and external work on the same job. Many Gleadless customers have us skim ceilings and walls inside while we carry out render or EWI on the outside, which is more convenient and saves on scheduling."}},
-          {"@type": "Question", "name": "How much does rendering cost in Gleadless?", "acceptedAnswer": {"@type": "Answer", "text": "A typical Gleadless semi-detached starts from around £2,000–£3,500 for silicone render, depending on size and access. EWI is typically higher — we'll provide a free, itemised quote after a site visit so there are no surprises."}}
-        ]
-      },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.plasterandrenderingsolutions.co.uk/"},
-          {"@type": "ListItem", "position": 2, "name": "Areas", "item": "https://www.plasterandrenderingsolutions.co.uk/#services"},
-          {"@type": "ListItem", "position": 3, "name": "Gleadless Sheffield", "item": "https://www.plasterandrenderingsolutions.co.uk/gleadless-sheffield"}
-        ]
+      "sameAs": [
+        "https://www.facebook.com/plasterandrenderingsolutions",
+        "https://www.instagram.com/plasterandrenderingsolutions/"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.plasterandrenderingsolutions.co.uk/gleadless-sheffield",
+      "url": "https://www.plasterandrenderingsolutions.co.uk/gleadless-sheffield",
+      "name": "Plasterer & Renderer in Gleadless S12 Sheffield | P&R Solutions",
+      "description": "Plastering and rendering in Gleadless Sheffield S12 — silicone render, monocouche, EWI, internal plastering and dry lining. Free survey, zero deposit, 5-year guarantee.",
+      "inLanguage": "en-GB",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://www.plasterandrenderingsolutions.co.uk/",
+        "name": "Plaster and Rendering Solutions Limited"
       }
-    ]
-  }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How far do you travel to Gleadless?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Gleadless is well within our regular working area. We cover all of S12 and the surrounding postcodes with no call-out charge. We're based in Grenoside, S35 and travel across Sheffield every day."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What's the best render for a Gleadless semi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For the typical 1970s–1980s brick semi in Gleadless, silicone render is usually the best choice — it's flexible, breathable and gives a clean modern finish that holds colour well. Monocouche is a good alternative where a textured, through-colour finish is preferred."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer EWI in Gleadless?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. EWI is popular in S12 — the post-war and estate housing benefits significantly from insulated render systems. We fit 90mm boards with a silicone or monocouche finish, backed by a 25-year manufacturer warranty. We can arrange a free survey to assess your property."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you plaster inside and outside the same property?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — we regularly combine internal and external work on the same job. Many Gleadless customers have us skim ceilings and walls inside while we carry out render or EWI on the outside, which is more convenient and saves on scheduling."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does rendering cost in Gleadless?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A typical Gleadless semi-detached starts from around £2,000–£3,500 for silicone render, depending on size and access. EWI is typically higher — we'll provide a free, itemised quote after a site visit so there are no surprises."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.plasterandrenderingsolutions.co.uk/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Areas",
+          "item": "https://www.plasterandrenderingsolutions.co.uk/#services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Gleadless Sheffield",
+          "item": "https://www.plasterandrenderingsolutions.co.uk/gleadless-sheffield"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "name": "Plastering and Rendering in Gleadless, Sheffield",
+      "description": "Professional plastering and rendering in Gleadless, Sheffield. Services include silicone render, monocouche render, external wall insulation, internal plastering, dry lining and render repair. Free survey, no deposit, 5-year guarantee.",
+      "provider": {
+        "@id": "https://www.plasterandrenderingsolutions.co.uk/#business"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Gleadless",
+        "containedInPlace": {
+          "@type": "City",
+          "name": "Sheffield"
+        }
+      },
+      "serviceType": [
+        "Silicone Rendering",
+        "Monocouche Rendering",
+        "External Wall Insulation",
+        "Internal Plastering",
+        "Dry Lining",
+        "Render Repair",
+        "Cement Rendering"
+      ],
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "GBP",
+        "lowPrice": "200",
+        "highPrice": "15000",
+        "offerCount": "7"
+      }
+    }
+  ]
+}
   </script>
 
   <link rel="preload" as="image" href="/images/case-studies/greenhill-monocouche-b.webp" type="image/webp" fetchpriority="high" />

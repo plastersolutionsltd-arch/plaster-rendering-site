@@ -41,138 +41,422 @@
   <!-- JSON-LD: LocalBusiness + Service + WebPage Schema -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
-        "@id": "https://www.plasterandrenderingsolutions.co.uk/#business",
-        "name": "Plaster and Rendering Solutions Limited",
-        "url": "https://www.plasterandrenderingsolutions.co.uk/",
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "LocalBusiness",
+        "HomeAndConstructionBusiness"
+      ],
+      "@id": "https://www.plasterandrenderingsolutions.co.uk/#business",
+      "name": "Plaster and Rendering Solutions Limited",
+      "url": "https://www.plasterandrenderingsolutions.co.uk/",
+      "telephone": "+447595399525",
+      "email": "plastersolutionsltd@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3 Rocher Close",
+        "addressLocality": "Grenoside",
+        "addressRegion": "South Yorkshire",
+        "postalCode": "S35 8QP",
+        "addressCountry": "GB"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Sheffield"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "South Yorkshire"
+        },
+        {
+          "@type": "Place",
+          "name": "Abbeydale"
+        },
+        {
+          "@type": "Place",
+          "name": "Beauchief"
+        },
+        {
+          "@type": "Place",
+          "name": "Beighton"
+        },
+        {
+          "@type": "Place",
+          "name": "Broomhill"
+        },
+        {
+          "@type": "Place",
+          "name": "Chapeltown"
+        },
+        {
+          "@type": "Place",
+          "name": "Crookes"
+        },
+        {
+          "@type": "Place",
+          "name": "Crosspool"
+        },
+        {
+          "@type": "Place",
+          "name": "Crystal Peaks"
+        },
+        {
+          "@type": "Place",
+          "name": "Dore"
+        },
+        {
+          "@type": "Place",
+          "name": "Ecclesfield"
+        },
+        {
+          "@type": "Place",
+          "name": "Firth Park"
+        },
+        {
+          "@type": "Place",
+          "name": "Fulwood"
+        },
+        {
+          "@type": "Place",
+          "name": "Gleadless"
+        },
+        {
+          "@type": "Place",
+          "name": "Grenoside"
+        },
+        {
+          "@type": "Place",
+          "name": "Halfway"
+        },
+        {
+          "@type": "Place",
+          "name": "High Green"
+        },
+        {
+          "@type": "Place",
+          "name": "Hillsborough"
+        },
+        {
+          "@type": "Place",
+          "name": "Lodge Moor"
+        },
+        {
+          "@type": "Place",
+          "name": "Loxley"
+        },
+        {
+          "@type": "Place",
+          "name": "Malin Bridge"
+        },
+        {
+          "@type": "Place",
+          "name": "Meersbrook"
+        },
+        {
+          "@type": "Place",
+          "name": "Millhouses"
+        },
+        {
+          "@type": "Place",
+          "name": "Mosborough"
+        },
+        {
+          "@type": "Place",
+          "name": "Nether Edge"
+        },
+        {
+          "@type": "Place",
+          "name": "Norton"
+        },
+        {
+          "@type": "Place",
+          "name": "Oughtibridge"
+        },
+        {
+          "@type": "Place",
+          "name": "Parson Cross"
+        },
+        {
+          "@type": "Place",
+          "name": "Sandygate"
+        },
+        {
+          "@type": "Place",
+          "name": "Sharrow"
+        },
+        {
+          "@type": "Place",
+          "name": "Southey"
+        },
+        {
+          "@type": "Place",
+          "name": "Stannington"
+        },
+        {
+          "@type": "Place",
+          "name": "Stocksbridge"
+        },
+        {
+          "@type": "Place",
+          "name": "Totley"
+        },
+        {
+          "@type": "Place",
+          "name": "Wadsley"
+        },
+        {
+          "@type": "Place",
+          "name": "Walkley"
+        },
+        {
+          "@type": "Place",
+          "name": "Wincobank"
+        },
+        {
+          "@type": "Place",
+          "name": "Wisewood"
+        },
+        {
+          "@type": "Place",
+          "name": "Woodseats"
+        },
+        {
+          "@type": "Place",
+          "name": "Worrall"
+        },
+        {
+          "@type": "City",
+          "name": "Rotherham"
+        },
+        {
+          "@type": "City",
+          "name": "Barnsley"
+        }
+      ],
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "53.381130",
+        "longitude": "-1.470085"
+      },
+      "hasMap": "https://maps.google.com/?q=Plaster+and+Rendering+Solutions+Sheffield",
+      "priceRange": "££",
+      "currenciesAccepted": "GBP",
+      "paymentAccepted": "Cash, Bank Transfer, Cheque",
+      "image": [
+        "https://www.plasterandrenderingsolutions.co.uk/images/hero/IMG_3979.webp",
+        "https://www.plasterandrenderingsolutions.co.uk/images/case-studies/ewi grenoside.webp",
+        "https://www.plasterandrenderingsolutions.co.uk/images/case-studies/case/bentsgreen-ewi.webp"
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "08:00",
+          "closes": "20:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "13:00"
+        }
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
         "telephone": "+447595399525",
-        "email": "plastersolutionsltd@gmail.com",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "3 Rocher Close",
-          "addressLocality": "Grenoside",
-          "addressRegion": "South Yorkshire",
-          "postalCode": "S35 8QP",
-          "addressCountry": "GB"
-        },
-        "areaServed": [
-          {"@type": "City", "name": "Sheffield"},
-          {"@type": "AdministrativeArea", "name": "South Yorkshire"},
-          {"@type": "Place", "name": "Grenoside"},
-          {"@type": "Place", "name": "Stannington"},
-          {"@type": "Place", "name": "Fulwood"},
-          {"@type": "Place", "name": "Bents Green"},
-          {"@type": "Place", "name": "Dore"},
-          {"@type": "Place", "name": "Burncross"},
-          {"@type": "City", "name": "Rotherham"},
-          {"@type": "City", "name": "Barnsley"},
-          {"@type": "City", "name": "Doncaster"}
-        ],
-        "geo": {"@type": "GeoCoordinates", "latitude": "53.381130", "longitude": "-1.470085"},
-        "hasMap": "https://maps.google.com/?q=Plaster+and+Rendering+Solutions+Sheffield",
-        "priceRange": "££",
-        "currenciesAccepted": "GBP",
-        "paymentAccepted": "Cash, Bank Transfer, Cheque",
-        "image": [
-          "https://www.plasterandrenderingsolutions.co.uk/images/hero/IMG_3979.webp",
-          "https://www.plasterandrenderingsolutions.co.uk/images/case-studies/ewi grenoside.webp",
-          "https://www.plasterandrenderingsolutions.co.uk/images/case-studies/case/bentsgreen-ewi.webp"
-        ],
-        "openingHoursSpecification": [
-          {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "20:00"},
-          {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "13:00"}
-        ],
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+447595399525",
-          "contactType": "sales",
-          "areaServed": "GB",
-          "availableLanguage": "English",
-          "contactOption": "TollFree",
-          "hoursAvailable": [
-            {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "20:00"},
-            {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "13:00"}
-          ]
-        },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "5.0",
-          "reviewCount": "100",
-          "bestRating": "5",
-          "worstRating": "1"
-        },
-        "review": [
+        "contactType": "sales",
+        "areaServed": "GB",
+        "availableLanguage": "English",
+        "contactOption": "TollFree",
+        "hoursAvailable": [
           {
-            "@type": "Review",
-            "author": {"@type": "Person", "name": "Jo Ashpole"},
-            "datePublished": "2024-12-23",
-            "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
-            "reviewBody": "Chris has just completed the rendering on the front of our house in Sheffield and has been fantastic throughout. He recommended External Wall Insulation and then Johnson's render system and we are delighted with the result. We chose latitude colour render — it has transformed the property. So glad we trusted the previous great reviews."
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "08:00",
+            "closes": "20:00"
           },
           {
-            "@type": "Review",
-            "author": {"@type": "Person", "name": "Andy Bowdin"},
-            "datePublished": "2024-11-04",
-            "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
-            "reviewBody": "Chris has done a superb job of our external insulation and rendering. He works diligently to make sure that the job is finished to a high standard and in the shortest time. He is there when he says he will be and makes sure there isn't a mess. He doesn't cut corners and the finished work looks stunning. It has been a joy to have him around for the fortnight."
-          },
-          {
-            "@type": "Review",
-            "author": {"@type": "Person", "name": "Laura Beedham"},
-            "datePublished": "2025-02-24",
-            "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
-            "reviewBody": "I have used Chris over 20+ times, very trustworthy, super happy with the finish. I could not recommend enough. I will always use Chris for every project I do. Super professional and standard is to a high."
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "09:00",
+            "closes": "13:00"
           }
         ]
       },
-      {
-        "@type": "Service",
-        "@id": "https://www.plasterandrenderingsolutions.co.uk/ewi-sheffield#ewi-service",
-        "name": "External Wall Insulation Sheffield",
-        "serviceType": "External Wall Insulation",
-        "category": "Building Insulation",
-        "description": "Professional external wall insulation (EWI) services in Sheffield. EPS, PUR and Mineral Wool systems with 25-30 year manufacturer warranty. Reduce heating bills by 25-35%, eliminate damp, and boost EPC rating. Free site survey, no deposit, fully itemised quotes.",
-        "provider": {"@id": "https://www.plasterandrenderingsolutions.co.uk/#business"},
-        "areaServed": {"@type": "City", "name": "Sheffield"},
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "EWI Systems",
-          "itemListElement": [
-            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "EPS External Wall Insulation", "description": "Expanded Polystyrene EWI system — most cost-effective, 0.040 W/mK, 25+ year warranty"}, "priceSpecification": {"@type": "PriceSpecification", "priceCurrency": "GBP", "minPrice": "40", "maxPrice": "60", "unitText": "per m²"}},
-            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "PUR External Wall Insulation", "description": "Polyurethane EWI system — premium performance, 0.023–0.025 W/mK, thinner boards"}, "priceSpecification": {"@type": "PriceSpecification", "priceCurrency": "GBP", "minPrice": "70", "maxPrice": "90", "unitText": "per m²"}},
-            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Mineral Wool External Wall Insulation", "description": "Breathable Mineral Wool EWI — A1 fire rated, for listed buildings and conservation areas"}, "priceSpecification": {"@type": "PriceSpecification", "priceCurrency": "GBP", "minPrice": "55", "maxPrice": "80", "unitText": "per m²"}}
-          ]
-        },
-        "offers": {"@type": "AggregateOffer", "priceCurrency": "GBP", "lowPrice": "8000", "highPrice": "22000", "offerCount": "3"},
-        "termsOfService": "Free site survey. Zero deposit. Pay only on completion. 5-year workmanship guarantee. 25-30 year manufacturer warranty."
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "100",
+        "bestRating": "5",
+        "worstRating": "1"
       },
-      {
-        "@type": "WebPage",
-        "@id": "https://www.plasterandrenderingsolutions.co.uk/ewi-sheffield",
-        "url": "https://www.plasterandrenderingsolutions.co.uk/ewi-sheffield",
-        "name": "External Wall Insulation Sheffield | EWI Specialists | P&R Solutions",
-        "description": "Professional external wall insulation (EWI) in Sheffield — reduce heating bills by 25-35%, boost your EPC rating and eliminate damp. EPS, PUR & Mineral Wool systems. Free site survey. No deposit.",
-        "datePublished": "2024-06-01",
-        "dateModified": "2026-03-12",
-        "inLanguage": "en-GB",
-        "isPartOf": {"@type": "WebSite", "@id": "https://www.plasterandrenderingsolutions.co.uk/", "name": "Plaster and Rendering Solutions Limited"},
-        "about": {"@id": "https://www.plasterandrenderingsolutions.co.uk/ewi-sheffield#ewi-service"},
-        "primaryImageOfPage": {
-          "@type": "ImageObject",
-          "url": "https://www.plasterandrenderingsolutions.co.uk/images/hero/IMG_3979.webp",
-          "width": 1200,
-          "height": 800
+      "review": [
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Jo Ashpole"
+          },
+          "datePublished": "2024-12-23",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Chris has just completed the rendering on the front of our house in Sheffield and has been fantastic throughout. He recommended External Wall Insulation and then Johnson's render system and we are delighted with the result. We chose latitude colour render — it has transformed the property. So glad we trusted the previous great reviews."
         },
-        "speakable": {
-          "@type": "SpeakableSpecification",
-          "cssSelector": [".faq-title", "h1", "h2"]
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Andy Bowdin"
+          },
+          "datePublished": "2024-11-04",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Chris has done a superb job of our external insulation and rendering. He works diligently to make sure that the job is finished to a high standard and in the shortest time. He is there when he says he will be and makes sure there isn't a mess. He doesn't cut corners and the finished work looks stunning. It has been a joy to have him around for the fortnight."
+        },
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Laura Beedham"
+          },
+          "datePublished": "2025-02-24",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "I have used Chris over 20+ times, very trustworthy, super happy with the finish. I could not recommend enough. I will always use Chris for every project I do. Super professional and standard is to a high."
         }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.plasterandrenderingsolutions.co.uk/ewi-sheffield#ewi-service",
+      "name": "External Wall Insulation Sheffield",
+      "serviceType": "External Wall Insulation",
+      "category": "Building Insulation",
+      "description": "Professional external wall insulation (EWI) services in Sheffield. EPS, PUR and Mineral Wool systems with 25-30 year manufacturer warranty. Reduce heating bills by 25-35%, eliminate damp, and boost EPC rating. Free site survey, no deposit, fully itemised quotes.",
+      "provider": {
+        "@id": "https://www.plasterandrenderingsolutions.co.uk/#business"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Sheffield"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "EWI Systems",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "EPS External Wall Insulation",
+              "description": "Expanded Polystyrene EWI system — most cost-effective, 0.040 W/mK, 25+ year warranty"
+            },
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "priceCurrency": "GBP",
+              "minPrice": "40",
+              "maxPrice": "60",
+              "unitText": "per m²"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "PUR External Wall Insulation",
+              "description": "Polyurethane EWI system — premium performance, 0.023–0.025 W/mK, thinner boards"
+            },
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "priceCurrency": "GBP",
+              "minPrice": "70",
+              "maxPrice": "90",
+              "unitText": "per m²"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Mineral Wool External Wall Insulation",
+              "description": "Breathable Mineral Wool EWI — A1 fire rated, for listed buildings and conservation areas"
+            },
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "priceCurrency": "GBP",
+              "minPrice": "55",
+              "maxPrice": "80",
+              "unitText": "per m²"
+            }
+          }
+        ]
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "GBP",
+        "lowPrice": "8000",
+        "highPrice": "22000",
+        "offerCount": "3"
+      },
+      "termsOfService": "Free site survey. Zero deposit. Pay only on completion. 5-year workmanship guarantee. 25-30 year manufacturer warranty."
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.plasterandrenderingsolutions.co.uk/ewi-sheffield",
+      "url": "https://www.plasterandrenderingsolutions.co.uk/ewi-sheffield",
+      "name": "External Wall Insulation Sheffield | EWI Specialists | P&R Solutions",
+      "description": "Professional external wall insulation (EWI) in Sheffield — reduce heating bills by 25-35%, boost your EPC rating and eliminate damp. EPS, PUR & Mineral Wool systems. Free site survey. No deposit.",
+      "datePublished": "2024-06-01",
+      "dateModified": "2026-03-12",
+      "inLanguage": "en-GB",
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://www.plasterandrenderingsolutions.co.uk/",
+        "name": "Plaster and Rendering Solutions Limited"
+      },
+      "about": {
+        "@id": "https://www.plasterandrenderingsolutions.co.uk/ewi-sheffield#ewi-service"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://www.plasterandrenderingsolutions.co.uk/images/hero/IMG_3979.webp",
+        "width": 1200,
+        "height": 800
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [
+          ".faq-title",
+          "h1",
+          "h2"
+        ]
       }
-    ]
-  }
+    }
+  ]
+}
   </script>
 
   <!-- JSON-LD: HowTo Schema -->
