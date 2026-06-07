@@ -145,7 +145,23 @@
     <!-- Rendering Cost Guide -->
     <url>
         <loc>https://www.plasterandrenderingsolutions.co.uk/rendering-cost-sheffield</loc>
-        <lastmod>2026-04-07</lastmod>
+        <lastmod>2026-06-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Plastering Cost Guide -->
+    <url>
+        <loc>https://www.plasterandrenderingsolutions.co.uk/plastering-cost-sheffield</loc>
+        <lastmod>2026-06-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Silicone Render vs Monocouche Comparison -->
+    <url>
+        <loc>https://www.plasterandrenderingsolutions.co.uk/silicone-render-vs-monocouche</loc>
+        <lastmod>2026-06-07</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
