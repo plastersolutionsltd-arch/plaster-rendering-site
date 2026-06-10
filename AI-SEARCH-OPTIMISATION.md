@@ -59,12 +59,14 @@ Google fundamentally shifted search with two announcements:
 ### PHASE 1 — Fix the Foundation (Do First, Highest Impact)
 *Target: weeks 1–2*
 
-- [ ] **1.1 — GBP audit and complete to 100%**
-  - Fill every field: services with descriptions, categories (primary + secondary), business description using keywords, Q&A section, opening hours, service area
-  - Add 10+ photos of real jobs (before/after renders, EWI installs)
-  - Post at least 1 Google update per week going forward
-  - Add all services as individual GBP service entries with descriptions
-  - *Why: Businesses with 100% complete GBP are 3.2x more likely in AI Overviews*
+- [x] **1.1 — GBP audit** ✅ Done 10 Jun 2026
+  - Categories confirmed: Plasterer (primary) + Stucco contractor + Dry Wall Contractor + Insulation Contractor + Building contractor (added)
+  - Business description rewritten: 748/750 chars, fixed cut-off ending, added 103 reviews + 25-year warranty + free quote CTA
+  - Products section reviewed — well set up with photos, descriptions, landing page URLs
+  - Posts already running weekly ✅
+  - Opening date June 2012 confirmed ✅
+  - ⚠️ Watch: interactions declining (78 in Mar → 20 in Jun) — check Calls tab monthly
+  - Still to do: add Q&A section (4 questions from action plan), photo count audit (target 100+)
 
 - [x] **1.2 — Submit all 57 pages to Bing IndexNow** ✅ Done 10 Jun 2026
   - IndexNow key deployed, all 57 URLs submitted via API (HTTP 202)
@@ -182,7 +184,8 @@ Google fundamentally shifted search with two announcements:
 | 10 Jun 2026 | Submitted all 57 URLs to IndexNow API (`api.indexnow.org`) | HTTP 202 — accepted by Bing/Yandex |
 | 10 Jun 2026 | Added `.co.uk` property to Bing Webmaster Tools | Verified via `BingSiteAuth.xml`, pushed to GitHub |
 | 10 Jun 2026 | Submitted sitemap to Bing Webmaster Tools (.co.uk property) | Accepted — data populates within 48 hours |
-| | Next: Phase 1.1 — GBP audit | |
+| 10 Jun 2026 | GBP audit completed | Categories updated (added Building contractor), description rewritten 748/750 chars |
+| | Next: Phase 1.3 — Speakable schema + Phase 1.4 — Directory listings | |
 
 ---
 
