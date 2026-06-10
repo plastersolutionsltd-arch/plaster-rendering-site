@@ -73,7 +73,9 @@ Google fundamentally shifted search with two announcements:
   - `.co.uk` property added and verified in Bing Webmaster Tools
   - Sitemap submitted — full index expected within 48–72 hours
 
-- [ ] **1.3 — Add `Speakable` schema to homepage and FAQ page**
+- [x] **1.3 — Add `Speakable` schema to homepage and FAQ page** ✅ Done 10 Jun 2026
+  - Homepage: targets `#hero-sect h1`, `#hero-sect p`, `.faq-q`, `.faq-ans`
+  - FAQ page: targets `#hero-sect h1`, `.faq-body p`
   - Mark the most important Q&A answers as `speakable: true`
   - Speakable tells AI assistants exactly which text to read aloud/cite
   - *Why: Used by <10% of sites — immediate competitive advantage*
@@ -185,7 +187,8 @@ Google fundamentally shifted search with two announcements:
 | 10 Jun 2026 | Added `.co.uk` property to Bing Webmaster Tools | Verified via `BingSiteAuth.xml`, pushed to GitHub |
 | 10 Jun 2026 | Submitted sitemap to Bing Webmaster Tools (.co.uk property) | Accepted — data populates within 48 hours |
 | 10 Jun 2026 | GBP audit completed | Categories updated (added Building contractor), description approved — suburb names, warranty, Chris name, approved applicator status |
-| | Next: Phase 1.3 — Speakable schema + Phase 1.4 — Directory listings | |
+| 10 Jun 2026 | Added Speakable schema to index.html and faq.html | Targets H1, hero intro, FAQ questions and answers |
+| | Next: Phase 1.4 — Directory listings (Yell, Which?, FMB) + GBP Q&A section | |
 
 ---
 
