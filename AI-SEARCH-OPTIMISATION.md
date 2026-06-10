@@ -228,8 +228,10 @@ Competitors MAC Rendering and EDC Render Plaster are already listed on these pag
 | 10 Jun 2026 | Submitted sitemap to Bing Webmaster Tools (.co.uk property) | Accepted — data populates within 48 hours |
 | 10 Jun 2026 | GBP audit completed | Categories updated (added Building contractor), description approved — suburb names, warranty, Chris name, approved applicator status |
 | 10 Jun 2026 | Added Speakable schema to index.html and faq.html | Targets H1, hero intro, FAQ questions and answers |
-| 10 Jun 2026 | Backlink audit completed | Yell listed (wrong name), no Checkatrade profile found, not on K-Rend/Weber/Ecorend/TrustATrader. `.com` domain showing live in Google — urgent fix needed |
-| | **Next:** Resolve `.com` domain, email K-Rend + Weber, fix Yell profile, verify Checkatrade | |
+| 10 Jun 2026 | Backlink audit completed | Yell listed (correct name, website linked ✅), Checkatrade profile confirmed ✅, K-Rend/Ecorend have no installer directory pages, INCA not a current member |
+| 10 Jun 2026 | INCA membership claims removed | Removed INCA logo from index.html, removed all INCA membership text from index.html and ewi-sheffield.html — replaced with CHAS/Ecorend/K-Rend references |
+| 10 Jun 2026 | `.com` domain investigation | Domain expired Apr 2026, now taken by third party. Cannot redirect. Google will naturally de-index old pages. No action needed. |
+| | **Next:** TrustATrader free listing, GBP Q&A section, Phase 2 content work | |
 
 ---
 
