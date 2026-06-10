@@ -184,7 +184,7 @@ Google fundamentally shifted search with two announcements:
 | 10 Jun 2026 | Submitted all 57 URLs to IndexNow API (`api.indexnow.org`) | HTTP 202 — accepted by Bing/Yandex |
 | 10 Jun 2026 | Added `.co.uk` property to Bing Webmaster Tools | Verified via `BingSiteAuth.xml`, pushed to GitHub |
 | 10 Jun 2026 | Submitted sitemap to Bing Webmaster Tools (.co.uk property) | Accepted — data populates within 48 hours |
-| 10 Jun 2026 | GBP audit completed | Categories updated (added Building contractor), description rewritten 748/750 chars |
+| 10 Jun 2026 | GBP audit completed | Categories updated (added Building contractor), description approved — suburb names, warranty, Chris name, approved applicator status |
 | | Next: Phase 1.3 — Speakable schema + Phase 1.4 — Directory listings | |
 
 ---
