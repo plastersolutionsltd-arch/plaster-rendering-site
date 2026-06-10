@@ -37,7 +37,7 @@ Updated: 1st of each month. Send GSC screenshot/export + incognito Map Pack chec
 
 | Month | Total Clicks | Total Impressions | Avg Position | Top Keyword |
 |---|---|---|---|---|
-| Jun 2026 | — | — | — | — |
+| Jun 2026 | ~70 (28d) | ~3,900 (28d) | ~20 | plasterers sheffield (6 clicks, 226 imp) |
 | Jul 2026 | | | | |
 | Aug 2026 | | | | |
 | Sep 2026 | | | | |
@@ -52,7 +52,19 @@ Updated: 1st of each month. Send GSC screenshot/export + incognito Map Pack chec
 Paste or note top 10 keywords from GSC each month (keyword → clicks / impressions / position).
 
 ### Jun 2026
-*(paste here)*
+| Keyword | Clicks | Impressions | Notes |
+|---|---|---|---|
+| plasterers sheffield | 6 | 226 | Top keyword |
+| plasterer sheffield | 3 | 205 | |
+| plastering sheffield | 2 | 43 | |
+| rendering sheffield | 1 | 160 | High impressions, very low CTR = page 2 |
+| plastering and rendering near me | 1 | 11 | |
+| house rendering near me | 1 | 7 | |
+| render repair near me | 1 | 5 | |
+| house renderers near me | 1 | 4 | |
+| rendering repairs near me | 1 | 2 | |
+| plasterers in sheffield | 0 | 169 | 169 impressions, 0 clicks = page 2+ |
+| **TOTAL shown** | **17+** | **843+** | 302 total queries in account |
 
 ### Jul 2026
 *(paste here)*
