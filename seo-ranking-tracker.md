@@ -16,18 +16,18 @@ Updated: 1st of each month. Send GSC screenshot/export + incognito Map Pack chec
 
 | Keyword | Jun 1 | Jul 1 | Aug 1 | Sep 1 | Oct 1 | Nov 1 | Dec 1 |
 |---|---|---|---|---|---|---|---|
-| plasterer sheffield | — | | | | | | |
-| rendering sheffield | — | | | | | | |
-| silicone render sheffield | — | | | | | | |
-| monocouche render sheffield | — | | | | | | |
-| external wall insulation sheffield | — | | | | | | |
-| render repair sheffield | — | | | | | | |
-| plasterer chapeltown | — | | | | | | |
-| plasterer hillsborough | — | | | | | | |
-| plasterer ecclesfield | — | | | | | | |
-| rendering grenoside | — | | | | | | |
-| plasterer walkley | — | | | | | | |
-| plasterer crookes | — | | | | | | |
+| plasterer sheffield | 7 | | | | | | |
+| rendering sheffield | 6 | | | | | | |
+| silicone render sheffield | out | | | | | | |
+| monocouche render sheffield | out | | | | | | |
+| external wall insulation sheffield | out | | | | | | |
+| render repair sheffield | **1** | | | | | | |
+| plasterer chapeltown | 2 | | | | | | |
+| plasterer hillsborough | 7 | | | | | | |
+| plasterer ecclesfield | 2 | | | | | | |
+| rendering grenoside | **1** | | | | | | |
+| plasterer walkley | 13 | | | | | | |
+| plasterer crookes | out | | | | | | |
 
 *(1 = top of Map Pack, 2 = middle, 3 = bottom, out = not in pack)*
 
@@ -66,3 +66,7 @@ Paste or note top 10 keywords from GSC each month (keyword → clicks / impressi
 | 2026-05-01 | Schema upgraded on all 39 suburb pages + 6 service pages |
 | 2026-04-26 | 12 pages submitted for re-indexing in GSC |
 | 2026-05-18 | Tracking file created — baselines to be set Jun 1 |
+| 2026-06-10 | Jun baseline set (incognito Chrome Map Pack check) |
+| 2026-06-10 | Bing IndexNow — 57 pages submitted, .co.uk property verified |
+| 2026-06-10 | GBP — categories updated (added Building contractor), description rewritten |
+| 2026-06-10 | Speakable schema added to index.html, faq.html, 3 blog pages |
