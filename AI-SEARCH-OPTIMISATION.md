@@ -231,7 +231,26 @@ Competitors MAC Rendering and EDC Render Plaster are already listed on these pag
 | 10 Jun 2026 | Backlink audit completed | Yell listed (correct name, website linked ✅), Checkatrade profile confirmed ✅, K-Rend/Ecorend have no installer directory pages, INCA not a current member |
 | 10 Jun 2026 | INCA membership claims removed | Removed INCA logo from index.html, removed all INCA membership text from index.html and ewi-sheffield.html — replaced with CHAS/Ecorend/K-Rend references |
 | 10 Jun 2026 | `.com` domain investigation | Domain expired Apr 2026, now taken by third party. Cannot redirect. Google will naturally de-index old pages. No action needed. |
-| | **Next:** TrustATrader free listing, GBP Q&A section, Phase 2 content work | |
+| 10 Jun 2026 | GBP service areas expanded | Added Walkley, Crookes, Hillsborough, Ecclesfield, Stannington, Stocksbridge, Nether Edge, Broomhill, High Green, Rotherham, Loxley — now 20 service areas. Pending Google approval. |
+| 10 Jun 2026 | GBP services confirmed | All key services already listed: Monocouche rendering, Silicone render, EWI, Plastering, Dry Lining, Cement Rendering, Internal Walls plastering, Ceiling skimming ✅ |
+| 10 Jun 2026 | GBP Q&A not available | Q&A section not showing on profile — Google has restricted it for this business type. Drafted Q&A content saved below for future use if it becomes available. |
+| | **Next:** TrustATrader free listing, Phase 2 content work (FAQ rewrite, blog posts) | |
+
+---
+
+## GBP Q&A Drafts (add if Q&A becomes available)
+
+**Q: Do you install silicone render in Sheffield?**
+> Yes — silicone render is our most popular external finish across Sheffield. We install silicone render systems across all S postcodes, from detached homes in Fulwood and Dore to terraces in Hillsborough and Chapeltown. We're approved applicators for K-Rend and Ecorend silicone systems, both carrying a 25-year manufacturer warranty. Colours matched to any RAL or BS shade. Free site survey with no deposit required — call 07595 399525.
+
+**Q: Do you install monocouche render in Sheffield?**
+> Yes — we apply monocouche render across Sheffield and South Yorkshire. Monocouche is a single-coat through-coloured render popular on older Sheffield properties in S10, S11, S17, and conservation areas including Nether Edge and Broomhill. We use K-Rend and Ecorend monocouche systems with a 25-year warranty. Ideal for properties where planning requires a traditional stone-textured finish. Free survey, no deposit — call 07595 399525.
+
+**Q: Do you install External Wall Insulation (EWI) in Sheffield?**
+> Yes — we install full EWI systems across Sheffield, including silicone render and monocouche finish coats. EWI typically improves EPC ratings by two full bands and saves £300–£600 per year on heating. We're approved applicators for Ecorend and K-Rend EWI systems and can advise on ECO4 and Great British Insulation Scheme grants. CHAS accredited, 100+ five-star Google reviews. Free survey — call 07595 399525.
+
+**Q: What areas of Sheffield do you cover for plastering and rendering?**
+> We cover every Sheffield postcode from S1 to S36, including Crookes, Walkley, Hillsborough, Chapeltown, Ecclesfield, Grenoside, Dore, Fulwood, Crosspool, Nether Edge, Broomhill, Sharrow, Meersbrook, Woodseats, Stannington, Stocksbridge, and all surrounding areas. We also cover Rotherham and wider South Yorkshire. Same-day site visits available — call 07595 399525 or visit plasterandrenderingsolutions.co.uk.
 
 ---
 
