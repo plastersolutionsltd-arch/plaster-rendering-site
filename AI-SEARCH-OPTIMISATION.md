@@ -91,6 +91,46 @@ Google fundamentally shifted search with two announcements:
 
 ---
 
+### BACKLINK AUDIT — 10 Jun 2026
+
+#### ⚠️ URGENT: The .com domain issue
+
+`plasterandrenderingsolutions.com` is showing up LIVE in Google with multiple pages (home, applying-render, plastering-services, services, about-us). This is a separate website competing with `.co.uk` for the same keywords. It is splitting link equity and confusing Google about which domain is canonical — likely a major reason for being stuck on page 2.
+
+**Action required:** Find out who owns `plasterandrenderingsolutions.com`. If you own it, set up 301 redirects from all `.com` pages to the matching `.co.uk` pages, or take the site down. If you don't own it, seek domain/legal advice.
+
+#### Backlink status by source
+
+| Source | Status | Action |
+|---|---|---|
+| Yell.com | Listed but as **"Plaster solutions ltd"** — wrong name, likely thin content | Log in and correct name + add full description + website URL |
+| Checkatrade | **Cannot find profile** in search — may be under wrong name | Find your login, confirm profile URL, ensure website field = `.co.uk` |
+| K-Rend approved applicator | **Not listed** — competitors (MAC Rendering) are | Email `info@k-rend.co.uk` — ask to be added to their applicator finder |
+| Weber contractor finder | **Not listed** — they have "Recognised" and "Recommended" tiers | Submit via `uk.weber/form/enquiries/find-a-contractor` |
+| Ecorend / Parex | Not checked | Email their technical team — same approach as K-Rend |
+| TrustATrader | **Not found** — EDC Render Plaster IS listed here | Register for a free basic listing |
+
+#### Why manufacturer backlinks matter most
+
+K-Rend, Weber, and Ecorend are high-authority brand domains. A listing on their "find an approved applicator" pages is:
+- A do-follow backlink from a trusted domain (direct ranking signal)
+- Proof of expertise that AI engines read as E-E-A-T
+- How customers actively search for approved installers ("K-Rend approved contractor Sheffield")
+
+Competitors MAC Rendering and EDC Render Plaster are already listed on these pages — this is a gap to close immediately.
+
+#### Priority order this week
+
+1. Resolve `.com` domain situation
+2. Email K-Rend (`info@k-rend.co.uk`) — 1 email, free, high authority backlink
+3. Submit Weber contractor enquiry form (`uk.weber/new-contractor-selection-criteria`)
+4. Email Ecorend/Parex technical team
+5. Fix Yell.com profile — correct name, add full description
+6. Find and verify Checkatrade profile is complete and links to `.co.uk`
+7. Register on TrustATrader (free)
+
+---
+
 ### PHASE 2 — Content That AI Will Cite (Medium Term)
 *Target: weeks 3–6*
 
@@ -188,7 +228,8 @@ Google fundamentally shifted search with two announcements:
 | 10 Jun 2026 | Submitted sitemap to Bing Webmaster Tools (.co.uk property) | Accepted — data populates within 48 hours |
 | 10 Jun 2026 | GBP audit completed | Categories updated (added Building contractor), description approved — suburb names, warranty, Chris name, approved applicator status |
 | 10 Jun 2026 | Added Speakable schema to index.html and faq.html | Targets H1, hero intro, FAQ questions and answers |
-| | Next: Phase 1.4 — Directory listings (Yell, Which?, FMB) + GBP Q&A section | |
+| 10 Jun 2026 | Backlink audit completed | Yell listed (wrong name), no Checkatrade profile found, not on K-Rend/Weber/Ecorend/TrustATrader. `.com` domain showing live in Google — urgent fix needed |
+| | **Next:** Resolve `.com` domain, email K-Rend + Weber, fix Yell profile, verify Checkatrade | |
 
 ---
 
