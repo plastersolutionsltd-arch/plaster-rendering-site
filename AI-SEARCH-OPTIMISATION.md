@@ -108,7 +108,7 @@ Google fundamentally shifted search with two announcements:
 | K-Rend approved applicator | **Not listed** — competitors (MAC Rendering) are | Email `info@k-rend.co.uk` — ask to be added to their applicator finder |
 | Weber contractor finder | **Not listed** — they have "Recognised" and "Recommended" tiers | Submit via `uk.weber/form/enquiries/find-a-contractor` |
 | Ecorend / Parex | Not checked | Email their technical team — same approach as K-Rend |
-| TrustATrader | **Not found** — EDC Render Plaster IS listed here | Register for a free basic listing |
+| TrustATrader | **Not found** — EDC Render Plaster IS listed here | Paid annual membership (non-refundable, 12-month min) — call 01438 870097 for pricing before committing |
 
 #### Why manufacturer backlinks matter most
 
@@ -127,7 +127,7 @@ Competitors MAC Rendering and EDC Render Plaster are already listed on these pag
 4. Email Ecorend/Parex technical team
 5. Fix Yell.com profile — correct name, add full description
 6. Find and verify Checkatrade profile is complete and links to `.co.uk`
-7. Register on TrustATrader (free)
+7. Register on TrustATrader (paid — get quote first, call 01438 870097)
 
 ---
 
@@ -231,10 +231,23 @@ Competitors MAC Rendering and EDC Render Plaster are already listed on these pag
 | 10 Jun 2026 | Backlink audit completed | Yell listed (correct name, website linked ✅), Checkatrade profile confirmed ✅, K-Rend/Ecorend have no installer directory pages, INCA not a current member |
 | 10 Jun 2026 | INCA membership claims removed | Removed INCA logo from index.html, removed all INCA membership text from index.html and ewi-sheffield.html — replaced with CHAS/Ecorend/K-Rend references |
 | 10 Jun 2026 | `.com` domain investigation | Domain expired Apr 2026, now taken by third party. Cannot redirect. Google will naturally de-index old pages. No action needed. |
-| 10 Jun 2026 | GBP service areas expanded | Added Walkley, Crookes, Hillsborough, Ecclesfield, Stannington, Stocksbridge, Nether Edge, Broomhill, High Green, Rotherham, Loxley — now 20 service areas. Pending Google approval. |
+| 10 Jun 2026 | GBP service areas expanded | Added 11 new areas. Pending Google approval. |
+| 11 Jun 2026 | GBP service area rejections | 10 of 11 new areas NOT APPROVED: Rotherham, Loxley, Walkley, Ecclesfield, Nether Edge, High Green, Crookes, Hillsborough, Stocksbridge, Stannington. Approved areas: Sheffield, South Yorkshire, Dore, Grenoside, Bradway, Chapeltown, Fulwood, Crosspool, Totley Brook. Fix: remove rejected, re-add 2/week in simple format (no postcodes). Leave Rotherham out. |
+| 11 Jun 2026 | K-Rend applicator programme | No public finder directory — requires £75+VAT training course. Email route not viable. Focus on Weber instead. |
+| 11 Jun 2026 | GBP "12 weeks ago" flag | FIXED — edited business info field, timestamp reset. |
+| 11 Jun 2026 | GBP duplicate listing removed | "Plaster solutions limted" duplicate (years old, same address) removed via business.google.com. Was splitting authority. Now 1 business, 100% verified. |
+| 11 Jun 2026 | GBP booking link added | Added https://www.plasterandrenderingsolutions.co.uk/get-quote as booking URL |
+| 11 Jun 2026 | GBP photos updated | New photos added — last upload had been 62 days ago. "Get noticed" prompt cleared. |
+| 11 Jun 2026 | GBP Instagram confirmed | Already connected ✅ |
+| 12 Jun 2026 | GBP Performance snapshot | 3,079 profile views, 338 searches showed profile. Top search terms: "plaster" (116), "plasterers sheffield" (114), "rendering" (65), "plasterer sheffield" (43), "artistic wall plastering sheffield" (<15). Platform: 89% Google Search (66% mobile), 10% Maps. Notable: "artistic wall plastering sheffield" appearing in top 5 unprompted — niche demand worth targeting with content. |
+| 12 Jun 2026 | GBP service area — CLOSED | Ecclesfield + High Green rejected again ("Your edit was not approved"). Google won't approve suburbs that fall within the already-approved "Sheffield, UK" / "South Yorkshire, UK" broad areas — treats them as redundant. Stop attempting further additions. Suburb coverage is better served by the website location pages. Current 9 approved areas are sufficient. |
+| | **Next:** TrustATrader free listing. Phase 2 content work (FAQ rewrite, blog posts). | |
 | 10 Jun 2026 | GBP services confirmed | All key services already listed: Monocouche rendering, Silicone render, EWI, Plastering, Dry Lining, Cement Rendering, Internal Walls plastering, Ceiling skimming ✅ |
 | 10 Jun 2026 | GBP Q&A not available | Q&A section not showing on profile — Google has restricted it for this business type. Drafted Q&A content saved below for future use if it becomes available. |
-| | **Next:** TrustATrader free listing, Phase 2 content work (FAQ rewrite, blog posts) | |
+| 12 Jun 2026 | Google Search Console — "Page with redirect" fully resolved | Validation started 4 Apr 2026, passed 6 Jun 2026. 0 affected pages remaining (peaked at ~5 in April). All redirect-blocked pages are now clean and indexable. |
+| 12 Jun 2026 | Google Search Console — Page indexing audit | 55 indexed ✅, 7 not indexed. Active issues: (1) **Redirect error** — 2 pages (`/portfolio/`, `/faq/`), last crawled Apr 25; (2) **Crawled - currently not indexed** — 5 pages, Google's choice (thin/duplicate content). |
+| 12 Jun 2026 | Redirect error investigation | `/portfolio/` and `/faq/` redirect chains are correct in vercel.json (both destination files exist). Stale issue — Google last crawled Apr 25 before fixes were in place. Fix: click "Validate Fix" in GSC → Page indexing → Redirect error. No code change needed. |
+| | **Next:** Click "Validate Fix" in GSC for Redirect error. TrustATrader free listing. Phase 2 content work (FAQ rewrite, blog posts). | |
 
 ---
 
