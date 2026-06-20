@@ -134,12 +134,14 @@ Competitors MAC Rendering and EDC Render Plaster are already listed on these pag
 ### PHASE 2 — Content That AI Will Cite (Medium Term)
 *Target: weeks 3–6*
 
-- [ ] **2.1 — Create an About / Who We Are page**
-  - Name of founder/director, years in trade, qualifications, areas served
-  - Photo of the team (real people = E-E-A-T)
-  - Professional memberships (Checkatrade, TrustMark etc.)
-  - Add `Person` schema with `knowsAbout` properties
-  - *Why: AI engines prefer identifiable experts over anonymous brands*
+- [x] **2.1 — Create an About / Who We Are page** ✅ Done 20 Jun 2026
+  - Built `/about` (about.html) matching how-we-apply template chrome
+  - Founder: Chris Glover, full NVQ, 25+ yrs in trade; company founded 2012
+  - `Person` schema (#chris-glover) with `knowsAbout`, `hasCredential` (NVQ), `jobTitle`, linked as business `founder`/`employee`; LocalBusiness now has `foundingDate:2012`; page typed `AboutPage` with `mainEntity` = Chris; FAQPage + Breadcrumb + Speakable also added
+  - Real credential logos shown (K-Rend, Ecorend, CHAS) — all assets verified to exist
+  - Linked from homepage desktop nav + mobile nav + footer; added to sitemap.xml
+  - ⚠️ TODO: replace "CG" monogram with a real photo of Chris when supplied (bigger E-E-A-T boost) — swap `.person-monogram` block in about.html for `<img>`
+  - All 3 JSON-LD blocks validated; tag balance checked
 
 - [ ] **2.2 — Rewrite FAQ page with "capsule answers"**
   - Each answer: lead with a 40–60 word direct answer, then evidence
@@ -231,6 +233,7 @@ Competitors MAC Rendering and EDC Render Plaster are already listed on these pag
 | 10 Jun 2026 | Backlink audit completed | Yell listed (correct name, website linked ✅), Checkatrade profile confirmed ✅, K-Rend/Ecorend have no installer directory pages, INCA not a current member |
 | 10 Jun 2026 | INCA membership claims removed | Removed INCA logo from index.html, removed all INCA membership text from index.html and ewi-sheffield.html — replaced with CHAS/Ecorend/K-Rend references |
 | 10 Jun 2026 | `.com` domain investigation | Domain expired Apr 2026, now taken by third party. Cannot redirect. Google will naturally de-index old pages. No action needed. |
+| 20 Jun 2026 | `.com` re-checked — EARLIER NOTE WAS WRONG | WHOIS: expired 26 Apr 2026, registrar 123-Reg, NO live site (DNS does not resolve). NOT taken by a third party — just unclaimed. Old `.com` pages still appear as stale ghosts in Google. **Likely still recoverable in redemption window (~until late July 2026).** ACTION: log into 123-Reg, renew it, then 301-redirect every `.com` page → matching `.co.uk` page (recovers link equity + kills duplicate). Fallback if not recovered: GSC Removals tool on the `.com` property + let DNS-dead pages de-index naturally. |
 | 10 Jun 2026 | GBP service areas expanded | Added 11 new areas. Pending Google approval. |
 | 11 Jun 2026 | GBP service area rejections | 10 of 11 new areas NOT APPROVED: Rotherham, Loxley, Walkley, Ecclesfield, Nether Edge, High Green, Crookes, Hillsborough, Stocksbridge, Stannington. Approved areas: Sheffield, South Yorkshire, Dore, Grenoside, Bradway, Chapeltown, Fulwood, Crosspool, Totley Brook. Fix: remove rejected, re-add 2/week in simple format (no postcodes). Leave Rotherham out. |
 | 11 Jun 2026 | K-Rend applicator programme | No public finder directory — requires £75+VAT training course. Email route not viable. Focus on Weber instead. |
@@ -241,7 +244,8 @@ Competitors MAC Rendering and EDC Render Plaster are already listed on these pag
 | 11 Jun 2026 | GBP Instagram confirmed | Already connected ✅ |
 | 12 Jun 2026 | GBP Performance snapshot | 3,079 profile views, 338 searches showed profile. Top search terms: "plaster" (116), "plasterers sheffield" (114), "rendering" (65), "plasterer sheffield" (43), "artistic wall plastering sheffield" (<15). Platform: 89% Google Search (66% mobile), 10% Maps. Notable: "artistic wall plastering sheffield" appearing in top 5 unprompted — niche demand worth targeting with content. |
 | 12 Jun 2026 | GBP service area — CLOSED | Ecclesfield + High Green rejected again ("Your edit was not approved"). Google won't approve suburbs that fall within the already-approved "Sheffield, UK" / "South Yorkshire, UK" broad areas — treats them as redundant. Stop attempting further additions. Suburb coverage is better served by the website location pages. Current 9 approved areas are sufficient. |
-| | **Next:** TrustATrader free listing. Phase 2 content work (FAQ rewrite, blog posts). | |
+| 12 Jun 2026 | GA4 set up and deployed | Created GA4 property (G-1DSC8GHLQ0), added tracking snippet to all 62 pages, tag verified live. Search Console linked to GA4 — keyword + traffic data will flow within 48hrs. GBP↔GA4 link no longer exists in GA4 product links (Google removed it). |
+| | **Next:** Phase 2 content work (FAQ rewrite, blog posts). | |
 | 10 Jun 2026 | GBP services confirmed | All key services already listed: Monocouche rendering, Silicone render, EWI, Plastering, Dry Lining, Cement Rendering, Internal Walls plastering, Ceiling skimming ✅ |
 | 10 Jun 2026 | GBP Q&A not available | Q&A section not showing on profile — Google has restricted it for this business type. Drafted Q&A content saved below for future use if it becomes available. |
 | 12 Jun 2026 | Google Search Console — "Page with redirect" fully resolved | Validation started 4 Apr 2026, passed 6 Jun 2026. 0 affected pages remaining (peaked at ~5 in April). All redirect-blocked pages are now clean and indexable. |

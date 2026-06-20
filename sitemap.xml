@@ -126,6 +126,14 @@
         </image:image>
     </url>
 
+    <!-- About Us -->
+    <url>
+        <loc>https://www.plasterandrenderingsolutions.co.uk/about</loc>
+        <lastmod>2026-06-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
     <!-- Get a Quote -->
     <url>
         <loc>https://www.plasterandrenderingsolutions.co.uk/get-quote</loc>
