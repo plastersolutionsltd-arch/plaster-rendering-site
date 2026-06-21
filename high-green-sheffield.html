@@ -454,6 +454,7 @@
     ::-webkit-scrollbar-thumb:hover{background:#00CC00}
     .hero-img{transform:scale(1.03);transition:transform 8s ease-out} .hero-img.loaded{transform:scale(1)}
   </style>
+  <link rel="preload" as="image" href="/images/case-studies/burncross-ewi-hero.webp" imagesrcset="/images/case-studies/burncross-ewi-hero-m.webp 900w, /images/case-studies/burncross-ewi-hero.webp 1920w" imagesizes="100vw" type="image/webp" fetchpriority="high" />
 </head>
 <body>
 
@@ -523,12 +524,12 @@
 <!-- HERO -->
 <section id="hero-sect" style="padding-top:124px">
   <div class="relative min-h-screen flex items-end overflow-hidden bg-black">
-    <img src="/images/case-studies/burncross-ewi-hero.webp"
+    <picture><source media="(max-width:768px)" srcset="/images/case-studies/burncross-ewi-hero-m.webp" type="image/webp" /><img width="1920" height="1440" src="/images/case-studies/burncross-ewi-hero.webp"
          alt="EWI external wall insulation completed in Burncross near High Green Sheffield S35 by P&R Solutions"
          class="hero-img absolute inset-0 w-full h-full object-cover"
          style="opacity:.88"
          fetchpriority="high"
-         onload="this.classList.add('loaded')" />
+         onload="this.classList.add('loaded')" /></picture>
     <div class="absolute inset-0" style="background:linear-gradient(105deg,rgba(0,0,0,.60) 0%,rgba(0,0,0,.25) 50%,rgba(0,0,0,.05) 100%)"></div>
     <div class="absolute inset-x-0 bottom-0 h-40" style="background:linear-gradient(to top,#0b0f0b 0%,transparent 100%)"></div>
     <div class="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-12 pb-24 pt-40">
