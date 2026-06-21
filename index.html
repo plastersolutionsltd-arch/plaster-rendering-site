@@ -205,7 +205,7 @@
   </script>
 
   <!-- LCP Image Preload -->
-  <link rel="preload" as="image" href="/images/case-studies/sandygate-back.webp" type="image/webp" fetchpriority="high" />
+  <link rel="preload" as="image" href="/images/case-studies/sandygate-back.webp" imagesrcset="/images/case-studies/sandygate-back-m.webp 900w, /images/case-studies/sandygate-back.webp 1920w" imagesizes="100vw" type="image/webp" fetchpriority="high" />
 
   <link rel="stylesheet" href="/app.css">
 
@@ -507,11 +507,15 @@
 <!-- HERO -->
 <section id="hero-sect" style="padding-top:124px">
   <div class="relative min-h-screen flex items-end overflow-hidden bg-black">
-    <img src="/images/case-studies/sandygate-back.webp"
+    <picture>
+      <source media="(max-width:768px)" srcset="/images/case-studies/sandygate-back-m.webp" type="image/webp" />
+      <img src="/images/case-studies/sandygate-back.webp"
          alt="Completed Ecorend silicone render on a detached Sheffield property in Sandygate S10 by P&R Solutions — smooth white finish with crisp beaded edges"
+         width="1920" height="1440"
          fetchpriority="high"
          class="absolute inset-0 w-full h-full object-cover"
          style="opacity:.88" />
+    </picture>
     <div class="absolute inset-0" style="background:linear-gradient(105deg,rgba(0,0,0,.75) 0%,rgba(0,0,0,.40) 55%,rgba(0,0,0,.10) 100%)"></div>
     <div class="absolute inset-x-0 bottom-0 h-16" style="background:linear-gradient(to top,#fff 0%,transparent 100%)"></div>
     <div class="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-12 pb-32 pt-40">
