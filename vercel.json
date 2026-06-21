@@ -142,6 +142,10 @@
       "destination": "/silicone-render-sheffield.html"
     },
     {
+      "source": "/silicone-render-vs-monocouche",
+      "destination": "/silicone-render-vs-monocouche.html"
+    },
+    {
       "source": "/monocouche-render-sheffield",
       "destination": "/monocouche-render-sheffield.html"
     },
@@ -328,6 +332,10 @@
     {
       "source": "/rendering-cost-sheffield",
       "destination": "/rendering-cost-sheffield.html"
+    },
+    {
+      "source": "/plastering-cost-sheffield",
+      "destination": "/plastering-cost-sheffield.html"
     },
     {
       "source": "/projects",
