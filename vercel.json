@@ -350,6 +350,10 @@
       "destination": "/sandygate-silicone-render-case-study.html"
     },
     {
+      "source": "/s17-ewi-case-study",
+      "destination": "/s17-ewi-case-study.html"
+    },
+    {
       "source": "/beighton-sheffield",
       "destination": "/beighton-sheffield.html"
     },
