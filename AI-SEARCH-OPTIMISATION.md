@@ -223,6 +223,7 @@ Competitors MAC Rendering and EDC Render Plaster are already listed on these pag
 
 | Date | Action | Result |
 |---|---|---|
+| 23 Jun 2026 | **Website&rarr;GBP entity linking (index.html)** | Strengthened the site&harr;Google Business Profile connection. (1) `hasOfferCatalog` rebuilt from a flat 5-item text list &rarr; **7 Services, each with `url` + `serviceType` + provider `@id`** linking to its dedicated page (silicone/monocouche/EWI/sand-cement/render-repair/internal-plastering/dry-lining); silicone now names K-Rend/Eco-Rend/Weber. (2) **Embedded GBP Google Map** iframe in the reviews section (crawlable site&rarr;GBP signal). (3) **One-tap "Leave a review" button** added next to the map using the real GBP review link `https://g.page/r/Cbo-hCRK6i41EBM/review` (from GBP &rarr; Get more reviews). All 6 JSON-LD blocks validated. Confirmed GBP NAP (3 Rocher Cl, Grenoside, S35 8QP / 07595 399525 / closes 8pm) matches site schema exactly. |
 | 10 Jun 2026 | Baseline audit | 13 Bing impressions, 2 Copilot citations (3M Bing data) |
 | 10 Jun 2026 | Generated IndexNow key `ea3ba62784952703fc4172e2c2474908` | Key file live at root, pushed to GitHub |
 | 10 Jun 2026 | Submitted all 57 URLs to IndexNow API (`api.indexnow.org`) | HTTP 202 — accepted by Bing/Yandex |
