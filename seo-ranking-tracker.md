@@ -16,12 +16,12 @@ Updated: 1st of each month. Send GSC screenshot/export + incognito Map Pack chec
 
 | Keyword | Jun 1 | Jul 1 | Aug 1 | Sep 1 | Oct 1 | Nov 1 | Dec 1 |
 |---|---|---|---|---|---|---|---|
-| plasterer sheffield | 7 | | | | | | |
-| rendering sheffield | 6 | | | | | | |
-| silicone render sheffield | out | | | | | | |
-| monocouche render sheffield | out | | | | | | |
-| external wall insulation sheffield | out | | | | | | |
-| render repair sheffield | **1** | | | | | | |
+| plasterer sheffield | 7 | 10 | | | | | |
+| rendering sheffield | 6 | 6 | | | | | |
+| silicone render sheffield | out | out | | | | | |
+| monocouche render sheffield | out | out | | | | | |
+| external wall insulation sheffield | out | out | | | | | |
+| render repair sheffield | **1** | **1** | | | | | |
 | plasterer chapeltown | 2 | | | | | | |
 | plasterer hillsborough | 7 | | | | | | |
 | plasterer ecclesfield | 2 | | | | | | |
