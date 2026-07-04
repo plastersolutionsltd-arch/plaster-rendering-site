@@ -67,7 +67,21 @@ Paste or note top 10 keywords from GSC each month (keyword → clicks / impressi
 | **TOTAL shown** | **17+** | **843+** | 302 total queries in account |
 
 ### Jul 2026
-*(paste here)*
+**Totals (28 days): 69 clicks · 6.43K impressions · 1.1% CTR · avg position 19.**
+| Keyword | Clicks | Impressions | Notes |
+|---|---|---|---|
+| plasterers sheffield | 5 | 273 | Top keyword (was 6/226 Jun) |
+| plasterers near me | 2 | 25 | |
+| plasterer sheffield | 1 | 246 | ⚠️ clicks 3→1 (Map Pack also 7→10) — slipping |
+| rendering sheffield | 1 | 167 | steady, still page 2 |
+| render sheffield | 1 | 21 | |
+| rendering companies near me | 1 | 8 | |
+| renderer sheffield | 1 | 8 | |
+| renderers near me | 1 | 7 | |
+| rendering near me | 1 | 7 | |
+| **TOTAL** | **69** | **6.43K** | 1.1% CTR / pos 19 = strong visibility, stuck on page 2 |
+
+**Read:** big impressions (6.4K) but page‑2 positions (avg 19) → the growth lever is pushing the high‑impression terms (plasterer/plasterers sheffield ~250 imp, rendering sheffield 167) onto page 1. "plasterer sheffield" is weakening (clicks 3→1 + Map Pack 7→10) → prioritise fresh Google reviews + page freshness. Render‑type terms (silicone/mono/EWI) barely register organically yet.
 
 ---
 
