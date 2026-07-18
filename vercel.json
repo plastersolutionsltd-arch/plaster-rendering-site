@@ -3,9 +3,120 @@
   "outputDirectory": ".",
   "framework": null,
   "redirects": [
-    { "source": "/faq/", "destination": "/faq", "permanent": true },
-    { "source": "/portfolio/", "destination": "/projects", "permanent": true },
-    { "source": "/:slug/", "destination": "/:slug", "permanent": true },
+    {
+      "source": "/about-us",
+      "has": [
+        {
+          "type": "host",
+          "value": "(www\\.)?plasterandrenderingsolutions\\.com"
+        }
+      ],
+      "destination": "https://www.plasterandrenderingsolutions.co.uk/about",
+      "permanent": true
+    },
+    {
+      "source": "/about-us/",
+      "has": [
+        {
+          "type": "host",
+          "value": "(www\\.)?plasterandrenderingsolutions\\.com"
+        }
+      ],
+      "destination": "https://www.plasterandrenderingsolutions.co.uk/about",
+      "permanent": true
+    },
+    {
+      "source": "/plastering-services",
+      "has": [
+        {
+          "type": "host",
+          "value": "(www\\.)?plasterandrenderingsolutions\\.com"
+        }
+      ],
+      "destination": "https://www.plasterandrenderingsolutions.co.uk/plastering-sheffield",
+      "permanent": true
+    },
+    {
+      "source": "/plastering-services/",
+      "has": [
+        {
+          "type": "host",
+          "value": "(www\\.)?plasterandrenderingsolutions\\.com"
+        }
+      ],
+      "destination": "https://www.plasterandrenderingsolutions.co.uk/plastering-sheffield",
+      "permanent": true
+    },
+    {
+      "source": "/applying-render",
+      "has": [
+        {
+          "type": "host",
+          "value": "(www\\.)?plasterandrenderingsolutions\\.com"
+        }
+      ],
+      "destination": "https://www.plasterandrenderingsolutions.co.uk/how-we-apply",
+      "permanent": true
+    },
+    {
+      "source": "/applying-render/",
+      "has": [
+        {
+          "type": "host",
+          "value": "(www\\.)?plasterandrenderingsolutions\\.com"
+        }
+      ],
+      "destination": "https://www.plasterandrenderingsolutions.co.uk/how-we-apply",
+      "permanent": true
+    },
+    {
+      "source": "/services",
+      "has": [
+        {
+          "type": "host",
+          "value": "(www\\.)?plasterandrenderingsolutions\\.com"
+        }
+      ],
+      "destination": "https://www.plasterandrenderingsolutions.co.uk/",
+      "permanent": true
+    },
+    {
+      "source": "/services/",
+      "has": [
+        {
+          "type": "host",
+          "value": "(www\\.)?plasterandrenderingsolutions\\.com"
+        }
+      ],
+      "destination": "https://www.plasterandrenderingsolutions.co.uk/",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "(www\\.)?plasterandrenderingsolutions\\.com"
+        }
+      ],
+      "destination": "https://www.plasterandrenderingsolutions.co.uk/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/faq/",
+      "destination": "/faq",
+      "permanent": true
+    },
+    {
+      "source": "/portfolio/",
+      "destination": "/projects",
+      "permanent": true
+    },
+    {
+      "source": "/:slug/",
+      "destination": "/:slug",
+      "permanent": true
+    },
     {
       "source": "/index.html",
       "destination": "/",
