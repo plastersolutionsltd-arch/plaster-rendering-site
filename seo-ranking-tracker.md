@@ -96,3 +96,7 @@ Paste or note top 10 keywords from GSC each month (keyword → clicks / impressi
 | 2026-06-10 | Bing IndexNow — 57 pages submitted, .co.uk property verified |
 | 2026-06-10 | GBP — categories updated (added Building contractor), description rewritten |
 | 2026-06-10 | Speakable schema added to index.html, faq.html, 3 blog pages |
+| 2026-07-18 | Technical audit — sitemap `lastmod` on all 59 URLs corrected (were stuck at April, real dates Jun/Jul) |
+| 2026-07-18 | CLS fix — real `width`/`height` added to 286 imgs sitewide; 65 given `loading="lazy"`; above-the-fold kept `eager` |
+| 2026-07-18 | Images recompressed — homepage 3.10→2.42 MB, Sandygate case study 9.03→6.35 MB (82 files) |
+| 2026-07-18 | `reviewCount` 100 → 104 on 60 pages to match real GBP count (5.0 / 104 reviews) |
