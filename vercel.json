@@ -4,6 +4,17 @@
   "framework": null,
   "redirects": [
     {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "(www\\.)?plasterandrenderingsolutions\\.com"
+        }
+      ],
+      "destination": "https://www.plasterandrenderingsolutions.co.uk/",
+      "permanent": true
+    },
+    {
       "source": "/about-us",
       "has": [
         {
