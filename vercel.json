@@ -260,6 +260,10 @@
       "destination": "/index.html"
     },
     {
+      "source": "/rendering-sheffield",
+      "destination": "/rendering-sheffield.html"
+    },
+    {
       "source": "/silicone-render-sheffield",
       "destination": "/silicone-render-sheffield.html"
     },
