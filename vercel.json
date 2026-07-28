@@ -103,6 +103,138 @@
       "permanent": true
     },
     {
+      "source": "/get-a-quote",
+      "has": [
+        {
+          "type": "host",
+          "value": "(www\\.)?plasterandrenderingsolutions\\.com"
+        }
+      ],
+      "destination": "https://www.plasterandrenderingsolutions.co.uk/get-quote",
+      "permanent": true
+    },
+    {
+      "source": "/get-a-quote/",
+      "has": [
+        {
+          "type": "host",
+          "value": "(www\\.)?plasterandrenderingsolutions\\.com"
+        }
+      ],
+      "destination": "https://www.plasterandrenderingsolutions.co.uk/get-quote",
+      "permanent": true
+    },
+    {
+      "source": "/services/ewi",
+      "has": [
+        {
+          "type": "host",
+          "value": "(www\\.)?plasterandrenderingsolutions\\.com"
+        }
+      ],
+      "destination": "https://www.plasterandrenderingsolutions.co.uk/ewi-sheffield",
+      "permanent": true
+    },
+    {
+      "source": "/services/ewi/",
+      "has": [
+        {
+          "type": "host",
+          "value": "(www\\.)?plasterandrenderingsolutions\\.com"
+        }
+      ],
+      "destination": "https://www.plasterandrenderingsolutions.co.uk/ewi-sheffield",
+      "permanent": true
+    },
+    {
+      "source": "/ewi-systems",
+      "has": [
+        {
+          "type": "host",
+          "value": "(www\\.)?plasterandrenderingsolutions\\.com"
+        }
+      ],
+      "destination": "https://www.plasterandrenderingsolutions.co.uk/ewi-sheffield",
+      "permanent": true
+    },
+    {
+      "source": "/ewi-systems/",
+      "has": [
+        {
+          "type": "host",
+          "value": "(www\\.)?plasterandrenderingsolutions\\.com"
+        }
+      ],
+      "destination": "https://www.plasterandrenderingsolutions.co.uk/ewi-sheffield",
+      "permanent": true
+    },
+    {
+      "source": "/services/plastering",
+      "has": [
+        {
+          "type": "host",
+          "value": "(www\\.)?plasterandrenderingsolutions\\.com"
+        }
+      ],
+      "destination": "https://www.plasterandrenderingsolutions.co.uk/plastering-sheffield",
+      "permanent": true
+    },
+    {
+      "source": "/services/plastering/",
+      "has": [
+        {
+          "type": "host",
+          "value": "(www\\.)?plasterandrenderingsolutions\\.com"
+        }
+      ],
+      "destination": "https://www.plasterandrenderingsolutions.co.uk/plastering-sheffield",
+      "permanent": true
+    },
+    {
+      "source": "/services/monocouche-rendering",
+      "has": [
+        {
+          "type": "host",
+          "value": "(www\\.)?plasterandrenderingsolutions\\.com"
+        }
+      ],
+      "destination": "https://www.plasterandrenderingsolutions.co.uk/monocouche-render-sheffield",
+      "permanent": true
+    },
+    {
+      "source": "/services/monocouche-rendering/",
+      "has": [
+        {
+          "type": "host",
+          "value": "(www\\.)?plasterandrenderingsolutions\\.com"
+        }
+      ],
+      "destination": "https://www.plasterandrenderingsolutions.co.uk/monocouche-render-sheffield",
+      "permanent": true
+    },
+    {
+      "source": "/house-rendering-sheffield",
+      "has": [
+        {
+          "type": "host",
+          "value": "(www\\.)?plasterandrenderingsolutions\\.com"
+        }
+      ],
+      "destination": "https://www.plasterandrenderingsolutions.co.uk/rendering-sheffield",
+      "permanent": true
+    },
+    {
+      "source": "/house-rendering-sheffield/",
+      "has": [
+        {
+          "type": "host",
+          "value": "(www\\.)?plasterandrenderingsolutions\\.com"
+        }
+      ],
+      "destination": "https://www.plasterandrenderingsolutions.co.uk/rendering-sheffield",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
       "has": [
         {
@@ -251,6 +383,36 @@
     {
       "source": "/contact/",
       "destination": "/get-quote",
+      "permanent": true
+    },
+    {
+      "source": "/get-a-quote",
+      "destination": "/get-quote",
+      "permanent": true
+    },
+    {
+      "source": "/get-a-quote/",
+      "destination": "/get-quote",
+      "permanent": true
+    },
+    {
+      "source": "/house-rendering-sheffield",
+      "destination": "/rendering-sheffield",
+      "permanent": true
+    },
+    {
+      "source": "/house-rendering-sheffield/",
+      "destination": "/rendering-sheffield",
+      "permanent": true
+    },
+    {
+      "source": "/ewi-systems",
+      "destination": "/ewi-sheffield",
+      "permanent": true
+    },
+    {
+      "source": "/ewi-systems/",
+      "destination": "/ewi-sheffield",
       "permanent": true
     }
   ],
