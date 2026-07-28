@@ -235,6 +235,72 @@
       "permanent": true
     },
     {
+      "source": "/silicone-renders",
+      "has": [
+        {
+          "type": "host",
+          "value": "(www\\.)?plasterandrenderingsolutions\\.com"
+        }
+      ],
+      "destination": "https://www.plasterandrenderingsolutions.co.uk/silicone-render-sheffield",
+      "permanent": true
+    },
+    {
+      "source": "/monocouche-renders",
+      "has": [
+        {
+          "type": "host",
+          "value": "(www\\.)?plasterandrenderingsolutions\\.com"
+        }
+      ],
+      "destination": "https://www.plasterandrenderingsolutions.co.uk/monocouche-render-sheffield",
+      "permanent": true
+    },
+    {
+      "source": "/services-1",
+      "has": [
+        {
+          "type": "host",
+          "value": "(www\\.)?plasterandrenderingsolutions\\.com"
+        }
+      ],
+      "destination": "https://www.plasterandrenderingsolutions.co.uk/",
+      "permanent": true
+    },
+    {
+      "source": "/post/plastering-services-in-sheffield",
+      "has": [
+        {
+          "type": "host",
+          "value": "(www\\.)?plasterandrenderingsolutions\\.com"
+        }
+      ],
+      "destination": "https://www.plasterandrenderingsolutions.co.uk/plastering-sheffield",
+      "permanent": true
+    },
+    {
+      "source": "/post/a-comprehensive-guide-to-spray-rendering-techniques-and-benefits",
+      "has": [
+        {
+          "type": "host",
+          "value": "(www\\.)?plasterandrenderingsolutions\\.com"
+        }
+      ],
+      "destination": "https://www.plasterandrenderingsolutions.co.uk/how-we-apply",
+      "permanent": true
+    },
+    {
+      "source": "/post/:slug*",
+      "has": [
+        {
+          "type": "host",
+          "value": "(www\\.)?plasterandrenderingsolutions\\.com"
+        }
+      ],
+      "destination": "https://www.plasterandrenderingsolutions.co.uk/",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
       "has": [
         {
