@@ -171,7 +171,8 @@
     .page-hero { position:relative; min-height:50vh; display:flex; align-items:center; overflow:hidden; background:#0d0d0d; }
     .hero-img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0.13; transform:scale(1.08); transition:transform 8s ease-out; }
     .hero-img.loaded { transform:scale(1); }
-    .hero-overlay { position:absolute; inset:0; background:linear-gradient(135deg,rgba(0,0,0,0.95) 0%,rgba(0,0,0,0.7) 55%,rgba(0,15,0,0.6) 100%); }
+    .hero-overlay { position:absolute; inset:0; background:linear-gradient(135deg,rgba(0,0,0,0.90) 0%,rgba(0,0,0,0.55) 55%,rgba(0,15,0,0.35) 100%); }
+    @media (max-width:640px){ .hero-overlay { background:linear-gradient(180deg,rgba(0,0,0,0.86) 0%,rgba(0,0,0,0.72) 45%,rgba(0,0,0,0.66) 100%); } }
     .hero-inner { position:relative; z-index:2; max-width:1280px; margin:0 auto; padding:90px 40px; width:100%; }
     .breadcrumb { display:flex; align-items:center; gap:8px; font-size:12px; color:rgba(255,255,255,0.35); margin-bottom:20px; flex-wrap:wrap; }
     .breadcrumb a { color:rgba(255,255,255,0.35); transition:color 0.2s; }
