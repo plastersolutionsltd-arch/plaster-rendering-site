@@ -4,7 +4,7 @@
     EMBROIDERY INSTRUCTIONS FOR SUPPLIER:
     =======================================
     2 thread colours only:
-      Colour 1: GREEN  — Pantone 375 C  (approx. #37D413)
+      Colour 1: GREEN  — Pantone 375 C  (approx. #00FF00)
       Colour 2: WHITE  — Pantone White
 
     Recommended placement: Left chest
@@ -29,7 +29,7 @@
   <text x="0" y="175"
     font-family="'Bebas Neue', Impact, Arial Narrow, sans-serif"
     font-size="185"
-    fill="#37D413">P</text>
+    fill="#00FF00">P</text>
 
   <!-- SOLUTIONS — WHITE (Thread colour 2) -->
   <text x="185" y="200"

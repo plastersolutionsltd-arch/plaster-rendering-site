@@ -741,18 +741,18 @@
 
     /* ─── FAQ ────────────────────────────────────────────── */
     .faq-item{background:#131313;border:1px solid #1e1e1e;border-radius:16px;padding:24px 24px 24px 28px;cursor:pointer;position:relative;overflow:hidden;transition:border-color .3s,box-shadow .3s}
-    .faq-item::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(to bottom,#37D413,#2BA80D);transform:scaleY(0);transform-origin:bottom;transition:transform .4s cubic-bezier(.16,1,.3,1)}
+    .faq-item::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(to bottom,#00FF00,#00CC00);transform:scaleY(0);transform-origin:bottom;transition:transform .4s cubic-bezier(.16,1,.3,1)}
     .faq-item:hover{border-color:#2a2a2a}
-    .faq-item.open{border-color:rgba(55,212,19,0.35);box-shadow:0 0 32px rgba(55,212,19,0.07)}
+    .faq-item.open{border-color:rgba(0,255,0,0.35);box-shadow:0 0 32px rgba(0,255,0,0.07)}
     .faq-item.open::before{transform:scaleY(1)}
     .faq-body{max-height:0;overflow:hidden;transition:max-height .45s cubic-bezier(.16,1,.3,1)}
     .faq-item.open .faq-body{max-height:400px}
-    .faq-num{font-size:10px;font-weight:800;letter-spacing:.18em;color:#37D413}
+    .faq-num{font-size:10px;font-weight:800;letter-spacing:.18em;color:#00FF00}
     .faq-cat{font-size:9px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,0.28);background:rgba(255,255,255,0.05);padding:3px 10px;border-radius:100px}
     .faq-q{font-size:15px;font-weight:700;color:#fff;line-height:1.4;margin-top:10px}
     .faq-ans{font-size:13px;color:rgba(255,255,255,0.52);line-height:1.75;padding-top:14px;padding-bottom:4px}
     .faq-icon{flex-shrink:0;width:30px;height:30px;border-radius:8px;border:1px solid #2a2a2a;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:300;color:rgba(255,255,255,0.3);transition:all .3s cubic-bezier(.34,1.56,.64,1);background:transparent;margin-top:2px}
-    .faq-item.open .faq-icon{background:#37D413;border-color:#37D413;color:#000;transform:rotate(45deg)}
+    .faq-item.open .faq-icon{background:#00FF00;border-color:#00FF00;color:#000;transform:rotate(45deg)}
   </style>
 </head>
 <body>
@@ -760,7 +760,7 @@
 <!-- ══════════════════════════════════════════════════
      ANNOUNCEMENT BAR
      ══════════════════════════════════════════════════ -->
-<div id="ann-bar" class="fixed left-0 right-0 flex items-center justify-center" style="top:0;z-index:60;background:#1a1a1a;height:44px;border-bottom:1px solid rgba(55,212,19,0.35);box-shadow:0 2px 24px rgba(55,212,19,0.12)">
+<div id="ann-bar" class="fixed left-0 right-0 flex items-center justify-center" style="top:0;z-index:60;background:#1a1a1a;height:44px;border-bottom:1px solid rgba(0,255,0,0.35);box-shadow:0 2px 24px rgba(0,255,0,0.12)">
   <div class="font-display text-xs font-medium px-10 text-center" style="color:rgba(255,255,255,0.75);letter-spacing:0.04em">
     <span style="color:#00FF00;font-weight:700">✓ No deposit required</span>
     <span class="hidden sm:inline">&nbsp;&nbsp;·&nbsp;&nbsp;Currently booking <span id="bk-range"></span>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="tel:+447595399525" style="color:#00FF00;font-weight:700;text-decoration:none">07595 399525</a></span>
@@ -780,7 +780,7 @@
 <!-- ══════════════════════════════════════════════════
      NAV
      ══════════════════════════════════════════════════ -->
-<nav id="site-nav" class="fixed left-0 right-0 z-50 bg-white/95 backdrop-blur-sm" style="top:44px;border-bottom:1px solid rgba(55,212,19,0.15);box-shadow:0 4px 24px rgba(0,0,0,0.06)">
+<nav id="site-nav" class="fixed left-0 right-0 z-50 bg-white/95 backdrop-blur-sm" style="top:44px;border-bottom:1px solid rgba(0,255,0,0.15);box-shadow:0 4px 24px rgba(0,0,0,0.06)">
   <div class="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between h-20">
     <a href="/" class="flex items-center gap-3 no-underline">
       <img src="/images/logos/logo-transparent.webp" alt="P&R Solutions" class="h-10 w-auto" width="400" height="174" loading="eager" />
@@ -892,7 +892,7 @@
 <!-- ══════════════════════════════════════════════════
      JOB OVERVIEW — brief intro + key facts
      ══════════════════════════════════════════════════ -->
-<section class="py-20 lg:py-24" style="background-color:#0b0f0b;background-image:radial-gradient(ellipse 80% 55% at 50% 0%,rgba(55,212,19,0.38) 0%,transparent 65%),radial-gradient(ellipse 50% 50% at 100% 100%,rgba(55,212,19,0.25) 0%,transparent 60%),linear-gradient(160deg,#0d130d 0%,#090e09 50%,#070b07 100%)">
+<section class="py-20 lg:py-24" style="background-color:#0b0f0b;background-image:radial-gradient(ellipse 80% 55% at 50% 0%,rgba(0,255,0,0.38) 0%,transparent 65%),radial-gradient(ellipse 50% 50% at 100% 100%,rgba(0,255,0,0.25) 0%,transparent 60%),linear-gradient(160deg,#0d130d 0%,#090e09 50%,#070b07 100%)">
   <div class="max-w-7xl mx-auto px-6 lg:px-12">
     <div class="grid lg:grid-cols-[55%_45%] gap-12 lg:gap-20 items-start">
 
@@ -1138,7 +1138,7 @@
 <!-- ══════════════════════════════════════════════════
      RESULTS — final stats + client review
      ══════════════════════════════════════════════════ -->
-<section id="results" class="py-20 lg:py-28" style="background-color:#0b0f0b;background-image:radial-gradient(ellipse 80% 55% at 50% 0%,rgba(55,212,19,0.38) 0%,transparent 65%),radial-gradient(ellipse 50% 50% at 100% 100%,rgba(55,212,19,0.25) 0%,transparent 60%),linear-gradient(160deg,#0d130d 0%,#090e09 50%,#070b07 100%)">
+<section id="results" class="py-20 lg:py-28" style="background-color:#0b0f0b;background-image:radial-gradient(ellipse 80% 55% at 50% 0%,rgba(0,255,0,0.38) 0%,transparent 65%),radial-gradient(ellipse 50% 50% at 100% 100%,rgba(0,255,0,0.25) 0%,transparent 60%),linear-gradient(160deg,#0d130d 0%,#090e09 50%,#070b07 100%)">
   <div class="max-w-7xl mx-auto px-6 lg:px-12">
 
     <!-- Header -->
@@ -1236,7 +1236,7 @@
 <!-- ══════════════════════════════════════════════════
      FAQ
      ══════════════════════════════════════════════════ -->
-<section id="faq" class="py-20 lg:py-28" style="background-color:#0b0f0b;background-image:radial-gradient(ellipse 80% 55% at 50% 0%,rgba(55,212,19,0.38) 0%,transparent 65%),radial-gradient(ellipse 50% 50% at 100% 100%,rgba(55,212,19,0.25) 0%,transparent 60%),linear-gradient(160deg,#0d130d 0%,#090e09 50%,#070b07 100%)">
+<section id="faq" class="py-20 lg:py-28" style="background-color:#0b0f0b;background-image:radial-gradient(ellipse 80% 55% at 50% 0%,rgba(0,255,0,0.38) 0%,transparent 65%),radial-gradient(ellipse 50% 50% at 100% 100%,rgba(0,255,0,0.25) 0%,transparent 60%),linear-gradient(160deg,#0d130d 0%,#090e09 50%,#070b07 100%)">
   <div class="max-w-7xl mx-auto px-6 lg:px-12">
 
     <!-- Header -->
@@ -1372,7 +1372,7 @@
 <!-- ══════════════════════════════════════════════════
      FOOTER
      ══════════════════════════════════════════════════ -->
-<footer style="background-color:#080c08;background-image:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(55,212,19,0.32) 0%,transparent 65%),linear-gradient(180deg,#0a0f0a 0%,#060906 100%);border-top:3px solid #00FF00" aria-label="Site footer">
+<footer style="background-color:#080c08;background-image:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(0,255,0,0.32) 0%,transparent 65%),linear-gradient(180deg,#0a0f0a 0%,#060906 100%);border-top:3px solid #00FF00" aria-label="Site footer">
   <div class="max-w-7xl mx-auto px-6 lg:px-12 pt-16 lg:pt-20 pb-12">
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
 
@@ -1483,7 +1483,7 @@
           <a href="/fulwood-sheffield" class="font-display text-[11px] px-2 py-0.5 rounded no-underline transition-colors duration-200" style="color:rgba(255,255,255,0.45);background:rgba(255,255,255,0.05)" onmouseover="this.style.color='#00FF00'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">Fulwood</a>
           <a href="/stannington-sheffield" class="font-display text-[11px] px-2 py-0.5 rounded no-underline transition-colors duration-200" style="color:rgba(255,255,255,0.45);background:rgba(255,255,255,0.05)" onmouseover="this.style.color='#00FF00'" onmouseout="this.style.color='rgba(255,255,255,0.45)'">Stannington</a>
         </div>
-        <a href="/#areas" class="inline-block mt-4 font-display text-[11px] no-underline transition-colors duration-200" style="color:rgba(55,212,19,0.7)" onmouseover="this.style.color='#00FF00'" onmouseout="this.style.color='rgba(55,212,19,0.7)'">View all 35+ areas →</a>
+        <a href="/#areas" class="inline-block mt-4 font-display text-[11px] no-underline transition-colors duration-200" style="color:rgba(0,255,0,0.7)" onmouseover="this.style.color='#00FF00'" onmouseout="this.style.color='rgba(0,255,0,0.7)'">View all 35+ areas →</a>
       </div>
 
     </div>

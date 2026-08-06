@@ -434,18 +434,18 @@
     .lime-line.lime{background:#00FF00}
     .lime-line.visible{transform:scaleX(1)}
     .faq-item{background:#131313;border:1px solid #1e1e1e;border-radius:16px;padding:24px 24px 24px 28px;cursor:pointer;position:relative;overflow:hidden;transition:border-color .3s,box-shadow .3s}
-    .faq-item::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(to bottom,#37D413,#2BA80D);transform:scaleY(0);transform-origin:bottom;transition:transform .4s cubic-bezier(.16,1,.3,1);border-radius:0 0 0 16px}
+    .faq-item::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(to bottom,#00FF00,#00CC00);transform:scaleY(0);transform-origin:bottom;transition:transform .4s cubic-bezier(.16,1,.3,1);border-radius:0 0 0 16px}
     .faq-item:hover{border-color:#2a2a2a}
-    .faq-item.open{border-color:rgba(55,212,19,0.35);box-shadow:0 0 32px rgba(55,212,19,0.07)}
+    .faq-item.open{border-color:rgba(0,255,0,0.35);box-shadow:0 0 32px rgba(0,255,0,0.07)}
     .faq-item.open::before{transform:scaleY(1)}
     .faq-body{max-height:0;overflow:hidden;transition:max-height .45s cubic-bezier(.16,1,.3,1)}
     .faq-item.open .faq-body{max-height:400px}
-    .faq-num{font-size:10px;font-weight:800;letter-spacing:.18em;color:#37D413;font-family:'Outfit',sans-serif}
+    .faq-num{font-size:10px;font-weight:800;letter-spacing:.18em;color:#00FF00;font-family:'Outfit',sans-serif}
     .faq-cat{font-size:9px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,0.28);background:rgba(255,255,255,0.05);padding:3px 10px;border-radius:100px;font-family:'Outfit',sans-serif}
     .faq-q{font-size:15px;font-weight:700;color:#fff;line-height:1.4;margin-top:10px;font-family:'Outfit',sans-serif}
     .faq-ans{font-size:13px;color:rgba(255,255,255,0.52);line-height:1.75;padding-top:14px;padding-bottom:4px;font-family:'Inter',sans-serif}
     .faq-icon{flex-shrink:0;width:30px;height:30px;border-radius:8px;border:1px solid #2a2a2a;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:300;color:rgba(255,255,255,0.3);transition:all .3s cubic-bezier(.34,1.56,.64,1);background:transparent;margin-top:2px}
-    .faq-item.open .faq-icon{background:#37D413;border-color:#37D413;color:#000;transform:rotate(45deg)}
+    .faq-item.open .faq-icon{background:#00FF00;border-color:#00FF00;color:#000;transform:rotate(45deg)}
     #mobile-menu{display:none}
     #mobile-menu.open{display:block}
     html{scroll-behavior:smooth;scroll-padding-top:100px}
@@ -460,7 +460,7 @@
 <body>
 
 <!-- ANNOUNCEMENT BAR -->
-<div id="ann-bar" class="fixed left-0 right-0 flex items-center justify-center" style="top:0;z-index:60;background:#1a1a1a;height:44px;border-bottom:1px solid rgba(55,212,19,0.35);box-shadow:0 2px 24px rgba(55,212,19,0.12)">
+<div id="ann-bar" class="fixed left-0 right-0 flex items-center justify-center" style="top:0;z-index:60;background:#1a1a1a;height:44px;border-bottom:1px solid rgba(0,255,0,0.35);box-shadow:0 2px 24px rgba(0,255,0,0.12)">
   <div class="font-display text-xs font-medium px-10 text-center" style="color:rgba(255,255,255,0.75);letter-spacing:0.04em">
     <span style="color:#00FF00;font-weight:700">✓ No deposit required</span>
     <span class="hidden sm:inline">&nbsp;&nbsp;·&nbsp;&nbsp;Currently booking <span id="bk-range"></span>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="tel:+447595399525" style="color:#00FF00;font-weight:700;text-decoration:none">07595 399525</a></span>
@@ -478,7 +478,7 @@
 </script>
 
 <!-- NAV -->
-<nav id="site-nav" class="fixed left-0 right-0 z-50 bg-white/95 backdrop-blur-sm" style="top:44px;border-bottom:1px solid rgba(55,212,19,0.15);box-shadow:0 4px 24px rgba(0,0,0,0.06)">
+<nav id="site-nav" class="fixed left-0 right-0 z-50 bg-white/95 backdrop-blur-sm" style="top:44px;border-bottom:1px solid rgba(0,255,0,0.15);box-shadow:0 4px 24px rgba(0,0,0,0.06)">
   <div class="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between h-20">
     <a href="/" class="flex items-center gap-3 no-underline">
       <img src="/images/logos/logo-transparent.webp" alt="P&R Solutions logo" class="h-10 w-auto" width="400" height="174" loading="eager" />
@@ -570,11 +570,11 @@
 </section>
 
 <!-- SERVICES -->
-<section id="services-sect" style="padding:80px 0;background-color:#0b0f0b;background-image:radial-gradient(ellipse 80% 55% at 50% 0%,rgba(55,212,19,0.10) 0%,transparent 65%),linear-gradient(160deg,#0d130d 0%,#090e09 50%,#070b07 100%)">
+<section id="services-sect" style="padding:80px 0;background-color:#0b0f0b;background-image:radial-gradient(ellipse 80% 55% at 50% 0%,rgba(0,255,0,0.10) 0%,transparent 65%),linear-gradient(160deg,#0d130d 0%,#090e09 50%,#070b07 100%)">
   <div class="max-w-7xl mx-auto px-6 lg:px-12">
       <!-- ANSWER-FIRST CAPSULE (AEO / AI Overview citation block) -->
-      <div class="answer-capsule" style="background:linear-gradient(135deg,rgba(55,212,19,0.10),rgba(55,212,19,0.02));border:1px solid rgba(55,212,19,0.28);border-left:4px solid #00FF00;border-radius:14px;padding:22px 26px;margin:0 0 30px;">
-        <div style="font-size:10px;font-weight:800;letter-spacing:0.18em;text-transform:uppercase;color:#37D413;margin-bottom:10px;font-family:&#39;Outfit&#39;,sans-serif;">Quick Answer</div>
+      <div class="answer-capsule" style="background:linear-gradient(135deg,rgba(0,255,0,0.10),rgba(0,255,0,0.02));border:1px solid rgba(0,255,0,0.28);border-left:4px solid #00FF00;border-radius:14px;padding:22px 26px;margin:0 0 30px;">
+        <div style="font-size:10px;font-weight:800;letter-spacing:0.18em;text-transform:uppercase;color:#00FF00;margin-bottom:10px;font-family:&#39;Outfit&#39;,sans-serif;">Quick Answer</div>
         <p style="font-size:16px;line-height:1.7;color:rgba(255,255,255,0.82);margin:0;"><strong style="color:#fff;">Looking for a plasterer or renderer in Worrall?</strong> P&amp;R Solutions covers Worrall (S35) for silicone render, monocouche, external wall insulation, internal plastering and dry lining. We&#39;re a Sheffield-based team with over 25 years&#39; experience &#8212; NVQ-qualified, CHAS accredited, with 100+ five-star Google reviews. Free local survey, no deposit.</p>
       </div>
 
@@ -582,37 +582,37 @@
       <span class="font-display text-xs font-bold tracking-widest uppercase" style="color:rgba(255,255,255,0.5)">What We Do</span>
       <span class="lime-line lime visible w-8 ml-3"></span>
       <h2 class="font-display font-black text-white mt-3" style="font-size:clamp(1.8rem,4vw,3rem)">
-        All Services in <span style="color:#37D413">Worrall</span>
+        All Services in <span style="color:#00FF00">Worrall</span>
       </h2>
     </div>
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
 
       <div class="reveal" style="background:#131313;border:1px solid #1e1e1e;border-radius:16px;padding:24px">
-        <div class="font-display font-bold text-base mb-2" style="color:#37D413">Silicone Rendering</div>
+        <div class="font-display font-bold text-base mb-2" style="color:#00FF00">Silicone Rendering</div>
         <p class="font-body text-sm leading-relaxed mb-4" style="color:rgba(255,255,255,0.52)">Silicone render is popular throughout Worrall on brick-built and previously rendered properties — delivering a clean, smooth and fully weatherproof finish that dramatically improves the appearance of the home and eliminates ongoing maintenance. We have completed silicone render jobs on a number of Worrall properties over the years.</p>
         <a href="/silicone-render-sheffield" class="font-display text-xs font-bold tracking-wide no-underline transition-colors duration-200 tap44" style="color:#00FF00" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#00FF00'">Learn more →</a>
       </div>
 
       <div class="reveal delay-1" style="background:#131313;border:1px solid #1e1e1e;border-radius:16px;padding:24px">
-        <div class="font-display font-bold text-base mb-2" style="color:#37D413">Monocouche Rendering</div>
+        <div class="font-display font-bold text-base mb-2" style="color:#00FF00">Monocouche Rendering</div>
         <p class="font-body text-sm leading-relaxed mb-4" style="color:rgba(255,255,255,0.52)">Worrall's older stone cottages and traditional village properties are ideally suited to monocouche scratch render — a through-colour textured system that complements stone construction and offers excellent resistance to the exposed S35 weather. We colour-match to the local stone palette and can advise on the best finish for any property type.</p>
         <a href="/monocouche-render-sheffield" class="font-display text-xs font-bold tracking-wide no-underline transition-colors duration-200 tap44" style="color:#00FF00" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#00FF00'">Learn more →</a>
       </div>
 
       <div class="reveal delay-2" style="background:#131313;border:1px solid #1e1e1e;border-radius:16px;padding:24px">
-        <div class="font-display font-bold text-base mb-2" style="color:#37D413">External Wall Insulation</div>
+        <div class="font-display font-bold text-base mb-2" style="color:#00FF00">External Wall Insulation</div>
         <p class="font-body text-sm leading-relaxed mb-4" style="color:rgba(255,255,255,0.52)">Worrall's hillside position and exposed aspect make EWI a particularly smart investment. We fit 90mm insulation boards with a silicone or monocouche render topcoat — improving thermal efficiency significantly and refreshing the property's exterior in a single operation. Backed by a 25-year manufacturer warranty.</p>
         <a href="/ewi-sheffield" class="font-display text-xs font-bold tracking-wide no-underline transition-colors duration-200 tap44" style="color:#00FF00" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#00FF00'">Learn more →</a>
       </div>
 
       <div class="reveal delay-3" style="background:#131313;border:1px solid #1e1e1e;border-radius:16px;padding:24px">
-        <div class="font-display font-bold text-base mb-2" style="color:#37D413">Internal Plastering</div>
+        <div class="font-display font-bold text-base mb-2" style="color:#00FF00">Internal Plastering</div>
         <p class="font-body text-sm leading-relaxed mb-4" style="color:rgba(255,255,255,0.52)">Full internal plastering in Worrall and across S35 — re-skims, dot and dab boarding, stud partitions and ceiling work. Being based in Grenoside, we're nearby for site visits and can often respond quickly. Many local customers have us back for multiple jobs over the years.</p>
         <a href="/plastering-sheffield" class="font-display text-xs font-bold tracking-wide no-underline transition-colors duration-200 tap44" style="color:#00FF00" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#00FF00'">Learn more →</a>
       </div>
 
       <div class="reveal delay-4 lg:col-span-2" style="background:#131313;border:1px solid #1e1e1e;border-radius:16px;padding:24px">
-        <div class="font-display font-bold text-base mb-2" style="color:#37D413">Dry Lining</div>
+        <div class="font-display font-bold text-base mb-2" style="color:#00FF00">Dry Lining</div>
         <p class="font-body text-sm leading-relaxed mb-4" style="color:rgba(255,255,255,0.52)">Dot and dab plasterboard, metal stud partitions, ceiling boarding and insulated dry lining — useful for Worrall homeowners looking to improve insulation, split rooms or convert outbuildings and annexes.</p>
         <a href="/dry-lining-sheffield" class="font-display text-xs font-bold tracking-wide no-underline transition-colors duration-200 tap44" style="color:#00FF00" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#00FF00'">Learn more →</a>
       </div>
@@ -622,13 +622,13 @@
 </section>
 
 <!-- WHY LOCAL -->
-<section style="padding:80px 0;background-color:#0b0f0b;background-image:radial-gradient(ellipse 70% 50% at 0% 100%,rgba(55,212,19,0.15) 0%,transparent 60%),linear-gradient(160deg,#0d130d 0%,#090e09 50%,#070b07 100%)">
+<section style="padding:80px 0;background-color:#0b0f0b;background-image:radial-gradient(ellipse 70% 50% at 0% 100%,rgba(0,255,0,0.15) 0%,transparent 60%),linear-gradient(160deg,#0d130d 0%,#090e09 50%,#070b07 100%)">
   <div class="max-w-7xl mx-auto px-6 lg:px-12">
     <div class="mb-10 reveal">
       <span class="font-display text-xs font-bold tracking-widest uppercase" style="color:rgba(255,255,255,0.5)">Your Area</span>
       <span class="lime-line lime visible w-8 ml-3"></span>
       <h2 class="font-display font-black text-white mt-3" style="font-size:clamp(1.8rem,4vw,3rem)">
-        Rendering &amp; Plastering in <span style="color:#37D413">Worrall</span>
+        Rendering &amp; Plastering in <span style="color:#00FF00">Worrall</span>
       </h2>
     </div>
 
@@ -638,11 +638,11 @@
         <div class="font-display text-xs tracking-widest uppercase" style="color:rgba(255,255,255,0.35)">100+ Reviews</div>
       </div>
       <div class="text-center" style="background:#131313;border:1px solid #1e1e1e;border-radius:16px;padding:24px 16px">
-        <div class="font-display font-black text-2xl text-white mb-1" style="color:#37D413">S35</div>
+        <div class="font-display font-black text-2xl text-white mb-1" style="color:#00FF00">S35</div>
         <div class="font-display text-xs tracking-widest uppercase" style="color:rgba(255,255,255,0.35)">Near Grenoside</div>
       </div>
       <div class="text-center" style="background:#131313;border:1px solid #1e1e1e;border-radius:16px;padding:24px 16px">
-        <div class="font-display font-black text-2xl text-white mb-1" style="color:#37D413">Free</div>
+        <div class="font-display font-black text-2xl text-white mb-1" style="color:#00FF00">Free</div>
         <div class="font-display text-xs tracking-widest uppercase" style="color:rgba(255,255,255,0.35)">Survey &amp; Quote</div>
       </div>
     </div>
@@ -662,13 +662,13 @@
 </section>
 
 <!-- FAQ -->
-<section style="padding:80px 0;background-color:#0b0f0b;background-image:radial-gradient(ellipse 80% 55% at 50% 0%,rgba(55,212,19,0.08) 0%,transparent 65%),linear-gradient(160deg,#0d130d 0%,#090e09 50%,#070b07 100%)">
+<section style="padding:80px 0;background-color:#0b0f0b;background-image:radial-gradient(ellipse 80% 55% at 50% 0%,rgba(0,255,0,0.08) 0%,transparent 65%),linear-gradient(160deg,#0d130d 0%,#090e09 50%,#070b07 100%)">
   <div class="max-w-7xl mx-auto px-6 lg:px-12">
     <div class="mb-10 reveal">
       <span class="font-display text-xs font-bold tracking-widest uppercase" style="color:rgba(255,255,255,0.5)">Questions</span>
       <span class="lime-line lime visible w-8 ml-3"></span>
       <h2 class="font-display font-black text-white mt-3" style="font-size:clamp(1.8rem,4vw,3rem)">
-        Worrall <span style="color:#37D413">FAQ</span>
+        Worrall <span style="color:#00FF00">FAQ</span>
       </h2>
     </div>
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 max-w-5xl">
@@ -758,13 +758,13 @@
 </section>
 
 <!-- NEARBY AREAS -->
-<section style="padding:80px 0;background-color:#0b0f0b;background-image:radial-gradient(ellipse 60% 50% at 100% 50%,rgba(55,212,19,0.12) 0%,transparent 60%),linear-gradient(160deg,#0d130d 0%,#090e09 50%,#070b07 100%)">
+<section style="padding:80px 0;background-color:#0b0f0b;background-image:radial-gradient(ellipse 60% 50% at 100% 50%,rgba(0,255,0,0.12) 0%,transparent 60%),linear-gradient(160deg,#0d130d 0%,#090e09 50%,#070b07 100%)">
   <div class="max-w-7xl mx-auto px-6 lg:px-12">
     <div class="mb-8 reveal">
       <span class="font-display text-xs font-bold tracking-widest uppercase" style="color:rgba(255,255,255,0.5)">Nearby</span>
       <span class="lime-line lime visible w-8 ml-3"></span>
       <h2 class="font-display font-black text-white mt-3" style="font-size:clamp(1.6rem,3.5vw,2.5rem)">
-        Other Areas We <span style="color:#37D413">Cover</span>
+        Other Areas We <span style="color:#00FF00">Cover</span>
       </h2>
     </div>
     <div class="flex flex-wrap gap-3 reveal">
@@ -789,14 +789,14 @@
 </section>
 
 <!-- CTA -->
-<section style="padding:80px 0;background-color:#0b0f0b;background-image:radial-gradient(ellipse 80% 55% at 50% 100%,rgba(55,212,19,0.30) 0%,transparent 65%),linear-gradient(160deg,#0d130d 0%,#090e09 50%,#070b07 100%)">
+<section style="padding:80px 0;background-color:#0b0f0b;background-image:radial-gradient(ellipse 80% 55% at 50% 100%,rgba(0,255,0,0.30) 0%,transparent 65%),linear-gradient(160deg,#0d130d 0%,#090e09 50%,#070b07 100%)">
   <div class="max-w-7xl mx-auto px-6 lg:px-12 text-center">
     <div class="reveal">
       <span class="font-display text-xs font-bold tracking-widest uppercase" style="color:rgba(255,255,255,0.5)">Get Started</span>
       <span class="lime-line lime visible w-8 ml-3"></span>
     </div>
     <h2 class="font-display font-black text-white mt-4 mb-4 reveal delay-1" style="font-size:clamp(2rem,5vw,4rem)">
-      Get a Free Survey<br><span style="color:#37D413">in Worrall</span>
+      Get a Free Survey<br><span style="color:#00FF00">in Worrall</span>
     </h2>
     <p class="font-body text-base mb-8 max-w-xl mx-auto reveal delay-2" style="color:rgba(255,255,255,0.5)">No deposit required. We survey, quote and — when you are ready — deliver a finish you will be proud of. Call us or fill in the form and we will be in touch within 24 hours.</p>
     <div class="flex flex-wrap justify-center gap-4 reveal delay-3">
@@ -807,7 +807,7 @@
 </section>
 
 </main>
-<footer style="background-color:#0b0f0b;background-image:radial-gradient(ellipse 70% 50% at 0% 0%,rgba(55,212,19,0.22) 0%,transparent 60%),radial-gradient(ellipse 60% 50% at 100% 100%,rgba(55,212,19,0.16) 0%,transparent 60%),linear-gradient(160deg,#0c110c 0%,#090d09 100%);border-top:3px solid #00FF00" aria-label="Site footer">
+<footer style="background-color:#0b0f0b;background-image:radial-gradient(ellipse 70% 50% at 0% 0%,rgba(0,255,0,0.22) 0%,transparent 60%),radial-gradient(ellipse 60% 50% at 100% 100%,rgba(0,255,0,0.16) 0%,transparent 60%),linear-gradient(160deg,#0c110c 0%,#090d09 100%);border-top:3px solid #00FF00" aria-label="Site footer">
   <div class="max-w-7xl mx-auto px-6 lg:px-12 pt-16 lg:pt-20 pb-12">
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
 

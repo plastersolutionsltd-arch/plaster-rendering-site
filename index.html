@@ -265,18 +265,18 @@
 
     /* FAQ redesign */
     .faq-item{background:#131313;border:1px solid #1e1e1e;border-radius:16px;padding:24px 24px 24px 28px;cursor:pointer;position:relative;overflow:hidden;transition:border-color .3s,box-shadow .3s}
-    .faq-item::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(to bottom,#37D413,#2BA80D);transform:scaleY(0);transform-origin:bottom;transition:transform .4s cubic-bezier(.16,1,.3,1);border-radius:0 0 0 16px}
+    .faq-item::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(to bottom,#00FF00,#00CC00);transform:scaleY(0);transform-origin:bottom;transition:transform .4s cubic-bezier(.16,1,.3,1);border-radius:0 0 0 16px}
     .faq-item:hover{border-color:#2a2a2a}
-    .faq-item.open{border-color:rgba(55,212,19,0.35);box-shadow:0 0 32px rgba(55,212,19,0.07)}
+    .faq-item.open{border-color:rgba(0,255,0,0.35);box-shadow:0 0 32px rgba(0,255,0,0.07)}
     .faq-item.open::before{transform:scaleY(1)}
     .faq-body{max-height:0;overflow:hidden;transition:max-height .45s cubic-bezier(.16,1,.3,1)}
     .faq-item.open .faq-body{max-height:320px}
-    .faq-num{font-size:10px;font-weight:800;letter-spacing:.18em;color:#37D413;font-family:var(--font-display,'Poppins',sans-serif)}
+    .faq-num{font-size:10px;font-weight:800;letter-spacing:.18em;color:#00FF00;font-family:var(--font-display,'Poppins',sans-serif)}
     .faq-cat{font-size:9px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,0.28);background:rgba(255,255,255,0.05);padding:3px 10px;border-radius:100px}
     .faq-q{font-size:15px;font-weight:700;color:#fff;line-height:1.4;margin-top:10px}
     .faq-ans{font-size:13px;color:rgba(255,255,255,0.52);line-height:1.75;padding-top:14px;padding-bottom:4px}
     .faq-icon{flex-shrink:0;width:30px;height:30px;border-radius:8px;border:1px solid #2a2a2a;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:300;color:rgba(255,255,255,0.3);transition:all .3s cubic-bezier(.34,1.56,.64,1);background:transparent;margin-top:2px}
-    .faq-item.open .faq-icon{background:#37D413;border-color:#37D413;color:#000;transform:rotate(45deg)}
+    .faq-item.open .faq-icon{background:#00FF00;border-color:#00FF00;color:#000;transform:rotate(45deg)}
 
     #mobile-menu{display:none}
     #mobile-menu.open{display:block}
@@ -294,10 +294,10 @@
     .svc-arrow{transition:transform .3s,color .3s}
 
     /* ============ SERVICE NAV BAR ============ */
-    .svcnav-item{position:relative;display:flex;flex-direction:column;gap:7px;padding:36px 30px 32px;text-decoration:none;color:inherit;border-right:1px solid rgba(55,212,19,0.1);overflow:hidden;transition:background 0.35s}
+    .svcnav-item{position:relative;display:flex;flex-direction:column;gap:7px;padding:36px 30px 32px;text-decoration:none;color:inherit;border-right:1px solid rgba(0,255,0,0.1);overflow:hidden;transition:background 0.35s}
     .svcnav-item:last-child{border-right:none}
     /* Left accent line — glows on hover */
-    .svcnav-item::before{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,transparent,#00FF00 35%,#37D413 65%,transparent);transform:scaleY(0);transform-origin:center;transition:transform 0.4s cubic-bezier(0.4,0,0.2,1);box-shadow:0 0 18px rgba(0,255,0,1),0 0 40px rgba(0,255,0,0.4)}
+    .svcnav-item::before{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,transparent,#00FF00 35%,#00FF00 65%,transparent);transform:scaleY(0);transform-origin:center;transition:transform 0.4s cubic-bezier(0.4,0,0.2,1);box-shadow:0 0 18px rgba(0,255,0,1),0 0 40px rgba(0,255,0,0.4)}
     /* Card glow sweep */
     .svcnav-item::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 140% 110% at 0% 60%,rgba(0,255,0,0.11) 0%,transparent 60%);opacity:0;transition:opacity 0.4s;pointer-events:none}
     .svcnav-item:hover{background:rgba(0,255,0,0.03)}
@@ -308,7 +308,7 @@
     .svcnav-item:hover .svcnav-arrow{transform:translateX(6px);color:#00FF00;text-shadow:0 0 12px rgba(0,255,0,0.6)}
     .svcnav-item:hover .svcnav-icon{opacity:1;filter:drop-shadow(0 0 8px rgba(0,255,0,0.7))}
     /* Number */
-    .svcnav-num{font-family:'Outfit',sans-serif;font-size:10px;font-weight:700;letter-spacing:3px;color:rgba(55,212,19,0.5);transition:color 0.3s,text-shadow 0.3s}
+    .svcnav-num{font-family:'Outfit',sans-serif;font-size:10px;font-weight:700;letter-spacing:3px;color:rgba(0,255,0,0.5);transition:color 0.3s,text-shadow 0.3s}
     /* Icon */
     .svcnav-icon{width:36px;height:36px;margin:6px 0 5px;opacity:0.7;transition:opacity 0.3s,filter 0.3s}
     /* Name */
@@ -316,14 +316,14 @@
     /* Description */
     .svcnav-desc{font-size:13px;color:rgba(255,255,255,0.4);line-height:1.65;max-width:210px;margin-top:3px}
     /* Warranty badge */
-    .svcnav-badge{display:inline-flex;align-items:center;gap:5px;font-size:10px;font-family:'Outfit',sans-serif;font-weight:700;letter-spacing:0.5px;color:rgba(55,212,19,0.7);margin-top:8px}
+    .svcnav-badge{display:inline-flex;align-items:center;gap:5px;font-size:10px;font-family:'Outfit',sans-serif;font-weight:700;letter-spacing:0.5px;color:rgba(0,255,0,0.7);margin-top:8px}
     /* Arrow — permanently green */
-    .svcnav-arrow{margin-top:auto;padding-top:20px;font-size:12px;font-family:'Outfit',sans-serif;font-weight:700;letter-spacing:0.5px;color:#37D413;text-shadow:0 0 10px rgba(0,255,0,0.35);transition:transform 0.25s,color 0.25s,text-shadow 0.25s;display:block}
+    .svcnav-arrow{margin-top:auto;padding-top:20px;font-size:12px;font-family:'Outfit',sans-serif;font-weight:700;letter-spacing:0.5px;color:#00FF00;text-shadow:0 0 10px rgba(0,255,0,0.35);transition:transform 0.25s,color 0.25s,text-shadow 0.25s;display:block}
     /* Tablet: 2 col */
     @media(max-width:860px){
       .svcnav-grid{grid-template-columns:repeat(2,1fr)!important}
       .svcnav-item:nth-child(2){border-right:none}
-      .svcnav-item:nth-child(1),.svcnav-item:nth-child(2){border-bottom:1px solid rgba(55,212,19,0.1)}
+      .svcnav-item:nth-child(1),.svcnav-item:nth-child(2){border-bottom:1px solid rgba(0,255,0,0.1)}
       .svcnav-name{font-size:1.15rem}
       .svcnav-desc{font-size:13px;max-width:100%}
       .svcnav-badge{font-size:11px}
@@ -332,7 +332,7 @@
     /* Mobile: 1 col */
     @media(max-width:480px){
       .svcnav-grid{grid-template-columns:1fr!important}
-      .svcnav-item{border-right:none;border-bottom:1px solid rgba(55,212,19,0.1);padding:28px 22px 24px}
+      .svcnav-item{border-right:none;border-bottom:1px solid rgba(0,255,0,0.1);padding:28px 22px 24px}
       .svcnav-item:last-child{border-bottom:none}
       .svcnav-num{font-size:11px}
       .svcnav-icon{width:32px;height:32px}
@@ -349,8 +349,8 @@
       overflow: hidden;
       background-color: #080c08;
       background-image:
-        radial-gradient(ellipse 80% 55% at 50% -10%,  rgba(55,212,19,0.45) 0%, transparent 65%),
-        radial-gradient(ellipse 65% 65% at -10% 100%, rgba(55,212,19,0.30) 0%, transparent 60%),
+        radial-gradient(ellipse 80% 55% at 50% -10%,  rgba(0,255,0,0.45) 0%, transparent 65%),
+        radial-gradient(ellipse 65% 65% at -10% 100%, rgba(0,255,0,0.30) 0%, transparent 60%),
         radial-gradient(ellipse 50% 50% at 110% 90%,  rgba(20,40,15,0.8)   0%, transparent 60%),
         linear-gradient(160deg, #0d160d 0%, #090e09 40%, #060906 100%);
     }
@@ -361,11 +361,11 @@
       background-size: 160px 160px; pointer-events: none; z-index: 0;
     }
     .cmp-inner { max-width: 1280px; margin: 0 auto; position: relative; z-index: 1; }
-    .cmp-glow-line { width: 120px; height: 1px; background: linear-gradient(90deg, transparent, #37D413, transparent); margin: 0 auto 40px; opacity: 0.6; }
+    .cmp-glow-line { width: 120px; height: 1px; background: linear-gradient(90deg, transparent, #00FF00, transparent); margin: 0 auto 40px; opacity: 0.6; }
     .cmp-header { text-align: center; margin-bottom: 56px; }
-    .cmp-eyebrow { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #37D413; background: rgba(55,212,19,0.1); border: 1px solid rgba(55,212,19,0.25); padding: 6px 16px; border-radius: 100px; margin-bottom: 20px; }
+    .cmp-eyebrow { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #00FF00; background: rgba(0,255,0,0.1); border: 1px solid rgba(0,255,0,0.25); padding: 6px 16px; border-radius: 100px; margin-bottom: 20px; }
     .cmp-header h2 { font-size: 44px; font-weight: 900; letter-spacing: -0.03em; line-height: 1.1; color: #fff; margin-bottom: 14px; }
-    .cmp-header h2 span { color: #37D413; }
+    .cmp-header h2 span { color: #00FF00; }
     .cmp-header p { font-size: 16px; color: #666; max-width: 480px; margin: 0 auto; }
     .cmp-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
     .cmp-card { background: #131313; border: 1px solid #222; border-radius: 20px; overflow: hidden; position: relative; cursor: pointer; will-change: transform; transition: box-shadow 0.4s ease, border-color 0.3s ease; }
@@ -374,9 +374,9 @@
     .cmp-card::after { content: ''; position: absolute; inset: 0; border-radius: 20px; background: radial-gradient(circle at var(--mx,50%) var(--my,50%), rgba(255,255,255,0.05) 0%, transparent 55%); pointer-events: none; z-index: 1; opacity: 0; transition: opacity 0.3s; }
     .cmp-card:hover::after { opacity: 1; }
     .cmp-card:hover { border-color: #2e2e2e; box-shadow: 0 28px 64px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.04); }
-    .cmp-card.featured { border-color: rgba(55,212,19,0.4); background: #131a11; box-shadow: 0 0 0 1px rgba(55,212,19,0.15), 0 20px 60px rgba(55,212,19,0.08); }
-    .cmp-card.featured:hover { border-color: rgba(55,212,19,0.75); box-shadow: 0 0 0 1px rgba(55,212,19,0.35), 0 32px 80px rgba(55,212,19,0.18); }
-    .cmp-glow-orb { position: absolute; top: -40px; left: 50%; transform: translateX(-50%); width: 220px; height: 220px; background: radial-gradient(circle, rgba(55,212,19,0.18) 0%, transparent 70%); pointer-events: none; z-index: 0; transition: filter 0.4s ease; }
+    .cmp-card.featured { border-color: rgba(0,255,0,0.4); background: #131a11; box-shadow: 0 0 0 1px rgba(0,255,0,0.15), 0 20px 60px rgba(0,255,0,0.08); }
+    .cmp-card.featured:hover { border-color: rgba(0,255,0,0.75); box-shadow: 0 0 0 1px rgba(0,255,0,0.35), 0 32px 80px rgba(0,255,0,0.18); }
+    .cmp-glow-orb { position: absolute; top: -40px; left: 50%; transform: translateX(-50%); width: 220px; height: 220px; background: radial-gradient(circle, rgba(0,255,0,0.18) 0%, transparent 70%); pointer-events: none; z-index: 0; transition: filter 0.4s ease; }
     .cmp-card.featured:hover .cmp-glow-orb { filter: blur(2px) brightness(1.4); }
     .cmp-img { height: 160px; position: relative; overflow: hidden; border-radius: 20px 20px 0 0; flex-shrink: 0; }
     .cmp-img-inner { position: absolute; inset: 0; background-size: cover; background-position: center; transition: transform 0.55s cubic-bezier(0.23, 1, 0.32, 1); }
@@ -400,48 +400,48 @@
     .cmp-img::after { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 70% 20%, rgba(255,255,255,0.13) 0%, transparent 55%), linear-gradient(to bottom, transparent 50%, #131313 100%); pointer-events: none; z-index: 1; }
     .cmp-card.featured .cmp-img::after { background: radial-gradient(circle at 70% 20%, rgba(255,255,255,0.13) 0%, transparent 55%), linear-gradient(to bottom, transparent 50%, #131a11 100%); }
     .cmp-badge-row { display: flex; justify-content: center; padding: 10px 0 0; }
-    .cmp-badge { display: inline-flex; align-items: center; gap: 4px; font-size: 10px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: #000; background: #37D413; padding: 5px 14px; border-radius: 100px; }
+    .cmp-badge { display: inline-flex; align-items: center; gap: 4px; font-size: 10px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: #000; background: #00FF00; padding: 5px 14px; border-radius: 100px; }
     .cmp-card-head { padding: 22px 22px 0; }
     .cmp-name { font-size: 17px; font-weight: 800; color: #fff; margin-bottom: 4px; letter-spacing: -0.01em; display: inline-block; transition: color 0.3s ease, transform 0.3s ease; }
-    .cmp-card:hover .cmp-name { color: #37D413; transform: translateX(3px); }
+    .cmp-card:hover .cmp-name { color: #00FF00; transform: translateX(3px); }
     .cmp-tagline { font-size: 12px; color: #888; line-height: 1.5; margin-bottom: 18px; }
     .cmp-price-row { display: flex; align-items: baseline; gap: 3px; margin-bottom: 4px; }
     .cmp-from { font-size: 11px; color: #888; font-weight: 500; }
     .cmp-price { font-size: 30px; font-weight: 900; color: #fff; letter-spacing: -0.03em; line-height: 1; display: inline-block; transition: transform 0.35s cubic-bezier(0.34,1.56,0.64,1); }
     .cmp-card:hover .cmp-price { transform: scale(1.1) translateY(-2px); }
-    .cmp-card.featured .cmp-price { color: #37D413; }
+    .cmp-card.featured .cmp-price { color: #00FF00; }
     .cmp-per { font-size: 13px; color: #888; }
     .cmp-range { font-size: 11px; color: #777; margin-bottom: 18px; }
     .cmp-score { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
     .cmp-slabel { font-size: 11px; color: #888; min-width: 58px; }
     .cmp-track { flex: 1; height: 4px; background: #1e1e1e; border-radius: 100px; overflow: hidden; }
-    .cmp-fill { height: 100%; background: #37D413; border-radius: 100px; }
-    .cmp-snum { font-size: 11px; font-weight: 700; color: #37D413; min-width: 26px; text-align: right; }
+    .cmp-fill { height: 100%; background: #00FF00; border-radius: 100px; }
+    .cmp-snum { font-size: 11px; font-weight: 700; color: #00FF00; min-width: 26px; text-align: right; }
     .cmp-divider { height: 1px; background: #1e1e1e; margin: 18px 22px; }
     .cmp-body { padding: 0 22px; }
     .cmp-list-label { font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #666; margin-bottom: 10px; }
     .cmp-list { list-style: none; margin-bottom: 16px; }
     .cmp-list li { display: flex; align-items: flex-start; gap: 8px; font-size: 13px; line-height: 1.5; padding: 4px 0; }
     .cmp-list.pros li { color: #ccc; }
-    .cmp-list.pros li .ico { color: #37D413; flex-shrink: 0; }
+    .cmp-list.pros li .ico { color: #00FF00; flex-shrink: 0; }
     .cmp-list.cons li { color: #777; }
     .cmp-list.cons li .ico { color: #555; flex-shrink: 0; }
     .cmp-best-label { font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #666; margin-bottom: 8px; }
     .cmp-best-tag { display: inline-block; font-size: 12px; font-weight: 600; color: #888; background: #1a1a1a; border: 1px solid #2a2a2a; padding: 5px 11px; border-radius: 8px; }
-    .cmp-card.featured .cmp-best-tag { color: #37D413; background: rgba(55,212,19,0.08); border-color: rgba(55,212,19,0.2); }
+    .cmp-card.featured .cmp-best-tag { color: #00FF00; background: rgba(0,255,0,0.08); border-color: rgba(0,255,0,0.2); }
     .cmp-guarantee { font-size: 11px; color: #888; margin: 16px 22px 14px; transition: color 0.3s ease, transform 0.3s ease; }
     .cmp-card:hover .cmp-guarantee { color: #aaa; transform: translateX(4px); }
     .cmp-actions { padding: 0 22px 22px; display: flex; flex-direction: column; gap: 8px; }
-    .cmp-link { display: flex; align-items: center; justify-content: center; gap: 6px; font-size: 12px; font-weight: 700; color: #000; text-decoration: none; background: linear-gradient(135deg, #37D413 0%, #2BA80D 100%); border: 1px solid transparent; padding: 9px 12px; border-radius: 10px; transition: box-shadow 0.25s ease, gap 0.25s ease; }
-    .cmp-link:hover { box-shadow: 0 6px 20px rgba(55,212,19,0.4); gap: 10px; }
-    .cmp-card.featured .cmp-link { background: linear-gradient(135deg, #37D413 0%, #2BA80D 100%); color: #000; }
-    .cmp-card.featured .cmp-link:hover { box-shadow: 0 6px 20px rgba(55,212,19,0.4); }
+    .cmp-link { display: flex; align-items: center; justify-content: center; gap: 6px; font-size: 12px; font-weight: 700; color: #000; text-decoration: none; background: linear-gradient(135deg, #00FF00 0%, #00CC00 100%); border: 1px solid transparent; padding: 9px 12px; border-radius: 10px; transition: box-shadow 0.25s ease, gap 0.25s ease; }
+    .cmp-link:hover { box-shadow: 0 6px 20px rgba(0,255,0,0.4); gap: 10px; }
+    .cmp-card.featured .cmp-link { background: linear-gradient(135deg, #00FF00 0%, #00CC00 100%); color: #000; }
+    .cmp-card.featured .cmp-link:hover { box-shadow: 0 6px 20px rgba(0,255,0,0.4); }
     .cmp-cta { display: block; width: 100%; padding: 12px; border-radius: 10px; font-size: 13px; font-weight: 700; text-align: center; cursor: pointer; transition: all 0.3s cubic-bezier(0.34,1.56,0.64,1); text-decoration: none; border: none; }
     .cmp-card:hover .cmp-cta { transform: translateY(-3px); }
-    .cmp-cta.solid { background: linear-gradient(135deg, #37D413 0%, #2BA80D 100%); color: #000; }
-    .cmp-cta.solid:hover { box-shadow: 0 8px 24px rgba(55,212,19,0.35); }
+    .cmp-cta.solid { background: linear-gradient(135deg, #00FF00 0%, #00CC00 100%); color: #000; }
+    .cmp-cta.solid:hover { box-shadow: 0 8px 24px rgba(0,255,0,0.35); }
     .cmp-cta.outline { background: transparent; color: #555; border: 1px solid #252525; }
-    .cmp-card:hover .cmp-cta.outline { border-color: #37D413; color: #37D413; }
+    .cmp-card:hover .cmp-cta.outline { border-color: #00FF00; color: #00FF00; }
     @media (max-width: 900px)  { .cmp-grid { grid-template-columns: repeat(2,1fr); } }
     @media (max-width: 540px)  { .cmp-grid { grid-template-columns: 1fr; } .cmp-header h2 { font-size: 32px; } }
     @media (hover: none) {
@@ -461,7 +461,7 @@
 <body>
 
 <!-- ANNOUNCEMENT BAR -->
-<div id="ann-bar" class="fixed left-0 right-0 flex items-center justify-center" style="top:0;z-index:60;background:#1a1a1a;height:44px;border-bottom:1px solid rgba(55,212,19,0.35);box-shadow:0 2px 24px rgba(55,212,19,0.12)">
+<div id="ann-bar" class="fixed left-0 right-0 flex items-center justify-center" style="top:0;z-index:60;background:#1a1a1a;height:44px;border-bottom:1px solid rgba(0,255,0,0.35);box-shadow:0 2px 24px rgba(0,255,0,0.12)">
   <div class="font-display text-xs font-medium px-10 text-center" style="color:rgba(255,255,255,0.75);letter-spacing:0.04em">
     <span style="color:#00FF00;font-weight:700">&#10003; No deposit required</span>
     <span class="hidden sm:inline">&nbsp;&nbsp;&middot;&nbsp;&nbsp;Currently booking <span id="bk-range"></span>&nbsp;&nbsp;&middot;&nbsp;&nbsp;<a href="tel:+447595399525" style="color:#00FF00;font-weight:700;text-decoration:none">07595 399525</a></span>
@@ -479,7 +479,7 @@
 </script>
 
 <!-- NAV -->
-<nav id="site-nav" class="fixed left-0 right-0 z-50 bg-white/95 backdrop-blur-sm" style="top:44px;border-bottom:1px solid rgba(55,212,19,0.15);box-shadow:0 4px 24px rgba(0,0,0,0.06)">
+<nav id="site-nav" class="fixed left-0 right-0 z-50 bg-white/95 backdrop-blur-sm" style="top:44px;border-bottom:1px solid rgba(0,255,0,0.15);box-shadow:0 4px 24px rgba(0,0,0,0.06)">
   <div class="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between h-20">
     <a href="/" class="flex items-center gap-3 no-underline">
       <img src="/images/logos/logo-transparent.webp" alt="P&R Solutions Sheffield" class="h-10 w-auto" width="400" height="174" loading="eager" />
@@ -601,7 +601,7 @@
 
 <!-- SERVICE NAV -->
 <div style="position:relative;background-color:#0b0f0b;background-image:radial-gradient(ellipse 100% 200% at 50% -10%,rgba(0,255,0,0.18) 0%,transparent 60%),radial-gradient(ellipse 50% 100% at 0% 50%,rgba(0,255,0,0.10) 0%,transparent 60%),radial-gradient(ellipse 50% 100% at 100% 50%,rgba(0,255,0,0.10) 0%,transparent 60%)">
-  <div style="height:1px;background:linear-gradient(90deg,transparent 0%,#37D413 25%,#00FF00 50%,#37D413 75%,transparent 100%);opacity:0.55;box-shadow:0 0 20px rgba(0,255,0,0.4)"></div>
+  <div style="height:1px;background:linear-gradient(90deg,transparent 0%,#00FF00 25%,#00FF00 50%,#00FF00 75%,transparent 100%);opacity:0.55;box-shadow:0 0 20px rgba(0,255,0,0.4)"></div>
   <div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr)" class="svcnav-grid">
     <a href="/silicone-render-sheffield" class="svcnav-item">
       <div class="svcnav-num">01</div>
@@ -636,16 +636,16 @@
       <div class="svcnav-arrow">View service →</div>
     </a>
   </div>
-  <div style="height:1px;background:linear-gradient(90deg,transparent 0%,#37D413 25%,#00FF00 50%,#37D413 75%,transparent 100%);opacity:0.25;box-shadow:0 0 16px rgba(0,255,0,0.25)"></div>
+  <div style="height:1px;background:linear-gradient(90deg,transparent 0%,#00FF00 25%,#00FF00 50%,#00FF00 75%,transparent 100%);opacity:0.25;box-shadow:0 0 16px rgba(0,255,0,0.25)"></div>
 </div>
 
 <!-- SEO TEXT SECTION -->
-<section class="py-20 lg:py-28" style="background-color:#0b0f0b;border-top:1px solid rgba(55,212,19,0.1);background-image:radial-gradient(ellipse 80% 55% at 50% 0%,rgba(55,212,19,0.38) 0%,transparent 65%),radial-gradient(ellipse 50% 50% at 100% 100%,rgba(55,212,19,0.25) 0%,transparent 60%),linear-gradient(160deg,#0d130d 0%,#090e09 50%,#070b07 100%)">
+<section class="py-20 lg:py-28" style="background-color:#0b0f0b;border-top:1px solid rgba(0,255,0,0.1);background-image:radial-gradient(ellipse 80% 55% at 50% 0%,rgba(0,255,0,0.38) 0%,transparent 65%),radial-gradient(ellipse 50% 50% at 100% 100%,rgba(0,255,0,0.25) 0%,transparent 60%),linear-gradient(160deg,#0d130d 0%,#090e09 50%,#070b07 100%)">
   <div class="max-w-7xl mx-auto px-6 lg:px-12">
     <div class="max-w-4xl">
       <!-- ANSWER-FIRST CAPSULE (AEO / AI Overview citation block) -->
-      <div class="answer-capsule" style="background:linear-gradient(135deg,rgba(55,212,19,0.10),rgba(55,212,19,0.02));border:1px solid rgba(55,212,19,0.28);border-left:4px solid #00FF00;border-radius:14px;padding:22px 26px;margin:0 0 30px;">
-        <div style="font-size:10px;font-weight:800;letter-spacing:0.18em;text-transform:uppercase;color:#37D413;margin-bottom:10px;font-family:'Outfit',sans-serif;">Quick Answer</div>
+      <div class="answer-capsule" style="background:linear-gradient(135deg,rgba(0,255,0,0.10),rgba(0,255,0,0.02));border:1px solid rgba(0,255,0,0.28);border-left:4px solid #00FF00;border-radius:14px;padding:22px 26px;margin:0 0 30px;">
+        <div style="font-size:10px;font-weight:800;letter-spacing:0.18em;text-transform:uppercase;color:#00FF00;margin-bottom:10px;font-family:'Outfit',sans-serif;">Quick Answer</div>
         <p style="font-size:16px;line-height:1.7;color:rgba(255,255,255,0.82);margin:0;"><strong style="color:#fff;">P&amp;R Solutions is a Sheffield plastering and rendering specialist with over 25 years' experience and 100+ five-star Google reviews.</strong> Led by NVQ-qualified Chris Glover, the team covers every Sheffield postcode (S1&#8211;S36) for silicone render, monocouche, external wall insulation, internal plastering and dry lining. Approved applicators for K-Rend, Ecorend and Weber, CHAS accredited, with a free survey and no deposit.</p>
       </div>
       <div class="reveal mb-4 flex items-center gap-3">
@@ -957,7 +957,7 @@
 </section>
 
 <!-- WHY CHOOSE P&R -->
-<section class="py-20 lg:py-28" style="background-color:#0b0f0b;background-image:radial-gradient(ellipse 75% 55% at 0% 50%,rgba(55,212,19,0.28) 0%,transparent 65%),radial-gradient(ellipse 60% 50% at 100% 50%,rgba(55,212,19,0.18) 0%,transparent 60%),linear-gradient(160deg,#0d130d 0%,#090e09 50%,#070b07 100%)">
+<section class="py-20 lg:py-28" style="background-color:#0b0f0b;background-image:radial-gradient(ellipse 75% 55% at 0% 50%,rgba(0,255,0,0.28) 0%,transparent 65%),radial-gradient(ellipse 60% 50% at 100% 50%,rgba(0,255,0,0.18) 0%,transparent 60%),linear-gradient(160deg,#0d130d 0%,#090e09 50%,#070b07 100%)">
   <div class="max-w-7xl mx-auto px-6 lg:px-12">
     <div class="grid lg:grid-cols-[42%_58%] gap-10 lg:gap-20 items-start">
       <div>
@@ -1044,7 +1044,7 @@
 </section>
 
 <!-- GALLERY -->
-<section id="gallery" class="py-20 lg:py-28" style="background-color:#0e120e;background-image:radial-gradient(ellipse 70% 50% at 50% 0%,rgba(55,212,19,0.28) 0%,transparent 65%),radial-gradient(ellipse 50% 60% at 100% 100%,rgba(55,212,19,0.20) 0%,transparent 60%),linear-gradient(160deg,#0d130d 0%,#0a0e0a 50%,#080b08 100%)">
+<section id="gallery" class="py-20 lg:py-28" style="background-color:#0e120e;background-image:radial-gradient(ellipse 70% 50% at 50% 0%,rgba(0,255,0,0.28) 0%,transparent 65%),radial-gradient(ellipse 50% 60% at 100% 100%,rgba(0,255,0,0.20) 0%,transparent 60%),linear-gradient(160deg,#0d130d 0%,#0a0e0a 50%,#080b08 100%)">
   <div class="max-w-7xl mx-auto px-6 lg:px-12">
     <div class="reveal mb-4">
       <span class="lime-line lime visible w-8 mr-3"></span>
@@ -1092,7 +1092,7 @@
           <div class="font-display font-black text-white text-lg leading-tight mb-1">Sandygate · 120m² Ecorend Marble White</div>
           <div class="font-body text-sm text-slate-400">Full stage-by-stage walkthrough with 21 photos — beading to finished coat.</div>
         </div>
-        <a href="/sandygate-silicone-render-case-study" class="flex-shrink-0 font-display font-bold text-sm no-underline px-5 py-2.5 rounded-full transition-all duration-300 tap44-btn" style="background:#00FF00;color:#000" onmouseover="this.style.background='#37D413'" onmouseout="this.style.background='#00FF00'">View Case Study ↗</a>
+        <a href="/sandygate-silicone-render-case-study" class="flex-shrink-0 font-display font-bold text-sm no-underline px-5 py-2.5 rounded-full transition-all duration-300 tap44-btn" style="background:#00FF00;color:#000" onmouseover="this.style.background='#00FF00'" onmouseout="this.style.background='#00FF00'">View Case Study ↗</a>
       </div>
     </div>
 
@@ -1106,7 +1106,7 @@
           <div class="font-display font-black text-white text-lg leading-tight mb-1">S17 · 150mm EPS External Wall Insulation</div>
           <div class="font-body text-sm text-slate-400">Full before/after — tired brick bungalow to a warm, modern silicone finish.</div>
         </div>
-        <a href="/s17-ewi-case-study" class="flex-shrink-0 font-display font-bold text-sm no-underline px-5 py-2.5 rounded-full transition-all duration-300 tap44-btn" style="background:#00FF00;color:#000" onmouseover="this.style.background='#37D413'" onmouseout="this.style.background='#00FF00'">View Case Study ↗</a>
+        <a href="/s17-ewi-case-study" class="flex-shrink-0 font-display font-bold text-sm no-underline px-5 py-2.5 rounded-full transition-all duration-300 tap44-btn" style="background:#00FF00;color:#000" onmouseover="this.style.background='#00FF00'" onmouseout="this.style.background='#00FF00'">View Case Study ↗</a>
       </div>
     </div>
 
@@ -1117,7 +1117,7 @@
 </section>
 
 <!-- REVIEWS -->
-<section id="reviews" class="py-20 lg:py-28" style="background-color:#0b0f0b;background-image:radial-gradient(ellipse 80% 50% at 20% 50%,rgba(55,212,19,0.25) 0%,transparent 65%),radial-gradient(ellipse 60% 55% at 80% 0%,rgba(55,212,19,0.18) 0%,transparent 60%),linear-gradient(160deg,#0c110c 0%,#090d09 50%,#070a07 100%)">
+<section id="reviews" class="py-20 lg:py-28" style="background-color:#0b0f0b;background-image:radial-gradient(ellipse 80% 50% at 20% 50%,rgba(0,255,0,0.25) 0%,transparent 65%),radial-gradient(ellipse 60% 55% at 80% 0%,rgba(0,255,0,0.18) 0%,transparent 60%),linear-gradient(160deg,#0c110c 0%,#090d09 50%,#070a07 100%)">
   <div class="max-w-7xl mx-auto px-6 lg:px-12">
     <div class="reveal mb-4">
       <span class="lime-line lime visible w-8 mr-3"></span>
@@ -1272,18 +1272,18 @@
 </section>
 
 <!-- FAQ -->
-<section id="faq" style="background-color:#0b0f0b;background-image:radial-gradient(ellipse 80% 55% at 50% 0%,rgba(55,212,19,0.20) 0%,transparent 65%),radial-gradient(ellipse 50% 50% at 100% 100%,rgba(55,212,19,0.12) 0%,transparent 60%),linear-gradient(160deg,#0d130d 0%,#090e09 50%,#070b07 100%);padding:80px 24px">
+<section id="faq" style="background-color:#0b0f0b;background-image:radial-gradient(ellipse 80% 55% at 50% 0%,rgba(0,255,0,0.20) 0%,transparent 65%),radial-gradient(ellipse 50% 50% at 100% 100%,rgba(0,255,0,0.12) 0%,transparent 60%),linear-gradient(160deg,#0d130d 0%,#090e09 50%,#070b07 100%);padding:80px 24px">
   <div class="max-w-7xl mx-auto">
 
     <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-12">
       <div>
         <div class="reveal mb-4">
           <span class="lime-line lime visible w-8 mr-3"></span>
-          <span class="font-display text-xs font-bold tracking-[.35em] uppercase" style="color:#37D413">Common Questions</span>
+          <span class="font-display text-xs font-bold tracking-[.35em] uppercase" style="color:#00FF00">Common Questions</span>
         </div>
         <h2 class="reveal font-display font-black text-white leading-tight" style="font-size:clamp(2rem,4.5vw,3.2rem)">Everything you<br>need to know</h2>
       </div>
-      <a href="/faq" class="reveal delay-1 inline-flex items-center gap-2 font-display font-bold text-xs tracking-wide px-5 py-2.5 rounded-full no-underline self-start lg:self-end" style="color:#37D413;border:1px solid rgba(55,212,19,0.3);transition:all 0.25s" onmouseover="this.style.background='rgba(55,212,19,0.08)'" onmouseout="this.style.background='transparent'">See all FAQs &rarr;</a>
+      <a href="/faq" class="reveal delay-1 inline-flex items-center gap-2 font-display font-bold text-xs tracking-wide px-5 py-2.5 rounded-full no-underline self-start lg:self-end" style="color:#00FF00;border:1px solid rgba(0,255,0,0.3);transition:all 0.25s" onmouseover="this.style.background='rgba(0,255,0,0.08)'" onmouseout="this.style.background='transparent'">See all FAQs &rarr;</a>
     </div>
 
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-3">
@@ -1475,7 +1475,7 @@
 </section>
 
 <!-- CTA -->
-<section class="py-24 lg:py-32" style="background-color:#0d130d;background-image:radial-gradient(ellipse 90% 60% at 50% 50%,rgba(55,212,19,0.35) 0%,transparent 65%),radial-gradient(ellipse 50% 50% at 0% 100%,rgba(55,212,19,0.20) 0%,transparent 60%),linear-gradient(160deg,#0e160e 0%,#0a0f0a 50%,#080c08 100%)">
+<section class="py-24 lg:py-32" style="background-color:#0d130d;background-image:radial-gradient(ellipse 90% 60% at 50% 50%,rgba(0,255,0,0.35) 0%,transparent 65%),radial-gradient(ellipse 50% 50% at 0% 100%,rgba(0,255,0,0.20) 0%,transparent 60%),linear-gradient(160deg,#0e160e 0%,#0a0f0a 50%,#080c08 100%)">
   <div class="max-w-4xl mx-auto px-6 lg:px-12 text-center">
     <div class="reveal mb-6">
       <span class="lime-line lime visible w-8" style="display:inline-block"></span>
@@ -1495,7 +1495,7 @@
 
 <!-- FOOTER -->
 </main>
-<footer style="background-color:#0b0f0b;background-image:radial-gradient(ellipse 70% 50% at 0% 0%,rgba(55,212,19,0.22) 0%,transparent 60%),radial-gradient(ellipse 60% 50% at 100% 100%,rgba(55,212,19,0.16) 0%,transparent 60%),linear-gradient(160deg,#0c110c 0%,#090d09 100%);border-top:3px solid #00FF00" aria-label="Site footer">
+<footer style="background-color:#0b0f0b;background-image:radial-gradient(ellipse 70% 50% at 0% 0%,rgba(0,255,0,0.22) 0%,transparent 60%),radial-gradient(ellipse 60% 50% at 100% 100%,rgba(0,255,0,0.16) 0%,transparent 60%),linear-gradient(160deg,#0c110c 0%,#090d09 100%);border-top:3px solid #00FF00" aria-label="Site footer">
   <div class="max-w-7xl mx-auto px-6 lg:px-12 pt-16 lg:pt-20 pb-12">
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
 
