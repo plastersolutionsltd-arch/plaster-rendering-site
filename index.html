@@ -108,7 +108,7 @@
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "5.0",
-      "reviewCount": "105",
+      "reviewCount": "107",
       "bestRating": "5",
       "worstRating": "1"
     }
@@ -379,8 +379,24 @@
     .cmp-glow-orb { position: absolute; top: -40px; left: 50%; transform: translateX(-50%); width: 220px; height: 220px; background: radial-gradient(circle, rgba(55,212,19,0.18) 0%, transparent 70%); pointer-events: none; z-index: 0; transition: filter 0.4s ease; }
     .cmp-card.featured:hover .cmp-glow-orb { filter: blur(2px) brightness(1.4); }
     .cmp-img { height: 160px; position: relative; overflow: hidden; border-radius: 20px 20px 0 0; flex-shrink: 0; }
-    .cmp-img-inner { position: absolute; inset: 0; transition: transform 0.55s cubic-bezier(0.23, 1, 0.32, 1); }
+    .cmp-img-inner { position: absolute; inset: 0; background-size: cover; background-position: center; transition: transform 0.55s cubic-bezier(0.23, 1, 0.32, 1); }
     .cmp-card:hover .cmp-img-inner { transform: scale(1.07); }
+    /* Card art. Full-size files desktop; phones get the -m variants (CSS backgrounds
+       can't use srcset, so these were shipping the desktop file to mobile). */
+    .cmp-img-silicone  { background-image: url('/images/hero/silicone-service.webp'); }
+    .cmp-img-mono      { background-image: url('/images/case-studies/dore-monocouche.webp'); }
+    .cmp-img-ewi       { background-image: url('/images/hero/IMG_3979.webp'); }
+    .cmp-img-plaster   { background-image: url('/images/hero/plasteringhero.webp'); }
+    .cmp-img-repair    { background-image: url('/images/case-studies/s17-close-up-detail.webp'); }
+    .cmp-img-drylining { background-image: url('/images/case-studies/drylining-service.webp'); }
+    @media (max-width: 640px) {
+      .cmp-img-silicone  { background-image: url('/images/hero/silicone-service-m.webp'); }
+      .cmp-img-mono      { background-image: url('/images/case-studies/dore-monocouche-m.webp'); }
+      .cmp-img-ewi       { background-image: url('/images/hero/IMG_3979-m.webp'); }
+      .cmp-img-plaster   { background-image: url('/images/hero/plasteringhero-m.webp'); }
+      .cmp-img-repair    { background-image: url('/images/case-studies/s17-close-up-detail-m.webp'); }
+      .cmp-img-drylining { background-image: url('/images/case-studies/drylining-service-m.webp'); }
+    }
     .cmp-img::after { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 70% 20%, rgba(255,255,255,0.13) 0%, transparent 55%), linear-gradient(to bottom, transparent 50%, #131313 100%); pointer-events: none; z-index: 1; }
     .cmp-card.featured .cmp-img::after { background: radial-gradient(circle at 70% 20%, rgba(255,255,255,0.13) 0%, transparent 55%), linear-gradient(to bottom, transparent 50%, #131a11 100%); }
     .cmp-badge-row { display: flex; justify-content: center; padding: 10px 0 0; }
@@ -518,7 +534,7 @@
          class="absolute inset-0 w-full h-full object-cover"
          style="opacity:.88" />
     </picture>
-    <div class="absolute inset-0" style="background:linear-gradient(105deg,rgba(0,0,0,.75) 0%,rgba(0,0,0,.40) 55%,rgba(0,0,0,.10) 100%)"></div>
+    <div class="absolute inset-0" style="background:linear-gradient(105deg,rgba(0,0,0,.78) 0%,rgba(0,0,0,.55) 55%,rgba(0,0,0,.30) 100%)"></div>
     <div class="absolute inset-x-0 bottom-0 h-16" style="background:linear-gradient(to top,#fff 0%,transparent 100%)"></div>
     <div class="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-12 pb-32 pt-40">
       <div class="flex items-center gap-3 mb-8 reveal">
@@ -533,7 +549,7 @@
         <div class="reveal delay-1 font-display font-black leading-[.92] tracking-tight" style="font-size:clamp(3rem,9vw,7.5rem);color:#00FF00">Plasterer &amp;</div>
       </div>
       <div class="overflow-hidden mb-10">
-        <div class="reveal delay-2 font-display font-light text-white/75 leading-[.92] tracking-tight" style="font-size:clamp(3rem,9vw,7.5rem)">Rendering Specialists.</div>
+        <div class="reveal delay-2 font-display font-light  leading-[.92] tracking-tight" style="color:rgba(255,255,255,.88);font-size:clamp(3rem,9vw,7.5rem)">Rendering Specialists.</div>
       </div>
       </h1>
       <div class="grid lg:grid-cols-2 gap-8 items-end">
@@ -674,7 +690,7 @@
       <div class="cmp-card featured">
         <div class="cmp-glow-orb"></div>
         <div class="cmp-img">
-          <div class="cmp-img-inner" style="background-image: url('/images/hero/silicone-service.webp'); background-size: cover; background-position: center;"></div>
+          <div class="cmp-img-inner cmp-img-silicone"></div>
         </div>
         <div class="cmp-badge-row"><span class="cmp-badge">★ Most Popular</span></div>
         <div class="cmp-card-head">
@@ -709,15 +725,15 @@
         </div>
         <div class="cmp-guarantee">25-year manufacturer's guarantee</div>
         <div class="cmp-actions">
-          <a href="/silicone-render-sheffield" class="cmp-link">See full service →</a>
-          <a href="/get-quote" class="cmp-cta solid">Get a Quote</a>
+          <a href="/silicone-render-sheffield" class="cmp-link tap44">See full service →</a>
+          <a href="/get-quote" class="cmp-cta solid tap44-btn">Get a Quote</a>
         </div>
       </div>
 
       <!-- MONOCOUCHE -->
       <div class="cmp-card">
         <div class="cmp-img">
-          <div class="cmp-img-inner" style="background-image: url('/images/case-studies/dore-monocouche.webp'); background-size: cover; background-position: center;"></div>
+          <div class="cmp-img-inner cmp-img-mono"></div>
         </div>
         <div class="cmp-card-head">
           <div class="cmp-name">Monocouche</div>
@@ -751,15 +767,15 @@
         </div>
         <div class="cmp-guarantee">20-year manufacturer's guarantee</div>
         <div class="cmp-actions">
-          <a href="/monocouche-render-sheffield" class="cmp-link">See full service →</a>
-          <a href="/get-quote" class="cmp-cta outline">Get a Quote</a>
+          <a href="/monocouche-render-sheffield" class="cmp-link tap44">See full service →</a>
+          <a href="/get-quote" class="cmp-cta outline tap44-btn">Get a Quote</a>
         </div>
       </div>
 
       <!-- EWI SYSTEMS -->
       <div class="cmp-card">
         <div class="cmp-img">
-          <div class="cmp-img-inner" style="background-image: url('/images/hero/IMG_3979.webp'); background-size: cover; background-position: center;"></div>
+          <div class="cmp-img-inner cmp-img-ewi"></div>
         </div>
         <div class="cmp-card-head">
           <div class="cmp-name">EWI Systems</div>
@@ -793,8 +809,8 @@
         </div>
         <div class="cmp-guarantee">25-year system guarantee</div>
         <div class="cmp-actions">
-          <a href="/ewi-sheffield" class="cmp-link">See full service →</a>
-          <a href="/get-quote" class="cmp-cta outline">Get a Quote</a>
+          <a href="/ewi-sheffield" class="cmp-link tap44">See full service →</a>
+          <a href="/get-quote" class="cmp-cta outline tap44-btn">Get a Quote</a>
         </div>
       </div>
 
@@ -815,7 +831,7 @@
       <!-- INTERNAL PLASTERING -->
       <div class="cmp-card">
         <div class="cmp-img">
-          <div class="cmp-img-inner" style="background-image: url('/images/hero/plasteringhero.webp'); background-size: cover; background-position: center;"></div>
+          <div class="cmp-img-inner cmp-img-plaster"></div>
         </div>
         <div class="cmp-card-head">
           <div class="cmp-name">Internal Plastering</div>
@@ -849,15 +865,15 @@
         </div>
         <div class="cmp-guarantee">Workmanship guarantee</div>
         <div class="cmp-actions">
-          <a href="/plastering-sheffield" class="cmp-link">See full service →</a>
-          <a href="/get-quote" class="cmp-cta outline">Get a Quote</a>
+          <a href="/plastering-sheffield" class="cmp-link tap44">See full service →</a>
+          <a href="/get-quote" class="cmp-cta outline tap44-btn">Get a Quote</a>
         </div>
       </div>
 
       <!-- EXPERT ADVICE -->
       <div class="cmp-card">
         <div class="cmp-img">
-          <div class="cmp-img-inner" style="background-image: url('/images/case-studies/s17-close-up-detail.webp'); background-size: cover; background-position: center;"></div>
+          <div class="cmp-img-inner cmp-img-repair"></div>
         </div>
         <div class="cmp-card-head">
           <div class="cmp-name">Expert Advice</div>
@@ -889,7 +905,7 @@
         </div>
         <div class="cmp-guarantee">Impartial, honest advice — always</div>
         <div class="cmp-actions">
-          <a href="/get-quote" class="cmp-link">Ask us anything →</a>
+          <a href="/get-quote" class="cmp-link tap44">Ask us anything →</a>
           <a href="/get-quote" class="cmp-cta outline">Book Free Visit</a>
         </div>
       </div>
@@ -897,7 +913,7 @@
       <!-- DRY LINING -->
       <div class="cmp-card">
         <div class="cmp-img">
-          <div class="cmp-img-inner" style="background-image: url('/images/case-studies/drylining-service.webp'); background-size: cover; background-position: center;"></div>
+          <div class="cmp-img-inner cmp-img-drylining"></div>
         </div>
         <div class="cmp-card-head">
           <div class="cmp-name">Dry Lining</div>
@@ -931,8 +947,8 @@
         </div>
         <div class="cmp-guarantee">Workmanship guarantee</div>
         <div class="cmp-actions">
-          <a href="/dry-lining-sheffield" class="cmp-link">See full service →</a>
-          <a href="/get-quote" class="cmp-cta outline">Get a Quote</a>
+          <a href="/dry-lining-sheffield" class="cmp-link tap44">See full service →</a>
+          <a href="/get-quote" class="cmp-cta outline tap44-btn">Get a Quote</a>
         </div>
       </div>
 
@@ -1076,7 +1092,7 @@
           <div class="font-display font-black text-white text-lg leading-tight mb-1">Sandygate · 120m² Ecorend Marble White</div>
           <div class="font-body text-sm text-slate-400">Full stage-by-stage walkthrough with 21 photos — beading to finished coat.</div>
         </div>
-        <a href="/sandygate-silicone-render-case-study" class="flex-shrink-0 font-display font-bold text-sm no-underline px-5 py-2.5 rounded-full transition-all duration-300" style="background:#00FF00;color:#000" onmouseover="this.style.background='#37D413'" onmouseout="this.style.background='#00FF00'">View Case Study ↗</a>
+        <a href="/sandygate-silicone-render-case-study" class="flex-shrink-0 font-display font-bold text-sm no-underline px-5 py-2.5 rounded-full transition-all duration-300 tap44-btn" style="background:#00FF00;color:#000" onmouseover="this.style.background='#37D413'" onmouseout="this.style.background='#00FF00'">View Case Study ↗</a>
       </div>
     </div>
 
@@ -1090,7 +1106,7 @@
           <div class="font-display font-black text-white text-lg leading-tight mb-1">S17 · 150mm EPS External Wall Insulation</div>
           <div class="font-body text-sm text-slate-400">Full before/after — tired brick bungalow to a warm, modern silicone finish.</div>
         </div>
-        <a href="/s17-ewi-case-study" class="flex-shrink-0 font-display font-bold text-sm no-underline px-5 py-2.5 rounded-full transition-all duration-300" style="background:#00FF00;color:#000" onmouseover="this.style.background='#37D413'" onmouseout="this.style.background='#00FF00'">View Case Study ↗</a>
+        <a href="/s17-ewi-case-study" class="flex-shrink-0 font-display font-bold text-sm no-underline px-5 py-2.5 rounded-full transition-all duration-300 tap44-btn" style="background:#00FF00;color:#000" onmouseover="this.style.background='#37D413'" onmouseout="this.style.background='#00FF00'">View Case Study ↗</a>
       </div>
     </div>
 
@@ -1539,7 +1555,7 @@
             <li><a href="/pricing" class="font-display text-sm no-underline transition-colors duration-200" style="color:rgba(255,255,255,0.35)" onmouseover="this.style.color='rgba(255,255,255,0.7)'" onmouseout="this.style.color='rgba(255,255,255,0.35)'">Pricing Guide</a></li>
             <li><a href="/how-we-apply" class="font-display text-sm no-underline transition-colors duration-200" style="color:rgba(255,255,255,0.35)" onmouseover="this.style.color='rgba(255,255,255,0.7)'" onmouseout="this.style.color='rgba(255,255,255,0.35)'">How We Apply</a></li>
             <li><a href="#faq" class="font-display text-sm no-underline transition-colors duration-200" style="color:rgba(255,255,255,0.35)" onmouseover="this.style.color='rgba(255,255,255,0.7)'" onmouseout="this.style.color='rgba(255,255,255,0.35)'">FAQ</a></li>
-            <li><a href="/get-quote" class="font-display text-sm no-underline transition-colors duration-200" style="color:rgba(255,255,255,0.35)" onmouseover="this.style.color='rgba(255,255,255,0.7)'" onmouseout="this.style.color='rgba(255,255,255,0.35)'">Get a Quote</a></li>
+            <li><a href="/get-quote" class="font-display text-sm no-underline transition-colors duration-200 tap44-btn" style="color:rgba(255,255,255,0.35)" onmouseover="this.style.color='rgba(255,255,255,0.7)'" onmouseout="this.style.color='rgba(255,255,255,0.35)'">Get a Quote</a></li>
           </ul>
         </div>
       </div>

@@ -4,6 +4,31 @@
   "framework": null,
   "redirects": [
     {
+      "source": "/AI-SEARCH-OPTIMISATION.md",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/seo-ranking-tracker.md",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/generate_southeast.py",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/vercel.json",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/(.*).md",
+      "destination": "/",
+      "permanent": true
+    },
+    {
       "source": "/",
       "has": [
         {

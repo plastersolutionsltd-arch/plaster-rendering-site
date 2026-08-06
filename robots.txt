@@ -4,8 +4,10 @@
 User-agent: *
 Allow: /
 
-# Disallow nothing - site is fully crawlable
-Disallow:
+# Site content is fully crawlable — we want AI crawlers indexing the pages.
+# Only the private working docs and dev scripts are off limits.
+Disallow: /*.md$
+Disallow: /*.py$
 
 # Sitemap location
 Sitemap: https://www.plasterandrenderingsolutions.co.uk/sitemap.xml

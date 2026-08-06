@@ -65,7 +65,7 @@
       {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"20:00"},
       {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"09:00","closes":"13:00"}
     ],
-    "aggregateRating": {"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"104","bestRating":"5","worstRating":"1"},
+    "aggregateRating": {"@type":"AggregateRating","ratingValue":"5.0","reviewCount": "107","bestRating":"5","worstRating":"1"},
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Sheffield Rendering Systems",
@@ -378,7 +378,10 @@
     .footer-bottom-bar p { font-size:11px; color:rgba(255,255,255,0.2); }
     @media (max-width:900px) { .footer-main { grid-template-columns:1fr 1fr; } }
     @media (max-width:560px) { .footer-main { grid-template-columns:1fr; padding:48px 20px 32px; } .footer-bottom-bar { padding:14px 20px; } }
-  </style>
+  
+    .nav-cta-mobile { display:none; }
+    @media (max-width:900px) { .nav-cta-mobile { display:inline-flex; align-items:center; background:#37D413; color:#0d0d0d; font-family:'Outfit',sans-serif; font-weight:700; font-size:14px; min-height:44px; padding:0 18px; border-radius:8px; text-decoration:none; white-space:nowrap; margin-right:10px; } }
+</style>
 </head>
 <body>
 
@@ -414,7 +417,8 @@
     <a href="/pricing" class="active" aria-current="page">Pricing</a>
     <a href="/get-quote" class="nav-cta-btn">Get Free Quote</a>
   </div>
-  <button class="nav-burger" id="burger" aria-label="Open navigation menu" aria-expanded="false">
+      <a href="/get-quote" class="nav-cta-mobile" aria-label="Get a free quote">Get Quote</a>
+        <button class="nav-burger" id="burger" aria-label="Open navigation menu" aria-expanded="false">
     <span></span><span></span><span></span>
   </button>
 </nav>
@@ -496,7 +500,7 @@
           <p class="score-best-for">Best for: <span>Budget-conscious projects</span></p>
         </div>
         <div class="p-cta-wrap">
-          <a href="/get-quote" class="p-cta cta-outline">Get a Quote</a>
+          <a href="/get-quote" class="p-cta cta-outline tap44-btn">Get a Quote</a>
         </div>
       </article>
 
@@ -520,7 +524,7 @@
           <p class="score-best-for">Best for: <span>Best value choice</span></p>
         </div>
         <div class="p-cta-wrap">
-          <a href="/get-quote" class="p-cta cta-outline">Get a Quote</a>
+          <a href="/get-quote" class="p-cta cta-outline tap44-btn">Get a Quote</a>
         </div>
       </article>
 
@@ -544,7 +548,7 @@
           <p class="score-best-for">Best for: <span>Premium upgrade</span></p>
         </div>
         <div class="p-cta-wrap">
-          <a href="/get-quote" class="p-cta cta-outline">Get a Quote</a>
+          <a href="/get-quote" class="p-cta cta-outline tap44-btn">Get a Quote</a>
         </div>
       </article>
 
@@ -569,7 +573,7 @@
           <p class="score-best-for">Best for: <span>Best possible protection</span></p>
         </div>
         <div class="p-cta-wrap">
-          <a href="/get-quote" class="p-cta cta-primary">Get a Quote</a>
+          <a href="/get-quote" class="p-cta cta-primary tap44-btn">Get a Quote</a>
         </div>
       </article>
 
@@ -917,7 +921,7 @@
       <a href="/how-we-apply" class="footer-link footer-link-dim">How We Apply</a>
       <a href="/faq" class="footer-link footer-link-dim">FAQ</a>
       <a href="/pricing" class="footer-link footer-link-dim">Pricing</a>
-      <a href="/get-quote" class="footer-link footer-link-green">Get a Quote</a>
+      <a href="/get-quote" class="footer-link footer-link-green tap44-btn">Get a Quote</a>
     </div>
 
     <!-- Contact & Hours -->

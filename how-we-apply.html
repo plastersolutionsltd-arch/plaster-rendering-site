@@ -87,7 +87,7 @@
         "aggregateRating": {
           "@type": "AggregateRating",
           "ratingValue": "5.0",
-          "reviewCount": "105",
+          "reviewCount": "107",
           "bestRating": "5",
           "worstRating": "1"
         },
@@ -549,7 +549,10 @@
       .footer-grid { grid-template-columns:1fr; }
       .tab-btn { font-size:13px; padding:10px 14px; }
     }
-  </style>
+  
+    .nav-cta-mobile { display:none; }
+    @media (max-width:1023px) { .nav-cta-mobile { display:inline-flex; align-items:center; background:#37D413; color:#0d0d0d; font-family:'Outfit',sans-serif; font-weight:700; font-size:14px; min-height:44px; padding:0 18px; border-radius:8px; text-decoration:none; white-space:nowrap; margin-right:10px; } }
+</style>
 </head>
 <body>
 
@@ -599,7 +602,8 @@
         <a href="/get-quote" style="background:#37D413;color:#0d0d0d;font-family:'Outfit',sans-serif;font-weight:700;font-size:14px;padding:10px 22px;border-radius:8px;text-decoration:none;transition:background 0.2s,transform 0.2s;white-space:nowrap" onmouseover="this.style.background='#2BA80D';this.style.transform='translateY(-1px)'" onmouseout="this.style.background='#37D413';this.style.transform=''">Get Quote</a>
       </div>
       <!-- Mobile burger -->
-      <button id="burger-btn" onclick="toggleMobileMenu()" aria-label="Open menu" style="display:flex;flex-direction:column;justify-content:center;gap:5px;width:40px;height:40px;border-radius:8px;border:none;background:transparent;padding:8px;cursor:pointer;transition:background 0.2s" onmouseover="this.style.background='#f5f5f5'" onmouseout="this.style.background='transparent'">
+      <a href="/get-quote" class="nav-cta-mobile" aria-label="Get a free quote">Get Quote</a>
+            <button id="burger-btn" onclick="toggleMobileMenu()" aria-label="Open menu" style="display:flex;flex-direction:column;justify-content:center;gap:5px;width:40px;height:40px;border-radius:8px;border:none;background:transparent;padding:8px;cursor:pointer;transition:background 0.2s" onmouseover="this.style.background='#f5f5f5'" onmouseout="this.style.background='transparent'">
         <span id="b1" style="display:block;height:2px;background:#111;border-radius:2px;transition:transform 0.3s,opacity 0.3s;transform-origin:center"></span>
         <span id="b2" style="display:block;height:2px;background:#111;border-radius:2px;transition:opacity 0.3s"></span>
         <span id="b3" style="display:block;height:2px;background:#111;border-radius:2px;transition:transform 0.3s;transform-origin:center"></span>

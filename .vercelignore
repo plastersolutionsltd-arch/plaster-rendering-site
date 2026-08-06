@@ -1,0 +1,5 @@
+# Private working docs and dev utilities — keep in git, keep off the public site
+*.md
+*.py
+seo-ranking-tracker.md
+AI-SEARCH-OPTIMISATION.md
