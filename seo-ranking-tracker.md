@@ -38,7 +38,7 @@ Updated: 1st of each month. Send GSC screenshot/export + incognito Map Pack chec
 | Month | Total Clicks | Total Impressions | Avg Position | Top Keyword |
 |---|---|---|---|---|
 | Jun 2026 | ~70 (28d) | ~3,900 (28d) | ~20 | plasterers sheffield (6 clicks, 226 imp) |
-| Jul 2026 | | | | |
+| Jul 2026 | 69 (28d) | 6,430 (28d) | 19 | plasterers sheffield (5 clicks, 273 imp) |
 | Aug 2026 | | | | |
 | Sep 2026 | | | | |
 | Oct 2026 | | | | |
