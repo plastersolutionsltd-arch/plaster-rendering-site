@@ -19,7 +19,7 @@ Updated: 1st of each month. Send GSC screenshot/export + incognito Map Pack chec
 | plasterer sheffield | 7 | 10 | 13 | | | | |
 | rendering sheffield | 6 | 6 | **5** | | | | |
 | silicone render sheffield | out | out | **8** | | | | |
-| monocouche render sheffield | out | out | ? | | | | |
+| monocouche render sheffield | out | out | out | | | | |
 | external wall insulation sheffield | out | out | out | | | | |
 | render repair sheffield | **1** | **1** | **1** | | | | |
 | plasterer chapeltown | 2 | | 4 | | | | |
@@ -89,7 +89,7 @@ Paste or note top 10 keywords from GSC each month (keyword → clicks / impressi
 
 | Date | What changed |
 |---|---|
-| 2026-08-08 | **Aug Map Pack read (owner, incognito).** Mixed, and the split is by keyword type. SERVICE terms improved or held: `rendering sheffield` 6&rarr;**5**, `silicone render sheffield` **out&rarr;8** (first time it has ever entered the pack), `render repair sheffield` **1** held, `rendering grenoside` **1** held. The money keyword `plasterer sheffield` kept sliding: 7&rarr;10&rarr;**13**, now three months of decline. `external wall insulation sheffield` still out (owner saw only DP Insulation returned). SUBURB terms all fell: chapeltown 2&rarr;4, ecclesfield 2&rarr;5, hillsborough 7&rarr;**19**, walkley 13&rarr;**out**, crookes still out. **CAVEAT: Map Pack rank is distance-weighted from wherever the search is run**, so suburb readings taken from the Grenoside office flatter nearby areas (Grenoside 1, Chapeltown 4) and punish the far side of the city (Hillsborough, Walkley, Crookes). Treat the suburb drops as unconfirmed until re-checked the same way each month. `monocouche render sheffield` not read this month. |
+| 2026-08-08 | **Aug Map Pack read (owner, incognito).** Mixed, and the split is by keyword type. SERVICE terms improved or held: `rendering sheffield` 6&rarr;**5**, `silicone render sheffield` **out&rarr;8** (first time it has ever entered the pack), `render repair sheffield` **1** held, `rendering grenoside` **1** held. The money keyword `plasterer sheffield` kept sliding: 7&rarr;10&rarr;**13**, now three months of decline. `external wall insulation sheffield` still out (owner saw only DP Insulation returned). SUBURB terms all fell: chapeltown 2&rarr;4, ecclesfield 2&rarr;5, hillsborough 7&rarr;**19**, walkley 13&rarr;**out**, crookes still out. **CAVEAT: Map Pack rank is distance-weighted from wherever the search is run**, so suburb readings taken from the Grenoside office flatter nearby areas (Grenoside 1, Chapeltown 4) and punish the far side of the city (Hillsborough, Walkley, Crookes). Treat the suburb drops as unconfirmed until re-checked the same way each month. `monocouche render sheffield` **out** — owner reports MAC Rendering is what shows for it. Same competitor named in AI-SEARCH-OPTIMISATION.md as being listed on the K-Rend and Weber approved-applicator directories while P&R is not. Nothing in the 21 reviews published on the site uses the word "monocouche"; the only place it appears is in Chris's owner reply to Matt Sabzevari (7 Aug), not in a customer's own words. |
 | 2026-05-01 | Schema upgraded on all 39 suburb pages + 6 service pages |
 | 2026-04-26 | 12 pages submitted for re-indexing in GSC |
 | 2026-05-18 | Tracking file created — baselines to be set Jun 1 |
