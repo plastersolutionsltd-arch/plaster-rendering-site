@@ -629,6 +629,10 @@
       "destination": "/norton-sheffield.html"
     },
     {
+      "source": "/greenhill-sheffield",
+      "destination": "/greenhill-sheffield.html"
+    },
+    {
       "source": "/stannington-sheffield",
       "destination": "/stannington-sheffield.html"
     },
