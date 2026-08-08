@@ -39,7 +39,7 @@ Updated: 1st of each month. Send GSC screenshot/export + incognito Map Pack chec
 |---|---|---|---|---|
 | Jun 2026 | ~70 (28d) | ~3,900 (28d) | ~20 | plasterers sheffield (6 clicks, 226 imp) |
 | Jul 2026 | 69 (28d) | 6,430 (28d) | 19 | plasterers sheffield (5 clicks, 273 imp) |
-| Aug 2026 | | | | |
+| Aug 2026 | 96 (28d) | 7,430 (28d) | 23.6 | plasterers sheffield (233 imp) |
 | Sep 2026 | | | | |
 | Oct 2026 | | | | |
 | Nov 2026 | | | | |
@@ -65,6 +65,27 @@ Paste or note top 10 keywords from GSC each month (keyword → clicks / impressi
 | rendering repairs near me | 1 | 2 | |
 | plasterers in sheffield | 0 | 169 | 169 impressions, 0 clicks = page 2+ |
 | **TOTAL shown** | **17+** | **843+** | 302 total queries in account |
+
+### Aug 2026
+**Totals (28 days to 8 Aug): 96 clicks · 7.43K impressions · 1.3% CTR · avg position 23.6.**
+| Keyword | Impressions | Notes |
+|---|---|---|
+| plasterers sheffield | 233 | still the top query (was 273 in Jul) |
+| rendering near me | 208 | climbing fast, wasn't in Jul's top 10 |
+| plasterer sheffield | 190 | 2 clicks |
+| rendering sheffield | 185 | steady |
+| plastering sheffield | 44 | |
+| shefield plasterers | 30 | misspelling, still earns impressions |
+| sheffied plastering | 21 | misspelling |
+| rendering company | 4 | |
+
+**Read:** clicks **+39%** (69→96), impressions **+16%**, CTR **1.1%→1.3%** — but average
+position "fell" 19→23.6. That combination is a *widening* footprint, not a decline: the site
+is now appearing for more queries, and each new one enters low and drags the mean down. If
+rankings had genuinely dropped, clicks would have fallen with them; instead clicks per 1,000
+impressions rose from 10.7 to 12.9. Average position is the least reliable number in GSC for
+exactly this reason. `rendering near me` appearing at 208 impressions is new.
+*(Figures read from the owner's GSC screenshots via OCR — worth confirming the headline four.)*
 
 ### Jul 2026
 **Totals (28 days): 69 clicks · 6.43K impressions · 1.1% CTR · avg position 19.**
