@@ -360,6 +360,18 @@
   
     .nav-cta-mobile { display:none; }
     @media (max-width:1023px) { .nav-cta-mobile { display:inline-flex; align-items:center; background:#00FF00; color:#0d0d0d; font-family:'Outfit',sans-serif; font-weight:700; font-size:14px; min-height:44px; padding:0 18px; border-radius:8px; text-decoration:none; white-space:nowrap; margin-right:10px; } }
+
+    /* --- Tap targets (this page carries its own CSS and does not load app.css) ---
+       WCAG 2.5.8 AA floor is 24px; primary actions get the full 44px. */
+    footer a[href^="tel:"], footer a[href^="mailto:"] { display:inline-flex; align-items:center; min-height:44px; }
+    footer ul li > a, footer .footer-links li > a { display:flex; align-items:center; min-height:44px; }
+    .footer-chip { display:inline-flex; align-items:center; min-height:36px; }
+    .calc-link { display:inline-flex; align-items:center; min-height:44px; }
+    footer a:not([href^="tel:"]):not([href^="mailto:"]) { padding-block:5px; }
+    nav[aria-label*="readcrumb"] a, .breadcrumb a, ol[class*="breadcrumb"] a { padding-block:5px; }
+
+    #ann-bar button, .ann-close, button[aria-label="Dismiss"] { width:44px; height:44px; padding:0;
+      display:inline-flex; align-items:center; justify-content:center; }
 </style>
 </head>
 <body>

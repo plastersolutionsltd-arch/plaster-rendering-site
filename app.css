@@ -17,3 +17,41 @@
 /* Pill links (area lists, filters) and the header controls were 30-42px. */
 a[class*="rounded-full"], a[class*="rounded-lg"].font-display { min-height: 44px; }
 a[class*="rounded-full"] { display: inline-flex; align-items: center; justify-content: center; }
+
+/* --- Tap targets, round 2 ------------------------------------------------
+   Footer link lists are stacked ~18px apart, so a pseudo-element hit area
+   would overlap its neighbours and send taps to the wrong link. These get
+   real height instead; the footer grows a little, which is the correct
+   trade. Header is 81px tall so 44px controls fit without reflowing it. --*/
+footer ul.space-y-3\.5 > li > a,
+footer ul > li > a.font-display.text-sm { display: flex; align-items: center; min-height: 44px; }
+footer ul.space-y-3\.5 { --tw-space-y-reverse: 0; }
+footer ul.space-y-3\.5 > li + li { margin-top: 0; }
+
+/* Social icons were 36x36 */
+footer a.w-9.h-9 { width: 44px; height: 44px; }
+
+/* Footer brand lockup, header logo and the burger */
+footer a.inline-flex.items-center.gap-3 { min-height: 44px; }
+#site-nav a.flex.items-center.gap-3,
+header a.flex.items-center.gap-3 { min-height: 44px; }
+button#burger { width: 44px; height: 44px; }
+
+/* Cross-link cards on the service pages sat at 40px */
+a.group.flex.items-center.justify-between { min-height: 44px; }
+
+/* Footer contact details are primary actions — full 44px. */
+footer a[href^="tel:"], footer a[href^="mailto:"] { display: inline-flex; align-items: center; min-height: 44px; }
+
+/* Nearby-area chips are 11px pills. WCAG 2.5.8 AA wants 24px minimum; 44px
+   (Apple HIG / 2.5.5 AAA) would visually break a chip this size, so they go
+   to a comfortable 36px rather than being forced. */
+a.font-display[class*="text-[11px]"][class*="rounded"] { display: inline-flex; align-items: center; min-height: 36px; }
+
+/* Footer bottom-bar rows and breadcrumbs are inline links in horizontal rows.
+   Vertical padding grows the hit box without affecting line layout or
+   overlapping neighbours (which stacking min-height would risk). */
+footer a:not([href^="tel:"]):not([href^="mailto:"]) { padding-block: 5px; }
+nav[aria-label*="readcrumb"] a, .breadcrumb a, ol[class*="breadcrumb"] a { padding-block: 5px; }
+/* Links inside comparison-table cells (the /rendering-sheffield table). */
+td a, th a { display: inline-block; padding-block: 4px; }

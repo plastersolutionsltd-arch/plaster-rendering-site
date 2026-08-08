@@ -349,7 +349,19 @@
     @keyframes fadeUp { from{opacity:0;transform:translateY(28px)} to{opacity:1;transform:translateY(0)} }
     .reveal { opacity:0; }
     .reveal.visible { animation:fadeUp 0.85s cubic-bezier(.16,1,.3,1) forwards; }
-  </style>
+  
+    /* --- Tap targets (this page carries its own CSS and does not load app.css) ---
+       WCAG 2.5.8 AA floor is 24px; primary actions get the full 44px. */
+    footer a[href^="tel:"], footer a[href^="mailto:"] { display:inline-flex; align-items:center; min-height:44px; }
+    footer ul li > a, footer .footer-links li > a { display:flex; align-items:center; min-height:44px; }
+    .footer-chip { display:inline-flex; align-items:center; min-height:36px; }
+    .calc-link { display:inline-flex; align-items:center; min-height:44px; }
+    footer a:not([href^="tel:"]):not([href^="mailto:"]) { padding-block:5px; }
+    nav[aria-label*="readcrumb"] a, .breadcrumb a, ol[class*="breadcrumb"] a { padding-block:5px; }
+
+    #ann-bar button, .ann-close, button[aria-label="Dismiss"] { width:44px; height:44px; padding:0;
+      display:inline-flex; align-items:center; justify-content:center; }
+</style>
 </head>
 <body>
 
