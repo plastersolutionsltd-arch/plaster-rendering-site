@@ -14,20 +14,20 @@ Updated: 1st of each month. Send GSC screenshot/export + incognito Map Pack chec
 
 ## Map Pack Positions
 
-| Keyword | Jun 1 | Jul 1 | Aug 1 | Sep 1 | Oct 1 | Nov 1 | Dec 1 |
+| Keyword | Jun 1 | Jul 1 | Aug 8 | Sep 1 | Oct 1 | Nov 1 | Dec 1 |
 |---|---|---|---|---|---|---|---|
-| plasterer sheffield | 7 | 10 | | | | | |
-| rendering sheffield | 6 | 6 | | | | | |
-| silicone render sheffield | out | out | | | | | |
-| monocouche render sheffield | out | out | | | | | |
-| external wall insulation sheffield | out | out | | | | | |
-| render repair sheffield | **1** | **1** | | | | | |
-| plasterer chapeltown | 2 | | | | | | |
-| plasterer hillsborough | 7 | | | | | | |
-| plasterer ecclesfield | 2 | | | | | | |
-| rendering grenoside | **1** | | | | | | |
-| plasterer walkley | 13 | | | | | | |
-| plasterer crookes | out | | | | | | |
+| plasterer sheffield | 7 | 10 | 13 | | | | |
+| rendering sheffield | 6 | 6 | **5** | | | | |
+| silicone render sheffield | out | out | **8** | | | | |
+| monocouche render sheffield | out | out | ? | | | | |
+| external wall insulation sheffield | out | out | out | | | | |
+| render repair sheffield | **1** | **1** | **1** | | | | |
+| plasterer chapeltown | 2 | | 4 | | | | |
+| plasterer hillsborough | 7 | | 19 | | | | |
+| plasterer ecclesfield | 2 | | 5 | | | | |
+| rendering grenoside | **1** | | **1** | | | | |
+| plasterer walkley | 13 | | out | | | | |
+| plasterer crookes | out | | out | | | | |
 
 *(1 = top of Map Pack, 2 = middle, 3 = bottom, out = not in pack)*
 
@@ -55,9 +55,9 @@ Paste or note top 10 keywords from GSC each month (keyword → clicks / impressi
 | Keyword | Clicks | Impressions | Notes |
 |---|---|---|---|
 | plasterers sheffield | 6 | 226 | Top keyword |
-| plasterer sheffield | 3 | 205 | |
+| plasterer sheffield | 3 | 205 | 13 |
 | plastering sheffield | 2 | 43 | |
-| rendering sheffield | 1 | 160 | High impressions, very low CTR = page 2 |
+| rendering sheffield | 1 | 160 | **5** |
 | plastering and rendering near me | 1 | 11 | |
 | house rendering near me | 1 | 7 | |
 | render repair near me | 1 | 5 | |
@@ -72,8 +72,8 @@ Paste or note top 10 keywords from GSC each month (keyword → clicks / impressi
 |---|---|---|---|
 | plasterers sheffield | 5 | 273 | Top keyword (was 6/226 Jun) |
 | plasterers near me | 2 | 25 | |
-| plasterer sheffield | 1 | 246 | ⚠️ clicks 3→1 (Map Pack also 7→10) — slipping |
-| rendering sheffield | 1 | 167 | steady, still page 2 |
+| plasterer sheffield | 1 | 246 | 13 |
+| rendering sheffield | 1 | 167 | **5** |
 | render sheffield | 1 | 21 | |
 | rendering companies near me | 1 | 8 | |
 | renderer sheffield | 1 | 8 | |
@@ -89,6 +89,7 @@ Paste or note top 10 keywords from GSC each month (keyword → clicks / impressi
 
 | Date | What changed |
 |---|---|
+| 2026-08-08 | **Aug Map Pack read (owner, incognito).** Mixed, and the split is by keyword type. SERVICE terms improved or held: `rendering sheffield` 6&rarr;**5**, `silicone render sheffield` **out&rarr;8** (first time it has ever entered the pack), `render repair sheffield` **1** held, `rendering grenoside` **1** held. The money keyword `plasterer sheffield` kept sliding: 7&rarr;10&rarr;**13**, now three months of decline. `external wall insulation sheffield` still out (owner saw only DP Insulation returned). SUBURB terms all fell: chapeltown 2&rarr;4, ecclesfield 2&rarr;5, hillsborough 7&rarr;**19**, walkley 13&rarr;**out**, crookes still out. **CAVEAT: Map Pack rank is distance-weighted from wherever the search is run**, so suburb readings taken from the Grenoside office flatter nearby areas (Grenoside 1, Chapeltown 4) and punish the far side of the city (Hillsborough, Walkley, Crookes). Treat the suburb drops as unconfirmed until re-checked the same way each month. `monocouche render sheffield` not read this month. |
 | 2026-05-01 | Schema upgraded on all 39 suburb pages + 6 service pages |
 | 2026-04-26 | 12 pages submitted for re-indexing in GSC |
 | 2026-05-18 | Tracking file created — baselines to be set Jun 1 |
