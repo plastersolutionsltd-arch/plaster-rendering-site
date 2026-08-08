@@ -34,6 +34,9 @@ def main() -> int:
     # the stat tile on /projects
     # Anchored on the "5* Reviews" label that follows it, so the neighbouring
     # "5 / Services" tile with identical markup is left alone.
+    # a third format: the big "N Reviews." headline (dry-lining)
+    headline_pat = re.compile(r"(>)(\d{2,3})( Reviews\.<)")
+
     stat_pat = re.compile(
         r'(<div class="font-display font-black text-white leading-none mb-1" style="font-size:2rem">)'
         r"(\d+)"
@@ -59,6 +62,11 @@ def main() -> int:
             if m.group(2) != count:
                 drift.setdefault(path, set()).add(f"stat tile {m.group(2)}")
         out = stat_pat.sub(lambda m: m.group(1) + count + m.group(3), out)
+
+        for m in headline_pat.finditer(src):
+            if m.group(2) != count:
+                drift.setdefault(path, set()).add(f"headline {m.group(2)}")
+        out = headline_pat.sub(lambda m: m.group(1) + count + m.group(3), out)
 
         if out != src:
             changed.append(path)
