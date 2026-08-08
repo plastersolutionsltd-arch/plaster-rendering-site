@@ -22,6 +22,8 @@
   <meta name="geo.region" content="GB-SHF">
   <meta name="geo.placename" content="Sheffield">
   <link rel="canonical" href="https://www.plasterandrenderingsolutions.co.uk/plastering-cost-sheffield" />
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/outfit-var.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/inter-var.woff2" crossorigin>
 
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://www.plasterandrenderingsolutions.co.uk/plastering-cost-sheffield" />
@@ -128,17 +130,14 @@
   }
   </script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"></noscript>
+  <noscript></noscript>
 
   <style>
     /* ===== RESET ===== */
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
     html { scroll-behavior: smooth; }
-    body { font-family: 'Inter', sans-serif; line-height: 1.6; color: #fff; background: #0b0f0b; overflow-x: hidden; }
-    h1,h2,h3,h4,h5,h6 { font-family: 'Outfit', sans-serif; }
+    body { font-family:'Inter',sans-serif; line-height: 1.6; color: #fff; background: #0b0f0b; overflow-x: hidden; }
+    h1,h2,h3,h4,h5,h6 { font-family:'Outfit',sans-serif; }
     a { text-decoration: none; color: inherit; }
     img { max-width: 100%; height: auto; display: block; }
 
@@ -361,6 +360,21 @@
 
     #ann-bar button, .ann-close, button[aria-label="Dismiss"] { width:44px; height:44px; padding:0;
       display:inline-flex; align-items:center; justify-content:center; }
+
+    /* Reserve two lines: the breadcrumb wraps once Inter loads, and without a
+       floor the whole hero jumps down ~28px (this was all of the page's CLS). */
+    @media (max-width:640px) { .breadcrumb { min-height:56px; align-content:flex-start; } }
+
+/* Self-hosted variable fonts. Previously loaded from fonts.googleapis.com with
+   display=swap, which meant the fallback rendered first and the real font
+   swapped in late -- every bit of this site's layout shift came from that
+   reflow (CLS measured 0 with fonts blocked). Served from our own origin and
+   preloaded, they arrive before paint, so nothing swaps. Also removes a
+   third-party DNS + TLS round trip from the critical path. */
+@font-face { font-family:'Outfit'; font-style:normal; font-weight:100 900; font-display:swap;
+  src:url('/fonts/outfit-var.woff2') format('woff2'); }
+@font-face { font-family:'Inter'; font-style:normal; font-weight:100 900; font-display:swap;
+  src:url('/fonts/inter-var.woff2') format('woff2'); }
 </style>
 </head>
 <body>
