@@ -9,6 +9,8 @@ Usage:
     python3 sync-reviews.py 107          # set the count everywhere
     python3 sync-reviews.py 107 --check  # report drift, change nothing
 
+Covers every *.html page AND llms.txt (which states the count in prose for LLMs).
+
 Get the real number from the Google Business Profile panel ("107 Google reviews").
 Run this, then commit. Visible "100+" copy is deliberately left alone — it never
 goes stale and does not need touching.
@@ -43,8 +45,10 @@ def main() -> int:
         r"(</div>\s*<div[^>]*>5(?:&#9733;|★) Reviews)"
     )
 
+    # llms.txt states it in prose; nothing else in that file is a 2-3 digit
+    # number followed by "Google reviews", so visible_pat covers it.
     changed, drift = [], {}
-    for path in sorted(glob.glob("*.html")):
+    for path in sorted(glob.glob("*.html")) + ["llms.txt"]:
         src = open(path, encoding="utf-8").read()
         out = src
 
