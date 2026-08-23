@@ -1,7 +1,7 @@
 # Google reviews — source of truth
 
-Captured from the Business Profile reviews panel on 2026-08-08. 5.0 average, 108 total;
-98 captured here (the panel lazy-loads, so a few older ones are not yet pulled in).
+Captured from the Business Profile reviews panel on 2026-08-08 (topped up since). 5.0 average, 109 total;
+99 captured here (the panel lazy-loads, so a few older ones are not yet pulled in).
 
 **Rules for using these:** publish verbatim — never correct spelling, grammar or punctuation,
 because the visible quote and the JSON-LD `reviewBody` have to match exactly or Google treats
@@ -12,6 +12,7 @@ needed before that one can be published.
 
 | Reviewer | Date | Complete? | Text | Notes |
 |---|---|---|---|---|
+| Leamne Shortland | 22 Aug 2026 | yes | Chris has recently done some outdoor render and internal plastering for us he's super fast and efficient, would highly recommend him. Thanks Chris 👍 | rendering, plastering — Thorpe Hesley S61 (area supplied by Chris, not in the review text) |
 | Matt Sabzevari | Yesterday | yes | This is the second time I have had had Cris & plaster and rendering solutions to do some work , some time between both jobs but same excellent service and workmanship. Most recent was the rear of my property which was externally rendered , fantastic communication and an amazing job . Will only use Cris for any other similar jobs . Thanks Matt (Greenhill/sheffield) | reply: monocouche render, Greenhill |
 | Jay Callaghan | 1 week ago | TRUNCATED | Chris did a fantastic job of rendering our property. First class workmanship and communication, very clean and tidy.... |  |
 | Daniel Alexander | 2 weeks ago | TRUNCATED | Very professional from quote through to the finish. Highly recommend for the north sheffield area, treated our home.with... | north sheffield |

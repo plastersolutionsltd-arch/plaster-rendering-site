@@ -110,7 +110,7 @@
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "5.0",
-      "reviewCount": "108",
+      "reviewCount": "109",
       "bestRating": "5",
       "worstRating": "1"
     }
@@ -1181,7 +1181,32 @@
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-12 items-stretch">
       <div class="reveal rounded-2xl p-8 flex flex-col justify-center" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08)">
         <h3 class="font-display font-black text-white mb-3" style="font-size:1.5rem">Worked with us? Leave a Google review.</h3>
-        <p class="font-body text-slate-300 text-sm leading-relaxed mb-6">Every review helps another Sheffield homeowner find a plasterer they can trust — and it only takes a minute. Thank you for supporting a local trade.</p>
+        <!-- ⚠ This copy is doing SEO work, not just being polite. Of the 98 reviews in
+             reviews-source.md, ZERO say "monocouche" and only six name a place — which is exactly
+             why the product + area searches do not rank. Google reads review text. A review saying
+             "silicone render, High Green" is the single cheapest thing that moves those terms, and
+             customers will happily write it if you tell them what helps. Keep the two prompts
+             (what we did / where you are) and the worked example if this section is ever redesigned. -->
+        <p class="font-body text-slate-300 text-sm leading-relaxed mb-5">Every review helps another
+          homeowner find a plasterer they can trust — and it only takes a minute. Two things make
+          yours far more useful than a star rating on its own:</p>
+        <ul class="font-body text-slate-300 text-sm leading-relaxed mb-5 space-y-2" style="list-style:none;padding:0">
+          <li class="flex gap-3"><span style="color:#00FF00;font-weight:700">1</span>
+            <span><strong class="text-white">Say what we did</strong> — silicone render, monocouche,
+            K-Rend, external wall insulation, plastering, skimming or dry lining.</span></li>
+          <li class="flex gap-3"><span style="color:#00FF00;font-weight:700">2</span>
+            <span><strong class="text-white">Say where you are</strong> — your area is enough,
+            no need for the address.</span></li>
+        </ul>
+        <p class="font-body text-slate-400 text-sm leading-relaxed mb-5" style="border-left:2px solid rgba(0,255,0,0.35);padding-left:14px">
+          For example: <span class="text-slate-200">&ldquo;Silicone render on our semi in High Green
+          — clean job, tidy site, finished when they said.&rdquo;</span> That tells your neighbours
+          far more than &ldquo;great job&rdquo;, and it is how the next person searching for that
+          exact work finds us.</p>
+        <p class="font-body text-slate-400 text-sm leading-relaxed mb-6"><strong class="text-slate-200">How
+          to leave one:</strong> tap the button below and it opens our Google profile straight on the
+          review box. You will need to be signed in to a Google account (any Gmail address works).
+          Pick your stars, write a line or two, then post. That is it.</p>
         <div class="flex flex-wrap gap-3">
           <a href="https://g.page/r/Cbo-hCRK6i41EBM/review" target="_blank" rel="noopener"
              class="inline-flex items-center gap-2 font-display font-bold text-charcoal-900 text-sm px-6 py-3 rounded-full no-underline hover:opacity-90 transition-opacity"
