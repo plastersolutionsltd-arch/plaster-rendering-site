@@ -559,6 +559,10 @@
       "destination": "/render-over-pebbledash-sheffield.html"
     },
     {
+      "source": "/planning-permission-render-sheffield",
+      "destination": "/planning-permission-render-sheffield.html"
+    },
+    {
       "source": "/monocouche-render-sheffield",
       "destination": "/monocouche-render-sheffield.html"
     },
