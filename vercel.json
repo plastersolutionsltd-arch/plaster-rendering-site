@@ -357,6 +357,36 @@
       "permanent": true
     },
     {
+      "source": "/business-card-preview.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/business-card-preview",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/logo-preview.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/logo-preview",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/case-study-template.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/case-study-template",
+      "destination": "/",
+      "permanent": true
+    },
+    {
       "source": "/:slug.html",
       "destination": "/:slug",
       "permanent": true

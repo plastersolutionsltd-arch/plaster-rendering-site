@@ -3,3 +3,9 @@
 *.py
 seo-ranking-tracker.md
 AI-SEARCH-OPTIMISATION.md
+
+# Dev-only preview pages — never public. They previously 308'd to a 404,
+# which Google reports as a redirect error.
+business-card-preview.html
+logo-preview.html
+case-study-template.html
