@@ -563,6 +563,10 @@
       "destination": "/planning-permission-render-sheffield.html"
     },
     {
+      "source": "/rendering-in-winter-sheffield",
+      "destination": "/rendering-in-winter-sheffield.html"
+    },
+    {
       "source": "/monocouche-render-sheffield",
       "destination": "/monocouche-render-sheffield.html"
     },
