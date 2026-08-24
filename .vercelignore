@@ -9,3 +9,7 @@ AI-SEARCH-OPTIMISATION.md
 business-card-preview.html
 logo-preview.html
 case-study-template.html
+
+# Business-card preview PDFs (773KB each) were publicly served at a guessable path.
+# Dev artefacts, not site assets.
+images/logos/*.pdf
