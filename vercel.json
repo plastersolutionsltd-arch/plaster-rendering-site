@@ -525,6 +525,10 @@
       "destination": "/silicone-render-vs-monocouche.html"
     },
     {
+      "source": "/render-over-pebbledash-sheffield",
+      "destination": "/render-over-pebbledash-sheffield.html"
+    },
+    {
       "source": "/monocouche-render-sheffield",
       "destination": "/monocouche-render-sheffield.html"
     },
