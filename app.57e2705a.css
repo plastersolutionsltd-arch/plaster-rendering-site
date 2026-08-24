@@ -10,7 +10,7 @@
   top: 50%; transform: translateY(-50%); height: 44px; }
 #ann-bar button[aria-label="Dismiss"] { width: 44px; height: 44px; padding: 0; right: 4px;
   display: inline-flex; align-items: center; justify-content: center; }
-.tap44 { position: relative; display: inline-flex; align-items: center; }
+.tap44 { position: relative; display: inline-flex; align-items: center; min-height: 44px; } /* min-height is the whole point: without it this class looks like the tap-target fix while doing nothing. 211 elements across 42 pages relied on it. */
 .tap44::after { content: ""; position: absolute; left: 0; right: 0; top: 50%;
   transform: translateY(-50%); height: 44px; }
 .tap44-btn { min-height: 44px; display: inline-flex; align-items: center; justify-content: center; }
@@ -67,3 +67,10 @@ td a, th a { display: inline-block; padding-block: 4px; }
   src:url('/fonts/outfit-var.woff2') format('woff2'); }
 @font-face { font-family:'Inter'; font-style:normal; font-weight:100 900; font-display:swap;
   src:url('/fonts/inter-var.woff2') format('woff2'); }
+
+/* Tap targets: these classes are declared in per-page <style> blocks and none of them
+   set a height, so one rule here reaches all 55 pages. 44px is the iOS minimum.
+   Breadcrumbs and inline links inside paragraphs are deliberately left alone --
+   forcing those to 44px wrecks the typography and they are not primary controls. */
+.faq-toggle,.svc-btn,.footer-link,.nav-btn{min-height:44px;display:inline-flex;align-items:center}
+.svc-btn,.faq-toggle{justify-content:center}

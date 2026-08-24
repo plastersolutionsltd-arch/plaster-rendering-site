@@ -436,7 +436,16 @@ body {
     <div class="preview-dark">
       <svg viewBox="0 0 220 200" width="160" xmlns="http://www.w3.org/2000/svg">
         <defs>
-          <style>@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue');</style>
+          <style>@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue');
+/* Tap targets (44px iOS minimum). This block is duplicated from app.css because this
+   page does not link it -- 12 pages are fully self-contained inline-style pages, so a
+   fix applied only to app.css silently misses them. Breadcrumbs and inline links inside
+   paragraphs are deliberately excluded: 44px wrecks the typography and they are not
+   primary controls. */
+.faq-toggle,.svc-btn,.footer-link,.nav-btn{min-height:44px!important;display:inline-flex;align-items:center}
+.svc-btn,.faq-toggle{justify-content:center}
+.tap44{min-height:44px}
+</style>
         </defs>
         <!-- R behind, white solid -->
         <text x="76" y="162" font-family="'Bebas Neue', Impact, sans-serif" font-size="172" fill="rgba(255,255,255,0.92)" letter-spacing="-2">R</text>

@@ -403,6 +403,15 @@
   src:url('/fonts/outfit-var.woff2') format('woff2'); }
 @font-face { font-family:'Inter'; font-style:normal; font-weight:100 900; font-display:swap;
   src:url('/fonts/inter-var.woff2') format('woff2'); }
+
+/* Tap targets (44px iOS minimum). This block is duplicated from app.css because this
+   page does not link it -- 12 pages are fully self-contained inline-style pages, so a
+   fix applied only to app.css silently misses them. Breadcrumbs and inline links inside
+   paragraphs are deliberately excluded: 44px wrecks the typography and they are not
+   primary controls. */
+.faq-toggle,.svc-btn,.footer-link,.nav-btn{min-height:44px!important;display:inline-flex;align-items:center}
+.svc-btn,.faq-toggle{justify-content:center}
+.tap44{min-height:44px}
 </style>
 </head>
 <body>
