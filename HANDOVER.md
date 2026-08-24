@@ -97,3 +97,22 @@ verbatim, CLS 0, no broken links or images, no mojibake, review count 108 everyw
 - `business-card-preview`, `logo-preview`, `case-study-template` have real defects
   (overflow, broken placeholders) but are noindex and 404 in production. Deletable.
 - `~/Projects/PR-Logos-00FF00/` is not under version control.
+
+
+## Known cosmetic issue: broomhill-sheffield overflows 10px at 390px
+
+Not fixed, deliberately. Diagnosed 24 Aug 2026 so nobody re-investigates from scratch:
+
+- Isolated by hiding sections in turn: the culprit is the **final "Other Areas We Cover"
+  / CTA section**. Hiding it takes scrollWidth 400 -> 390. Hiding any other section only
+  gets to 393, so there are minor secondary contributors too.
+- **Ruled out:** unbalanced tags (a/div/section/p all balance), wrong declared image
+  dimensions (`s10-monocouche1.webp` really is 1920x1579 as declared), a long unbreakable
+  word, and a missing `-m` variant.
+- Measuring inside that section is awkward because everything is `.reveal` (opacity/
+  visibility 0) until scrolled, so widths read as 0. Force `.reveal.visible` first.
+- Note `innerText` on those anchors concatenates a CSS-uppercased label, which makes a
+  button look like it wraps a whole block. It does not.
+
+It is 10px on 1 page of 64. Do NOT paper over it with `overflow-x:hidden` — that masks
+real overflow everywhere else and breaks position:sticky.
