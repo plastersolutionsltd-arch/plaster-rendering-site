@@ -12,6 +12,7 @@ needed before that one can be published.
 
 | Reviewer | Date | Complete? | Text | Notes |
 |---|---|---|---|---|
+| Gary Mason | 24 Aug 2026 | yes | Chris has recently completed plastering a bedroom, which I am really pleased with. The quality of the work is of a high standard, and I was happy with the price. I would definitely recommend him. | plastering &mdash; Grenoside S35 (area supplied by Chris, NOT in the review text). LIVE: /grenoside-sheffield |
 | Leamne Shortland | 22 Aug 2026 | yes | Chris has recently done some outdoor render and internal plastering for us he's super fast and efficient, would highly recommend him. Thanks Chris 👍 | rendering, plastering — Thorpe Hesley S61 (area supplied by Chris, not in the review text) |
 | Matt Sabzevari | 7 Aug 2026 | yes | This is the second time I have had had Cris & plaster and rendering solutions to do some work , some time between both jobs but same excellent service and workmanship. Most recent was the rear of my property which was externally rendered , fantastic communication and an amazing job . Will only use Cris for any other similar jobs . Thanks Matt (Greenhill/sheffield) | reply: monocouche render, Greenhill |
 | Jay Callaghan | 1 week ago | TRUNCATED | Chris did a fantastic job of rendering our property. First class workmanship and communication, very clean and tidy.... |  |
