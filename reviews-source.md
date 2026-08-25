@@ -1,7 +1,7 @@
 # Google reviews — source of truth
 
-Captured from the Business Profile reviews panel on 2026-08-08 (topped up since). 5.0 average, 109 total;
-99 captured here (the panel lazy-loads, so a few older ones are not yet pulled in).
+Captured from the Business Profile reviews panel on 2026-08-08 (topped up since). 5.0 average, 110 total;
+100 captured here (the panel lazy-loads, so a few older ones are not yet pulled in).
 
 **Rules for using these:** publish verbatim — never correct spelling, grammar or punctuation,
 because the visible quote and the JSON-LD `reviewBody` have to match exactly or Google treats
