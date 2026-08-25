@@ -116,3 +116,40 @@ Not fixed, deliberately. Diagnosed 24 Aug 2026 so nobody re-investigates from sc
 
 It is 10px on 1 page of 64. Do NOT paper over it with `overflow-x:hidden` — that masks
 real overflow everywhere else and breaks position:sticky.
+
+
+## State as of 25 Aug 2026
+
+- **110 Google reviews, 5.0.** Change it only with `python3 sync-reviews.py <n>` using the
+  number from the GBP panel — it sweeps all 66 pages, the `/projects` stat tile and
+  `llms.txt`. Never derive it by adding one.
+- `python3 sync-dates.py` sets each page's `dateModified` from its last **substantive** git
+  commit (review-count-only commits are skipped, because bumping every date is date-spoofing).
+  Run it AFTER committing content changes, then commit the dates.
+- Three pages added 24 Aug: `/render-over-pebbledash-sheffield`,
+  `/planning-permission-render-sheffield`, `/rendering-in-winter-sheffield`. All unproven.
+
+### Building a new page — the checklist that stops the known faults
+
+1. Clone the `silicone-render-vs-monocouche` shell (head, `<style>`, nav, footer) so the
+   design cannot drift.
+2. **Check every CSS class you used exists in that inline stylesheet.** 20 of 45 did not on
+   the first attempt and would have rendered as nothing.
+3. Copy `id="heroImg"` onto the hero `<img>` — a script references it and throws otherwise.
+4. Add the `vercel.json` rewrite **or the clean URL 404s**, plus the sitemap entry.
+5. Add inbound links. A page with none is orphaned.
+6. Measure the `<title>` in **pixels**, not characters. Google truncates near 600px.
+7. Render it and check: JS errors, accordion opens, 0px overflow at 390px, no mojibake.
+
+### Editing an FAQ — this has bitten twice
+
+Update the **JSON-LD and the visible copy**, then verify the schema text appears verbatim in
+the rendered page. The visible version wraps its first sentence in `<strong>` and uses HTML
+entities, so a plain-text replace updates the schema and silently misses the page.
+
+### Still open
+
+- **10 FAQ answers are in FAQPage schema but not visible on the page** (7 on `/faq`, 3 on
+  `index.html`). Google requires FAQ content to be visible. Only known defect on the site.
+- 8 pages "Crawled – currently not indexed" in GSC, unidentified; all technical causes ruled out.
+- `broomhill-sheffield` 10px overflow (see the section above).
