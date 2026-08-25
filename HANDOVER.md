@@ -123,9 +123,14 @@ real overflow everywhere else and breaks position:sticky.
 - **110 Google reviews, 5.0.** Change it only with `python3 sync-reviews.py <n>` using the
   number from the GBP panel — it sweeps all 66 pages, the `/projects` stat tile and
   `llms.txt`. Never derive it by adding one.
-- `python3 sync-dates.py` sets each page's `dateModified` from its last **substantive** git
-  commit (review-count-only commits are skipped, because bumping every date is date-spoofing).
-  Run it AFTER committing content changes, then commit the dates.
+- `python3 sync-dates.py` sets each page's `dateModified` **and its `sitemap.xml`
+  `<lastmod>`** from its last **substantive** git commit (review-count-only commits are
+  skipped, because bumping every date is date-spoofing). Run it AFTER committing content
+  changes, then commit the dates. `--check` reports drift and writes nothing.
+  **Both halves used to drift apart:** on 25 Aug 2026 every page was honest while **60 of 64
+  sitemap entries still claimed 2026-08-06 and the homepage claimed 2026-06-23** — the
+  stalest entry on the site was the most important page. `<lastmod>` is a crawl-scheduling
+  signal, so understating it tells Google not to re-crawl. Do not hand-edit either one.
 - Three pages added 24 Aug: `/render-over-pebbledash-sheffield`,
   `/planning-permission-render-sheffield`, `/rendering-in-winter-sheffield`. All unproven.
 
@@ -187,11 +192,21 @@ these pages' own `<style>` blocks and **measure it in a browser on one of them**
 
 ### Still open
 
-- 8 pages "Crawled – currently not indexed" in GSC, unidentified; all technical causes ruled
-  out. **Best remaining lead: internal-link thinness.** `rotherham-south-yorkshire` has ONE
-  inbound link (from `sand-cement-render-sheffield`); `lodge-moor`, `parson-cross`,
-  `plastering-cost` and `rendering-in-winter` have 3 each. Beighton and Meersbrook sat
-  unindexed for months on 5–7. Unproven without GSC data.
+- **"Crawled – currently not indexed": IDENTIFIED 25 Aug 2026, and smaller than it looked.**
+  The 8 URLs are **five dead Wix URLs with trailing slashes** — `/silicone-render/`,
+  `/monocouche-render/`, `/external-wall-insulation/`, `/contact/`, `/pricing/` — which all
+  308 to the live page and *should* be unindexed, plus **three real suburb pages**:
+  `norton-sheffield`, `nether-edge-sheffield`, `totley-sheffield`. **No service page is
+  missing from the index.**
+  **The internal-link theory was WRONG and is dropped:** norton has **38** inbound links and
+  totley **33**, near the top of the range, while `lodge-moor` and `parson-cross` sit on 3
+  each and are indexed fine. Word counts are all at the median. Link thinness explains
+  nothing — do not re-open that line of enquiry.
+  All three were last crawled in **May/June**, so Google's judgement predates every bit of
+  the August work. The stale sitemap `<lastmod>` that was suppressing re-crawls is fixed;
+  **the remaining action is owner-side — request indexing on those three in URL Inspection.**
+  The legacy URLs take **two redirect hops** (`/silicone-render/` → `/silicone-render` →
+  `/silicone-render-sheffield`). Harmless, collapsible to one if ever worth the churn.
 - `broomhill-sheffield` 10px overflow (see the section above). Re-measured 25 Aug: still
   exactly 10px, and still the only page of 64 that overflows at 390px.
 - FAQ answers on the self-contained pages are capped `max-height:400px` (the app.css pages
