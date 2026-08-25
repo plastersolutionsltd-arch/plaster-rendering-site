@@ -134,7 +134,11 @@ real overflow everywhere else and breaks position:sticky.
 1. Clone the `silicone-render-vs-monocouche` shell (head, `<style>`, nav, footer) so the
    design cannot drift.
 2. **Check every CSS class you used exists in that inline stylesheet.** 20 of 45 did not on
-   the first attempt and would have rendered as nothing.
+   the first attempt and would have rendered as nothing. **This cuts both ways: the shell is
+   self-contained and does NOT link app.css, so a class like `.tap44-btn` that is only
+   defined in app.css does nothing on your new page.** On 25 Aug this left 12 links at 39px
+   on `planning-permission-render-sheffield`, carrying the very class that exists to
+   guarantee 44px. Measure the control in a browser; grep proves nothing here.
 3. Copy `id="heroImg"` onto the hero `<img>` — a script references it and throws otherwise.
 4. Add the `vercel.json` rewrite **or the clean URL 404s**, plus the sitemap entry.
 5. Add inbound links. A page with none is orphaned.
@@ -163,7 +167,38 @@ reports drift that does not exist.
 355 images, 0 missing alt, 0 empty, 0 repeating the town name. Nine alt texts are over 125
 chars on purpose because they are genuinely descriptive. **Do not trim those to hit a number.**
 
+### The 10 self-contained pages — the standing blind spot
+
+These do **not** link `app.css`, so every app.css fix silently misses them, and they are the
+conversion cluster:
+
+```
+get-quote  pricing  about  how-we-apply  rendering-cost-sheffield  plastering-cost-sheffield
+silicone-render-vs-monocouche  render-over-pebbledash-sheffield
+planning-permission-render-sheffield  rendering-in-winter-sheffield
+```
+
+```bash
+for f in *.html; do grep -q 'app\.[0-9a-f]\{8\}\.css' "$f" || echo "$f"; done
+```
+
+After any app.css rule change, and after building any new page, duplicate the rule into
+these pages' own `<style>` blocks and **measure it in a browser on one of them**.
+
 ### Still open
 
-- 8 pages "Crawled – currently not indexed" in GSC, unidentified; all technical causes ruled out.
-- `broomhill-sheffield` 10px overflow (see the section above).
+- 8 pages "Crawled – currently not indexed" in GSC, unidentified; all technical causes ruled
+  out. **Best remaining lead: internal-link thinness.** `rotherham-south-yorkshire` has ONE
+  inbound link (from `sand-cement-render-sheffield`); `lodge-moor`, `parson-cross`,
+  `plastering-cost` and `rendering-in-winter` have 3 each. Beighton and Meersbrook sat
+  unindexed for months on 5–7. Unproven without GSC data.
+- `broomhill-sheffield` 10px overflow (see the section above). Re-measured 25 Aug: still
+  exactly 10px, and still the only page of 64 that overflows at 390px.
+- FAQ answers on the self-contained pages are capped `max-height:400px` (the app.css pages
+  use 1000px). Nothing clips today, but `planning-permission`'s tallest answer is **363px at
+  390px — 91% of the cap**. One more sentence and it truncates silently.
+- 413 FAQ buttons have no `aria-expanded`. There are **two accordion implementations**:
+  app.css pages use `.faq-body`, the self-contained pages use `.faq-btn`/`.faq-ans` and do
+  set the ARIA. Neither uses `<details>` — a harness looking for that finds nothing.
+- `monocouche-render-sheffield` preloads a **164KB** desktop hero with no `-m` variant. The
+  other nine without one are 16–76KB and are fine; do not spend a session on them.
