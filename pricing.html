@@ -175,7 +175,7 @@
     .nav-links-desktop a.active::after { content:''; position:absolute; bottom:-26px; left:0; right:0; height:2px; background:#00FF00; }
     .nav-cta-btn { background:#00FF00; color:#1a1a1a !important; padding:10px 22px; border-radius:8px; font-weight:700 !important; font-size:13px !important; transition:all 0.3s; white-space:nowrap; }
     .nav-cta-btn:hover { background:#00dd00; transform:translateY(-1px); box-shadow:0 4px 16px rgba(0,255,0,0.25); }
-    .nav-burger { display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:pointer; padding:6px; }
+    .nav-burger { display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:pointer; padding:6px; min-height:44px; min-width:44px; align-items:center; justify-content:center; }
     .nav-burger span { display:block; width:24px; height:2px; background:#1a1a1a; border-radius:2px; transition:all 0.3s; }
     .nav-burger.open span:nth-child(1) { transform:translateY(7px) rotate(45deg); }
     .nav-burger.open span:nth-child(2) { opacity:0; }
@@ -453,6 +453,7 @@
 .faq-toggle,.svc-btn,.footer-link,.nav-btn{min-height:44px!important;display:inline-flex;align-items:center}
 .svc-btn,.faq-toggle{justify-content:center}
 .tap44{min-height:44px}
+    .tap44-btn { min-height:44px; align-items:center; }
 </style>
 </head>
 <body>
