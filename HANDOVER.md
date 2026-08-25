@@ -147,9 +147,23 @@ Update the **JSON-LD and the visible copy**, then verify the schema text appears
 the rendered page. The visible version wraps its first sentence in `<strong>` and uses HTML
 entities, so a plain-text replace updates the schema and silently misses the page.
 
+### FAQ schema — done 25 Aug 2026
+
+413 FAQ questions across the site, **0 with a question that is not on the page** (was 30),
+answer drift 77 → 17. Fixed by realigning 21 questions and 62 answers to the **visible copy**
+(the page is the source of truth — the visible wording gets improved over time and the schema
+never follows), and removing 9 schema questions that had no visible counterpart at all.
+
+The 17 remaining drifts are wording-only and were deliberately left. **When auditing this,
+normalise entities, curly quotes and dashes before comparing** — exact string comparison
+reports drift that does not exist.
+
+### Alt text — audited 25 Aug 2026
+
+355 images, 0 missing alt, 0 empty, 0 repeating the town name. Nine alt texts are over 125
+chars on purpose because they are genuinely descriptive. **Do not trim those to hit a number.**
+
 ### Still open
 
-- **10 FAQ answers are in FAQPage schema but not visible on the page** (7 on `/faq`, 3 on
-  `index.html`). Google requires FAQ content to be visible. Only known defect on the site.
 - 8 pages "Crawled – currently not indexed" in GSC, unidentified; all technical causes ruled out.
 - `broomhill-sheffield` 10px overflow (see the section above).
