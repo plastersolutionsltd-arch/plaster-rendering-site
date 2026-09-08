@@ -22,7 +22,24 @@ Country:         United Kingdom
 Phone:           07595 399525
 Email:           plastersolutionsltd@gmail.com
 Website:         https://www.plasterandrenderingsolutions.co.uk/
+
+Company no:      09075271          (Companies House, active, incorporated 6 Jun 2014)
+SIC code:        43310 Plastering
 ```
+
+### ⚠ The registered office is NOT the trading address. Never paste it into a directory.
+
+```
+Registered office (Companies House only):  16-18 Station Road, Chapeltown, Sheffield, S35 2XH
+Trading address (USE THIS EVERYWHERE):     3 Rocher Close, Grenoside, Sheffield, S35 8QP
+```
+
+The registered office is the accountant's (Lishmans LLP). It is the correct answer on a Companies
+House or HMRC form and the **wrong** answer in every citation. The GBP uses the Grenoside trading
+address, so a directory carrying the Chapeltown one creates exactly the NAP conflict this whole
+file exists to prevent — two addresses, two postcodes, in two different suburbs. If a form asks
+for both, trading address goes in the address field and the registered office only where it
+explicitly says "registered office".
 
 **Name:** always the full `Plaster and Rendering Solutions Limited`. Never "P&R Solutions",
 never "Plaster & Rendering Solutions" with an ampersand, never drop "Limited". The site uses the
@@ -150,14 +167,35 @@ Ordered by what each is actually worth, not by how quick it is.
 - [ ] **Scoot** — scoot.co.uk. Free.
 - [ ] **192.com** — free business listing.
 
+### Ecorend Registered Contractor — apply, but for the referrals, not the SEO
+
+Chris uses **Ecorend mostly** (confirmed 8 Sep 2026) and sprays SR365. Ecorend runs a
+**Registered Contractor** scheme: https://www.ecorend.co.uk/contractor-registration/
+
+**Checked on their own site before recommending it:**
+- **No fee is stated anywhere** on the registration page. It is free to apply.
+- The form asks for company name, postcode, email, website, contact details, social links showing
+  recent work, **Public Liability and Employers Liability documents (PDF upload)**, and whether you
+  are registered with other render brands. All things already to hand.
+- They do describe "rigorous training and certification processes", so **there may be a course
+  element like Weber's.** The page does not say, and I am not going to assume it is free of one.
+
+⚠ **Be realistic about the SEO value: it is unconfirmed.** Their "Find Applicator" link goes to a
+**contact page, not a searchable public directory** — which suggests Ecorend refers enquiries by
+phone rather than publishing a list of contractors. **If there is no public page carrying the NAP,
+it is not a citation at all.** The likely real value is inbound referrals and the right to say
+"Ecorend Registered Contractor" on the site, both of which may beat the SEO anyway.
+
+**One phone call settles it — 01845 578555.** Ask two questions: (1) is there a course or cost to
+register, and (2) do you publish registered contractors anywhere a customer can find them. Worth
+doing before filling the form in.
+
 ### Ruled out, and why — do not re-propose these
 
 - **TrustATrader** — paid subscription. Owner declined 8 Sep 2026.
 - **Weber approved applicator** — requires passing their course, and the owner has moved off the
-  brand. Declined 8 Sep 2026. **The underlying point still stands though:** manufacturer applicator
-  directories are topically relevant and are part of why MAC Rendering holds
-  `monocouche render sheffield`. The right version of this is whichever brand is now used most —
-  see "Needs Chris" below.
+  brand. Declined 8 Sep 2026. Replaced by the Ecorend item below, which is the same idea on the
+  brand actually in use.
 - **Which? Trusted Traders** — paid, plus an assessment fee.
 - **TrustMark** — requires a paid scheme operator.
 - **Checkatrade** — already a paying customer. An upgrade is a lead-generation decision, not an
@@ -167,13 +205,10 @@ Ordered by what each is actually worth, not by how quick it is.
 
 ## Needs Chris before the set is complete
 
-- **Which render brand do you use most now?** Ecorend (SR365), K-Rend, Johnstone's or Baumit.
-  Most manufacturers run a free "find an approved applicator" page, and a listing there is worth
-  more than any generic directory because it is topically relevant. This is the replacement for
-  the Weber item, not an extra.
-- **Company registration number.** The site footer says "Registered in England & Wales" with no
-  number anywhere on it, and several directories ask for it. It is public on Companies House.
-  Not invented here on purpose.
+- **Confirmation statement — worth a check, not an SEO item.** Memory flagged it OVERDUE as of
+  28 Jun 2026 (was due 20 Jun 2026), with strike-off the risk if ignored. That is ~2.5 months ago
+  and it may well have been filed since — **confirm with Lishmans rather than assume either way.**
+  Noted here only because it surfaced while pulling the company number.
 
 ## Honest weighting — read this before spending a weekend on it
 
