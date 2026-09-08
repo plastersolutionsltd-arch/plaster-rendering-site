@@ -167,35 +167,46 @@ Ordered by what each is actually worth, not by how quick it is.
 - [ ] **Scoot** — scoot.co.uk. Free.
 - [ ] **192.com** — free business listing.
 
-### Ecorend Registered Contractor — apply, but for the referrals, not the SEO
+### Manufacturer applicator listings — he already qualifies for all three
 
-Chris uses **Ecorend mostly** (confirmed 8 Sep 2026) and sprays SR365. Ecorend runs a
-**Registered Contractor** scheme: https://www.ecorend.co.uk/contractor-registration/
+**Confirmed with Chris 8 Sep 2026: he is an approved applicator for K-Rend, Ecorend AND Weber.**
+The site has claimed all three all along (8 places across 4 pages, plus a Weber logo on the
+homepage) and the claim is accurate — **do not strip it.** I checked before asking, because it is
+tied to a warranty promise in FAQ schema, and removing a real credential would have been the
+mirror image of the invented-testimonial problem.
 
-**Checked on their own site before recommending it:**
-- **No fee is stated anywhere** on the registration page. It is free to apply.
-- The form asks for company name, postcode, email, website, contact details, social links showing
-  recent work, **Public Liability and Employers Liability documents (PDF upload)**, and whether you
-  are registered with other render brands. All things already to hand.
-- They do describe "rigorous training and certification processes", so **there may be a course
-  element like Weber's.** The page does not say, and I am not going to assume it is free of one.
+This means the topically relevant listings cost **nothing new** — no course, no fee, already
+eligible. This is the ground MAC Rendering beats him on for `monocouche render sheffield`.
 
-⚠ **Be realistic about the SEO value: it is unconfirmed.** Their "Find Applicator" link goes to a
-**contact page, not a searchable public directory** — which suggests Ecorend refers enquiries by
-phone rather than publishing a list of contractors. **If there is no public page carrying the NAP,
-it is not a citation at all.** The likely real value is inbound referrals and the right to say
-"Ecorend Registered Contractor" on the site, both of which may beat the SEO anyway.
+| Brand | Route | Status |
+|---|---|---|
+| **Ecorend** (main brand) | ecorend.co.uk/contractor-registration/ · 01845 578555 | Registered. Free. "Find Applicator" goes to a **contact page**, not a searchable list |
+| **K-Rend** | k-rend.co.uk/news/become-a-recommended-k-rend-applicator | Course completion puts you on the **"recommended applicator list"** — existence confirmed, public searchability not |
+| **Weber** | mail@netweber.co.uk · 08703 330070 | "Network Weber" recommended applicators. No public directory page found |
 
-**One phone call settles it — 01845 578555.** Ask two questions: (1) is there a course or cost to
-register, and (2) do you publish registered contractors anywhere a customer can find them. Worth
-doing before filling the form in.
+⚠ **Be honest about this: not one of the three has a confirmed public, searchable directory that
+carries a name, address and phone.** They all appear to route enquiries by phone. **With no public
+NAP-carrying page, it is not a citation** — the value is referrals and the right to display the
+badge, both of which he already has.
+
+**So this is one job, not three.** Contact all three and ask the same two questions:
+1. Am I currently on your applicator list?
+2. Do you publish it anywhere a customer can search, and can my details appear there?
+
+If any of them says yes, send the master block above verbatim. If they all say no, close this off
+and stop treating manufacturer directories as a citation lever.
+
+**Also worth a look: Rendit** (rendit.co.uk/need-a-renderer) — a third-party network of K-Rend
+approved applicators covering "most of the north and the Midlands", so Sheffield is in scope. That
+one *is* a public customer-facing finder, which makes it more likely to be a real citation than
+any of the manufacturer pages. Unverified — check what listing on it involves.
 
 ### Ruled out, and why — do not re-propose these
 
 - **TrustATrader** — paid subscription. Owner declined 8 Sep 2026.
-- **Weber approved applicator** — requires passing their course, and the owner has moved off the
-  brand. Declined 8 Sep 2026. Replaced by the Ecorend item below, which is the same idea on the
-  brand actually in use.
+- **Weber applicator LISTING is NOT ruled out** — see the manufacturer section above. Chris
+  confirmed 8 Sep 2026 he **passed the course and is still on**. Only the *course* was ever the
+  objection, and it does not apply.
 - **Which? Trusted Traders** — paid, plus an assessment fee.
 - **TrustMark** — requires a paid scheme operator.
 - **Checkatrade** — already a paying customer. An upgrade is a lead-generation decision, not an
