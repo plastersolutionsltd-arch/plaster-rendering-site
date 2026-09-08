@@ -190,6 +190,30 @@ for f in *.html; do grep -q 'app\.[0-9a-f]\{8\}\.css' "$f" || echo "$f"; done
 After any app.css rule change, and after building any new page, duplicate the rule into
 these pages' own `<style>` blocks and **measure it in a browser on one of them**.
 
+## State as of 8 Sep 2026
+
+- **First Fulwood review published.** J Spencer, 5 star, 8 Sep, names silicone render *and*
+  Fulwood unprompted. Live on `/fulwood-sheffield` as a visible card + `Review` node — that page
+  had **zero** review cards before, despite 27 silicone mentions, and no review in the corpus had
+  ever named Fulwood. Corpus now 101 captured.
+- **Review count is still 110 and that is deliberate**, not drift. The GBP panel number was hidden
+  behind the reply modal when this review came in. Read it off the profile and run
+  `python3 sync-reviews.py <n>` — never derive it by adding one.
+- **August full-month GSC logged** in the tracker: 109 clicks, 9.81K impressions, 4 pages with
+  first impressions. Note it is a **calendar month** while the `Aug 2026` row is 28 days to 8 Aug —
+  different windows, both kept.
+- **The 1 Sep Map Pack read still has not happened.** Sep column empty. Same location each month
+  or the suburb numbers are not comparable.
+
+### Harness trap logged 8 Sep: `file://` invents overflow on this site
+
+Measuring a page over `file://` reported `/fulwood-sheffield` at **396px** at a 390px viewport —
+a 6px overflow that does not exist. The webfonts are CORS-blocked and the images 404 under
+`file://`, so fallback metrics reflow the page. Served over HTTP, the pre-edit and post-edit files
+both measure exactly **390**. **Serve the directory (`python3 -m http.server`) before believing any
+width or overflow reading**, and diff against the unedited file rather than against the handover's
+recorded number. Broomhill remains the only page of 64 that genuinely overflows.
+
 ### Still open
 
 - **"Crawled – currently not indexed": IDENTIFIED 25 Aug 2026, and smaller than it looked.**

@@ -1,7 +1,7 @@
 # Google reviews — source of truth
 
 Captured from the Business Profile reviews panel on 2026-08-08 (topped up since). 5.0 average, 110 total;
-100 captured here (the panel lazy-loads, so a few older ones are not yet pulled in).
+101 captured here (the panel lazy-loads, so a few older ones are not yet pulled in).
 
 **Rules for using these:** publish verbatim — never correct spelling, grammar or punctuation,
 because the visible quote and the JSON-LD `reviewBody` have to match exactly or Google treats
@@ -12,6 +12,7 @@ needed before that one can be published.
 
 | Reviewer | Date | Complete? | Text | Notes |
 |---|---|---|---|---|
+| J Spencer | 8 Sep 2026 | yes | We recommend Plaster and Rendering Solutions. Chris did an excellent job applying silicone render to our property in Fulwood. He is precise, has attention to the detail, works hard, and gets the job done. | silicone render — Fulwood S10. FIRST review in the corpus naming Fulwood. Google handle is "J Spencer" (Chris calls him John) — use the panel handle on any card. Possible link: Stephanie Spencer, 6 Nov 2024, unconfirmed. |
 | Gary Mason | 24 Aug 2026 | yes | Chris has recently completed plastering a bedroom, which I am really pleased with. The quality of the work is of a high standard, and I was happy with the price. I would definitely recommend him. | plastering &mdash; Grenoside S35 (area supplied by Chris, NOT in the review text). LIVE: /grenoside-sheffield |
 | Leamne Shortland | 22 Aug 2026 | yes | Chris has recently done some outdoor render and internal plastering for us he's super fast and efficient, would highly recommend him. Thanks Chris 👍 | rendering, plastering — Thorpe Hesley S61 (area supplied by Chris, not in the review text) |
 | Matt Sabzevari | 7 Aug 2026 | yes | This is the second time I have had had Cris & plaster and rendering solutions to do some work , some time between both jobs but same excellent service and workmanship. Most recent was the rear of my property which was externally rendered , fantastic communication and an amazing job . Will only use Cris for any other similar jobs . Thanks Matt (Greenhill/sheffield) | reply: monocouche render, Greenhill |

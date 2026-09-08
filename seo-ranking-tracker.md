@@ -33,6 +33,29 @@ Updated: 1st of each month. Send GSC screenshot/export + incognito Map Pack chec
 
 ---
 
+### August full-month GSC (owner's monthly email, received 8 Sep 2026)
+
+**109 clicks (web) · 9.81K impressions (web) · 4 pages with first impressions (estimated).**
+
+This is a **calendar-month** figure and the `Aug 2026` row above is **28 days to 8 Aug** — they
+are different windows, so the two are not in conflict and neither supersedes the other. Google's
+monthly email gives no average position, so that cell is left blank rather than guessed.
+
+**Read:** against July's 28-day 69 clicks / 6.43K impressions, the direction is up on both.
+CTR works out at **1.11%**, essentially flat against July's 1.1% and slightly below the 1.3%
+in the 28-day-to-8-Aug read — consistent with the established pattern of a widening footprint
+(more queries entering low) rather than a ranking change. Do not read the CTR dip as a decline
+without a position number to go with it.
+
+**"4 pages with first impressions" is the interesting number.** Four pages earned their first
+ever impressions in August, and exactly four new pages went live in that window: `/greenhill-sheffield`
+(9 Aug) and the three 24 Aug content pages (`/render-over-pebbledash-sheffield`,
+`/planning-permission-render-sheffield`, `/rendering-in-winter-sheffield`). The fit is exact but
+**the email does not name the pages — this is a hypothesis, not a confirmed mapping.** Confirm in
+GSC Performance → Pages before treating the content push as proven.
+
+---
+
 ## GSC Monthly Snapshot
 
 | Month | Total Clicks | Total Impressions | Avg Position | Top Keyword |
@@ -40,6 +63,7 @@ Updated: 1st of each month. Send GSC screenshot/export + incognito Map Pack chec
 | Jun 2026 | ~70 (28d) | ~3,900 (28d) | ~20 | plasterers sheffield (6 clicks, 226 imp) |
 | Jul 2026 | 69 (28d) | 6,430 (28d) | 19 | plasterers sheffield (5 clicks, 273 imp) |
 | Aug 2026 | 96 (28d) | 7,430 (28d) | 23.6 | plasterers sheffield (233 imp) |
+| Aug 2026 (full month) | 109 | 9,810 | not given | from GSC's own monthly email, 8 Sep |
 | Sep 2026 | | | | |
 | Oct 2026 | | | | |
 | Nov 2026 | | | | |
@@ -110,6 +134,8 @@ exactly this reason. `rendering near me` appearing at 208 impressions is new.
 
 | Date | What changed |
 |---|---|
+| 2026-09-08 | **New Google review from J Spencer (5 star, silicone render, Fulwood S10)** — the FIRST review in the 101-captured corpus to name Fulwood. Captured verbatim in `reviews-source.md`; published on `/fulwood-sheffield` as a visible card + `Review` node (that page previously had **zero** review cards despite 27 silicone mentions). Rendered and checked at 390px: visible, no JS errors, scrollWidth 390 before and after. **Review count left at 110** — the GBP panel number was hidden behind the reply modal and must not be derived by adding one. | 
+| 2026-09-08 | **August full-month GSC logged** from the owner's monthly email: 109 clicks, 9.81K impressions, 4 pages with first impressions. See the section above. | 
 | 2026-08-09 | **New page `/greenhill-sheffield` live + indexing requested.** S8 suburb page built from the Norton template with real local detail, carrying Matt Sabzevari's review (the only one of 98 that names Greenhill) and his actual job photo. 7 inbound links from neighbouring suburb pages so it does not start link-starved the way Beighton and Meersbrook did. Indexability verified: 200, `index, follow`, self-canonical, no X-Robots-Tag, in sitemap. 61 URLs submitted to IndexNow (HTTP 200 — Bing/Yandex; **Google does not use IndexNow**). Chris requested indexing in GSC the same day. **Watch:** whether it indexes faster than Beighton and Meersbrook did on 5–7 links. | 
 | 2026-08-08 | **Aug Map Pack read (owner, incognito).** Mixed, and the split is by keyword type. SERVICE terms improved or held: `rendering sheffield` 6&rarr;**5**, `silicone render sheffield` **out&rarr;8** (first time it has ever entered the pack), `render repair sheffield` **1** held, `rendering grenoside` **1** held. The money keyword `plasterer sheffield` kept sliding: 7&rarr;10&rarr;**13**, now three months of decline. `external wall insulation sheffield` still out (owner saw only DP Insulation returned). SUBURB terms all fell: chapeltown 2&rarr;4, ecclesfield 2&rarr;5, hillsborough 7&rarr;**19**, walkley 13&rarr;**out**, crookes still out. **CAVEAT: Map Pack rank is distance-weighted from wherever the search is run**, so suburb readings taken from the Grenoside office flatter nearby areas (Grenoside 1, Chapeltown 4) and punish the far side of the city (Hillsborough, Walkley, Crookes). Treat the suburb drops as unconfirmed until re-checked the same way each month. `monocouche render sheffield` **out** — owner reports MAC Rendering is what shows for it. Same competitor named in AI-SEARCH-OPTIMISATION.md as being listed on the K-Rend and Weber approved-applicator directories while P&R is not. Nothing in the 21 reviews published on the site uses the word "monocouche"; the only place it appears is in Chris's owner reply to Matt Sabzevari (7 Aug), not in a customer's own words. |
 | 2026-05-01 | Schema upgraded on all 39 suburb pages + 6 service pages |
