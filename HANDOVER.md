@@ -214,6 +214,38 @@ these pages' own `<style>` blocks and **measure it in a browser on one of them**
   `/plastering-sheffield` pulls 822 impressions and 2 clicks (0.24%), but at position 23 that is
   *expected*, not a defect. Sitewide 1.14% at position 23 is above curve. Confirmed busywork.
 
+### ⛔ KNOWN BUG in `sync-dates.py` — it wants to date-spoof 4 pages. Do not let it.
+
+Found 8 Sep 2026. **`python3 sync-dates.py --check` currently reports 4 pages and 4 sitemap
+entries as stale. All four are FALSE POSITIVES. Do not run the writer to "fix" them.**
+
+```
+rendering-sheffield  render-over-pebbledash-sheffield
+planning-permission-render-sheffield  rendering-in-winter-sheffield
+```
+
+**The cause.** `TRIVIAL_LINES = 4` decides "was this a real content change?" by counting added +
+deleted lines. A review-count sweep touches **1 line on most pages but 3 on these four**, because
+they print the count in the hero, in a stat line *and* in the schema. Three changed lines = 6 in
+numstat, over the budget, so a `110 -> 111` edit is misread as a content update and the page gets
+a fresh `dateModified` **and** a fresh sitemap `<lastmod>`. That is precisely the date-spoofing
+the script's own docstring exists to prevent, **and the bug scales with how prominently a page
+displays its reviews** — the better the page, the more it lies.
+
+**Do NOT "fix" it by raising TRIVIAL_LINES.** That just moves the threshold and silently starts
+skipping genuine small edits.
+
+**A content-aware rule was attempted on 8 Sep and REVERTED** — read the diff before ignoring the
+lines only if they sit next to the word "review". It correctly skipped the count sweep, but it
+also stopped treating `sync-dates`' **own** commits as trivial, and those commits edit the
+`dateModified` line itself. The result was **37 pages and 39 sitemap entries wanting to move,
+mostly backwards.** The circularity — the script's own writes are part of the history it reads —
+is the real problem, and it needs a dedicated session, not a fix bolted onto a ship.
+
+**Until then:** after a review-count sweep, run `--check`, expect those four, and **leave them.**
+The dates on disk are honest today: fulwood-sheffield is 2026-09-08 from a genuine content change;
+the other four correctly still say 2026-08-24/25.
+
 ### Citations: `CITATIONS-NAP.md` is the master block — 8 Sep 2026
 
 New file at the repo root (off the deploy via `*.md`). Every value cross-checked against the LIVE
