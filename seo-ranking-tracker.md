@@ -64,7 +64,7 @@ GSC Performance → Pages before treating the content push as proven.
 | Jul 2026 | 69 (28d) | 6,430 (28d) | 19 | plasterers sheffield (5 clicks, 273 imp) |
 | Aug 2026 | 96 (28d) | 7,430 (28d) | 23.6 | plasterers sheffield (233 imp) |
 | Aug 2026 (full month) | 109 | 9,810 | not given | from GSC's own monthly email, 8 Sep |
-| Sep 2026 | | | | |
+| Sep 2026 | 99 (28d) | 8,700 (28d) | 23.1 | (28d to 8 Sep) |
 | Oct 2026 | | | | |
 | Nov 2026 | | | | |
 | Dec 2026 | | | | |
@@ -127,6 +127,72 @@ exactly this reason. `rendering near me` appearing at 208 impressions is new.
 | **TOTAL** | **69** | **6.43K** | 1.1% CTR / pos 19 = strong visibility, stuck on page 2 |
 
 **Read:** big impressions (6.4K) but page‑2 positions (avg 19) → the growth lever is pushing the high‑impression terms (plasterer/plasterers sheffield ~250 imp, rendering sheffield 167) onto page 1. "plasterer sheffield" is weakening (clicks 3→1 + Map Pack 7→10) → prioritise fresh Google reviews + page freshness. Render‑type terms (silicone/mono/EWI) barely register organically yet.
+
+---
+
+## Page-level breakdown — 28 days to 8 Sep 2026 (owner screenshot)
+
+GSC → Performance → Pages, **sorted by clicks, top 10 only**, Search type: Web. CTR column was
+not enabled in the view, so these are calculated. **Average position was not available** — that
+matters, see the caveat.
+
+| Page | Clicks | Impressions | CTR (calc) |
+|---|---|---|---|
+| `/` | 56 | 3,560 | 1.57% |
+| `/plastering-sheffield` | 2 | 822 | **0.24%** |
+| `/render-repair-sheffield` | 4 | 495 | 0.81% |
+| `/rendering-sheffield` | 3 | 405 | 0.74% |
+| `/dry-lining-sheffield` | 2 | 385 | 0.52% |
+| `/get-quote` | 5 | 172 | 2.91% |
+| `/hillsborough-sheffield` | 3 | 136 | 2.21% |
+| `/about` | 3 | 113 | 2.65% |
+| `/mosborough-sheffield` | 3 | 13 | **23.08%** |
+
+*(A 10th row was cut off in the screenshot at 2 clicks / ~3xx impressions.)*
+
+**The pattern: impressions and CTR run in opposite directions.** The four service hub pages hold
+2,107 impressions between them and return **11 clicks (0.52%)**. The suburb pages barely surface
+but convert hard when they do — Mosborough took 3 clicks from 13 impressions. The homepage
+remains ~58% of all clicks, consistent with every prior read.
+
+`/plastering-sheffield` is the sharpest case: **more impressions than get-quote, render-repair,
+hillsborough, about and mosborough combined, and 2 clicks.** It is also the site's top page for
+AI impressions (405). It is being shown constantly and clicked almost never.
+
+✅ **CAVEAT RESOLVED, 8 Sep — do NOT rewrite titles or metas.** Owner enabled Average position:
+**sitewide 23.1** over the same 28 days. That is page 3. Expected CTR at position 23 is roughly
+0.2-0.5%, so `/plastering-sheffield` at 0.24% is performing **as expected for where it ranks** —
+it is not a snippet defect. Sitewide CTR of 1.14% at position 23.1 is in fact *above* curve, and
+only because the homepage carries it. **The snippets are fine. The rank is the problem.**
+Rewriting titles/metas on these pages is confirmed busywork — do not spend a session on it.
+
+---
+
+## 8 Sep 2026 — the trend, and a live crawl looking for a fault
+
+Owner's read: "rubbish, there's something wrong." **Checked before answering: there is no
+technical fault.** Live-crawled all **64 sitemap URLs** — every one 200, self-canonical,
+indexable, no redirect, no `noindex`, no `X-Robots-Tag`. Same result as the 24 Aug crawl.
+
+| Window | Clicks | Impressions | CTR | Avg pos |
+|---|---|---|---|---|
+| Jun 28d | 70 | 3,900 | 1.79% | — |
+| Jul 28d | 69 | 6,430 | 1.07% | 19.0 |
+| Aug 28d (to 8 Aug) | 96 | 7,430 | 1.29% | 23.6 |
+| **Sep 28d (to 8 Sep)** | **99** | **8,700** | **1.14%** | **23.1** |
+
+**Where the frustration is justified:** clicks are **+3% Aug→Sep**. Flat. The 24 Aug content push
+has had two weeks and produced no measurable click growth. Impressions keep climbing (+123% since
+June) and clicks do not follow, because position is stuck around 23 — page 3.
+
+**Where the "something is wrong" reading is not supported:** nothing is broken, and the site is
+not being penalised. 41% more clicks than June on a clean, fully-indexed site. The site is doing
+what a well-built site at position 23 does.
+
+**Conclusion, and it is the same one as 23-24 Aug:** on-page is exhausted. Position is off-page —
+GBP 32%, reviews 16%, links 15%, citations 7%. The tracker's **#1 item (off-site citations:
+TrustATrader, Which?, TrustMark, Weber) has been open since 18 Jul and has never been started**,
+while the website has had five sessions of work in that time. That is the misallocation.
 
 ---
 
