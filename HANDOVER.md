@@ -214,6 +214,39 @@ these pages' own `<style>` blocks and **measure it in a browser on one of them**
   `/plastering-sheffield` pulls 822 impressions and 2 clicks (0.24%), but at position 23 that is
   *expected*, not a defect. Sitewide 1.14% at position 23 is above curve. Confirmed busywork.
 
+### Full verification pass — 8 Sep 2026, and the 4 false alarms it produced
+
+Drove the LIVE site, not the local files. **Result: the site is sound.**
+
+- **All 64 URLs at 390px, 768px and 1440px** — `0` JS errors at every width; `0` overflow at 768
+  and 1440; **one** overflow at 390: `broomhill-sheffield` at **+3px** (was +10px in August, so it
+  has improved, not regressed).
+- **Both FAQ accordion implementations work on every page tested.** `.faq-btn`/`.faq-ans`
+  (self-contained) and `.faq-q` (app.css). The self-contained set sets `aria-expanded`; the
+  app.css set still does **not** — that is the known 413-button item, unchanged, not a regression.
+- **Mobile nav** opens (2 → 12 visible links). **Projects gallery** arrows and all 64 thumbnails
+  change the image, no JS errors.
+- **Quote form** — 16 fields, 9 required, posts to `formspree.io/f/mvzdkwvw`. Empty submit is
+  correctly blocked by validation. ⚠ **The form was NEVER submitted** — network was recorded and
+  the only POST was Google Analytics. **Never submit it in a test: it lands as a real enquiry.**
+- `terms` checkbox is 16px, but its **label is 42×308px and toggles it**, so the real tap target
+  is 42px — 2px under, pre-existing, part of the known under-44px set.
+- Private docs are safe: `*.md` is excluded from the deploy **and** `vercel.json` carries a
+  deliberate `/(.*).md → /` 308. Company number, Lishmans and the Chapeltown address are absent
+  from everything public.
+
+**⚠ FOUR of my own checks cried wolf in one session. Suspect the harness first.**
+1. `curl -L` on `/CITATIONS-NAP.md` reported **200 "EXPOSED"** — it was following the 308 to the
+   homepage and reporting the homepage's status. **Read the body, not the final status code.**
+2. Homepage "showed 110 while schema said 111" — that `110` is the EWI price **£110/m²**. Check
+   the number sits next to the word "review" before calling it a review count.
+3. Accordions reported **0/6 opening on every page** — the probe measured `innerText.length`, but
+   these are `max-height` accordions whose text is always in the DOM. Measure the element's
+   `offsetHeight`.
+4. `fulwood-sheffield` measured **396px** at a 390px viewport — a `file://` artefact (fonts
+   CORS-blocked, images 404). Over HTTP it is exactly 390. **Serve the directory before believing
+   any width reading.**
+
 ### ⛔ KNOWN BUG in `sync-dates.py` — it wants to date-spoof 4 pages. Do not let it.
 
 Found 8 Sep 2026. **`python3 sync-dates.py --check` currently reports 4 pages and 4 sitemap
