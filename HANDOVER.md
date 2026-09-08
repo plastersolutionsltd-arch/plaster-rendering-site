@@ -202,8 +202,34 @@ these pages' own `<style>` blocks and **measure it in a browser on one of them**
 - **August full-month GSC logged** in the tracker: 109 clicks, 9.81K impressions, 4 pages with
   first impressions. Note it is a **calendar month** while the `Aug 2026` row is 28 days to 8 Aug —
   different windows, both kept.
+- **Review count is 111.** Swept with `sync-reviews.py 111` from the GBP panel number. All 66
+  pages agree on 111 / 5.0.
 - **The 1 Sep Map Pack read still has not happened.** Sep column empty. Same location each month
   or the suburb numbers are not comparable.
+- **Sep GSC (28d to 8 Sep): 99 clicks, 8.7K impressions, CTR 1.1%, average position 23.1.**
+  Clicks +3% on August — flat. The 24 Aug content push has produced no measurable click growth.
+  Live-crawled all 64 sitemap URLs again: 200, self-canonical, indexable, no redirects. **There is
+  no technical fault.** Position is off-page, same conclusion as 23-24 Aug.
+- ⛔ **Position 23.1 settles the CTR question: do NOT rewrite titles or meta descriptions.**
+  `/plastering-sheffield` pulls 822 impressions and 2 clicks (0.24%), but at position 23 that is
+  *expected*, not a defect. Sitewide 1.14% at position 23 is above curve. Confirmed busywork.
+
+### Citations: `CITATIONS-NAP.md` is the master block — 8 Sep 2026
+
+New file at the repo root (off the deploy via `*.md`). Every value cross-checked against the LIVE
+site schema. Read it before touching any directory listing.
+
+- ⛔ **The Companies House registered office is the ACCOUNTANT's address** —
+  16-18 Station Road, Chapeltown, S35 2XH (Lishmans LLP). The trading address is
+  **3 Rocher Close, Grenoside, S35 8QP**. Only the trading address goes in a citation; the other
+  creates a two-suburb, two-postcode NAP conflict. Company no **09075271**, SIC 43310.
+- **Chris IS an approved applicator for K-Rend, Ecorend AND Weber** (confirmed 8 Sep). The site
+  claims all three in 8 places plus a homepage logo and the claim is **accurate — do not strip
+  it.** It sits in FAQ schema tied to a 25-year warranty promise.
+- Declined and recorded with reasons so they are not re-proposed: TrustATrader, Which?, TrustMark
+  (all paid) and the Checkatrade upgrade (lead-gen decision, never recommend on SEO grounds).
+- **Bing Places is the top free action** — Bing's index is what ChatGPT searches, so it is the one
+  free listing that feeds AI search directly.
 
 ### Harness trap logged 8 Sep: `file://` invents overflow on this site
 
