@@ -276,6 +276,27 @@ mostly backwards.** The circularity — the script's own writes are part of the 
 is the real problem, and it needs a dedicated session, not a fix bolted onto a ship.
 
 **Until then:** after a review-count sweep, run `--check`, expect those four, and **leave them.**
+
+#### ⚠ 17 Sep 2026: that count is now **11, not 4**, and the extra 7 are the same false positive
+
+Adding the YouTube channel to `sameAs` touched 66 blocks on 57 pages. The script reads
+**added + deleted lines**, so:
+
+| page shape | lines changed | verdict |
+|---|---|---|
+| **one** `sameAs` block | 1 deleted + 2 added = **3** | under budget, correctly ignored |
+| **two** `sameAs` blocks | 2 deleted + 4 added = **6** | over budget, **misread as a content change** |
+
+Same defect as the review-count case, a different trigger: it scales with **how many schema
+blocks a page carries**, not with how prominently it shows reviews. The seven new ones —
+`index`, `silicone-render-sheffield`, `monocouche-render-sheffield`, `dry-lining-sheffield`,
+`render-repair-sheffield`, `s17-ewi-case-study`, `sandygate-silicone-render-case-study` —
+all carry two blocks. **All eleven are false positives. Do not run the writer.**
+
+**`how-we-apply` was the twelfth and it was genuine** (the video was replaced), so its
+`dateModified` **and** its sitemap `<lastmod>` were set to 2026-09-17 **by hand, together**,
+and it no longer appears. Hand-editing is only safe when both halves move in the same edit —
+that is what stops the two drifting apart, which is the fault this whole section exists for.
 The dates on disk are honest today: fulwood-sheffield is 2026-09-08 from a genuine content change;
 the other four correctly still say 2026-08-24/25.
 
