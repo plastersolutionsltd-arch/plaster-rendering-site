@@ -424,3 +424,46 @@ photo** — the Sandygate house is grey brick with white thin-coat panels and co
 - `business-card-preview`, `logo-preview`, `case-study-template` still present. Unreachable
   (308 to home, excluded from the deploy) and harmless. Deletable but deliberately not deleted —
   they are design artefacts, not defects.
+
+
+### ⛔ Six heroes were invisible — `opacity:0.13` — found 18 Sep 2026
+
+Chris: *"the hero images were all supposed to have been checked for this too dark"*. He was right,
+and it was measurable.
+
+The six **self-contained** pages cloned from the `silicone-render-vs-monocouche` shell carried
+`.hero-img { opacity:0.13 }` **on top of** a `.hero-overlay` gradient of
+`rgba(0,0,0,0.90) → rgba(0,15,0,0.35)`. Double-darkened: the photo at 13% *and* a 90% black scrim.
+The other 53 pages have no opacity on `.hero-img` at all and let the gradient do the work.
+
+Mean luminance of the hero band, same method on every page:
+
+| | before | after | rest of site |
+|---|---|---|---|
+| the six | **32–40** | **58–63** | 54–100 |
+
+Fixed to `opacity:0.85`. ⚠ **Text contrast was measured before and after, not assumed** — the
+heading sits in the 0.90-black corner of the gradient, so white-on-backdrop is **16.0:1 at
+1280px and 17.4:1 at 390px**, against a WCAG AA requirement of 4.5:1. Raising the image did not
+touch the text.
+
+Affected: `planning-permission-render-sheffield`, `plastering-cost-sheffield`,
+`render-over-pebbledash-sheffield`, `rendering-cost-sheffield`, `rendering-in-winter-sheffield`,
+`silicone-render-vs-monocouche`.
+
+⛔ **The shell still has to be checked when cloning.** This is the same trap as the `.tap44-btn`
+one: the shell is self-contained, so a value inside it propagates to every page built from it and
+never shows up in an app.css diff.
+
+### Full image audit — 18 Sep 2026, 69 pages, 439 `<img>`
+
+| check | result |
+|---|---|
+| HTTP 4xx image requests | **0** |
+| missing or empty `alt` | **0** |
+| distorted / stretched | **0** |
+| broken / not loading | **14 — all on `case-study-template`** (placeholder paths, unreachable) |
+| no `width`/`height` | 65, **all on `projects`** — and **measured CLS is 0.0000** at 390 and 1280, so it is not causing shift. Left alone. |
+
+`case-study-template` is the only page with a dark hero left (mean 30.6) and its `JOB_HERO_IMG`
+placeholder is why. It 308s to the homepage and is off the deploy. Not a live fault.
