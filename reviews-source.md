@@ -1,7 +1,7 @@
 # Google reviews — source of truth
 
-Captured from the Business Profile reviews panel on 2026-08-08 (topped up since). 5.0 average, 110 total;
-101 captured here (the panel lazy-loads, so a few older ones are not yet pulled in).
+Captured from the Business Profile reviews panel on 2026-08-08 (topped up since). 5.0 average, 112 total;
+102 captured here (the panel lazy-loads, so a few older ones are not yet pulled in).
 
 **Rules for using these:** publish verbatim — never correct spelling, grammar or punctuation,
 because the visible quote and the JSON-LD `reviewBody` have to match exactly or Google treats
@@ -12,6 +12,7 @@ needed before that one can be published.
 
 | Reviewer | Date | Complete? | Text | Notes |
 |---|---|---|---|---|
+| Libbi Mellors | 18 Sep 2026 | yes | Chris did my grandparents silicone rendering on there house in the Southey green area of Sheffield. They were highly satisfied from start to finish with his professional manner and workmanship. The site was cleaned at the end of each working day and on completion of the job. He was recommended by family and they would 100% recommend to anyone. | silicone render &mdash; Southey Green S5. FIRST review in the corpus naming Southey. Captured in FULL from the GBP panel &mdash; the notification email truncated it at "...area of Sheffield....". Original has a line break before "He was recommended"; published as one flowing paragraph so the visible quote and the JSON-LD match each other exactly. Spelling kept: "on there house", lowercase "Southey green". |
 | J Spencer | 8 Sep 2026 | yes | We recommend Plaster and Rendering Solutions. Chris did an excellent job applying silicone render to our property in Fulwood. He is precise, has attention to the detail, works hard, and gets the job done. | silicone render — Fulwood S10. FIRST review in the corpus naming Fulwood. Google handle is "J Spencer" (Chris calls him John) — use the panel handle on any card. Possible link: Stephanie Spencer, 6 Nov 2024, unconfirmed. |
 | Gary Mason | 24 Aug 2026 | yes | Chris has recently completed plastering a bedroom, which I am really pleased with. The quality of the work is of a high standard, and I was happy with the price. I would definitely recommend him. | plastering &mdash; Grenoside S35 (area supplied by Chris, NOT in the review text). LIVE: /grenoside-sheffield |
 | Leamne Shortland | 22 Aug 2026 | yes | Chris has recently done some outdoor render and internal plastering for us he's super fast and efficient, would highly recommend him. Thanks Chris 👍 | rendering, plastering — Thorpe Hesley S61 (area supplied by Chris, not in the review text) |
@@ -118,6 +119,9 @@ needed before that one can be published.
 
 - **`monocouche`: 0 of 98.** Nor `silicone` (one says "white silicon"), `K-Rend` or `Ecorend`.
   No customer names a product, which is the likeliest reason the product keywords do not rank.
-- **Place names: only 6.** Chapeltown, Walkley, Sandygate, Greenhill, S8, "north sheffield".
-  The suburb-review plan cannot be completed from this data.
+- **Place names: 8 of 102** (updated 18 Sep 2026; this line previously said 6 and had not been
+  revised when Fulwood arrived). Chapeltown, Walkley, Sandygate, Greenhill, S8, "north sheffield",
+  Fulwood, Southey Green. Two of the eight arrived in the last ten days, both naming the service
+  as well as the area. The suburb-review plan still cannot be completed from this data — 45 of
+  the 53 suburb pages have no review naming them.
 - The three dry-lining testimonials ("Mark H.", "Sarah K.", "Tom B.") appear nowhere in it.
