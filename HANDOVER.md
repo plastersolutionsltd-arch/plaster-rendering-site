@@ -353,3 +353,74 @@ recorded number. Broomhill remains the only page of 64 that genuinely overflows.
   set the ARIA. Neither uses `<details>` — a harness looking for that finds nothing.
 - `monocouche-render-sheffield` preloads a **164KB** desktop hero with no `-m` variant. The
   other nine without one are 16–76KB and are fine; do not spend a session on them.
+
+
+## State as of 18 Sep 2026
+
+- **113 reviews? No — 112.** Read off the GBP panel and swept with `sync-reviews.py 112`.
+  Libbi Mellors, 18 Sep, is the **first review in the corpus to name Southey**, and it names
+  silicone rendering too. Published on `/southey-sheffield` as a visible card + `Review` node —
+  that page had 28 silicone mentions and **zero** review cards, the same shape Fulwood was in
+  before 8 Sep. Corpus now 102 captured.
+  ⚠ **The GBP notification email TRUNCATES the review** ("...area of Sheffield....") — the full
+  wording only exists in the reviews panel. Never publish from the email.
+  Published verbatim including **"on there house"** and lowercase **"Southey green"**. The
+  original has a line break before "He was recommended"; it is published as one flowing
+  paragraph so the visible quote and the `reviewBody` are byte-identical to each other.
+
+### ⛔ The YouTube channel exists, and the site had never claimed it
+
+`@PandRSheffield` — "P&R Solutions Sheffield", 1 video, links to the site in its About. The
+site linked back **nowhere**: no channel URL in any HTML/MD/XML, and `sameAs` listed only
+Facebook, Instagram and X. A backlink Google cannot tie to you is worth less than one it can.
+Now on every business node.
+
+### ⛔ `how-we-apply` was running a SUPPLIER'S video as our own
+
+The embed was `o4SN4Qq7v9g`, captioned *"P&R Solutions — spraying silicone top coat Sheffield"*.
+Checked via YouTube's oEmbed endpoint: that video is **"The Predator Pro Spray"** on the channel
+**Direct Building Products**. A machine promo presented as our process footage, on the page whose
+whole job is explaining our process. Replaced with `BiT_kvAQ6Ng` (Ecorend silicone, Sandygate,
+before/after) which is genuinely ours. The 9:16 frame was built for a vertical Short and
+letterboxed the landscape replacement, so both players are now 16:9.
+
+**How to check a video is yours:** `curl -s "https://www.youtube.com/oembed?url=<watch-url>&format=json"`
+returns `author_name` and `author_url`. Do not assume from the caption.
+
+### ⚠ A grep of the repo is not a check of the site — 8 pages proved it
+
+After sweeping `sameAs` across 57 pages and reporting it done, **crawling all 64 live URLs found
+8 with no channel**. They were not missed by a faulty sweep: the script only appends to an array
+already holding our own Facebook URL, and those 8 had no such array. All 8 carry a business node;
+**seven had no `sameAs` at all** and had never advertised a single social profile, and
+`plastering-sheffield` had one holding only two Google Maps URLs. A pre-existing gap that was
+invisible to grep and only showed up under a crawl. Closed by `add-social-sameas.py`, which parses
+each block and edits the business nodes rather than regex-inserting into eight differently shaped
+documents. Existing entries are kept.
+
+⚠ Re-serialising JSON-LD can break a sweep that depends on formatting. Checked afterwards:
+`sync-reviews --check` still agrees on 112, 125 blocks parse, no mojibake, all 8 render clean.
+
+### VideoObject removed from `rendering-in-winter-sheffield` — 18 Sep
+
+GSC reported *"Some fixes failed for Video indexing — Video isn't on a watch page"*. **It was
+right and the fix could never have worked.** The clip is a 14-second supporting shot at line 619
+of an 852-line article about winter rendering; Google requires the video be the page's **main
+content**. Re-requesting validation would fail every time. The `VideoObject` node is gone and the
+`<video>` still plays for visitors — the only thing lost is eligibility for a rich result the page
+could never qualify for. **Do not re-add it** unless the clip gets its own dedicated page.
+
+### Two photo gaps, and they are the same gap
+
+There is **no sand-and-cement photo and no render-repair photo anywhere in the image library**.
+The sand-and-cement page currently runs a *monocouche* photo; the repair page runs *silicone* job
+photos. One scratch-coat shot and one cracked-wall before/after off Chris's phone would fix two
+live pages and two FreeIndex service entries. **Do not paper over it by reusing a finished-render
+photo** — the Sandygate house is grey brick with white thin-coat panels and contradicts both.
+
+### Still open
+- `sync-dates.py --check` reports **11** false positives (see the section above). Leave them.
+- 45 of the 53 suburb pages have no review naming them.
+- `business-card-preview`, `logo-preview`, `case-study-template` still present. Unreachable
+  (308 to home, excluded from the deploy) and harmless. Deletable but deliberately not deleted —
+  they are design artefacts, not defects.
