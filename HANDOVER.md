@@ -467,3 +467,23 @@ never shows up in an app.css diff.
 
 `case-study-template` is the only page with a dark hero left (mean 30.6) and its `JOB_HERO_IMG`
 placeholder is why. It 308s to the homepage and is off the deploy. Not a live fault.
+
+
+### ✅ The homepage before/after is now a real render job — 18 Sep 2026
+
+The flagship "Completed Projects" pair was `wentworth-before/after.webp`, captioned
+**"After — Silicone render by P&R Solutions"**. Those photos are an **indoor swimming pool room** —
+a shell, then the finished pool with its cover on. An internal plastering job labelled as external
+render, on the most important page of the site. `plastering-sheffield` uses the same two images and
+captions them correctly as plaster, so the photos were never the problem; the homepage caption was.
+
+Replaced with `silicone-render-before/after.webp` — a genuine exterior: scaffolded blockwork with
+our own banner up, then the finished white silicone with the stone feature. Captions now
+"Before — stripped back and scaffolded" / "After — silicone render by P&R Solutions".
+
+⚠ **The `-m` suffix is INVERTED on this pair.** `silicone-render-before-m.webp` is **600x600 / 56KB**
+against `silicone-render-before.webp` at **573x573 / 49KB** — the "mobile" file is the larger one.
+Same for the after (`-m` 600x549 / 38KB vs 750x686 / 34KB). A srcset written on the usual assumption
+picks the wrong file at both widths — verified, it did. These two run as a plain `<img>` with a
+single source, which is what the rest of that grid does anyway. **Check the actual dimensions before
+writing a srcset against any `-m` file.**
