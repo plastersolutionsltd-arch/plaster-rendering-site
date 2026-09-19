@@ -487,3 +487,55 @@ Same for the after (`-m` 600x549 / 38KB vs 750x686 / 34KB). A srcset written on 
 picks the wrong file at both widths — verified, it did. These two run as a plain `<img>` with a
 single source, which is what the rest of that grid does anyway. **Check the actual dimensions before
 writing a srcset against any `-m` file.**
+
+
+## Suburb pages researched against AI-citation and doorway criteria — 19 Sep 2026
+
+Chris asked whether adding detail to the 40 suburb pages would improve SEO / AI ranking.
+**Researched before changing anything, and the answer was mostly no.**
+
+### They already pass the doorway tests. Do not panic-rewrite them.
+
+Google's spam policy targets "multiple region or city pages that funnel users to one
+destination", and thin/duplicated pages "created solely to capture keyword variations".
+Measured against that:
+
+| test | result |
+|---|---|
+| duplicate content | **21.5%** average pairwise similarity — not find-and-replace |
+| orphaned | median **14** inbound links |
+| LocalBusiness schema | **40/40** (a published 2026 audit found 41 of 371) |
+| CHAS/CITB named | 40/40 |
+| own S postcode | 40/40 |
+| at least one job photo unique to that page | **36/40**, 39 distinct images |
+| genuinely local prose | yes — "Crookes' Victorian semis", "Totley's edge of the Peak District" |
+
+The pages are 63% of the site, so the doorway question was worth asking. They pass it.
+
+### The real gaps found
+
+- **`llms.txt` said "Approved applicator for K-Rend and Eco-Rend"** and omitted **Weber**,
+  in the one file written for AI engines to read. Corrected, and CITB added.
+- **`llms.txt` listed no suburb pages at all** — 63% of the site was invisible to it. Added an
+  **Areas covered** section, 40 pages grouped by postcode district, all 63 links verified 200
+  with no redirects.
+- **"approved applicator" appears on 7 pages sitewide and 0 of the 40 suburb pages.** A verified
+  credential the AI-citation guidance explicitly lists. ⚠ Not fixed by pasting one sentence onto
+  40 pages — that is the boilerplate pattern the doorway policy targets. Needs doing per-page or
+  not at all.
+- **Review nodes on 7/40.** Gated on the corpus: only 8 of 102 reviews name a place.
+
+### ⛔ The AI lever is off-site too, same as the ranking lever
+
+2026 citation research: ChatGPT draws 47.9% of sources from Wikipedia and 96.2% from
+high-quality outlets; Perplexity draws 46.7% from Reddit and favours content under 30 days.
+Only **11%** of domains are cited by both. Documented factors are source authority via the
+citation graph, structured-data parseability, question-answer concision and **cross-source
+consensus** — i.e. the same facts appearing in several independent places.
+
+Adding words to suburb pages moves none of those. **Bing Places** remains the highest-value
+free action, because Bing's index is what ChatGPT searches — and it is still unverified whether
+P&R is on it.
+
+⚠ `sync-reviews.py` deliberately leaves the visible "100+" copy alone — it never goes stale
+while the real count is above 100. Do not "fix" it to 112.
