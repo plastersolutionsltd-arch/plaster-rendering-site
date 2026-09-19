@@ -539,3 +539,58 @@ P&R is on it.
 
 ⚠ `sync-reviews.py` deliberately leaves the visible "100+" copy alone — it never goes stale
 while the real count is above 100. Do not "fix" it to 112.
+
+
+## SR365 — the differentiator, properly sourced — 19 Sep 2026
+
+### ⛔ I captioned the WRONG VIDEO as SR365. Chris caught it twice.
+
+He said "the video is me spraying eco rend 365". I assumed he meant the mp4 already on
+`rendering-in-winter-sheffield` and captioned **that** as Ecorend SR365. It is
+`spraying-base.mp4` — a **base coat**. I put the product name on the wrong coat: the exact
+caption-contradicts-photo fault that had just been cleared off the homepage and how-we-apply.
+
+**The SR365 footage is `o4SN4Qq7v9g`** — the "Predator Pro Spray" clip. It is **Chris's job**;
+the sprayer manufacturer wanted his work in their video and Direct Building Products supplied
+the materials. ⚠ **So the 18 Sep reasoning for pulling it off `how-we-apply` was wrong.** oEmbed
+tells you whose CHANNEL a video sits on. It cannot tell you whose WORK it shows, and I treated
+those as the same fact. `how-we-apply` now runs the Sandygate video instead, which is not wrong,
+but the Predator Pro clip was never a misattribution.
+
+Now embedded on the winter page under "The exception: Ecorend SR365", using the same
+click-to-load facade as how-we-apply — `about:blank` until someone presses play, so nothing
+third-party loads on arrival. CLS 0.0000 at 390 and 1100.
+
+`spraying-base.mp4` is kept. It is genuine base-coat footage; `render-over-pebbledash` is where
+it belongs.
+
+### ✅ "Can anyone apply SR365?" — now the first FAQ on the winter page
+
+Chris produced a Google AI Overview for that question. It cites **ecorend, Rowebb and RENDIT** —
+the manufacturer and two merchants. **Not P&R, who actually apply it.** That is the AI-visibility
+gap in one screenshot.
+
+⛔ **"Only approved applicators can use SR365" is still NOT published, and should not be.**
+Neither of ecorend's SR365 pages states any supply restriction. What they do state, and what is
+now quoted verbatim on the page, is that it is *"designed and intended for use by professional
+tradespeople"* and *"not designed or marketed as a general household consumer product"*.
+
+Everything in that answer was verified at ecorend before publishing:
+
+| claim | source |
+|---|---|
+| two-component, base + activator | ecorend SR365 product page |
+| needs SP365 primer first | ecorend SP365 page — "prior to application of ecorend SR365" |
+| SP365 is itself two-component | same page |
+| −5°C to +25°C, humidity to 99%, rainproof 2h above +5°C | ecorend SR365 page |
+| SR365 is a **topcoat** | ecorend, and the SaaS app's own materials row |
+| training academy, BBA certified | ecorend |
+
+Written as **why**, not as an exclusivity claim — which is what the 2026 citation research says
+gets cited. Schema and visible copy verified byte-identical.
+
+⚠ **The visible FAQ items on this page start at `aria-controls="q1"`, not `q0`.** An insert
+anchored on q0 fails; mine did, loudly, rather than landing somewhere wrong.
+
+**If Chris ever produces applicator terms or a supplier email stating the supply restriction, it
+can go up with that citation.** Until then the sourced version stands on its own.
