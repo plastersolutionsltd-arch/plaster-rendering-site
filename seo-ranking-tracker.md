@@ -254,3 +254,47 @@ correction, both of which predate this window's close. Or ordinary fluctuation. 
 from one reading — which is why the monthly cadence exists.
 
 **Next read: ~16 Oct**, same 28-day window, and that is the one that speaks to September's work.
+
+### Page-level breakdown — 20 Sep 2026, first time recorded
+
+28 days to 18 Sep. **This is the most useful thing in the tracker and it had never been captured.**
+
+| page | clicks | impressions | position | CTR |
+|---|---|---|---|---|
+| **/ (homepage)** | **45** | **3,510** | **13.7** | 1.28% |
+| /plastering-sheffield | 5 | 739 | 19.4 | 0.68% |
+| /get-quote | 5 | 200 | 22.9 | 2.50% |
+| /render-repair-sheffield | 4 | 364 | **45.5** | 1.10% |
+| /about | 3 | 110 | 14.3 | 2.73% |
+| /hillsborough-sheffield | 3 | 99 | 28.9 | 3.03% |
+| /sand-cement-render-sheffield | 3 | 90 | **17.1** | **3.33%** |
+| /rendering-sheffield | 2 | 593 | **33.4** | 0.34% |
+| /ewi-sheffield | 2 | 543 | 27.4 | 0.37% |
+| /fulwood-sheffield | 2 | 30 | 27.2 | 6.67% |
+
+**The homepage IS the site.** 54% of clicks, 45% of impressions, position **13.7** — roughly ten
+places better than anything else. Every other page is scraps by comparison.
+
+⛔ **The three service hubs are where the money should come from and they are the worst
+performers by CTR.** `plastering-sheffield`, `rendering-sheffield` and `ewi-sheffield` pull
+**1,875 impressions between them and convert 9 clicks — 0.48%**, at positions 19.4, 33.4 and 27.4.
+Those are the pages a homeowner searching "rendering Sheffield" should land on. They are on page
+2 to 4 while the homepage sits at 13.7.
+
+**Hypothesis worth testing, not yet tested: the homepage is cannibalising the hubs.** Same
+commercial queries, homepage ranking, hub buried. ⚠ Only Chris can check this — GSC → Performance
+→ filter by page → Queries, for `/` and `/rendering-sheffield` in turn. If the same terms appear
+on both, that is cannibalisation and it is fixable. If not, the hubs are simply weak and it is
+the usual off-page answer.
+
+**`render-repair-sheffield` is position 45.5** — page 5, the worst on the list, on 364
+impressions. It just gained its first genuine before/after photos (18 Sep), so it is the clearest
+before/after test of whether real content moves a page.
+
+**`sand-cement-render-sheffield` quietly has the best content-page CTR: 3.33% at position 17.1.**
+Low volume (90 impressions) but it converts. ⚠ It is also the page still running a **monocouche**
+photo. Chris is sourcing a real sand-and-cement image — this is the page where it lands.
+
+**The 40 suburb pages barely register.** The only two in the top ten are Hillsborough (99
+impressions) and Fulwood (30). Combined: **129 impressions of 7,760 — 1.7%.** They are 63% of the
+site. This is the hard evidence behind the 19 Sep conclusion not to invest more in them.
