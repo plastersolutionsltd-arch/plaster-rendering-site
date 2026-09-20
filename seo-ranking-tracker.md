@@ -352,3 +352,46 @@ titles.**
 - **The low-volume "near me" terms convert brilliantly** — `render repair near me` 12.5%,
   `house rendering near me` 14.3%, `renderers near me` 7.7%. Tiny volume, but when someone with
   that intent sees him, they click. That is demand he is barely visible for.
+
+### ⛔ 20 Sep 2026 — 9th in the local pack ON 112 REVIEWS. This corrects my own advice.
+
+Chris ran `plasterer sheffield` from Sheffield, incognito, and read the expanded local finder.
+**P&R is 9th.** What sits above him, with review counts:
+
+| above P&R | reviews | shown as |
+|---|---|---|
+| (partial, top of list) | 15 | Open · closes 10pm |
+| Daniel Begley Plastering | **33** | Open 24 hours · 20+ years · Dronfield |
+| T R Sutcliffe Plastering | **47** | 5+ years |
+| **TrueFinish Rendering Sheffield** | **1** | **Open 24 hours** · On-site services · Online estimates |
+| **Plaster and Rendering Solutions** | **112** | **Closed · Opens 8am Mon** |
+
+⛔ **A competitor with ONE review outranks him on 112.** Review count is therefore **not** the
+binding constraint on local pack position for this query. **I have spent this week telling Chris
+reviews are the single biggest lever. On the evidence of this SERP that is wrong**, or at least
+badly incomplete. Reviews still matter for conversion once someone sees him — his 5.0 from 112 is
+the most credible entry on the page — but they are not what is putting three businesses above him.
+
+**What visibly differs, in order of how actionable it is:**
+
+1. **He shows "Closed".** Three of the businesses above him show **Open 24 hours**. His published
+   hours are Mon-Fri 08:00-20:00 and Sat 09:00-13:00, so on a Sunday "Closed · Opens 8am Mon" is
+   **honest and correct**. ⚠ But it is a real cost on the day someone searches. **If he answers
+   the phone at weekends, GBP should say so.** ⛔ Do NOT set 24 hours to game it — several above
+   him plainly have, it is against GBP guidelines, and a customer who rings at 9pm and gets no
+   answer is worse than one who sees "opens 8am".
+2. **Proximity.** The pins are spread from Stocksbridge to Killamarsh. Map Pack rank is
+   distance-weighted from wherever the search is run, which this file already warns about. Some of
+   the gap is simply where Chris was standing. **Not controllable and not worth chasing.**
+3. **Business name relevance.** "TrueFinish Rendering **Sheffield**" carries the service and the
+   city in the name; "Plaster and Rendering Solutions" truncates to "Plaster and Rendering
+   Solution…". ⛔ **Do not keyword-stuff the GBP name** — it is a guidelines violation and a
+   suspension risk. Recorded as an observation about why they rank, not as advice.
+
+**What this does NOT tell us:** whether the organic listing sits below all of this, which was the
+original question. The screenshot is the local finder, not the main SERP. The organic CTR question
+from the entry above is still open.
+
+**Revised read:** the Map Pack is the battleground and reviews alone will not win it. The next
+useful thing is GBP completeness — hours, categories, services, photos, posts — not more review
+requests. That is a change of direction from what this file said earlier in the week.
