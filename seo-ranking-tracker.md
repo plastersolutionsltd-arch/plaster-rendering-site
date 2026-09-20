@@ -395,3 +395,48 @@ from the entry above is still open.
 **Revised read:** the Map Pack is the battleground and reviews alone will not win it. The next
 useful thing is GBP completeness — hours, categories, services, photos, posts — not more review
 requests. That is a change of direction from what this file said earlier in the week.
+
+### 20 Sep 2026 — "there is something holding us back". Here is where it is.
+
+Chris is right to push. On the 2026 local ranking weightings (BrightLocal / Whitespark, broadly
+agreed across sources):
+
+| factor | weight | P&R |
+|---|---|---|
+| **GBP signals** — category, completeness, activity | **32%** | ⚠ **NEVER AUDITED** |
+| On-page / website | 19% | **strong** — clean, fast, LocalBusiness on 40/40 |
+| Review signals | 16% | **strong** — 112 at 5.0, most of anyone on the SERP |
+| **Link signals** | **15%** | **near zero** |
+| Behavioural (clicks, calls) | 8% | weak — 0.4% CTR on the money terms |
+| **Citation signals** | 7% | **near zero** — FreeIndex dormant, Bing merged wrong |
+
+**Strong on 35%. Near zero on 22%. And the single biggest factor, 32%, has never been looked at.**
+
+That is the answer. It is not that reviews failed — reviews are working, they are just one sixth of
+the picture and he has maxed them. It is that **a third of the algorithm is GBP and nobody has
+opened it.**
+
+⛔ **The research is explicit that RELEVANCE outranks review count**, and relevance is mostly GBP
+categories and services: *"a business with only 'contractor' as a category won't rank for an
+'emergency plumber' search regardless of how close they are or how many reviews they have."*
+⚠ **Suggestive evidence his categories are wrong:** the Bing listing, which synced FROM Google
+34 weeks ago, shows categories as *"Home service, Building contractor, Home service, Home
+service"*. If that reflects the GBP, the primary category may not be Plasterer at all.
+
+Two more findings from the same research, both free:
+
+- **Velocity and recency beat total count.** *"100 reviews with new ones weekly will outrank 200
+  at 4.9 that has not had one in 6 months."* He has had 4 in the last 30 days — that is fine, and
+  worth protecting.
+- **Owner responses correlate with outranking** at matched review counts. ⚠ **I could not measure
+  his reply rate** — `reviews-source.md` captures review TEXT and only incidentally notes replies,
+  so the 3-of-102 it produces is an artefact of capture, not a fact about Chris. **He can see the
+  real number in GBP in one minute.**
+
+**The GBP audit that has never been done** — 10 minutes, all free, all inside the profile:
+primary category (must be Plasterer) · how many of the 9 secondary categories are used · Services
+filled in · business description · photo count and date of the most recent · any Posts at all ·
+Q&A · review reply rate.
+
+⛔ Do NOT let the earlier "reviews are the biggest lever" line stand. It was wrong twice over: a
+competitor with ONE review outranks him, and the weighting puts reviews at 16% against GBP's 32%.
