@@ -298,3 +298,57 @@ photo. Chris is sourcing a real sand-and-cement image — this is the page where
 **The 40 suburb pages barely register.** The only two in the top ten are Hillsborough (99
 impressions) and Fulwood (30). Combined: **129 impressions of 7,760 — 1.7%.** They are 63% of the
 site. This is the hard evidence behind the 19 Sep conclusion not to invest more in them.
+
+### ⛔ QUERY-LEVEL DATA CORRECTS AN EARLIER CONCLUSION IN THIS FILE — 20 Sep 2026
+
+28 days to 18 Sep. 373 queries. Top ten:
+
+| query | clicks | impressions | position | CTR |
+|---|---|---|---|---|
+| plaster and rendering solutions limited | 4 | 29 | **1.5** | 13.79% |
+| rendering sheffield | 2 | 227 | 13.5 | 0.88% |
+| **plasterers sheffield** | 1 | **248** | **9.2** | **0.40%** |
+| rendering near me | 1 | 208 | 15.9 | 0.48% |
+| **plasterer sheffield** | 1 | **187** | **7.6** | **0.53%** |
+| plastering sheffield | 1 | 43 | 7.4 | 2.33% |
+| renderers near me | 1 | 13 | 28.2 | 7.69% |
+| external wall insulation sheffield | 1 | 11 | 10.4 | 9.09% |
+| render repair near me | 1 | 8 | 12.1 | 12.50% |
+| house rendering near me | 1 | 7 | 19.0 | 14.29% |
+
+**The money keywords rank on PAGE ONE.** `plastering sheffield` 7.4, `plasterer sheffield` 7.6,
+`plasterers sheffield` 9.2, `external wall insulation sheffield` 10.4. The sitewide average of
+20.3 is dragged down by a long tail, and it was hiding this.
+
+⛔ **This corrects the 8 Sep entry above**, which said *"Position 23.1 settles the CTR question: do
+NOT rewrite titles or meta descriptions… at position 23 that is expected, not a defect."* **That
+reasoning was sound for the sitewide average and wrong for these specific queries.** The four
+big-volume terms pull **870 impressions and convert 5 clicks — 0.57%** — while sitting at
+positions 7.6 to 15.9, where a generic curve would suggest roughly 1.5-3%. That is a real gap,
+not an artefact of ranking badly.
+
+⚠ **But do NOT jump to rewriting titles. There are two explanations and this data cannot separate
+them:**
+
+1. **SERP composition.** These are local-intent searches. Above his organic listing sit the Map
+   Pack and the directory aggregators — Checkatrade, MyBuilder, Rated People. An organic 7.6 on
+   that page is a long way down the screen. This file already records `plasterer sheffield`
+   sliding **7 → 10 → 13** in the Map Pack, so he is NOT in the visible three. That alone could
+   account for the whole gap, and it points back at GBP and reviews.
+2. **The snippet genuinely under-sells.** Fixable on-page.
+
+**How to tell them apart — and only Chris can do it:** run `plasterer sheffield` and
+`plasterers sheffield` from Sheffield, incognito, and look at what sits above the P&R result.
+Count the Map Pack entries and the directory listings. If the organic result is below a pack plus
+three aggregators, the snippet is not the problem. **Do this before anyone spends a session on
+titles.**
+
+**Two other things worth noting:**
+
+- **Brand search is tiny: 29 impressions in 28 days** for the company name, at position 1.5. He
+  owns his own name completely and almost nobody searches it. That is an awareness number, not an
+  SEO one, and it is the clearest argument yet for the merchant and social routes in the selling
+  plan.
+- **The low-volume "near me" terms convert brilliantly** — `render repair near me` 12.5%,
+  `house rendering near me` 14.3%, `renderers near me` 7.7%. Tiny volume, but when someone with
+  that intent sees him, they click. That is demand he is barely visible for.
