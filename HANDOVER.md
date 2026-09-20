@@ -594,3 +594,120 @@ anchored on q0 fails; mine did, loudly, rather than landing somewhere wrong.
 
 **If Chris ever produces applicator terms or a supplier email stating the supply restriction, it
 can go up with that citation.** Until then the sourced version stands on its own.
+
+
+## 20 Sep 2026 — the GBP day, and three things I had wrong
+
+Chris pushed back: *"if you researched all the other plastering companies we have more reviews
+active gbp better website there is something holding us back"*. He was right to. The data is all
+in `seo-ranking-tracker.md`; this is what changed on the site and what I got wrong.
+
+### ⛔ Three corrections to my own advice, in one day
+
+1. **"Reviews naming service and area are the single biggest lever."** Wrong. He ran
+   `plasterer sheffield` and is **9th in the local pack on 112 reviews at 5.0**, while
+   **TrueFinish Rendering Sheffield sits above him with ONE review**. Reviews are ~16% of the
+   weighting against GBP's ~32%. Reviews still earn the click once he is seen; they are not what
+   is putting three businesses above him.
+2. **"Position 23 means do NOT rewrite titles — CTR is fine."** (8 Sep, in the tracker.) That was
+   right for the sitewide average and wrong for the money terms. He ranks **page one** —
+   `plastering sheffield` 7.4, `plasterer sheffield` 7.6, `plasterers sheffield` 9.2 — and those
+   four big terms convert **870 impressions into 5 clicks, 0.57%**.
+3. **"His GBP categories are probably wrong."** Wrong. **Primary category is Plasterer**, exactly
+   right, with Stucco / Dry Wall / Insulation Contractor alongside. The "Home service x3" I had
+   seen was a **Bing** artefact, not his profile.
+
+### ✅ What the GBP audit actually found — services, not categories
+
+~20 services listed, but **roughly half had no description at all**. Service descriptions are
+content Google reads for **relevance**, which the research says outranks review count. Thirteen
+descriptions written from his own site's facts and pasted in by Chris.
+
+⚠ **I put prices in three of them that I had inferred from neighbouring services, not sourced.**
+Chris caught it with one word: *"prices?"*. Artex removal is **£3-6/m² added** to plastering, not
+"from £200"; dot and dab is **£18-28/m²**; sand and cement has **no price on the site at all**.
+⛔ **Never carry a price across from an adjacent service.**
+
+**Live contradiction found while checking:** GBP says **"Render repair — From £60"** while
+`render-repair-sheffield` says *"targeted repairs typically start from around £800"* and
+*"£800-£2,500"*. Both can be true — £60/m² against a job minimum — but a customer reads £60 and
+is quoted £800. **Still unresolved; Chris's call.**
+
+### ✅ Opening hours — the one with a real ranking mechanism
+
+Research: **"open at the time of search" is the 5th strongest Local Pack ranking factor.** He was
+**Closed all Sunday and from 1pm Saturday** — and the 9th-place reading was taken **on a Sunday**,
+against three competitors showing "Open 24 hours".
+
+⛔ **He asked whether to set 24 hours. NO, and the reason is mechanical, not moral:** *"If you say
+you are Open 24 Hours but do not answer the phone at 2 AM, Google tracks that missed call as a
+negative behavioural signal."* Behavioural is 8-11% of the weighting. Faking it trades a display
+gain for a measured negative, plus the 1-star from whoever rang at 11pm.
+
+He widened them honestly instead, and **both halves of the site moved to match**:
+
+| | GBP and site |
+|---|---|
+| Mon-Fri | 07:00-20:00 |
+| Saturday | 07:00-17:00 |
+| Sunday | 09:00-16:00 |
+
+`sync-hours.py` does the schema. ⚠ **SEVEN whitespace shapes** of `OpeningHoursSpecification`
+exist across the site, so it matches on structure with tolerant `\s*`, and the inserted Sunday
+block copies the spacing of the Saturday block above it.
+
+⚠ **I half-broke the visible copy doing it.** My first pass assumed `"Mon - Fri 8am - 8pm"` was
+contiguous text; on most pages **the day and the time sit in separate spans**, so only the Sunday
+"Closed" cell matched. 58 pages were left reading *"Saturday 9:00am-1:00pm, Sunday 9am-4pm"* —
+schema right, copy half old, **worse than before I started**. Caught by grepping every visible
+time string rather than trusting the script's own "58 pages changed". Ten formats existed; there
+is now one set.
+
+**⏰ RE-MEASURE ON A WEEKDAY.** The 9th-place reading was taken on a Sunday while showing Closed.
+Re-run `plasterer sheffield` from the same spot, incognito, Tuesday mid-morning. Until then, treat
+"9th" as a floor rather than his position.
+
+### ✅ The business coordinates were 6.21 km out
+
+Inside the same `LocalBusiness` block: address **3 Rocher Close, Grenoside, S35 8QP**, geo
+**53.381130, -1.470085** — which reverse-geocodes to **Fargate, Sheffield City Centre, S1 2HD**.
+On 19 pages including the homepage and every service page. Now **53.436306, -1.484085**, the
+Rocher Close road centroid.
+
+⚠ **Replacing the JSON-LD pair caught only 18 of 32 occurrences.** The same coordinate also sits
+in **`geo.position` and `ICBM` meta tags** on 16 pages, which a schema-shaped search does not see.
+Found by grepping the raw latitude across the repo. Suburb pages are untouched and correct — each
+carries its own suburb's coordinates, deliberately.
+
+⛔ **This is NOT a ranking fix and I overstated it when I found it.** The Map Pack uses the
+verified GBP location, not website schema. Data correctness and NAP consistency, nothing more.
+
+### ✅ Google was ignoring the homepage meta description
+
+For `plasterers sheffield` the snippet was body copy from the About section — *"a Sheffield-based
+plastering and rendering contractor with over two decades of hands-on experience"* — while the
+written description, which fits at 156 chars, leads with most-reviewed, 112 reviews, 25-year
+warranty and free quote. **None of his proof reached the searcher.**
+
+The About opening now carries it. ⚠ Phrased **"5.0 from 112 Google reviews"** deliberately:
+`sync-reviews.py` matches `(\d{2,3})( Google reviews\b)`, and the first draft said "112
+five-star Google reviews", which that regex does **not** match and would have become a silent
+drift source.
+
+⚠ Also of the four organic results above him, **three are aggregators** — FMB, Yell, Facebook.
+Only P3 Plastering is a competing plasterer. "Beat the competition" is partly "beat Yell".
+
+### Where the gap actually is
+
+| factor | weight | P&R |
+|---|---|---|
+| GBP signals | 32% | now audited and good |
+| On-page | 19% | strong |
+| Reviews | 16% | strong — 112 at 5.0 |
+| **Links** | **15%** | **near zero** |
+| Behavioural | 8% | weak |
+| **Citations** | **7%** | **near zero** |
+
+With GBP now in good shape, **links and citations are the only large gap left — 22% of the
+weighting with nothing in it.** FreeIndex is dormant on 0 reviews at 157th of 403, and Bing is
+still merged into a Rotherham company's listing.
