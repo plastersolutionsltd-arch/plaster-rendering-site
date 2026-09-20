@@ -180,6 +180,7 @@ indexable, no redirect, no `noindex`, no `X-Robots-Tag`. Same result as the 24 A
 | Jul 28d | 69 | 6,430 | 1.07% | 19.0 |
 | Aug 28d (to 8 Aug) | 96 | 7,430 | 1.29% | 23.6 |
 | **Sep 28d (to 8 Sep)** | **99** | **8,700** | **1.14%** | **23.1** |
+| **Sep 28d (to 18 Sep)** | **84** | **7.76K** | **1.1%** | **20.3** |
 
 **Where the frustration is justified:** clicks are **+3% Aug→Sep**. Flat. The 24 Aug content push
 has had two weeks and produced no measurable click growth. Impressions keep climbing (+123% since
@@ -219,3 +220,37 @@ while the website has had five sessions of work in that time. That is the misall
 | 2026-07-18 | GSC drill-down received: of the 10 "Crawled - not indexed", 5 are stale redirect aliases (/contact/, /external-wall-insulation/, /monocouche-render/, /pricing/, /silicone-render/ — crawled Mar–Apr, all 301 correctly now, will reclassify on recrawl, NO action) and 5 are real suburb pages: beighton, meersbrook, norton, totley, high-green |
 | 2026-07-18 | Internal-link fix for the 2 link-starved unindexed suburbs: Beighton 5→13 inbound, Meersbrook 7→14 (peers ~26–35). Added both to the 15-pill areas list on 5 service pages + reciprocal "Nearby" pills on gleadless/norton/woodseats. Norton(35)/Totley(31)/High Green(17) have plenty links — their fix = unique content (real suburb-named review quotes, still waiting on Chris) + time. Sitemap lastmod bumped on 8 edited pages. GOTCHA: nav links also match `text-sm font-semibold` — anchor nearby-pill inserts on the full `px-5 py-2.5 rounded-full` signature or they land in the header nav |
 | 2026-07-18 | MAJOR SESSION: .com domain reclaimed via Vercel ($11.25/yr) + all old URLs 301 to .co.uk + GSC verified + Change of Address filed; NEW /rendering-sheffield hub page live (capsule, comparison table, 3 real reviews, 7-Q FAQ, full schema, footer link on 55 pages, indexing requested); Walkley got Mark Beachell review (card+schema); Beighton/Meersbrook internal links fixed earlier same day |
+
+
+---
+
+## 20 Sep 2026 — position is up 2.8 places. Clicks are down. Both are true.
+
+Read off GSC, 28 days to 18 Sep (GSC lags ~2 days).
+
+| vs the 8 Sep read | then | now | change |
+|---|---|---|---|
+| average position | 23.1 | **20.3** | **improved 2.8 places** |
+| clicks | 99 | 84 | **−15%** |
+| impressions | 8,700 | 7,760 | −11% |
+| CTR | 1.14% | 1.1% | flat |
+
+**Position 20.3 is the best since July (19.0)** and it reverses the August slide —
+19.0 → 23.6 → 23.1 → **20.3**. That is the first genuine directional improvement in the
+tracker since the decline started.
+
+⛔ **This data CANNOT tell us whether the 18–19 Sep work helped.** The window is
+22 Aug – 18 Sep. Libbi's review, the Southey hero, the repair and pebbledash photos, the six
+hero opacities, `llms.txt`, the SR365 FAQ and the corrected video all landed on **18–19 Sep** —
+the last day of the window or after it entirely. **Do not attribute this movement to them, in
+either direction.** The earliest honest read on that work is the 28-day window to ~16 Oct.
+
+⚠ **The two windows share 20 of their 28 days**, so the click drop is partly window
+composition rather than a real fall. Treat −15% as softer than it looks; treat the position
+gain as the more reliable signal, because position is an average over the same overlapping set.
+
+**What plausibly moved position:** the Fulwood review (8 Sep) and the sitemap `lastmod`
+correction, both of which predate this window's close. Or ordinary fluctuation. Not knowable
+from one reading — which is why the monthly cadence exists.
+
+**Next read: ~16 Oct**, same 28-day window, and that is the one that speaks to September's work.
