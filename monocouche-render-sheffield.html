@@ -47,7 +47,7 @@
 
   <!-- JSON-LD: LocalBusiness + Service Schema -->
   <script type="application/ld+json">
-  {
+{
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -283,11 +283,25 @@
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "5.0",
-        "reviewCount": "112",
+        "reviewCount": "113",
         "bestRating": "5",
         "worstRating": "1"
       },
       "review": [
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Paul S"
+          },
+          "datePublished": "2026-09-22",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "reviewBody": "Our house in Scholes looks fantastic, we are thrilled with the monocouche. Chris was excellent, very professional and informative throughout. Will gladly be recommending to everyone."
+        },
         {
           "@type": "Review",
           "author": {
@@ -374,7 +388,7 @@
       "name": "Monocouche Rendering Sheffield | P&R Solutions",
       "description": "Professional monocouche rendering in Sheffield — single-coat stone-like finish with 20-25 year manufacturer warranty. Ecorend, K Rend, Weber & Baumit. Free site survey. No deposit.",
       "datePublished": "2024-06-01",
-      "dateModified": "2026-08-25",
+      "dateModified": "2026-09-22",
       "inLanguage": "en-GB",
       "isPartOf": {
         "@type": "WebSite",
@@ -388,7 +402,7 @@
       "speakable": {
         "@type": "SpeakableSpecification",
         "cssSelector": [
-              ".answer-capsule",
+          ".answer-capsule",
           "h1",
           "h2",
           ".faq-item"
@@ -398,7 +412,16 @@
     {
       "@type": "Organization",
       "@id": "https://www.plasterandrenderingsolutions.co.uk/#organization",
-      "knowsAbout": ["Plastering", "Skimming and re-plastering", "Silicone render", "Monocouche render", "External wall insulation", "Dry lining", "Sand and cement render", "Render repair"],
+      "knowsAbout": [
+        "Plastering",
+        "Skimming and re-plastering",
+        "Silicone render",
+        "Monocouche render",
+        "External wall insulation",
+        "Dry lining",
+        "Sand and cement render",
+        "Render repair"
+      ],
       "name": "Plaster and Rendering Solutions Limited",
       "url": "https://www.plasterandrenderingsolutions.co.uk",
       "logo": {
@@ -415,7 +438,7 @@
     }
   ]
 }
-  </script>
+</script>
 
   <!-- JSON-LD: HowTo Schema -->
   <script type="application/ld+json">
@@ -1713,6 +1736,18 @@
       <h2 class="font-display font-black text-white mt-3" style="font-size:clamp(1.8rem,4vw,3rem)">Monocouche Customers <span style="color:#00FF00">Say</span></h2>
     </div>
     <div class="grid md:grid-cols-2 gap-6">
+      <div class="reveal" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:26px 28px">
+        <div style="color:#00FF00;font-size:1rem;letter-spacing:2px;margin-bottom:14px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <blockquote class="font-body" style="margin:0 0 18px;font-size:15px;line-height:1.7;color:rgba(255,255,255,0.82)">&#8220;Our house in Scholes looks fantastic, we are thrilled with the monocouche. Chris was excellent, very professional and informative throughout. Will gladly be recommending to everyone.&#8221;</blockquote>
+        <div class="flex items-center justify-between pt-4" style="border-top:1px solid rgba(255,255,255,0.08)">
+          <div>
+            <div class="font-display font-bold text-white text-sm">Paul S</div>
+            <div class="font-body text-xs" style="margin-top:2px;color:rgba(255,255,255,0.35)">Monocouche render &nbsp;&middot;&nbsp; Scholes S61</div>
+          </div>
+          <div class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center font-display font-bold text-white text-xs" style="background:rgba(0,255,0,0.12);color:#00FF00">G</div>
+        </div>
+      </div>
+
       <div class="reveal" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:26px 28px">
         <div style="color:#00FF00;font-size:1rem;letter-spacing:2px;margin-bottom:14px">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <blockquote class="font-body" style="margin:0 0 18px;font-size:15px;line-height:1.7;color:rgba(255,255,255,0.82)">&#8220;This is the second time I have had had Cris &amp; plaster and rendering solutions to do some work , some time between both jobs but same excellent service and workmanship. Most recent was the rear of my property which was externally rendered , fantastic communication and an amazing job . Will only use Cris for any other similar jobs . Thanks Matt (Greenhill/sheffield)&#8221;</blockquote>
