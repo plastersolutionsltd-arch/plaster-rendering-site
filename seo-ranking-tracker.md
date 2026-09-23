@@ -476,3 +476,55 @@ argument still stands** (reviews ~16% vs GBP ~32%); the specific TrueFinish exam
 **What to do:** read it again next Tuesday, same time, same place. One weekday reading is not a
 trend any more than one Sunday reading was. If it holds at 2-3, the hours fix is the likeliest
 cause and GBP completeness is confirmed as the lever.
+
+---
+
+## GBP change log — so the next ranking move is attributable
+
+⚠ **This exists because of the 9th-to-2nd reading on 23 Sep**, which moved seven places with four
+variables changed at once and could not be attributed to any of them. Date every GBP change here.
+A move with one known change behind it is worth ten moves with four.
+
+| date | what changed on GBP | by |
+|---|---|---|
+| 20 Sep 2026 | Hours widened: Mon-Fri 07:00-20:00, Sat 07:00-17:00, **Sun 09:00-16:00** (was Mon-Fri 08:00-20:00, Sat 09:00-13:00, Sun closed). Site schema + visible copy swept to match on 61 pages. | Chris |
+| 20-22 Sep 2026 | **13 service descriptions** written and added — Insulation Specialists, New Builds, Plastering Specialists, Re-skimming, Pebble dash removal, K Rend, Artex removal, Lime render, Dot and dab, Sand and cement render, Damp proof render, Commercial Property, Ewi System. Roughly half the service list had been name-only. | Chris |
+| 22 Sep 2026 | Review 113 (Paul S, Scholes S61, monocouche) + owner reply within the hour | Chris |
+| 23 Sep 2026 | **2nd in the local pack** for `plasterers sheffield`, from 9th on 20 Sep | — |
+
+### ⬜ Services still to add to GBP — all evidenced on our own site
+
+⛔ **Add these a few at a time, not all at once**, and date each batch above. Adding fourteen
+services in one afternoon repeats exactly the attribution problem this log exists to solve.
+
+| service | why it belongs | site coverage |
+|---|---|---|
+| **Ecorend** | approved applicator. **K Rend is listed and this is not** — the most glaring gap | 13 pages |
+| **Stud partitions** | biggest omission by coverage, not listed at all | 48 pages |
+| **Weber** | approved applicator | 7 pages |
+| Acrylic render | priced on the site at £65/m² | 5 pages |
+| Garage rendering | | 12 pages |
+| Conservation & listed buildings | lime render only partly covers it | 12 / 7 pages |
+| Bonding coat | | 9 pages |
+| Insulated plasterboard | | 3 pages |
+| Scratch coat | | 3 pages |
+| Chimney rendering | | 2 pages |
+| Overboarding | | 1 page |
+| Garden & boundary walls | | 1 page |
+| Float and set | | 1 page |
+| Coving | | 1 page |
+
+⛔ **NOT ECO4.** It appears on 4 pages as *grants exist*, which is not the same as being an
+approved ECO4 installer. Listing it as a service implies he administers the funding. Only if he
+is actually on the scheme.
+
+### ⬜ Keywords to start tracking
+
+| keyword | why |
+|---|---|
+| `sand and cement render sheffield` | last service page with no review, and the best content CTR on the site at 3.33% |
+| `monocouche render rotherham` | Paul S, Scholes S61, is the first customer to say "monocouche" |
+| `plasterer rotherham` | the orphaned page — 1 inbound link — now carries two genuine S61 customers |
+| `dry lining sheffield` | |
+| `artex removal sheffield` | |
+| `ecorend approved applicator sheffield` | nobody has ever named a system in a review; this is the differentiator |
