@@ -491,6 +491,7 @@ A move with one known change behind it is worth ten moves with four.
 | 20-22 Sep 2026 | **13 service descriptions** written and added — Insulation Specialists, New Builds, Plastering Specialists, Re-skimming, Pebble dash removal, K Rend, Artex removal, Lime render, Dot and dab, Sand and cement render, Damp proof render, Commercial Property, Ewi System. Roughly half the service list had been name-only. | Chris |
 | 22 Sep 2026 | Review 113 (Paul S, Scholes S61, monocouche) + owner reply within the hour | Chris |
 | 23 Sep 2026 | **2nd in the local pack** for `plasterers sheffield`, from 9th on 20 Sep | — |
+| 23 Sep 2026 | **3 services added: Ecorend, Weber, Stud partitions.** Ecorend was the glaring one — K Rend was listed as a service and Ecorend was not, despite approved-applicator status and 13 pages of coverage. Stud partitions is on 48 pages and had never been listed. ⏰ **Next pack reading is the test of this batch — do not add more until it is read.** | Chris |
 
 ### ⬜ Services still to add to GBP — all evidenced on our own site
 
@@ -528,3 +529,29 @@ is actually on the scheme.
 | `dry lining sheffield` | |
 | `artex removal sheffield` | |
 | `ecorend approved applicator sheffield` | nobody has ever named a system in a review; this is the differentiator |
+
+### ⛔ 23 Sep 2026 — service areas: researched, and the answer is DON'T
+
+Chris asked whether to add more service areas to GBP. **No.** 2026 research is consistent across
+sources:
+
+- *"Service areas do not have any impact on rankings; all they do is show the user where you're
+  willing to travel to, and setting them in GBP will not help you rank in those areas."*
+- *"Adding too many service areas can actually harm your local pack performance… intentional
+  restraint concentrates relevance signals."*
+- *"Google's algorithm rewards focus, not slot-filling. Most small businesses do not need all 20
+  slots; treating the limit as a target is a common mistake."*
+
+So it is not merely neutral — **a broad list can dilute relevance and creates a mismatch between
+the claim and the actual work history.** Do not re-propose it.
+
+⚠ **Separate question, different answer: new TOWN PAGES on the website.** That is on-page content,
+not a GBP field, and it is not covered by the above. But the case for it is weak right now:
+**the 40 existing suburb pages produce 129 of 7,760 impressions — 1.7%** of visibility. Building
+Barnsley and Chesterfield pages is more of a thing that is not working.
+
+**The disciplined move instead: prove the model on the one town page he already has.**
+`rotherham-south-yorkshire` has **1 inbound internal link** against a site median of 14, and now
+carries **two genuine S61 customers** — Leamne Shortland (Thorpe Hesley) and Paul S (Scholes).
+Give it proper internal links and watch it for a month. If a town page with real reviews and
+normal linking still does nothing, that answers whether to build three more — for free.
