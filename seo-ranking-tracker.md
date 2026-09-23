@@ -440,3 +440,39 @@ Q&A · review reply rate.
 
 ⛔ Do NOT let the earlier "reviews are the biggest lever" line stand. It was wrong twice over: a
 competitor with ONE review outranks him, and the weighting puts reviews at 16% against GBP's 32%.
+
+### ⭐ 23 Sep 2026 — 9th to 2nd in the local pack for `plasterers sheffield`
+
+Re-measured on a **weekday**, as flagged on 20 Sep. Same search, same incognito method.
+
+| | reviews | shown as | pos |
+|---|---|---|---|
+| JSL PLASTERING | 54 | Open | 1 |
+| **Plaster and Rendering Solutions** | **113** | **Open** | **2** |
+| R.W Pro Plastering | 37 | Open | 3 |
+| Smoothcoat plastering and Rendering | **89** | **Closed** | 4 |
+| Daniel Begley Plastering | 33 | — | 5 |
+
+**Sunday 20 Sep, showing "Closed": 9th. Tuesday 23 Sep, showing "Open": 2nd.**
+
+⚠ **Do NOT bank this as "our changes moved him seven places."** Four things differ between the
+two readings and they cannot be separated from one observation:
+
+1. **Hours** — he now shows **Open** rather than "Closed · Opens 8am Mon"
+2. **The day itself** — Sunday vs Tuesday, which is the same variable
+3. 13 GBP service descriptions added 20-22 Sep
+4. Review count 112 → 113, with an owner reply inside the hour
+
+**The one thing this SERP does evidence, because it is a same-page control:**
+**Smoothcoat has 89 reviews and 20+ years in business, shows "Closed", and sits BELOW P&R at
+4th.** That is consistent with "open at the time of search" being the 5th strongest Local Pack
+factor, and it is the cleanest support we have for the hours change mattering.
+
+⛔ It also **retires the "TrueFinish with 1 review outranks him" finding** as a general claim.
+TrueFinish is not in the top five today. That Sunday reading was taken with him handicapped, and I
+built an argument on it — that review count is not the binding constraint. **The weighting
+argument still stands** (reviews ~16% vs GBP ~32%); the specific TrueFinish example does not.
+
+**What to do:** read it again next Tuesday, same time, same place. One weekday reading is not a
+trend any more than one Sunday reading was. If it holds at 2-3, the hours fix is the likeliest
+cause and GBP completeness is confirmed as the lever.
