@@ -151,9 +151,32 @@ Longitude:  -1.5440
 
 Ordered by what each is actually worth, not by how quick it is.
 
-- [ ] **Bing Places for Business** — bingplaces.com. Free. **Do this one first.** Bing's index is
-      what ChatGPT searches, so this is the only free listing that directly feeds AI search, which
-      is the stated priority. Almost certainly not claimed yet.
+- [ ] ⛔ **Bing Places — HE ALREADY HAS ONE, AND IT IS BROKEN.** Checked 19 Sep 2026. The listing
+      exists but is flagged **"This business is a duplicate of an existing business"** and cannot
+      publish — which is why its Views panel shows no data at all.
+      **It has been merged with a completely unrelated company:** *Universal plastering and
+      Rendering, 4 Tinker Road, Rotherham, S62 5EL, 07872692799.* Different name, town, postcode
+      district and phone.
+      ⛔ **DO NOT press "Request access" on the duplicate notice.** That form emails Chris's name
+      and address to **that other business's owner**, asking for owner access to **their** listing.
+      He was one click from it. The fix is to have the incorrect match removed, not to claim theirs.
+      **Route:** `https://www.bing.com/forbusiness/contactSupport` — live chat when open, otherwise
+      the same form raises a ticket and support replies by email. There is **no public support
+      email address**. Ask, in Microsoft's own moderator wording, to *"retain the published
+      Google-synced listing as the authoritative profile"* and *"remove or merge the duplicate"*,
+      and state plainly that he is **not** requesting access to the other business. **Keep the case
+      number.** Second route worth doing in parallel: Bing Maps → find *Universal plastering and
+      Rendering* → **Suggest an edit / Feedback** → report the incorrect merge.
+      ⏳ **Expect it to be slow.** Microsoft Q&A carries many threads on exactly this; one is titled
+      *"2 support tickets unanswered for 13+ days"* and a June 2026 thread has two official answers
+      and no recorded resolution.
+      **Once it is unlinked**, fix in one pass: Address is **blank** → `3 Rocher Close, Grenoside,
+      Sheffield, S35 8QP` (⛔ never the Chapeltown registered office); Email is **blank** →
+      `plastersolutionsltd@gmail.com`; categories read *"Home service, Building contractor, Home
+      service, Home service"* — three duplicates, and the GBP primary is **Plasterer**. Then press
+      **Sync with Google**, which last ran **34 weeks ago** — it will now pull the corrected hours
+      (Mon-Fri 07:00-20:00, Sat 07:00-17:00, Sun 09:00-16:00) and the 13 new service descriptions.
+      ⚠ Sync only AFTER the duplicate is resolved, or it syncs into the listing nobody sees.
 - [ ] **Apple Business Connect** — businessconnect.apple.com. Free. Feeds Apple Maps and Siri —
       every iPhone owner asking Siri for a plasterer in Sheffield.
 - [ ] **Yell** — a listing already exists (Andy's review is on it, handle `AndyB-3248`). This is a

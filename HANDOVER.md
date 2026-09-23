@@ -533,9 +533,10 @@ Only **11%** of domains are cited by both. Documented factors are source authori
 citation graph, structured-data parseability, question-answer concision and **cross-source
 consensus** — i.e. the same facts appearing in several independent places.
 
-Adding words to suburb pages moves none of those. **Bing Places** remains the highest-value
-free action, because Bing's index is what ChatGPT searches — and it is still unverified whether
-P&R is on it.
+Adding words to suburb pages moves none of those. **Bing Places** remains the highest-value free
+action, because Bing's index is what ChatGPT searches. ⚠ **It has since been checked and it is
+BROKEN** — the listing exists but is merged with an unrelated Rotherham company and cannot
+publish. Full detail and the exact support wording are in `CITATIONS-NAP.md`.
 
 ⚠ `sync-reviews.py` deliberately leaves the visible "100+" copy alone — it never goes stale
 while the real count is above 100. Do not "fix" it to 112.
