@@ -712,3 +712,16 @@ Only P3 Plastering is a competing plasterer. "Beat the competition" is partly "b
 With GBP now in good shape, **links and citations are the only large gap left — 22% of the
 weighting with nothing in it.** FreeIndex is dormant on 0 reviews at 157th of 403, and Bing is
 still merged into a Rotherham company's listing.
+
+### ⏰ Bing Places — ticket `7109243851`, raised 23 Sep 2026
+
+Chris raised it with Bing Places support. **Chase on this case number — opening a new ticket
+restarts the queue.** Replies come by email to `plastersolutionsltd@gmail.com`.
+
+**What was asked for:** retain the published Google-synced listing as authoritative, remove or
+merge the duplicate, and explicitly **not** access to the other business. The listing is merged
+with *Universal plastering and Rendering, 4 Tinker Road, Rotherham, S62 5EL* — unrelated.
+
+⏳ Microsoft Q&A threads on this exact problem show tickets running 13+ days with some never
+resolved, so do not read silence as failure. Full detail, the cleanup steps for once it is
+unlinked, and the ⛔ "Request access" trap are all in `CITATIONS-NAP.md`.

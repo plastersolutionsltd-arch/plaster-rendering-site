@@ -160,6 +160,8 @@ Ordered by what each is actually worth, not by how quick it is.
       ⛔ **DO NOT press "Request access" on the duplicate notice.** That form emails Chris's name
       and address to **that other business's owner**, asking for owner access to **their** listing.
       He was one click from it. The fix is to have the incorrect match removed, not to claim theirs.
+      ⏰ **TICKET RAISED 23 Sep 2026 — case number `7109243851`.** Chase on this number; a new
+      ticket restarts the queue. Support replies by email to plastersolutionsltd@gmail.com.
       **Route:** `https://www.bing.com/forbusiness/contactSupport` — live chat when open, otherwise
       the same form raises a ticket and support replies by email. There is **no public support
       email address**. Ask, in Microsoft's own moderator wording, to *"retain the published
