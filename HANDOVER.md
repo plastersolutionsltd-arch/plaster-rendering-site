@@ -805,3 +805,18 @@ system** — Chris hasn't said which system each job was. Heroes: Halfway + Beig
 (NW), Stannington (N), Crosspool (SW), /rendering-sheffield (S). The old Stannington/Wadsley/Crosspool
 heroes were plastered rooms under alts claiming render. None of the 5 is one of the six hidden
 gallery jobs. `-t` thumbs exist so they can join the gallery once Chris gives each one's system.
+
+### 26 Sep 2026 — Search Console export read (3 months to 24 Sep, Web)
+- 289 clicks / 25.3K impr / 1.1% CTR / avg pos ~21.2 (24 Aug: 262 / 22.2K / 1.2% / 21.5).
+  **Mobile pos 12.7 vs desktop 27** — desktop impressions drag the headline. Last 30 days pos 18.7,
+  best of the three months.
+- Homepage = 167 of 294 clicks at pos 13. Service pages sit at 32-40 (silicone 36, monocouche 34,
+  rendering 35, EWI 32, render-repair 40). Rendering queries avg pos 25 vs plastering 13.5.
+  **Monocouche: 86 queries, 0 clicks.**
+- Near page 1: plasterers sheffield 9.4 (802), plasterer sheffield 7.8, rendering near me 7.5,
+  rendering sheffield 13.8 (669). Pos ~2 with 0 clicks on "plasterer near me" / "plastering
+  contractor sheffield" — probably map pack taps to Call; confirm in GBP Performance.
+- ⛔ **`/plastering-cost-sheffield` had ZERO impressions since June — confirmed NOT indexed** in URL
+  Inspection (live test passes). Indexing requested 26 Sep, plus the 6 re-heroed pages. Reason not
+  yet read (GOOGLE INDEX tab). If "Crawled/Duplicate", it overlaps /pricing — differentiate it.
+  Re-check in ~2 weeks.
