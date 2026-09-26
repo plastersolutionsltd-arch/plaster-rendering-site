@@ -770,14 +770,26 @@ desktop hero unconditionally. Fixed with `%20` + a media-split preload. Monocouc
   sideways at 1280). Fixed with an inline fr rule per page; app.css is cached immutable, don't edit it.
 - Two existing `-m` files were really 1800/1510px; `burncross-ewi-m` was 418KB. All now 900px.
 
-**Still open:**
-- **Analytics (gtag, 172KB) is now the main competitor on home**: blocking it takes hero LCP ~2.1s →
-  1.3s. Deferring it to after `load` would lose some bounced visits from GA. Chris's call.
-- `eccesfield-silicone1.webp` is only **229px wide** — soft on every device. Needs the original photo.
-- HTML is served `cache-control: no-store` → no back/forward cache. One header in `vercel.json`.
-- 4 FAQ question names differ slightly from the visible question (wording only).
-- `sheffield.gov.uk/planning` 301s to `/planning-development` (2 pages). Not broken.
-- broomhill overflow is now 3px at 390 (was 10). Still cosmetic, never mask it.
+**✅ Second pass, same day — all live and verified:**
+- ⛔ **7 area pages had lost their "Other Areas We Cover" links** (broomhill, firth-park, gleadless,
+  lodge-moor, loxley, nether-edge, sharrow): `onmouseout="...0.65)'>` was missing its closing `"`,
+  so the parser swallowed the markup — **0-2 of 10-13 links existed in the DOM**. 81 links restored.
+  A broken-link crawl CANNOT see this (the links never exist). Check it by comparing `<a` count in
+  source vs DOM. Also the real cause of broomhill's overflow (the CTA was nested in the link row).
+- 16 image preloads on 11 area pages named photos the page no longer shows; rebuilt to the hero.
+- Undersized `-m` copies regenerated at 900px from larger sources; Southey `-m` is a portrait crop.
+- Wincobank hero was the 229px Ecclesfield *silicone* photo captioned "monocouche S5"; now the
+  Ecclesfield monocouche photo with an Ecclesfield alt.
+- gtag now loads after `load` (page_view still sent, verified); home HTML is `max-age=0,
+  must-revalidate` instead of no-store (bfcache works); 4 FAQ schema names match the page; council link.
+
+**⏳ Photos Chris needs to find (all 229px Checkatrade thumbnails, no larger copy exists anywhere):**
+Six gallery entries are **commented out** in `projects.html` (search `HIDDEN 26 Sep`) — Millhouses
+silicone, Ecclesfield silicone, Woodseats silicone, Bradway silicone, Shirecliffe monocouche, Fulwood
+plastering. To restore one: drop in a >=1200px photo, make `-m` (900w) and `-t` (240w), uncomment,
+and bump the filter counts + the "N completed projects" text + home "View All N Projects".
+Also soft: `millhouses-silicone.webp` card on render-repair; Stannington and Crosspool heroes
+(`-hero-b`, 573px, deliberately chosen room shots).
 
 **False alarms from my own crawler, do not re-raise:** "nan" matches mai*nten*ance; GA collect
 ERR_ABORTED is the beacon cut off at context close; colour-swatch labels at opacity 0 are
