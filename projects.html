@@ -726,7 +726,7 @@
     </div>
     <div class="grid md:grid-cols-2 gap-5">
       <a href="/sandygate-silicone-render-case-study" class="relative rounded-2xl overflow-hidden no-underline block" style="min-height:280px">
-        <img src="/images/case-studies/sandygate-back.webp" alt="Silicone render case study in Sandygate Sheffield S10 by P&R Solutions" class="absolute inset-0 w-full h-full object-cover" loading="lazy" width="1400" height="1050" />
+        <picture><source media="(max-width:768px)" srcset="/images/case-studies/sandygate-back-m.webp" type="image/webp"><img src="/images/case-studies/sandygate-back.webp" alt="Silicone render case study in Sandygate Sheffield S10 by P&R Solutions" class="absolute inset-0 w-full h-full object-cover" loading="lazy" width="1400" height="1050" /></picture>
         <div class="absolute inset-0" style="background:linear-gradient(to top,rgba(0,0,0,.94) 0%,rgba(0,0,0,.62) 48%,rgba(0,0,0,.28) 78%,rgba(0,0,0,.20) 100%)"></div>
         <div class="relative z-10 flex flex-col justify-end p-6 lg:p-8" style="min-height:280px">
           <div class="font-display text-[10px] font-bold tracking-[.25em] uppercase mb-1.5" style="color:#00FF00">Case Study · Silicone Render</div>
@@ -736,7 +736,7 @@
         </div>
       </a>
       <a href="/s17-ewi-case-study" class="relative rounded-2xl overflow-hidden no-underline block" style="min-height:280px">
-        <img src="/images/case-studies/millhouses-ewi-after-16.webp" alt="External wall insulation and silicone render case study in S17 Sheffield by P&R Solutions" class="absolute inset-0 w-full h-full object-cover" loading="lazy" width="1600" height="1200" />
+        <picture><source media="(max-width:768px)" srcset="/images/case-studies/millhouses-ewi-after-16-m.webp" type="image/webp"><img src="/images/case-studies/millhouses-ewi-after-16.webp" alt="External wall insulation and silicone render case study in S17 Sheffield by P&R Solutions" class="absolute inset-0 w-full h-full object-cover" loading="lazy" width="1600" height="1200" /></picture>
         <div class="absolute inset-0" style="background:linear-gradient(to top,rgba(0,0,0,.94) 0%,rgba(0,0,0,.62) 48%,rgba(0,0,0,.28) 78%,rgba(0,0,0,.20) 100%)"></div>
         <div class="relative z-10 flex flex-col justify-end p-6 lg:p-8" style="min-height:280px">
           <div class="font-display text-[10px] font-bold tracking-[.25em] uppercase mb-1.5" style="color:#00FF00">Case Study · External Wall Insulation</div>
@@ -1090,8 +1090,12 @@ function show(i, animate = true) {
   updateThumbs();
 }
 
+// Phones get the 900px copy, thumbnails the 240px one; desktop keeps the original.
+const imgVariant = (src, suffix) => src.replace(/\.webp$/, suffix + '.webp');
+const phoneMQ = window.matchMedia('(max-width:768px)');
+
 function loadProject(p, img) {
-  img.src = p.img;
+  img.src = phoneMQ.matches ? imgVariant(p.img, '-m') : p.img;
   img.alt = `${p.label} in ${p.loc} — P&R Solutions Sheffield`;
 
   // Big faded number on image
@@ -1158,7 +1162,7 @@ function buildThumbs() {
   strip.innerHTML = filtered.map((p, i) => `
     <button class="thumb-btn ${i === idx ? 'active' : ''}" onclick="show(${i})" title="${p.loc}"
       style="animation-delay:${Math.min(i * 35, 600)}ms">
-      <img src="${p.img}" alt="${p.label} in ${p.loc} by P&R Solutions Sheffield" loading="lazy" />
+      <img src="${imgVariant(p.img, '-t')}" alt="${p.label} in ${p.loc} by P&R Solutions Sheffield" loading="lazy" />
     </button>
   `).join('');
 }
