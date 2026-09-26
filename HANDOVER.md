@@ -728,7 +728,7 @@ unlinked, and the ⛔ "Request access" trap are all in `CITATIONS-NAP.md`.
 
 ### 26 Sep 2026 — Rose Ward, silicone render, Crosspool
 
-- 5 star, notified 25 Sep. Captured in full from the GBP panel; the email cut it at "went above...".
+- 5 star, left 22 Sep; Google's email only arrived 25 Sep (confirmed late), so date reviews off the panel, not the email. Captured in full from the GBP panel; the email cut it at "went above...".
   **Crosspool is supplied by Chris, not in her words** — it appears only on the card's caption line
   ("Silicone render · Crosspool S10"), same pattern as Gary Mason on Grenoside.
 - Live on `/crosspool-sheffield` as a visible card + `Review` node. The page had **zero** review
