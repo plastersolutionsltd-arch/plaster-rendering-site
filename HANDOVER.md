@@ -795,3 +795,13 @@ Also soft: `millhouses-silicone.webp` card on render-repair; Stannington and Cro
 ERR_ABORTED is the beacon cut off at context close; colour-swatch labels at opacity 0 are
 `.reveal` items off-screen in a horizontal scroller (they show on swipe); `/about` "100+" is
 deliberate; PageSpeed API returns 429 without a key (shared quota), so measure with Playwright.
+
+### 26 Sep 2026 (late) — six heroes replaced with Chris's own photos
+Chris supplied 5 x 4032px iPhone job photos (Desktop, IMG_3486/3540/3646/4147/4679). Published as
+`images/case-studies/render-{southeast,north,southwest,south,northwest}-sheffield{,-m,-t}.webp`,
+**EXIF/GPS stripped** (verified on the live file), house number on the SW gatepost blurred, a finger
+cropped off. Area comes from the photo GPS, so alts say "southeast Sheffield" etc. and **name no
+system** — Chris hasn't said which system each job was. Heroes: Halfway + Beighton (SE), Wadsley
+(NW), Stannington (N), Crosspool (SW), /rendering-sheffield (S). The old Stannington/Wadsley/Crosspool
+heroes were plastered rooms under alts claiming render. None of the 5 is one of the six hidden
+gallery jobs. `-t` thumbs exist so they can join the gallery once Chris gives each one's system.
