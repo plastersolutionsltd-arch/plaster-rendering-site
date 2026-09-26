@@ -735,3 +735,33 @@ unlinked, and the ⛔ "Request access" trap are all in `CITATIONS-NAP.md`.
   cards despite 27 silicone mentions. Schema == visible == panel text, all exact.
 - ⏳ **Review count still 113, deliberately.** The reply modal covered the panel number. Read it off
   the profile and run `python3 sync-reviews.py <n>`; never derive it by adding one.
+
+## Full audit — 26 Sep 2026 (live crawl, 65 pages, mobile browser)
+
+**Clean:** every page 200, redirects correct (http/apex/.html/trailing slash all 308 to one URL),
+private `.md`/`.py` unreachable, 0 JS errors, 0 broken images, 0 broken internal links, every
+JSON-LD block parses, 1 H1 per page, 0 duplicate titles/descriptions, all descriptions 70-160,
+review count 114 everywhere, all 33 review nodes (16 pages) visible on their page, phone and
+S35 8QP consistent in every schema block, Saturday hours 07-17 match GBP, CLS ~0 on all pages.
+
+**✅ Fixed + verified live:** 10 `srcset`s on monocouche/EWI/dry-lining had a **space in the
+filename** (`monocouche service-m.webp`). A space splits a srcset into URL + bogus descriptor, the
+browser drops the `<source>` and phones load the DESKTOP image. Monocouche also preloaded its
+desktop hero unconditionally. Fixed with `%20` + a media-split preload. Monocouche on a phone:
+2.0MB → 1.3MB. ⚠ **Any new image with a space in its name must be `%20`-encoded in srcset.**
+
+**Open, measured (throttled 4G, 4x CPU):**
+- Home LCP 3.3s, `/projects` LCP 3.9s (Google "good" < 2.5s). Every other page tested ~0.9-1.2s.
+- `/projects` sends **3.3MB** of images to a phone; `sandygate-silicone-back2.webp` alone is 860KB.
+  The gallery has no `-m` variants. Home line ~1179 uses full `sandygate-back.webp` (158KB) lazily.
+- Monocouche still 1.3MB: `dore-monocouche.webp` 339KB, `dronfield-monocouche.webp` 256KB, no `-m`.
+- HTML is served `cache-control: no-store`, which makes every page ineligible for the back/forward
+  cache — the back button reloads the page over the network.
+- 4 FAQ question names still differ slightly from the visible question (wording only).
+- `sheffield.gov.uk/planning` 301s to `/planning-development` (2 pages). Not broken.
+- broomhill overflow is now 3px (was 10). Still cosmetic, still never mask it.
+
+**False alarms from my own crawler, do not re-raise:** "nan" matches mai*nten*ance; GA collect
+ERR_ABORTED is the beacon cut off at context close; colour-swatch labels at opacity 0 are
+`.reveal` items off-screen in a horizontal scroller (they show on swipe); `/about` "100+" is
+deliberate; PageSpeed API returns 429 without a key (shared quota), so measure with Playwright.
