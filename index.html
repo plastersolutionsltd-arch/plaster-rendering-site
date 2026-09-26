@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script>document.documentElement.classList.add('lazybg')</script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-1DSC8GHLQ0"></script>
 <script>
@@ -476,19 +477,19 @@
     .cmp-card:hover .cmp-img-inner { transform: scale(1.07); }
     /* Card art. Full-size files desktop; phones get the -m variants (CSS backgrounds
        can't use srcset, so these were shipping the desktop file to mobile). */
-    .cmp-img-silicone  { background-image: url('/images/hero/silicone-service.webp'); }
-    .cmp-img-mono      { background-image: url('/images/case-studies/dore-monocouche.webp'); }
-    .cmp-img-ewi       { background-image: url('/images/hero/IMG_3979.webp'); }
-    .cmp-img-plaster   { background-image: url('/images/hero/plasteringhero.webp'); }
-    .cmp-img-repair    { background-image: url('/images/case-studies/s17-close-up-detail.webp'); }
-    .cmp-img-drylining { background-image: url('/images/case-studies/drylining-service.webp'); }
+    html:not(.lazybg) .cmp-img-silicone, .cmp-img-silicone.bg-ready  { background-image: url('/images/hero/silicone-service.webp'); }
+    html:not(.lazybg) .cmp-img-mono, .cmp-img-mono.bg-ready      { background-image: url('/images/case-studies/dore-monocouche.webp'); }
+    html:not(.lazybg) .cmp-img-ewi, .cmp-img-ewi.bg-ready       { background-image: url('/images/hero/IMG_3979.webp'); }
+    html:not(.lazybg) .cmp-img-plaster, .cmp-img-plaster.bg-ready   { background-image: url('/images/hero/plasteringhero.webp'); }
+    html:not(.lazybg) .cmp-img-repair, .cmp-img-repair.bg-ready    { background-image: url('/images/case-studies/s17-close-up-detail.webp'); }
+    html:not(.lazybg) .cmp-img-drylining, .cmp-img-drylining.bg-ready { background-image: url('/images/case-studies/drylining-service.webp'); }
     @media (max-width: 640px) {
-      .cmp-img-silicone  { background-image: url('/images/hero/silicone-service-m.webp'); }
-      .cmp-img-mono      { background-image: url('/images/case-studies/dore-monocouche-m.webp'); }
-      .cmp-img-ewi       { background-image: url('/images/hero/IMG_3979-m.webp'); }
-      .cmp-img-plaster   { background-image: url('/images/hero/plasteringhero-m.webp'); }
-      .cmp-img-repair    { background-image: url('/images/case-studies/s17-close-up-detail-m.webp'); }
-      .cmp-img-drylining { background-image: url('/images/case-studies/drylining-service-m.webp'); }
+      html:not(.lazybg) .cmp-img-silicone, .cmp-img-silicone.bg-ready  { background-image: url('/images/hero/silicone-service-m.webp'); }
+      html:not(.lazybg) .cmp-img-mono, .cmp-img-mono.bg-ready      { background-image: url('/images/case-studies/dore-monocouche-m.webp'); }
+      html:not(.lazybg) .cmp-img-ewi, .cmp-img-ewi.bg-ready       { background-image: url('/images/hero/IMG_3979-m.webp'); }
+      html:not(.lazybg) .cmp-img-plaster, .cmp-img-plaster.bg-ready   { background-image: url('/images/hero/plasteringhero-m.webp'); }
+      html:not(.lazybg) .cmp-img-repair, .cmp-img-repair.bg-ready    { background-image: url('/images/case-studies/s17-close-up-detail-m.webp'); }
+      html:not(.lazybg) .cmp-img-drylining, .cmp-img-drylining.bg-ready { background-image: url('/images/case-studies/drylining-service-m.webp'); }
     }
     .cmp-img::after { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 70% 20%, rgba(255,255,255,0.13) 0%, transparent 55%), linear-gradient(to bottom, transparent 50%, #131313 100%); pointer-events: none; z-index: 1; }
     .cmp-card.featured .cmp-img::after { background: radial-gradient(circle at 70% 20%, rgba(255,255,255,0.13) 0%, transparent 55%), linear-gradient(to bottom, transparent 50%, #131a11 100%); }
@@ -1832,5 +1833,14 @@
 </script>
 
 
+<script>
+/* Service-card photos are CSS backgrounds (no loading="lazy"), sitting 5,700px+ down
+   the page; they were competing with the hero photo. Give each its image near view. */
+(function(){var els=document.querySelectorAll('.cmp-img-inner');
+ function on(e){e.classList.add('bg-ready')}
+ if(!('IntersectionObserver' in window)){els.forEach(on);return}
+ var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){on(x.target);io.unobserve(x.target)}})},{rootMargin:'600px 0px'});
+ els.forEach(function(e){io.observe(e)});})();
+</script>
 </body>
 </html>
