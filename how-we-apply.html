@@ -2,7 +2,14 @@
 <html lang="en">
 <head>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-1DSC8GHLQ0"></script>
+<script>
+  /* gtag loads after the page so its 170KB doesn't compete with the hero photo; calls made
+     before then queue in dataLayer and send when it arrives. */
+  window.addEventListener('load', function () { setTimeout(function () {
+    var s = document.createElement('script'); s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-1DSC8GHLQ0'; document.head.appendChild(s);
+  }, 0); });
+</script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -263,7 +270,7 @@
     },
     {
       "@type": "Question",
-      "name": "How long does fresh plaster take to dry?",
+      "name": "How long does fresh plaster take to dry before decorating?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Fresh plaster typically takes 2–4 weeks to fully dry depending on thickness, temperature, and ventilation."

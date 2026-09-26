@@ -2,7 +2,14 @@
 <html lang="en">
 <head>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-1DSC8GHLQ0"></script>
+<script>
+  /* gtag loads after the page so its 170KB doesn't compete with the hero photo; calls made
+     before then queue in dataLayer and send when it arrives. */
+  window.addEventListener('load', function () { setTimeout(function () {
+    var s = document.createElement('script'); s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-1DSC8GHLQ0'; document.head.appendChild(s);
+  }, 0); });
+</script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -407,7 +414,8 @@
 }
   </script>
 
-  <link rel="preload" as="image" href="/images/case-studies/meersbrook-plastering.webp" type="image/webp" fetchpriority="high" />
+  <link rel="preload" as="image" href="/images/case-studies/meersbrook-hero-m.webp" media="(max-width:768px)" type="image/webp" fetchpriority="high" />
+  <link rel="preload" as="image" href="/images/case-studies/meersbrook-hero.webp" media="(min-width:769px)" type="image/webp" fetchpriority="high" />
   <link rel="stylesheet" href="/app.57e2705a.css">
   <noscript></noscript>
 

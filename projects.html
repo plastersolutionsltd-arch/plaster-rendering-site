@@ -2,7 +2,14 @@
 <html lang="en">
 <head>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-1DSC8GHLQ0"></script>
+<script>
+  /* gtag loads after the page so its 170KB doesn't compete with the hero photo; calls made
+     before then queue in dataLayer and send when it arrives. */
+  window.addEventListener('load', function () { setTimeout(function () {
+    var s = document.createElement('script'); s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-1DSC8GHLQ0'; document.head.appendChild(s);
+  }, 0); });
+</script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -16,7 +23,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 
   <title>Plastering &amp; Rendering Projects Sheffield | P&amp;R Solutions</title>
-  <meta name="description" content="64 completed plastering and rendering projects across Sheffield — silicone render, monocouche, EWI and plastering. Browse by service, see real results." />
+  <meta name="description" content="58 completed plastering and rendering projects across Sheffield — silicone render, monocouche, EWI and plastering. Browse by service, see real results." />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <link rel="canonical" href="https://www.plasterandrenderingsolutions.co.uk/projects" />
   <link rel="preload" as="font" type="font/woff2" href="/fonts/outfit-var.woff2" crossorigin>
@@ -24,7 +31,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.plasterandrenderingsolutions.co.uk/projects" />
   <meta property="og:title" content="Our Projects | Plastering &amp; Rendering Sheffield | P&amp;R Solutions" />
-  <meta property="og:description" content="64 completed plastering and rendering projects across Sheffield. Silicone render, monocouche, EWI, plastering — filter by service and see real results." />
+  <meta property="og:description" content="58 completed plastering and rendering projects across Sheffield. Silicone render, monocouche, EWI, plastering — filter by service and see real results." />
   <meta property="og:image" content="https://www.plasterandrenderingsolutions.co.uk/images/case-studies/wentworth-after.webp" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:alt" content="Completed plastering and rendering project by P&amp;R Solutions Sheffield" />
@@ -32,7 +39,7 @@
   <meta property="og:site_name" content="Plaster and Rendering Solutions Limited" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Our Projects | P&amp;R Solutions Sheffield" />
-  <meta name="twitter:description" content="64 completed plastering and rendering projects across Sheffield. Browse silicone render, monocouche, EWI and plastering." />
+  <meta name="twitter:description" content="58 completed plastering and rendering projects across Sheffield. Browse silicone render, monocouche, EWI and plastering." />
   <meta name="twitter:image" content="https://www.plasterandrenderingsolutions.co.uk/images/case-studies/wentworth-after.webp" />
 
   <script type="application/ld+json">
@@ -253,7 +260,7 @@
       "@id": "https://www.plasterandrenderingsolutions.co.uk/projects",
       "url": "https://www.plasterandrenderingsolutions.co.uk/projects",
       "name": "Our Projects | Silicone Render & Plastering Sheffield | P&R Solutions",
-      "description": "64 completed plastering and rendering projects across Sheffield — silicone render, monocouche, EWI and plastering. Browse by service, see real results.",
+      "description": "58 completed plastering and rendering projects across Sheffield — silicone render, monocouche, EWI and plastering. Browse by service, see real results.",
       "inLanguage": "en-GB",
       "isPartOf": {
         "@type": "WebSite",
@@ -754,19 +761,19 @@
   <div class="max-w-7xl mx-auto" style="padding:0 24px">
     <div class="flex flex-wrap gap-2" id="svc-tabs">
       <button class="svc-btn active" data-svc="all" onclick="setSvc(this,'all')" style="background:#00FF00;color:#000;border-color:transparent">
-        <span class="dot" style="background:rgba(0,0,0,0.3)"></span>All Projects<span class="svc-count">64</span>
+        <span class="dot" style="background:rgba(0,0,0,0.3)"></span>All Projects<span class="svc-count">58</span>
       </button>
       <button class="svc-btn" data-svc="silicone" onclick="setSvc(this,'silicone')">
-        <span class="dot" style="background:#00FF00"></span>Silicone Render<span class="svc-count">22</span>
+        <span class="dot" style="background:#00FF00"></span>Silicone Render<span class="svc-count">18</span>
       </button>
       <button class="svc-btn" data-svc="monocouche" onclick="setSvc(this,'monocouche')">
-        <span class="dot" style="background:#F59E0B"></span>Monocouche<span class="svc-count">17</span>
+        <span class="dot" style="background:#F59E0B"></span>Monocouche<span class="svc-count">14</span>
       </button>
       <button class="svc-btn" data-svc="ewi" onclick="setSvc(this,'ewi')">
         <span class="dot" style="background:#3B82F6"></span>EWI<span class="svc-count">8</span>
       </button>
       <button class="svc-btn" data-svc="plastering" onclick="setSvc(this,'plastering')">
-        <span class="dot" style="background:#A855F7"></span>Plastering<span class="svc-count">17</span>
+        <span class="dot" style="background:#A855F7"></span>Plastering<span class="svc-count">16</span>
       </button>
       <button class="svc-btn" data-svc="drylining" onclick="setSvc(this,'drylining')">
         <span class="dot" style="background:#64748B"></span>Dry Lining<span class="svc-count">2</span>
@@ -792,7 +799,7 @@
 
       <!-- Image panel -->
       <div class="showcase-img-wrap">
-        <span id="counter-badge">1 / 60</span>
+        <span id="counter-badge">1 / 58</span>
         <div id="proj-num">01</div>
         <button id="arr-prev" class="arr-btn" onclick="navigate(-1)" aria-label="Previous project">&#8592;</button>
         <button id="arr-next" class="arr-btn" onclick="navigate(1)" aria-label="Next project">&#8594;</button>
@@ -852,7 +859,7 @@
     <!-- Nav strip -->
     <div class="nav-strip">
       <button id="btn-prev" class="nav-btn" onclick="navigate(-1)">&#8592; Previous</button>
-      <p id="nav-counter" class="font-display"><span class="nc-cur">1</span> of <span id="nav-total">60</span></p>
+      <p id="nav-counter" class="font-display"><span class="nc-cur">1</span> of <span id="nav-total">58</span></p>
       <button id="btn-next" class="nav-btn" onclick="navigate(1)">Next &#8594;</button>
     </div>
 
@@ -964,12 +971,16 @@ const PROJECTS = [
   {id:1,  svc:'silicone',   col:'white', label:'Silicone Render', colLabel:'White',          hex:'#f0f0f0', loc:'Fulwood, S10',      brand:'K Rend',  desc:'K Rend silicone render in white on a Fulwood S10 detached. Full scaffold, corner beading, reinforced base coat and K Rend HP14 silicone finish coat. Scaffolding erected and struck by our own team — no subcontractors.',                                                                                img:'/images/case-studies/fulwood-silicone-r.webp'},
   {id:2,  svc:'silicone',   col:'white', label:'Silicone Render', colLabel:'White',          hex:'#f0f0f0', loc:'Fulwood, S10',      brand:'Ecorend', desc:'Ecorend silicone render in brilliant white on a second Fulwood property. Window reveals, soffit beads and door surround all included. Ready for occupation same week.',                                                                                                                                   img:'/images/case-studies/fulwood-silicone2.webp'},
   {id:3,  svc:'silicone',   col:'white', label:'Silicone Render', colLabel:'White',          hex:'#f0f0f0', loc:'Norton, S8',        brand:'K Rend',  desc:'White K Rend silicone render replacing cracked and blown pebble-dash on a 1930s Norton S8 semi-detached. Full strip-back, PVC stop beads, reinforced mesh base coat and K Rend silicone topcoat — 25-year manufacturer warranty.',                                                                       img:'/images/case-studies/norton-silicone.webp'},
-  {id:4,  svc:'silicone',   col:'white', label:'Silicone Render', colLabel:'White',          hex:'#f0f0f0', loc:'Millhouses, S7',    brand:'Ecorend', desc:'White Ecorend silicone render on a Millhouses S7 detached. Full scaffold, new stainless drip beads, mesh reinforcement and two-coat silicone system.',                                                                                                                                                    img:'/images/case-studies/millhouses-silicone.webp'},
+  // HIDDEN 26 Sep 2026: 229px photo, blurry at full width. Restore when Chris sends a larger original.
+  // {id:4,  svc:'silicone',   col:'white', label:'Silicone Render', colLabel:'White',          hex:'#f0f0f0', loc:'Millhouses, S7',    brand:'Ecorend', desc:'White Ecorend silicone render on a Millhouses S7 detached. Full scaffold, new stainless drip beads, mesh reinforcement and two-coat silicone system.',                                                                                                                                                    img:'/images/case-studies/millhouses-silicone.webp'},
   {id:5,  svc:'silicone',   col:'cream', label:'Silicone Render', colLabel:'Cream',          hex:'#EDE7C8', loc:'Mosborough, S20',   brand:'K Rend',  desc:'Full exterior rewrap in cream K Rend silicone render combined with 90mm EWI upgrade on a Mosborough S20 detached. Thermal performance improved from EPC D to B. Completed in 7 working days including scaffold.',                                                                                      img:'/images/case-studies/mosborough-silicone.webp'},
   {id:6,  svc:'silicone',   col:'white', label:'Silicone Render', colLabel:'Brilliant White',hex:'#f5f5f5', loc:'Hillsborough, S6',  brand:'Weber',   desc:'Brilliant white Weber silicone render transforming a 1970s Hillsborough S6 semi-detached. Total exterior makeover from crumbling sand-and-cement to a smooth, weather-resistant silicone finish with 25-year guarantee.',                                                                               img:'/images/case-studies/hillsborough-silicone-hero.webp'},
-  {id:7,  svc:'silicone',   col:'white', label:'Silicone Render', colLabel:'White',          hex:'#f0f0f0', loc:'Ecclesfield, S35',  brand:'Ecorend', desc:'White Ecorend silicone render on an Ecclesfield S35 detached — our home postcode. Survey to completion in 4 working days. Scaffolding, full mesh base coat, silicone finish and complete tidy-up all included in one fixed price.',                                                                  img:'/images/case-studies/eccesfield-silicone1.webp'},
-  {id:8,  svc:'silicone',   col:'grey',  label:'Silicone Render', colLabel:'Mid Grey',       hex:'#7a7a7a', loc:'Woodseats, S8',     brand:'K Rend',  desc:'Mid grey K Rend silicone render on a Woodseats S8 semi-detached. Old pebble-dash removed before rendering. Completed within 4 working days.',                                                                                                                                                            img:'/images/case-studies/woodseats-silicone1.webp'},
-  {id:9,  svc:'silicone',   col:'white', label:'Silicone Render', colLabel:'White',          hex:'#f0f0f0', loc:'Bradway, S17',      brand:'K Rend',  desc:'White K Rend silicone render on a Bradway S17 semi-detached. Old blown pebble-dash fully removed, expanded metal lath fixed to masonry, reinforced base coat applied and K Rend silicone finish coat. No deposit, fixed price quoted upfront.',                                                        img:'/images/case-studies/bradway-silicone.webp'},
+  // HIDDEN 26 Sep 2026: 229px photo, blurry at full width. Restore when Chris sends a larger original.
+  // {id:7,  svc:'silicone',   col:'white', label:'Silicone Render', colLabel:'White',          hex:'#f0f0f0', loc:'Ecclesfield, S35',  brand:'Ecorend', desc:'White Ecorend silicone render on an Ecclesfield S35 detached — our home postcode. Survey to completion in 4 working days. Scaffolding, full mesh base coat, silicone finish and complete tidy-up all included in one fixed price.',                                                                  img:'/images/case-studies/eccesfield-silicone1.webp'},
+  // HIDDEN 26 Sep 2026: 229px photo, blurry at full width. Restore when Chris sends a larger original.
+  // {id:8,  svc:'silicone',   col:'grey',  label:'Silicone Render', colLabel:'Mid Grey',       hex:'#7a7a7a', loc:'Woodseats, S8',     brand:'K Rend',  desc:'Mid grey K Rend silicone render on a Woodseats S8 semi-detached. Old pebble-dash removed before rendering. Completed within 4 working days.',                                                                                                                                                            img:'/images/case-studies/woodseats-silicone1.webp'},
+  // HIDDEN 26 Sep 2026: 229px photo, blurry at full width. Restore when Chris sends a larger original.
+  // {id:9,  svc:'silicone',   col:'white', label:'Silicone Render', colLabel:'White',          hex:'#f0f0f0', loc:'Bradway, S17',      brand:'K Rend',  desc:'White K Rend silicone render on a Bradway S17 semi-detached. Old blown pebble-dash fully removed, expanded metal lath fixed to masonry, reinforced base coat applied and K Rend silicone finish coat. No deposit, fixed price quoted upfront.',                                                        img:'/images/case-studies/bradway-silicone.webp'},
   {id:10, svc:'silicone',   col:'cream', label:'Silicone Render', colLabel:'Warm Cream',     hex:'#E8DFC0', loc:'Chesterfield',      brand:'Baumit',  desc:'Warm cream Baumit Nanopor silicone render on a Chesterfield town house. Baumit system with 25-year manufacturer warranty on the product. All beads, reveals and window surrounds included in the fixed price.',                                                                                      img:'/images/case-studies/silicone chesterfield.webp'},
   {id:12, svc:'silicone',   col:'white', label:'Silicone Render', colLabel:'Brilliant White', hex:'#f5f5f5', loc:'Sandygate, S10',    brand:'K Rend',  desc:'K Rend silicone render in brilliant white on a Sandygate Road S10 detached — one of Sheffield\'s most sought-after streets. Full scaffold, strip-back, mesh and silicone finish. Completed within 5 days.',                                                                                     img:'/images/case-studies/case/sandygate-silicone.webp'},
   {id:13, svc:'silicone',   col:'white', label:'Silicone Render', colLabel:'White',          hex:'#f0f0f0', loc:'Sandygate, S10',    brand:'Ecorend', desc:'Second Sandygate S10 job — Ecorend silicone render in white on a neighbouring detached. Back-to-back with the adjacent property, allows scaffold sharing. Clean white finish with stainless beads throughout.',                                                                                      img:'/images/case-studies/case/sandygate-silicone2.webp'},
@@ -992,7 +1003,8 @@ const PROJECTS = [
   {id:25, svc:'monocouche', col:'grey',  label:'Monocouche',      colLabel:'Grey',           hex:'#7a7a7a', loc:'Greenhill, S8',     brand:'Ecorend', desc:'Ecorend grey monocouche on a Greenhill S8 semi-detached. Contemporary grey finish complementing the black window frames. Demonstrates our colour-matching capability — we always sample on-site before committing to a batch.',                                                               img:'/images/case-studies/greenhill-monocouche-r.webp'},
   {id:27, svc:'monocouche', col:'cream', label:'Monocouche',      colLabel:'Cream',          hex:'#EDE7C8', loc:'Stocksbridge, S36', brand:'K Rend',  desc:'Warm cream K Rend monocouche on a Stocksbridge S36 property — one of the most popular colours in the S36 valley towns where properties often match the local stone character.',                                                                                                                img:'/images/case-studies/stocksbridge-monocouche.webp'},
   {id:28, svc:'monocouche', col:'grey',  label:'Monocouche',      colLabel:'Light Grey',     hex:'#9a9a9a', loc:'Grenoside, S35',    brand:'Baumit',  desc:'Light grey Baumit monocouche scratch render on our home turf in Grenoside S35. Full scaffold, new stainless window beads and clean scratch finish. Grenoside is our base — we often get same-day survey responses here.',                                                                   img:'/images/case-studies/grenoside-monocouche.webp'},
-  {id:29, svc:'monocouche', col:'grey',  label:'Monocouche',      colLabel:'Anthracite',     hex:'#444',    loc:'Shirecliffe, S5',   brand:'K Rend',  desc:'Bold anthracite K Rend monocouche scratch render on a Shirecliffe S5 terrace. One of our darkest monocouche colours — a real statement finish. Through-colour means no painting required and the colour won\'t peel.',                                                                    img:'/images/case-studies/shirecliffe-monocouche.webp'},
+  // HIDDEN 26 Sep 2026: 229px photo, blurry at full width. Restore when Chris sends a larger original.
+  // {id:29, svc:'monocouche', col:'grey',  label:'Monocouche',      colLabel:'Anthracite',     hex:'#444',    loc:'Shirecliffe, S5',   brand:'K Rend',  desc:'Bold anthracite K Rend monocouche scratch render on a Shirecliffe S5 terrace. One of our darkest monocouche colours — a real statement finish. Through-colour means no painting required and the colour won\'t peel.',                                                                    img:'/images/case-studies/shirecliffe-monocouche.webp'},
   {id:30, svc:'monocouche', col:'stone', label:'Monocouche',      colLabel:'Stone',          hex:'#C5A882', loc:'S25 Area',          brand:'K Rend',  desc:'K Rend stone monocouche on a rural S25 farmhouse-style property — one of our larger single-property jobs. Three-day completion including scaffold, full render and tidy-up. Rural properties often favour natural stone tones.',                                                              img:'/images/case-studies/s25-monocouche-r.webp'},
   {id:31, svc:'monocouche', col:'stone', label:'Monocouche',      colLabel:'Natural Stone',  hex:'#B89A74', loc:'Sandygate, S10',    brand:'Ecorend', desc:'Ecorend natural stone monocouche on a Sandygate S10 detached. Sandygate is one of Sheffield\'s premium areas — homeowners here expect a flawless finish and a knowledgeable team. 20-year colour-fast guarantee.',                                                                  img:'/images/case-studies/monocouche sandygate.webp'},
   {id:32, svc:'monocouche', col:'cream', label:'Monocouche',      colLabel:'Cream',          hex:'#EDE7C8', loc:'Worrall, S35',      brand:'K Rend',  desc:'Cream K Rend monocouche scratch render on a Worrall S35 property. Worrall sits just above Oughtibridge on the hill — properties here often have exposed elevations and need a render system that can handle driving rain.',                                                               img:'/images/case-studies/monocouche worral.webp'},
@@ -1013,7 +1025,8 @@ const PROJECTS = [
 
   /* ── PLASTERING ── */
   {id:48, svc:'plastering',  col:null,   label:'Plastering',      colLabel:null,             hex:null,      loc:'Chapeltown, S35',   brand:null,      desc:'Full re-skim on a Chapeltown S35 semi-detached — every room replastered over 3 days. Bonding coat to brick and block, then two-coat skim finish throughout. All rooms sheeted up, site left clean and tidy every evening.',                                  img:'/images/case-studies/chapletown-plastering.webp'},
-  {id:49, svc:'plastering',  col:null,   label:'Plastering',      colLabel:null,             hex:null,      loc:'Fulwood, S10',      brand:null,      desc:'New extension plaster in Fulwood S10 — dot-and-dab plasterboard to blockwork walls, scrim tape at all joints, two-coat skim finish. Ready for decoration within 5 days of boarding. Full room protection sheets used throughout.',                      img:'/images/case-studies/fulwood-plastering.webp'},
+  // HIDDEN 26 Sep 2026: 229px photo, blurry at full width. Restore when Chris sends a larger original.
+  // {id:49, svc:'plastering',  col:null,   label:'Plastering',      colLabel:null,             hex:null,      loc:'Fulwood, S10',      brand:null,      desc:'New extension plaster in Fulwood S10 — dot-and-dab plasterboard to blockwork walls, scrim tape at all joints, two-coat skim finish. Ready for decoration within 5 days of boarding. Full room protection sheets used throughout.',                      img:'/images/case-studies/fulwood-plastering.webp'},
   {id:50, svc:'plastering',  col:null,   label:'Plastering',      colLabel:null,             hex:null,      loc:'Fulwood, S10',      brand:null,      desc:'Lounge and hallway re-skim in Fulwood S10. All previous cracks, hairlines and patch repairs levelled with bonding before skimming. Finished to a flat, ready-to-decorate standard — no hollows, no marks.',                                                    img:'/images/case-studies/fulwood-skim.webp'},
   {id:51, svc:'plastering',  col:null,   label:'Plastering',      colLabel:null,             hex:null,      loc:'Walkley, S6',       brand:null,      desc:'Bedroom re-plaster in Walkley S6. Old blown sand-and-cement stripped back to brick, SBR bond applied, two-coat bonding and multi-finish skim. Wall brought back to a smooth, sound surface — walls like new.',                                                img:'/images/case-studies/walkly-plastering.webp'},
   {id:52, svc:'plastering',  col:null,   label:'Plastering',      colLabel:null,             hex:null,      loc:'Walkley, S6',       brand:null,      desc:'Second Walkley S6 plastering job — living room re-skim on a terraced property. Coving removed, walls stripped and re-bonded, skim applied. Ceiling crack repaired and skimmed out flat. Completed in one day.',                                               img:'/images/case-studies/walkly-plastering1.webp'},

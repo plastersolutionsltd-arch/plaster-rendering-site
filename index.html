@@ -3,7 +3,14 @@
 <head>
   <script>document.documentElement.classList.add('lazybg')</script>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-1DSC8GHLQ0"></script>
+<script>
+  /* gtag loads after the page so its 170KB doesn't compete with the hero photo; calls made
+     before then queue in dataLayer and send when it arrives. */
+  window.addEventListener('load', function () { setTimeout(function () {
+    var s = document.createElement('script'); s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-1DSC8GHLQ0'; document.head.appendChild(s);
+  }, 0); });
+</script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -1205,7 +1212,7 @@
     </div>
 
     <div class="reveal delay-2 text-center mt-8">
-      <a href="/projects" class="inline-flex items-center gap-2 font-display font-bold text-sm no-underline px-8 py-3.5 rounded-full transition-all duration-200 hover:opacity-85" style="background:#00FF00;color:#000">View All 64 Projects &rarr;</a>
+      <a href="/projects" class="inline-flex items-center gap-2 font-display font-bold text-sm no-underline px-8 py-3.5 rounded-full transition-all duration-200 hover:opacity-85" style="background:#00FF00;color:#000">View All 58 Projects &rarr;</a>
     </div>
   </div>
 </section>

@@ -2,7 +2,14 @@
 <html lang="en">
 <head>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-1DSC8GHLQ0"></script>
+<script>
+  /* gtag loads after the page so its 170KB doesn't compete with the hero photo; calls made
+     before then queue in dataLayer and send when it arrives. */
+  window.addEventListener('load', function () { setTimeout(function () {
+    var s = document.createElement('script'); s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-1DSC8GHLQ0'; document.head.appendChild(s);
+  }, 0); });
+</script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -677,7 +684,7 @@
         <li><strong>Walkley and Hillsborough</strong> — dense terraced streets with Article 4 directions in some sections</li>
         <li><strong>Cathedral and city centre fringe</strong> — listed building adjacencies require careful system selection</li>
       </ul>
-      <p>This list is not exhaustive and conservation area boundaries change. We always recommend checking with <a href="https://www.sheffield.gov.uk/planning" target="_blank" rel="noopener noreferrer">Sheffield City Council's planning department</a> before committing to a system. As part of our free site survey, we will advise you based on your postcode and property type — and flag any planning considerations before you make a decision.</p>
+      <p>This list is not exhaustive and conservation area boundaries change. We always recommend checking with <a href="https://www.sheffield.gov.uk/planning-development" target="_blank" rel="noopener noreferrer">Sheffield City Council's planning department</a> before committing to a system. As part of our free site survey, we will advise you based on your postcode and property type — and flag any planning considerations before you make a decision.</p>
 
       <hr class="article-divider">
 

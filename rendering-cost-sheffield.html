@@ -2,7 +2,14 @@
 <html lang="en">
 <head>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-1DSC8GHLQ0"></script>
+<script>
+  /* gtag loads after the page so its 170KB doesn't compete with the hero photo; calls made
+     before then queue in dataLayer and send when it arrives. */
+  window.addEventListener('load', function () { setTimeout(function () {
+    var s = document.createElement('script'); s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-1DSC8GHLQ0'; document.head.appendChild(s);
+  }, 0); });
+</script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -186,7 +193,7 @@
     },
     {
       "@type": "Question",
-      "name": "Does rendering add value to a house in Sheffield?",
+      "name": "Does rendering add value to a house?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Yes. Fresh rendering improves kerb appeal significantly, which estate agents frequently cite as adding 5–10% to a property's perceived value. It also improves energy efficiency by reducing heat loss through external walls, which can reduce heating bills."
@@ -676,7 +683,7 @@
         <li>Your property is <strong>Listed</strong> — any changes to the external appearance require Listed Building Consent</li>
         <li>Your permitted development rights have been removed by an <strong>Article 4 Direction</strong></li>
       </ul>
-      <p>If you're unsure, we recommend checking with <a href="https://www.sheffield.gov.uk/planning" target="_blank" rel="noopener noreferrer" style="color:#00FF00">Sheffield City Council's planning department</a> before committing. We're happy to advise based on our local experience.</p>
+      <p>If you're unsure, we recommend checking with <a href="https://www.sheffield.gov.uk/planning-development" target="_blank" rel="noopener noreferrer" style="color:#00FF00">Sheffield City Council's planning department</a> before committing. We're happy to advise based on our local experience.</p>
 
       <hr class="article-divider">
 
