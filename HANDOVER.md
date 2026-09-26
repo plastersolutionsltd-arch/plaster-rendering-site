@@ -725,3 +725,13 @@ with *Universal plastering and Rendering, 4 Tinker Road, Rotherham, S62 5EL* —
 ⏳ Microsoft Q&A threads on this exact problem show tickets running 13+ days with some never
 resolved, so do not read silence as failure. Full detail, the cleanup steps for once it is
 unlinked, and the ⛔ "Request access" trap are all in `CITATIONS-NAP.md`.
+
+### 26 Sep 2026 — Rose Ward, silicone render, Crosspool
+
+- 5 star, notified 25 Sep. Captured in full from the GBP panel; the email cut it at "went above...".
+  **Crosspool is supplied by Chris, not in her words** — it appears only on the card's caption line
+  ("Silicone render · Crosspool S10"), same pattern as Gary Mason on Grenoside.
+- Live on `/crosspool-sheffield` as a visible card + `Review` node. The page had **zero** review
+  cards despite 27 silicone mentions. Schema == visible == panel text, all exact.
+- ⏳ **Review count still 113, deliberately.** The reply modal covered the panel number. Read it off
+  the profile and run `python3 sync-reviews.py <n>`; never derive it by adding one.
