@@ -750,16 +750,34 @@ browser drops the `<source>` and phones load the DESKTOP image. Monocouche also 
 desktop hero unconditionally. Fixed with `%20` + a media-split preload. Monocouche on a phone:
 2.0MB → 1.3MB. ⚠ **Any new image with a space in its name must be `%20`-encoded in srcset.**
 
-**Open, measured (throttled 4G, 4x CPU):**
-- Home LCP 3.3s, `/projects` LCP 3.9s (Google "good" < 2.5s). Every other page tested ~0.9-1.2s.
-- `/projects` sends **3.3MB** of images to a phone; `sandygate-silicone-back2.webp` alone is 860KB.
-  The gallery has no `-m` variants. Home line ~1179 uses full `sandygate-back.webp` (158KB) lazily.
-- Monocouche still 1.3MB: `dore-monocouche.webp` 339KB, `dronfield-monocouche.webp` 256KB, no `-m`.
-- HTML is served `cache-control: no-store`, which makes every page ineligible for the back/forward
-  cache — the back button reloads the page over the network.
-- 4 FAQ question names still differ slightly from the visible question (wording only).
+**✅ Speed work, same day — all verified live (throttled 4G, 4x CPU, 390px @3x):**
+
+| page | hero LCP before | after | phone image weight |
+|---|---|---|---|
+| home | 3.3s | ~2.1s | 1.2MB → 0.6MB |
+| monocouche | 2.5s | 1.5s | 2.0MB → 0.6MB |
+| /projects | 3.9s | 2.3s | 3.3MB → 0.33MB |
+
+- **/projects thumbnails downloaded the full photo** (64 photos, 8.5MB for 98px thumbs). Every
+  gallery photo now has `-t.webp` (240px) and `-m.webp` (900px); JS `imgVariant()` picks them.
+  **A new gallery photo needs both variants** or its thumb/showcase 404s on phones.
+- **16 pages downloaded the hero twice on 3x phones**: preload `imagesrcset` 900w/1920w at 100vw
+  picked the 1920 file while `<picture>` showed `-m`. Preloads now name the exact file shown. ⛔ Do
+  not put `imagesrcset` back on a preload whose `<img>` uses `<picture media>` instead of srcset.
+- **Home service-card photos** are CSS backgrounds 5,700px+ down and loaded at page start, costing
+  ~1.2s of hero time. Now set by IntersectionObserver (`.bg-ready`), `html:not(.lazybg)` no-JS fallback.
+- **`lg:grid-cols-[42%_58%]` + gap overflowed its container on 9 pages** (home scrolled 32px
+  sideways at 1280). Fixed with an inline fr rule per page; app.css is cached immutable, don't edit it.
+- Two existing `-m` files were really 1800/1510px; `burncross-ewi-m` was 418KB. All now 900px.
+
+**Still open:**
+- **Analytics (gtag, 172KB) is now the main competitor on home**: blocking it takes hero LCP ~2.1s →
+  1.3s. Deferring it to after `load` would lose some bounced visits from GA. Chris's call.
+- `eccesfield-silicone1.webp` is only **229px wide** — soft on every device. Needs the original photo.
+- HTML is served `cache-control: no-store` → no back/forward cache. One header in `vercel.json`.
+- 4 FAQ question names differ slightly from the visible question (wording only).
 - `sheffield.gov.uk/planning` 301s to `/planning-development` (2 pages). Not broken.
-- broomhill overflow is now 3px (was 10). Still cosmetic, still never mask it.
+- broomhill overflow is now 3px at 390 (was 10). Still cosmetic, never mask it.
 
 **False alarms from my own crawler, do not re-raise:** "nan" matches mai*nten*ance; GA collect
 ERR_ABORTED is the beacon cut off at context close; colour-swatch labels at opacity 0 are
