@@ -493,6 +493,29 @@ A move with one known change behind it is worth ten moves with four.
 | 23 Sep 2026 | **2nd in the local pack** for `plasterers sheffield`, from 9th on 20 Sep | — |
 | 23 Sep 2026 | **3 services added: Ecorend, Weber, Stud partitions.** Ecorend was the glaring one — K Rend was listed as a service and Ecorend was not, despite approved-applicator status and 13 pages of coverage. Stud partitions is on 48 pages and had never been listed. ⏰ **Next pack reading is the test of this batch — do not add more until it is read.** | Chris |
 
+### 📊 GBP Performance baseline — Apr–Sep 2026, read 27 Sep (Sep has 3 days left)
+
+| | 6-month total | per month (approx, read off the chart) |
+|---|---|---|
+| Profile views | ~3,950 (72% Search mobile, 18% Search desktop, 11% Maps) | |
+| Interactions | **305** | Apr 57 · May 50 · Jun 60 · Jul 43 · Aug 41 · Sep ~53 |
+| Website clicks | **230 (75%)** | Apr 48 · May 41 · Jun 41 · Jul 31 · Aug 35 · Sep ~40 |
+| Calls | **52 (17%)** | Apr 6 · May 7 · Jun 12 · Jul 10 · Aug 4 · **Sep ~13 = best month** |
+| Directions/chat/bookings | ~23 | |
+
+Top profile searches: plaster 116 · rendering 115 · plasterers sheffield 82 · plasterer sheffield 51
+· rendering sheffield 38.
+
+⛔ **Corrects my 26 Sep theory** that the pos-2, zero-click Search Console queries were people
+calling from the map pack instead. Profile actions are 75% WEBSITE clicks; calls are 17%. The
+website is where profile visitors land — the homepage's job is converting them.
+
+September calls are the best month with days to go, landing after the 20 Sep hours change
+(Sunday now open). One month, several changes — **do not credit the hours alone.** October is the test.
+
+⬜ Suggested: tag the GBP website link `?utm_source=google&utm_medium=organic&utm_campaign=gbp` so GA
+separates profile visitors and shows how many reach /get-quote. Log it in the change log if done.
+
 ### ⬜ Services still to add to GBP — all evidenced on our own site
 
 ⛔ **Add these a few at a time, not all at once**, and date each batch above. Adding fourteen
