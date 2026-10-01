@@ -820,3 +820,12 @@ gallery jobs. `-t` thumbs exist so they can join the gallery once Chris gives ea
   Inspection (live test passes). Indexing requested 26 Sep, plus the 6 re-heroed pages. Reason not
   yet read (GOOGLE INDEX tab). If "Crawled/Duplicate", it overlaps /pricing — differentiate it.
   Re-check in ~2 weeks.
+
+### 1 Oct 2026 — Andy Hartley, silicone render, Norton Lees S8
+- Verbatim from the GBP panel ("18 hours ago" at 16:40 1 Oct → dated **30 Sep 2026**); the area is IN
+  the text. First review naming Norton Lees. Line breaks joined so the card == `reviewBody`.
+- **No Norton Lees page exists.** Published on BOTH `norton-sheffield` (name match) and
+  `meersbrook-sheffield` (its copy already lists Norton Lees) — both had zero review cards.
+- Count → **115** via `sync-reviews.py 115` (66 pages + llms.txt), `--check` clean.
+- Verified over http at 390px: JSON-LD parses, schema == visible == panel text, count 115, no
+  horizontal scroll, no page errors; screenshot looked at.
