@@ -398,6 +398,10 @@ requests. That is a change of direction from what this file said earlier in the 
 
 ### 20 Sep 2026 — "there is something holding us back". Here is where it is.
 
+⚠ **CORRECTED 1 Oct 2026:** the table below mixed 2023 figures in. Real 2026 map-pack weights, read off
+Whitespark's own chart: GBP 32 · reviews **20** · on-page 15 · behavioural 9 · links **8** · citations 6. See the
+1 Oct research section at the end.
+
 Chris is right to push. On the 2026 local ranking weightings (BrightLocal / Whitespark, broadly
 agreed across sources):
 
@@ -578,3 +582,106 @@ Barnsley and Chesterfield pages is more of a thing that is not working.
 carries **two genuine S61 customers** — Leamne Shortland (Thorpe Hesley) and Paul S (Scholes).
 Give it proper internal links and watch it for a month. If a town page with real reviews and
 normal linking still does nothing, that answers whether to build three more — for free.
+
+
+---
+
+## 🔬 1 Oct 2026 — Deep research: GBP, AI search, and what actually moves ranking in 2026
+
+Chris: *"do a deep research in 2026 gbp ai and most effective ways to improve ranking"*. Primary sources
+read directly, not blog summaries — three of those summaries were wrong (see "traps" at the end).
+
+### The real 2026 weights (Whitespark LSRF 2026, read off their chart image, published Nov 2025)
+
+| group | Map pack | Organic | AI search | change in pack since 2023 |
+|---|---|---|---|---|
+| GBP signals | **32%** | 7% | 12% | 31 → 32 |
+| Review signals | **20%** | 6% | 16% | 17 → **20** (biggest riser) |
+| On-page (website) | 15% | **33%** | **24%** | 18 → 15 |
+| Behavioural | 9% | 10% | 4% | flat |
+| Links | 8% | 24% | 13% | 11 → **8** |
+| Citations | 6% | 7% | 13% | 7 → 6 |
+| Personalisation | 6% | 8% | 9% | |
+| Social | 4% | 5% | 9% | new |
+
+Three different games: the **map pack is GBP + reviews (52%)**; **normal results are website + links (57%)**;
+**AI answers are website + reviews + citations (53%)**.
+
+### Top 10 individual map-pack factors (2026) and where P&R stands
+1. Primary category — Plasterer ✅ · 2. Proximity — fixed · 3. **Keywords in business name** — "Plaster and
+Rendering Solutions" has it naturally ✅ (⛔ never add "Sheffield" — a guidelines breach) · 4. Address in city
+of search — Grenoside ✅ · 5. **Open at time of search** — fixed 20 Sep, likeliest cause of 9th→2nd ·
+6. High rating — 5.0 ✅ · 7. Address showing ✅ · 8. **Additional categories** — ⬜ never audited · 9. Review
+count — 115, most on the SERP ✅ · 10. Map pin placement ✅. **Review recency is #11** (was ~20th in 2023).
+
+### What is proven NOT to move ranking — stop spending time on these
+- **GBP posts** — #148 of the factors; Sterling Sky ran 9 weeks × 441 keywords, no movement. Fine for
+  engagement, useless for position.
+- **Keywords in review text** — Sterling Sky test: rankings stayed flat or fell. Coaching it is also a policy risk (below).
+- **Owner responses** — #122 for ranking. Still worth doing for customers; not a ranking lever.
+- **Service areas** — already established 23 Sep.
+- **Business description** — no ranking effect (Search Engine Land, earlier test).
+
+### What IS proven to move it
+- **Predefined GBP services** (Google's own list, not custom text) — Sterling Sky 2022 retest: ranking gains
+  within 24–72h. Their test added the service only, no description. ⬜ Check which of his services are
+  Google's predefined ones vs typed-in custom ones; prefer predefined where Google offers a match.
+- **Review velocity + recency** — consistent flow beats bursts. Ask EVERY finished job, not in batches.
+- **Hours / open at time of search** — done.
+- **Categories** — primary is #1, secondary #8. ⬜ Audit the secondary list in the profile (never done).
+
+### GBP changes in 2025–26 that matter
+- **Q&A is gone** (API off 3 Nov 2025, public section removed from 3 Dec 2025) → replaced by **Ask Maps**
+  (Gemini), which answers from the profile, reviews and website. So services/descriptions on GBP and the FAQ
+  answers on the site are what it reads.
+- **Business Chat → WhatsApp/SMS**. **Post scheduling** added.
+- ⛔ **Review policy (support.google.com/contributionpolicy/answer/7400114)** now explicitly bans: staff
+  quotas; asking staff to get reviews that name a staff member; and solicitation that *"attempts to
+  influence … the contents of the review"*; and selective asking (only happy customers).
+
+### ⛔ ACTION — PlasterFlow's review request coaches the content
+`app.html` `_buildReviewMessage` sends: *"Mentioning the silicone render and that you're in Grenoside is
+what helps people nearby find me."* That is asking the customer to put specific content in the review —
+the line the policy draws. It goes out from EVERY PlasterFlow user's phone. No ranking upside (test above);
+the downside is filtered/removed reviews. The real benefit it has bought — reviews naming suburbs that the
+site can then publish (Andy Hartley "Norton Lees") — is a website-content benefit, not a GBP one.
+**Recommended: drop the "Mentioning…" line. Chris's call; not changed.**
+
+### AI search — what it reads (the new 2026 category)
+- Top AI factors: **1 on "best of" curated lists** · **2 a dedicated page per service** (P&R has these ✅) ·
+  3 prominence on industry sites · 4 unstructured citations (local news, associations, blogs) · 5 authority of
+  third-party review sites · 6 geographic relevance · 8 high Google rating.
+- ⭐ **UK ChatGPT study (Murray Digital, 25 Aug 2026, 80 prompts, 8 trades, 10 UK towns, GPT-4o + web):**
+  trade directories were **71.9% of everything it cited**; **Checkatrade in 78 of 80 answers**, MyBuilder 70.
+  Only **19.4% of map-pack businesses got named at all**; of 41 map-pack firms with websites only **2** had
+  their own site cited. ChatGPT *"looks for lists of tradespeople, then reads the list out."*
+  → **Chris already pays for Checkatrade.** Its profile — reviews, services, areas, photos — is very likely
+  his single biggest ChatGPT lever, and it costs nothing extra. ⬜ Audit it (review count there, completeness).
+- ChatGPT has **no direct Google feed**: Bing's index + Bing Places + partners (Foursquare/Yelp in the US).
+  → **Bing ticket 7109243851 is the AI blocker** — chase it.
+- Checkatrade now runs an **app inside ChatGPT** — another reason that profile matters.
+- Yelp dominates US AI citations; UK evidence points to Checkatrade/MyBuilder/Yell/TrustATrader/Which? instead.
+- Three Best Rated has **no Sheffield plasterer or renderer list** (both URLs 410) — nothing to chase.
+- Usage: BrightLocal 2026 — 45% of consumers used AI to find a local business in the last year (6% in 2025).
+  But AI Overviews show on only ~15% of strictly local-intent searches while the **map pack shows on ~93%** —
+  the pack is still where the jobs come from.
+
+### Recommended order (effort → payoff), as of 1 Oct
+1. **Ask every finished job for a review, steadily** — reviews are now 20% of the pack and the fastest riser.
+2. **Fix the app's review-request line** (policy) — 1 line, his decision.
+3. **GBP: audit secondary categories + swap custom services for Google's predefined ones** — tested to move
+   ranking in days. One batch at a time, logged in the change log above.
+4. **Checkatrade profile audit** — biggest UK ChatGPT source, already paid for.
+5. **Chase Bing ticket 7109243851** — the one free listing that feeds ChatGPT directly.
+6. **Unstructured citations / links** — a local press story (SR365 rendering at −5°C is a genuine angle),
+   Rendit's need-a-renderer network, manufacturer case studies. Links are 24% of normal results.
+7. Photos: real job photos steadily (quality is #45, user photos #76) — conversion more than rank.
+8. Stop: posts for ranking, keyword-coached reviews, more service areas, more suburb pages.
+
+### Traps found doing this research (so the next pass does not repeat them)
+- The "GBP 32 / reviews 16 / links 15" figures blogs quote are **2023 numbers**; two blog articles labelled
+  them 2026. Only the chart image on whitespark.ca is authoritative.
+- A page-summarising fetch tool **invented a full set of 2026 percentages** from that page — it cannot see
+  images. Download the chart and look at it.
+- Several blogs claim "keywords in owner responses are indexed and boost relevance" — no test found; the
+  survey puts responses at #122.
