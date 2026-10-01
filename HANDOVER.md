@@ -829,3 +829,11 @@ gallery jobs. `-t` thumbs exist so they can join the gallery once Chris gives ea
 - Count → **115** via `sync-reviews.py 115` (66 pages + llms.txt), `--check` clean.
 - Verified over http at 390px: JSON-LD parses, schema == visible == panel text, count 115, no
   horizontal scroll, no page errors; screenshot looked at.
+
+### 1 Oct 2026 — site → GBP linking finished (it was only ever done on index.html)
+- GBP listing CID **3832257937099996858** (`https://maps.google.com/?cid=…`), decoded from the g.page review
+  link and confirmed in a browser. The `share.google/rOAl0WMAyojDrY2kb` link in sameAs is the GBP's
+  knowledge-graph entity (`kgmid=/g/1q5gj0r2f`) — it WAS already on 61 pages; don't mistake it for a stray.
+- sameAs on every business/organization node now leads with share link + CID; `hasMap` = CID on the 62
+  LocalBusiness nodes (not on Organization — invalid there); the 31 review-card G badges link to the listing.
+- Verified: all JSON-LD parses; 17 card pages at 390px, every badge a 44px link, no horizontal scroll.
