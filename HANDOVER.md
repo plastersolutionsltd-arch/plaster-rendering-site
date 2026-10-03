@@ -837,3 +837,11 @@ gallery jobs. `-t` thumbs exist so they can join the gallery once Chris gives ea
 - sameAs on every business/organization node now leads with share link + CID; `hasMap` = CID on the 62
   LocalBusiness nodes (not on Organization — invalid there); the 31 review-card G badges link to the listing.
 - Verified: all JSON-LD parses; 17 card pages at 390px, every badge a 44px link, no horizontal scroll.
+
+### 3 Oct 2026 — Wes Barrett, plastering, Thorpe Hesley S61
+- Verbatim from the GBP panel (email truncated at "Highly..."); curly apostrophe in "we’ve" kept. Service + area
+  supplied by Chris, not in the text. Published on `rotherham-south-yorkshire` — three S61 customers there now.
+- ⚠ Count NOT synced: the reply modal hid it. Profile said 115 before this review; run `sync-reviews.py <n>`
+  off the panel, never 115+1.
+- Three review cards had a GREEN "G" variant the 1 Oct linking pass missed (Paul S ×2, Libbi Mellors) —
+  now the standard linked badge. All 35 card badges on the site link to the GBP listing.
