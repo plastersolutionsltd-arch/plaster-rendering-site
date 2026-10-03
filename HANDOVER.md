@@ -841,7 +841,6 @@ gallery jobs. `-t` thumbs exist so they can join the gallery once Chris gives ea
 ### 3 Oct 2026 — Wes Barrett, plastering, Thorpe Hesley S61
 - Verbatim from the GBP panel (email truncated at "Highly..."); curly apostrophe in "we’ve" kept. Service + area
   supplied by Chris, not in the text. Published on `rotherham-south-yorkshire` — three S61 customers there now.
-- ⚠ Count NOT synced: the reply modal hid it. Profile said 115 before this review; run `sync-reviews.py <n>`
-  off the panel, never 115+1.
+- Count → **116** (Chris read it off the panel, 3 Oct), synced on all pages + llms.txt; `--check` clean.
 - Three review cards had a GREEN "G" variant the 1 Oct linking pass missed (Paul S ×2, Libbi Mellors) —
   now the standard linked badge. All 35 card badges on the site link to the GBP listing.
