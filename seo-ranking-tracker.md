@@ -700,3 +700,31 @@ Clicks 99 → 72, impressions 8.7K → 6.5K, CTR 1.1% both, **avg position 23.1 
   Slipped slightly: plasterer sheffield 6.8 → 7.9, plasterers sheffield 8.7 → 9.1.
 - Verdict: no fault, no penalty — fewer low-quality impressions, better rank where it pays. Export kept at
   ~/Downloads/…Performance-on-Search-2026-10-07.zip.
+
+### 7 Oct 2026 — competitor read: who sits above P&R in the pack, and why
+Google web search blocks automated queries ("unusual traffic") — do NOT retry, it risks flagging Chris's own IP.
+Google **Maps** works. Read at ~20:30 (evening, most listings "Closed"), map centred on the city centre
+(53.3811,-1.4701). Order wobbles between runs; review counts are hidden to automated views, so counts are
+from the 17–23 Sep readings.
+
+| Listing | Where | Hours shown | Reviews (Sep) | Website |
+|---|---|---|---|---|
+| **JSL Plastering** — #1 `plasterers sheffield` 23 Sep | **Chapeltown S35 1ST — next door to Grenoside** | **Open 24 hours** | 54 | none |
+| **TrueFinish Rendering Sheffield** — #1 rendering, #6 plasterer | 51 Sydney Rd (S6) | **Open 24 hours** | 1 (20 Sep) | ⛔ **domain NOT REGISTERED** (Nominet: "has not been registered") |
+| MAC Rendering LTD | Neepsend | 7am | 134 | 22-page WordPress |
+| Smoothcoat plastering and Rendering | Cruise Rd S11 | 8am | 89 | **6-page, 265-word GoDaddy site** |
+| R.W Pro Plastering | Gleadless | **Open 24 hours** | 37 | 593-word WordPress, no sitemap |
+| Daniel Begley Plastering | Cunliffe St | **Open 24 hours** | 33 | none |
+| Bespoke Render Co / AB Rendering / Maca / Bwp | central–south | 7–8am | — | 8–72 pages; AB has a Chapeltown location page |
+| **P&R** | Grenoside (north edge) | 7am | **116** | **64 pages, full LocalBusiness + reviews schema — the strongest site here** |
+
+**Findings**
+1. **The website is not the gap.** Smoothcoat ranks near the top on a 6-page site. Confirms pack = GBP + reviews + proximity.
+2. **Proximity** (#2 factor): almost every listing above P&R is central/south; Grenoside is on the north edge, so a
+   city-centre search structurally favours them. Can't be fixed legitimately (a moved/fake address is a guideline breach).
+3. **"Open 24 hours"** on 4 rivals (JSL, TrueFinish, R.W Pro, Daniel Begley) → they show Open at night and weekends
+   (#5 factor). ⛔ Don't copy it — hours must be real.
+4. ⛔ **TrueFinish shows the signs of a fake / lead-gen listing**: unregistered website domain, keyword-stuffed
+   name, 24h hours, 1 review. ⬜ Chris to check 51 Sydney Rd on Street View, then report through Google's
+   **Business Redressal Complaint Form** (fake listing). Removing a spam listing above you is a legitimate gain.
+5. Reviews: only MAC (134) out-reviews P&R; JSL and R.W Pro beat him on half his count → not a review problem.
