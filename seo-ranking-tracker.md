@@ -686,3 +686,17 @@ site can then publish (Andy Hartley "Norton Lees") — is a website-content bene
   images. Download the chart and look at it.
 - Several blogs claim "keywords in owner responses are indexed and boost relevance" — no test found; the
   survey puts responses at #122.
+
+### 7 Oct 2026 — the September dip, read from the GSC compare export (last 28d vs previous 28d)
+Clicks 99 → 72, impressions 8.7K → 6.5K, CTR 1.1% both, **avg position 23.1 → 12**.
+- **Homepage = 16 of the 27 lost clicks** (56 → 40) while its impressions held (3,560 → 3,431) and its position
+  went **16.3 → 8.0**. Only 24 of 72 clicks carry a visible query (privacy filter), so the homepage loss
+  cannot be attributed to queries. ⬜ Hypothesis to test: the pack move to 2nd (23 Sep) shifted clicks to the GBP
+  listing — compare GBP Performance (website clicks + calls) for the same 28 days. Not proven.
+- **Impressions lost were deep-ranking ones**: render repair (pos 41), render plaster (49), rendering plastering
+  (43), chapeltown page (46 → 68), beighton, faq, projects, s17 case study. Desktop position 31 → 12.8.
+- **Money queries improved**: plastering sheffield 13 → 4.7, rendering near me 12.8 → 8.3 (0 → 3 clicks),
+  rendering sheffield 16 → 10.3, rendering services sheffield 13.3 → 9.1; /plastering-sheffield clicks 2 → 9.
+  Slipped slightly: plasterer sheffield 6.8 → 7.9, plasterers sheffield 8.7 → 9.1.
+- Verdict: no fault, no penalty — fewer low-quality impressions, better rank where it pays. Export kept at
+  ~/Downloads/…Performance-on-Search-2026-10-07.zip.
