@@ -64,6 +64,7 @@ GSC Performance → Pages before treating the content push as proven.
 | Jul 2026 | 69 (28d) | 6,430 (28d) | 19 | plasterers sheffield (5 clicks, 273 imp) |
 | Aug 2026 | 96 (28d) | 7,430 (28d) | 23.6 | plasterers sheffield (233 imp) |
 | Aug 2026 (full month) | 109 | 9,810 | not given | from GSC's own monthly email, 8 Sep |
+| Sep 2026 (full month) | 91 | 7,260 | not given | GSC monthly email, read 7 Oct. Clicks −17%, impressions −26% vs Aug; 1 page with first impressions. Same month the map pack went 9th→2nd and GBP calls had their best month — this table is web search only. Cause not yet read: needs the Queries + Pages compare (Sep vs Aug) from GSC. |
 | Sep 2026 | 99 (28d) | 8,700 (28d) | 23.1 | (28d to 8 Sep) |
 | Oct 2026 | | | | |
 | Nov 2026 | | | | |
