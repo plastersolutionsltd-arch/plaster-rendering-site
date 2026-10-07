@@ -728,3 +728,34 @@ from the 17–23 Sep readings.
    name, 24h hours, 1 review. ⬜ Chris to check 51 Sydney Rd on Street View, then report through Google's
    **Business Redressal Complaint Form** (fake listing). Removing a spam listing above you is a legitimate gain.
 5. Reviews: only MAC (134) out-reviews P&R; JSL and R.W Pro beat him on half his count → not a review problem.
+
+### 7 Oct 2026 — "something is holding us back": the hidden-suppressor sweep
+Chris: *"there has to be something holding us back"*.
+
+**Ruled OUT (checked, not assumed):**
+- **Duplicate / filter**: Maps search on the phone, the old name "Plaster Solutions Limited", the address and the
+  brand all resolve to ONE listing. Nothing shares his details. No filter splitting the listing.
+- **Website**: strongest in the competitor set (see the competitor read above).
+- **Indexing / technical**: clean (live crawls 24 Aug, 8 Sep).
+
+**⭐ FOUND — the Diversity Update is the likeliest thing holding the website back.**
+Sterling Sky (Aug 2024 onward, tested and reversed): *"If you dominate local pack rankings, Google will demote
+your organic rankings"* — applied **per page**, to the page the GBP links to. Their test: GBP linked to the
+strongest organic page → that page fell #1 → ~#10; reverted → #1 again. Fix: **link the GBP to a different,
+still-relevant page** — "you can still dominate both". Their pack rankings improved slightly after the change.
+- P&R's GBP **Website button → the HOMEPAGE** (booking button → /get-quote). Read off the live listing 7 Oct.
+- The homepage is the top organic page (40 of 72 clicks). In the 28 days he climbed to #2 in the pack, homepage
+  clicks fell 56 → 40, and impressions fell on exactly the pack terms (`plasterers sheffield` 254 → 199,
+  `plasterer sheffield` 239 → 168). Consistent with the demotion. **Not proven** — page-per-query data isn't in
+  the export — but it is the one documented mechanism that matches the shape.
+- ⬜ **Recommended test**: change the GBP Website URL to `/grenoside-sheffield` (the page for the GBP's own
+  address — relevant on location + every service, and not the top organic page for the pack terms), tagged
+  `?utm_source=google&utm_medium=organic&utm_campaign=gbp` (the UTM suggested 27 Sep). ⛔ NOT
+  /plastering-sheffield: it ranks 4.7 organically and would get demoted instead. Log the date in the GBP change
+  log, change nothing else for 3 weeks, then compare homepage clicks + pack position. Reversible in seconds.
+
+**⚠ Risk found (not a rank suppressor): the address.** Google's guidelines (support.google.com/business/answer/3038177):
+*"if you're a plumber and run your business from your residential address, clear the address from your Business
+Profile."* The GBP shows 3 Rocher Close, a home address customers don't visit. That is the most common cause of
+trade-listing **suspensions** (usually triggered by a re-verification or a competitor report). Hiding it would cost
+the "address showing" factor (#7). Chris's call; flagged, not acted on.
