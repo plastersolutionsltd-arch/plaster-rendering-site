@@ -497,6 +497,7 @@ A move with one known change behind it is worth ten moves with four.
 | 22 Sep 2026 | Review 113 (Paul S, Scholes S61, monocouche) + owner reply within the hour | Chris |
 | 23 Sep 2026 | **2nd in the local pack** for `plasterers sheffield`, from 9th on 20 Sep | — |
 | 23 Sep 2026 | **3 services added: Ecorend, Weber, Stud partitions.** Ecorend was the glaring one — K Rend was listed as a service and Ecorend was not, despite approved-applicator status and 13 pages of coverage. Stud partitions is on 48 pages and had never been listed. ⏰ **Next pack reading is the test of this batch — do not add more until it is read.** | Chris |
+| 7 Oct 2026 | **Website URL: homepage → `/grenoside-sheffield?utm_source=google&utm_medium=organic&utm_campaign=gbp`** (Diversity Update test — see the 7 Oct hidden-suppressor sweep). Booking link left on /get-quote. Also **WhatsApp chat link removed** — it was `wa.me/44795399525`, a digit missing, sending customers to the wrong number; to be re-added as `wa.me/447595399525`. ⏰ **Read on/after 28 Oct: homepage organic clicks (were 40 per 28d) + pack position for `plasterers sheffield` (was 2nd). Change nothing else on GBP until then.** | Chris |
 
 ### 📊 GBP Performance baseline — Apr–Sep 2026, read 27 Sep (Sep has 3 days left)
 
