@@ -522,6 +522,28 @@ September calls are the best month with days to go, landing after the 20 Sep hou
 ⬜ Suggested: tag the GBP website link `?utm_source=google&utm_medium=organic&utm_campaign=gbp` so GA
 separates profile visitors and shows how many reach /get-quote. Log it in the change log if done.
 
+### 📊 September 2026 FINAL — read 19 Oct off Chris's GBP Performance screenshots
+
+| | Sep 2026 | vs Sep 2025 |
+|---|---|---|
+| Interactions | **64** (the 27 Sep "~53" estimate was low) | +45.5% (so Sep 2025 ≈ 44) |
+| Profile views | **906** = Search mobile 718 (79%) · Search desktop 132 (15%) · Maps desktop 30 · Maps mobile 26 | +2.4% |
+| Searches showing the profile | total not visible in the screenshot | **−22.4%** |
+
+Top searches: plaster 27 · plasterer sheffield 21 · rendering 20 · rendering sheffield 19 · **ready made plaster 17**
+(a DIY product search — junk impressions, nothing to act on).
+
+**Daily interactions, read off the chart (sum = 64, checks):**
+1–2 Sep **12 + 7 = 19** (30% of the month in two days) · 3–19 Sep 29 (1.7/day) · **20–30 Sep 16 (1.5/day)**.
+
+⛔ **Corrects the 27 Sep note.** September was the best month of the year on interactions, but **not because of
+the 20–23 Sep changes** (hours widened, 16 services, 2nd in the pack on 23 Sep). The days after them ran slightly
+*below* the rest of the month. The month's lead comes from a 1–2 Sep spike of unknown cause — the Calls and
+Website clicks tabs (daily) would show whether it was calls or clicks. Not proven either way from the Overview.
+
+This is the pre-test baseline for the 7 Oct website-URL change: on/after 28 Oct read October the same way
+(interactions per day, before vs after 7 Oct) alongside homepage organic clicks and pack position.
+
 ### ⬜ Services still to add to GBP — all evidenced on our own site
 
 ⛔ **Add these a few at a time, not all at once**, and date each batch above. Adding fourteen
