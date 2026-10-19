@@ -854,3 +854,26 @@ gallery jobs. `-t` thumbs exist so they can join the gallery once Chris gives ea
 - Count → **117** (read off the panel by Chris) via `sync-reviews.py 117`; `--check` clean, llms.txt updated.
 - Verified over http at 390px: JSON-LD parses, schema == visible == panel text, badge 44px linking to the CID, no
   horizontal scroll, no page errors; screenshot looked at.
+
+### 19 Oct 2026 (later) — Darren's photos, a stale count, the phone menu on 3 pages, duplicate nav links
+- **Darren's two job photos** published under his card on `woodseats-sheffield` as
+  `images/case-studies/extension-render-s8-{rear,side}{,-m,-t}.webp` (1600/900/240w, 4:3). Originals from Chris
+  (iPhone, taken 15 Oct). **EXIF/GPS stripped** (verified: 0 tags on every file); cropped to drop a trampoline and
+  garden clutter; no house numbers in frame. The GPS put the job at the Norton/Jordanthorpe edge of S8, which
+  agrees with Chris's "S8"; the caption still says only "Sheffield S8". Alts name **no render system**, because
+  Chris hasn't said which. They aren't in the /projects gallery yet: a gallery card needs a system for its filter.
+- ⛔ **`render-over-pebbledash` said "109 five-star reviews"** in its meta/og/twitter descriptions. That wording
+  matched none of `sync-reviews.py`'s patterns, so every sweep since 109 missed it and `--check` called the site
+  clean. Added a fourth pattern (`N five-star reviews`); `--check` now reports it as drift, so it can't hide again.
+  Count is 117 everywhere.
+- ⛔ **`get-quote`, `privacy`, `thank-you` had no phone menu.** They carry their own CSS (no app.css), so below
+  1024px the full desktop link row ran off the right edge: "Case Study" onwards, plus the CTA, could not be reached,
+  and there was no burger. The page did not scroll sideways, which is why the 26 Sep audit (overflow check only)
+  missed it. Each now has a page-local burger + CTA (Call Now on get-quote, Get Quote on the other two) and a
+  dropdown. Driven at 320/390/768/1023: every link on screen at >=48px, opens, closes, aria-expanded flips,
+  tapping a link navigates; at 1024/1440 the desktop row shows and the burger is hidden.
+- **"Case Study" was in the menu twice on 44 pages** (desktop row and phone menu both). The second copy is removed;
+  nothing else in any nav changed. (First pass also removed the phone-only "Get Quote" on about + how-we-apply as a
+  "duplicate"; caught in the diff and restored.)
+- **New crawler check worth keeping:** visible elements past the right edge that no ancestor clips. Off-screen
+  children of a `position:fixed` header do not make the page scroll, so a scroll-width check passes on them.

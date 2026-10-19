@@ -38,6 +38,9 @@ def main() -> int:
     # "5 / Services" tile with identical markup is left alone.
     # a third format: the big "N Reviews." headline (dry-lining)
     headline_pat = re.compile(r"(>)(\d{2,3})( Reviews\.<)")
+    # a fourth: "N five-star reviews" in meta/og/twitter descriptions (render-over-pebbledash
+    # sat on 109 for weeks because none of the patterns above matched it)
+    meta_pat = re.compile(r"(\b)(\d{2,3})( five-star reviews\b)")
 
     stat_pat = re.compile(
         r'(<div class="font-display font-black text-white leading-none mb-1" style="font-size:2rem">)'
@@ -71,6 +74,11 @@ def main() -> int:
             if m.group(2) != count:
                 drift.setdefault(path, set()).add(f"headline {m.group(2)}")
         out = headline_pat.sub(lambda m: m.group(1) + count + m.group(3), out)
+
+        for m in meta_pat.finditer(src):
+            if m.group(2) != count:
+                drift.setdefault(path, set()).add(f"description {m.group(2)}")
+        out = meta_pat.sub(lambda m: m.group(1) + count + m.group(3), out)
 
         if out != src:
             changed.append(path)
