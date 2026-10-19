@@ -844,3 +844,13 @@ gallery jobs. `-t` thumbs exist so they can join the gallery once Chris gives ea
 - Count → **116** (Chris read it off the panel, 3 Oct), synced on all pages + llms.txt; `--check` clean.
 - Three review cards had a GREEN "G" variant the 1 Oct linking pass missed (Paul S ×2, Libbi Mellors) —
   now the standard linked badge. All 35 card badges on the site link to the GBP listing.
+
+### 19 Oct 2026 — Darren Buxton, extension rendering, Sheffield S8
+- Verbatim from the GBP panel ("21 hours ago" on 19 Oct → dated **18 Oct 2026**); the email truncated it at
+  "start to finish,...". No line breaks in the original. Area S8 supplied by Chris with **no suburb**; service read
+  from the two job photos Darren attached (white render on a rear extension). Neither is in the review text.
+- Published on `woodseats-sheffield` (main S8 page, had zero review cards) as a `Review` node + visible card with the
+  linked G badge. Caption says **Sheffield S8, not Woodseats**, because the suburb wasn't given; change it if Chris names one.
+- Count → **117** (read off the panel by Chris) via `sync-reviews.py 117`; `--check` clean, llms.txt updated.
+- Verified over http at 390px: JSON-LD parses, schema == visible == panel text, badge 44px linking to the CID, no
+  horizontal scroll, no page errors; screenshot looked at.
