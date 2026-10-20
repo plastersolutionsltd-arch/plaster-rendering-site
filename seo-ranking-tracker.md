@@ -582,6 +582,23 @@ Chris's real indoor availability before it changes.
 **Grants:** Warm Homes Local Grant / ECO4 internal wall insulation needs a TrustMark + PAS 2030 installer — not
 open to P&R as-is. Pitch thermal boarding as self-funded; never promise a grant.
 
+### 📊 20 Oct 2026 — first week of the GBP website-link test (GSC, 7–13 Oct vs 30 Sep–6 Oct, Web)
+
+| | before | after |
+|---|---|---|
+| Site clicks | 14 | **14** (mobile 7 → 10, desktop 7 → 4) |
+| Site impressions | 1,797 | 1,505 (−16%) |
+| Homepage | 6 clicks / 862 impr / pos 8.3 | 3 / 476 / 11.3 |
+| `/grenoside-sheffield?utm…gbp` (the GBP link) | — | **8 clicks / 433 impr / pos 4.3** |
+| `/plastering-sheffield` | 1 / 148 / 13.7 | 0 / 134 / 15.5 |
+
+**Read:** the homepage "drop" is the map-pack impressions moving with the GBP link (~40 homepage queries at
+pos 1–3 vanished, the UTM URL picked up 433 at pos 4.3). Homepage + GBP link = 11 clicks vs 6 the week before.
+Site clicks flat. The −16% impressions sit on the RENDER pages (rendering 177→129, silicone 177→114, render repair
+144→89, EWI 103→55, monocouche 96→54) — the seasonal render fall Trends predicted; plastering pages held.
+Homepage organic for the core plastering terms ≈ pos 9 once the pack is taken out — no lift yet (one week).
+Keep the test; read again on/after 28 Oct.
+
 ### ⬜ Services still to add to GBP — all evidenced on our own site
 
 ⛔ **Add these a few at a time, not all at once**, and date each batch above. Adding fourteen
