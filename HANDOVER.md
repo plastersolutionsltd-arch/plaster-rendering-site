@@ -909,3 +909,6 @@ plasterboard, internal wall insulation and ceiling repair PEAK in January.
   Smith, stephen acaster. Linked from ceiling, plastering and cost pages + footer. ⚠ The footer pass first missed
   6 pages whose footer `<li>` spans two lines (ewi, faq, monocouche, plastering, rendering, silicone) — fixed with a
   multi-line match. The 13 self-contained pages have their own footers with no service list.
+- **Phone banner** (Chris: "plastering winter"): on the 57 app.css pages phones now show "✓ Indoor plastering all
+  winter · Call now"; "No deposit required" is desktop-only (`hidden sm:inline` / `sm:hidden` pair). Fits one line
+  at 320px. The 9 self-contained pages already showed the winter line on phones.
