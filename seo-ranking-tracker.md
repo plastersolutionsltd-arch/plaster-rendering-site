@@ -600,6 +600,30 @@ Site clicks flat. The −16% impressions sit on the RENDER pages (rendering 177�
 Homepage organic for the core plastering terms ≈ pos 9 once the pack is taken out — no lift yet (one week).
 Keep the test; read again on/after 28 Oct.
 
+### 🗺 20 Oct 2026 — FIRST GEO-GRID (Local Falcon), keyword `plasterer` (assumed — confirm), Google Maps
+7×7, 10 mi radius, **centred on the GBP address (Grenoside)**, 3.33 mi between pins. Evening scan. Settings to
+REPEAT exactly for comparison. Account added the location by text search — **no Google connection** (keep it so).
+Place ID `ChIJJ3AypQh5eUgRuj6EJErqLjU`.
+
+```
+North (Barnsley)    20+ 20+ 20+ 20+ 20+ 20+ 20+
+                    20+ 20+ 20+ 20+ 20+ 20+ 20+
+Stocksbridge/       14  11   6   5  15  20+ 20+
+Chapeltown           8   9   3  [1]  7  20+ 20+     <- centre = Grenoside
+Hillsborough dir.   20+ 11  13  20+ 20+ 20+ 20+
+City centre/S10-11  20+ 19  20+ 20+ 20+ 20+ 20+
+South (Dronfield)   20+ 20+ 20+ 20+ 20+ 20+ 20+
+```
+Top 3 at 2/49 pins, top 10 at 7/49, 20+ at 37/49.
+
+⛔ **Corrects the 23 Sep "2nd in the pack for plasterers sheffield".** That reading was taken from Chris's phone
+near Grenoside. From Hillsborough (≈3 mi) southwards — the city centre, S10/S11, S7/S8, east Sheffield — P&R is
+not in the top 20 map results for `plasterer`. The pack is proximity-bound to the Grenoside address; GBP work
+(categories/services after 28 Oct) helps mainly near home. **South Sheffield is won through the website's
+organic rankings** (plastering terms ≈ pos 9 citywide), not the map pack.
+⬜ `rendering` scan with the identical settings (51 credits left). ⬜ Repeat both monthly; free alternative for a
+monthly single-keyword check: Semrush Map Rank Tracker free tier (5×5).
+
 ### ⬜ Services still to add to GBP — all evidenced on our own site
 
 ⛔ **Add these a few at a time, not all at once**, and date each batch above. Adding fourteen
