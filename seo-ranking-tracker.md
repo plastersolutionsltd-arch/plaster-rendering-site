@@ -637,6 +637,28 @@ Fulwood · Ecclesall · Nether Edge             15  20+ 20+ 20+ 20+ 20+ 20+
 Dore · Norton · Gleadless · Mosborough        20+ 20+ 20+ 20+ 20+ 20+ 20+
 Hathersage · Dronfield · Eckington            20+ 20+ 20+ 20+ 20+ 20+ 20+
 ```
+**Competitors in the same scan (166 found):**
+
+| # | listing | base | reviews | SoLV | found at |
+|---|---|---|---|---|---|
+| 1 | G Lee Plastering | Old Whittington, Chesterfield S41 | 29 | 22.45 | 41% |
+| 2 | JSL PLASTERING | Chapeltown S35 | 54 | 20.41 | 39% |
+| 3 | Daniel Begley Plastering | Coal Aston, Dronfield S18 | 34 | 18.37 | 47% |
+| 4 | Smoothcoat plastering and Rendering | Cruise Rd S11 | 89 | 16.33 | 45% |
+| 5 | R.W Pro Plastering | Gleadless S12 | 37 | 12.24 | 57% |
+| 6 | A Haynes Plastering | Rawmarsh S62 | 48 | 12.24 | 18% |
+| 7 | Yorkshire Decorative Plasterers | Wadsley Bridge S6 | 24 | 8.16 | 45% |
+| 8 | **P&R** | Grenoside S35 | **117** | 8.16 | 37% |
+| 15 | S Hartley Plastering | Heeley S2 | 36 | 6.12 | 53% |
+| — | MAC Rendering / Plastering Designs / Dampcure | S3 / S3 / Chesterfield | 149 / 91 / 220 | 0 / 2.04 / 0 | |
+
+Every leader wins the pins around its own address; review count does not overcome distance (MAC 149, Dampcure
+220 → ~0). P&R's primary category confirmed **Plasterer** ("Plasterer +3 more") — settles the Bing doubt.
+⛔ Local Falcon AI advice NOT to follow: service-area updates (tested, no effect), keyword in business name
+(guideline breach → suspension risk), "strongest in the south" (wrong), Manchester/London citation links, posting
+cadence (not a ranking factor). A second "base" for the south only if it's a real staffed premises — never a
+virtual office.
+
 **Read:** the pack line runs roughly Hillsborough–Meadowhall. North of it P&R is top 5; the city centre, all of
 S7/S8/S10/S11/S17, the south-east and Rotherham are not in the top 20. The earlier 10 mi Grenoside-centred grid
 (above) says the same. **Goal metric: ATRP down from 15.96.** South Sheffield comes through organic + suburb-page
