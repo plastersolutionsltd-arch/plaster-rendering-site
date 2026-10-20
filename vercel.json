@@ -809,6 +809,10 @@
     {
       "source": "/insulated-plasterboard-sheffield",
       "destination": "/insulated-plasterboard-sheffield.html"
+    },
+    {
+      "source": "/lath-and-plaster-sheffield",
+      "destination": "/lath-and-plaster-sheffield.html"
     }
   ],
   "headers": [

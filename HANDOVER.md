@@ -903,3 +903,9 @@ plasterboard, internal wall insulation and ceiling repair PEAK in January.
   text and alts now say what the photo shows. It is now the insulated page's hero.
 - ⛔ **Cost page said artex "applied before 1985" may contain asbestos** and that post-1985 artex could be skimmed
   or removed. HSE: any building built or refurbished **before 2000**. All five mentions fixed.
+- **Same day, later: `/lath-and-plaster-sheffield`** — Chris confirmed he does lath and plaster. Three routes
+  (patch repair / overboard / strip and replace); only overboarding is priced (= new board and skim £250–£350 from
+  the cost page); patch and strip-out say "priced after survey" because no figure exists anywhere. Reviews: Tom
+  Smith, stephen acaster. Linked from ceiling, plastering and cost pages + footer. ⚠ The footer pass first missed
+  6 pages whose footer `<li>` spans two lines (ewi, faq, monocouche, plastering, rendering, silicone) — fixed with a
+  multi-line match. The 13 self-contained pages have their own footers with no service list.
