@@ -600,7 +600,7 @@ Site clicks flat. The −16% impressions sit on the RENDER pages (rendering 177�
 Homepage organic for the core plastering terms ≈ pos 9 once the pack is taken out — no lift yet (one week).
 Keep the test; read again on/after 28 Oct.
 
-### 🗺 20 Oct 2026 — FIRST GEO-GRID (Local Falcon), keyword `plasterer` (assumed — confirm), Google Maps
+### 🗺 20 Oct 2026 — first geo-grid (Local Falcon), `plasterer`, Google Maps — superseded as the template by the city-centred grid below
 7×7, 10 mi radius, **centred on the GBP address (Grenoside)**, 3.33 mi between pins. Evening scan. Settings to
 REPEAT exactly for comparison. Account added the location by text search — **no Google connection** (keep it so).
 Place ID `ChIJJ3AypQh5eUgRuj6EJErqLjU`.
@@ -623,6 +623,24 @@ not in the top 20 map results for `plasterer`. The pack is proximity-bound to th
 organic rankings** (plastering terms ≈ pos 9 citywide), not the map pack.
 ⬜ `rendering` scan with the identical settings (51 credits left). ⬜ Repeat both monthly; free alternative for a
 monthly single-keyword check: Semrush Map Rank Tracker free tier (5×5).
+
+### 🗺⭐ 20 Oct 2026 — THE BASELINE GRID TO REPEAT MONTHLY (Local Falcon, `plasterer`, Google Maps)
+**Settings: centre 53.3826380, −1.4744930 (Sheffield), 7×7, 7.0 mi radius (196 mi²).** Scanned 7:31 pm.
+**ARP 7.28 · ATRP 15.96 · SoLV 8.16%** (4/49 pins in the top 3). Top 10 at 14/49; found at 18/49; 20+ at 31/49.
+
+```
+Stocksbridge · High Green · Hoyland           10   7   4   5  10  20+ 20+
+Ewden · Grenoside · Chapeltown                 8   9   2   2   4  20+ 20+
+Loxley · Wadsley · Parson Cross · Meadowhall  10  11   5   2   3  20+ 20+
+Crookes · CITY CENTRE · Darnall               12  12  20+ 20+ 20+ 20+ 20+
+Fulwood · Ecclesall · Nether Edge             15  20+ 20+ 20+ 20+ 20+ 20+
+Dore · Norton · Gleadless · Mosborough        20+ 20+ 20+ 20+ 20+ 20+ 20+
+Hathersage · Dronfield · Eckington            20+ 20+ 20+ 20+ 20+ 20+ 20+
+```
+**Read:** the pack line runs roughly Hillsborough–Meadowhall. North of it P&R is top 5; the city centre, all of
+S7/S8/S10/S11/S17, the south-east and Rotherham are not in the top 20. The earlier 10 mi Grenoside-centred grid
+(above) says the same. **Goal metric: ATRP down from 15.96.** South Sheffield comes through organic + suburb-page
+reviews, not the pack. 26 credits left (one 5×5).
 
 ### ⬜ Services still to add to GBP — all evidenced on our own site
 
