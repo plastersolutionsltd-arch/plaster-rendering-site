@@ -544,6 +544,44 @@ Website clicks tabs (daily) would show whether it was calls or clicks. Not prove
 This is the pre-test baseline for the 7 Oct website-URL change: on/after 28 Oct read October the same way
 (interactions per day, before vs after 7 Oct) alongside homepage organic clicks and pack position.
 
+### 🔎 20 Oct 2026 — Winter plastering demand research (Chris: "more plaster jobs, I don't want to be outside all winter")
+
+**Google Trends, England, 5 years, average index per calendar month** (relative, not volumes; Sheffield is
+too small for Trends):
+
+| term | Jan | Feb | Mar | Jun | Aug | Oct | Nov | Dec | peak / low |
+|---|---|---|---|---|---|---|---|---|---|
+| plasterer | 19 | 19 | 19 | 18 | 20 | 19 | 17 | 13 | flat, only Dec dips |
+| plastering | 79 | 82 | 79 | 69 | 77 | 81 | 75 | 56 | Feb + Oct peaks |
+| dry lining | 20 | 20 | 19 | 17 | 18 | 20 | 19 | 14 | flat |
+| insulated plasterboard | 36 | 31 | 27 | 21 | 22 | 30 | 33 | 27 | **Jan, x1.7 vs Jun** |
+| internal wall insulation | 23 | 21 | 17 | 12 | 13 | 18 | 21 | 18 | **Jan, x1.9 vs Jun** |
+| ceiling repair | 27 | 25 | 23 | 18 | 23 | 23 | 25 | 20 | **Jan** |
+| lath and plaster | 14 | 15 | 11 | 12 | 12 | 15 | 13 | 8 | **Oct + Feb** |
+| house rendering / render repair | — | — | — | — | — | — | — | — | dip in winter (render repair Dec ~0) |
+
+⛔ "skimming" is unusable in Trends: dominated by Farrow & Ball "Skimming Stone" paint and "price skimming".
+Customer-intent related searches: plasterer near me, local plasterer, how much does a plasterer cost,
+**cost of plastering a room uk (rising +120%)**, how long after plastering can you paint (rising).
+
+**Read: plastering demand does NOT fall in winter — only Christmas week does.** Rendering does. The indoor jobs
+that RISE into winter are insulated plasterboard / thermal boarding, ceiling repair, lath and plaster.
+
+**Our own data (GSC, 3 months to 24 Sep):** plastering-intent queries 5,330 impressions vs rendering 5,431 —
+equal demand. Top: plasterers sheffield 802 (pos 9.4), plasterer sheffield 665 (7.8), plasterers in sheffield 491
+(9.6, 0 clicks), sheffield plasterer 366 (8.6). `lath and plaster companies in sheffield` 54 + `... cost` 17 —
+**the site has no lath content at all** (only /projects mentions the word). `/plastering-sheffield` 571 impr at
+pos 13 (28d to 7 Oct); `/plastering-cost-sheffield` now indexed (51 impr, pos 12.4; was zero before 26 Sep).
+
+**Reviews:** 19 name plastering only, 35 rendering only, 14 both — the corpus skews 2:1 to rendering.
+
+⛔ **The announcement bar on 65 pages says "Currently booking January–February 2027".** It is a formula
+(`(month+3)%12`), not Chris's diary. In autumn it tells every indoor-job visitor "not until January". Needs
+Chris's real indoor availability before it changes.
+
+**Grants:** Warm Homes Local Grant / ECO4 internal wall insulation needs a TrustMark + PAS 2030 installer — not
+open to P&R as-is. Pitch thermal boarding as self-funded; never promise a grant.
+
 ### ⬜ Services still to add to GBP — all evidenced on our own site
 
 ⛔ **Add these a few at a time, not all at once**, and date each batch above. Adding fourteen
