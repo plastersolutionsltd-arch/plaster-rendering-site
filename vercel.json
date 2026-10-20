@@ -801,6 +801,14 @@
     {
       "source": "/sand-cement-render-sheffield",
       "destination": "/sand-cement-render-sheffield.html"
+    },
+    {
+      "source": "/ceiling-plastering-sheffield",
+      "destination": "/ceiling-plastering-sheffield.html"
+    },
+    {
+      "source": "/insulated-plasterboard-sheffield",
+      "destination": "/insulated-plasterboard-sheffield.html"
     }
   ],
   "headers": [

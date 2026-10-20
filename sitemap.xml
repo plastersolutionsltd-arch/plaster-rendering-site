@@ -656,4 +656,24 @@
         <priority>0.8</priority>
     </url>
 
+  <url>
+        <loc>https://www.plasterandrenderingsolutions.co.uk/ceiling-plastering-sheffield</loc>
+        <lastmod>2026-10-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://www.plasterandrenderingsolutions.co.uk/images/case-studies/sheffield-plastering.webp</image:loc>
+            <image:title>Ceiling plastering Sheffield — skimmed ceiling and walls by P&amp;R Solutions</image:title>
+        </image:image>
+    </url>
+  <url>
+        <loc>https://www.plasterandrenderingsolutions.co.uk/insulated-plasterboard-sheffield</loc>
+        <lastmod>2026-10-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://www.plasterandrenderingsolutions.co.uk/images/case-studies/plastering%20s10.webp</image:loc>
+            <image:title>Insulated plasterboard Sheffield — PIR insulation boards fitted before plasterboarding, S10</image:title>
+        </image:image>
+    </url>
 </urlset>

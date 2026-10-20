@@ -877,3 +877,29 @@ gallery jobs. `-t` thumbs exist so they can join the gallery once Chris gives ea
   "duplicate"; caught in the diff and restored.)
 - **New crawler check worth keeping:** visible elements past the right edge that no ancestor clips. Off-screen
   children of a `position:fixed` header do not make the page scroll, so a scroll-width check passes on them.
+
+### 20 Oct 2026 — winter plastering push: banner, two new pages, plastering heading, artex date
+Chris: "more plaster jobs coming in winter… we need to improve for plastering". Research is in
+`seo-ranking-tracker.md` (20 Oct): plastering searches stay flat all winter (only Christmas dips); insulated
+plasterboard, internal wall insulation and ceiling repair PEAK in January.
+- **Banner:** "Currently booking <January–February 2027>" removed from 66 pages. It was a formula
+  (`(month+3)%12`), not Chris's diary, and told every autumn visitor "not until January". Now reads
+  **"Indoor plastering all winter"**; the bk-range script is deleted. ⚠ On 54 pages that middle part is
+  `hidden sm:inline`, so phones (79% of profile views) only see "No deposit required · Call now".
+- **New `/ceiling-plastering-sheffield`** (targets: ceiling plastering / ceiling repair / artex ceiling Sheffield)
+  and **`/insulated-plasterboard-sheffield`** (insulated plasterboard / thermal boarding / internal wall insulation
+  Sheffield). Built from the dry-lining page (app.css, same design). Prices are only ones already on the site
+  (cost page table + dry-lining schema). Photos are real jobs with gallery-matching captions. Reviews verbatim:
+  Alan Shepherd (full text was already live on dry-lining; `reviews-source.md` still marks it TRUNCATED),
+  stephen acaster, Dave Holmes. **No lath-and-plaster and no grant claims** — Chris hasn't confirmed lath work,
+  and grant installs need TrustMark/PAS 2030. vercel rewrites + sitemap + llms.txt done; linked from the
+  plastering, dry-lining, EWI and cost pages and the footer of 50 pages.
+- **`/plastering-sheffield` H1** "Plasterers Sheffield Trust." → **"Plasterers in Sheffield You Can Trust."**
+  (`plasterers in sheffield`: 491 impressions, pos 9.6, 0 clicks). Title unchanged. **Homepage deliberately NOT
+  touched** until the GBP website-link test is read on/after 28 Oct.
+- **`plastering s10.webp` is EcoTherm PIR insulation boards on a sloped ceiling**, but plastering-sheffield
+  captioned it "fresh skim coat finish, ready for decorating" (and its srcset had an unencoded space, so phones
+  got the desktop file). Swapped there for the Chapeltown full re-skim photo; dry-lining card, projects gallery
+  text and alts now say what the photo shows. It is now the insulated page's hero.
+- ⛔ **Cost page said artex "applied before 1985" may contain asbestos** and that post-1985 artex could be skimmed
+  or removed. HSE: any building built or refurbished **before 2000**. All five mentions fixed.
