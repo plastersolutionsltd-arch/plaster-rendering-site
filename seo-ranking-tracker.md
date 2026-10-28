@@ -600,6 +600,25 @@ Site clicks flat. The −16% impressions sit on the RENDER pages (rendering 177�
 Homepage organic for the core plastering terms ≈ pos 9 once the pack is taken out — no lift yet (one week).
 Keep the test; read again on/after 28 Oct.
 
+### 📊 28 Oct 2026 — GBP website-link test, three weeks (GSC "Last 3 months" export to 26 Oct, Web)
+Site totals from Chart.csv, three equal 20-day windows:
+
+| window | clicks | impressions | avg pos |
+|---|---|---|---|
+| 28 Aug – 16 Sep | 57 | 5,432 | 19.3 |
+| 17 Sep – 6 Oct (before) | 54 | 4,591 | 10.8 |
+| **7 – 26 Oct (test)** | **52** | 4,876 | 11.0 |
+
+Weekly clicks since the change: 19, 12, 21 (19–25 Oct is the best week since early Sep).
+`/grenoside-sheffield?utm…gbp` (the GBP link): **23 clicks / 1,791 impr / pos 3.8**, all inside the test window.
+
+**Read:** site clicks **flat** (54 → 52) through the seasonal render fall; no harm, no clear lift. The
+question the test asked — did the HOMEPAGE's organic clicks recover once it stopped being the GBP page —
+**can't be answered from a 3-month aggregate** (pages aren't split by date). Needs a GSC Compare export:
+Date → Compare → custom 7–26 Oct vs 17 Sep–6 Oct → Pages + Queries.
+Suburb pages over the same 3 months: Chapeltown 5 / 1,024 / pos 54.8, Hillsborough 6 / 310 / 28.5,
+Beighton 4 / 340 / 35.0 — still the three with impressions to win, still off page 1.
+
 ### 🗺 20 Oct 2026 — first geo-grid (Local Falcon), `plasterer`, Google Maps — superseded as the template by the city-centred grid below
 7×7, 10 mi radius, **centred on the GBP address (Grenoside)**, 3.33 mi between pins. Evening scan. Settings to
 REPEAT exactly for comparison. Account added the location by text search — **no Google connection** (keep it so).
