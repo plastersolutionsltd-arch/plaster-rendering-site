@@ -149,6 +149,8 @@ real overflow everywhere else and breaks position:sticky.
 5. Add inbound links. A page with none is orphaned.
 6. Measure the `<title>` in **pixels**, not characters. Google truncates near 600px.
 7. Render it and check: JS errors, accordion opens, 0px overflow at 390px, no mojibake.
+8. **Mobile contact bar:** a cloned page inherits it, but check the `MOBILE-CONTACT-BAR v1` block sits
+   just before `</body>` (`grep -L MOBILE-CONTACT-BAR *.html` should list only the 3 dev previews).
 
 ### Editing an FAQ — this has bitten twice
 
@@ -933,3 +935,20 @@ plasterboard, internal wall insulation and ceiling repair PEAK in January.
   back to `/?utm_source=google&utm_medium=organic&utm_campaign=gbp`** the same day (pending Google review then).
 - **Categories audit started** (tracker, 28 Oct section): Plasterer + Stucco / Dry Wall / Insulation contractor;
   Building contractor has vanished; still reading Google's dropdowns before choosing anything.
+
+### 28 Oct 2026 — mobile Call / WhatsApp bar on every page
+- Fixed bottom bar under 1024px on all **69 public pages**: **Call Chris** (`tel:+447595399525`) and **WhatsApp a
+  photo** (`wa.me/447595399525`, prefilled "Hi Chris, I'd like a quote. Here are some photos of the job:").
+  Hidden on desktop. Prompted by a Gemini audit — the one real gap in it: the site had **zero** WhatsApp links.
+- **Self-contained block** (own `<style>` + `<nav class="mcb">`) injected before `</body>`, marker comment
+  `MOBILE-CONTACT-BAR v1` — deliberately NOT in app.css, so it reaches the 10 pages that don't load it and needs
+  no re-hash. To change it, edit all 69 blocks with one Python pass (the marker makes them findable).
+- `body` gets `padding-bottom` under 1024px so the footer clears it; `z-index:45` keeps it under the headers and
+  the self-contained pages' full-screen menu (z 99).
+- Clicks fire GA4 events `mobile_bar_call` / `mobile_bar_whatsapp` (no gtag events existed before) — read them
+  in GA4 → Events after a couple of weeks.
+- Verified over http at 390px on all 69: bar flush to the bottom, both buttons 48px and on top at their centre,
+  no wrapping, no sideways scroll, last footer text above the bar at page end, no page errors; hidden at 1280px.
+  Phone menu opened on index/get-quote/pricing/nether-edge — menus unaffected. Screenshots looked at.
+- Gemini's other claims were checked and mostly wrong (no 10-year guarantee anywhere, schema already present,
+  calculator exists on /pricing). Skipped on evidence: 0114 number, keyword review replies, weekly posts.
