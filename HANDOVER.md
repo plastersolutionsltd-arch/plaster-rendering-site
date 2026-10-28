@@ -912,3 +912,13 @@ plasterboard, internal wall insulation and ceiling repair PEAK in January.
 - **Phone banner** (Chris: "plastering winter"): on the 57 app.css pages phones now show "✓ Indoor plastering all
   winter · Call now"; "No deposit required" is desktop-only (`hidden sm:inline` / `sm:hidden` pair). Fits one line
   at 320px. The 9 self-contained pages already showed the winter line on phones.
+
+### 28 Oct 2026 — Aaron Garbett, hallway plastering, Nether Edge / Brincliffe S11
+- Verbatim from the GBP panel ("Yesterday" on 28 Oct → dated **27 Oct 2026**). Curly apostrophes in "can’t",
+  "wasn’t", "We’re" kept; "Netheredge" spelling kept. Line breaks flattened to one paragraph. Area IS in the text.
+- Published on `nether-edge-sheffield` (had zero review cards) as a `Review` node + visible card, caption
+  "Hallway plastering · Nether Edge / Brincliffe S11". Note the page's Quick Answer says Nether Edge is **S7**;
+  Aaron says S11 (Brincliffe side). Both are right, the area straddles them. Left the copy alone.
+- Count → **118** (on the panel header) via `sync-reviews.py 118`; `--check` clean.
+- Verified over http at 390px: JSON-LD parses, schema == visible == panel text, no page errors, no horizontal
+  scroll; screenshot looked at.
