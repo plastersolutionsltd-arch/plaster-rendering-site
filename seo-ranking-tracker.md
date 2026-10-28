@@ -641,6 +641,29 @@ harm, and reverting is another variable) and move on to the categories + service
 ⚠ Render pages' page-level average position looks ~10 places worse (rendering 30 → 43, silicone 31 → 40), but on
 the **same 95 render queries** seen in both windows position held (13.0 → 13.4) — an averaging artefact, not a drop.
 
+### ⏳ 28 Oct 2026 — GBP categories audit, IN PROGRESS (step 2 of the queue)
+Read off Edit profile → Business category by Chris, 28 Oct. **4 of 10 slots used:**
+
+| slot | category | verdict |
+|---|---|---|
+| Primary | **Plasterer** | ✅ correct, keep |
+| Additional | Stucco contractor | ✅ keep — Google's (US) word for render, closest it offers |
+| Additional | Dry Wall Contractor | ✅ keep — dry lining / boarding |
+| Additional | Insulation Contractor | ✅ keep — EWI |
+
+- ⚠ **"Building contractor" is GONE.** The 10 Jun row above says it was added; it is not in the list now. Ask Chris
+  whether he removed it. Not recommending re-adding (broad, weak for plastering relevance).
+- Category names must come off Google's live picker — research found **no authoritative UK list** (only directory
+  labels). Don't suggest a name that hasn't been seen in the dropdown.
+- Dropdown for **"resto"**: Art / Car / Doll / Photo restoration, **Building restoration service**, Fire damage
+  restoration, Water damage restoration. Only *Building restoration service* is a candidate — and only if
+  period/heritage repair is regular work (site evidences it: `lath-and-plaster-sheffield`, `render-repair-sheffield`).
+  ⬜ Asked Chris; no answer yet. Fire/water damage = insurance drying firms, no.
+- ⬜ Still to read: dropdowns for **render, plaster, damp, ceiling, wall**. NOTHING selected or saved yet.
+  ⛔ Damp: no damp page on the site, so only if he actually offers it.
+- Then step 3: Edit services (predefined vs custom), a few per dated batch.
+- The orange "Find Categories" button in his screenshots is a browser extension, not Google.
+
 ### 🗺 20 Oct 2026 — first geo-grid (Local Falcon), `plasterer`, Google Maps — superseded as the template by the city-centred grid below
 7×7, 10 mi radius, **centred on the GBP address (Grenoside)**, 3.33 mi between pins. Evening scan. Settings to
 REPEAT exactly for comparison. Account added the location by text search — **no Google connection** (keep it so).

@@ -922,3 +922,14 @@ plasterboard, internal wall insulation and ceiling repair PEAK in January.
 - Count → **118** (on the panel header) via `sync-reviews.py 118`; `--check` clean.
 - Verified over http at 390px: JSON-LD parses, schema == visible == panel text, no page errors, no horizontal
   scroll; screenshot looked at.
+
+### 28 Oct 2026 (later) — suburb-page traffic, GBP link test closed, link moved back, categories audit started
+- **Suburb pages barely get clicks:** 41 pages = 47 GSC clicks / 2,939 impr in 3 months to 26 Sep (homepage alone
+  167 / 12,195). Only Chapeltown (pos 55), Hillsborough (28), Beighton (35) have impressions worth chasing.
+  Don't blanket-edit the 41 (doorway risk) — per-page work needs a per-page Queries export from GSC.
+- **GBP link test closed** — full table in `seo-ranking-tracker.md`. Listing clicks moved to Grenoside as expected
+  (27 at pos 3.8) but the homepage did NOT climb organically. Chris then spotted the Grenoside page is a far weaker
+  landing page (2 prices vs 43, 1 review vs 3, a village hero for citywide map clickers) → **GBP Website link moved
+  back to `/?utm_source=google&utm_medium=organic&utm_campaign=gbp`** the same day (pending Google review then).
+- **Categories audit started** (tracker, 28 Oct section): Plasterer + Stucco / Dry Wall / Insulation contractor;
+  Building contractor has vanished; still reading Google's dropdowns before choosing anything.

@@ -71,7 +71,10 @@ Sunday      Closed
 
 ## Categories
 
-Use in this order where a directory allows more than one. These match the GBP.
+Use in this order where a directory allows more than one.
+⚠ 28 Oct 2026: the GBP itself now reads **Plasterer** (primary) + Stucco contractor, Dry Wall Contractor,
+Insulation Contractor — "Building contractor" is no longer on it. The list below is for DIRECTORIES; audit in
+`seo-ranking-tracker.md` (28 Oct categories section).
 
 ```
 Primary:    Plasterer
