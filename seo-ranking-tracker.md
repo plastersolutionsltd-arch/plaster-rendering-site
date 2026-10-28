@@ -651,8 +651,9 @@ Read off Edit profile → Business category by Chris, 28 Oct. **4 of 10 slots us
 | Additional | Dry Wall Contractor | ✅ keep — dry lining / boarding |
 | Additional | Insulation Contractor | ✅ keep — EWI |
 
-- ⚠ **"Building contractor" is GONE.** The 10 Jun row above says it was added; it is not in the list now. Ask Chris
-  whether he removed it. Not recommending re-adding (broad, weak for plastering relevance).
+- ✅ **"Building contractor" is GONE because Google no longer offers it** — Chris typed it into the picker 28 Oct
+  and it isn't an option. Google retired or renamed it and dropped it from the profile; he didn't remove it.
+  Nothing to do (broad, weak for plastering relevance anyway).
 - Category names must come off Google's live picker — research found **no authoritative UK list** (only directory
   labels). Don't suggest a name that hasn't been seen in the dropdown.
 - Dropdown for **"resto"**: Art / Car / Doll / Photo restoration, **Building restoration service**, Fire damage
