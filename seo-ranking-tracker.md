@@ -619,6 +619,27 @@ Date → Compare → custom 7–26 Oct vs 17 Sep–6 Oct → Pages + Queries.
 Suburb pages over the same 3 months: Chapeltown 5 / 1,024 / pos 54.8, Hillsborough 6 / 310 / 28.5,
 Beighton 4 / 340 / 35.0 — still the three with impressions to win, still off page 1.
 
+### ✅ 28 Oct 2026 — GBP website-link test CLOSED (GSC Compare: 7–28 Oct vs 15 Sep–6 Oct, 22 days each, Web)
+
+| | before | after |
+|---|---|---|
+| Site clicks / impressions | 57 / 5,050 | **62** / 5,140 |
+| Homepage | 32 clicks / 2,601 impr / pos 7.7 | 9 / 1,455 / 12.2 |
+| `/grenoside-sheffield?utm…gbp` (the GBP link) | — | **27 / 1,901 / pos 3.8** |
+| Homepage + GBP link combined | 32 | **36** |
+| Mobile / desktop clicks | 33 / 24 | 41 / 21 |
+
+Pack terms, query level (pos before → after): `plasterers sheffield` 8.9 → 9.2 (clicks 1 → 2),
+`plasterer sheffield` 7.7 → 7.0, `plasterers in sheffield` 8.9 → 8.8, `sheffield plasterer` 7.5 → 9.6.
+
+**Verdict:** the listing's clicks moved to the Grenoside URL as expected and the total rose slightly (32 → 36,
+site 57 → 62), but there is **no sign of the homepage climbing organically** for the plastering terms — still
+≈ pos 7–9, where it was. The Diversity-Update demotion either wasn't the brake or needs longer than 3 weeks.
+Numbers this small (±5 clicks) are within noise. **Decision: leave the GBP link on /grenoside-sheffield** (no
+harm, and reverting is another variable) and move on to the categories + services audit.
+⚠ Render pages' page-level average position looks ~10 places worse (rendering 30 → 43, silicone 31 → 40), but on
+the **same 95 render queries** seen in both windows position held (13.0 → 13.4) — an averaging artefact, not a drop.
+
 ### 🗺 20 Oct 2026 — first geo-grid (Local Falcon), `plasterer`, Google Maps — superseded as the template by the city-centred grid below
 7×7, 10 mi radius, **centred on the GBP address (Grenoside)**, 3.33 mi between pins. Evening scan. Settings to
 REPEAT exactly for comparison. Account added the location by text search — **no Google connection** (keep it so).
