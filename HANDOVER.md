@@ -952,3 +952,8 @@ plasterboard, internal wall insulation and ceiling repair PEAK in January.
   Phone menu opened on index/get-quote/pricing/nether-edge — menus unaffected. Screenshots looked at.
 - Gemini's other claims were checked and mostly wrong (no 10-year guarantee anywhere, schema already present,
   calculator exists on /pricing). Skipped on evidence: 0114 number, keyword review replies, weekly posts.
+- Gemini's longer second pass (same day) added nothing to do: its schema snippet would duplicate/contradict the
+  existing nodes (reviewCount 100); "area code = proximity signal" is unproven; images are already 100% WebP
+  (388); no 10-year guarantee exists. ⬜ **Open idea only:** a before/after drag slider — before photos exist
+  (`images/case-studies/*before*`: pebbledash, wentworth, millhouses-ewi, repair-blown, silicone-render), but
+  only worth it if a pair shares the same camera angle. Not checked yet; Chris parked it 28 Oct.
