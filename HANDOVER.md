@@ -925,6 +925,32 @@ plasterboard, internal wall insulation and ceiling repair PEAK in January.
 - Verified over http at 390px: JSON-LD parses, schema == visible == panel text, no page errors, no horizontal
   scroll; screenshot looked at.
 
+### 2–4 Nov 2026 — categories done, Semrush read, 6 suburb pages rewritten, Bing unflagged
+- **GBP categories audit DONE 2 Nov, no change.** Services audit started (23 custom services, all under
+  Plasterer; plan = predefined Dry Wall Contractor chips in 3 batches, name only). Price mismatches between the
+  GBP services and the site are listed in `seo-ranking-tracker.md` (2 Nov section).
+- **Semrush free plan calibrated against GSC:** volumes match, traffic ~2.8x high, local positions fiction. Top
+  competitors rwproplastering (Gleadless S12) and bwpplastering (Ecclesall Rd S11) win the MAP PACK by proximity;
+  their links are junk apart from Yell. P&R's real gap is organic pos 7–9 on `plasterers sheffield` /
+  `plasterer sheffield` / `plasterers in sheffield` (1,831 impressions, 10 clicks in 3 months).
+- **"Crawled - currently not indexed" = 6 suburb pages** (loxley, ecclesfield, southey, mosborough,
+  crystal-peaks, woodseats). Technically clean. ⛔ Link count is still NOT the cause (see 25 Aug above) — I
+  said it was before reading this file; read this file before diagnosing indexing. Fix shipped 4 Nov
+  (8469f6f, c2926cf): Southey had been a find-and-replace of Parson Cross (65% overlap → 16%); all six got
+  sourced local history + the indoor-winter angle (Artex tested pre-2000, lath and plaster linked); Mosborough,
+  Crystal Peaks, Southey, Loxley added to the area pills on 8 service pages; dateModified + lastmod set to
+  2026-11-04 on the 6 only. Chris requested indexing on all 6 the same day. **Read early Dec.**
+- ⚠ `sync-dates.py --check` now wants to restamp 64 pages to 28 Oct because the mobile call bar touched every
+  page. That bar is not a content change, so I did NOT run it; dates were set by hand on the 6 rewritten pages.
+  Decide before the next full run (raise TRIVIAL_LINES or skip that commit).
+- ⚠ Woodseats para 2 claims "We've worked on a number of Woodseats properties and can show you examples" —
+  pre-existing, unverified; asked Chris 4 Nov, no answer yet.
+- **Bing Places:** duplicate flag removed 4 Nov, listing Pending Publish; Chris replied the GBP address is NOT
+  hidden. When live: fix blank address/email + categories (`CITATIONS-NAP.md`).
+- **Apple Business Connect** still blocked on document proof (case 102979211706, idle since 29 Sep): the Simply
+  Business certificate has no address; best options are the policy schedule (if it shows Rocher Close) or an
+  HMRC letter once the registered office moves off Lishmans' address (still Chapeltown at Companies House, 4 Nov).
+
 ### 28 Oct 2026 (later) — suburb-page traffic, GBP link test closed, link moved back, categories audit started
 - **Suburb pages barely get clicks:** 41 pages = 47 GSC clicks / 2,939 impr in 3 months to 26 Sep (homepage alone
   167 / 12,195). Only Chapeltown (pos 55), Hillsborough (28), Beighton (35) have impressions worth chasing.
