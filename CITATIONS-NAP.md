@@ -165,6 +165,10 @@ Ordered by what each is actually worth, not by how quick it is.
       He was one click from it. The fix is to have the incorrect match removed, not to claim theirs.
       ⏰ **TICKET RAISED 23 Sep 2026 — case number `7109243851`.** Chase on this number; a new
       ticket restarts the queue. Support replies by email to plastersolutionsltd@gmail.com.
+      ✅ **4 Nov 2026: duplicate flag REMOVED** by Bing engineering; listing now "Pending Publish".
+      Support (Ioannis) asked whether the GBP address is hidden (a hidden address can block
+      publishing). Reply drafted: not hidden, shown as 3 Rocher Close. Next: once it publishes, do
+      the one-pass fix below (blank address + email, wrong categories).
       **Route:** `https://www.bing.com/forbusiness/contactSupport` — live chat when open, otherwise
       the same form raises a ticket and support replies by email. There is **no public support
       email address**. Ask, in Microsoft's own moderator wording, to *"retain the published

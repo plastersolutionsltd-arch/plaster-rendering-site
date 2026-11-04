@@ -202,6 +202,7 @@ while the website has had five sessions of work in that time. That is the misall
 
 | Date | What changed |
 |---|---|
+| 2026-11-04 | **6 suburb pages "Crawled - currently not indexed" (GSC drill-down): loxley, ecclesfield, southey, mosborough, crystal-peaks, woodseats.** All technically clean (200, index/follow, self-canonical, in sitemap). ⚠ Link count is NOT the cause (Lodge Moor/Parson Cross index on 3 links; see HANDOVER 25 Aug) — I wrongly said it was, then corrected. Fix = better pages for Google to re-judge: **Southey was a find-and-replace of Parson Cross (65% overlap)** → hero, 5 service cards, area text and all 5 FAQs rewritten (now 16% overlap, 80% unique); Mosborough/Crystal Peaks said the same "1970s–80s brick" thing → rewritten with real history (Derbyshire→Sheffield 1967, Mosborough Hall, St Mark's 1886–87, townships from mid-1970s; Crystal Peaks opened 1 Mar 1988, Waterthorpe/Westfield/Owlthorpe); Loxley (2.5-mile valley village, 1864 flood, 17 died, housing 1905–WWI then Normandale and post-war); Ecclesfield (Grade I St Mary's, priory, Whitley Hall); Woodseats (Derbyshire until 1901, St Chad's 1911). Each now carries the indoor-winter angle (Artex tested if pre-2000, lath and plaster on pre-1930s houses, linked). FAQ schema kept identical to visible text. Also added Mosborough, Crystal Peaks, Southey, Loxley to the area pills on 8 service pages (inbound 4/4/5/8 → 12/12/13/16). Sources: Sheffield Archives local-history guides, Wikipedia (Loxley, Mosborough, Woodseats, Ecclesfield, Longley). **Owner action:** Request indexing on all 6 in URL Inspection. **Read:** whether any leave the list by early Dec. | 
 | 2026-09-08 | **New Google review from J Spencer (5 star, silicone render, Fulwood S10)** — the FIRST review in the 101-captured corpus to name Fulwood. Captured verbatim in `reviews-source.md`; published on `/fulwood-sheffield` as a visible card + `Review` node (that page previously had **zero** review cards despite 27 silicone mentions). Rendered and checked at 390px: visible, no JS errors, scrollWidth 390 before and after. **Review count left at 110** — the GBP panel number was hidden behind the reply modal and must not be derived by adding one. | 
 | 2026-09-08 | **August full-month GSC logged** from the owner's monthly email: 109 clicks, 9.81K impressions, 4 pages with first impressions. See the section above. | 
 | 2026-08-09 | **New page `/greenhill-sheffield` live + indexing requested.** S8 suburb page built from the Norton template with real local detail, carrying Matt Sabzevari's review (the only one of 98 that names Greenhill) and his actual job photo. 7 inbound links from neighbouring suburb pages so it does not start link-starved the way Beighton and Meersbrook did. Indexability verified: 200, `index, follow`, self-canonical, no X-Robots-Tag, in sitemap. 61 URLs submitted to IndexNow (HTTP 200 — Bing/Yandex; **Google does not use IndexNow**). Chris requested indexing in GSC the same day. **Watch:** whether it indexes faster than Beighton and Meersbrook did on 5–7 links. | 
@@ -641,6 +642,19 @@ harm, and reverting is another variable) and move on to the categories + service
 ⚠ Render pages' page-level average position looks ~10 places worse (rendering 30 → 43, silicone 31 → 40), but on
 the **same 95 render queries** seen in both windows position held (13.0 → 13.4) — an averaging artefact, not a drop.
 
+**2 Nov re-export, same two windows, now final** (the 28 Oct export had the last days still filling in): site clicks
+57 → **70** (5,050 → 5,177 impr); GBP Grenoside link **31** (pos 3.8); homepage 10 (pos 12.2) + homepage UTM 3 (28 Oct,
+after the switch back); listing + homepage 32 → **44**; mobile 33 → 45, desktop 24 → 25. Pack terms unchanged
+(`plasterers sheffield` 8.9 → 9.0, `plasterer sheffield` 7.7 → 6.9, `plasterers in sheffield` 8.9 → 9.5,
+`sheffield plasterer` 7.5 → 10.0). **Verdict stands:** more clicks overall, no homepage organic climb. Nothing after
+28 Oct is in it — read the switch back to the homepage with 29 Oct–18 Nov vs 7–27 Oct, on/after 20 Nov.
+
+**2 Nov, "Last 3 months" export (data to 31 Oct):** week of 25–31 Oct = **41 clicks**, the best week in the three
+months (previous best 32, w/c 16 Aug; Sep–Oct ran 13–21). Daily 26–31 Oct: 7, 8, 10, 3, 6, 4 — the jump started
+26 Oct, BEFORE the link went back to the homepage on 28 Oct, so the switch did not cause it. Homepage UTM link since
+28 Oct: 9 clicks / 288 impr / CTR 3.1% / pos 4.5 (Grenoside link over its 3 weeks: 31 / 1,939 / 1.6% / pos 3.8).
+4 days only — too few to call. Brand query `plaster and rendering solutions limited` 10 clicks in 3 months.
+
 ### ⏳ 28 Oct 2026 — GBP categories audit, IN PROGRESS (step 2 of the queue)
 Read off Edit profile → Business category by Chris, 28 Oct. **4 of 10 slots used:**
 
@@ -660,7 +674,14 @@ Read off Edit profile → Business category by Chris, 28 Oct. **4 of 10 slots us
   restoration, Water damage restoration. Only *Building restoration service* is a candidate — and only if
   period/heritage repair is regular work (site evidences it: `lath-and-plaster-sheffield`, `render-repair-sheffield`).
   ⬜ Asked Chris; no answer yet. Fire/water damage = insurance drying firms, no.
-- ⬜ Still to read: dropdowns for **render, plaster, damp, ceiling, wall**. NOTHING selected or saved yet.
+- Dropdown for **"ceiling"** (Chris, 2 Nov): **nothing offered** — no ceiling category exists. Ceilings go in as
+  a SERVICE (step 3) instead.
+- Dropdown for **"damp"** (Chris, 2 Nov): **nothing offered** — question closed.
+- Dropdown for **"wall"** (Chris's screenshot, 2 Nov): Dry Wall Contractor (already held), Dry Wall Supply Shop
+  (a shop, no), Retaining Wall Contractor (groundworks, no), Waldorf kindergarten/school. **Nothing to add.**
+- Dropdowns for **"render"** and **"plaster"** (Chris, 2 Nov): nothing beyond what he holds.
+- ✅ **Categories audit DONE 2 Nov — no change.** Google offers nothing else that fits; the 4 held are the right
+  ones. Only open item: *Building restoration service*, IF heritage repair is regular work (still asked).
   ⛔ Damp: no damp page on the site, so only if he actually offers it.
 - Then step 3: Edit services (predefined vs custom), a few per dated batch.
 - The orange "Find Categories" button in his screenshots is a browser extension, not Google.
@@ -728,6 +749,61 @@ virtual office.
 S7/S8/S10/S11/S17, the south-east and Rotherham are not in the top 20. The earlier 10 mi Grenoside-centred grid
 (above) says the same. **Goal metric: ATRP down from 15.96.** South Sheffield comes through organic + suburb-page
 reviews, not the pack. 26 credits left (one 5×5).
+
+### 📏 2 Nov 2026 — Semrush (free plan) checked against GSC: volumes YES, traffic/positions NO
+Semrush UK says 268 visits/mo, 42 keywords; GSC says ~95 clicks/mo (Aug–Oct) → **~2.8× too high**. Its top 5
+"traffic" keywords claim 229 visits/mo between them; GSC shows **0 clicks in 3 months** for all five, at pos 25–28,
+not the 5–10 Semrush reports (e.g. `plastering contractor sheffield`: Semrush pos 5 / 79 visits; GSC 2 impressions,
+pos 25.5). Semrush checks rankings from one generic location, so local and "near me" positions are fiction.
+**Search VOLUMES do match GSC** where P&R shows for every search: `plasterer sheffield` 210/mo vs GSC 217/mo
+impressions; `rendering sheffield` 260 vs 270. Use Semrush for volumes only; don't trust its traffic or
+positions for P&R or for competitors.
+UK monthly volumes (Semrush, Nov 2026): plasterers sheffield 390 · plasterers and renderers 390 (national) ·
+plastering contractor sheffield 320 · rendering sheffield 260 · rendering company near me 260 · plasterer
+sheffield 210 · plasterers in sheffield 210 · render repairs 480 (national) · rendering contractors near me 90.
+Free plan = 10 rows per report.
+**4 Nov — competitors.** Organic Competitors top two are both SOUTH Sheffield: rwproplastering.co.uk (11 Gleadless
+Dr, S12; 12 kw, "242" traffic) and bwpplastering.co.uk (Ecclesall Rd South, S11; 44 kw, "91"). ~190 of rwpro's 242
+comes from the MAP PACK (pin icon) for `plasterers sheffield`, `plasterers in sheffield`, `plastering contractor
+sheffield`, every day for a month = proximity from Semrush's central check point, not a better site (their title is
+weaker than ours). P&R's own GSC (3 months) on those words: pos 8.8 / 7.1 / 9.2, 1,831 impressions, 10 clicks →
+the winnable gap is organic 8 → top 3 (not proximity-bound). rwpro referring domains (214): all nofollow or
+auto-generated domain-stat spam except **Yell** (nofollow, 149 links). No link trick behind them; nothing to copy
+except claiming Yell, already on CITATIONS-NAP.md's free list.
+
+### ⏳ 2 Nov 2026 — services audit started (step 3): what the listing holds now
+Chris's screenshot, **Plasterer** section, top of the list (more may be below; other category sections not seen):
+Monocouche rendering £65 · Silicone render £80 · External Wall Insulation £110 · Plastering £200 · Dry Lining £200 ·
+Cement Rendering £60 · Internal Walls plastering £100 · ceiling skimming £200 (all "From", all with descriptions).
+
+**"From" prices that disagree with the website** (pricing.html + service pages, read 2 Nov):
+- Monocouche: GBP £65 vs site **£70**/m² (pricing.html; monocouche page £70–90).
+- Silicone: GBP £80 vs site **£75**/m² (Silicone Enhanced; silicone page £75–100+).
+- EWI: GBP £110 vs site **£40–60 / £70–90 per m²** by insulation type — big gap, ⬜ Chris to say which is right.
+- Ceiling skim: GBP £200 vs ceiling page **£150**/room and plastering-cost page "from £180" — the site disagrees
+  with itself too. ⬜ Chris to give the real figure, then align all three.
+GBP "From £X" carries no unit, so render/EWI lines read as whole-job prices unless the description says per m².
+
+Rest of the list (2 more screenshots, same day) — **23 services, all in the one Plasterer section**, every one with a
+description: plastering repairs £120 · New Builds · Plastering Specialists · Re-skimming · Pebble dash removal ·
+K Rend · Artex removal £200 · Render repair £60 · Lime render · Dot and dab £200 · Sand and cement render £60 ·
+Damp proof render · **Ecorend · Weber · Stud partitions** (already on — the "still to add" table below is stale for
+those three). **The 3 additional categories (Stucco contractor, Dry Wall Contractor, Insulation Contractor) each
+have their own section with ZERO services** (4th screenshot) — all 23 sit under Plasterer. Each section has its own
+"Add more services". ⛔ **Stucco contractor → Add more services offers NO predefined services** (5th screenshot):
+only "Don't see a service you offer? Create your own" + a custom box. Told Chris to Cancel, not save "rendering".
+✅ **Dry Wall Contractor → Add more services DOES offer predefined chips** (6th screenshot): Acoustical ceiling
+installation · **Ceiling repair** · **Drywall finishing** · **Drywall installation** · **Drywall repair** · Drywall
+texturing · Exterior painting · Fan install/repair · Floor fitting · Flooring repair · Furniture assembly · Gutter
+cleaning · **Insulation services** · Interior decorating · Interior painting · Interior repairs · **Plastering** ·
+**Plaster repair** · Plumbing fixture installation · Remodelling · **Stucco installation** · **Textured ceiling
+removal** · Tile work install/replace · TV mounting · Water fixture repair (list may continue below).
+Bold = work the site evidences. Plan: Batch 1 = Plastering, Plaster repair, Ceiling repair, Textured ceiling removal
+(the plastering searches are the money terms). Batch 2 (~1 week later) = Drywall installation, finishing, repair.
+Batch 3 = Stucco installation, Insulation services. Service name only, as in Sterling Sky's test.
+⬜ Still to read: Add more services under Insulation Contractor and Plasterer.
+Not on the listing but evidenced on the site: **acrylic render** (priced £65/m²), insulated plasterboard, garage
+rendering. ⬜ Next: Chris opens "Add more services" → screenshot Google's suggested (predefined) chips.
 
 ### ⬜ Services still to add to GBP — all evidenced on our own site
 
