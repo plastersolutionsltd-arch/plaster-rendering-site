@@ -372,6 +372,7 @@
     .score-val { font-family:'Outfit',sans-serif; font-size:11px; font-weight:800; color:rgba(255,255,255,0.45); text-align:right; }
     .score-best-for { margin-top:4px; padding-top:13px; border-top:1px solid rgba(255,255,255,0.06); font-size:11px; font-weight:600; color:rgba(255,255,255,0.28); letter-spacing:0.02em; }
     .score-best-for span { color:rgba(0,255,0,0.75); }
+    .p-scores .score-best-for:first-child { margin-top:0; padding-top:0; border-top:0; }
 
     /* ===== CARD CTA ===== */
     .p-cta-wrap { padding:14px 18px 18px; background:#131313; border-top:1px solid rgba(255,255,255,0.05); }
@@ -648,7 +649,7 @@
     <div class="cards-hdr reveal">
       <span class="sec-label">Our Systems</span>
       <h2 class="sec-h2" id="pricing-h2">Choose Your Rendering System</h2>
-      <p class="sec-sub">Performance profiles below show how each system rates across the four key factors. All prices include materials, installation, waste removal and written guarantee.</p>
+      <p class="sec-sub">Each card shows the price per m² and what the system suits best. All prices include materials, installation, waste removal and written guarantee.</p>
       <p style="margin:10px auto 0;max-width:560px"><a href="/rendering-cost-sheffield" style="font-size:13px;color:#00FF00">Want to know what this means for your house? See our full Sheffield rendering cost guide 2026 →</a></p>
       <p style="margin:6px auto 0;max-width:560px"><a href="/plastering-cost-sheffield" style="font-size:13px;color:#00FF00">For internal work, see our Sheffield plastering cost guide 2026 →</a></p>
     </div>
@@ -658,7 +659,7 @@
       <!-- ── ACRYLIC ── -->
       <article class="p-card" style="animation-delay:0.1s" role="listitem" aria-label="Acrylic Render — £75 per square metre">
         <div class="p-top">
-          <span class="p-badge badge-bronze">Budget-Smart</span>
+          <span class="p-badge badge-bronze">Thin-Coat</span>
           <h3>Acrylic Render</h3>
         </div>
         <div class="p-price">
@@ -667,13 +668,8 @@
           <div class="price-unit-lbl">per m²</div>
           <div class="price-note-sm">Materials &amp; installation</div>
         </div>
-        <!-- Radar chart injected by JS — data-scores: Durability, Water Resistance, Value, Warranty -->
-        <div class="p-scores">
-          <div class="score-row"><span class="score-lbl">Durability</span><div class="score-track"><div class="score-fill" data-w="48%"></div></div><span class="score-val">48</span></div>
-          <div class="score-row"><span class="score-lbl">Water Resist.</span><div class="score-track"><div class="score-fill" data-w="46%"></div></div><span class="score-val">46</span></div>
-          <div class="score-row"><span class="score-lbl">Value for Money</span><div class="score-track"><div class="score-fill" data-w="92%"></div></div><span class="score-val">92</span></div>
-          <div class="score-row"><span class="score-lbl">Warranty</span><div class="score-track"><div class="score-fill" data-w="38%"></div></div><span class="score-val">38</span></div>
-          <p class="score-best-for">Best for: <span>Budget-conscious projects</span></p>
+                <div class="p-scores">
+          <p class="score-best-for">Best for: <span>Smooth thin-coat finish</span></p>
         </div>
         <div class="p-cta-wrap">
           <a href="/get-quote" class="p-cta cta-outline tap44-btn">Get a Quote</a>
@@ -693,10 +689,6 @@
           <div class="price-note-sm">Materials &amp; expert installation</div>
         </div>
         <div class="p-scores">
-          <div class="score-row"><span class="score-lbl">Durability</span><div class="score-track"><div class="score-fill" data-w="72%"></div></div><span class="score-val">72</span></div>
-          <div class="score-row"><span class="score-lbl">Water Resist.</span><div class="score-track"><div class="score-fill" data-w="70%"></div></div><span class="score-val">70</span></div>
-          <div class="score-row"><span class="score-lbl">Value for Money</span><div class="score-track"><div class="score-fill" data-w="82%"></div></div><span class="score-val">82</span></div>
-          <div class="score-row"><span class="score-lbl">Warranty</span><div class="score-track"><div class="score-fill" data-w="70%"></div></div><span class="score-val">70</span></div>
           <p class="score-best-for">Best for: <span>Best value choice</span></p>
         </div>
         <div class="p-cta-wrap">
@@ -717,10 +709,6 @@
           <div class="price-note-sm">Premium materials &amp; installation</div>
         </div>
         <div class="p-scores">
-          <div class="score-row"><span class="score-lbl">Durability</span><div class="score-track"><div class="score-fill" data-w="88%"></div></div><span class="score-val">88</span></div>
-          <div class="score-row"><span class="score-lbl">Water Resist.</span><div class="score-track"><div class="score-fill" data-w="92%"></div></div><span class="score-val">92</span></div>
-          <div class="score-row"><span class="score-lbl">Value for Money</span><div class="score-track"><div class="score-fill" data-w="64%"></div></div><span class="score-val">64</span></div>
-          <div class="score-row"><span class="score-lbl">Warranty</span><div class="score-track"><div class="score-fill" data-w="88%"></div></div><span class="score-val">88</span></div>
           <p class="score-best-for">Best for: <span>Premium upgrade</span></p>
         </div>
         <div class="p-cta-wrap">
@@ -742,10 +730,6 @@
           <div class="price-note-sm">Premium materials &amp; expert installation</div>
         </div>
         <div class="p-scores">
-          <div class="score-row"><span class="score-lbl">Durability</span><div class="score-track"><div class="score-fill" data-w="96%"></div></div><span class="score-val">96</span></div>
-          <div class="score-row"><span class="score-lbl">Water Resist.</span><div class="score-track"><div class="score-fill" data-w="98%"></div></div><span class="score-val">98</span></div>
-          <div class="score-row"><span class="score-lbl">Value for Money</span><div class="score-track"><div class="score-fill" data-w="60%"></div></div><span class="score-val">60</span></div>
-          <div class="score-row"><span class="score-lbl">Warranty</span><div class="score-track"><div class="score-fill" data-w="94%"></div></div><span class="score-val">94</span></div>
           <p class="score-best-for">Best for: <span>Best possible protection</span></p>
         </div>
         <div class="p-cta-wrap">
@@ -957,7 +941,7 @@
             <td><strong>Acrylic Render</strong></td>
             <td class="t-price">£75</td>
             <td>10–15 yrs</td><td>Good</td><td>Good</td>
-            <td>Budget-conscious projects</td>
+            <td>Smooth thin-coat finish</td>
           </tr>
           <tr>
             <td><strong>Monocouche Render</strong></td>

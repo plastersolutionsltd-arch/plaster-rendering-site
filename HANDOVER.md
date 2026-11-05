@@ -981,6 +981,30 @@ Fixed without asking:
   although monocouche now starts lower; EWI bill savings are quoted 4 ways (25–35% on the EWI page, 35–40% / up to 40% on home).
   Chris sent a second photo of himself on 5 Nov (white shirt, indoors). NOT used; he was asked whether it should go on /about.
 
+**5 Nov, third round:** branch `homepage-review-nov` merged + pushed (05ca645) and **verified LIVE**: curl on 5 pages plus a browser at
+390×664 (stars 501 above the bar at 595, About photo on, 0 score rows, no errors). Then on branch `small-fixes-nov`:
+/pricing made-up score bars removed (16 rows; the animation JS finds nothing and doesn't error) and the intro line that described
+them rewritten. Acrylic "Budget-Smart" → "Thin-Coat", "Best for: Smooth thin-coat finish" (also on rendering-cost). By the page's own
+table, acrylic £75 / 10–15 yrs is no cheaper than Silicone Enhanced from £75 / 25+ yrs, so whether to keep offering it is Chris's call.
+**EWI savings, researched:** the only primary source found is the gov.uk/DECC factsheet "Keeping the heat in" (EST figures, April 2016):
+"Around a third of all heat in an un-insulated home is lost through the walls"; EWI on a 3-bed semi "could save £260 a year" (2016 prices).
+energysavingtrust.org.uk returns 403 to fetches. Nothing supports "up to 40%", "35–40%", "£300–£600" or "two full EPC bands".
+About 90 mentions on 16 pages; some "£300–£600" on the plastering pages are probably room prices, so do NOT sweep blindly.
+
+**5 Nov, fourth round (Chris: "yes" to all):**
+- **EWI savings rewritten site-wide** around the one sourced fact: "Around a third of the heat in an uninsulated home escapes through
+  the walls (Energy Saving Trust)". Removed: "25-35%", "35–40%", "up to 40%", "30–40%", "£300–£600/yr", "two (full/or more) EPC
+  bands", "pays for itself in 15-20 years", "payback 15–25 years", "£7,500–£15,000 over 25 years", "adds 5-10% to market value" (EWI page,
+  faq, rendering-cost "estate agents cite 5–10%"). Savings questions now say we estimate it per property at the survey. Pages: ewi, faq, index,
+  beighton, halfway, dry-lining + monocouche + plastering link cards, projects (desc + the auto-tag "30–40% Heat Saving" → "Insulated
+  Walls"), pebbledash, llms.txt. NOT touched: "£300–£600" on plastering pages (room prices), "30-40% of plaster hollow" (repair rule),
+  CSS gradient "40%". projects.html still says one Grenoside EWI job "EPC rating improved by two bands" (job-specific; ask Chris).
+- **100m² detached silicone = £7,500–£9,000** (was £12,000) on index/faq/silicone page. render-repair's £7,500–£12,000 for a full
+  RE-render (includes hack-off) left alone. The silicone estimator tiles still fit £75–£90/m².
+- **About photo replaced:** `images/chris-glover-2026.webp` (750×900, 5:6 to match the 220×264 card, EXIF stripped, cropped to
+  exclude the person beside him). The selfie is close, so the crop is a tight face portrait; it reads fine at card size. The old
+  `chris-glover.webp` is kept in the repo but no longer referenced.
+
 ⏰ **Held until after 18 Nov** (the GBP→homepage read window is 29 Oct–18 Nov): trimming the repeated copy on the homepage
 (service tiles / Quick Answer / 5-paragraph block / comparison cards / Why P&R all repeat deposit + warranty + systems).
 Phone page is ~22.7k px. That changes what Google reads on the top organic page, so it waits.
