@@ -1019,7 +1019,7 @@ const PROJECTS = [
   {id:36, svc:'monocouche', col:'stone', label:'Monocouche',      colLabel:'Stone',          hex:'#C5A882', loc:'Firth Park, S5',    brand:'K Rend',  desc:'Stone K Rend monocouche scratch render on a Firth Park S5 property. Firth Park has a large number of older brick terraces and semis that benefit from render — insulates, waterproofs and refreshes the exterior in one job.',                                                           img:'/images/case-studies/case/firth park-monocouche.webp'},
 
   /* ── EWI ── */
-  {id:37, svc:'ewi',        col:null,    label:'EWI',             colLabel:null,             hex:null,      loc:'Burncross, S35',    brand:'Ecorend', desc:'90mm Ecorend EWI system with silicone render topcoat in Burncross S35. Full insulation board installation with mechanical fixings, glass fibre reinforcing mesh, primer, base coat and silicone finish coat. Typical 30–40% reduction in heating bills.',        img:'/images/case-studies/burncross-ewi.webp'},
+  {id:37, svc:'ewi',        col:null,    label:'EWI',             colLabel:null,             hex:null,      loc:'Burncross, S35',    brand:'Ecorend', desc:'90mm Ecorend EWI system with silicone render topcoat in Burncross S35. Full insulation board installation with mechanical fixings, glass fibre reinforcing mesh, primer, base coat and silicone finish coat.',        img:'/images/case-studies/burncross-ewi.webp'},
   {id:38, svc:'ewi',        col:null,    label:'EWI',             colLabel:null,             hex:null,      loc:'Stannington, S6',   brand:'K Rend',  desc:'Full-house EWI in Stannington S6 — 90mm insulation boards mechanically fixed to original masonry, glass fibre mesh reinforcement, K Rend base coat primer and K Rend silicone topcoat. 25-year manufacturer system warranty. Complete in 6 days.',           img:'/images/case-studies/stanington-ewi-full.webp'},
   {id:41, svc:'ewi',        col:null,    label:'EWI',             colLabel:null,             hex:null,      loc:'Fulwood, S10',      brand:'Ecorend', desc:'Ecorend EWI upgrade on a 1960s Fulwood S10 detached. 90mm insulation boards, mechanical fixings at 8 per board, glass fibre mesh, primer and silicone topcoat. New window reveals and door surrounds built out to accommodate board thickness.',              img:'/images/case-studies/ewi fulwood.webp'},
   {id:42, svc:'ewi',        col:null,    label:'EWI',             colLabel:null,             hex:null,      loc:'Grenoside, S35',    brand:'K Rend',  desc:'K Rend EWI on a large Grenoside S35 family home — 100mm insulation boards for superior thermal performance, glass fibre mesh reinforcement, white K Rend silicone finish coat. EPC rating improved by two bands.',                                               img:'/images/case-studies/ewi grenoside.webp'},
@@ -1077,7 +1077,7 @@ function getTags(p) {
   if (d.includes('fixed price'))                            tags.push('Fixed Price');
   if (d.includes('epc'))                                    tags.push('EPC Upgrade');
   if (d.includes('mesh'))                                   tags.push('Mesh Reinforced');
-  if (p.svc === 'ewi' && !tags.some(t => t.includes('Saving'))) tags.push('30–40% Heat Saving');
+  if (p.svc === 'ewi' && !tags.some(t => t.includes('Saving'))) tags.push('Insulated Walls');
   if (tags.length === 0) {
     const fb = {silicone:'Silicone Topcoat',monocouche:'Through-Colour',plastering:'Ready to Decorate',drylining:'Taped & Jointed',ewi:'Insulation Boards'};
     if (fb[p.svc]) tags.push(fb[p.svc]);
