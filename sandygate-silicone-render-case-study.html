@@ -303,7 +303,7 @@
       "name": "Sandygate Silicone Render Case Study | Ecorend Marble White | P&R Solutions Sheffield",
       "description": "Full stage-by-stage case study of a 120m² premium Ecorend Marble White silicone render project in Sandygate, Sheffield.",
       "datePublished": "2026-04-06",
-      "dateModified": "2026-08-08",
+      "dateModified": "2026-11-05",
       "inLanguage": "en-GB",
       "isPartOf": {
         "@type": "WebSite",
@@ -592,6 +592,11 @@
     .slide-placeholder{background:#0d130d;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px}
     .slide-placeholder::after{display:none}
   </style>
+<style>
+/* REVEAL-RIGHT-CLIP 2026-11-05: .reveal-right slides in from +40px and pushed phones 16px wide mid-animation.
+   clip (not hidden) so no scroll container is created and sticky keeps working; never put this on body/html. */
+section:has(.reveal-right){overflow-x:clip}
+</style>
 </head>
 <body>
 
@@ -1499,7 +1504,7 @@
       <span class="block font-light text-white/50" style="font-size:clamp(2.4rem,7vw,5.5rem)">on Your Home?</span>
     </h2>
     <p class="reveal delay-2 font-body text-slate-300 text-lg font-light mb-10 max-w-lg leading-relaxed">
-      Free site survey. Fully itemised quote. Zero deposit. Sheffield's most trusted silicone rendering specialists.
+      Free site survey. Fully itemised quote. Zero deposit. Sheffield silicone rendering specialists, rated 5.0 on Google.
     </p>
     <div class="reveal delay-3 flex flex-wrap gap-4 justify-center">
       <a href="/get-quote" class="font-display font-bold text-charcoal-900 px-10 py-4 rounded-full text-sm tracking-wide hover:opacity-90 transition-all duration-300" style="background:#00FF00">Get a Free Quote</a>
