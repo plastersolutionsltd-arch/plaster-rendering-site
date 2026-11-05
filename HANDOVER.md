@@ -1022,6 +1022,20 @@ Found, NOT fixed (left for next session):
   £7,500–£12,000 for a full RE-render (includes hack-off), deliberately.
 - Acrylic: Chris said "acrylic same" = leave it as it is.
 
+**5 Nov, "fix the last things":**
+- **Sideways wobble was on ALL 11 pages using `.reveal-right`**, not just monocouche (406px mid-animation on each, measured after every wheel
+  step). Fixed with a page-local `section:has(.reveal-right){overflow-x:clip}` block marked `REVEAL-RIGHT-CLIP 2026-11-05` before `</head>`
+  on the 11 pages; app.css untouched. All 11 now stay at 390 throughout scrolling; the slide-in content still lands fully on screen.
+  ⚠ The final audit's crawl MISSED 10 of the 11 because it measured after scrolling finished. Always measure per step.
+- **"most trusted" / "most reviewed" / "every major brand" removed site-wide** (17 places on 12 pages), including the homepage and
+  plastering-sheffield META descriptions. That's a minimal edit during the GBP read window (only "'s most-reviewed" dropped; the rest of
+  the snippet is unchanged). Monocouche + silicone now name the four approvals.
+- projects: Grenoside EWI "EPC rating improved by two bands" → "fitted to improve the EPC rating". ⛔ The first try wrote "home's" inside
+  a single-quoted JS string and broke the whole projects script ("Unexpected identifier 's'"). The gate caught it before shipping.
+  **projects.html descriptions are JS strings: no apostrophes.**
+- Local-only false alarm: 4 parallel browsers against `python3 -m http.server` fail image loads, which shows as broken logos and 1800–2000px
+  widths. Sequential re-runs were clean. Check against live, or run sequentially.
+
 ⏰ **Held until after 18 Nov** (the GBP→homepage read window is 29 Oct–18 Nov): trimming the repeated copy on the homepage
 (service tiles / Quick Answer / 5-paragraph block / comparison cards / Why P&R all repeat deposit + warranty + systems).
 Phone page is ~22.7k px. That changes what Google reads on the top organic page, so it waits.

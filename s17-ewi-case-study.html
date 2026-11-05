@@ -309,7 +309,7 @@
       "name": "EWI & Silicone Render S17 Sheffield | Case Study | P&R Solutions",
       "description": "Full stage-by-stage case study of External Wall Insulation in S17, Sheffield by P&R Solutions.",
       "datePublished": "2026-06-22",
-      "dateModified": "2026-08-25",
+      "dateModified": "2026-11-05",
       "inLanguage": "en-GB",
       "isPartOf": {
         "@type": "WebSite",
@@ -754,6 +754,11 @@
     .faq-icon{flex-shrink:0;width:30px;height:30px;border-radius:8px;border:1px solid #2a2a2a;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:300;color:rgba(255,255,255,0.3);transition:all .3s cubic-bezier(.34,1.56,.64,1);background:transparent;margin-top:2px}
     .faq-item.open .faq-icon{background:#00FF00;border-color:#00FF00;color:#000;transform:rotate(45deg)}
   </style>
+<style>
+/* REVEAL-RIGHT-CLIP 2026-11-05: .reveal-right slides in from +40px and pushed phones 16px wide mid-animation.
+   clip (not hidden) so no scroll container is created and sticky keeps working; never put this on body/html. */
+section:has(.reveal-right){overflow-x:clip}
+</style>
 </head>
 <body>
 
@@ -1373,7 +1378,7 @@
       <span class="block font-light text-white/50"  style="font-size:clamp(2.4rem,7vw,5.5rem)">on Your Home?</span>
     </h2>
     <p class="reveal delay-2 font-body text-slate-300 text-lg font-light mb-10 max-w-lg leading-relaxed">
-      Free site survey. Fully itemised quote. Zero deposit. Sheffield's most trusted rendering specialists.
+      Free site survey. Fully itemised quote. Zero deposit. Sheffield rendering specialists, rated 5.0 on Google.
     </p>
     <div class="reveal delay-3 flex flex-wrap gap-4 justify-center">
       <a href="/get-quote" class="font-display font-bold text-charcoal-900 px-10 py-4 rounded-full text-sm tracking-wide hover:bg-lime-400 transition-all duration-300" style="background:#00FF00">Get a Free Quote</a>

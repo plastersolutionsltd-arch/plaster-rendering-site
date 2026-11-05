@@ -387,7 +387,7 @@
       "name": "Render Repair Sheffield | Cracking & Failing Render Fixed | P&R Solutions",
       "description": "Render cracking, bulging or falling off in Sheffield? P&R Solutions diagnose the root cause and repair or re-render to last. Free site survey. No deposit.",
       "datePublished": "2026-04-05",
-      "dateModified": "2026-09-18",
+      "dateModified": "2026-11-05",
       "inLanguage": "en-GB",
       "isPartOf": {
         "@type": "WebSite",
@@ -678,6 +678,11 @@
     ::-webkit-scrollbar-thumb{background:#00FF00;border-radius:3px}
     ::-webkit-scrollbar-thumb:hover{background:#00CC00}
   </style>
+<style>
+/* REVEAL-RIGHT-CLIP 2026-11-05: .reveal-right slides in from +40px and pushed phones 16px wide mid-animation.
+   clip (not hidden) so no scroll container is created and sticky keeps working; never put this on body/html. */
+section:has(.reveal-right){overflow-x:clip}
+</style>
 </head>
 <body>
 

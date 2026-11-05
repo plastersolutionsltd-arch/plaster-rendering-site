@@ -675,6 +675,11 @@
     ::-webkit-scrollbar-thumb{background:#00FF00;border-radius:3px}
     ::-webkit-scrollbar-thumb:hover{background:#00CC00}
   </style>
+<style>
+/* REVEAL-RIGHT-CLIP 2026-11-05: .reveal-right slides in from +40px and pushed phones 16px wide mid-animation.
+   clip (not hidden) so no scroll container is created and sticky keeps working; never put this on body/html. */
+section:has(.reveal-right){overflow-x:clip}
+</style>
 </head>
 <body>
 
@@ -864,7 +869,7 @@
         <p class="reveal delay-1">Silicone rendering in Sheffield is particularly well-suited to the city's older housing stock &#8212; Victorian and Edwardian terraces across S6, S10, and S11 where natural building movement has caused traditional cement render to crack and fail. The flexibility of silicone render means it accommodates this movement without cracking, delivering a lasting finish on properties that would repeatedly damage more rigid systems.</p>
         <p class="reveal delay-2">Available in over 100 colours with UV-stable pigments, silicone render maintains its appearance for 20&#8211;25 years with no painting or repainting required. Compared to <a href="/monocouche-render-sheffield" style="color:rgba(255,255,255,0.7);text-decoration:underline;text-underline-offset:3px">monocouche</a>, silicone is the premium choice &#8212; more flexible, genuinely self-cleaning, and with superior long-term weathering performance. Typical installed cost is &#163;75&#8211;&#163;90/m&#178; depending on elevation complexity and surface preparation required. Not sure which system is right for your property? Read our detailed <a href="/silicone-render-vs-monocouche" style="color:rgba(255,255,255,0.7);text-decoration:underline;text-underline-offset:3px">silicone render vs monocouche comparison</a>.</p>
         <p class="reveal delay-3">Our silicone render teams are approved applicators for Ecorend, K Rend, and Weber Saint-Gobain systems. Every job begins with a free site survey, a fully itemised written quote, and honest advice about whether silicone render, monocouche, or EWI is the right system for your property. No deposit &#8212; you pay nothing until the render is complete and you've signed off the finish.</p>
-        <p class="reveal delay-4">With 100+ five-star Google reviews, CHAS and CITB accreditations, and manufacturer approvals from all major silicone render brands, P&amp;R Solutions is Sheffield's most reviewed rendering specialist. Free survey, no obligation &#8212; call <a href="tel:+447595399525" style="color:#00FF00;text-decoration:none">07595 399525</a> or <a href="/get-quote" style="color:rgba(255,255,255,0.7);text-decoration:underline;text-underline-offset:3px">request a quote online</a>.</p>
+        <p class="reveal delay-4">With 100+ five-star Google reviews, CHAS and CITB accreditations, and approved applicator for K-Rend, Ecorend, Weber and Baumit, P&amp;R Solutions is a Sheffield rendering specialist you can check out before you book. Free survey, no obligation &#8212; call <a href="tel:+447595399525" style="color:#00FF00;text-decoration:none">07595 399525</a> or <a href="/get-quote" style="color:rgba(255,255,255,0.7);text-decoration:underline;text-underline-offset:3px">request a quote online</a>.</p>
       </div>
     </div>
   </div>
@@ -1944,7 +1949,7 @@
       <span class="block font-light text-white/50"  style="font-size:clamp(2.4rem,7vw,5.5rem)">Your Home?</span>
     </h2>
     <p class="reveal delay-2 font-body text-slate-300 text-lg font-light mb-10 max-w-lg leading-relaxed">
-      Free site survey. Fully itemised quote. Zero deposit. Sheffield's most trusted silicone rendering specialists.
+      Free site survey. Fully itemised quote. Zero deposit. Sheffield silicone rendering specialists, rated 5.0 on Google.
     </p>
     <div class="reveal delay-3 flex flex-wrap gap-4 justify-center">
       <a href="/get-quote" class="font-display font-bold  text-charcoal-900 px-10 py-4 rounded-full text-sm tracking-wide hover:bg-lime-400 transition-all duration-300" style="background:#00FF00">Get a Free Quote</a>
