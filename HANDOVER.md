@@ -964,6 +964,23 @@ Fixed without asking:
 - dateModified + sitemap lastmod set to 2026-11-05 by hand on the 6 changed pages only (sync-dates is still undecided,
   see 2–4 Nov).
 
+**5 Nov, second round (Chris's answers):**
+- **Scaffolding: KEEP "included"** (Chris: "keep scaffolding in"). All ~15 "scaffolding included" claims are left as they are.
+  He first answered "no not included" to a muddled question of mine; his follow-up overrides it. Don't re-open it.
+- **Monocouche £70–£90/m², acrylic £75/m² (flat).** Cheapest render is now £70, not £65. Changed on pricing (cards, table,
+  calculator values `75-75` / `70-90`, both FAQs, hero pill, priceRange), rendering-cost, rendering-sheffield (meta/og/twitter
+  + schema `\u00a3` escapes + visible), silicone-render-vs-monocouche ("£5–15 more" → silicone "starts around £5 higher"),
+  pebbledash, llms.txt. **House totals recomputed as area × rate.** The tables use 3-bed 85–110m², 4-bed 140–180,
+  bungalow 50–70, terrace 55–75. A 3-bed semi is now £5,950–£9,900. The calculator shows one figure when low == high.
+- Detached-silicone "£7,500–£12,000 including scaffold" (index/faq/silicone page) is **left unchanged**. At £75–£90 × 100m²
+  it should read £7,500–£9,000, but Chris's scaffold answers didn't settle it. Ask before changing.
+- **EWI grants removed entirely** (Chris: "remove that info"): meta description, the "Government Grants Available"
+  accordion, FAQ 09 (visible + schema; later FAQs renumbered 01–12), the estimator note, and "even before grants". The page has 0 grant words.
+- rendering-cost 3-bed FAQ schema now matches its visible answer (it had an old "90–110m² … £7,000–9,000" sentence).
+- Still open: /pricing has its own made-up score bars (Durability 48, Value 92…); acrylic is still badged "Budget-Smart"
+  although monocouche now starts lower; EWI bill savings are quoted 4 ways (25–35% on the EWI page, 35–40% / up to 40% on home).
+  Chris sent a second photo of himself on 5 Nov (white shirt, indoors). NOT used; he was asked whether it should go on /about.
+
 ⏰ **Held until after 18 Nov** (the GBP→homepage read window is 29 Oct–18 Nov): trimming the repeated copy on the homepage
 (service tiles / Quick Answer / 5-paragraph block / comparison cards / Why P&R all repeat deposit + warranty + systems).
 Phone page is ~22.7k px. That changes what Google reads on the top organic page, so it waits.
