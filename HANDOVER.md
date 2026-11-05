@@ -925,6 +925,50 @@ plasterboard, internal wall insulation and ceiling repair PEAK in January.
 - Verified over http at 390px: JSON-LD parses, schema == visible == panel text, no page errors, no horizontal
   scroll; screenshot looked at.
 
+### 5 Nov 2026 — homepage reviewed slowly; facts fixed, phone hero tightened, About photo added
+Chris asked for a slow pass over the home page. Chris confirmed on 5 Nov:
+- **Baumit approved: YES.** The approved list is now **K-Rend, Ecorend, Weber AND Baumit** (the 8 Sep note listed three).
+  The homepage named different sets in different places; it now says all four everywhere, plus `llms.txt`.
+- **Render price: acrylic £75/m² up to full silicone £90/m².** Silicone had been quoted three ways (home £75–£100+,
+  /pricing £75–£90, silicone page £90–£120). Per-m² text set to £75–£90 on index, faq, silicone page (schema + visible).
+  ⚠ NOT changed, need Chris: the house TOTALS (detached £7,500–£12,000, semi £4,500–£7,000, the silicone page's
+  estimator tiles), monocouche £70–£90 on home vs £70–£80 on /pricing, and /pricing's acrylic "from £65" vs his £75.
+- **Experience: over 25 years.** "Two decades" fixed on index, about, dry-lining.
+
+Fixed without asking:
+- **Grants:** GBIS closed 31 Mar 2026, ECO4 ends 31 Dec 2026, and both need a TrustMark installer (P&R isn't). Removed
+  the grant lines from index (visible, FAQ schema, Service schema), faq, pebbledash, llms.txt.
+  ⚠ **`ewi-sheffield` still has a whole grants section + FAQ + meta description promising "25-100% funding" and
+  "we support applications".** Left for Chris: rewriting it means deciding how to say "not TrustMark" on the site.
+- Comparative claims removed from the homepage only ("most-reviewed", "most trusted", "every major render brand").
+  ⚠ Still on other pages: "most trusted" on 9 files, "most reviewed/most-reviewed" on 6 (grep them).
+- "Google My Business" → "Google". Hero + trust tile say **"118 Google reviews"**. Both match sync-reviews' visible pattern,
+  so they will not drift. The other "100+" copies are untouched (the 19 Sep decision stands).
+- **Made-up score bars removed** (Durability 9.5 / Honesty 10 etc., 18 rows on the 6 comparison cards).
+- **Classes with NO CSS rule on the homepage** (precompiled app.css again): `space-y-6` (the About block had zero gap
+  between its 5 paragraphs), `text-[9px]` (the REGISTERED/APPROVED logo labels rendered at 16px), `w-6 h-px` (the two
+  green eyebrow lines were invisible). Fixed with a page-local `<style>` block marked `HOMEPAGE-REVIEW 2026-11-05`, so
+  app.css is untouched and needs no re-hash. ⚠ Other pages may use the same dead classes; not audited.
+- **Phone hero:** `min-h-screen` + `pt-40` left ~220px of empty dark space under the header. At 390×664 (iPhone Safari
+  with bars) the Get Free Quote button and the stars were hidden under the call bar. Now ≤1023px drops min-height and
+  tightens the padding, and the H1 is 2.6rem ≤767px with the stars moved above the buttons. Measured at 390×664: stars 501,
+  button 542–594, bar 595. Desktop unchanged. iPhone SE (320×568) still has them just under the bar.
+- **About block photo** (Chris asked: "a lot of text, does it need an image"): `render-south-sheffield-m.webp`.
+  On desktop it sits in a sticky 340px column (the right third was empty); on phones it goes after paragraph 1, cropped 4:3.
+  Caption names the area only, because Chris hasn't said which system it was. ⛔ **Chris: do NOT use his photo
+  (`chris-glover.webp`) on the homepage.**
+- **Reviews:** the 3 cards (2 from Feb 2025) are now the 3 newest that name the job + area: Aaron Garbett, Andy Hartley,
+  Paul S. Verbatim from their suburb-page schema. Display only; the homepage carries no Review nodes. Dates on their own line.
+- Review-ask box shortened. The two prompts and the High Green example are KEPT (see the comment in that block).
+- Gallery: the scaffolded Stannington EWI thumbnail was swapped for Darren's finished S8 extension.
+- dateModified + sitemap lastmod set to 2026-11-05 by hand on the 6 changed pages only (sync-dates is still undecided,
+  see 2–4 Nov).
+
+⏰ **Held until after 18 Nov** (the GBP→homepage read window is 29 Oct–18 Nov): trimming the repeated copy on the homepage
+(service tiles / Quick Answer / 5-paragraph block / comparison cards / Why P&R all repeat deposit + warranty + systems).
+Phone page is ~22.7k px. That changes what Google reads on the top organic page, so it waits.
+Also open: the EWI savings figures are stated 4 ways ("up to 40%", "35–40%", "£300–£600", "two full bands"), unsourced.
+
 ### 2–4 Nov 2026 — categories done, Semrush read, 6 suburb pages rewritten, Bing unflagged
 - **GBP categories audit DONE 2 Nov, no change.** Services audit started (23 custom services, all under
   Plasterer; plan = predefined Dry Wall Contractor chips in 3 batches, name only). Price mismatches between the
