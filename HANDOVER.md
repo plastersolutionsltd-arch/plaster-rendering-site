@@ -1005,6 +1005,23 @@ About 90 mentions on 16 pages; some "£300–£600" on the plastering pages are 
   exclude the person beside him). The selfie is close, so the crop is a tight face portrait; it reads fine at card size. The old
   `chris-glover.webp` is kept in the repo but no longer referenced.
 
+**5 Nov, final audit of the LIVE site (after bf09bb2):** 67/67 sitemap URLs 200 with no redirects; JSON-LD parses on every page; reviewCount
+118 everywhere; 74 internal links, 139 images and 66 llms.txt links all 200; the private .md files 308 to / (not served). Browser crawl of all 67
+at 390px: no JS errors, no broken images, no unclipped off-screen elements. No £65, monocouche £70–80, ECO4/GBIS, bill-%, £/yr, value-% or
+"two decades" left anywhere.
+Found, NOT fixed (left for next session):
+- **Homepage META DESCRIPTION still says "Sheffield's most-reviewed plasterer & renderer — 100+ five-star Google reviews".** Held deliberately:
+  it is the search snippet, and the GBP→homepage click read runs to 18 Nov. Change it with the copy trim after 18 Nov.
+- **/monocouche-render-sheffield wobbles 16px sideways on phones** (scrollWidth 406 live). Cause: its 5 `.reveal-right` blocks animate in
+  from translateX(40px) (`fadeRight`) and push past the right edge mid-animation; the CTA buttons ride along. Pre-existing since the page
+  was built (7d21596, Mar 2026), not tonight's work. Locally it reads 390 because a fast scroll finishes the animations before measuring;
+  catch it by measuring after EVERY wheel step. 11 pages use .reveal-right; only monocouche stuck wide in the crawl (ceiling showed 406 once
+  from the hero zoom, then 390). Fix: `overflow-x:clip` on the sections holding .reveal-right (NOT on body; that breaks sticky).
+- "most trusted" on 7 pages and "most reviewed" on 6 (unverified comparatives). crookes-sheffield: EWI "can move the rating up by one or two
+  bands" (hedged, left). projects: Grenoside EWI "EPC rating improved by two bands" (job-specific, ask Chris). render-repair keeps
+  £7,500–£12,000 for a full RE-render (includes hack-off), deliberately.
+- Acrylic: Chris said "acrylic same" = leave it as it is.
+
 ⏰ **Held until after 18 Nov** (the GBP→homepage read window is 29 Oct–18 Nov): trimming the repeated copy on the homepage
 (service tiles / Quick Answer / 5-paragraph block / comparison cards / Why P&R all repeat deposit + warranty + systems).
 Phone page is ~22.7k px. That changes what Google reads on the top organic page, so it waits.
