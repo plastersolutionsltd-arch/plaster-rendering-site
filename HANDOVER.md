@@ -981,6 +981,16 @@ Fixed without asking:
   although monocouche now starts lower; EWI bill savings are quoted 4 ways (25–35% on the EWI page, 35–40% / up to 40% on home).
   Chris sent a second photo of himself on 5 Nov (white shirt, indoors). NOT used; he was asked whether it should go on /about.
 
+**5 Nov, third round:** branch `homepage-review-nov` merged + pushed (05ca645) and **verified LIVE**: curl on 5 pages plus a browser at
+390×664 (stars 501 above the bar at 595, About photo on, 0 score rows, no errors). Then on branch `small-fixes-nov`:
+/pricing made-up score bars removed (16 rows; the animation JS finds nothing and doesn't error) and the intro line that described
+them rewritten. Acrylic "Budget-Smart" → "Thin-Coat", "Best for: Smooth thin-coat finish" (also on rendering-cost). By the page's own
+table, acrylic £75 / 10–15 yrs is no cheaper than Silicone Enhanced from £75 / 25+ yrs, so whether to keep offering it is Chris's call.
+**EWI savings, researched:** the only primary source found is the gov.uk/DECC factsheet "Keeping the heat in" (EST figures, April 2016):
+"Around a third of all heat in an un-insulated home is lost through the walls"; EWI on a 3-bed semi "could save £260 a year" (2016 prices).
+energysavingtrust.org.uk returns 403 to fetches. Nothing supports "up to 40%", "35–40%", "£300–£600" or "two full EPC bands".
+About 90 mentions on 16 pages; some "£300–£600" on the plastering pages are probably room prices, so do NOT sweep blindly.
+
 ⏰ **Held until after 18 Nov** (the GBP→homepage read window is 29 Oct–18 Nov): trimming the repeated copy on the homepage
 (service tiles / Quick Answer / 5-paragraph block / comparison cards / Why P&R all repeat deposit + warranty + systems).
 Phone page is ~22.7k px. That changes what Google reads on the top organic page, so it waits.
