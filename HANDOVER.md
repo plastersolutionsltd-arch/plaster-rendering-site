@@ -1055,6 +1055,20 @@ Found, NOT fixed (left for next session):
 - Local-only false alarm: 4 parallel browsers against `python3 -m http.server` fail image loads, which shows as broken logos and 1800–2000px
   widths. Sequential re-runs were clean. Check against live, or run sequentially.
 
+### 7 Nov 2026 — the quote form also sends each enquiry to PlasterFlow (LIVE)
+`get-quote.html` still posts to Formspree (email, unchanged), and **also** sends a copy with `navigator.sendBeacon` (text/plain, so no
+CORS preflight to lose while the page navigates) to PlasterFlow's `website-enquiry` function with P&R's key `?t=7c8bdf8c…`. The function adds
+an ordinary enquiry job (Enquiry tab + "Call to quote"). Details and the spam rules are in plaster-render-saas
+`supabase/functions/website-enquiry/README.md`.
+- The copy is sent INSIDE the existing submit handler, after the "tick at least one service" check passes, so a blocked submit sends nothing.
+- Hidden honeypot `<input name="_gotcha">` (off-screen, tabindex -1). Formspree's own spam field, so it filters the emails too.
+- Dropdowns go to PlasterFlow as the visible wording ("1 Month"); Formspree still gets the option codes ("1-month"), so the email is unchanged.
+- ⚠ If you rename a form field, check the function's `ALIASES` still maps it (name/email/phone/postcode/address/propertyType/services/
+  timeline/description are what it expects today).
+- ⚠ Testing this form: intercept BOTH formspree.io and `functions\.supabase\.co` (a REGEX — the glob `**/functions.supabase.co/**`
+  does not match the project subdomain). Otherwise a test submission emails Chris and lands a job in his LIVE account.
+- Verified 7 Nov on the live page (WebKit iPhone + Chrome, both endpoints intercepted, interception proven on beacons).
+
 ### 7 Nov 2026 — "two videos but not showing" (how-we-apply) + the winter page clip
 Reproduced in WebKit (iPhone 13 profile + desktop) and real Chrome on the LIVE page first. **Both videos worked**; what Chris saw:
 - **Black boxes before tapping:** the YouTube cover sat over `src="about:blank"`, and the mp4 had `preload="none"` and no poster, so each
