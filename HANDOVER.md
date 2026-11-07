@@ -66,6 +66,25 @@ space after the colon.
 
 ---
 
+## Open TODOs (newest first — tick off here when done)
+
+- [ ] **Video structured data (VideoObject) for the 3 videos.** Chris said keep it as a todo, 7 Nov 2026.
+  Why: Google can't find the two YouTube players on our pages. They load only on tap (`src="about:blank"` + `data-src`), and Google's
+  video guidance says "Don't rely on user actions (such as swiping, clicking, or typing) to load the video." The schema is the only
+  way Google learns they're there. The mp4 is findable (a `<video><source>` plus, since 7 Nov, a `poster`).
+  Expectation: neither page is a "watch page" (one video as the page's main purpose), so the best outcome is a video badge on the
+  normal text/image result, NOT a video result. Don't build per-video watch pages for this (recommended against 7 Nov).
+  | video | page | thumbnailUrl (stable) | embedUrl / contentUrl |
+  |---|---|---|---|
+  | Sandygate before & after `BiT_kvAQ6Ng` (Chris's channel) | /how-we-apply | /images/case-studies/sandygate-video-thumb.webp | https://www.youtube.com/embed/BiT_kvAQ6Ng |
+  | Base coat `spraying-base.mp4` (13.9s, upright) | /how-we-apply | /images/case-studies/spraying-base-poster.webp | /images/case-studies/spraying-base.mp4 |
+  | SR365 spraying `o4SN4Qq7v9g` (supplier's channel) | /rendering-in-winter-sheffield | https://i.ytimg.com/vi/o4SN4Qq7v9g/maxresdefault.jpg | https://www.youtube.com/embed/o4SN4Qq7v9g |
+  Needs name, description, thumbnailUrl, uploadDate (+ duration). The YouTube upload dates and durations are NOT known yet; take them from
+  YouTube, don't guess. The "1:07" on the Sandygate cover is unverified too. Use the same thumbnail URL as the cover/poster.
+  Every description must match what the clip shows: base coat ≠ SR365 topcoat (see the 19 Sep SR365 note).
+- [ ] **Ask Chris for the original SR365 clip** to upload to @PandRSheffield. On the supplier's channel it counts for them in Google/YouTube.
+- [ ] ⏰ **After 18 Nov:** trim the repeated homepage copy (see "5 Nov 2026" below).
+
 ## Routine checks
 
 ```bash
