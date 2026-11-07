@@ -404,6 +404,12 @@
       <form id="quoteForm" method="POST" action="https://formspree.io/f/mvzdkwvw">
         <input type="hidden" name="_next" value="https://plasterandrenderingsolutions.co.uk/thank-you">
         <input type="hidden" name="_subject" value="New Quote Request — P&R Solutions">
+        <!-- Honeypot: hidden from people, filled in by bots. Formspree treats a filled _gotcha as spam, and so does
+             the PlasterFlow copy below. Off-screen rather than display:none, which some bots skip. -->
+        <div aria-hidden="true" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden">
+          <label for="_gotcha">Leave this empty</label>
+          <input type="text" id="_gotcha" name="_gotcha" tabindex="-1" autocomplete="off" value="">
+        </div>
         <div class="form-grid">
           <div class="form-group">
             <label for="name">Full Name *</label>
@@ -821,6 +827,34 @@
       });
     });
 
+    // ===== COPY TO PLASTERFLOW =====
+    // Every enquiry also lands in PlasterFlow's Enquiry tab (no more pasting the Formspree email in).
+    // Fire-and-forget: Formspree still emails exactly as before, so if this copy fails nothing is lost.
+    // sendBeacon + text/plain = a "simple" request with no CORS preflight, and the browser finishes sending
+    // it even though the page is navigating away to Formspree. The ?t= key can only ADD an enquiry to
+    // P&R's account; it reads nothing. See plaster-render-saas: supabase/functions/website-enquiry/README.md
+    var PF_ENQUIRY_URL = 'https://rjbdcxwgzuwttuifhjdt.functions.supabase.co/website-enquiry?t=__PF_ENQUIRY_TOKEN__';
+    var pfLoadedAt = Date.now();
+    function copyToPlasterFlow(form) {
+      try {
+        var fd = new FormData(form), data = {};
+        fd.forEach(function(v, k) {
+          if (k === '_next' || k === '_subject' || k === 'terms') return;
+          if (k === 'services') (data.services = data.services || []).push(v); else data[k] = v;
+        });
+        // Dropdowns: send the wording the customer picked ("1 Month"), not the option code ("1-month").
+        // Formspree still gets the codes, so the email is unchanged.
+        Array.prototype.forEach.call(form.querySelectorAll('select[name]'), function(sel) {
+          var o = sel.options[sel.selectedIndex];
+          if (o && o.value) data[sel.name] = o.text.trim();
+        });
+        data._ms = Date.now() - pfLoadedAt;
+        var body = JSON.stringify(data);
+        if (navigator.sendBeacon && navigator.sendBeacon(PF_ENQUIRY_URL, new Blob([body], { type: 'text/plain' }))) return;
+        fetch(PF_ENQUIRY_URL, { method: 'POST', body: body, keepalive: true, headers: { 'Content-Type': 'text/plain' } }).catch(function() {});
+      } catch (err) { /* never let the copy get in the way of the real submission */ }
+    }
+
     // ===== FORM SUBMISSION =====
     document.getElementById('quoteForm').addEventListener('submit', function(e) {
       var checkedBoxes = this.querySelectorAll('.service-checkbox input:checked');
@@ -832,6 +866,7 @@
         return;
       }
       document.getElementById('serviceError').style.display = 'none';
+      copyToPlasterFlow(this);   // only here, once the form is really going — not on a failed check
       var btn = this.querySelector('button[type="submit"]');
       btn.disabled = true;
       btn.textContent = 'Sending…';
