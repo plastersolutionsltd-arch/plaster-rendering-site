@@ -1036,6 +1036,28 @@ Found, NOT fixed (left for next session):
 - Local-only false alarm: 4 parallel browsers against `python3 -m http.server` fail image loads, which shows as broken logos and 1800–2000px
   widths. Sequential re-runs were clean. Check against live, or run sequentially.
 
+### 7 Nov 2026 — "two videos but not showing" (how-we-apply) + the winter page clip
+Reproduced in WebKit (iPhone 13 profile + desktop) and real Chrome on the LIVE page first. **Both videos worked**; what Chris saw:
+- **Black boxes before tapping:** the YouTube cover sat over `src="about:blank"`, and the mp4 had `preload="none"` and no poster, so each
+  box was a 72%-dark overlay on black. Now: Sandygate cover = `images/case-studies/sandygate-video-thumb.webp` (Chris's own upload; the
+  YouTube maxres thumb cropped to the 960x720 picture, since the video is 4:3 with baked-in side bars). The mp4 has
+  `poster=/images/case-studies/spraying-base-poster.webp` (the 9s frame: no scaffold firm's banner).
+- **spraying-base.mp4 is filmed UPRIGHT:** 848x480 stored with rotation=-90 (`ffprobe ... stream_side_data=rotation`). The page put it in a
+  16:9 object-fit:cover box, so playing it showed a thin middle slice with Chris's head cut off. Boxes are now `.vid-yt` 4:3 and `.vid-local`
+  9:16, side by side at equal height (flex-grow 1.3333 : 0.5625 = their aspect ratios). Phones stack them, with the upright one max 300px wide.
+  The old comment called it "Local MOV — landscape 16:9". ⚠ An ffmpeg frame grab comes out 480x848; a contact sheet that
+  forces 16:9 hides that.
+- **Two play buttons on desktop:** the native `controls` drew a grey play button behind ours. `controls` is now set only in playVid().
+- **Second tap on Safari:** Safari (Mac + every iOS browser) blocks autoplay with sound in the YouTube frame, so our tap only loaded
+  YouTube's own play button. ytSrc() adds `&mute=1` on iOS or Safari only (Chrome keeps sound). Verified the picture changes 3s after one tap
+  in WebKit iPhone, WebKit desktop and Chrome 390/1280. NOT verified on a physical iPhone.
+- Phones: a leftover `.vid-portrait{min-height:380px}` CLS guard made the YouTube box 380px tall. Removed (aspect-ratio reserves the space).
+- Covers are now keyboard-usable (role=button, tabindex, Enter/Space).
+- **rendering-in-winter:** the SR365 clip (o4SN4Qq7v9g, supplier's channel) is upright too. Its box is now 9:16 at max 300px, and the cover
+  links YouTube's own maxres thumbnail (not re-hosted, because it's their upload); cover-cropping trims its black bars. Same iOS/Safari mute.
+- FYI for Chris: the base-coat clip shows the scaffold firm's banner ("PEARCE WILL…", 0758… number) in most frames.
+- s17-ewi-case-study has NO video: its "<video" is only in an HTML comment.
+
 ⏰ **Held until after 18 Nov** (the GBP→homepage read window is 29 Oct–18 Nov): trimming the repeated copy on the homepage
 (service tiles / Quick Answer / 5-paragraph block / comparison cards / Why P&R all repeat deposit + warranty + systems).
 Phone page is ~22.7k px. That changes what Google reads on the top organic page, so it waits.
