@@ -498,6 +498,7 @@
 
           <div class="form-submit">
             <button type="submit" class="btn-primary" aria-label="Submit quote request">Get My Free Quote &rarr;</button>
+            <div id="sendError" role="alert" style="display:none;margin-top:12px;padding:12px 14px;background:rgba(239,68,68,0.1);border:1px solid rgba(239,68,68,0.3);border-radius:8px;color:#fca5a5;font-size:14px;line-height:1.5;">Sorry, your request didn't send. Please try again, or call Chris on <a href="tel:+447595399525" style="color:#fff;font-weight:700">07595 399525</a> or <a href="https://wa.me/447595399525?text=Hi%20Chris%2C%20I%27d%20like%20a%20quote." target="_blank" rel="noopener" style="color:#fff;font-weight:700">WhatsApp him</a>.</div>
             <p class="form-hint">We'll contact you within 24 business hours. No spam, ever.</p>
           </div>
         </div>
@@ -829,35 +830,70 @@
 
     // ===== COPY TO PLASTERFLOW =====
     // Every enquiry also lands in PlasterFlow's Enquiry tab (no more pasting the Formspree email in).
-    // Fire-and-forget: Formspree still emails exactly as before, so if this copy fails nothing is lost.
-    // sendBeacon + text/plain = a "simple" request with no CORS preflight, and the browser finishes sending
-    // it even though the page is navigating away to Formspree. The ?t= key can only ADD an enquiry to
-    // P&R's account; it reads nothing. See plaster-render-saas: supabase/functions/website-enquiry/README.md
+    // The ?t= key can only ADD an enquiry to P&R's account; it reads nothing.
+    // See plaster-render-saas: supabase/functions/website-enquiry/README.md
     var PF_ENQUIRY_URL = 'https://rjbdcxwgzuwttuifhjdt.functions.supabase.co/website-enquiry?t=7c8bdf8c7517f65cf7876988';
     var pfLoadedAt = Date.now();
-    function copyToPlasterFlow(form) {
-      try {
-        var fd = new FormData(form), data = {};
-        fd.forEach(function(v, k) {
-          if (k === '_next' || k === '_subject' || k === 'terms') return;
-          if (k === 'services') (data.services = data.services || []).push(v); else data[k] = v;
-        });
-        // Dropdowns: send the wording the customer picked ("1 Month"), not the option code ("1-month").
-        // Formspree still gets the codes, so the email is unchanged.
-        Array.prototype.forEach.call(form.querySelectorAll('select[name]'), function(sel) {
-          var o = sel.options[sel.selectedIndex];
-          if (o && o.value) data[sel.name] = o.text.trim();
-        });
-        data._ms = Date.now() - pfLoadedAt;
-        var body = JSON.stringify(data);
-        if (navigator.sendBeacon && navigator.sendBeacon(PF_ENQUIRY_URL, new Blob([body], { type: 'text/plain' }))) return;
-        fetch(PF_ENQUIRY_URL, { method: 'POST', body: body, keepalive: true, headers: { 'Content-Type': 'text/plain' } }).catch(function() {});
-      } catch (err) { /* never let the copy get in the way of the real submission */ }
+    function enquiryJson(form) {
+      var fd = new FormData(form), data = {};
+      fd.forEach(function(v, k) {
+        if (k === '_next' || k === '_subject' || k === 'terms') return;
+        if (k === 'services') (data.services = data.services || []).push(v); else data[k] = v;
+      });
+      // Dropdowns: send the wording the customer picked ("1 Month"), not the option code ("1-month").
+      // Formspree still gets the codes, so the email is unchanged.
+      Array.prototype.forEach.call(form.querySelectorAll('select[name]'), function(sel) {
+        var o = sel.options[sel.selectedIndex];
+        if (o && o.value) data[sel.name] = o.text.trim();
+      });
+      data._ms = Date.now() - pfLoadedAt;
+      return JSON.stringify(data);
+    }
+    // Resolves when the copy has been handed over (or after `waitMs`, whichever is first). Never rejects.
+    // text/plain = a "simple" request with no CORS preflight. keepalive lets it finish even if the page moves on.
+    function copyToPlasterFlow(form, waitMs) {
+      return new Promise(function(done) {
+        var body;
+        try { body = enquiryJson(form); } catch (e) { return done(); }
+        var t = setTimeout(done, waitMs || 2500);
+        try {
+          fetch(PF_ENQUIRY_URL, { method: 'POST', body: body, keepalive: true, headers: { 'Content-Type': 'text/plain' } })
+            .then(function() { clearTimeout(t); done(); })
+            .catch(function() {
+              // fetch refused (old browser, blocker): a beacon is the last try.
+              try { if (navigator.sendBeacon) navigator.sendBeacon(PF_ENQUIRY_URL, new Blob([body], { type: 'text/plain' })); } catch (e) {}
+              clearTimeout(t); done();
+            });
+        } catch (e) {
+          try { if (navigator.sendBeacon) navigator.sendBeacon(PF_ENQUIRY_URL, new Blob([body], { type: 'text/plain' })); } catch (e2) {}
+          clearTimeout(t); done();
+        }
+      });
     }
 
     // ===== FORM SUBMISSION =====
-    document.getElementById('quoteForm').addEventListener('submit', function(e) {
-      var checkedBoxes = this.querySelectorAll('.service-checkbox input:checked');
+    // 10 Nov 2026: a customer's enquiry reached Formspree but his screen "got stuck on Sending". The old form did a
+    // full-page POST to Formspree, which (free plan) ignores _next and shows its own grey "Thanks!" page; going back
+    // from there, iPhone Safari restores this page exactly as it was left: a greyed-out "Sending…" button.
+    // Now the form sends in the background, then takes the customer to OUR thank-you page. If sending fails it says
+    // so plainly, with the phone number and WhatsApp, and the button comes back. Nothing can leave it stuck.
+    var quoteForm = document.getElementById('quoteForm');
+    var submitBtn = quoteForm.querySelector('button[type="submit"]');
+    var submitLabel = submitBtn.innerHTML;
+    var sendError = document.getElementById('sendError');
+    var sending = false;
+    function resetButton() { sending = false; submitBtn.disabled = false; submitBtn.innerHTML = submitLabel; }
+    function showSendError() {
+      resetButton();
+      sendError.style.display = 'block';
+      sendError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+    // Back/forward cache: if the customer comes back to this page, never show a frozen "Sending…" button.
+    window.addEventListener('pageshow', function(e) { if (e.persisted) { resetButton(); } });
+
+    quoteForm.addEventListener('submit', function(e) {
+      var form = this;
+      var checkedBoxes = form.querySelectorAll('.service-checkbox input:checked');
       if (checkedBoxes.length === 0) {
         e.preventDefault();
         var err = document.getElementById('serviceError');
@@ -866,10 +902,28 @@
         return;
       }
       document.getElementById('serviceError').style.display = 'none';
-      copyToPlasterFlow(this);   // only here, once the form is really going — not on a failed check
-      var btn = this.querySelector('button[type="submit"]');
-      btn.disabled = true;
-      btn.textContent = 'Sending…';
+      sendError.style.display = 'none';
+      // Very old browsers: let the normal full-page post to Formspree happen, as before.
+      if (!window.fetch || !window.FormData || !window.Promise) { copyToPlasterFlow(form); return; }
+      e.preventDefault();
+      if (sending) return;
+      sending = true;
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending…';
+
+      // The PlasterFlow copy goes at the same time as the email, so it is in the app even if Formspree fails.
+      var pf = copyToPlasterFlow(form, 2500);
+      var ctrl = window.AbortController ? new AbortController() : null;
+      var giveUp = setTimeout(function() { if (ctrl) ctrl.abort(); }, 20000);
+      fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' }, signal: ctrl ? ctrl.signal : undefined })
+        .then(function(r) {
+          clearTimeout(giveUp);
+          if (!r.ok) throw new Error('formspree ' + r.status);
+          try { if (window.gtag) gtag('event', 'generate_lead', { form: 'get_quote' }); } catch (e2) {}
+          // Give the PlasterFlow copy a moment to finish, then show OUR thank-you page.
+          return pf.then(function() { location.href = '/thank-you'; });
+        })
+        .catch(function() { clearTimeout(giveUp); showSendError(); });
     });
   </script>
 <!-- MOBILE-CONTACT-BAR v1: phones/tablets only (<1024px). Self-contained on purpose: 10 pages don't load app.css. -->
