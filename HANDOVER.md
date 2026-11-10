@@ -66,6 +66,26 @@ space after the colon.
 
 ---
 
+### 7. The quote form (`get-quote.html`) sends in the background. Keep it that way.
+Since 10 Nov 2026 (commit fba7ed9) the form does NOT do a full-page POST to Formspree. It sends with `fetch`
+(`Accept: application/json`) and then goes to our own `/thank-you`. Why:
+- Formspree's free plan **ignores `_next`**, so a plain POST showed Formspree's own grey "Thanks!" page and our
+  thank-you page was never seen.
+- Going back from that page, iPhone Safari's back cache restored a greyed-out **"Sending…"** button. A customer
+  (Chris Hardacre, 10 Nov) WhatsApp'd that the form "got stuck on sending" although it had arrived.
+- Formspree shows "Thanks!" **even when it spam-drops a submission** (a test worded "automated check" never
+  arrived). Its Thanks page is not proof of delivery.
+
+Each enquiry now reaches Chris three ways: Formspree email, **Formspree WhatsApp alert** (switched on 10 Nov for
+the "Quote Responses" form, to +447595399525), and a copy into PlasterFlow (`website-enquiry` function, sent in
+parallel, 2.5 s cap). On a failure or a 20 s timeout the form shows the phone number and WhatsApp and the button
+comes back. A `pageshow` handler resets the button. Old browsers fall back to the plain POST.
+
+**Testing it:** intercept BOTH `^https://formspree\.io/` and `functions\.supabase\.co`, and block
+google-analytics. A loose `/formspree\.io/` regex also matches GA's collect URL, and an unblocked local run logs
+localhost visits in GA4. Never send a real submission without telling Chris: it emails him (and, unintercepted,
+adds a job to his live PlasterFlow account).
+
 ## Open TODOs (newest first — tick off here when done)
 
 - [ ] **Video structured data (VideoObject) for the 3 videos.** Chris said keep it as a todo, 7 Nov 2026.
