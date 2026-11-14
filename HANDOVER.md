@@ -86,6 +86,13 @@ google-analytics. A loose `/formspree\.io/` regex also matches GA's collect URL,
 localhost visits in GA4. Never send a real submission without telling Chris: it emails him (and, unintercepted,
 adds a job to his live PlasterFlow account).
 
+## 14 Nov 2026 — David Mclean review published, count 119
+
+David Mclean, 5 stars, 14 Nov ("6 hours ago" on the panel): garage re-rendered, Ecclesfield (the area is in his own text).
+Verbatim from the panel screenshot Chris sent (the two lines joined into one paragraph). Card + `Review` node on
+`ecclesfield-sheffield.html` (its first review). Count 119 off the panel via `sync-reviews.py 119` (70 pages + llms.txt).
+Chris replied to the review on GBP himself.
+
 ## Open TODOs (newest first — tick off here when done)
 
 - [ ] **Video structured data (VideoObject) for the 3 videos.** Chris said keep it as a todo, 7 Nov 2026.
