@@ -86,6 +86,17 @@ google-analytics. A loose `/formspree\.io/` regex also matches GA's collect URL,
 localhost visits in GA4. Never send a real submission without telling Chris: it emails him (and, unintercepted,
 adds a job to his live PlasterFlow account).
 
+## 14 Nov 2026 — area-page semi estimate raised to £5,000–£7,500 (Chris's choice)
+
+28 area pages said a typical semi "starts from around £2,000–£3,500" (some £2,000–4,000 / £2,500–4,500) for silicone
+or monocouche — Chris: "them prices look low". He picked £5,000–£7,500 (the monocouche page's 3-bed semi figure) for
+every area page; schema + visible both changed (56 figures). Beighton, Crystal Peaks, Halfway, Mosborough said EWI was
+"higher — typically £4,500–£8,000 for a semi" → £8,000–£12,000 (the EWI page's 3-bed semi EPS figure). The house-size
+tables on pricing + rendering-cost were still on £75 silicone: Silicone Enhanced cells recalculated at £80–85/m².
+⬜ NOT changed, Chris to decide: terrace figures on Abbeydale (£2,200–3,800), Hillsborough (£1,500–2,500), Millhouses
+(£2,200–4,000 "property"); and the main pages still disagree on a semi (homepage/FAQ/silicone/render-repair
+£4,500–7,000, monocouche £5,000–7,500, pricing £5,950–9,900).
+
 ## 14 Nov 2026 — prices aligned with the Google profile (Chris's figures)
 
 Chris, 14 Nov: silicone 80, monocouche 70, insulation 110 — then chose: Silicone Enhanced **£80–85**/m² (Premium
