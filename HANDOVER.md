@@ -93,9 +93,11 @@ or monocouche — Chris: "them prices look low". He picked £5,000–£7,500 (th
 every area page; schema + visible both changed (56 figures). Beighton, Crystal Peaks, Halfway, Mosborough said EWI was
 "higher — typically £4,500–£8,000 for a semi" → £8,000–£12,000 (the EWI page's 3-bed semi EPS figure). The house-size
 tables on pricing + rendering-cost were still on £75 silicone: Silicone Enhanced cells recalculated at £80–85/m².
-⬜ NOT changed, Chris to decide: terrace figures on Abbeydale (£2,200–3,800), Hillsborough (£1,500–2,500), Millhouses
-(£2,200–4,000 "property"); and the main pages still disagree on a semi (homepage/FAQ/silicone/render-repair
-£4,500–7,000, monocouche £5,000–7,500, pricing £5,950–9,900).
+Then (Chris: "there low as well"): Abbeydale/Hillsborough/Millhouses → £3,500–£5,000 (the monocouche page's mid-terrace
+figure); homepage/FAQ/silicone/render-repair semi £4,500–7,000 → £5,000–£7,500. Pricing's 3-bed semi £5,950–9,900
+(area × m² rate) left as it is. Also caught silicone still at £75 where the page writes £ as an entity (&#163; /
+&pound;): homepage "from £75" card + 2 FAQ lines, silicone page ×2, rendering table £75–120 → £80. ⚠ When changing a
+price, search with entities DECODED (html.unescape) — a plain grep for £75 missed 6 of them.
 
 ## 14 Nov 2026 — prices aligned with the Google profile (Chris's figures)
 
