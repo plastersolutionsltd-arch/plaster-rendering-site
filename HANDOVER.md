@@ -86,6 +86,17 @@ google-analytics. A loose `/formspree\.io/` regex also matches GA's collect URL,
 localhost visits in GA4. Never send a real submission without telling Chris: it emails him (and, unintercepted,
 adds a job to his live PlasterFlow account).
 
+## 14 Nov 2026 — prices aligned with the Google profile (Chris's figures)
+
+Chris, 14 Nov: silicone 80, monocouche 70, insulation 110 — then chose: Silicone Enhanced **£80–85**/m² (Premium
+Silicone £85–90 and acrylic £75 unchanged), full EWI **£110–150**/m² everywhere (the EWI page no longer quotes
+board-only EPS £40–60 / PUR £70–90), ceiling skim **from £200** a room. Monocouche was already £70 on the site.
+47+2 edits on 11 pages (pricing, rendering-cost, rendering, faq, index, silicone, silicone-vs-mono, s17 EWI, ewi,
+ceiling, plastering-cost); "100m² detached silicone" £7,500–9,000 → £8,000–9,000; "silicone ~£5/m² dearer than mono"
+→ £10. Pricing calculator option 75-85 → 80-85 (100 m² → £8,000–£8,500, checked). Left alone: suburb pages' whole-job
+semi estimates, the semi ranges (£4,500–7,000), the 3 pre-existing schema/page wording drifts. ⬜ Chris changes the
+GBP: Monocouche £65 → £70 (silicone £80, EWI £110, ceiling £200 already right there).
+
 ## 14 Nov 2026 — David Mclean review published, count 119
 
 David Mclean, 5 stars, 14 Nov ("6 hours ago" on the panel): garage re-rendered, Ecclesfield (the area is in his own text).
