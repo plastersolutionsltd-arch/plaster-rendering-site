@@ -97,6 +97,11 @@ listing (the reply modal hid the panel count) via `sync-reviews.py 120` (70 page
 visible == panel, JSON-LD parses, no page errors, scrollWidth 390, G link 44px. A suburb page, so it doesn't touch the pages
 the core-update read is measuring.
 
+⛔ **`sync-dates.py` has no `--help`: ANY argument other than `--check` runs the WRITER.** On 24 Nov `--help` re-dated 7 pages.
+Reverted the 6 false positives (index, rendering-sheffield, render-over-pebbledash, planning-permission, rendering-in-winter,
+render-cleaning — the review-count-sweep bug above); grenoside `dateModified` + its sitemap `<lastmod>` set to 2026-11-24 together.
+Those 6 will keep showing in `--check`; leave them.
+
 ## 21 Nov 2026 — Google November 2026 core update (10 Nov, rolling out)
 
 Change freeze on site copy and GBP services until the read (~2 Dec, a week after the rollout completes). Checked
