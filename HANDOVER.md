@@ -86,6 +86,23 @@ google-analytics. A loose `/formspree\.io/` regex also matches GA's collect URL,
 localhost visits in GA4. Never send a real submission without telling Chris: it emails him (and, unintercepted,
 adds a job to his live PlasterFlow account).
 
+## 24 Nov 2026 — Craig Shepherd review published, count 120
+
+Craig Shepherd, 5 stars, 24 Nov ("46 minutes ago" at 19:11 on the panel): hall, stairs and landing plastered. Verbatim from the
+panel screenshot (the email cut it at "Very..."); line breaks joined, the panel's double space after "1st class." collapsed to
+one so visible == `reviewBody`. Area Grenoside supplied by Chris (not in the text; Craig is not in PlasterFlow) → caption only.
+Card + `Review` node on `grenoside-sheffield.html`, its 2nd after Gary Mason (newest first). Caption shortened to "Hall, stairs &
+landing · Grenoside&nbsp;S35" — the longer one wrapped "S35" onto its own line at 390px. Count 120 read off the public Maps
+listing (the reply modal hid the panel count) via `sync-reviews.py 120` (70 pages + llms.txt). Checked at 390/1280: schema ==
+visible == panel, JSON-LD parses, no page errors, scrollWidth 390, G link 44px. A suburb page, so it doesn't touch the pages
+the core-update read is measuring.
+
+## 21 Nov 2026 — Google November 2026 core update (10 Nov, rolling out)
+
+Change freeze on site copy and GBP services until the read (~2 Dec, a week after the rollout completes). Checked
+21 Nov: 68/68 sitemap URLs 200, self-canonical, no noindex; suburb-page similarity unchanged since 20 Sep (10.2%,
+5-shingle Jaccard); one outlier pair, greenhill ↔ norton 61%. Read plan and windows in `seo-ranking-tracker.md`.
+
 ## 14 Nov 2026 — area-page semi estimate raised to £5,000–£7,500 (Chris's choice)
 
 28 area pages said a typical semi "starts from around £2,000–£3,500" (some £2,000–4,000 / £2,500–4,500) for silicone
@@ -134,7 +151,9 @@ Chris replied to the review on GBP himself.
   YouTube, don't guess. The "1:07" on the Sandygate cover is unverified too. Use the same thumbnail URL as the cover/poster.
   Every description must match what the clip shows: base coat ≠ SR365 topcoat (see the 19 Sep SR365 note).
 - [ ] **Ask Chris for the original SR365 clip** to upload to @PandRSheffield. On the supplier's channel it counts for them in Google/YouTube.
-- [ ] ⏰ **After 18 Nov:** trim the repeated homepage copy (see "5 Nov 2026" below).
+- [ ] ⏰ **After 18 Nov:** trim the repeated homepage copy (see "5 Nov 2026" below). ⛔ **HOLD until the November 2026
+  core update read (~2 Dec)** — see the 21 Nov entry in `seo-ranking-tracker.md`.
+- [ ] **Rewrite Norton's 18 sentences shared with Greenhill** (61% alike, every other pair ≤42%) — after the update read.
 
 ## Routine checks
 

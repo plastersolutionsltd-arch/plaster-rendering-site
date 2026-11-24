@@ -500,6 +500,8 @@ A move with one known change behind it is worth ten moves with four.
 | 23 Sep 2026 | **3 services added: Ecorend, Weber, Stud partitions.** Ecorend was the glaring one — K Rend was listed as a service and Ecorend was not, despite approved-applicator status and 13 pages of coverage. Stud partitions is on 48 pages and had never been listed. ⏰ **Next pack reading is the test of this batch — do not add more until it is read.** | Chris |
 | 7 Oct 2026 | **Website URL: homepage → `/grenoside-sheffield?utm_source=google&utm_medium=organic&utm_campaign=gbp`** (Diversity Update test — see the 7 Oct hidden-suppressor sweep). Booking link left on /get-quote. Also **WhatsApp chat link removed** — it was `wa.me/44795399525`, a digit missing, sending customers to the wrong number; to be re-added as `wa.me/447595399525`. ⏰ **Read on/after 28 Oct: homepage organic clicks (were 40 per 28d) + pack position for `plasterers sheffield` (was 2nd). Change nothing else on GBP until then.** | Chris |
 | 28 Oct 2026 | **Website URL: `/grenoside-sheffield?utm…gbp` → back to the homepage, `/?utm_source=google&utm_medium=organic&utm_campaign=gbp`** (submitted by Chris, pending Google review at the time). Why: the link test closed with no homepage organic gain, and Chris pointed out the Grenoside page is a far weaker landing page (2 prices vs 43, 1 review vs 3, a "Grenoside is our home" hero for citywide map clickers). UTM kept so listing clicks stay separable in GSC; homepage canonical is the bare `/`. Compare listing-click conversion (enquiries) from here. | Chris |
+| 22 Nov 2026 | **Chat re-added**: WhatsApp `https://wa.me/447595399525` + texting `sms:+447595399525` (SMS set PRIMARY). Correct number this time — wa.me checked, opens a chat with +44 7595 399525. Restores the chat clicks lost since 7 Oct (Oct = 0, −100%). Read November/December chat clicks. Services: see next row. | Chris |
+| 22 Nov 2026 | **Predefined services added under Dry Wall Contractor** (section had ZERO on 2 Nov, unchanged 14 Nov; seen in Chris's editor screenshot 22 Nov): Ceiling repair · Drywall finishing · Drywall installation · Drywall repair · Insulation services · Plastering · Plaster repair (list may continue below the screenshot). Batches 1+2 and part of 3 in one go — one combined change for attribution. Name only, no descriptions (Sterling Sky test). ⬜ Confirm Textured ceiling removal + Stucco installation; ⬜ monocouche £65 → £70 (Plasterer section). Read the pack 24–72h after (Local Falcon, 20 Oct settings). | Chris |
 | ⏰ after 28 Oct | **QUEUED, not done:** (1) read the link test (whole-site GSC, vs the 20 Oct week-one row); (2) categories audit — screenshots of primary + additional; (3) services audit — swap custom services for Google's predefined ones, add missing predefined ones the site evidences, a few per dated batch; (4) Local Falcon 7×7 baseline if not already run. Chris, 20 Oct: "wait, just remember to do after the test". | — |
 
 ### 📊 GBP Performance baseline — Apr–Sep 2026, read 27 Sep (Sep has 3 days left)
@@ -546,6 +548,24 @@ Website clicks tabs (daily) would show whether it was calls or clicks. Not prove
 
 This is the pre-test baseline for the 7 Oct website-URL change: on/after 28 Oct read October the same way
 (interactions per day, before vs after 7 Oct) alongside homepage organic clicks and pack position.
+
+### 📊 October 2026 — GBP performance (Google's 7 Nov email + Chris's GBP screen 22 Nov)
+
+| | Oct 2026 | vs Sep |
+|---|---|---|
+| Profile views | **1,344** | +48% (Sep 906 ✓ matches the Sep FINAL row) |
+| Searches showing the profile | 199 | +91% |
+| Interactions | **107** | −7.8% |
+| Website visits from profile | 50 | +13% |
+| Calls | 17 | −5% |
+| Chat clicks | **0** | **−100%** |
+
+Top searches: plasterer sheffield 35 · plaster 33 · rendering 33. 107 − (17 + 50 + 0) = 40 directions/bookings.
+**The whole interaction drop is chat:** the WhatsApp chat link was removed 7 Oct (wrong digit, wa.me/44795399525) and
+**never re-added** — ✅ re-added 22 Nov (change log). Visibility up, website clicks up, calls flat.
+⚠ Google's −7.8% implies Sep ≈ 116 interactions; the Sep FINAL row above read 64 off screenshots. Google's email
+counts bookings/directions differently or revised Sep — use Google's own month-on-month, don't mix the two.
+All October = before the 10 Nov core update.
 
 ### 🔎 20 Oct 2026 — Winter plastering demand research (Chris: "more plaster jobs, I don't want to be outside all winter")
 
@@ -654,6 +674,148 @@ months (previous best 32, w/c 16 Aug; Sep–Oct ran 13–21). Daily 26–31 Oct:
 26 Oct, BEFORE the link went back to the homepage on 28 Oct, so the switch did not cause it. Homepage UTM link since
 28 Oct: 9 clicks / 288 impr / CTR 3.1% / pos 4.5 (Grenoside link over its 3 weeks: 31 / 1,939 / 1.6% / pos 3.8).
 4 days only — too few to call. Brand query `plaster and rendering solutions limited` 10 clicks in 3 months.
+
+### ⚠ 21 Nov 2026 — Google's November 2026 core update (started 10 Nov): what it changes about our reads
+
+**The facts (Google Search Status Dashboard, read 21 Nov):** "November 2026 core update", released **10 Nov 2026
+10:07 PST**, global, all languages, "The rollout may take up to 2 weeks to complete." **Not marked complete** when
+checked 21 Nov. Google's only words: "a regular update designed to better surface relevant, satisfying content for
+searchers from all types of sites." No new guidance, no named targets. Third core update of 2026 (27 Mar, 21 May).
+Also reported (Semrush, citing Google): a logging error **undercounted the GSC Generative AI report 9–11 Nov** — a dip
+there on those days is not the update. Early SISTRIX data: losers are finance/health/law lead-gen sites; nothing
+measured on local trades yet. SEO commentary (opinion, not data) names thin/templated city pages as most exposed.
+
+**The site, checked 21 Nov:**
+- 68/68 sitemap URLs: HTTP 200, self-canonical, no noindex (meta or header); robots.txt unchanged.
+- **Suburb pages: no drift.** 41 area pages, visible body text, 5-word-shingle Jaccard averaged over every pair:
+  **20 Sep 10.2% · 9 Nov 10.1% · 21 Nov 10.2%.** Sentences repeated on 10+ area pages = ~10% of each page (the
+  winter banner, the trust line, the CTA). The 14 Nov price sweep did not raise it. ⚠ Different method from the
+  19 Sep "21.5%" in HANDOVER — compare these three numbers with each other only.
+- **One outlier: `greenhill-sheffield` ↔ `norton-sheffield` = 61%** (next pair 42%, firth-park ↔ parson-cross).
+  They share 18 sentences / 310 words of service + FAQ copy that is on no other page (both S8; one was cloned from
+  the other). It was 65% on 20 Sep, so it predates the update and the 14 Nov edits. Norton is one of the 3 real
+  "Crawled – currently not indexed" pages from 25 Aug. **A candidate cause, not proven.** Norton's local material is
+  already real (Graves Park, Norton Lees, Jordanthorpe, Andy Hartley's review, its own hero) — only the generic
+  service/FAQ copy is shared. Fix = rewrite Norton's 18 shared sentences, AFTER the update read.
+
+**✅ 21 Nov — switch-back read CLOSED without new exports** (3-month export, Pages.csv): homepage UTM link 28 Oct–19 Nov
+= 39 clicks / 2,642 impr / CTR 1.48% / pos 3.6 (23 days) vs Grenoside link 7–28 Oct = 31 / 1,939 / 1.6% / pos 3.8
+(22 days). Same performance either way; the pack held through the update (3.8 → 3.3), so the overlap doesn't change
+the answer. Link stays on the homepage (better landing page). The windows below are no longer needed.
+
+**⛔ The 20 Nov read is contaminated.** "Switch back to the homepage, 29 Oct–18 Nov vs 7–27 Oct" — the core update
+started on 10 Nov, inside that window. Read pre-update days only: **GSC Compare 29 Oct–9 Nov vs 16–27 Oct**
+(12 days each, both wholly on one side of the 28 Oct switch), Pages + Queries, Web. Check Filters.csv dates.
+
+**The update read:** Google says wait a full week after the rollout completes, then compare with a week before it
+began. Baseline week = **3–9 Nov**. If the dashboard marks it complete on 24 Nov → export on/after **2 Dec**:
+Compare **25 Nov–1 Dec vs 3–9 Nov**, Pages + Queries, Web (shift both by the real completion date).
+**Simplified 21 Nov:** use 10-day windows to match the 21 Nov split — baseline 31 Oct–9 Nov is already in hand
+(`~/Downloads/https___www.plasterandrenderingsolutions.co.uk_-Performance-on-Search-2026-11-21 (2).zip`, the 31 Oct–9 Nov columns); on the day Chris exports 3 single-range files: the 10 days after completion, and Page = `/?utm…gbp`
+→ Queries for both windows.
+Judge by **position on the same queries**, not clicks — render demand falls through winter (20 Oct note), so clicks
+drop whatever the update does. Then re-run the 20 Oct Local Falcon grid (identical settings) for the pack.
+
+**First data, 21 Nov ("Last 3 months" export, Web, data to 19 Nov, Chart.csv daily):**
+
+| 7 days | clicks | impressions | CTR | avg pos (impr-weighted) |
+|---|---|---|---|---|
+| 27 Oct – 2 Nov | 43 | 1,591 | 2.70% | 13.6 (best week in 3 months) |
+| 3 – 9 Nov (baseline) | 19 | 1,806 | 1.05% | 13.1 |
+| **10 – 16 Nov (rollout wk 1)** | **20** | **2,021** | 0.99% | 14.1 |
+| 17 – 19 Nov (3 days) | 4 | 1,140 | 0.35% | 19.4 |
+
+Week one held (clicks 19 → 20, impressions +12%). Since 14 Nov: **8 clicks in 6 days** — level with the early-Oct
+trough (8 in the 6 days to 4/5 Oct), not below it. **19 Nov: 506 impressions at avg pos 27.5** — most impressions in
+a day since 7 Sep, shown deep (page 3); late Aug looked the same. That reads as Google testing the site on more
+searches mid-rollout, but the daily chart can't say which searches — Pages/Queries in this export are 3-month
+totals. 14 Nov snippet changes were only ceiling £150→£200, pricing £75→£80, review count: not a site-wide cause.
+**No action on this**: mid-rollout, ±5 clicks is noise here. To see which searches moved: Compare 10–19 Nov vs
+31 Oct–9 Nov, Pages + Queries.
+
+**21 Nov, the split by page and query** (two exports: 31 Oct–9 Nov from a compare file — Filters.csv checked — and
+10–19 Nov on its own; totals match Chart.csv: 35 → 24 clicks, 2,539 → 3,161 impressions):
+
+- **Map pack held.** The GBP link (`/?utm…gbp`): pos **3.8 → 3.3**, impressions 1,116 → 1,331, but clicks **20 → 12**.
+  Most of the site's click fall is here, at an unchanged position — fewer people clicking, not a lower ranking.
+- **Organic fell, and the same-query check confirms it** (152 queries in both windows, per-query change weighted by
+  impressions: **+4.6 places worse** — not the 28 Oct averaging artefact). Render head terms took it:
+  `rendering sheffield` 7.0 → 16.5 (clicks 3 → 0), `external rendering sheffield` 3.1 → 18.3,
+  `house rendering sheffield` 7.7 → 17.1, `rendering south yorkshire` 2.0 → 17.2, `plasterers sheffield` 8.4 → 14.3,
+  `plasterers in sheffield` 9.0 → 16.0. **Held:** `plasterer sheffield` 9.4 → 9.7.
+  Pages: `/rendering-sheffield` 23.2 → 40.3, `/plastering-sheffield` 13.1 → 21.4, homepage 17.5 → 21.8,
+  `/silicone-render-sheffield` 25.2 → 32.5, `/dry-lining-sheffield` 8.4 → 17.4, `/pricing` 4.7 → 8.1.
+- **Gained:** `/norton-sheffield` 42.6 → 33.2 (new: `rendering in norton`, `silicone render norton`),
+  `/rotherham-south-yorkshire` 18.6 → 14.1, `/southey-sheffield` 42.6 → 28.2, `/silicone-render-vs-monocouche`
+  49.4 → 38.4, `/sandygate-silicone-render-case-study` 17.6 → 6.4, `monocouche render` 69 → 51.
+- ⚠ Query positions mix pack and organic; a head term can also fall because the listing appears less often in the
+  pack for it. Page-level says the organic service pages dropped. Settle it at the 2 Dec read by also exporting
+  **Page = the `/?utm…gbp` URL → Queries** for both windows.
+- Oddity: **414 impressions of `/get-quote?rwg_token=…`** (Google's quote/booking button on the listing), all
+  between 31 Oct and 9 Nov, 1 click, none in 10–19 Nov or anywhere else in 3 months. Excluded from the above.
+  Checked 21 Nov: NOT a change by Chris — the booking link has pointed at /get-quote since before 7 Oct (change log),
+  nothing logged after 28 Oct, no Google email about it in Gmail. The landing URL works (`/get-quote?rwg_token=…` → 200,
+  canonical /get-quote, form present). Google-side display change; 1 click in 414, no action.
+
+Verdict: mid-rollout, the update is moving the organic service pages down on render searches while suburb and
+guide pages rise. Not acted on — the rollout isn't finished and positions often swing back before it settles.
+
+**Freeze until that read:** no site copy changes (the "after 18 Nov" homepage trim waits), no GBP services batch.
+The point is attribution, not risk — Google says there is nothing special to do for a core update.
+Exception: correcting GBP monocouche £65 → £70 is an accuracy fix and can go any time.
+
+### 🗺 22 Nov 2026 (Sunday ~08:40) — Google Maps list, city-centre view (53.3811,−1.4701, 13z), headless, en-GB
+Chris, 22 Nov: "the other render companies aren't doing what we are doing to get to the top of google, still slipping
+isn't good enough". Read Maps (web search blocks automation — never retry it). Maps-list rank ≠ the 3-pack in web search
+(GSC has the listing at avg pos 3.3, mostly northern searchers) — this is the city-centre view only.
+
+| search | #1 | #2 | #3 | P&R |
+|---|---|---|---|---|
+| `rendering sheffield` | **TrueFinish Rendering Sheffield** (8 rev, 24h) | MAC (150) | Smoothcoat (91) | **#8** (ad: LR EWI) |
+| `plasterers sheffield` | Bwp (3 rev, Ecclesall Rd S) | Smoothcoat (91) | Sheffield Plastering Services (10) | **#14** |
+| `plasterer sheffield` | — | — | — | **#15** (TrueFinish #6) |
+
+**⛔ TrueFinish, still there and now #1 for rendering:** website on the listing `truefinishrenderingsheffield.co.uk` —
+Nominet WHOIS 22 Nov 08:43: **"This domain name has not been registered"** (same on 7 Oct), DNS NXDOMAIN. Name carries
+service + city; "Open 24 hours"; reviews 1 (20 Sep) → 8. No TRUE FINISH company in or near Sheffield at Companies House
+(not proof — a sole trader needn't register). Never reported (the 7 Oct to-do was not done).
+Maps: https://www.google.com/maps/place/TrueFinish+Rendering+Sheffield/data=!4m7!3m6!1s0x4879792d47920abd:0xfc05594f028b5f61!8m2!3d53.3873479!4d-1.4952576!16s%2Fg%2F11zxkl9w8p!19sChIJvQqSRy15eUgRYV-LAk9ZBfw
+Form (checked 200, scope = misleading name, phone or URL): https://support.google.com/business/contact/business_redressal_form
+⚠ The old `business_redressal_complaint_form` URL now 404s.
+
+**Plan changed 22 Nov — act off-site now, the site freeze stays** (off-site moves don't muddy the organic read; the
+2 Dec read splits pack from organic with the `/?utm…gbp` filter): (1) report TrueFinish; (2) GBP services batch 1 NOW
+(predefined chips: Plastering, Plaster repair, Ceiling repair, Textured ceiling removal) + monocouche £70 — date it in
+the change log; (3) the 9 free citations in CITATIONS-NAP.md, none done; (4) chase Bing case 7109243851 (Pending
+Publish since 4 Nov). Site work after the rollout, aimed at whoever replaced us on page 1.
+
+### 🔎 22 Nov 2026 — "what have the competitors got that we haven't?" — measured, not guessed
+Everyone in the Maps top 8 for `rendering sheffield` / `plasterers sheffield` / `plasterer sheffield` (city-centre view,
+22 Nov) vs P&R. km = from the search point (53.3811,−1.4701). Domains: Nominet / WHOIS. Directories: web-index search
+per firm (yell, freeindex, checkatrade, mybuilder, ratedpeople, facebook…) — absence is NOT proof.
+
+| firm | best rank | km | Google rev | domain since | directories found |
+|---|---|---|---|---|---|
+| TrueFinish | 1 | 1.8 | 8 | **not registered** | — |
+| Smoothcoat | 1 | 3.8 | 91 | 2020 | MyBuilder ("since 2002"), FreeIndex 10 rev |
+| Bwp | 1 | 3.4 | **3** | 2019 | Yell, Facebook 245 |
+| MAC | 2 | 2.2 | 150 | 2021 | **FreeIndex 23 rev (3rd of 81)**, MyBuilder 6, Yell, Instagram |
+| Sheffield Plastering Services | 3 | 2.0 | 10 | 2014 | Facebook 421 |
+| R.W Pro (24h) | 4 | 4.4 | 43 | 2022-06 | Yell 29 rev |
+| Maca | 4 | 3.6 | 62 | 2018 | Yell 20, FreeIndex, Facebook 1,000+ |
+| JP Plastering | 7 | 3.5 | **0** | no site | — |
+| **P&R** | **8** | **6.2 (furthest)** | **119** | **2022-04** | **Checkatrade (with reviews), Yell, MyBuilder** (all on page 1 for the brand name — Chris's screenshot 22 Nov), FreeIndex 0 rev, Facebook, Instagram |
+
+**Verdict:** (1) **distance** — the one difference every firm above P&R shares (Bwp #1 on 3 reviews, JP #7 on 0);
+(2) **older domains** (2014–2021; age itself isn't a Google factor, the years of listings/mentions it buys are);
+(3) **active directory profiles with their own reviews** (MAC FreeIndex 23 + MyBuilder, R.W Pro Yell 29, Maca Yell 20).
+⛔ **(3) CORRECTED same day:** Chris's brand-search screenshot shows P&R's own Checkatrade, Yell and MyBuilder profiles on
+page 1 — my web-index search missed them (Checkatrade/Yell block automated reads). P&R has the directory presence too;
+only FreeIndex reviews (0 vs MAC 23) is a real difference. **What's left that rivals have and P&R hasn't: distance.**
+Also on that page: TinyTax shows the Chapeltown registered office (Companies House data) — changes when the office moves off Lishmans.
+NOT the gap: Google reviews (P&R 2nd), website (P&R strongest), links (R.W Pro = spam + Yell, 4 Nov).
+Also found: a second Facebook page **"Plaster solutions limited"** (facebook.com/people/Plaster-solutions-limited/100068416591647)
+— the site claims facebook.com/plasterandrenderingsolutions. If the old one is his: name mismatch, merge or rename.
 
 ### ⏳ 28 Oct 2026 — GBP categories audit, IN PROGRESS (step 2 of the queue)
 Read off Edit profile → Business category by Chris, 28 Oct. **4 of 10 slots used:**
